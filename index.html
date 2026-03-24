@@ -7,507 +7,881 @@
 (function(){
   var h='795b9ac32a52d8558c97f7917e60140ee2cbc60929310d5cfb9be36640473f59';
   function s2h(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)).then(function(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('')})}
-  if(sessionStorage.getItem('bb_ok')==='1')return;
+  if(sessionStorage.getItem('ada_ok')==='1')return;
   document.addEventListener('DOMContentLoaded',function(){
-    document.getElementById('bb-content').style.display='none';
-    document.getElementById('bb-gate').style.display='flex';
-    document.getElementById('bb-pw').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('bb-go').click()});
-    document.getElementById('bb-go').addEventListener('click',function(){
-      var pw=document.getElementById('bb-pw').value;
+    document.getElementById('main-content').style.display='none';
+    document.getElementById('gate').style.display='flex';
+    document.getElementById('gate-pw').addEventListener('keydown',function(e){if(e.key==='Enter')document.getElementById('gate-go').click()});
+    document.getElementById('gate-go').addEventListener('click',function(){
+      var pw=document.getElementById('gate-pw').value;
       s2h(pw).then(function(r){
-        if(r===h){sessionStorage.setItem('bb_ok','1');document.getElementById('bb-gate').style.display='none';document.getElementById('bb-content').style.display='block'}
-        else{document.getElementById('bb-err').style.display='block';document.getElementById('bb-pw').value=''}
+        if(r===h){sessionStorage.setItem('ada_ok','1');document.getElementById('gate').style.display='none';document.getElementById('main-content').style.display='block'}
+        else{document.getElementById('gate-err').style.display='block';document.getElementById('gate-pw').value=''}
       })
     })
   })
 })();
 </script>
-<title>蔡阿達｜個人戰情室</title>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&family=Bebas+Neue&family=Bangers&family=Fredoka:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+<title>蔡阿達 ｜ 個人戰情總覽</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Sans:wght@400;600;700&family=Bebas+Neue&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--y:#FFD600;--m:#FF2D7B;--c:#00E5FF;--b:#304FFE;--o:#FF6D00;--g:#00E676;--k:#1A1A2E;--w:#FFFDE7;--r:#FF1744;--accent:#E65100;--accent-light:#FF8F00;--accent-bg:#FFF3E0;--client:#E65100;--internal:#1565C0;--external:#00897B;--overview:#6A1B9A}
+:root{
+  --bg:#F5F5F7;--card:#fff;--dark:#1A1A2E;--text:#2D2D3A;--muted:#8888A0;
+  --purple:#7C4DFF;--orange:#FF6D00;--teal:#00BFA5;--blue:#1565C0;--pink:#AD1457;
+  --red:#FF1744;--amber:#FF9100;--green:#00C853;
+  --grad:linear-gradient(135deg,#1A1A2E 0%,#2D1B69 50%,#1A1A2E 100%);
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'IBM Plex Sans','Noto Sans TC','Zen Maru Gothic',sans-serif;font-size:15px;line-height:1.7;background:var(--w);color:var(--k);background-image:radial-gradient(circle,#ddd 2px,transparent 2px);background-size:18px 18px}
-.hd{background:linear-gradient(135deg,#1A1A2E 0%,#2D1B4E 100%);color:var(--y);padding:20px 24px;border-bottom:6px solid var(--accent)}
-.hd h1{font-family:'Fredoka','Noto Sans TC',sans-serif;font-weight:700;font-size:clamp(24px,5vw,44px);letter-spacing:3px;text-shadow:3px 3px 0 var(--accent),-1px -1px 0 var(--c)}
-.hd .sub{font-size:15px;color:var(--c);font-weight:700;margin-top:4px}
-.hd .badge{display:inline-block;background:var(--accent);color:#fff;padding:3px 14px;border-radius:16px;font-weight:900;font-size:14px;margin-top:6px}
-.sb{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border-bottom:4px solid var(--k)}
-.sc{padding:12px 16px;text-align:center;border-right:3px solid var(--k);border-bottom:3px solid var(--k)}
-.sc:nth-child(1){background:var(--y)}.sc:nth-child(2){background:#FFCC80}.sc:nth-child(3){background:#90CAF9}.sc:nth-child(4){background:#80CBC4}
-.sn{font-family:'Bebas Neue';font-size:36px;line-height:1}.sl{font-size:14px;font-weight:900;letter-spacing:1px;margin-top:2px}
-.tc{padding:0 12px}
-.tn{display:flex;gap:0;margin-top:16px;border-bottom:4px solid var(--k)}
-.tb{flex:1;padding:12px 6px;border:3px solid var(--k);border-bottom:none;font-family:'Noto Sans TC','Fredoka',sans-serif;font-size:clamp(13px,2.2vw,18px);font-weight:700;letter-spacing:1px;cursor:pointer;text-align:center;background:#eee;color:var(--k);position:relative;top:4px;border-radius:10px 10px 0 0;transition:all .12s}
-.tb:hover{transform:translateY(-2px)}
-.tb.on{top:0;border-bottom:4px solid var(--w);z-index:2}
-.tb[data-a="overview"]{border-color:var(--overview)}.tb[data-a="overview"].on{background:var(--overview);color:#fff}
-.tb[data-a="client"]{border-color:var(--client)}.tb[data-a="client"].on{background:var(--client);color:#fff}
-.tb[data-a="internal"]{border-color:var(--internal)}.tb[data-a="internal"].on{background:var(--internal);color:#fff}
-.tb[data-a="external"]{border-color:var(--external)}.tb[data-a="external"].on{background:var(--external);color:#fff}
-.tp{display:none;padding:16px 0 40px}.tp.on{display:block}
-/* Section */
-.st{font-family:'Noto Sans TC','Fredoka',sans-serif;font-size:18px;font-weight:900;letter-spacing:2px;padding:6px 14px;margin:16px 0 10px;border-left:6px solid;display:flex;align-items:center;gap:8px}
-/* Client Grid */
-.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:16px}
-/* Client Card (compact) */
-.cc{border:3px solid var(--k);border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;transition:transform .12s,box-shadow .12s}
-.cc:hover{transform:translateY(-3px);box-shadow:5px 5px 0 var(--k)}
-.ch{padding:10px 14px;font-weight:900;font-size:15px;border-bottom:2px solid var(--k);display:flex;justify-content:space-between;align-items:center}
-.cd{font-family:'Bebas Neue';font-size:14px;background:var(--k);color:#fff;padding:1px 7px;border-radius:6px}
-.cb{padding:10px 14px;font-size:14px;line-height:1.6}
-.ci{display:inline-block;font-size:14px;font-weight:700;padding:0 6px;border-radius:6px;margin-bottom:4px}
-.cs{display:inline-block;padding:1px 8px;border-radius:8px;font-size:14px;font-weight:900;margin-top:6px}
-.s-hot{background:var(--r);color:#fff}.s-warm{background:var(--o);color:#fff}.s-new{background:var(--c);color:var(--k)}.s-go{background:var(--b);color:#fff}.s-done{background:var(--g);color:var(--k)}.s-exist{background:#9E9E9E;color:#fff}.s-train{background:#FFC107;color:var(--k)}
-.cc .hint{font-size:14px;color:#999;margin-top:4px;text-align:right}
+body{font-family:'IBM Plex Sans','Noto Sans TC',sans-serif;font-size:15px;line-height:1.7;background:var(--bg);color:var(--text)}
+/* Gate */
+#gate{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--dark);z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-family:'IBM Plex Sans','Noto Sans TC',sans-serif}
+.gate-box{text-align:center}
+.gate-box .icon{font-size:64px;margin-bottom:16px}
+.gate-box h1{color:#fff;font-size:28px;margin-bottom:4px;letter-spacing:2px}
+.gate-box .sub{color:var(--purple);font-size:14px;margin-bottom:28px;opacity:.8}
+.gate-box input{padding:14px 24px;font-size:16px;border:2px solid var(--purple);border-radius:12px;background:rgba(255,255,255,.05);color:#fff;outline:none;width:240px;text-align:center;transition:border-color .2s}
+.gate-box input:focus{border-color:#B388FF}
+.gate-box button{display:block;margin:16px auto 0;padding:12px 40px;font-size:16px;font-weight:700;background:var(--purple);color:#fff;border:none;border-radius:12px;cursor:pointer;letter-spacing:1px;transition:transform .1s,background .2s}
+.gate-box button:hover{background:#651FFF;transform:scale(1.03)}
+#gate-err{display:none;color:var(--red);font-size:14px;margin-top:14px;font-weight:700}
+
+/* Header */
+.hd{background:var(--grad);color:#fff;padding:28px 32px 20px;position:relative;overflow:hidden}
+.hd::after{content:'';position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(124,77,255,.15) 0%,transparent 70%);pointer-events:none}
+.hd h1{font-family:'Fredoka','Noto Sans TC',sans-serif;font-weight:700;font-size:clamp(22px,4vw,36px);letter-spacing:1px;position:relative;z-index:1}
+.hd .sub{font-size:14px;color:rgba(255,255,255,.65);margin-top:4px;position:relative;z-index:1}
+
+/* Stats Bar */
+.stats-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;border-bottom:3px solid #eee}
+.stat-cell{padding:14px 16px;text-align:center;background:#fff;border-right:1px solid #eee}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Bebas Neue';font-size:32px;line-height:1;color:var(--dark)}
+.stat-label{font-size:13px;font-weight:700;color:var(--muted);margin-top:2px}
+.stat-cell.c1{border-bottom:3px solid var(--purple)}
+.stat-cell.c2{border-bottom:3px solid var(--orange)}
+.stat-cell.c3{border-bottom:3px solid var(--teal)}
+.stat-cell.c4{border-bottom:3px solid var(--blue)}
+.stat-cell.c5{border-bottom:3px solid var(--pink)}
+.stat-cell.c0{border-bottom:3px solid var(--dark)}
+
+/* Tabs */
+.tab-wrap{padding:0 16px}
+.tabs{display:flex;gap:4px;margin-top:20px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:0}
+.tab-btn{flex-shrink:0;padding:10px 16px;border:2px solid #ddd;border-bottom:none;font-size:14px;font-weight:700;cursor:pointer;background:#fff;color:var(--muted);border-radius:10px 10px 0 0;transition:all .15s;white-space:nowrap}
+.tab-btn:hover{color:var(--text);border-color:#bbb}
+.tab-btn.active{color:#fff;border-color:transparent}
+.tab-btn[data-cat="overview"].active{background:var(--dark)}
+.tab-btn[data-cat="product"].active{background:var(--purple)}
+.tab-btn[data-cat="bd"].active{background:var(--orange)}
+.tab-btn[data-cat="client"].active{background:var(--teal)}
+.tab-btn[data-cat="company"].active{background:var(--blue)}
+.tab-btn[data-cat="internal"].active{background:var(--pink)}
+.tab-content{display:none;padding:20px 0 60px;animation:fadeUp .25s ease-out}
+.tab-content.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Overview sections */
+.ov-section{margin-bottom:24px}
+.ov-header{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;margin-bottom:12px;font-weight:900;font-size:16px;letter-spacing:.5px}
+.ov-header.red{background:linear-gradient(135deg,#FFE0E0,#fff0f0);color:var(--red);border-left:4px solid var(--red)}
+.ov-header.amber{background:linear-gradient(135deg,#FFF3E0,#FFFDE7);color:var(--amber);border-left:4px solid var(--amber)}
+.ov-header.blue{background:linear-gradient(135deg,#E3F2FD,#F5F5FF);color:var(--blue);border-left:4px solid var(--blue)}
+.ov-header.purple{background:linear-gradient(135deg,#EDE7F6,#F5F0FF);color:var(--purple);border-left:4px solid var(--purple)}
+.ov-header.dark{background:linear-gradient(135deg,#ECEFF1,#F5F5F5);color:var(--dark);border-left:4px solid var(--dark)}
+
+.action-item{padding:12px 16px;background:#fff;border-radius:10px;margin-bottom:8px;border:1px solid #eee;display:flex;gap:12px;align-items:flex-start;transition:transform .1s,box-shadow .1s}
+.action-item:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.action-badge{flex-shrink:0;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#fff}
+.action-badge.high{background:var(--red)}
+.action-badge.med{background:var(--amber)}
+.action-badge.info{background:var(--blue)}
+.action-text{flex:1}
+.action-title{font-weight:700;font-size:14px;line-height:1.5}
+.action-meta{font-size:12px;color:var(--muted);margin-top:2px}
+.action-source{display:inline-block;padding:1px 8px;border-radius:6px;font-size:11px;font-weight:700;background:#f0f0f5;color:var(--muted)}
+
+/* Strategy cards */
+.strategy-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.strategy-card{background:#fff;border-radius:10px;padding:16px;border:1px solid #eee;border-left:4px solid var(--purple);transition:transform .1s,box-shadow .1s}
+.strategy-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.06)}
+.strategy-card h4{font-size:14px;font-weight:900;margin-bottom:6px}
+.strategy-card p{font-size:13px;color:#666;line-height:1.6}
+
+/* Timeline */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--purple),var(--teal),var(--blue))}
+.tl-date{position:relative;margin-bottom:16px}
+.tl-date::before{content:'';position:absolute;left:-22px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid var(--purple);background:#fff;z-index:1}
+.tl-date-label{font-family:'Bebas Neue';font-size:20px;color:var(--dark);letter-spacing:1px;margin-bottom:6px}
+.tl-items{display:flex;flex-wrap:wrap;gap:6px}
+.tl-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:700;color:#fff;cursor:pointer;transition:transform .1s}
+.tl-chip:hover{transform:scale(1.04)}
+.tl-chip.cat-product{background:var(--purple)}
+.tl-chip.cat-bd{background:var(--orange)}
+.tl-chip.cat-client{background:var(--teal)}
+.tl-chip.cat-company{background:var(--blue)}
+.tl-chip.cat-internal{background:var(--pink)}
+
+/* Meeting Cards */
+.meeting-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.meeting-card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.meeting-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.mc-header{padding:12px 16px;font-weight:900;font-size:15px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f0f0f0}
+.mc-header.cat-product{background:linear-gradient(135deg,#EDE7F6,#fff);border-left:4px solid var(--purple)}
+.mc-header.cat-bd{background:linear-gradient(135deg,#FFF3E0,#fff);border-left:4px solid var(--orange)}
+.mc-header.cat-client{background:linear-gradient(135deg,#E0F2F1,#fff);border-left:4px solid var(--teal)}
+.mc-header.cat-company{background:linear-gradient(135deg,#E3F2FD,#fff);border-left:4px solid var(--blue)}
+.mc-header.cat-internal{background:linear-gradient(135deg,#FCE4EC,#fff);border-left:4px solid var(--pink)}
+.mc-date{font-family:'Bebas Neue';font-size:13px;background:var(--dark);color:#fff;padding:2px 8px;border-radius:6px;letter-spacing:1px;flex-shrink:0}
+.mc-body{padding:14px 16px;font-size:14px;line-height:1.7}
+.mc-participants{font-size:12px;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:4px}
+.mc-summary{margin-bottom:8px;padding-left:16px}
+.mc-summary li{margin-bottom:2px;font-size:13px}
+.mc-actions{border-top:1px solid #f0f0f0;padding-top:8px;margin-top:8px}
+.mc-actions ul{padding-left:16px}
+.mc-actions li{font-size:13px;color:var(--dark);font-weight:600;margin-bottom:2px}
+.mc-hint{font-size:12px;color:#bbb;text-align:right;margin-top:6px}
+.mc-dur{font-size:12px;color:var(--muted);font-weight:400}
+
 /* Modal */
-.modal-bg{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(26,26,46,.7);z-index:100;overflow-y:auto;padding:24px}
-.modal-bg.show{display:flex;justify-content:center;align-items:flex-start}
-.modal{background:#fff;border:4px solid var(--k);border-radius:16px;max-width:760px;width:100%;margin:20px auto;overflow:hidden;animation:popIn .2s ease-out}
-@keyframes popIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
-.mh{padding:16px 20px;font-size:18px;font-weight:900;display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid var(--k)}
-.mh .close{width:36px;height:36px;border-radius:50%;border:3px solid var(--k);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;font-weight:900;background:#fff;transition:all .1s}
-.mh .close:hover{background:var(--r);color:#fff}
-.mb{padding:20px}
-.mb h3{font-size:15px;font-weight:900;margin:16px 0 8px;padding:4px 10px;border-left:4px solid;display:inline-block;border-radius:0 8px 8px 0}
-.mb p,.mb li{font-size:15px;line-height:1.8}
-.mb ul{padding-left:18px;margin-bottom:8px}
-.mb .meta{font-size:14px;color:#888;margin-bottom:12px}
-.mb .tag{display:inline-block;padding:1px 8px;border-radius:8px;font-size:14px;font-weight:700;margin-right:4px;margin-bottom:4px}
-.mb table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 16px;border:2px solid #eee;border-radius:8px;overflow:hidden}
-.mb th{background:#f5f5f5;text-align:left;padding:6px 10px;font-size:14px;font-weight:900}
-.mb td{padding:6px 10px;border-top:1px solid #eee;vertical-align:top}
-.pu{color:var(--r);font-weight:900}.ph{color:var(--o);font-weight:900}.pm{color:var(--b);font-weight:700}
-/* Alert */
-.al{padding:12px 16px;border:3px solid;border-radius:10px;margin:10px 0;font-size:14px;line-height:1.7;display:flex;gap:10px;align-items:flex-start}
-.al .ai{font-size:20px;flex-shrink:0}
-.aw{border-color:var(--o);background:#FFF3E0}
-.af{border-color:var(--b);background:#E8EAF6}
-.ag{border-color:var(--g);background:#E8F5E9}
-/* Overview special */
-.ov-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-bottom:16px}
-.ov-card{border:3px solid var(--k);border-radius:10px;overflow:hidden;background:#fff;transition:transform .12s,box-shadow .12s}
-.ov-card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--k)}
-.ov-card .ov-h{padding:10px 14px;font-weight:900;font-size:14px;border-bottom:2px solid var(--k)}
-.ov-card .ov-b{padding:10px 14px;font-size:14px;line-height:1.7}
-.ov-card .ov-tag{display:inline-block;padding:0 6px;border-radius:6px;font-size:12px;font-weight:700;margin-right:4px}
-/* Todo table */
-.todo-tbl{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 16px;border:3px solid var(--k);border-radius:10px;overflow:hidden}
-.todo-tbl th{background:var(--k);color:#fff;text-align:left;padding:8px 12px;font-size:14px;font-weight:900}
-.todo-tbl td{padding:8px 12px;border-top:2px solid #eee;vertical-align:top}
-.todo-tbl tr:hover{background:#FFF8E1}
-/* Highlight cards */
-.hl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px}
-.hl-card{border:3px solid var(--k);border-radius:10px;padding:14px;background:#fff;text-align:center;transition:transform .12s,box-shadow .12s}
-.hl-card:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--k)}
-.hl-card .hl-num{font-family:'Bebas Neue';font-size:28px;color:var(--accent);line-height:1.2}
-.hl-card .hl-label{font-size:13px;font-weight:700;color:#666;margin-top:4px}
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(26,26,46,.6);backdrop-filter:blur(4px);z-index:1000;overflow-y:auto;padding:20px}
+.modal-overlay.show{display:flex;justify-content:center;align-items:flex-start}
+.modal{background:#fff;border-radius:16px;max-width:780px;width:100%;margin:20px auto;overflow:hidden;animation:modalPop .2s ease-out;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+@keyframes modalPop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-head{padding:16px 20px;font-size:17px;font-weight:900;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #eee}
+.modal-close{width:36px;height:36px;border-radius:50%;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;font-weight:900;background:#fff;transition:all .15s;flex-shrink:0}
+.modal-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.modal-body{padding:20px;max-height:70vh;overflow-y:auto}
+.modal-body h3{font-size:14px;font-weight:900;margin:16px 0 8px;padding:4px 12px;border-radius:0 8px 8px 0;display:inline-block}
+.modal-body h3.purple{border-left:4px solid var(--purple);background:#EDE7F6}
+.modal-body h3.orange{border-left:4px solid var(--orange);background:#FFF3E0}
+.modal-body h3.teal{border-left:4px solid var(--teal);background:#E0F2F1}
+.modal-body h3.blue{border-left:4px solid var(--blue);background:#E3F2FD}
+.modal-body h3.pink{border-left:4px solid var(--pink);background:#FCE4EC}
+.modal-body .meta{font-size:13px;color:var(--muted);margin-bottom:16px}
+.modal-body .cat-tag{display:inline-block;padding:2px 10px;border-radius:6px;font-size:12px;font-weight:900;color:#fff;margin-right:4px}
+.modal-body p,.modal-body li{font-size:14px;line-height:1.8}
+.modal-body ul{padding-left:20px;margin-bottom:12px}
+
 /* Footer */
-.ft{text-align:center;padding:20px;background:var(--k);color:#888;font-size:14px;margin-top:40px;border-top:6px solid var(--accent)}
-@media(max-width:640px){.cg{grid-template-columns:1fr}.ov-grid{grid-template-columns:1fr}.hl-grid{grid-template-columns:repeat(2,1fr)}.tb{font-size:13px!important;padding:8px 2px;letter-spacing:0}.sb{grid-template-columns:repeat(2,1fr)}}
+.ft{text-align:center;padding:24px;background:var(--dark);color:rgba(255,255,255,.4);font-size:13px;margin-top:40px}
+
+/* Cross-observation cards */
+.obs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.obs-card{background:#fff;border-radius:10px;padding:14px;border:1px solid #eee;display:flex;gap:10px;align-items:flex-start}
+.obs-icon{font-size:20px;flex-shrink:0;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.obs-card p{font-size:13px;line-height:1.6;color:#555}
+.obs-card strong{color:var(--dark)}
+
+@media(max-width:768px){
+  .tabs{gap:2px}
+  .tab-btn{padding:8px 10px;font-size:12px}
+  .stats-bar{grid-template-columns:repeat(3,1fr)}
+  .meeting-grid{grid-template-columns:1fr}
+  .strategy-grid{grid-template-columns:1fr}
+  .obs-grid{grid-template-columns:1fr}
+  .hd{padding:20px 16px 16px}
+  .tab-wrap{padding:0 8px}
+}
+@media(max-width:480px){
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .stat-num{font-size:26px}
+}
 </style>
 </head>
 <body>
 
-<div id="bb-gate" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:#1A1A2E;z-index:9999;justify-content:center;align-items:center;flex-direction:column;font-family:'IBM Plex Sans','Noto Sans TC',sans-serif">
-  <div style="text-align:center">
-    <div style="font-size:48px;margin-bottom:12px">🎯</div>
-    <h1 style="color:#FFD600;font-size:24px;margin-bottom:8px;letter-spacing:2px">蔡阿達｜個人戰情室</h1>
-    <p style="color:#00E5FF;font-size:14px;margin-bottom:24px">請輸入密碼以存取</p>
-    <input id="bb-pw" type="password" placeholder="密碼" autofocus style="padding:12px 20px;font-size:16px;border:3px solid #FFD600;border-radius:10px;background:#2a2a4e;color:#fff;outline:none;width:220px;text-align:center">
-    <br>
-    <button id="bb-go" style="margin-top:12px;padding:10px 32px;font-size:16px;font-weight:700;background:#FFD600;color:#1A1A2E;border:3px solid #1A1A2E;border-radius:10px;cursor:pointer;letter-spacing:1px">進入</button>
-    <p id="bb-err" style="display:none;color:#FF1744;font-size:14px;margin-top:12px;font-weight:700">密碼錯誤，請重新輸入</p>
+<!-- Password Gate -->
+<div id="gate">
+  <div class="gate-box">
+    <div class="icon">🧭</div>
+    <h1>蔡阿達 個人戰情總覽</h1>
+    <div class="sub">awoo 阿物科技 ｜ 請輸入密碼以存取</div>
+    <input id="gate-pw" type="password" placeholder="密碼" autofocus>
+    <button id="gate-go">進入戰情室</button>
+    <p id="gate-err">密碼錯誤，請重新輸入</p>
   </div>
 </div>
 
-<div id="bb-content">
+<!-- Main Content -->
+<div id="main-content">
 
+<!-- Header -->
 <div class="hd">
-  <h1>🎯 蔡阿達｜個人戰情室</h1>
-  <div class="sub">awoo 阿物科技 資深總監 ｜ 業務開發部</div>
-  <span class="badge">📅 2026 / 03 / 17 — 03 / 23 ｜ 累計 8 場會議 ｜ 橫跨 4 天</span>
+  <h1>🧭 蔡阿達 ｜ 個人戰情總覽</h1>
+  <div class="sub">awoo 阿物科技 ｜ 資深總監暨共同創辦人 ｜ 業務開發部主管 ｜ 📅 2026/03/11 — 03/23</div>
 </div>
 
-<div class="sb">
-  <div class="sc"><div class="sn">8</div><div class="sl">會議總場次</div></div>
-  <div class="sc"><div class="sn">2</div><div class="sl">客戶洽談</div></div>
-  <div class="sc"><div class="sn">4</div><div class="sl">內部策略</div></div>
-  <div class="sc"><div class="sn">2</div><div class="sl">外部交流</div></div>
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="stat-cell c0"><div class="stat-num">18</div><div class="stat-label">會議總場次</div></div>
+  <div class="stat-cell c1"><div class="stat-num">4</div><div class="stat-label">🎯 GEO 產品策略</div></div>
+  <div class="stat-cell c2"><div class="stat-num">5</div><div class="stat-label">💼 業務開發</div></div>
+  <div class="stat-cell c3"><div class="stat-num">4</div><div class="stat-label">🤝 客戶夥伴</div></div>
+  <div class="stat-cell c4"><div class="stat-num">3</div><div class="stat-label">🏢 公司營運</div></div>
+  <div class="stat-cell c5"><div class="stat-num">2</div><div class="stat-label">🔧 內部流程</div></div>
 </div>
 
-<div class="tc">
-<div class="tn">
-  <button class="tb on" data-a="overview" onclick="sw('overview')">📊 總覽</button>
-  <button class="tb" data-a="client" onclick="sw('client')">🤝 客戶洽談 (2)</button>
-  <button class="tb" data-a="internal" onclick="sw('internal')">🏢 內部策略 (4)</button>
-  <button class="tb" data-a="external" onclick="sw('external')">🌐 外部交流 (2)</button>
+<!-- Tabs -->
+<div class="tab-wrap">
+<div class="tabs">
+  <button class="tab-btn active" data-cat="overview" onclick="switchTab('overview')">📊 全景總覽</button>
+  <button class="tab-btn" data-cat="product" onclick="switchTab('product')">🎯 GEO 產品策略</button>
+  <button class="tab-btn" data-cat="bd" onclick="switchTab('bd')">💼 業務開發</button>
+  <button class="tab-btn" data-cat="client" onclick="switchTab('client')">🤝 客戶與夥伴</button>
+  <button class="tab-btn" data-cat="company" onclick="switchTab('company')">🏢 公司營運</button>
+  <button class="tab-btn" data-cat="internal" onclick="switchTab('internal')">🔧 內部流程</button>
 </div>
 
-<!-- ============ OVERVIEW ============ -->
-<div id="t-overview" class="tp on">
+<!-- ==================== OVERVIEW TAB ==================== -->
+<div id="tab-overview" class="tab-content active">
 
-<div class="st" style="border-color:var(--overview);color:var(--overview)">🔥 進行中的專案與議題</div>
-<div class="ov-grid">
+<!-- High Priority Actions -->
+<div class="ov-section">
+  <div class="ov-header red">🔴 高優先待辦事項</div>
 
-<div class="ov-card">
-<div class="ov-h" style="background:#F3E5F5">🚀 GEO Go-to-Market 策略推進</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#E1BEE7">產品策略</span><span class="ov-tag" style="background:#BBDEFB">GTM</span>
-  <p style="margin-top:6px">產品功能 AIO 整合、媒體客戶需求對接、多接觸點策略建立</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：GTM策略 03/23</div>
-</div>
-</div>
+  <div class="action-item">
+    <div class="action-badge high">1</div>
+    <div class="action-text">
+      <div class="action-title">GEO Go-to-Market：產品團隊需優先推進 AIO 整合功能及特定頁面 AI 成效評估</div>
+      <div class="action-meta">媒體客戶對 SEO 截圖證明需求高，產品需支援。代理商及媒體端有明確需求待開發。</div>
+      <span class="action-source">03/23 GEO GTM 策略會議</span>
+    </div>
+  </div>
 
-<div class="ov-card">
-<div class="ov-h" style="background:#FFF3E0">💰 業績獎金制度調整</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#FFE0B2">獎金制度</span><span class="ov-tag" style="background:#FFCCBC">公司策略</span>
-  <p style="margin-top:6px">降低門檻（88%達成率領100%獎金）、提高 GEO 產品獎金比例、淘汰機制 50%→60%</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：AE週會 03/20、Max&lt;&gt;Mike 03/20</div>
-</div>
-</div>
+  <div class="action-item">
+    <div class="action-badge high">2</div>
+    <div class="action-text">
+      <div class="action-title">確認鍵合作：需準備正式合作提案，七大核心模組技術說明</div>
+      <div class="action-meta">確認鍵團隊對 GEO 技術高度興趣，需要蔡阿達提供簡報與工具說明，june 需約後續合作細節。</div>
+      <span class="action-source">03/23 確認鍵合作交流</span>
+    </div>
+  </div>
 
-<div class="ov-card">
-<div class="ov-h" style="background:#E8F5E9">🤖 AI 內容產製系統</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#C8E6C9">AI工具</span><span class="ov-tag" style="background:#B2DFDB">跨部門</span>
-  <p style="margin-top:6px">問卷收集 → AI 產文 → 品質檢核，跨部門協作（小花、Fenix、Amber）</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：內容產製 03/18</div>
-</div>
-</div>
+  <div class="action-item">
+    <div class="action-badge high">3</div>
+    <div class="action-text">
+      <div class="action-title">經緯廣告：需回覆合作模式與報價，Joanna 下週一提供 deck</div>
+      <div class="action-meta">月訂閱 9,000 元方案、代理商兩成讓利、3 個月試用。需製作基本研究報告給潛在客戶。</div>
+      <span class="action-source">03/18 經緯廣告洽談</span>
+    </div>
+  </div>
 
-<div class="ov-card">
-<div class="ov-h" style="background:#E3F2FD">⚡ 提案流程自動化</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#BBDEFB">流程優化</span><span class="ov-tag" style="background:#90CAF9">自動化</span>
-  <p style="margin-top:6px">系統自動爬取客戶網站，推薦關鍵字與 Prompt，大幅縮短提案準備時間</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：AE週會 03/20</div>
-</div>
-</div>
-
-<div class="ov-card">
-<div class="ov-h" style="background:#FFF9C4">🤝 確認鍵合作夥伴培訓</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#FFF59D">AI合作夥伴</span><span class="ov-tag" style="background:#FFE082">GEO教育訓練</span>
-  <p style="margin-top:6px">教確認鍵業務團隊賣 GEO 服務，七大核心模組、LLM 兩層查詢邏輯</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：確認鍵 03/23</div>
-</div>
+  <div class="action-item">
+    <div class="action-badge high">4</div>
+    <div class="action-text">
+      <div class="action-title">內容產製解決方案：確認 AI 輔助內容產製的標準流程與定價</div>
+      <div class="action-meta">小花提出三方案、Amber 兩週內提包修改方案。蔡阿達需開發 AI 文案工具結合問卷收集。</div>
+      <span class="action-source">03/18 內容產製討論</span>
+    </div>
+  </div>
 </div>
 
-<div class="ov-card">
-<div class="ov-h" style="background:#FCE4EC">🏢 經緯廣告代理合作</div>
-<div class="ov-b">
-  <span class="ov-tag" style="background:#F8BBD0">代理商合作</span><span class="ov-tag" style="background:#FFCDD2">中小企業</span>
-  <p style="margin-top:6px">中小企業客群，月訂閱 9,000 元，含 90 個 prompt，三個月免費試用</p>
-  <div style="margin-top:8px;font-size:13px;color:var(--accent);font-weight:700">涉及會議：經緯廣告 03/18</div>
+<!-- Medium Priority -->
+<div class="ov-section">
+  <div class="ov-header amber">🟠 中優先追蹤事項</div>
+
+  <div class="action-item">
+    <div class="action-badge med">5</div>
+    <div class="action-text">
+      <div class="action-title">AI Mode 影響評估：持續追蹤 Google AI Mode 對客戶 SEO 流量的影響</div>
+      <div class="action-meta">GPT 廣告趨勢報告已整理，Fenix Li 追蹤 AI agent 功能效益。社群貼文已安排發布。</div>
+      <span class="action-source">03/16 AI Mode 影響觀察</span>
+    </div>
+  </div>
+
+  <div class="action-item">
+    <div class="action-badge med">6</div>
+    <div class="action-text">
+      <div class="action-title">GEO 工具銷售流程：優化帳號申請與銷售 demo 流程</div>
+      <div class="action-meta">Aiden 分享實際銷售經驗，確認關鍵字/Prompt 流程、工具試用條件（Logo 交換）及合約條款。</div>
+      <span class="action-source">03/16 艾登銷售會</span>
+    </div>
+  </div>
+
+  <div class="action-item">
+    <div class="action-badge med">7</div>
+    <div class="action-text">
+      <div class="action-title">FUZEN 行銷社群：維護 BNI 相關資源共享網絡</div>
+      <div class="action-meta">新工具發表完成，提供 3 個月免費試用。需邀請內容行銷分會主管分享，推進公關危機服務合作。</div>
+      <span class="action-source">03/18 FUZEN 行銷小聚</span>
+    </div>
+  </div>
+
+  <div class="action-item">
+    <div class="action-badge med">8</div>
+    <div class="action-text">
+      <div class="action-title">Staff Meeting：追蹤公司層級 OKR 與跨部門協作事項</div>
+      <div class="action-meta">AMP 達成率 60%、3 月續約 18 萬待處理。品牌 Panel 邀約、YouTube 合作待確認。</div>
+      <span class="action-source">03/16 Staff Meeting TW</span>
+    </div>
+  </div>
 </div>
+
+<!-- Strategic Focus -->
+<div class="ov-section">
+  <div class="ov-header purple">📈 本週策略焦點</div>
+  <div class="strategy-grid">
+    <div class="strategy-card" style="border-left-color:var(--purple)">
+      <h4>🎯 GEO 服務差異化是關鍵</h4>
+      <p>AI Mode 影響持續擴大，GEO 與傳統 SEO 差異化定位清晰。產品發表會出席率 58.5%（805 報名/471 出席），客戶反饋正面但指標理解仍需加強。</p>
+    </div>
+    <div class="strategy-card" style="border-left-color:var(--orange)">
+      <h4>🏗️ 代理商通路正在擴展</h4>
+      <p>經緯廣告（Joanna）、聯廣 FUSO（Leon 跟進）等代理商通路陸續接洽。需建立標準合作模式：月訂閱 9K + 兩成讓利 + 3 個月試用。</p>
+    </div>
+    <div class="strategy-card" style="border-left-color:var(--teal)">
+      <h4>📝 內容產製 AI 化是共通需求</h4>
+      <p>客戶普遍無法自行執行內容，AI 輔助產文已成常態。三種方案待確認：建議書彈性轉換、7+7 文案模式、AI 初稿 + 人工論述。</p>
+    </div>
+    <div class="strategy-card" style="border-left-color:var(--blue)">
+      <h4>💰 獎金制度改革激勵團隊</h4>
+      <p>獎金門檻降低（88% 達成率 = 100% 獎金），GO 產品獎金比例提高。淘汰門檻由 50% 提至 60%，季度評估 + PIP 機制。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Cross-meeting Observations -->
+<div class="ov-section">
+  <div class="ov-header blue">🔗 跨會議觀察</div>
+  <div class="obs-grid">
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#EDE7F6">📸</div>
+      <div><strong>媒體客戶截圖需求</strong><p>媒體客戶對 SEO 截圖證明需求高，不需全程排名追蹤。產品需支援此類輕量需求場景。</p></div>
+    </div>
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#FFF3E0">🤝</div>
+      <div><strong>代理商標準合作模式</strong><p>經緯、聯廣等代理商通路擴展中，需建立「月訂閱 + 讓利 + 試用」的標準化合作模式。</p></div>
+    </div>
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#E0F2F1">🤖</div>
+      <div><strong>AI Mode 持續擴大影響</strong><p>零點擊搜尋增加、GPT 廣告美國測試中。GEO 是防禦性策略，SEO 仍是基礎。</p></div>
+    </div>
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#FCE4EC">✍️</div>
+      <div><strong>AI 文案工具跨會議需求</strong><p>內容產製、客戶提案、品牌問答題庫 — 多場會議都提到 AI 輔助內容，需整合為統一工具。</p></div>
+    </div>
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#E3F2FD">📊</div>
+      <div><strong>提案流程自動化</strong><p>蔡阿達正開發自動爬取客戶網站 + 站外資料的工具，產出關鍵字與 Prompt 建議，下週一初版。</p></div>
+    </div>
+    <div class="obs-card">
+      <div class="obs-icon" style="background:#FFFDE7">🏷️</div>
+      <div><strong>Logo 交換策略</strong><p>免費試用換 Logo 授權已成標準策略，用知名品牌背書加速銷售漏斗。</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Timeline -->
+<div class="ov-section">
+  <div class="ov-header dark">📅 會議時間軸</div>
+  <div class="timeline">
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/23 (SUN)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-client" onclick="openModal('m0')">確認鍵合作交流</span>
+        <span class="tl-chip cat-product" onclick="openModal('m1')">GEO GTM 策略</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/20 (THU)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-bd" onclick="openModal('m2')">AE 運轉加速會議</span>
+        <span class="tl-chip cat-company" onclick="openModal('m3')">Max &lt;&gt; Mike 獎金討論</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/18 (TUE)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-internal" onclick="openModal('m4')">內容產製方案</span>
+        <span class="tl-chip cat-client" onclick="openModal('m5')">經緯廣告洽談</span>
+        <span class="tl-chip cat-client" onclick="openModal('m6')">FUZEN 行銷小聚</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/17 (MON)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-bd" onclick="openModal('m7')">BD 周會</span>
+        <span class="tl-chip cat-bd" onclick="openModal('m8')">SEO 流量相談室</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/16 (SUN)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-company" onclick="openModal('m9')">Staff Meeting TW</span>
+        <span class="tl-chip cat-internal" onclick="openModal('m10')">GEO 銷售流程會</span>
+        <span class="tl-chip cat-product" onclick="openModal('m11')">AI Mode 影響觀察</span>
+        <span class="tl-chip cat-product" onclick="openModal('m12')">GEO GTM 策略</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/13 (THU)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-bd" onclick="openModal('m13')">阿達 / Leon 1:1</span>
+        <span class="tl-chip cat-company" onclick="openModal('m14')">Weekly Sync Up</span>
+        <span class="tl-chip cat-bd" onclick="openModal('m15')">AE 運轉加速會議</span>
+        <span class="tl-chip cat-company" onclick="openModal('m16')">勞資會議</span>
+      </div>
+    </div>
+
+    <div class="tl-date">
+      <div class="tl-date-label">03/11 (TUE)</div>
+      <div class="tl-items">
+        <span class="tl-chip cat-product" onclick="openModal('m17')">GEO 產品討論</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 </div>
 
-<div class="st" style="border-color:var(--r);color:var(--r)">⏳ 待辦事項追蹤</div>
-<table class="todo-tbl">
-<tr><th style="width:50px">優先</th><th>事項</th><th>來源會議</th><th style="width:80px">期限</th></tr>
-<tr><td class="pu">🔴</td><td>提案自動化系統下週一產出初步報告</td><td>AE 週會 03/20</td><td>03/24</td></tr>
-<tr><td class="pu">🔴</td><td>確認鍵團隊 GEO 簡報與技術說明完成</td><td>確認鍵 03/23</td><td>本週</td></tr>
-<tr><td class="ph">🟠</td><td>AI 文案工具 MVP 開發（結合問卷+規範）</td><td>內容產製 03/18</td><td>持續</td></tr>
-<tr><td class="ph">🟠</td><td>業績獎金新制正式公告</td><td>Max&lt;&gt;Mike 03/20</td><td>Q2前</td></tr>
-<tr><td class="ph">🟠</td><td>經緯廣告邀請碼與合作機制建立</td><td>經緯廣告 03/18</td><td>本月</td></tr>
-<tr><td class="pm">🔵</td><td>GO Suite 英文市場功能更新</td><td>業務週會 03/17</td><td>下一季</td></tr>
-<tr><td class="pm">🔵</td><td>樂烏網 Logo 授權法律文件取得</td><td>業務週會 03/17</td><td>待定</td></tr>
-</table>
+<!-- ==================== PRODUCT STRATEGY TAB ==================== -->
+<div id="tab-product" class="tab-content">
+  <div class="meeting-grid">
 
-<div class="st" style="border-color:var(--accent);color:var(--accent)">📈 本週關鍵數字與觀察</div>
-<div class="hl-grid">
-<div class="hl-card" style="border-color:var(--accent)">
-  <div class="hl-num">$9,100</div>
-  <div class="hl-label">GEO Suite 月費<br>含 90 個 prompt</div>
-</div>
-<div class="hl-card" style="border-color:var(--g)">
-  <div class="hl-num" style="color:var(--g)">88%</div>
-  <div class="hl-label">獎金新制達成率<br>可領 100% 獎金</div>
-</div>
-<div class="hl-card" style="border-color:var(--r)">
-  <div class="hl-num" style="color:var(--r)">60%</div>
-  <div class="hl-label">淘汰門檻<br>從 50% 調高</div>
-</div>
-<div class="hl-card" style="border-color:var(--b)">
-  <div class="hl-num" style="color:var(--b)">+527%</div>
-  <div class="hl-label">AI 引薦流量<br>年增率</div>
-</div>
-</div>
+    <div class="meeting-card" onclick="openModal('m1')">
+      <div class="mc-header cat-product"><span>🎯 GEO Go-to-Market 策略</span><span class="mc-date">03/23</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 何建彤、Angelline、Max、蔡阿達 等 12 人 <span class="mc-dur">· 19 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>媒體客戶重視關鍵字排名截圖證明，不需全程追蹤</li>
+          <li>產品團隊優先推進 AIO 整合功能及頁面 AI 成效評估</li>
+          <li>康太娜合作洽談中，媒體端有穩定預算</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>產品團隊推進 AIO 整合功能</li>
+            <li>何建彤整理系統表單資料</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
 
-<div class="al af"><span class="ai">💡</span><div><strong>本週觀察：</strong>GEO 生態系正在快速成形。從合作夥伴培訓（確認鍵）到代理商通路（經緯廣告），再到內部產品整合（AIO）和流程自動化，四條線同步推進。關鍵瓶頸在提案自動化系統的產出速度和 AI 文案工具的 MVP 完成度。</div></div>
+    <div class="meeting-card" onclick="openModal('m12')">
+      <div class="mc-header cat-product"><span>🎯 GEO GTM 策略（產品發表回顧）</span><span class="mc-date">03/16</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 林思吾、Max、何建彤、蔡阿達 等 13 人 <span class="mc-dur">· 1 小時 21 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>產品發表會：805 報名 / 471 出席（58.5%）</li>
+          <li>金融客戶直播連線問題，改用 YouTube 預錄</li>
+          <li>決議製作 FAQ 短影片提升客戶理解</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>製作 3-5 分鐘 FAQ 短影片</li>
+            <li>安排拜訪中信、國泰金融客戶</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
 
-</div>
+    <div class="meeting-card" onclick="openModal('m11')">
+      <div class="mc-header cat-product"><span>🎯 AI Mode 的影響與觀察</span><span class="mc-date">03/16</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Fenix Li、林思吾、陳羲彤、蔡阿達 等 9 人 <span class="mc-dur">· 20 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>CofFect 平台轉換效益不足，暫維持現狀</li>
+          <li>AI Agent 對 SEO 幫助有限，持續追蹤數據</li>
+          <li>GPT 廣告美國測試中，已整理趨勢報告</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>Fenix Li 追蹤 AI 功能效益</li>
+            <li>Angelline 本週發布社群貼文</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
 
-<!-- ============ CLIENT ============ -->
-<div id="t-client" class="tp">
+    <div class="meeting-card" onclick="openModal('m17')">
+      <div class="mc-header cat-product"><span>🎯 GEO 產品內部討論</span><span class="mc-date">03/11</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 內部討論 <span class="mc-dur">· 43 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>GEO 產品功能規劃與方向確認</li>
+          <li>內部團隊技術對齊</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
 
-<div class="st" style="border-color:var(--client);color:var(--client)">🤝 客戶洽談紀錄（點擊展開）</div>
-<div class="cg">
-
-<div class="cc" onclick="openModal('client-1')">
-<div class="ch" style="background:#FFF9C4"><span>🤝 確認鍵 × awoo AI技術合作</span><span class="cd">03/23</span></div>
-<div class="cb">
-  <span class="ci" style="background:#FFF59D">AI合作夥伴</span><span class="ci" style="background:#FFE082">GEO教育訓練</span>
-  <p>蔡阿達對確認鍵業務團隊進行 GEO 技術說明，介紹七大核心模組與 AI 漏斗理論</p>
-  <span class="cs s-train">🟡 培訓進行中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
-</div>
-
-<div class="cc" onclick="openModal('client-2')">
-<div class="ch" style="background:#FCE4EC"><span>🏢 經緯廣告客戶需求對接</span><span class="cd">03/18</span></div>
-<div class="cb">
-  <span class="ci" style="background:#F8BBD0">代理商合作</span><span class="ci" style="background:#FFCDD2">中小企業</span>
-  <p>聚焦中小微企業數位轉型，月費 9,000 元含 90 個 prompt，三個月試用</p>
-  <span class="cs s-warm">🟠 洽談中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
-</div>
-
-</div>
-</div>
-
-<!-- ============ INTERNAL ============ -->
-<div id="t-internal" class="tp">
-
-<div class="st" style="border-color:var(--internal);color:var(--internal)">🏢 內部策略會議（點擊展開）</div>
-<div class="cg">
-
-<div class="cc" onclick="openModal('internal-1')">
-<div class="ch" style="background:#E8EAF6"><span>🚀 GEO Go-to-Market 策略</span><span class="cd">03/23</span></div>
-<div class="cb">
-  <span class="ci" style="background:#C5CAE9">產品策略</span><span class="ci" style="background:#9FA8DA">GTM</span>
-  <p>媒體客戶 SEO 需求、AIO 整合功能推進、多接觸點策略</p>
-  <span class="cs s-go">🔵 推進中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+  </div>
 </div>
 
-<div class="cc" onclick="openModal('internal-2')">
-<div class="ch" style="background:#FFF3E0"><span>⚡ AE 運轉加速/推動會議</span><span class="cd">03/20</span></div>
-<div class="cb">
-  <span class="ci" style="background:#FFE0B2">團隊管理</span><span class="ci" style="background:#FFCCBC">獎金制度</span>
-  <p>獎金新制宣布、提案自動化構想、各 AE 案件進度追蹤</p>
-  <span class="cs s-go">🔵 執行中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+<!-- ==================== BD TAB ==================== -->
+<div id="tab-bd" class="tab-content">
+  <div class="meeting-grid">
+
+    <div class="meeting-card" onclick="openModal('m2')">
+      <div class="mc-header cat-bd"><span>💼 AE 運轉加速會議</span><span class="mc-date">03/20</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Aiden、Leon、Bryan、Rebecca、蔡阿達 <span class="mc-dur">· 2 小時 13 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>業績獎金制度調整：88% 達成率 = 100% 獎金</li>
+          <li>提案流程將由系統自動爬取客戶資料</li>
+          <li>GO 產品獎金比例提高，PIP 門檻 60%</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>蔡阿達下週一完成自動爬取工具初版</li>
+            <li>Aiden / Rebecca 提供去年業績目標表格</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m7')">
+      <div class="mc-header cat-bd"><span>💼 業務開發周會 0317</span><span class="mc-date">03/17</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Bryan、Rebecca、Leon、Aiden、蔡阿達、馬愛雲 <span class="mc-dur">· 1 小時 4 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>GO 顧問方案與 GO 工具內容結合完成</li>
+          <li>工具主要支援中文台灣市場，英文版下季更新</li>
+          <li>免費試用 3 個月換 Logo 授權策略確立</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>行銷部月底提供 GO 簡短版簡報</li>
+            <li>蔡阿達製作客戶資料試算表</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m8')">
+      <div class="mc-header cat-bd"><span>💼 awoo AI SEO 流量相談室</span><span class="mc-date">03/17</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 蔡阿達、Dominic、養元堂、馬愛雲 等 <span class="mc-dur">· 55 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>GEO 與 SEO 差異及關聯性解析</li>
+          <li>SEO 仍是做好 AI 搜尋的基礎</li>
+          <li>合作期建議至少一年累積成效</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m13')">
+      <div class="mc-header cat-bd"><span>💼 阿達 / Leon 1:1</span><span class="mc-date">03/13</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 蔡阿達、呂紹平 Leon <span class="mc-dur">· 57 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>155 張專案異動待處理</li>
+          <li>中信數位部有意全站導入 GEO</li>
+          <li>業務推進受限於文章數量不足與成效保證</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>Leon 處理 155 張專案異動</li>
+            <li>蔡阿達開發提案資料收集表單</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m15')">
+      <div class="mc-header cat-bd"><span>💼 AE 運轉加速會議</span><span class="mc-date">03/13</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Aiden、Leon、Bryan、Rebecca、蔡阿達 <span class="mc-dur">· 1 小時 42 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>每週例行 AE 推動會議</li>
+          <li>各 AE 案件進度追蹤與策略調整</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="cc" onclick="openModal('internal-3')">
-<div class="ch" style="background:#FFF9C4"><span>💰 Max <> Mike 業務獎金討論</span><span class="cd">03/20</span></div>
-<div class="cb">
-  <span class="ci" style="background:#FFF59D">獎金制度</span><span class="ci" style="background:#FFE082">公司策略</span>
-  <p>三套獎金辦法整合、GEO/GO Suite 獎金比例提高、淘汰門檻調整</p>
-  <span class="cs s-warm">🟠 制度制定中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+<!-- ==================== CLIENT TAB ==================== -->
+<div id="tab-client" class="tab-content">
+  <div class="meeting-grid">
+
+    <div class="meeting-card" onclick="openModal('m0')">
+      <div class="mc-header cat-client"><span>🤝 確認鍵 AI 技術合作交流</span><span class="mc-date">03/23</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Grace、Irene、Joe、John（確認鍵）、蔡阿達、戴生 等 12 人 <span class="mc-dur">· 55 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>蔡阿達詳述 GEO 技術架構與七大核心模組</li>
+          <li>分享 AI 推薦系統原理、KPI 指標與合作案例</li>
+          <li>確認鍵對系統功能與數據分析有高度興趣</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>june 約定後續合作細節</li>
+            <li>蔡阿達提供技術簡報與工具說明</li>
+            <li>設計品牌核心問答題目</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m5')">
+      <div class="mc-header cat-client"><span>🤝 經緯廣告洽談</span><span class="mc-date">03/18</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 蔡阿達、Joanna Li <span class="mc-dur">· 37 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>代理商角色：中小微企業數位轉型需求對接</li>
+          <li>月訂閱 9,000 元、代理商兩成讓利</li>
+          <li>可提供 3 個月試用，5 月小樹苗交響會推廣</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>Joanna 下週一提供 deck 並推薦客戶</li>
+            <li>蔡阿達製作客戶基本研究報告</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m6')">
+      <div class="mc-header cat-client"><span>🤝 FUZEN 行銷小聚</span><span class="mc-date">03/18</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Jack En、蔡阿達、遙空映畫、BOX、Apacha 等 8 人 <span class="mc-dur">· 1 小時 15 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>AI 推薦監測工具產品發表，3 個月免費試用</li>
+          <li>赫斯特集團等大品牌洽談中</li>
+          <li>內容行銷與公關危機服務合作探討</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>邀請內容行銷分會主管分享</li>
+            <li>收集 Apacha 官網及簡報資料</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m8')">
+      <div class="mc-header cat-client"><span>🤝 awoo AI SEO 流量相談室</span><span class="mc-date">03/17</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 蔡阿達、Dominic、養元堂、Joyce Wu 等 <span class="mc-dur">· 55 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>對外分享 GEO 與 SEO 關聯性</li>
+          <li>awoo 130 位專員、近 20 年 SEO 經驗</li>
+          <li>有興趣的夥伴安排深入分析洽談</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="cc" onclick="openModal('internal-4')">
-<div class="ch" style="background:#E8F5E9"><span>🤖 協助客戶內容產製解決方案</span><span class="cd">03/18</span></div>
-<div class="cb">
-  <span class="ci" style="background:#C8E6C9">跨部門</span><span class="ci" style="background:#B2DFDB">AI工具</span>
-  <p>客戶文案痛點、三種方案討論、AI 文案工具 MVP 開發</p>
-  <span class="cs s-go">🔵 開發中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+<!-- ==================== COMPANY TAB ==================== -->
+<div id="tab-company" class="tab-content">
+  <div class="meeting-grid">
+
+    <div class="meeting-card" onclick="openModal('m3')">
+      <div class="mc-header cat-company"><span>🏢 Max &lt;&gt; Mike 獎金辦法討論</span><span class="mc-date">03/20</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Max、Winny、林思吾、蔡阿達 等 7 人 <span class="mc-dur">· 1 小時 2 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>三套獎金辦法整合，獎金池概念避免重複發放</li>
+          <li>AMP/SEO 獎金比例調降，GEO/Go Suite 提高</li>
+          <li>淘汰門檻 50% → 60%，刪除半年獎金改季度制</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>Winny 3/25 前與怡芳開會試算獎金比例</li>
+            <li>Max 檢視 GEO 產品獎金比例</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m9')">
+      <div class="mc-header cat-company"><span>🏢 Staff Meeting TW</span><span class="mc-date">03/16</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 全公司主管參與 <span class="mc-dur">· 59 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>AMP 專案達成率約 60%，需加入 GO 元素</li>
+          <li>3 月 18 萬待續約，預估續回 12 萬（60%）</li>
+          <li>廣告投放 1 月達成良好，Google AI 廣告推廣</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>藍文甫提供 1-3 月續約 Logo 數據</li>
+            <li>Leo / Amber 確認品牌 Panel 邀約</li>
+            <li>Steven 完成標籤系統優化</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m14')">
+      <div class="mc-header cat-company"><span>🏢 Weekly Sync Up</span><span class="mc-date">03/13</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 公司主管層級例會 <span class="mc-dur">· 1 小時 11 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>每週同步公司各部門進度</li>
+          <li>跨部門協作事項追蹤</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m16')">
+      <div class="mc-header cat-company"><span>🏢 第二屆第八次勞資會議</span><span class="mc-date">03/13</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 勞資雙方代表 <span class="mc-dur">· 9 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>例行勞資會議</li>
+          <li>合規性議題討論</li>
+        </ul>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-</div>
+<!-- ==================== INTERNAL TAB ==================== -->
+<div id="tab-internal" class="tab-content">
+  <div class="meeting-grid">
+
+    <div class="meeting-card" onclick="openModal('m4')">
+      <div class="mc-header cat-internal"><span>🔧 客戶內容產製解決方案</span><span class="mc-date">03/18</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Amber、Fenix、小花、林思吾、蔡阿達 等 8 人 <span class="mc-dur">· 1 小時 12 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>多數客戶無法落實內容執行，AI 輔助產文已成常態</li>
+          <li>小花提出三種優化方案（彈性轉換/7+7/AI+論述）</li>
+          <li>蔡阿達開發 AI 文案工具結合問卷收集</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>林思吾指派 Leo 發布素材認定公告</li>
+            <li>Amber 兩週內提包修改方案</li>
+            <li>小花提供文章規範及範例給蔡阿達</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+    <div class="meeting-card" onclick="openModal('m10')">
+      <div class="mc-header cat-internal"><span>🔧 GEO 工具銷售流程會</span><span class="mc-date">03/16</span></div>
+      <div class="mc-body">
+        <div class="mc-participants">👥 Rebecca、蔡阿達、Aiden <span class="mc-dur">· 36 分鐘</span></div>
+        <ul class="mc-summary">
+          <li>確認關鍵字/Prompt 產生流程：先確定主題再產 Prompt</li>
+          <li>工具試用條件：Logo 授權交換，簽署簡單合約</li>
+          <li>顧問案加工具合約已有版本，經 Henry 審核</li>
+        </ul>
+        <div class="mc-actions">
+          <strong>📌 待辦：</strong>
+          <ul>
+            <li>Aiden 確認客戶主題字與延伸關鍵字</li>
+            <li>Rebecca 向客戶說明試用條件</li>
+            <li>Aiden 與 Henry 確認合約條文</li>
+          </ul>
+        </div>
+        <div class="mc-hint">▶ 點擊展開完整資訊</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- ============ EXTERNAL ============ -->
-<div id="t-external" class="tp">
+</div><!-- tab-wrap -->
 
-<div class="st" style="border-color:var(--external);color:var(--external)">🌐 外部交流紀錄（點擊展開）</div>
-<div class="cg">
-
-<div class="cc" onclick="openModal('external-1')">
-<div class="ch" style="background:#E0F2F1"><span>☕ FUZEN 行銷小聚</span><span class="cd">03/18</span></div>
-<div class="cb">
-  <span class="ci" style="background:#B2DFDB">BNI</span><span class="ci" style="background:#80CBC4;color:#fff">行銷社群</span>
-  <p>AI 推薦監測工具推廣、遙空映畫內容行銷、Apacha 公關危機管理</p>
-  <span class="cs" style="background:var(--external);color:#fff">持續經營</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-head" id="modal-head">
+      <span id="modal-title"></span>
+      <div class="modal-close" onclick="closeModal()">&#10005;</div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
 </div>
 
-<div class="cc" onclick="openModal('external-2')">
-<div class="ch" style="background:#E3F2FD"><span>📋 業務開發週會 0317</span><span class="cd">03/17</span></div>
-<div class="cb">
-  <span class="ci" style="background:#BBDEFB">團隊管理</span><span class="ci" style="background:#90CAF9">GO推廣</span>
-  <p>GO 顧問方案結合工具、客戶試用期策略、合約模板建立</p>
-  <span class="cs s-go">🔵 執行中</span>
-  <div class="hint">▶ 點擊看完整資訊</div>
-</div>
+<!-- Footer -->
+<div class="ft">
+  🧭 蔡阿達個人戰情總覽 ｜ awoo 阿物科技 ｜ 資料期間 2026/03/11 — 03/23 ｜ 共 18 場會議
 </div>
 
-</div>
-</div>
-
-</div><!-- end tab-container -->
-
-<!-- ============ MODALS ============ -->
-<div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
-<div class="modal" id="modal-box">
-  <div class="mh" id="modal-title"><span></span><div class="close" onclick="closeModal()">✕</div></div>
-  <div class="mb" id="modal-body"></div>
-</div>
-</div>
-
-<div class="ft">蔡阿達個人戰情室 ｜ 資料來源：SeaMeet 會議紀錄 ｜ 2026/03/17 - 03/23 ｜ 累計 8 場會議</div>
-
-</div><!-- end bb-content -->
+</div><!-- main-content -->
 
 <script>
-function sw(a){document.querySelectorAll('.tb').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.tp').forEach(c=>c.classList.remove('on'));document.querySelector(`[data-a="${a}"]`).classList.add('on');document.getElementById(`t-${a}`).classList.add('on')}
+function switchTab(cat){
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.querySelectorAll('.tab-content').forEach(function(t){t.classList.remove('active')});
+  document.querySelector('.tab-btn[data-cat="'+cat+'"]').classList.add('active');
+  document.getElementById('tab-'+cat).classList.add('active');
+  window.scrollTo({top:document.querySelector('.tabs').offsetTop-10,behavior:'smooth'});
+}
 
-const D={
-'client-1':{t:'🤝 確認鍵 × awoo AI技術合作交流 ｜ 03/23',b:`
-<div class="meta">📅 03/23 ｜ ⏱ 54 min ｜ 👤 蔡阿達、Grace、Joe、John（確認鍵）、Irene、June、Michael、Roy（Enter）、行銷之鬼-戴生、鼎超darren</div>
-<span class="tag" style="background:#FFF59D">AI合作夥伴</span><span class="tag" style="background:#FFE082">GEO教育訓練</span>
-<h3 style="border-color:var(--client)">📝 摘要</h3>
-<p>蔡阿達對確認鍵業務團隊進行 GEO 技術說明，介紹七大核心模組、LLM 兩層查詢邏輯、AI 漏斗理論。強調網站體質是 AI 推薦的前提，分享合作案例，並說明工具功能（數據分析、報告生成、檢測）。</p>
-<h3 style="border-color:var(--client)">🔑 洽談重點</h3>
-<ul>
-<li>向確認鍵說明 GO 技術架構與 AI 推薦系統</li>
-<li>提出七大核心模組作為技術基礎</li>
-<li>強調 SEO 與 GO 相輔相成</li>
-<li>分享品牌製造商及私域服務業者合作案例</li>
-<li>說明工具功能，客戶可自行執行或委託顧問</li>
-</ul>
-<h3 style="border-color:var(--r)">✅ 待辦事項</h3>
-<table><tr><th>優先</th><th>事項</th><th>期限</th></tr>
-<tr><td class="pu">🔴</td><td>確認鍵團隊 GEO 簡報與技術說明文件完成</td><td>本週</td></tr>
-<tr><td class="ph">🟠</td><td>建立確認鍵專屬合作方案與培訓教材</td><td>持續</td></tr>
-<tr><td class="pm">🔵</td><td>追蹤確認鍵業務團隊首批客戶轉介</td><td>下月</td></tr>
-</table>`},
-
-'client-2':{t:'🏢 經緯廣告客戶需求對接 ｜ 03/18',b:`
-<div class="meta">📅 03/18 ｜ ⏱ 37 min ｜ 👤 蔡阿達、Joanna Li</div>
-<span class="tag" style="background:#F8BBD0">代理商合作</span><span class="tag" style="background:#FFCDD2">中小企業</span>
-<h3 style="border-color:var(--client)">📝 摘要</h3>
-<p>與經緯廣告討論合作，聚焦中小微企業數位轉型。蔡阿達提出 AI 推薦監測工具為切入點，月費 9,000 元含 90 個 prompt，三個月試用。代理商可獲兩成讓利。討論邀請碼與拉群機制。</p>
-<h3 style="border-color:var(--client)">🔑 洽談重點</h3>
-<ul>
-<li>目標客群：有一定規模、有人力執行的中小企業</li>
-<li>月訂閱 9,000 元，含 90 個 prompt 追蹤</li>
-<li>三個月免費試用，代理商兩成讓利</li>
-<li>建立邀請碼與拉群機制維持合作</li>
-<li>健康產業為重點客戶類型</li>
-</ul>
-<h3 style="border-color:var(--r)">✅ 待辦事項</h3>
-<table><tr><th>優先</th><th>事項</th><th>期限</th></tr>
-<tr><td class="ph">🟠</td><td>建立經緯廣告邀請碼與合作機制</td><td>本月</td></tr>
-<tr><td class="ph">🟠</td><td>準備中小企業客群專屬簡報資料</td><td>本月</td></tr>
-<tr><td class="pm">🔵</td><td>追蹤首批試用客戶入駐</td><td>下月</td></tr>
-</table>`},
-
-'internal-1':{t:'🚀 GEO Go-to-Market 策略 ｜ 03/23',b:`
-<div class="meta">📅 03/23 ｜ ⏱ 19 min ｜ 👤 蔡阿達、Alice Cho、Amber Liao、YC、何建彤、彭時晧、藍文甫、Angelline、Hagi Kuo、Max Huang、Leon</div>
-<span class="tag" style="background:#C5CAE9">產品策略</span><span class="tag" style="background:#9FA8DA;color:#fff">GTM</span>
-<h3 style="border-color:var(--internal)">📝 摘要</h3>
-<p>何建彤分享媒體客戶 SEO 需求，客戶重視關鍵字排名截圖，願將 HF 工具費用轉移至新品牌。產品團隊優先推進 AIO 整合及特定頁面 AI 成效評估功能。Angelline 分享與康太娜合作。蔡阿達補充媒體盈利模式分析。</p>
-<h3 style="border-color:var(--internal)">🔑 行動事項</h3>
-<ul>
-<li>產品推進 AIO 整合功能</li>
-<li>針對媒體產業建立多接觸點策略</li>
-<li>行銷部協助處理系統表單客戶</li>
-</ul>`},
-
-'internal-2':{t:'⚡ AE 運轉加速/推動會議 ｜ 03/20',b:`
-<div class="meta">📅 03/20 ｜ ⏱ 2h12m ｜ 👤 蔡阿達、Aiden、Rebecca、Bryan、Leon</div>
-<span class="tag" style="background:#FFE0B2">團隊管理</span><span class="tag" style="background:#FFCCBC">獎金制度</span><span class="tag" style="background:#BBDEFB">流程優化</span>
-<h3 style="border-color:var(--internal)">📝 摘要</h3>
-<p>蔡阿達宣布獎金新制（88% 達成率領 100%、GEO 獎金比例提高）。提出提案流程自動化構想：輸入客戶網址即自動爬取分析，推薦關鍵字與 Prompt。討論各 AE 案件進度。</p>
-<h3 style="border-color:var(--internal)">🔑 行動事項</h3>
-<ul>
-<li>下週一產出自動化提案系統初步報告</li>
-<li>獎金新制正式公告</li>
-<li>各 AE 案件持續追蹤</li>
-</ul>
-<h3 style="border-color:var(--r)">✅ 待辦事項</h3>
-<table><tr><th>優先</th><th>事項</th><th>期限</th></tr>
-<tr><td class="pu">🔴</td><td>提案自動化系統下週一產出初步報告</td><td>03/24</td></tr>
-<tr><td class="ph">🟠</td><td>獎金新制正式公告文件</td><td>Q2前</td></tr>
-<tr><td class="pm">🔵</td><td>AE 案件進度下次追蹤</td><td>下週</td></tr>
-</table>`},
-
-'internal-3':{t:'💰 Max <> Mike 業務獎金討論 ｜ 03/20',b:`
-<div class="meta">📅 03/20 ｜ ⏱ 1h01m ｜ 👤 蔡阿達、Mike（林思吾）、Max、Winny、Anne、藍文甫</div>
-<span class="tag" style="background:#FFF59D">獎金制度</span><span class="tag" style="background:#FFE082">公司策略</span>
-<h3 style="border-color:var(--internal)">📝 摘要</h3>
-<p>三套獎金辦法整合（業務/CS/GEO顧問），避免重複發放。AMP/SEO 獎金比例調降，GEO/GO Suite 提高。淘汰門檻 50%→60%。獎金需第一期款入帳後發放。季度評估，前三月 AE 負責收款。</p>
-<h3 style="border-color:var(--internal)">🔑 行動事項</h3>
-<ul>
-<li>Winny 完成獎金辦法整合文件</li>
-<li>獎金級距與比例確認</li>
-<li>Q2 前正式公告</li>
-</ul>`},
-
-'internal-4':{t:'🤖 協助客戶內容產製解決方案 ｜ 03/18',b:`
-<div class="meta">📅 03/18 ｜ ⏱ 1h11m ｜ 👤 蔡阿達、Amber Liao、Fenix Li、小花、林思吾、蔡佳勳（Papaya）、藍文甫、陳羲彤</div>
-<span class="tag" style="background:#C8E6C9">跨部門</span><span class="tag" style="background:#B2DFDB">AI工具</span><span class="tag" style="background:#A5D6A7">內容產製</span>
-<h3 style="border-color:var(--internal)">📝 摘要</h3>
-<p>討論客戶文案產出痛點（多數客戶無法落實執行）。小花提出三種方案：建議書與文案彈性轉換、統一由內部撰寫、AI+人工混合模式。蔡阿達分享正在開發的 AI 文案工具（問卷收集+SEO/EAT 規範）。</p>
-<h3 style="border-color:var(--internal)">🔑 行動事項</h3>
-<ul>
-<li>AI 文案工具 MVP 開發</li>
-<li>制定素材交付標準</li>
-<li>建立包修改服務方案</li>
-</ul>
-<h3 style="border-color:var(--r)">✅ 待辦事項</h3>
-<table><tr><th>優先</th><th>事項</th><th>期限</th></tr>
-<tr><td class="ph">🟠</td><td>AI 文案工具 MVP 開發（結合問卷+規範）</td><td>持續</td></tr>
-<tr><td class="ph">🟠</td><td>制定素材交付標準文件</td><td>本月</td></tr>
-<tr><td class="pm">🔵</td><td>建立包修改服務方案與定價</td><td>下月</td></tr>
-</table>`},
-
-'external-1':{t:'☕ FUZEN 行銷小聚 ｜ 03/18',b:`
-<div class="meta">📅 03/18 ｜ ⏱ 1h14m ｜ 👤 蔡阿達、Jack En、遙空映畫、BOX、貳捌、Apacha、MarsZ Chen、數位巴克斯</div>
-<span class="tag" style="background:#B2DFDB">BNI</span><span class="tag" style="background:#80CBC4;color:#fff">行銷社群</span><span class="tag" style="background:#A5D6A7">合作機會</span>
-<h3 style="border-color:var(--external)">📝 摘要</h3>
-<p>蔡阿達介紹 AI 推薦監測工具（五大指標、前三個月免費、月費 9,100 元）。遙空映畫分享內容行銷公司。Apacha 介紹公關危機管理服務。討論中小企業/診所目標客群。</p>
-<h3 style="border-color:var(--external)">🔑 重要人脈與機會</h3>
-<ul>
-<li><strong>遙空映畫</strong>：內容行銷 + 話題操作</li>
-<li><strong>Apacha</strong>：公關危機管理 + 口碑建置</li>
-<li><strong>赫斯特集團</strong>：已洽談中</li>
-</ul>`},
-
-'external-2':{t:'📋 業務開發週會 0317 ｜ 03/17',b:`
-<div class="meta">📅 03/17 ｜ ⏱ 1h03m ｜ 👤 蔡阿達、Bryan、Rebecca、Leon、Aiden、馬愛雲（Irene）</div>
-<span class="tag" style="background:#BBDEFB">團隊管理</span><span class="tag" style="background:#90CAF9">GO推廣</span>
-<h3 style="border-color:var(--external)">📝 摘要</h3>
-<p>GO 顧問方案與 GO 工具結合，工具主要支援中文/台灣市場。討論客戶試用期（3 個月為主）。Rebecca 取得樂烏網 Logo 授權。合約方面工具作為顧問附錄。蔡阿達鼓勵用工具擴大銷售漏斗。</p>
-<h3 style="border-color:var(--external)">🔑 行動事項</h3>
-<ul>
-<li>取得樂烏網 Logo 法律文件</li>
-<li>GO Suite 英文功能下季更新</li>
-<li>工具合約附錄模板建立</li>
-</ul>
-<h3 style="border-color:var(--r)">✅ 待辦事項</h3>
-<table><tr><th>優先</th><th>事項</th><th>期限</th></tr>
-<tr><td class="pm">🔵</td><td>取得樂烏網 Logo 授權法律文件</td><td>待定</td></tr>
-<tr><td class="pm">🔵</td><td>GO Suite 英文市場功能更新</td><td>下一季</td></tr>
-<tr><td class="pm">🔵</td><td>工具合約附錄模板建立</td><td>本月</td></tr>
-</table>`}
+var meetings={
+  m0:{title:'確認鍵與 awoo 阿物科技 AI 技術合作交流',date:'03/23/2026',dur:'0:54:31',cat:'client',catLabel:'🤝 客戶與夥伴洽談',catColor:'#00BFA5',participants:'Grace（確認鍵）、Irene（Enter）、Joe（確認鍵）、John（確認鍵）、june（Enter）、Michael（Enter）、Roy（Enter）、蔡阿達、行銷之鬼-戴生、Irene、鼎超 darren',summary:'<p>蔡阿達針對 GEO 技術架構及 AI 推薦系統進行詳細說明，強調網站體質與內容優化是 AI 能否推薦的關鍵，並提出<strong>七大核心模組</strong>作為技術基礎。</p><ul><li>使用者行為已從關鍵字搜尋轉向提問溝通，網站仍是 AI 找到內容的必要載體</li><li>網站需符合 W3C 規範，快速呈現資訊並收集客戶資料</li><li>七大核心模組：技術架構、品牌履歷、多模態內容整合、第三方背書等</li><li>KPI 指標：引用率、提及率、聲量佔比、排名等</li><li>利用 AI 大模型學習客戶網站背景，設計問答題庫生成品牌內容</li><li>FAQ 結構化內容對 AI 抓取友好性高</li></ul>',actions:'<ul><li><strong>蔡阿達</strong>：提供 GEO 技術簡報與工具說明</li><li><strong>june</strong>：約定後續合作細節，討論系統優化與推廣策略</li><li><strong>蔡阿達</strong>：協助客戶網站見解分析，提供五大指標報告</li><li><strong>蔡阿達</strong>：持續完善七大核心模組</li><li><strong>蔡阿達</strong>：設計品牌核心問答題目，收集客戶回覆</li><li><strong>蔡阿達</strong>：利用大模型學習客戶網站，生成品牌調性文章草稿</li></ul>'},
+  m1:{title:'GEO Go-to-Market 策略',date:'03/23/2026',dur:'0:18:59',cat:'product',catLabel:'🎯 GEO 產品策略',catColor:'#7C4DFF',participants:'Alice Cho、Amber Liao、YC、何建彤、彭時晧、蔡阿達、藍文甫、Angelline、Hagi Kuo、Max Huang、Leon',summary:'<p>何建彤分享媒體客戶對 SEO 服務的需求，強調客戶重視<strong>關鍵字排名截圖證明</strong>，不要求全程排名追蹤。產品團隊將優先推進 AIO 整合及特定頁面 AI 成效評估功能。</p><ul><li>上週系統表單有多批客戶及代理商填寫</li><li>媒體客戶為台灣知名媒體公司，主要需求是排名截圖</li><li>Angelline 分享康太娜合作情況，3/18 講師，期望長期合作</li><li>媒體盈利模式以文章版位銷售為主，預算穩定</li></ul>',actions:'<ul><li><strong>何建彤</strong>：與行銷及圖書團隊整理系統表單資料</li><li><strong>產品團隊</strong>：優先推進 AIO 整合功能，評估特定頁面 AI 成效追蹤</li><li><strong>何建彤</strong>：補充代理商對 AI 成效追蹤需求</li><li><strong>蔡阿達</strong>：評估新工具與現有系統整合可能性</li></ul>'},
+  m2:{title:'每週 AE 運轉加速/推動會議',date:'03/20/2026',dur:'2:12:42',cat:'bd',catLabel:'💼 業務開發',catColor:'#FF6D00',participants:'蔡毓倫 Aiden、蔡阿達、Rebecca Chen、Bryan Chou、呂紹平 Leon',summary:'<p><strong>業績獎金制度大調整</strong>：目標維持不變但獎金門檻降低，約 88% 達成率即可領 100% 獎金。GO 產品獎金比例提高，PIP 門檻設於 60%。</p><ul><li>達 100% 可領 110% 獎金，GO 顧問案及 Go Suite 獎金比例高於 AMP</li><li>獎金季度評估，低於 60% 進入 PIP</li><li>第一期款項入帳後才發放獎金</li><li>提案流程革新：系統自動爬取客戶網站及站外資料，分析關鍵字與 Prompt</li><li>蔡阿達最快下週一產出初步工具</li></ul>',actions:'<ul><li><strong>蔡阿達</strong>：等財務正式公布後向團隊說明新獎金制度</li><li><strong>Aiden</strong>：提供去年業績目標表格</li><li><strong>Rebecca</strong>：整理去年業績目標數字</li><li><strong>蔡阿達</strong>：下週一完成網站爬取工具初版</li><li><strong>蔡阿達</strong>：設計客戶資料收集表單</li><li><strong>Leon</strong>：協助測試工具，提供客戶網址</li></ul>'},
+  m3:{title:'Max <> Mike \u2014 獎金辦法整合討論',date:'03/20/2026',dur:'1:01:32',cat:'company',catLabel:'🏢 公司營運',catColor:'#1565C0',participants:'Anne Chang、Max Huang、蔡阿達、藍文甫、林思吾、Winny Chiang',summary:'<p>Winny 分享<strong>三套獎金辦法整合</strong>方向（業務獎金、CS 獎金、GEO SEO 顧問獎金），獎金池概念避免重複發放。</p><ul><li>AMP/SEO 獎金比例調降，GEO/Go Suite 獎金提高</li><li>刪除半年營收獎金，改季度為主</li><li>淘汰門檻由 50% 提至 60%</li><li>獎金發放需收到第一期款項為前提</li><li>前三個月 AE 負責付款追蹤，之後 CS 接手</li></ul>',actions:'<ul><li><strong>Winny</strong>：調整獎金辦法文件，3/25 前與怡芳開會試算</li><li><strong>Winny</strong>：新增條款規定獎金發放前需收到發票款項</li><li><strong>Max</strong>：檢視 GEO 產品獎金比例設定</li><li><strong>林思吾</strong>：協助設定淘汰門檻與獎勵階梯</li></ul>'},
+  m4:{title:'協助客戶內容產製解決方案討論',date:'03/18/2026',dur:'1:11:39',cat:'internal',catLabel:'🔧 內部流程優化',catColor:'#AD1457',participants:'Amber Liao、Fenix Li、廖淑芬（小花）、林思吾、蔡佳勳、蔡阿達、藍文甫、陳羲彤（Dominic）',summary:'<p>討論客戶文案產出流程優化，<strong>多數客戶無法落實內容執行</strong>，AI 輔助產文已成常態但仍需人工審核。</p><ul><li>Fenix 分享目前流程問題，客戶無法執行建議書內容</li><li>Amber 指出素材提供限制與法規審核挑戰</li><li>小花提出三方案：建議書彈性轉換、7+7 文案撰寫、AI+人工論述</li><li>蔡阿達開發 AI 文案工具，結合問卷收集與 SEO/E-E-A-T 指標</li></ul>',actions:'<ul><li><strong>林思吾</strong>：指派 Leo 發布內部公告，統一素材認定標準</li><li><strong>Amber</strong>：兩週內提出包修改方案及單篇上架定價</li><li><strong>小花</strong>：提供不同行業文章規範及範例給蔡阿達</li><li><strong>蔡阿達</strong>：開發文案生成工具，結合 AI 與人工論述</li></ul>'},
+  m5:{title:'經緯廣告客戶需求對接、awoo GEO 技術合作洽談',date:'03/18/2026',dur:'0:36:49',cat:'client',catLabel:'🤝 客戶與夥伴洽談',catColor:'#00BFA5',participants:'蔡阿達、Joanna Li',summary:'<p>討論<strong>代理商合作模式</strong>，聚焦中小微及奈米企業數位轉型需求。</p><ul><li>Joanna 說明代理商角色與客戶分級，A 級客戶投放高且有健康產業重點客戶</li><li>合作甜蜜點：客戶有部門及人力，能理解並執行建議</li><li>月訂閱 9,000 元，可依網站規模調整</li><li>知名品牌可提供 3 個月試用，代理商兩成讓利</li><li>小樹苗交響會 5/13 台北舉辦</li></ul>',actions:'<ul><li><strong>Joanna</strong>：下週一提供合作 deck，向客戶推廣服務</li><li><strong>Joanna</strong>：挑選客戶建立群組</li><li><strong>蔡阿達</strong>：根據客戶官網製作基本研究報告</li><li><strong>蔡阿達</strong>：整理 AI 自動回覆機器人資料</li><li><strong>雙方</strong>：5 月中旬小樹苗交響會合作推廣</li></ul>'},
+  m6:{title:'FUZEN 行銷小聚 / 專業推廣 x 資源共享',date:'03/18/2026',dur:'1:14:46',cat:'client',catLabel:'🤝 客戶與夥伴洽談',catColor:'#00BFA5',participants:'Jack En、蔡阿達、遙空映畫、BOX、貳捌、Apacha、MarsZ Chen、數位巴克斯',summary:'<p>蔡阿達介紹<strong> AI 推薦監測工具</strong>新品發表，五大指標分析，前三個月免費試用。</p><ul><li>工具監測：AI 提及機率、排名、好壞評價比例、引用連結等五大指標</li><li>中小企業及診所為主要目標客群</li><li>赫斯特集團等大品牌洽談中，月費 9,100 元含 90 個 Prompt 追蹤</li><li>遙空映畫與 Apacha 分享內容行銷及公關危機服務</li></ul>',actions:'<ul><li><strong>蔡阿達</strong>：邀請內容行銷分會主管下週分享</li><li><strong>遙空映畫</strong>：邀請新媒體行銷公司合作</li><li><strong>蔡阿達</strong>：建議 Apacha 配合 SEO 團隊</li><li><strong>遙空映畫</strong>：收集 Apacha 官網及簡報資料</li></ul>'},
+  m7:{title:'業務開發周會 0317',date:'03/17/2026',dur:'1:03:43',cat:'bd',catLabel:'💼 業務開發',catColor:'#FF6D00',participants:'Bryan Chou、Rebecca Chen、呂紹平 Leon、蔡毓倫 Aiden、蔡阿達、馬愛雲',summary:'<p><strong>GO 顧問方案與 GO 工具整合完成</strong>，服務包含績優工具建議但不保證成效。</p><ul><li>工具主要支援中文及台灣市場，英文版下季更新</li><li>免費試用 3 個月換 Logo 授權</li><li>工具內容作為顧問合約附錄</li><li>Rebecca 提及樂烏網同意更換 Logo</li><li>合約彈性允許客戶隨時解約無違約金</li></ul>',actions:'<ul><li><strong>蔡阿達</strong>：請行銷部月底提供 GO 簡短版簡報</li><li><strong>蔡阿達</strong>：製作客戶資料試算表</li><li><strong>Leon</strong>：協助將工具內容補充至顧問合約附件</li><li><strong>Aiden</strong>：確認報價單可加入工具報價</li><li><strong>Rebecca</strong>：提供樂烏網法律文件</li></ul>'},
+  m8:{title:'awoo AI SEO 流量成長相談室',date:'03/17/2026',dur:'0:54:50',cat:'bd',catLabel:'💼 業務開發',catColor:'#FF6D00',participants:'蔡阿達、陳羲彤（Dominic）、養元堂、馬愛雲、Joyce Wu、黃建賓、Fan Bonnie、Fenix Li、Star',summary:'<p>Dominic 詳細介紹 <strong>GEO 與傳統 SEO 的差異與關聯</strong>，蔡阿達補充產業面建議。</p><ul><li>GEO 結合 LLM 與 AEO，AI 以段落為單位評估內容</li><li>SEO 仍是做好 GEO 的前提</li><li>Google 對 AI 生成內容有反制措施</li><li>地區型及專業型服務需強化權威性內容</li><li>合作期建議至少一年</li></ul>',actions:'<ul><li><strong>蔡阿達</strong>：安排有興趣的夥伴深入分析</li><li><strong>Dominic</strong>：定期每月提供成效報表</li><li><strong>蔡阿達</strong>：建議無行銷人員客戶尋找外包配合</li></ul>'},
+  m9:{title:'Staff Meeting TW',date:'03/16/2026',dur:'0:59:27',cat:'company',catLabel:'🏢 公司營運',catColor:'#1565C0',participants:'Amber Liao、Angelline、Anne Chang、Darren Zhang、Fenix Li、Johnny Yu、Justin Tsai、Knack Hung、Libby Cheng、Nancy Cheng、Nick Lee、Seth Shang、Steven Shih、Winny Chiang 等全公司主管',summary:'<p>公司層級全員會議，各部門報告進度。</p><ul><li>AMP 專案達成率約 60%，需加入 GO 元素</li><li>AMP 功能已模組化，保留受歡迎功能</li><li>3 月 18 萬待續約，預估續回 12 萬（60%）</li><li>部分客戶因組織調整不續約（綠藤、維富拉克等）</li><li>廣告投放 1 月達成良好</li></ul>',actions:'<ul><li><strong>藍文甫</strong>：提供 1-3 月續約 Logo 數據</li><li><strong>Libby</strong>：GO 引用率重新分類追蹤</li><li><strong>Leo / Amber</strong>：確認品牌 Panel 邀約</li><li><strong>麥克</strong>：確認 YouTube 合作及演講邀約</li><li><strong>Steven</strong>：完成標籤系統優化及日文版上線</li></ul>'},
+  m10:{title:'艾登大大實際銷售 GEO 工具、帳號申請流程真人現身說法會',date:'03/16/2026',dur:'0:35:54',cat:'internal',catLabel:'🔧 內部流程優化',catColor:'#AD1457',participants:'Rebecca Chen、蔡阿達、蔡毓倫 Aiden',summary:'<p>確認<strong>客戶關鍵字與 Prompt 產生流程</strong>，釐清工具試用條件與合約條款。</p><ul><li>流程：確定主題與關鍵字（含延伸字）\u2192 產生 Prompt \u2192 申請帳號</li><li>Aiden 使用 Claude 工具產生大量關鍵字</li><li>目前專員尚未對 Prompt 做優化，已反映</li><li>工具試用需 Logo 授權交換</li><li>合約已有含工具版本，經 Henry 審核</li></ul>',actions:'<ul><li><strong>Aiden</strong>：確認客戶主題字與延伸關鍵字</li><li><strong>Rebecca</strong>：向客戶說明試用條件</li><li><strong>Aiden</strong>：與 Henry 確認合約條文</li><li><strong>Aiden</strong>：向 AE 說明顧問案可附贈工具</li></ul>'},
+  m11:{title:'AI Mode 的影響與觀察',date:'03/16/2026',dur:'0:19:36',cat:'product',catLabel:'🎯 GEO 產品策略',catColor:'#7C4DFF',participants:'Angelline、Fenix Li、YC、彭時晧、林思吾、蔡佳勳、蔡阿達、藍文甫、陳羲彤（Dominic）',summary:'<p>討論 <strong>AI Mode 對 SEO 的影響</strong>，包含平台轉換評估、AI Agent 應用及 GPT 廣告趨勢。</p><ul><li>CofFect 平台轉換效益不足，暫維持現狀</li><li>AI Agent 對 SEO 幫助有限，持續追蹤</li><li>GPT 廣告美國市場測試中</li><li>行銷團隊本週發布 GPT 廣告社群貼文</li></ul>',actions:'<ul><li><strong>Fenix Li</strong>：與麥克確認 AI 功能追蹤</li><li><strong>Fenix Li</strong>：持續觀察官網是否導入 AI agent</li><li><strong>Dominic</strong>：完成 GPT 廣告趨勢報告</li><li><strong>Angelline</strong>：本週發布社群貼文</li></ul>'},
+  m12:{title:'GEO Go-to-Market 策略（產品發表回顧）',date:'03/16/2026',dur:'1:20:43',cat:'product',catLabel:'🎯 GEO 產品策略',catColor:'#7C4DFF',participants:'Alice Cho、Amber Liao、YC、何建彤、Leon、彭時晧、蔡阿達、藍文甫、Angelline、Max Huang、林思吾、Yoshie Yeoh、Hagi Kuo',summary:'<p>回顧產品發表會，<strong>805 報名、471 出席（58.5%）</strong>。</p><ul><li>約 10 家客戶詢問 Logo 放置及訪談</li><li>中信數位部門有高度興趣</li><li>金融客戶因防火牆無法觀看直播</li><li>Max 建議登門拜訪金融客戶</li><li>決議製作 FAQ 短影片</li></ul>',actions:'<ul><li><strong>何建彤</strong>：製作 FAQ 清單同步日本團隊</li><li><strong>Angelline / Liby</strong>：準備 FAQ 短影片腳本</li><li><strong>林思吾</strong>：安排 Amber/Leon 拜訪中信、國泰</li><li><strong>行銷</strong>：3 月底前完成發表會影片上架</li></ul>'},
+  m13:{title:'阿達 / 呂紹平 Leon 1:1',date:'03/13/2026',dur:'0:56:57',cat:'bd',catLabel:'💼 業務開發',catColor:'#FF6D00',participants:'呂紹平 Leon、蔡阿達',summary:'<p>1:1 討論<strong>專案異動、業務推進障礙</strong>。</p><ul><li>155 張專案異動待處理</li><li>工具發佈會客戶多數有興趣</li><li>中信數位部有意全站導入</li><li>業務受限：文章僅約 3 篇、缺乏成效保證</li><li>建立提案資料收集表單 + 自動生成報告</li></ul>',actions:'<ul><li><strong>Leon</strong>：處理 155 張專案異動</li><li><strong>Leon</strong>：群發信件詢問客戶興趣</li><li><strong>Leon</strong>：下週向中信數位部介紹方案</li><li><strong>蔡阿達</strong>：建立提案資料收集表單</li><li><strong>蔡阿達</strong>：產出關鍵字分析網頁</li></ul>'},
+  m14:{title:'Weekly Sync Up Meeting',date:'03/13/2026',dur:'1:10:42',cat:'company',catLabel:'🏢 公司營運',catColor:'#1565C0',participants:'公司主管層級',summary:'<p>每週公司同步會議，追蹤各部門進度與跨部門協作。</p>',actions:'<p>各部門持續追蹤既有事項。</p>'},
+  m15:{title:'每週 AE 運轉加速/推動會議',date:'03/13/2026',dur:'1:41:41',cat:'bd',catLabel:'💼 業務開發',catColor:'#FF6D00',participants:'蔡毓倫 Aiden、蔡阿達、Rebecca Chen、Bryan Chou、呂紹平 Leon',summary:'<p>每週例行 AE 推動會議，追蹤各 AE 案件進度。</p>',actions:'<p>各 AE 持續推進手上案件。</p>'},
+  m16:{title:'第二屆第八次勞資會議',date:'03/13/2026',dur:'0:08:38',cat:'company',catLabel:'🏢 公司營運',catColor:'#1565C0',participants:'勞資雙方代表',summary:'<p>例行勞資會議，合規性議題討論。</p>',actions:'<p>依會議決議執行。</p>'},
+  m17:{title:'GEO 產品內部討論',date:'03/11/2026',dur:'0:43:12',cat:'product',catLabel:'🎯 GEO 產品策略',catColor:'#7C4DFF',participants:'內部團隊',summary:'<p>GEO 產品功能規劃與方向確認。</p>',actions:'<p>依討論結論推進開發。</p>'}
 };
 
 function openModal(id){
-  const d=D[id];if(!d)return;
-  document.getElementById('modal-title').querySelector('span').textContent=d.t;
-  document.getElementById('modal-body').innerHTML=d.b;
-  document.getElementById('modal-bg').classList.add('show');
+  var m=meetings[id];if(!m)return;
+  document.getElementById('modal-title').textContent=m.title;
+  var cls=m.cat==='product'?'purple':m.cat==='bd'?'orange':m.cat==='client'?'teal':m.cat==='company'?'blue':'pink';
+  var html='<div class="meta"><span class="cat-tag" style="background:'+m.catColor+'">'+m.catLabel+'</span> \ud83d\udcc5 '+m.date+' \uff5c \u23f1\ufe0f '+m.dur+'</div>';
+  html+='<h3 class="'+cls+'">\ud83d\udc65 參與人員</h3><p>'+m.participants+'</p>';
+  html+='<h3 class="'+cls+'">\ud83d\udccb 會議摘要</h3>'+m.summary;
+  html+='<h3 class="'+cls+'">\ud83d\udccc 待辦事項</h3>'+m.actions;
+  document.getElementById('modal-body').innerHTML=html;
+  document.getElementById('modal-head').style.borderBottomColor=m.catColor;
+  document.getElementById('modal-overlay').classList.add('show');
   document.body.style.overflow='hidden';
 }
-function closeModal(){
-  document.getElementById('modal-bg').classList.remove('show');
+
+function closeModal(e){
+  if(e&&e.target&&e.target.id!=='modal-overlay'&&!e.target.classList.contains('modal-close'))return;
+  document.getElementById('modal-overlay').classList.remove('show');
   document.body.style.overflow='';
 }
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
