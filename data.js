@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-03-25T10:30:00",
+  lastUpdated: "2026-03-25T19:00:00",
   dateLabel: "2026/03/25（三）",
   stats: {
-    meetings: 7,
-    projects: 9,
-    partners: 3,
+    meetings: 9,
+    projects: 11,
+    partners: 4,
     internal: 2,
-    clientCompany: 3,
-    todos: 24
+    clientCompany: 4,
+    todos: 33
   },
 
   projects: [
@@ -527,6 +527,125 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "這個費用不是量變多就會降的，大語言模型的成本就是用數量來算。但我們可以不要追那麼多 Prompt，90 個是一個很好的甜蜜點。另外如果客戶願意讓我們放 Logo，工具就不用跟他收錢。" },
                 { speaker: "Leon", role: "other", label: "AE", text: "到時候如果客戶一多起來，AE 就每天在維護，沒有時間開發了。" },
                 { speaker: "蔡阿達", role: "ada", text: "現階段如果真的要維護，就一律讓我來也可以。後台會開發客戶自助改 Prompt 功能，應該也是這三個月過渡而已。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P10: Jerry 後端主管晉升 & AI 工具商業化 ======
+    {
+      id: "str-promotion",
+      name: "人事評議 & AI 工具商業化流程",
+      icon: "🏗️",
+      category: "company",
+      lastUpdated: "2026-03-25",
+      summary: "Jerry 晉升後端主管通過人評，同步討論 AI 文案審核機制、多品牌帳號管理及過渡期服務設計",
+      keyPoints: [
+        "Jerry 晉升後端主管，四位委員全票通過，HR 啟動後續人事作業",
+        "Team B 人力三人，短期集中 GU 需求，不細分分工",
+        "<strong>AI 文案審核</strong>：建立驗證模式，以簡易介面過渡，避免客戶素材爭議",
+        "<strong>多品牌帳號管理系統</strong>：以統編為主，目標<strong>五月中</strong>完成設計與測試",
+        "過渡期人工處理追蹤設定、Prompt 數量限制與結案報告"
+      ],
+      chips: [
+        { icon: "✅", text: "Jerry 晉升通過" },
+        { icon: "🗓️", text: "多品帳號 5月中" },
+        { icon: "🤖", text: "AI 文案審核" },
+        { icon: "⏱️", text: "過渡期人工支援" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "與藍文甫設計 AI 輔助文案審核的驗證模式與流程", priority: "week" },
+        { owner: "蔡阿達", text: "與團隊建立客戶素材 AI 比對簡易介面", priority: "week" },
+        { owner: "蔡阿達", text: "與力友討論 AI 工具商業模式與 CS 服務銜接", priority: "week" },
+        { owner: "蔡阿達", text: "制定追蹤網址與 Prompt 數量限制的遊戲規則", priority: "week" },
+        { owner: "蔡阿達", text: "負責過渡期人工設定追蹤項目及結案報告整理", priority: "week" },
+        { owner: "何建彤", text: "多品牌帳號管理系統設計與開發，目標五月中完成", priority: "waiting" },
+        { owner: "黃郁雯", text: "Jerry 晉升結果呈報 Mike，啟動人事作業", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-25",
+          title: "人評會-STR",
+          time: "14:31-15:44",
+          duration: "1h13m",
+          participants: "蔡阿達、何建彤、Steven、Jerry、林思吾、黃郁雯",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Jerry 晉升簡報 & 委員提問",
+              exchanges: [
+                { speaker: "Jerry", role: "other", label: "後端工程師", text: "團隊目標需貼齊公司願景，避免成員感覺工作無意義。我強調的是知識分享，避免關鍵技術集中於個別成員。" },
+                { speaker: "Steven", role: "other", label: "管理層", text: "Jerry 在阿物及前兩家公司均有後端主管經驗，管理規模約五至十人，技術上負責大流量效能優化，風格適合穩定現有團隊。" },
+                { speaker: "林思吾", role: "other", label: "委員", text: "我們會補足團隊人力，先透過評議程序認識 Jerry，投票結果四位委員均同意晉升。" }
+              ]
+            },
+            {
+              topic: "AI 文案審核 & 商業化流程",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我建議以人工設定帳號及追蹤網址，設定固定期限結案，減少頻繁調整造成的管理負擔。現階段先以人工方式過渡，業務端與客戶溝通限制與規則。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "多品牌管理複雜度高，需考慮客戶頻繁調整需求的操作難度，建議未來以 API 或資料探索介面提升管理效率。" },
+                { speaker: "蔡阿達", role: "ada", text: "先以人工方式處理過渡期，確保服務可行且成本可控。AI 產出英文初稿需驗證品質，避免客戶因 AI 生成內容不符而產生爭議。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P11: Jack En 攝影 × 網站建置 × AI 影像 ======
+    {
+      id: "jack-en-partner",
+      name: "Jack En 攝影 × 網站建置 × AI 影像合作",
+      icon: "📸",
+      category: "partner",
+      lastUpdated: "2026-03-25",
+      summary: "攝影師 Jack En 洽談個人作品集網站建置，同步介紹客戶引線機會，並探索 AI 影像技術合作",
+      keyPoints: [
+        "Jack En 主業企業活動即時拍攝，客戶含高雄大型營造廠（合作逾 6 年）",
+        "網站需求：作品集集中管理 + 線上預約，以<strong>模板 + AI 排版</strong>為主",
+        "MarsZ Chen 提供模板版與客製化版兩種報價方案",
+        "<strong>蔡阿達協助引介</strong>有即時拍攝需求的企業活動客戶",
+        "同步推進<strong>奇美博物館網站改版</strong>報價（MarsZ Chen 負責）",
+        "計劃邀請 AI 生成內容廠商來分享，探索合作機會"
+      ],
+      chips: [
+        { icon: "💰", text: "基本出場 3,000" },
+        { icon: "⏱️", text: "時薪 2,000" },
+        { icon: "🌐", text: "單語系架設" },
+        { icon: "🤖", text: "AI 影像技術" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "協助留意並推介有即時拍攝需求的企業活動客戶給 Jack En", priority: "week" },
+        { owner: "蔡阿達", text: "下週安排邀請 AI 生成內容廠商來賓分享", priority: "week" },
+        { owner: "蔡阿達", text: "協助 MarsZ Chen 與奇美博物館客戶溝通報價方案", priority: "week" },
+        { owner: "Jack En", text: "整理網站各頁面 section 及排版需求，提供參考範例給 MarsZ Chen", priority: "week" },
+        { owner: "MarsZ Chen", text: "製作 Jack En 網站報價單（模板版 + 客製化版）", priority: "waiting" },
+        { owner: "MarsZ Chen", text: "完成奇美博物館網站改版報價單", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-25",
+          title: "Jack En × awoo 網站建置洽談",
+          time: "12:59-14:14",
+          duration: "1h15m",
+          participants: "蔡阿達、Jack En、MarsZ Chen",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "攝影業務 & 客戶開發策略",
+              exchanges: [
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "我客戶多為有自己網站的企業，近期簽約一間高雄大型營造廠，合作超過六年，主要承接公共工程標案。我主打的是企業活動拍攝，尤其是需即時提供照片以利社群曝光的客戶。" },
+                { speaker: "蔡阿達", role: "ada", text: "你主打的 AI 推薦優化跟 SEO 有差異，仍有切入機會。我願意協助推廣與留意相關客戶，有即時拍攝需求的企業活動我幫你介紹。" }
+              ]
+            },
+            {
+              topic: "網站架設需求討論",
+              exchanges: [
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "我希望把分散的作品集中於一個網站，考慮加入線上預約功能。照片可壓縮至 3-5MB，之後再討論容量與存放成本。" },
+                { speaker: "MarsZ Chen", role: "other", label: "MAS", text: "先提供需求與喜好範例，利用 AI 協助排版。以模板為主可降低成本，後台操作我會教導你自行上稿管理，除非涉及排版或配色調整才需技術支援。" },
+                { speaker: "蔡阿達", role: "ada", text: "先確認單語系架設，多語系未來再評估擴充，把基礎做好最重要。" }
               ]
             }
           ]
