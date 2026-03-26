@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-03-25T19:00:00",
-  dateLabel: "2026/03/25（三）",
+  lastUpdated: "2026-03-26T19:00:00",
+  dateLabel: "2026/03/26（四）",
   stats: {
-    meetings: 9,
-    projects: 11,
+    meetings: 11,
+    projects: 12,
     partners: 4,
-    internal: 2,
+    internal: 3,
     clientCompany: 4,
-    todos: 33
+    todos: 40
   },
 
   projects: [
@@ -184,25 +184,63 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-03-24",
-      summary: "目標下修 20%，獎金邏輯統一，AE/CS 獎金不再重疊",
+      lastUpdated: "2026-03-26",
+      summary: "獎金基準升至 60、季度加權係數確定，下週阿達與業務佈達",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
         "AE 與 CS <strong>獎金邏輯統一</strong>，由 SS 團隊負責，避免重疊",
         "GO 產品獎金比例高於 AMP",
-        "達成率低於 60% 進入 PIP"
+        "達成率低於 60% 進入 PIP",
+        "獎金基準由 50 調升為 <strong>60</strong>，淘汰級距 30-59；達 80 則獎金翻倍",
+        "季度加權係數定案：<strong>第一個月 ×1.1 / 第二個月 ×1.0 / 第三個月 ×0.9</strong>，鼓勵提前衝刺",
+        "獎金指標改為<strong>季度 MRR（營業額）</strong>，刪除半年獎金及跨售重疊",
+        "獎金預算約 430 萬，最高不超過 200 萬",
+        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
         { icon: "💰", text: "4,800萬/年" },
-        { icon: "⚠️", text: "PIP < 60%" }
+        { icon: "⚠️", text: "PIP < 60%" },
+        { icon: "🎯", text: "基準 60" },
+        { icon: "⚖️", text: "加權 1.1/1.0/0.9" },
+        { icon: "💵", text: "預算 ≤200萬" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "確定調整後的個人業績目標數字，發給團隊", priority: "today" },
-        { owner: "蔡阿達", text: "與 Mike、小偉確認獎金邏輯統一細節", priority: "week" }
+        { owner: "蔡阿達", text: "與 Mike、小偉確認獎金邏輯統一細節", priority: "week" },
+        { owner: "Leo", text: "調整獎金方案版本，刪除跨售重疊及半年獎金，淘汰基準改為 60", priority: "week" },
+        { owner: "Winny Chiang", text: "修改阿達獎金辦法 wording，確保內容清楚並同步群組", priority: "week" },
+        { owner: "蔡阿達", text: "下週與業務佈達新獎金方案", priority: "week" },
+        { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-26",
+          title: "獎金辦法討論",
+          time: "14:11",
+          duration: "19m",
+          participants: "Winny Chiang、廖郁芳、Anne Chang、藍文甫、Leo、蔡阿達",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "獎金基準與加權係數確定",
+              exchanges: [
+                { speaker: "Winny Chiang", role: "other", label: "管理層", text: "老闆決定將業務獎金基準由 50 調整為 60，將獎金級距改為 60 到 79，淘汰級距為 30 到 59。為避免業務只在季末衝刺，提出依季度月份給予不同加權係數。" },
+                { speaker: "廖郁芳", role: "other", label: "內部", text: "加權係數建議為 1.1、1.0、0.9，保持總和為 3，讓業務有衝勁。" },
+                { speaker: "Anne Chang", role: "other", label: "內部", text: "若業務在第三個月無望，可能會推遲到下一季第一個月簽約以獲得較高加成。" },
+                { speaker: "Winny Chiang", role: "other", label: "管理層", text: "仍鼓勵提前完成，第三個月獎金不會有加權，就是要扣減 0.1 避免季末衝刺。" }
+              ]
+            },
+            {
+              topic: "獎金指標改為營業額",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "續約率指標不準確，因客戶專案數量及品質不一，改以營業額作為獎金指標，涵蓋所有收入，包含新客戶開發及帳款回收。" },
+                { speaker: "Anne Chang", role: "other", label: "內部", text: "客戶流失可由新客戶收入補足，營業額指標更能反映整體業績。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "業務需管理好帳款，避免續約但帳款未收回的情況。ST 組以獎勵方式發放，CW 組獨立計算，均以營業額為基準。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE Team 週會",
@@ -587,6 +625,63 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "我建議以人工設定帳號及追蹤網址，設定固定期限結案，減少頻繁調整造成的管理負擔。現階段先以人工方式過渡，業務端與客戶溝通限制與規則。" },
                 { speaker: "何建彤", role: "other", label: "彤²", text: "多品牌管理複雜度高，需考慮客戶頻繁調整需求的操作難度，建議未來以 API 或資料探索介面提升管理效率。" },
                 { speaker: "蔡阿達", role: "ada", text: "先以人工方式處理過渡期，確保服務可行且成本可控。AI 產出英文初稿需驗證品質，避免客戶因 AI 生成內容不符而產生爭議。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P12: 行銷渠道數據整合 & 預算會議 ======
+    {
+      id: "mkt-data-report",
+      name: "行銷渠道數據整合 & 預算會議準備",
+      icon: "📊",
+      category: "internal",
+      lastUpdated: "2026-03-26",
+      summary: "跨部門協作 Q1 報告 — 依渠道拆分 MQL/SQL 轉換率，支援週一預算會議",
+      keyPoints: [
+        "麥可要求跨部門協作製作<strong>1-3月行銷漏斗報告</strong>，週一前需完成",
+        "需依渠道區分 MQL 與 SQL 數量及轉換率（GO 建檢 / GO Switch / 官網聯絡等）",
+        "Angelline 承諾<strong>3/27 中午前</strong>提供 summary table + raw data",
+        "蔡阿達確認只需各渠道 MQL 轉 SQL 數量與比例，無需完整 raw data",
+        "Angelline 請假，<strong>Libby 代為參加週一預算會議</strong>",
+        "數據量約 300 筆，與 Hotspot 數據人工比對確認正確性"
+      ],
+      chips: [
+        { icon: "📅", text: "3/27 中午 deadline" },
+        { icon: "📈", text: "MQL→SQL 轉換率" },
+        { icon: "🗂️", text: "渠道拆分" },
+        { icon: "📋", text: "週一預算會議" }
+      ],
+      todos: [
+        { owner: "Angelline", text: "3/27 中午前完成各渠道 MQL、SQL 數量及轉換比例整理，提供 summary table + raw data", priority: "today" },
+        { owner: "Libby", text: "3/27 早上與蔡阿達溝通細節，準備週一（3/30）預算會議", priority: "today" },
+        { owner: "蔡阿達", text: "確認 Angelline 數據格式與內容，提供回饋", priority: "today" },
+        { owner: "蔡阿達", text: "週一（3/30）前完成報告準備並參與預算會議", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-26",
+          title: "1:1 Meeting_Libby",
+          time: "17:09",
+          duration: "19m",
+          participants: "蔡阿達、Angelline、Libby",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "行銷渠道數據拆分需求",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "MKT", text: "我建議將 GO 建檢與 GO Switch 產品線拆分，方便後續報告細化。目前已有類似表格但未細拆產品線，需與 Hotspot 數據比對驗證，承諾明日中午前完成並提供給蔡阿達。" },
+                { speaker: "蔡阿達", role: "ada", text: "我只需要各渠道 MQL 及轉成 SQL 的數量與比例，無需完整 Raw Data，方便快速追蹤與分析。官網聯絡跟建檢可以合併，但同意拆分有助於分析。" },
+                { speaker: "Angelline", role: "other", label: "MKT", text: "麥可關注的重點是從源頭開始追蹤各渠道的 Lead 轉換至 SQL 及結單情況，強調需從行銷漏斗上層開始分析。" }
+              ]
+            },
+            {
+              topic: "預算會議與跨部門協作",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "MKT", text: "麥可首次要求跨部門協作報告，時間較晚通知，造成行銷端時間壓力。我因個人行程無法全程參與，將由 Libby 協助完成報告製作，並安排明日上午與蔡阿達溝通細節。" },
+                { speaker: "蔡阿達", role: "ada", text: "行銷端負責 MQL 轉 SQL 的任務，我願意協助解答問題。雙方約週一前完成報告準備。" }
               ]
             }
           ]
