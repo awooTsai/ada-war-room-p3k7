@@ -6,12 +6,12 @@ window.WAR_ROOM_DATA = {
   lastUpdated: "2026-03-27T19:00:00",
   dateLabel: "2026/03/27（五）",
   stats: {
-    meetings: 12,
-    projects: 13,
+    meetings: 13,
+    projects: 15,
     partners: 4,
-    internal: 4,
-    clientCompany: 4,
-    todos: 48
+    internal: 5,
+    clientCompany: 5,
+    todos: 70
   },
 
   projects: [
@@ -127,31 +127,37 @@ window.WAR_ROOM_DATA = {
       ]
     },
 
-    // ====== P3: SeaMeet ======
+    // ====== P3: SeaMeet / Simit ======
     {
       id: "seameet",
-      name: "SeaMeet — 全公司 AI 會議助理導入",
+      name: "SeaMeet / Simit — AI 會議助理導入 & 採購",
       icon: "🎙️",
       category: "partner",
-      lastUpdated: "2026-03-24",
-      summary: "採購 30 帳號七折年約，確認三層階層管理架構",
+      lastUpdated: "2026-03-27",
+      summary: "Simit 採購已談妥價格與授權，結合 Calendar 管理會議週期與摘要分發，四月開始系統升級",
       keyPoints: [
         "團隊 22-23 人，每位 PM 配備 AI 會議助理",
         "支援<strong>三層階層管理</strong>（組長→部門主管→老闆）",
         "逐字稿自動存放 Google Drive，工程師可直接分析商情",
-        "<strong>30 帳號、七折優惠、年約方案</strong>"
+        "<strong>30 帳號、七折優惠、年約方案</strong>",
+        "Simit 採購<strong>已談妥價格與授權</strong>，三個月短期試用",
+        "結合 <strong>Calendar 管理會議週期</strong>與摘要分發",
+        "工程師阿福進行<strong>收帕分析</strong>，產出商城 insight，預計四月開始升級"
       ],
       chips: [
         { icon: "👥", text: "30 帳號" },
         { icon: "💰", text: "七折" },
         { icon: "💵", text: "$49.9×10mo×0.7" },
-        { icon: "🏢", text: "3 層管理" }
+        { icon: "🏢", text: "3 層管理" },
+        { icon: "📅", text: "Calendar 整合" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "建立 LINE 群組協調採購事宜", priority: "today" },
+        { owner: "蔡阿達", text: "建立 LINE 群組協調採購事宜", priority: "week" },
         { owner: "Shao Ho", text: "提供正式報價單", priority: "waiting" },
         { owner: "藍文甫", text: "與老闆確認年約 vs 月付", priority: "waiting" },
-        { owner: "藍文甫", text: "設定 Google Drive 資料夾整合", priority: "waiting" }
+        { owner: "藍文甫", text: "設定 Google Drive 資料夾整合", priority: "waiting" },
+        { owner: "Leo", text: "負責 Simit 系統三個月短期試用及結合 Calendar 管理", priority: "week" },
+        { owner: "Leo", text: "協調工程師阿福進行收帕分析，四月開始升級", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -198,7 +204,10 @@ window.WAR_ROOM_DATA = {
         "獎金預算約 430 萬，最高不超過 200 萬",
         "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告",
         "3/27 AE 會議再確認：<strong>獎金比例最高可達兩倍以上</strong>",
-        "強化收款機制 — CS 應及時發警訊提醒業務，掌握發票與匯款時間點"
+        "強化收款機制 — CS 應及時發警訊提醒業務，掌握發票與匯款時間點",
+        "獎金辦法預計<strong>下週公布</strong>，團隊無離職潮，成員願意配合新制度",
+        "案情盤點約 <strong>200 多家</strong>，預計四月底完成，之後加強外部客戶開發",
+        "Q1 產品發表為市場開拓訊號，<strong>Q2 為關鍵期</strong>"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -216,6 +225,24 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "weekly sync up meeting",
+          time: "11:00-12:28",
+          duration: "1h28m",
+          participants: "蔡阿達、Max（何建彤）、Leo（藍文甫）、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "業績目標與團隊運作現況",
+              exchanges: [
+                { speaker: "Leo", role: "other", label: "Leo", text: "獎金辦法將於下週公布，解決團隊疑慮。案情盤點約 200 多家，預計四月底完成，之後將加強外部客戶開發，目標每月深入參與 20 家客戶會議。" },
+                { speaker: "Max", role: "other", label: "管理層", text: "團隊無離職潮，成員願意配合新制度。Q1 產品發表為市場開拓訊號，Q2 為關鍵期。" },
+                { speaker: "Max", role: "other", label: "管理層", text: "提醒蔡阿達需兼顧業績與提升業務團隊效率，工具開發應服務於業績目標。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-27",
           title: "AE 運轉加速/推動會議",
@@ -302,20 +329,58 @@ window.WAR_ROOM_DATA = {
       name: "媒體經銷新商業模式（赫斯特 + 天下）",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-03-24",
-      summary: "以經銷方式銷售工具 + Prompt + 追蹤結果，MRR 兩個月一期",
+      lastUpdated: "2026-03-27",
+      summary: "媒體廣編稿服務產品化推進 — 關鍵字分析 + AI Prompt 追蹤 + 內容優化，下週 GoToMarket 會議提案",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
-        "不影響季度業績目標",
-        "業務遇到客戶想簽短約時可積極推廣"
+        "蔡阿達分享赫斯特廣編稿服務新模式：<strong>關鍵字分析 + AI Prompt 追蹤 + 內容優化</strong>，三至六個月服務期",
+        "Max 建議將此服務<strong>產品化</strong>並於下週 GoToMarket 會議提出",
+        "Leo 認為此方案適合<strong>媒體代理商推廣</strong>，能有效擴大生態系",
+        "服務期限建議<strong>三個月為合理起步</strong>，考量客戶文章產出流程",
+        "財務流程：一次性開立發票，透過 <strong>REG 系統</strong>登記專案",
+        "業務可兼賣此服務，提升業績與市場佔有率"
       ],
-      chips: [],
+      chips: [
+        { icon: "📰", text: "赫斯特+天下" },
+        { icon: "⏱️", text: "3 個月起" },
+        { icon: "🚀", text: "GoToMarket" },
+        { icon: "📋", text: "REG 登記" }
+      ],
       todos: [
+        { owner: "蔡阿達", text: "下週一 GoToMarket 會議提出媒體廣編稿服務方案", priority: "today" },
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
-        { owner: "蔡阿達", text: "制定經銷模式標準流程 SOP", priority: "week" }
+        { owner: "Max", text: "與產品部門討論銷售佣金機制", priority: "week" },
+        { owner: "蔡阿達 & Leo", text: "協同規劃服務內容、技術分析與 AI 工具應用", priority: "week" },
+        { owner: "Leo", text: "協助討論合約、報價單及發票流程，與財務部門溝通", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "weekly sync up meeting",
+          time: "11:00-12:28",
+          duration: "1h28m",
+          participants: "蔡阿達、Max（何建彤）、Leo（藍文甫）、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "廣編稿服務產品化討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "與赫斯特媒體合作的廣編稿服務新模式，結合關鍵字分析與 AI 提示詞追蹤，提供三至六個月的內容優化及效果追蹤服務。" },
+                { speaker: "Max", role: "other", label: "管理層", text: "此服務較偏向內容撰寫服務，建議脫離傳統 SEO 服務，需產品化以利銷售及佣金計算。" },
+                { speaker: "Leo", role: "other", label: "Leo", text: "此方案對媒體客戶最有價值，能促進媒體與客戶間的合作，建議將重心放在媒體端推廣。" },
+                { speaker: "蔡阿達", role: "ada", text: "此服務可作為媒體廣編稿的加值方案，業務可兼賣此服務，提升業績與市場佔有率。" }
+              ]
+            },
+            {
+              topic: "財務流程與合約管理",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "內部", text: "所有發票申請需透過 REG 系統，報價單與合約需明確區分。針對三個月一次的媒體方案，建議一次性開立發票。" },
+                { speaker: "Anne Chang", role: "other", label: "內部", text: "若方案涉及人力介入，需上 REG 課程並配合公司流程。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE Team 週會",
@@ -810,6 +875,105 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "現在我們有工具，有AI，我們可以主打的是賣工具、賣解決方案。先不要讓客戶覺得要做很多事情很麻煩。" },
                 { speaker: "蔡阿達", role: "ada", text: "如果客戶沒有技術單位，我們就轉變身份——賣工具。工具就是幫他追蹤關鍵字和內容有沒有結果。如果是有規模的網站，就賣工具加文章撰寫。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P14: 代理商政策制定與管理 ======
+    {
+      id: "agent-policy",
+      name: "代理商政策制定與管理",
+      icon: "🤝",
+      category: "company",
+      lastUpdated: "2026-03-27",
+      summary: "Leo 負責制定代理商管理政策初稿，涵蓋激勵機制、客戶衝突協調及媒體池構想",
+      keyPoints: [
+        "Max 強調代理商在接觸<strong>不熟悉客戶群及大型客戶</strong>時非常重要",
+        "由 <strong>Leo 負責制定代理商管理政策初稿</strong>，四月前完成",
+        "政策內容包括：代理商間<strong>協調機制、激勵政策</strong>及 Presale Team 支援",
+        "蔡阿達補充代理商管理重點是<strong>避免代理商間衝突</strong>",
+        "Max 提出建立<strong>媒體池</strong>構想 — 與多家媒體談判取得代理商價格，提升議價能力",
+        "市場定位：<strong>工具 + 顧問服務</strong>，AI 技術使顧問服務可規模化"
+      ],
+      chips: [
+        { icon: "📋", text: "政策初稿 4月" },
+        { icon: "🤝", text: "協調機制" },
+        { icon: "📰", text: "媒體池" },
+        { icon: "🔧", text: "工具+顧問" }
+      ],
+      todos: [
+        { owner: "Leo", text: "完成代理商管理政策初稿，含客戶衝突協調機制與激勵政策", priority: "week" },
+        { owner: "Max", text: "推動與赫斯特等媒體代理商合作，建立媒體池並談判代理價格", priority: "week" },
+        { owner: "蔡阿達", text: "提供代理商衝突協調機制建議與實際案例", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "weekly sync up meeting",
+          time: "11:00-12:28",
+          duration: "1h28m",
+          participants: "蔡阿達、Max（何建彤）、Leo（藍文甫）、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商合作模式與政策制定",
+              exchanges: [
+                { speaker: "Max", role: "other", label: "管理層", text: "工具加顧問服務的市場定位，AI 技術使顧問服務可規模化。代理商在接觸不熟悉客戶群及大型客戶時非常重要。" },
+                { speaker: "蔡阿達", role: "ada", text: "代理商管理重點是避免代理商間衝突，強調協調機制的重要性。" },
+                { speaker: "Max", role: "other", label: "管理層", text: "建立媒體池的構想，透過與多家媒體談判取得代理商價格，提升內部及外部代理商的服務效能。" },
+                { speaker: "Leo", role: "other", label: "Leo", text: "我負責制定代理商管理政策初稿，內容包括代理商間的協調機制、激勵政策及 Presale Team 支援。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P15: 業務開發工具 — 網站內容分析系統 ======
+    {
+      id: "bd-tool",
+      name: "業務開發工具 — 網站內容分析系統",
+      icon: "🔧",
+      category: "internal",
+      lastUpdated: "2026-03-27",
+      summary: "蔡阿達自行開發網站內容分析工具，用 LLM 渲染內容主題分佈，提升業務提案效率",
+      keyPoints: [
+        "工具能<strong>爬取網站內容並分析關鍵字分佈</strong>，快速掌握客戶網站狀況",
+        "用<strong>大語言模型渲染內容主題分佈</strong>，提升業務提案效率",
+        "Max 建議優先用於提升<strong>內部 AE 團隊效率</strong>，後續可推廣給代理商",
+        "與 MMO、GEO 工具邏輯不同，視狀況決定是否整合",
+        "目標：<strong>節省業務開發時間、增加轉單率</strong>"
+      ],
+      chips: [
+        { icon: "🕷️", text: "網站爬取" },
+        { icon: "🤖", text: "LLM 分析" },
+        { icon: "📊", text: "主題分佈" },
+        { icon: "⚡", text: "提案加速" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "持續優化網站內容分析工具，確保穩定性與使用體驗", priority: "week" },
+        { owner: "蔡阿達", text: "優先將工具應用於自家 AE 團隊，評估效果", priority: "week" },
+        { owner: "蔡阿達", text: "評估後續開放代理商使用的可行性", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "weekly sync up meeting",
+          time: "11:00-12:28",
+          duration: "1h28m",
+          participants: "蔡阿達、Max（何建彤）、Leo（藍文甫）、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "工具功能與應用方向",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "這個工具能爬取網站內容並分析關鍵字分佈，幫助業務快速掌握客戶網站狀況，目標是節省業務開發時間、增加轉單率。" },
+                { speaker: "Max", role: "other", label: "管理層", text: "工具開發應聚焦提升自身 AE 團隊效率，並評估代理商使用的可行性。工具開發需服務於業績目標。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "詢問工具與其他現有工具（如 MMO、GEO 工具）整合可能性。" },
+                { speaker: "蔡阿達", role: "ada", text: "與 MMO、GEO 工具邏輯不同，會視狀況決定是否移交整合。持續優化以利多方使用。" }
               ]
             }
           ]
