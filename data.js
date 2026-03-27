@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-03-26T19:00:00",
-  dateLabel: "2026/03/26（四）",
+  lastUpdated: "2026-03-27T19:00:00",
+  dateLabel: "2026/03/27（五）",
   stats: {
-    meetings: 11,
-    projects: 12,
+    meetings: 12,
+    projects: 13,
     partners: 4,
-    internal: 3,
+    internal: 4,
     clientCompany: 4,
-    todos: 40
+    todos: 48
   },
 
   projects: [
@@ -184,8 +184,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-03-26",
-      summary: "獎金基準升至 60、季度加權係數確定，下週阿達與業務佈達",
+      lastUpdated: "2026-03-27",
+      summary: "獎金基準升至 60、季度加權係數確定，AE 會議再次確認目標下修與獎金比例提升",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -196,7 +196,9 @@ window.WAR_ROOM_DATA = {
         "季度加權係數定案：<strong>第一個月 ×1.1 / 第二個月 ×1.0 / 第三個月 ×0.9</strong>，鼓勵提前衝刺",
         "獎金指標改為<strong>季度 MRR（營業額）</strong>，刪除半年獎金及跨售重疊",
         "獎金預算約 430 萬，最高不超過 200 萬",
-        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告"
+        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告",
+        "3/27 AE 會議再確認：<strong>獎金比例最高可達兩倍以上</strong>",
+        "強化收款機制 — CS 應及時發警訊提醒業務，掌握發票與匯款時間點"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -214,6 +216,23 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "AE 運轉加速/推動會議",
+          time: "14:30-17:18",
+          duration: "2h47m",
+          participants: "蔡阿達、Rebecca Chen、蔡毓倫 Aiden、呂紹平 Leon、Bryan Chou",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "業績目標與獎金比例",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "今年業績目標比去年降低，獎金比例提升至最高兩倍以上。" },
+                { speaker: "蔡阿達", role: "ada", text: "收款很重要，要求CS及時發出警訊提醒業務，尤其發票開立與匯款時間點需掌握。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-26",
           title: "獎金辦法討論",
@@ -322,14 +341,17 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-03-24",
-      summary: "10 篇人工 + 7 篇 AI 輔助，品牌知識庫驅動，25% 人工補強",
+      lastUpdated: "2026-03-27",
+      summary: "10 篇人工 + 7 篇 AI 輔助，品牌知識庫驅動，25% 人工補強；英文版 GEO 工具規格化推進",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
         "Leon 建議保留 <strong>25% 人工補強</strong>，維持文章品質與人情味",
         "合約揭露時機：蔡阿達主張合約階段再說明 AI 文章性質",
-        "英文文章需等<strong>五月招募</strong>具英文能力的 writer"
+        "英文文章需等<strong>五月招募</strong>具英文能力的 writer",
+        "英文版 GEO 工具規格化：<strong>15 關鍵字起賣 + 7 篇英文文章</strong>，價格與中文版相近",
+        "英文文章生成結合 <strong>AI + 專家審核</strong>，品質接近人類撰寫",
+        "英文版合約建議<strong>至少 9 個月</strong>"
       ],
       chips: [
         { icon: "📝", text: "17篇/月" },
@@ -342,6 +364,23 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "完成品牌背景資料收集表單", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "AE 運轉加速/推動會議",
+          time: "14:30-17:18",
+          duration: "2h47m",
+          participants: "蔡阿達、Rebecca Chen、蔡毓倫 Aiden、呂紹平 Leon、Bryan Chou",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "英文版 GEO 工具規格化",
+              exchanges: [
+                { speaker: "蔡毓倫 Aiden", role: "other", label: "AE", text: "英文版GEO工具建議規格化，價格可與中文版相同，初期以7篇文章為基準。" },
+                { speaker: "蔡阿達", role: "ada", text: "文章生成結合AI與專家審核，內容接近人類撰寫。合約建議至少9個月，業務需積極說服。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE Team 週會",
@@ -507,15 +546,19 @@ window.WAR_ROOM_DATA = {
       name: "HubSpot Deal 流程 & GEO 資料標記",
       icon: "⚙️",
       category: "company",
-      lastUpdated: "2026-03-24",
-      summary: "新增 Deal Type + Uncategorized 通知 + 副詞審字自動化",
+      lastUpdated: "2026-03-27",
+      summary: "新增 Deal Type + Uncategorized 通知 + 副詞審字自動化 + 固定客戶訪談時段",
       keyPoints: [
         "新增自訂欄位標記 GEO 相關客戶（品牌、代理商、發布會）",
         "新增 Deal Type：<strong>GO 顧問方案 / GO 工具方案</strong>",
         "Uncategorized pipeline 通知發到 <strong>Slack 公共頻道</strong>",
         "Deal 到 30% 時自動建立 Ticket 給副詞團隊審字",
         "工具月費不低於 3 萬，<strong>90 個 Prompt 為甜蜜點</strong>",
-        "後台預計三個月內開發客戶自助改 Prompt 功能"
+        "後台預計三個月內開發客戶自助改 Prompt 功能",
+        "4/1 起固定客戶訪談時段：<strong>週三 15:00-16:00、週四 10:00-12:00</strong>",
+        "業務需將客戶名稱及背景填入共享行事曆",
+        "代理商客戶應由<strong>專屬 CS 負責</strong>，包修改服務報價需合理調整",
+        "代理商需<strong>匿名資料輸出功能</strong>"
       ],
       chips: [
         { icon: "📊", text: "GEO Deal 15筆" },
@@ -528,9 +571,37 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "與副詞團隊約時間討論審字流程", priority: "week" },
         { owner: "蔡阿達", text: "整理客戶常見問題 FAQ 表格", priority: "week" },
         { owner: "蔡阿達", text: "確認帳號共用與資料匯出功能的技術限制", priority: "week" },
-        { owner: "Anne", text: "約時間討論 CS 相關流程與條款細節", priority: "waiting" }
+        { owner: "Anne", text: "約時間討論 CS 相關流程與條款細節", priority: "waiting" },
+        { owner: "蔡阿達", text: "4/1 起落實固定客戶訪談時段（週三 15-16、週四 10-12）", priority: "week" },
+        { owner: "Bryan Chou", text: "增加潛在客戶接洽數量，善用網站健檢報告提案", priority: "week" },
+        { owner: "蔡毓倫 Aiden", text: "協助 Bryan 參與部分客戶會議", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "AE 運轉加速/推動會議",
+          time: "14:30-17:18",
+          duration: "2h47m",
+          participants: "蔡阿達、Rebecca Chen、蔡毓倫 Aiden、呂紹平 Leon、Bryan Chou",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "固定客戶訪談時段與代理商管理",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "從4/1起每週三下午3-4點、週四上午10-12點為固定客戶訪談時段，業務需將客戶名稱及背景填入共享行事曆。" },
+                { speaker: "蔡阿達", role: "ada", text: "代理商客戶應由專屬CS負責，包修改服務報價需合理調整，代理商需匿名資料輸出功能。" }
+              ]
+            },
+            {
+              topic: "客戶提案策略",
+              exchanges: [
+                { speaker: "Bryan Chou", role: "other", label: "AE", text: "部分客戶對提案反應正面但缺乏明確合作誘因。" },
+                { speaker: "蔡阿達", role: "ada", text: "用網站健檢報告指出問題，激發客戶需求。首次提案需讓客戶感受到迫切合作必要性。" },
+                { speaker: "蔡阿達", role: "ada", text: "現階段為公司黃金十年，資源豐富，應把握機會提升業績。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE ↔ BA Meeting",
@@ -682,6 +753,63 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Angelline", role: "other", label: "MKT", text: "麥可首次要求跨部門協作報告，時間較晚通知，造成行銷端時間壓力。我因個人行程無法全程參與，將由 Libby 協助完成報告製作，並安排明日上午與蔡阿達溝通細節。" },
                 { speaker: "蔡阿達", role: "ada", text: "行銷端負責 MQL 轉 SQL 的任務，我願意協助解答問題。雙方約週一前完成報告準備。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P13: 短約文章撰寫服務 ======
+    {
+      id: "short-contract-writing",
+      name: "短約文章撰寫服務 — 新商品開發",
+      icon: "✍️",
+      category: "internal",
+      lastUpdated: "2026-03-27",
+      summary: "全新商品概念 — 短約制關鍵字規劃 + 文章撰寫 + GEO 成效追蹤，穩賺不賠低毛利模式",
+      keyPoints: [
+        "蔡阿達提出<strong>短約文章撰寫服務</strong>新商品概念",
+        "目標客群：<strong>網站規模較大且具品牌知名度</strong>的客戶",
+        "服務內容：關鍵字規劃 → 文章撰寫 → 成效追蹤，搭配自家工具追蹤文章被引用情況",
+        "商業模式：<strong>穩賺不賠但毛利率較低</strong>，不需大量 CS 人力維護",
+        "銷售心態轉型：賣工具、賣解決方案，降低客戶導入門檻",
+        "無技術單位客戶 → 賣工具；有規模網站 → <strong>工具 + 文章撰寫</strong>",
+        "下週一與相關部門（Leo、產品、REG、CS）討論包裝與推廣細節"
+      ],
+      chips: [
+        { icon: "📝", text: "短約制" },
+        { icon: "🔑", text: "關鍵字規劃" },
+        { icon: "📊", text: "成效追蹤" },
+        { icon: "💡", text: "低毛利穩賺" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "下週一與 Leo、產品、REG、CS 討論短約文章服務包裝與推廣方式", priority: "today" },
+        { owner: "蔡阿達", text: "設計短約文章撰寫服務的商品規格與定價方案", priority: "week" },
+        { owner: "蔡阿達", text: "盤點適合推廣短約服務的目標客戶名單", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-27",
+          title: "AE 運轉加速/推動會議",
+          time: "14:30-17:18",
+          duration: "2h47m",
+          participants: "蔡阿達、Rebecca Chen、蔡毓倫 Aiden、呂紹平 Leon、Bryan Chou",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "新商品短約服務",
+              exchanges: [
+                { speaker: "Rebecca Chen", role: "other", label: "AE", text: "那但只要是短約CS那邊是不是都會說叫AE來負責整個執行" },
+                { speaker: "蔡阿達", role: "ada", text: "這個問題我已經有跟Leo先打過招呼了，下週一會跟他們討論說這個東西要怎麼包，有沒有辦法推，然後產品啊，REG那邊啊，CS維護上。" },
+                { speaker: "蔡阿達", role: "ada", text: "這個方案理論上穩賺不賠的原因是我們就是賣我們最有機會推動的那一塊而已。簡單來說就是先幫他看關鍵字，找prompt，研究他網站內容佔比，找到關鍵字和prompt後再幫他寫文章、追蹤成效。" }
+              ]
+            },
+            {
+              topic: "銷售心態轉型",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "現在我們有工具，有AI，我們可以主打的是賣工具、賣解決方案。先不要讓客戶覺得要做很多事情很麻煩。" },
+                { speaker: "蔡阿達", role: "ada", text: "如果客戶沒有技術單位，我們就轉變身份——賣工具。工具就是幫他追蹤關鍵字和內容有沒有結果。如果是有規模的網站，就賣工具加文章撰寫。" }
               ]
             }
           ]
