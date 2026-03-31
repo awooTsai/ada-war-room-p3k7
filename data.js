@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-03-30T19:00:00",
-  dateLabel: "2026/03/30（一）",
+  lastUpdated: "2026-03-31T19:00:00",
+  dateLabel: "2026/03/31（二）",
   stats: {
-    meetings: 17,
-    projects: 17,
-    partners: 4,
+    meetings: 20,
+    projects: 18,
+    partners: 5,
     internal: 6,
     clientCompany: 6,
-    todos: 88
+    todos: 105
   },
 
   projects: [
@@ -190,8 +190,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-03-30",
-      summary: "營收目標調整至 1.7 億，Q1 表現不佳但 Q2 回升中；預算會議確認一二月達成率 94%/98%，客戶續約率約 56%",
+      lastUpdated: "2026-03-31",
+      summary: "營收目標 1.7 億，Q2 回升中；預算 Review pt.2 聚焦不續約原因分析、業務轉換率瓶頸（SQL→成交僅 10%）及報價單拆分",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -209,26 +209,57 @@ window.WAR_ROOM_DATA = {
         "Q1 業績不理想，但 <strong>Q2 明顯回升</strong>，四月成績樂觀，營收已超越 Q1",
         "利用 <strong>AI 技術自動生成文章與追蹤 Prompt</strong>，提升內容產出效率",
         "推動 <strong>Total Solution</strong> 整合方案（GUO for GPT + Gemini），嘗試拓展英文 SEO",
-        "四五月後續續約挑戰大，<strong>新訂單不足以完全抵銷客戶流失</strong>"
+        "四五月後續續約挑戰大，<strong>新訂單不足以完全抵銷客戶流失</strong>",
+        "3/31 預算 Review pt.2：<strong>MQL→SQL 轉換率 63%，SQL→成交率僅 10%</strong>，存在明顯轉換瓶頸",
+        "報價單決議<strong>顧問服務與工具費用分開列示</strong>，避免客戶混淆及延長續約時間",
+        "推動<strong>軟體顧問模式</strong>轉型，提升客戶轉換成本與服務深度"
       ],
       chips: [
         { icon: "📉", text: "目標 1.7 億" },
         { icon: "💰", text: "Q1 虧損 1,100萬" },
-        { icon: "🇯🇵", text: "合併淨利 1,800萬" },
-        { icon: "🎯", text: "基準 60" },
+        { icon: "🎯", text: "SQL→成交 10%" },
         { icon: "⚖️", text: "加權 1.1/1.0/0.9" },
-        { icon: "📈", text: "Q2 回升中" }
+        { icon: "📈", text: "Q2 回升中" },
+        { icon: "📋", text: "報價單拆分" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "明天下午 2-3 點商談會議（與林思吾協作主持）", priority: "today" },
-        { owner: "蔡阿達", text: "準備 pipeline 現況、客戶流失止血策略及 Q2 趨勢預估", priority: "today" },
+        { owner: "蔡阿達", text: "持續追蹤今年新開單銷售漏斗數據，分析轉換率瓶頸並提出改善方案", priority: "week" },
+        { owner: "蔡阿達", text: "向業務同仁說明報價單拆分（工具 vs 顧問）的重要性", priority: "week" },
         { owner: "蔡阿達", text: "推動 AI 技術應用於內容生成與提案自動化", priority: "week" },
         { owner: "蔡阿達", text: "協調 AE 團隊提前完成業績目標，避免集中季度末", priority: "week" },
-        { owner: "Winny Chiang", text: "將調整後營收目標 1.7 億報表分享主管群", priority: "week" },
+        { owner: "林思吾", text: "下週三前召開會議，明確制定報修單處理方案並通知相關人員", priority: "today" },
+        { owner: "林思吾", text: "指示 Winny 與 Angelina 統計 SQL 達成率與目標落差", priority: "week" },
+        { owner: "藍文甫", text: "協助制定報價單拆分方案，明確標示工具與顧問服務價格", priority: "week" },
         { owner: "Winny Chiang", text: "持續觀察非人事費用使用率，提醒九十月編預算時注意費用時間匹配", priority: "waiting" },
         { owner: "Leo", text: "調整獎金方案版本，刪除跨售重疊及半年獎金", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-31",
+          title: "預算 Review pt.2 — 不續約分析與轉換率優化",
+          time: "14:11-15:21",
+          duration: "1h10m",
+          participants: "蔡阿達、林思吾、藍文甫、Amber Liao、Anne Chang、Libby Cheng、Winny Chiang、Leo",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "業務銷售漏斗與轉換率瓶頸",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "行銷提供的潛在客戶數量充足，但服務方案及文案品質不足影響轉換。MQL 到 SQL 轉換率約 63%，但 SQL 到成交率約 10%，存在明顯轉換瓶頸。" },
+                { speaker: "林思吾", role: "other", label: "管理層", text: "分析不同渠道轉換率，發現 Meta 廣告轉換率較低，指出優化空間。業務需嚴格篩選客戶以提升合作品質。" },
+                { speaker: "Libby Cheng", role: "other", label: "MKT", text: "營收目標及 Event 活動潛在客戶數據表現良好，Event 潛力大，將分開追蹤。" }
+              ]
+            },
+            {
+              topic: "報價單拆分與透明化",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "拆分報價單可避免客戶對總價產生疑慮，並利於財務認列。" },
+                { speaker: "蔡阿達", role: "ada", text: "業務習慣以牌價報價，會向同仁說明拆分原因。顧問服務與工具費用分開列示，避免續約時因價格不清楚產生爭議。" },
+                { speaker: "Anne Chang", role: "other", label: "CS", text: "過去部分案子有拆分但因贈送工具金額為零，導致合併顯示，需調整格式。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-30",
           title: "Staff Meeting TW — 業務開發與 Q2 展望",
@@ -472,8 +503,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-03-27",
-      summary: "10 篇人工 + 7 篇 AI 輔助，品牌知識庫驅動，25% 人工補強；英文版 GEO 工具規格化推進",
+      lastUpdated: "2026-03-31",
+      summary: "預算 Review pt.2 加速推動 AI 產文工具導入，調整文案規格提升產出速度；蔡阿達分享先收集客戶核心資訊再 AI 生成初稿流程",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -482,19 +513,44 @@ window.WAR_ROOM_DATA = {
         "英文文章需等<strong>五月招募</strong>具英文能力的 writer",
         "英文版 GEO 工具規格化：<strong>15 關鍵字起賣 + 7 篇英文文章</strong>，價格與中文版相近",
         "英文文章生成結合 <strong>AI + 專家審核</strong>，品質接近人類撰寫",
-        "英文版合約建議<strong>至少 9 個月</strong>"
+        "英文版合約建議<strong>至少 9 個月</strong>",
+        "3/31 預算 Review pt.2：文案產出一篇需 2-3 週，<strong>調整規格減少精緻文章數量以提升速度</strong>",
+        "蔡阿達分享 AI 產文流程：<strong>先收集客戶品牌核心資訊與問題 → AI 生成初稿 → 客戶回饋修改</strong>",
+        "將現有 AI 產文工具（如 10號 工具）納入使用，避免多頭作業，<strong>YC 納入討論循環</strong>"
       ],
       chips: [
         { icon: "📝", text: "17篇/月" },
         { icon: "👤", text: "25% 人工" },
-        { icon: "🗓️", text: "英文 Writer 五月" }
+        { icon: "🗓️", text: "英文 Writer 五月" },
+        { icon: "⚡", text: "規格調整加速" }
       ],
       todos: [
+        { owner: "藍文甫", text: "召集蔡阿達、小花、Amber 等開會對齊 AI 產文標準與交付品質", priority: "today" },
         { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
+        { owner: "蔡阿達", text: "持續推動 AI 產文機制，先收集客戶核心資訊再由 AI 生成初稿", priority: "week" },
         { owner: "蔡阿達", text: "共同撰寫 AI 文章相關合約條款", priority: "week" },
-        { owner: "蔡阿達", text: "完成品牌背景資料收集表單", priority: "week" }
+        { owner: "林思吾", text: "將 10號 工具納入 AI 產文使用，並將 YC 納入討論循環", priority: "week" },
+        { owner: "Amber Liao", text: "與 Leo 討論文案產出流程，優化文章產出速度與規格", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-31",
+          title: "預算 Review pt.2 — 文案產出與 AI 工具導入",
+          time: "14:11-15:21",
+          duration: "1h10m",
+          participants: "蔡阿達、林思吾、藍文甫、Amber Liao",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "文案產出流程與 AI 工具導入優化",
+              exchanges: [
+                { speaker: "Amber Liao", role: "other", label: "CS", text: "目前文章產出一篇需 2-3 週，若一次送多篇反而延長交付時間，造成專案延宕及續約延遲。" },
+                { speaker: "林思吾", role: "other", label: "管理層", text: "調整文案規格，減少精緻文章數量但保持品質，利用 AI 工具提升產出速度。將現有 AI 產文工具如 10號 工具納入使用，並將 YC 納入討論循環。" },
+                { speaker: "蔡阿達", role: "ada", text: "我的 AI 產文流程是先向客戶收集品牌核心及問題，再由 AI 生成初稿，客戶參與修改，確保內容解決訪客問題。需在會議中協調 AI 產文、用戶體驗及交付標準。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-27",
           title: "AE 運轉加速/推動會議",
@@ -677,8 +733,8 @@ window.WAR_ROOM_DATA = {
       name: "HubSpot Deal 流程 & GEO 資料標記",
       icon: "⚙️",
       category: "company",
-      lastUpdated: "2026-03-30",
-      summary: "Pipeline 數據清理 — 1% 案件拉升至 10%、MRR 與總金額分開管理、重複訂單定義與行銷對齊",
+      lastUpdated: "2026-03-31",
+      summary: "Pipeline 數據清理持續推進；AE 週會決議 Alex 重做 Hasura-Redash 串接、Prompt 產生器優化、101 標案合作推進",
       keyPoints: [
         "新增自訂欄位標記 GEO 相關客戶（品牌、代理商、發布會）",
         "新增 Deal Type：<strong>GO 顧問方案 / GO 工具方案</strong>",
@@ -690,7 +746,11 @@ window.WAR_ROOM_DATA = {
         "Close lost 案件<strong>不應回拉</strong>，應重新創建新 deal",
         "蔡阿達將製作<strong>會議摘要與 Pipeline 表格連結</strong>，方便團隊隨時查看",
         "4/1 起固定客戶訪談時段：<strong>週三 15:00-16:00、週四 10:00-12:00</strong>",
-        "工具月費不低於 3 萬，<strong>90 個 Prompt 為甜蜜點</strong>"
+        "工具月費不低於 3 萬，<strong>90 個 Prompt 為甜蜜點</strong>",
+        "3/31 AE 週會：<strong>Alex 負責重做 Hasura-Redash 串接</strong>，Nicola 學習邏輯後負責維護",
+        "Prompt 產生器優化：客戶反映問句過長，計劃<strong>增加簡潔版與多元 Prompt 選擇</strong>",
+        "關鍵字延伸 Prompt <strong>納入系統</strong>，方便顧問案使用",
+        "展匠 101 標案合作：需提供<strong>金融業、百貨及精品旅遊客戶案例</strong>及證明文件"
       ],
       chips: [
         { icon: "📊", text: "新成交僅 2 筆" },
@@ -705,9 +765,40 @@ window.WAR_ROOM_DATA = {
         { owner: "各 AE", text: "釐清 10% 階段案件未能推進原因，持續跟進", priority: "week" },
         { owner: "蔡阿達", text: "製作會議摘要與 Pipeline 表格連結，收集團隊回饋", priority: "week" },
         { owner: "蔡阿達", text: "4/1 起落實固定客戶訪談時段（週三 15-16、週四 10-12）", priority: "week" },
-        { owner: "Bryan Chou", text: "增加潛在客戶接洽數量，善用網站健檢報告提案", priority: "week" }
+        { owner: "Bryan Chou", text: "增加潛在客戶接洽數量，善用網站健檢報告提案", priority: "week" },
+        { owner: "蔡阿達", text: "調整 Prompt 產生器，增加關鍵字延伸的多元 Prompt 選擇", priority: "week" },
+        { owner: "蔡阿達", text: "確認 GEO3 方案簽約需求，確保折扣後價格符合業權底線", priority: "week" },
+        { owner: "蔡阿達", text: "確認是否可提供去識別化報價單或中性資料證明展匠 101 標案合作關係", priority: "week" },
+        { owner: "呂紹平 Leon", text: "提供 101 標案簡報給蔡阿達審閱", priority: "today" },
+        { owner: "呂紹平 Leon", text: "先與 Winny 溝通 Alex 重做 Hasura-Redash 串接事宜", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-31",
+          title: "AE Team 週會 — 資料串接與系統優化",
+          time: "11:43-12:11",
+          duration: "28m",
+          participants: "蔡阿達、呂紹平、蔡毓倫、Rebecca",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "資料串接與 Prompt 產生器優化",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "AE", text: "目前資料串接工作由 Nicola 負責，若 Alex 進場後可快速完成 Hasura 與 Redash 串接，避免跳來跳去使用 Excel，提升工作效率。" },
+                { speaker: "蔡阿達", role: "ada", text: "應由 Alex 先調整串接邏輯，Nicola 再學習並負責解釋與維護，Nicola 仍有其他工作。" },
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "目前 Prompt 產生器問句過長，客戶不易使用，建議提供更簡潔版本。" },
+                { speaker: "蔡阿達", role: "ada", text: "目前產生器已符合用戶需求，計劃調整使結果更合理且多元。將關鍵字延伸 Prompt 納入系統，方便顧問案使用。" }
+              ]
+            },
+            {
+              topic: "101 標案合作與客戶案例",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "AE", text: "展匠標案需提供金融業、百貨及精品旅遊相關客戶案例及合約影本或證明文件，合作由展匠統一簽約。" },
+                { speaker: "蔡阿達", role: "ada", text: "提供資料合理，建議使用去識別化報價單證明合作關係，增加 101 對公司的信任度。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-30",
           title: "awoo 2026 Q1 Pipeline 戰情儀表板確認",
@@ -1289,8 +1380,8 @@ window.WAR_ROOM_DATA = {
       name: "客戶續約與流失管理",
       icon: "🔄",
       category: "company",
-      lastUpdated: "2026-03-30",
-      summary: "續約率約 56%，流失七大原因以預算縮減與成效不符為主；推動顧問+AI+技術支援提升黏著度",
+      lastUpdated: "2026-03-31",
+      summary: "續約率約 56%，Q1 掉失率目標降至 20-25%；預算 Review pt.2 深入分析不續約三大主因，推動 More Sweet + GEO Suite 增加黏著度",
       keyPoints: [
         "續約率約 <strong>55.9%</strong>，流失主因：預算縮減、策略調整、成效不符預期",
         "CS 團隊持續追蹤有續約可能客戶，嘗試<strong>彈性半年約方案</strong>鞏固收入",
@@ -1299,7 +1390,10 @@ window.WAR_ROOM_DATA = {
         "GO 工具與 AI 服務整合，<strong>Landing Page 增加 QA 內容</strong>提升被推薦機率",
         "加強 <strong>MMP 轉 LMMO</strong> 的轉換力道，提前 2-3 個月與客戶溝通續約方案",
         "四月新案洽談：<strong>LG 及兩個新品牌</strong>；五月預計<strong>資生堂花、The North Face、Vans</strong>",
-        "新訂單不足以完全抵銷流失，需持續縮小缺口以達成年度目標"
+        "新訂單不足以完全抵銷流失，需持續縮小缺口以達成年度目標",
+        "3/31 預算 Review pt.2：排除拉亞後，<strong>營運政策調整、預算問題、成效不彰</strong>為三大主因（各占 25-30%）",
+        "團隊目標將 <strong>Q1 續約掉失率從 40% 降至 20-25%</strong>，透過雙軌策略改善顧問服務與軟體產品結合",
+        "推動導入 <strong>More Sweet 及 GEO Suite</strong> 產品，深化產品化服務以增加客戶黏著度"
       ],
       chips: [
         { icon: "📉", text: "續約率 56%" },
@@ -1315,9 +1409,30 @@ window.WAR_ROOM_DATA = {
         { owner: "林思吾", text: "帶領強泥與小金評估技術修改方案，與 Steven 討論技術支援整合", priority: "week" },
         { owner: "Libby Cheng", text: "評估基礎方案中包含顧問時數的服務包裝，計算人力成本", priority: "week" },
         { owner: "蔡阿達", text: "推動 GO 與 AI 工具整合，Landing Page 增加 QA 及消費者相關內容", priority: "week" },
-        { owner: "Winny Chiang", text: "協助確認二三月應收帳款異常客戶，與 CS/AE 協作完成對帳催收", priority: "week" }
+        { owner: "Winny Chiang", text: "協助確認二三月應收帳款異常客戶，與 CS/AE 協作完成對帳催收", priority: "week" },
+        { owner: "林思吾", text: "推動 More Sweet 與 GEO Suite 產品導入，增加客戶轉換成本與服務深度", priority: "week" },
+        { owner: "林思吾", text: "加速落實修改方案，針對成效不彰客戶提出具體改善措施", priority: "week" },
+        { owner: "Anne Chang", text: "統計不續約客戶中成效不彰、無力修改、不符合期待三項問題的絕對數", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-03-31",
+          title: "預算 Review pt.2 — 不續約原因分析與優化方向",
+          time: "14:11-15:21",
+          duration: "1h10m",
+          participants: "蔡阿達、林思吾、Amber Liao、Anne Chang、Libby Cheng、藍文甫",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "不續約原因分析",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "管理層", text: "排除拉亞後，營運政策調整、預算問題及成效不彰是三大主因，約占 25% 至 30%。需加速解決成效不彰及不符合期待的問題。" },
+                { speaker: "Amber Liao", role: "other", label: "CS", text: "預算不足客戶多為成效平穩但無法增加投入，綠藤為跨預算與營運政策的特殊案例。" },
+                { speaker: "蔡阿達", role: "ada", text: "團隊目標將 Q1 續約率從 40% 掉失率降至 20-25%，透過雙軌策略改善顧問服務與軟體產品結合。推動導入 More Sweet 及 GEO Suite 產品，深化產品化服務以增加客戶黏著度。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-30",
           title: "Staff Meeting TW — 客戶續約與流失分析",
@@ -1350,6 +1465,65 @@ window.WAR_ROOM_DATA = {
                 { speaker: "Anne Chang", role: "other", label: "CS", text: "客戶流失七大原因，主要包括預算縮減、策略調整及成效不符預期。CS 團隊持續追蹤有續約可能的客戶，嘗試半年約等彈性方案鞏固收入。" },
                 { speaker: "蔡阿達", role: "ada", text: "既有客戶續約關鍵在於結合顧問服務與 AI 輔助產文及技術支援。GO 工具與 AI 服務整合，Landing Page 增加 QA 內容，提升被推薦機率。" },
                 { speaker: "林思吾", role: "other", label: "管理層", text: "技術修改困難，計劃由 RD 團隊評估提供技術修改支援，解決客戶網站結構改動難題。需持續優化客戶體驗與跨部門流程，加強行銷與 CS 協作。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P18: 創造力互動媒體 ======
+    {
+      id: "creativity-media",
+      name: "創造力互動媒體 — GEO Suite 工具/技術串接合作",
+      icon: "🎨",
+      category: "partner",
+      lastUpdated: "2026-03-31",
+      summary: "客製化網頁設計公司，擬於建站初期導入 AI SEO 優化；三個月免費試用 GEO Suite，策略聯盟互換 Logo",
+      keyPoints: [
+        "創造力互動媒體主營<strong>客製化網頁設計</strong>，建站平均 3-4 個月，客戶多為大型企業",
+        "客戶常在建站後才提出 SEO 及 AI 搜尋優化需求，導致<strong>二次調整增加成本</strong>",
+        "蔡阿達提出<strong>從建站初期即導入 AI 優化建議</strong>，避免後續重複修改",
+        "合作模式：<strong>策略聯盟、互換品牌 Logo</strong>，提升雙方信任與市場認知",
+        "GEO Suite <strong>三個月免費試用</strong>，工具可由合作夥伴操作使用",
+        "GEO Suite 六月第二階段發表，未來將<strong>擴展代理商合作</strong>",
+        "五大能見度指標作為合作核心追蹤基準"
+      ],
+      chips: [
+        { icon: "🆓", text: "3 個月免費" },
+        { icon: "🤝", text: "策略聯盟" },
+        { icon: "🏷️", text: "Logo 互換" },
+        { icon: "🌐", text: "網頁設計整合" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供 GEO Suite 工具試用方案與五大能見度指標文字資料給陳致祥", priority: "today" },
+        { owner: "蔡阿達", text: "擬出合作意向書並寄送給陳致祥", priority: "today" },
+        { owner: "陳致祥", text: "提供公司名片電子檔以便填寫合作意向書", priority: "waiting" },
+        { owner: "蔡阿達 & 陳致祥", text: "共同挑選 1-2 個客戶專案進行 AI SEO 優化試點", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-03-31",
+          title: "創造力互動媒體 x awoo GEO Suite 工具/技術串接合作初談",
+          time: "15:30-16:02",
+          duration: "32m",
+          participants: "蔡阿達、陳致祥",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "雙方合作模式與 AI SEO 工具應用",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "公司以 SEO 起家，並研發 AI 相關工具 GEO Suite，能追蹤指定關鍵字與 Prompt，分析 AI 對網站的正負面回應，協助優化內容。提供三個月免費試用方案。" },
+                { speaker: "陳致祥", role: "other", label: "創造力", text: "公司主要為客製化網頁設計，平均建置時間約 3 至 4 個月，客戶常在建站後提出 SEO 及 AI 搜尋優化需求，導致需二次調整，增加客戶負擔。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議從建站初期即導入 AI 優化建議，避免後續重複修改。提出策略聯盟方案，互換品牌 Logo 以提升雙方信任與市場認知。" },
+                { speaker: "陳致祥", role: "other", label: "創造力", text: "認同合作能提升客戶附加價值，客戶多為大型企業，重視服務品質與持續優化，合作可節省客戶與雙方時間成本。" }
+              ]
+            },
+            {
+              topic: "後續合作推進",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "GEO Suite 目前為單一品牌帳號管理，六月將有第二階段發表，未來將擴展代理商合作。工具可由合作夥伴操作使用。" },
+                { speaker: "陳致祥", role: "other", label: "創造力", text: "希望未來能有更多類似合作模式，讓客戶在初期即能同步考量 AI 優化需求，減少後續調整成本。" }
               ]
             }
           ]
