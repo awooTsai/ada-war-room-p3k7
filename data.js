@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-03-31T23:30:00",
-  dateLabel: "2026/03/31（二）",
+  lastUpdated: "2026-04-01T19:00:00",
+  dateLabel: "2026/04/01（三）",
   stats: {
-    meetings: 14,
-    projects: 15,
-    partners: 5,
-    internal: 3,
-    clientCompany: 5,
-    todos: 55
+    meetings: 18,
+    projects: 19,
+    partners: 6,
+    internal: 4,
+    clientCompany: 7,
+    todos: 72
   },
 
   projects: [
@@ -322,31 +322,36 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-03-31",
-      summary: "10 篇人工 + 7 篇 AI 輔助；Prompt 産生器輸出過長需簡化，推動批量産出模式",
+      lastUpdated: "2026-04-01",
+      summary: "文案 n8n 流程啟動 — AI 初稿工具半自動化、素材查證責任歸客戶、精緻文章 vs AI 文章雙軌定價",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
         "Leon 建議保留 <strong>25% 人工補強</strong>，維持文章品質與人情味",
         "合約揭露時機：蔡阿達主張合約階段再說明 AI 文章性質",
         "英文文章需等<strong>五月招募</strong>具英文能力的 writer",
-        "🆕 3/31 AE 週會反映：Prompt 産生器輸出過長，客戶糾結久，需開發<strong>簡潔版 Prompt</strong>",
-        "蔡阿達計劃調整 Prompt 産生器，增加關鍵字延伸多元 prompt，方便顧問案使用",
-        "文案産出目標：從 2-3 週/篇 → 批量産出模式，整合 More Sweet 工具加速"
+        "🆕 4/01 文案 n8n：蔡阿達開發<strong>爬蟲工具一鍵生成初稿</strong>，可同時處理多客戶網站",
+        "合約新增條款：<strong>素材查證責任歸客戶</strong>，awoo 僅提供參考內容，不負查證義務",
+        "雙軌定價策略：<strong>精緻文章</strong>（價格較高）+ <strong>AI 輔助文章</strong>（較低費用）",
+        "工具付費模式：公司共用帳號共享 AI API 月費，以節省成本",
+        "資料管理：客戶資料以<strong>客戶名稱分類資料夾</strong>，方便文案搜尋管理"
       ],
       chips: [
         { icon: "📝", text: "17篇/月" },
         { icon: "👤", text: "25% 人工" },
         { icon: "🗓️", text: "英文 Writer 五月" },
-        { icon: "⚠️", text: "Prompt 太長需簡化" }
+        { icon: "⚠️", text: "素材查證→客戶責任" },
+        { icon: "🤖", text: "一鍵生成初稿工具" }
       ],
       todos: [
         { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
-        { owner: "蔡阿達", text: "共同撰寫 AI 文章相關合約條款", priority: "week" },
-        { owner: "蔡阿達", text: "完成品牌背景資料收集表單", priority: "week" },
-        { owner: "蔡阿達", text: "開發 Prompt 産生器簡潔版，符合客戶實際使用習慣（短 prompt）", priority: "week" },
-        { owner: "蔡阿達", text: "調整 Prompt 産生器，增加關鍵字延伸多元 prompt，納入系統供顧問案使用", priority: "week" },
-        { owner: "藍文甫", text: "召集蔡阿達、Amber 等召開 AI 産文標準對齊會議", priority: "week" }
+        { owner: "蔡阿達", text: "開發一鍵 AI 初稿工具，教導文案組使用", priority: "week" },
+        { owner: "蔡阿達", text: "持續優化爬蟲流程，支援同時多客戶處理", priority: "week" },
+        { owner: "蔡阿達", text: "共同撰寫 AI 文章相關合約條款（含素材查證責任條款）", priority: "week" },
+        { owner: "蔡阿達", text: "持續測試英文 AI 工具，改善文法與句型品質", priority: "week" },
+        { owner: "廖淑芬", text: "協助統籌現有及新客戶資料整理，以客戶名稱分類資料夾", priority: "week" },
+        { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程（4/15 起）", priority: "waiting" },
+        { owner: "藍文甫", text: "合約新增素材查證責任條款，並確認 AI 文章相關說明", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -400,6 +405,48 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "目前産生器已符合用戶需求，計劃調整增加多元性。我不太確定那邊有沒有比較簡潔的版本。" },
                 { speaker: "Rebecca", role: "other", label: "AE", text: "工具可輔助 prompt 決策，我會開始使用相關流程。" },
                 { speaker: "蔡阿達", role: "ada", text: "同意將關鍵字延伸 prompt 納入系統，方便顧問案與客戶查看。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-04-01",
+          title: "文案 n8n 產出流程優化會議",
+          time: "15:00",
+          duration: "1h05m",
+          participants: "蔡阿達、藍文甫（Leo）、廖淑芬（小花）、Anne Chang、Rica",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "爬蟲一鍵工具介紹",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我做了一個爬蟲工具，可以一鍵抓取客戶網站資料，直接生成文章初稿。可以同時處理多個客戶的網站，不用每次都手動複製貼上。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "這樣文案的效率應該可以提高不少，那品質管控怎麼做？" },
+                { speaker: "蔡阿達", role: "ada", text: "AI 生成之後還是需要人工審核，我們定位是半自動化，不是全自動。人工的部分就是確保語氣和客戶品牌調性吻合。" }
+              ]
+            },
+            {
+              topic: "素材查證責任歸屬",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "如果客戶提供的資料有誤，AI 又把它寫進文章裡，這個責任是誰的？" },
+                { speaker: "蔡阿達", role: "ada", text: "合約要加一條：素材查證責任歸客戶。我們是根據客戶提供的資料來生成，我們只是工具，不負責查證資料正確性。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "這個合理，我來協助把這條加進標準合約裡。" }
+              ]
+            },
+            {
+              topic: "雙軌定價策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我建議分兩種文章：精緻文章跟 AI 輔助文章，定價不一樣。讓客戶自己選，透明一點。" },
+                { speaker: "Anne Chang", role: "other", label: "文案", text: "那精緻文章是指完全人工撰寫嗎？還是還是有 AI 輔助？" },
+                { speaker: "蔡阿達", role: "ada", text: "精緻文章也可以用 AI 輔助，但人工投入比例更高，定價反映那個差異。重點是跟客戶說清楚。" }
+              ]
+            },
+            {
+              topic: "資料管理與工具費用共攤",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "現在文案的客戶資料都是散的，很難找。" },
+                { speaker: "蔡阿達", role: "ada", text: "以後用客戶名稱建立資料夾，所有相關素材都放在裡面。我跟小花確認一下現有客戶的整理方式。" },
+                { speaker: "蔡阿達", role: "ada", text: "AI API 費用公司共用一個帳號，月費大家分攤，不用每個人都買，這樣最省。" }
               ]
             }
           ]
@@ -950,6 +997,153 @@ window.WAR_ROOM_DATA = {
                 { speaker: "Jack En", role: "other", label: "攝影師", text: "我希望把分散的作品集中於一個網站，考慮加入線上預約功能。照片可壓縮至 3-5MB，之後再討論容量與存放成本。" },
                 { speaker: "MarsZ Chen", role: "other", label: "MAS", text: "先提供需求與喜好範例，利用 AI 協助排版。以模板為主可降低成本，後台操作我會教導你自行上稿管理，除非涉及排版或配色調整才需技術支援。" },
                 { speaker: "蔡阿達", role: "ada", text: "先確認單語系架設，多語系未來再評估擴充，把基礎做好最重要。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P12: 全網行銷 × awoo GEO ======
+    {
+      id: "quanwang-geo",
+      name: "全網行銷 × awoo GEO 顧問合作",
+      icon: "🌐",
+      category: "client",
+      lastUpdated: "2026-04-01",
+      summary: "生活娛樂網/全網行銷洽談 GEO 顧問服務，預算 60-100 萬/年，5 或 7 月 UX 初版後介入",
+      keyPoints: [
+        "客戶：游怡嘉（全網行銷）代理 生活娛樂網，主業網站流量變現",
+        "預算規模 <strong>60-100 萬/年</strong>，正式進場時機待 UX 初版完成（5 或 7 月）",
+        "蔡阿達以 <strong>GEO 顧問身份</strong>切入，不走傳統 SEO 套件",
+        "客戶現況：SEO 有在做但成效不確定，對 AI 搜尋趨勢有疑慮",
+        "下一步：提供 GEO 診斷報告 + 顧問方案報價"
+      ],
+      chips: [
+        { icon: "💰", text: "60-100萬/年" },
+        { icon: "📅", text: "介入時機 5/7月" },
+        { icon: "🎯", text: "GEO 顧問" },
+        { icon: "🌟", text: "生活娛樂網" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "準備 GEO 診斷報告，針對生活娛樂網分析 AI 搜尋曝光現況", priority: "week" },
+        { owner: "蔡阿達", text: "提供顧問方案報價（對應 60-100 萬預算區間）", priority: "week" },
+        { owner: "蔡阿達", text: "與游怡嘉確認 UX 初版完成時程（5 月或 7 月），排定正式會議", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-01",
+          title: "全網行銷 × awoo GEO 洽談",
+          time: "10:00",
+          duration: "45m",
+          participants: "蔡阿達、游怡嘉（全網行銷）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "客戶需求與預算確認",
+              exchanges: [
+                { speaker: "游怡嘉", role: "other", label: "全網行銷", text: "我們現在網站流量有在做 SEO，但不確定 AI 搜尋時代有沒有影響。預算大概在 60 到 100 萬這個區間，看服務內容而定。" },
+                { speaker: "蔡阿達", role: "ada", text: "我建議從 GEO 顧問的角度切入，先幫你做一份診斷報告，看你現在在 AI 搜尋裡的曝光狀況，再來討論要做什麼。" }
+              ]
+            },
+            {
+              topic: "進場時機討論",
+              exchanges: [
+                { speaker: "游怡嘉", role: "other", label: "全網行銷", text: "我們的 UX 還在改版，可能 5 月或 7 月才有初版，那時候再正式開始比較合適。" },
+                { speaker: "蔡阿達", role: "ada", text: "沒問題，UX 初版出來我們再來談細節。現在可以先讓我看一下你們現在的網站，我幫你預先診斷一下。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P13: BNI 行銷小聚 ======
+    {
+      id: "bni-marketing-chain",
+      name: "BNI 行銷小聚 — 行銷開店產業鏈",
+      icon: "🤝",
+      category: "bni",
+      lastUpdated: "2026-04-01",
+      summary: "BNI 行銷產業鏈每週三午餐小聚，串連攝影/影片/設計/開店等夥伴，互相引薦合作機會",
+      keyPoints: [
+        "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
+        "核心成員：蔡阿達、遙空映畫、張張（設計）、楊翔淵、June Enter",
+        "目標：行銷產業鏈互相引薦，累積合作案例",
+        "蔡阿達為<strong>主要召集人</strong>，負責維持節奏與主題引導"
+      ],
+      chips: [
+        { icon: "📅", text: "每週三 13:00" },
+        { icon: "👥", text: "5 位核心成員" },
+        { icon: "🔗", text: "產業鏈串接" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "持續召集每週行銷小聚，輪流分享近期合作案例", priority: "week" },
+        { owner: "蔡阿達", text: "整理可引薦機會清單，主動媒合成員專長與客戶需求", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-01",
+          title: "BNI 行銷小聚 04/01",
+          time: "13:00",
+          duration: "45m",
+          participants: "蔡阿達、遙空映畫、張張、楊翔淵、June Enter",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "近期合作機會分享",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "這週有幾個客戶有攝影需求，我幫大家記著，有合適的就互相引薦。" },
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "我最近接了幾個企業宣傳影片，有幾個客戶也在問有沒有文案可以配合，可以互相介紹。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P14: GEM 關鍵字研究工具 ======
+    {
+      id: "gem-keyword-tool",
+      name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
+      icon: "🔑",
+      category: "tools",
+      lastUpdated: "2026-04-01",
+      summary: "從貝卡灣昂萬會議衍生的內部工具需求：一鍵爬取客戶網站，自動生成關鍵字研究背景報告",
+      keyPoints: [
+        "蔡阿達在 貝卡灣昂萬 會議中現場 Demo GEM 工具，獲客戶正面回饋",
+        "工具流程：輸入客戶網址 → 爬取網站內容 → 生成關鍵字研究背景報告",
+        "目標用戶：AE 顧問在提案前快速建立客戶背景知識",
+        "費用明確化：工具費 <strong>9,000 元</strong>，獨立列於報價單",
+        "下一步：完善爬蟲穩定性，擴展支援英文網站"
+      ],
+      chips: [
+        { icon: "💰", text: "工具費 9K" },
+        { icon: "🤖", text: "一鍵爬蟲" },
+        { icon: "📊", text: "背景報告生成" },
+        { icon: "🎯", text: "AE 提案輔助" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "完善 GEM 爬蟲工具穩定性，確保多客戶同時處理不出錯", priority: "week" },
+        { owner: "蔡阿達", text: "制定工具費報價標準（9K 基礎），更新至報價單模板", priority: "week" },
+        { owner: "蔡阿達", text: "測試英文網站爬取能力，改善英文關鍵字研究報告品質", priority: "week" },
+        { owner: "Rebecca", text: "將 GEM 工具費 9K 明確寫入貝卡灣昂萬報價單", priority: "today" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-01",
+          title: "貝卡灣昂萬 × Rebecca × 蔡阿達 — GEM 工具介紹",
+          time: "14:00",
+          duration: "30m",
+          participants: "蔡阿達、Rebecca Chen、貝卡灣昂萬客戶",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GEM 工具 Demo 與報價明確化",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我來示範一下 GEM 工具，輸入你們的網址，它自動去爬你們的網站，然後生成一份關鍵字研究的背景報告，這樣我們提案的時候可以更快速、更有針對性。" },
+                { speaker: "Rebecca", role: "other", label: "AE", text: "客戶之前有提到拓字流程延誤，這個工具可以解決一部分問題，我建議把工具費獨立列出來，不要包在服務費裡面，這樣比較清楚。" },
+                { speaker: "蔡阿達", role: "ada", text: "對，工具費就是 9,000 元，單獨列在報價單，客戶看得清楚，我們也方便解釋工具的價值。英文文章的部分我們也在持續推動，後續再更新。" }
               ]
             }
           ]
