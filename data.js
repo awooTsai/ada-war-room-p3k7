@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-01T19:00:00",
-  dateLabel: "2026/04/01（三）",
+  lastUpdated: "2026-04-02T20:00:00",
+  dateLabel: "2026/04/02（四）",
   stats: {
-    meetings: 18,
-    projects: 19,
-    partners: 6,
-    internal: 4,
+    meetings: 23,
+    projects: 24,
+    partners: 10,
+    internal: 5,
     clientCompany: 7,
-    todos: 72
+    todos: 90
   },
 
   projects: [
@@ -1102,7 +1102,282 @@ window.WAR_ROOM_DATA = {
       ]
     },
 
-    // ====== P14: GEM 關鍵字研究工具 ======
+    // ====== P20: 崴浤（威宏）× awoo GEO Suite 合作 ======
+    {
+      id: "wai-hong-partner",
+      name: "崴浤（威宏）× awoo GEO Suite 合作洽談",
+      icon: "🏢",
+      category: "partner",
+      lastUpdated: "2026-04-02",
+      summary: "數位行銷代理商崴浤初次接觸，以威宏自家網站試用 GEO Suite，目標建立代理商合作模式",
+      keyPoints: [
+        "蔡富傑（威宏）表示市場少見類似工具，對推廣及服務有幫助",
+        "<strong>五大 AI 能見度指標</strong>：品牌提及次數、提及機率、佔比、情緒分析、網站引用",
+        "初步共識：<strong>威宏自家網站免費試用</strong>，再討論客戶推廣模式",
+        "合作分工：awoo 主攻技術工具面，威宏專注業務行銷，避免重複人力",
+        "合作初期零元試用，後續再討論報價與利潤分配",
+        "計劃成立專案小組（Slack 或 Line），awoo 即時回應需求"
+      ],
+      chips: [
+        { icon: "🆓", text: "零元試用" },
+        { icon: "📊", text: "5 大 AI 指標" },
+        { icon: "🤝", text: "技術+業務分工" },
+        { icon: "💬", text: "專案小組 pending" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供崴浤 GEO Suite 詳細使用簡報與功能說明", priority: "week" },
+        { owner: "蔡阿達", text: "開放崴浤自家網站使用 GEO Suite 工具（零元試用）", priority: "week" },
+        { owner: "蔡阿達", text: "協助崴浤挑選關鍵字及提示詞，提供網站健檢建議", priority: "week" },
+        { owner: "蔡阿達", text: "建立專案小組（Slack 或 Line），保持即時溝通", priority: "week" },
+        { owner: "雙方", text: "討論合作方案報價結構及利潤分拆細節", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-02",
+          title: "崴浤 × awoo GEO Suite 合作初談",
+          time: "09:59-10:39",
+          duration: "40m",
+          participants: "蔡阿達、蔡富傑（威宏/崴浤）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GEO Suite 介紹與合作意向",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "GEO Suite 核心是追蹤五大 AI 能見度指標，包含品牌被 AI 提及次數、提及機率、佔比、情緒分析及網站被引用數，協助業主了解 AI 推薦狀況。" },
+                { speaker: "蔡富傑", role: "other", label: "崴浤", text: "這個工具在市場上少見，對我們推廣及服務有幫助，如果自行開發需投入大量人力，願意嘗試合作。" },
+                { speaker: "蔡阿達", role: "ada", text: "合作初期先以零元試用讓你體驗工具功能，後續再討論報價及利潤分配細節，我們保持開放態度。" }
+              ]
+            },
+            {
+              topic: "合作模式與分工討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們主攻技術及工具面，你們專注業務行銷，避免重複投入人力，提升市場推廣效率。" },
+                { speaker: "蔡富傑", role: "other", label: "崴浤", text: "B2B 客戶雖品牌需求較低，但更需 AI 推薦背書，我們可以互補各自客群。" },
+                { speaker: "蔡阿達", role: "ada", text: "我提議先成立專案小組，透過 Slack 或 Line 保持溝通，隨時回應你們需求並協助開發支援。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P21: 赫斯特 技術/廣告交換合作 ======
+    {
+      id: "hearst-partner",
+      name: "赫斯特 — AIO 健檢技術/廣告交換合作",
+      icon: "📰",
+      category: "partner",
+      lastUpdated: "2026-04-02",
+      summary: "合作報價單確認，分階段交付 AIO 健檢，L Taiwan 品牌授權條款定稿，Harry Wen 4/2 下午回簽",
+      keyPoints: [
+        "Harry Wen 老闆擔心三個月後才有報告，影響總部決策 → <strong>分階段交付</strong>，每週/兩週回報",
+        "蔡阿達承諾合作開始後 <strong>30 天內完成完整建議書</strong>，持續陪伴調整 AIO 引用問題",
+        "合作案例定義：<strong>合作案例</strong>（非成功案例），避免其他廠商疑慮",
+        "品牌授權限定 <strong>L Taiwan 商標</strong>，每次使用前甲方事前確認",
+        "社群媒體宣傳採<strong>事前審核機制</strong>，避免法務擔憂頻率無法掌控",
+        "電子簽核系統，Harry Wen 預計 4/2 下午完成回簽",
+        "待確認 GEO Suite 中 GPT Gemini 是否包含 Google AIO 模組"
+      ],
+      chips: [
+        { icon: "📅", text: "30 天內建議書" },
+        { icon: "⚖️", text: "L Taiwan 商標" },
+        { icon: "✍️", text: "4/2 回簽" },
+        { icon: "🔄", text: "分階段交付" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "調整報價單，加入分階段交付機制（每週/兩週回報進度）", priority: "today" },
+        { owner: "蔡阿達", text: "合作開始後 30 天內完成完整建議書", priority: "week" },
+        { owner: "蔡阿達", text: "調整授權條款：L Taiwan 商標授權範圍及社群媒體事前審核流程", priority: "today" },
+        { owner: "蔡阿達", text: "確認 GEO Suite 中 GPT Gemini 是否包含 Google AIO 模組，並回覆 Harry Wen", priority: "week" },
+        { owner: "Harry Wen", text: "4/2 下午完成報價單修正並電子回簽", priority: "today" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-02",
+          title: "赫斯特 技術/廣告交換合作細節確認",
+          time: "11:30-11:49",
+          duration: "19m",
+          participants: "蔡阿達、Harry Wen（赫斯特）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "分階段交付與報價單調整",
+              exchanges: [
+                { speaker: "Harry Wen", role: "other", label: "赫斯特", text: "老闆擔心三個月後才有 AI overview 引用與障礙技術分析報告，可能導致總部調整延遲，建議分階段交付，每週或每兩週回報進度。" },
+                { speaker: "蔡阿達", role: "ada", text: "我們在簽約前已持續提供建議，願意配合提前交付。我提議合作起30天內完成完整建議書，並承諾持續陪伴調整，直到問題有效解決。" }
+              ]
+            },
+            {
+              topic: "合作案例定義與品牌授權",
+              exchanges: [
+                { speaker: "Harry Wen", role: "other", label: "赫斯特", text: "法務建議品牌商標授權限定為 L Taiwan 商標，每次使用前需甲方事前確認。合作案例建議稱為合作案例而非成功案例，避免其他廠商質疑。" },
+                { speaker: "蔡阿達", role: "ada", text: "沒問題，我來協助修正文件。社群媒體宣傳採事前審核機制，我們設定文件連結共同修正，盡快完成電子簽核。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P22: Groundhog × awoo 技術合作探索 ======
+    {
+      id: "groundhog-partner",
+      name: "Groundhog × awoo — Martech 站外數據技術合作探索",
+      icon: "🦔",
+      category: "partner",
+      lastUpdated: "2026-04-02",
+      summary: "Groundhog 利用 DSP 廣告請求收集站外瀏覽數據，探索與 awoo SEO/GEO 服務的整合可能性",
+      keyPoints: [
+        "Groundhog（Josh Chen）透過 DSP 廣告請求收集用戶<strong>站外瀏覽行為</strong>，萃取關鍵字與興趣",
+        "每日處理<strong>數十億筆資料</strong>，可揭露用戶常瀏覽站外網站，協助品牌尋找合作部落格",
+        "蔡阿達質疑：如何將潛在意圖直接轉化為客戶眼前可見的 ROI？",
+        "雙方討論 SEO 從被搜尋到<strong>被 AI 推薦</strong>的轉變，Groundhog 也在朝此方向思考",
+        "蔡阿達建議：提供受眾包中的<strong>額外興趣</strong>，增加甲方客戶合作意願",
+        "合作重點在解決客戶問題與提供獨特價值，價格非首要考量"
+      ],
+      chips: [
+        { icon: "📊", text: "數十億筆/日" },
+        { icon: "🎯", text: "站外行為分析" },
+        { icon: "🤝", text: "合作 TBD" },
+        { icon: "💡", text: "AI 推薦趨勢同向" }
+      ],
+      todos: [
+        { owner: "Josh Chen", text: "整理 Martech 產品技術原理與具體案例，提供完整解決方案介紹", priority: "waiting" },
+        { owner: "蔡阿達", text: "評估雙方客戶重疊與合作切入點，提出具體合作需求", priority: "week" },
+        { owner: "雙方", text: "安排後續會議，針對合作方案與技術資源整合深入討論", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-02",
+          title: "Groundhog × awoo 技術合作洽談",
+          time: "14:29-14:58",
+          duration: "29m",
+          participants: "蔡阿達、Josh Chen（Groundhog）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Martech 站外數據技術介紹",
+              exchanges: [
+                { speaker: "Josh Chen", role: "other", label: "Groundhog", text: "我們透過 DSP 廣告投遞過程收集用戶站外瀏覽行為，分析用戶興趣並萃取關鍵字，協助品牌在 SEO 及內容撰寫上擴展長尾關鍵字與主題參考。每日處理數十億筆資料。" },
+                { speaker: "蔡阿達", role: "ada", text: "我在想如何從多樣的站外瀏覽行為中，篩選出與品牌產品相關的興趣？客戶最關心的是投資報酬率和合作績效。" }
+              ]
+            },
+            {
+              topic: "合作價值定位討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前難以將潛在意圖直接轉化為客戶眼前的成效。但可以提供受眾包中除預期需求外的額外興趣，增加甲方客戶的興趣與合作意願。" },
+                { speaker: "Josh Chen", role: "other", label: "Groundhog", text: "認同，只要 ID 能匹配即可提供此類受眾包，也希望藉由 SEO 專家的回饋來調整產品，更符合客戶需求。" },
+                { speaker: "蔡阿達", role: "ada", text: "廣告聯播網的去識別化數據非常珍貴，但如何與客戶需求連結仍需進一步思考。合作重點在於解決客戶問題，價格非首要考量。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P23: Leon BD 同步 — 娛樂城代理商 ======
+    {
+      id: "leon-bd-sync",
+      name: "Leon BD 同步 — 娛樂城代理商 + 四月業務更新",
+      icon: "📋",
+      category: "internal",
+      lastUpdated: "2026-04-02",
+      summary: "Ada 與 Leon 內部同步：娛樂城代理商見面約定 4/8、文章篇數調整、AEMU 四月新單、網站架設",
+      keyPoints: [
+        "娛樂城代理商客戶：代理商信任 Leon，蔡阿達說服後<strong>約 4/8（三）下午5點</strong>復興北路167號見面",
+        "提案策略：<strong>先做好 SEO，再做關鍵字廣告</strong>，Leon 主導跟進",
+        "文章篇數問題：客戶麥可發現簡報20篇 vs 實際17篇差異，需提至下週 Go-to-Market/AECS 週會",
+        "AEMU 四月新單：有新單尚未填報，代理商直接委託<strong>拓字研究</strong>，麥可已簽約",
+        "網站架設外包：委由季輝負責，費用控制在<strong>10 萬以下</strong>，細節待確認"
+      ],
+      chips: [
+        { icon: "📅", text: "4/8 見面" },
+        { icon: "📍", text: "復興北路167號" },
+        { icon: "💰", text: "網站 ≤10萬" },
+        { icon: "📝", text: "拓字研究委託" }
+      ],
+      todos: [
+        { owner: "Leon（呂紹平）", text: "4/8 下午5點至復興北路167號，與代理商及其客戶會面，準備 SEO 提案", priority: "week" },
+        { owner: "Leon（呂紹平）", text: "下週一/二 Go-to-Market 或 AECS 週會提出文章篇數調整至20篇議題", priority: "week" },
+        { owner: "Leon（呂紹平）", text: "確認代理商是否需要正式簽約，並通知蔡阿達網站架設預算細節", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-02",
+          title: "Ada × Leon 內部 BD 同步（李盎灣昂萬會議）",
+          time: "16:32-16:45",
+          duration: "13m",
+          participants: "蔡阿達、呂紹平（Leon）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "娛樂城代理商客戶提案安排",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "這個娛樂城代理商原本不打算找我們提案，但我說服了他，他現在願意帶他的客戶來跟我們見面。提案重點就是先做好 SEO，才能有效進行關鍵字廣告。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "好，我負責跟進，我們下週三下午五點，在復興北路167號見面。" }
+              ]
+            },
+            {
+              topic: "四月業務動態",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "四月有新單但我還沒填報。代理商對我信任，直接委託拓字研究案。麥可已完成簽約，後續代理商可能有合約需求，會再通知你。" },
+                { speaker: "蔡阿達", role: "ada", text: "好，我可以協助資料整理。文章篇數那個問題，下週一或二的週會提出來討論一下，確保跟客戶認知一致。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P24: 艾勝渼 × awoo GO Suite ======
+    {
+      id: "ai-sheng-mi-partner",
+      name: "艾勝渼 — GO Suite AI 能見度分析合作探索",
+      icon: "✨",
+      category: "partner",
+      lastUpdated: "2026-04-02",
+      summary: "張莉欣（艾勝渼）尋找平台合作機會，蔡阿達介紹 GO Suite，主聚焦 AI 能見度，SEO 細節為附加",
+      keyPoints: [
+        "awoo 台灣、日本設有辦公室，約 130 人，<strong>近二十年 SEO 深耕</strong>",
+        "GO Suite 兩週前發表，細分<strong>五大 AI 能見度指標</strong>：品牌提及佔比、聲量好壞、是否被引用",
+        "工具透過爬蟲評估網站 SEO 現況與內容結構，提供優化建議",
+        "艾勝渼目前主要尋找<strong>平台合作機會</strong>，對 GO Suite 運作模式感興趣",
+        "GO Suite 主要呈現 AI 能見度結果，SEO 細節為附加服務",
+        "合作模式待評估，單純訂閱工具價值有限，需探索更具體模式"
+      ],
+      chips: [
+        { icon: "📊", text: "5 大 AI 指標" },
+        { icon: "🤝", text: "平台合作探討" },
+        { icon: "🆓", text: "合作模式 TBD" },
+        { icon: "⏱️", text: "15 min 初談" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "若艾勝渼有客戶需求，請對方提供網址以便後續協助跟進", priority: "waiting" },
+        { owner: "蔡阿達", text: "評估與艾勝渼的具體合作模式與收費方式", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-02",
+          title: "艾勝渼 × awoo GO Suite 技術合作洽談",
+          time: "16:45-17:00",
+          duration: "15m",
+          participants: "蔡阿達、張莉欣（艾勝渼）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GO Suite 介紹與合作可能性",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們公司近二十年專注 SEO 技術，近年因應 AI 趨勢轉向 AI 能見度分析。GO Suite 兩週前發表，能細分五大 AI 能見度指標，協助客戶了解品牌在 AI 上的曝光狀況。" },
+                { speaker: "張莉欣", role: "other", label: "艾勝渼", text: "我目前主要尋找平台合作機會，對 GO Suite 的運作模式感興趣，想了解它是否包含 SEO 其他資訊？" },
+                { speaker: "蔡阿達", role: "ada", text: "GO Suite 平台主要呈現 AI 能見度結果，SEO 細節屬附加服務，若需深入報告可另行製作。若有客戶需求，請提供網址，我們後續協助跟進。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P14 (舊): GEM 關鍵字研究工具 ======
     {
       id: "gem-keyword-tool",
       name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
