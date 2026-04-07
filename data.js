@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-07T19:00:00",
+  lastUpdated: "2026-04-07T20:00:00",
   dateLabel: "2026/04/07（二）",
   stats: {
-    meetings: 25,
+    meetings: 27,
     projects: 24,
     partners: 10,
     internal: 5,
     clientCompany: 7,
-    todos: 93
+    todos: 99
   },
 
   projects: [
@@ -1459,28 +1459,66 @@ window.WAR_ROOM_DATA = {
       name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
       icon: "🔑",
       category: "tools",
-      lastUpdated: "2026-04-01",
-      summary: "從貝卡灣昂萬會議衍生的內部工具需求：一鍵爬取客戶網站，自動生成關鍵字研究背景報告",
+      lastUpdated: "2026-04-07",
+      summary: "4/7 AE 週會全員 Demo：一鍵爬取客戶網站，生成健檢報告＋關鍵字拓展報告，AE 提案殺手鐧",
       keyPoints: [
-        "蔡阿達在 貝卡灣昂萬 會議中現場 Demo GEM 工具，獲客戶正面回饋",
-        "工具流程：輸入客戶網址 → 爬取網站內容 → 生成關鍵字研究背景報告",
-        "目標用戶：AE 顧問在提案前快速建立客戶背景知識",
+        "<strong>4/7 AE 週會全員 Demo</strong>：蔡阿達向 Bryan、Rebecca、Leon、Aiden 介紹工具，獲團隊認可",
+        "工具流程：輸入客戶網址 → 爬取所有頁面 → 生成<strong>健檢報告（提案用）+ 關鍵字拓展報告（拓字用）</strong>",
+        "報告含客戶網站聲量分析（正面/負面訊號），增加提案說服力",
+        "客戶確定關鍵字後，可再跑 <strong>3-5 個 Prompt</strong> 對應消費者旅程，設計互動式選擇工具",
+        "HubSpot 商機推動視圖整合：客戶報告統一放 Company Property，CS/AE 共用",
         "費用明確化：工具費 <strong>9,000 元</strong>，獨立列於報價單",
-        "下一步：完善爬蟲穩定性，擴展支援英文網站"
+        "下一步：完善爬蟲穩定性、英文網站支援、網站內容佔比分析整合"
       ],
       chips: [
         { icon: "💰", text: "工具費 9K" },
         { icon: "🤖", text: "一鍵爬蟲" },
-        { icon: "📊", text: "背景報告生成" },
-        { icon: "🎯", text: "AE 提案輔助" }
+        { icon: "📊", text: "健檢+拓字報告" },
+        { icon: "🎯", text: "AE 週會 Demo ✅" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "完善 GEM 爬蟲工具穩定性，確保多客戶同時處理不出錯", priority: "week" },
-        { owner: "蔡阿達", text: "制定工具費報價標準（9K 基礎），更新至報價單模板", priority: "week" },
+        { owner: "蔡阿達", text: "持續優化爬蟲程式，確保資料準確並產出健檢報告與關鍵字拓展報告供 AE 提案使用", priority: "week" },
+        { owner: "蔡阿達", text: "協助 AE 在客戶進入提案階段時，根據確定關鍵字生成 3-5 個 Prompt 對應消費者旅程", priority: "week" },
+        { owner: "蔡阿達", text: "設計互動式 Prompt 選擇工具，方便 AE 與客戶溝通選擇", priority: "week" },
+        { owner: "蔡阿達", text: "建立 HubSpot 商機推動視圖，並評估是否開放給全團隊查看", priority: "week" },
+        { owner: "蔡阿達", text: "將客戶進展報告、關鍵字拓展報告統整至 HubSpot 公司層級，方便 AE 與 CS 共用", priority: "week" },
+        { owner: "蔡阿達", text: "根據 AE 反饋調整報告配色，減少顏色數量，提升視覺舒適度", priority: "week" },
         { owner: "蔡阿達", text: "測試英文網站爬取能力，改善英文關鍵字研究報告品質", priority: "week" },
-        { owner: "Rebecca", text: "將 GEM 工具費 9K 明確寫入貝卡灣昂萬報價單", priority: "today" }
+        { owner: "Bryan Chou", text: "4/8 上午10點與鉅鹿客戶會議，並協助建立客戶內容資料庫", priority: "today" },
+        { owner: "蔡阿達", text: "安排 4/8 11 點與雅虎會議，討論與天下合作相關事宜", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-07",
+          title: "AE Team 週會 — GEM 工具全員 Demo",
+          time: "11:31-12:36",
+          duration: "1h05m",
+          participants: "蔡阿達、Bryan Chou、Rebecca Chen、呂紹平 Leon、蔡毓倫 Aiden、馬愛雲",
+          docUrl: "https://docs.google.com/document/d/1lxkwSgT5QJJPv57Vsatm2tOJ136PRjHY5Pw2Mvi7TbA/edit",
+          dialogues: [
+            {
+              topic: "GEM 工具介紹與提案流程",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "工具會自動爬取客戶網站所有內容，避免人工誤判，產生網站健檢報告與關鍵字拓展報告，方便 AE 提案時展示客戶網站問題與優化建議。報告含客戶網站在網際網絡上的聲量分析，能呈現正面及負面訊息，增加提案說服力。" },
+                { speaker: "蔡阿達", role: "ada", text: "客戶的關鍵字確定下來以後，我會幫你們再跑另外一支結果，針對客戶所在意的關鍵字幫他跑大概三到五個 prompt 出來，對應不同消費者旅程階段。" },
+                { speaker: "Rebecca Chen", role: "other", label: "AE", text: "兩份報告皆產出，一份用於客戶提案，一份作為內部拓字團隊溝通資料，確保資料完整且靈活運用。" }
+              ]
+            },
+            {
+              topic: "HubSpot 商機管理整合",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我已建立個人專用的商機推動視圖，計畫評估是否開放給全團隊。報告資料將統一放置於客戶公司 property 中，包含進展報告與關鍵字拓展報告，未來 CS 專員也能直接撈取資料，減少重複作業。" }
+              ]
+            },
+            {
+              topic: "鉅鹿客戶教育與 Google Ads 策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "針對想先做 Google Ads 但網站尚未架設的客戶：廣告品質分數由點擊率、關鍵字與內容關聯性及用戶體驗三大指標組成，網站內容不足會導致品質分數低、競價成本高。建議客戶先完善網站內容再投廣告。" },
+                { speaker: "Bryan Chou", role: "other", label: "AE", text: "4/8 上午10點安排與鉅鹿客戶會議，了解需求並說明 SEO 與內容準備的重要性。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-01",
           title: "貝卡灣昂萬 × Rebecca × 蔡阿達 — GEM 工具介紹",
