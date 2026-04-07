@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-02T20:00:00",
-  dateLabel: "2026/04/02（四）",
+  lastUpdated: "2026-04-07T19:00:00",
+  dateLabel: "2026/04/07（二）",
   stats: {
-    meetings: 23,
+    meetings: 25,
     projects: 24,
     partners: 10,
     internal: 5,
     clientCompany: 7,
-    todos: 90
+    todos: 93
   },
 
   projects: [
@@ -515,29 +515,72 @@ window.WAR_ROOM_DATA = {
       name: "MKT 四月聯合 Webinar — GEO × OneAd × 比幣",
       icon: "📣",
       category: "events",
-      lastUpdated: "2026-03-25",
-      summary: "四月聯合 Webinar 演講準備 — 4/13 交簡報、4/16 錄影、4/28 Shopline 場",
+      lastUpdated: "2026-04-07",
+      summary: "線上彩排完成（4/7）— 確認 4/16 實體錄影、4/28 Shopline 場，講師需 4/17 前交簡報",
       keyPoints: [
-        "與 OneAd（數位廣告 AI 應用）、比幣（CRM 會員管理）三方聯合 Webinar",
-        "蔡阿達主講 GEO 相關 AI 搜尋趨勢（30 分鐘）+ 三方 Panel 對談",
-        "錄影流程：先個人演講錄製，再 Panel 錄製；線上彩排先熟悉問答方向",
-        "名單共享、行銷資源交換，每月固定舉辦",
-        "<strong>4/28 Shopline 客戶場</strong>，下午 2:30-4:00，面向 Shopline 既有客戶"
+        "與 OneAd（Jed Lin）、比幣 BBTide（Libby Cheng）三方聯合 Webinar",
+        "蔡阿達主講 GEO／AI 搜尋策略（30 分鐘）+ 三方 Panel 對談",
+        "<strong>4/7 線上彩排完成</strong>：蔡阿達分享品牌 EAT 訊號、GEO Suite、村陸合作新聞稿策略、Prompt 設計與 FAQ",
+        "蔡阿達待辦：優化「關於我們」內容建議、推動 GEO Suite、協調村陸新聞稿合作",
+        "<strong>4/16 實體錄影</strong>，講師需 4/17 前提供簡報；<strong>4/28 Shopline 客戶場</strong>"
       ],
       chips: [
-        { icon: "📅", text: "4/13 簡報初稿" },
+        { icon: "✅", text: "4/7 彩排完成" },
         { icon: "🎬", text: "4/16 實體錄影" },
-        { icon: "🏪", text: "4/28 Shopline" },
-        { icon: "⏱️", text: "30min 演講" }
+        { icon: "📄", text: "4/17 前交簡報" },
+        { icon: "🏪", text: "4/28 Shopline" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "4/13 前提供四月活動演講簡報初稿給 Iris Tsai", priority: "week" },
+        { owner: "蔡阿達", text: "4/17 前提供演講簡報給 Iris Tsai（含 EAT 訊號、GEO Suite、村陸合作、Prompt/FAQ 建議）", priority: "week" },
         { owner: "蔡阿達", text: "4/16 參與實體錄影（個人演講 + Panel 錄製）", priority: "week" },
+        { owner: "蔡阿達", text: "協調與村陸公司合作，協助業主在權威媒體發布新聞稿以提升 AI 曝光", priority: "week" },
         { owner: "蔡阿達", text: "確認 4/28 Shopline 演講是否需夥伴支援", priority: "week" },
-        { owner: "Iris Tsai", text: "提供最新一次活動完整簡報範本給蔡阿達", priority: "waiting" },
-        { owner: "Iris Tsai", text: "安排線上彩排，提前告知講師問答方向", priority: "waiting" }
+        { owner: "Shawn Hung", text: "與夥伴確認合作內容細節後回報（AgentBit 合作）", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-07",
+          title: "awoo 0422 webinar — panel 彩排",
+          time: "15:31-16:13",
+          duration: "42m",
+          participants: "蔡阿達、Libby Cheng、Iris Tsai、Jed Lin、Shawn Hung",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌在 AI 搜尋生態下的策略調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "客戶常以排名作為 KPI，但因使用者行為改變，排名意義降低，品牌需提供精準答案。建議更新「關於我們」頻道，展示成功案例、專業團隊、獎項及認證，強化 EAT 訊號。" },
+                { speaker: "蔡阿達", role: "ada", text: "介紹 GEO Suite 工具，協助品牌透過第三方指標評估自身策略是否有效。" }
+              ]
+            },
+            {
+              topic: "第三方媒體新聞稿與 AI 能見度",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "AI 會檢視網路新聞媒體對品牌的提及，新聞稿具背書效果。介紹與村陸合作，利用三立、亞東森、經濟日報等媒體放送新聞稿，提升 AI 能見度。" }
+              ]
+            },
+            {
+              topic: "關鍵詞延伸至 Prompt 與 FAQ 策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "消費者搜尋從關鍵詞轉向 prompt，品牌需考量消費者旅程各階段的搜尋意圖。推薦撰寫 FAQ，幫助 AI 快速提供消費者所需答案，促進轉換。" }
+              ]
+            },
+            {
+              topic: "AI 廣告演算法與數據策略",
+              exchanges: [
+                { speaker: "Jed Lin", role: "other", label: "OneAd", text: "AI 提供品牌比較資訊，廣告應在消費者深度探索時承接流量。需掌握 AI 搜尋意圖及網站行為數據，結合會員分眾設計與廣告系統放大曝光。" },
+                { speaker: "Shawn Hung", role: "other", label: "AgentBit", text: "廣告平台 AI 演算法不可控，建議品牌提供真實交易數據作為 AI 學習基礎。AgentBit 可透過 prompt 分析業績下滑原因，篩選高價值客戶。" },
+                { speaker: "Libby Cheng", role: "other", label: "BBTide", text: "BBTide 已完成網站及線上線下數據串接，利用 AI 模型預測高價值客戶，與 OneEye 合作結合第一方數據與廣告投放技術提升成效。" }
+              ]
+            },
+            {
+              topic: "彩排結束與後續安排",
+              exchanges: [
+                { speaker: "Libby Cheng", role: "other", label: "MKT", text: "彩排結束，講師可在預錄前隨時調整回答內容與題目。實體錄影日期確認為 4 月 16 日，4 月 17 日前請提交簡報。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-25",
           title: "MKT webinar 流程說明 - with Ada",
@@ -577,33 +620,66 @@ window.WAR_ROOM_DATA = {
     // ====== P8: HubSpot 流程優化 ======
     {
       id: "hubspot-flow",
-      name: "HubSpot Deal 流程 & GEO 資料標記",
+      name: "HubSpot Deal 流程 & 客戶資料統一管理",
       icon: "⚙️",
       category: "company",
-      lastUpdated: "2026-03-24",
-      summary: "新增 Deal Type + Uncategorized 通知 + 副詞審字自動化",
+      lastUpdated: "2026-04-07",
+      summary: "Deal Type 新增 GU 選項；建立以公司為主體的客戶資料庫，統一存放健檢報告與關鍵字表格",
       keyPoints: [
-        "新增自訂欄位標記 GEO 相關客戶（品牌、代理商、發布會）",
-        "新增 Deal Type：<strong>GO 顧問方案 / GO 工具方案</strong>",
-        "Uncategorized pipeline 通知發到 <strong>Slack 公共頻道</strong>",
-        "Deal 到 30% 時自動建立 Ticket 給副詞團隊審字",
-        "工具月費不低於 3 萬，<strong>90 個 Prompt 為甜蜜點</strong>",
-        "後台預計三個月內開發客戶自助改 Prompt 功能"
+        "新增 Deal Type：<strong>GO 顧問方案 / GO 工具方案 / GU 相關選項</strong>；AE 在 Close ON 階段必填",
+        "<strong>以公司為主體建立資料庫</strong>：客戶健檢報告、關鍵字拓展表格等四份報告放置 Company Property，供 AE、CS、關鍵字拓展團隊共用",
+        "蔡阿達主導報告產出流程，全站內容 markdown 放置 hotspot 平台",
+        "楊舒涵整合兩支 workflow，商機建立時<strong>自動關聯公司資料</strong>，解決空公司問題",
+        "Shopline 匯款無新更新；SEO APP 與 AMP 共用，未來新增 SEO 人工智慧 APP"
       ],
       chips: [
         { icon: "📊", text: "GEO Deal 15筆" },
         { icon: "💬", text: "90 Prompt" },
-        { icon: "🏷️", text: "月費 ≥ 3萬" }
+        { icon: "🏷️", text: "Deal Type GU 新增" },
+        { icon: "🗂️", text: "公司主體資料庫" }
       ],
       todos: [
-        { owner: "楊舒涵", text: "新增 Deal Type 選項（GO 顧問 / GO 工具）", priority: "waiting" },
-        { owner: "楊舒涵", text: "Uncategorized pipeline 通知發到 Slack 公共頻道", priority: "waiting" },
-        { owner: "蔡阿達", text: "與副詞團隊約時間討論審字流程", priority: "week" },
+        { owner: "蔡阿達", text: "持續產出並更新每個客戶健檢報告、關鍵字拓展表格等，以連結形式放置 Company Property", priority: "week" },
+        { owner: "蔡阿達", text: "將全站內容 markdown 版資料放置 hotspot 平台，方便團隊使用", priority: "week" },
+        { owner: "蔡阿達", text: "明確定義並通知 AE/CS 各欄位資料存放位置與使用方式", priority: "week" },
+        { owner: "楊舒涵", text: "合併兩支 workflow，新增商機建立時自動綁定公司資料功能，最小改動不影響行銷表單", priority: "week" },
+        { owner: "楊舒涵", text: "將 GU 相關 Deal Type 選項調整至下拉選單前端，並提醒 AE 在 Close ON 必填", priority: "week" },
+        { owner: "呂紹平", text: "協調新增 SEO APP 上架，與 Dandy 確認 SEO 服務客戶帳單及 APP 使用狀況", priority: "waiting" },
         { owner: "蔡阿達", text: "整理客戶常見問題 FAQ 表格", priority: "week" },
-        { owner: "蔡阿達", text: "確認帳號共用與資料匯出功能的技術限制", priority: "week" },
         { owner: "Anne", text: "約時間討論 CS 相關流程與條款細節", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-07",
+          title: "AE<>BA meeting",
+          time: "16:03-16:29",
+          duration: "26m",
+          participants: "蔡阿達、楊舒涵、呂紹平（Leon）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "客戶資料統一管理與報告產出流程",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "未來只要有客戶官網網址，即可自動爬取資料並建置於該公司 property 中，包含健檢報告、關鍵字拓展表格等四份報告，供 AE、CS 及關鍵字拓展團隊共用。希望建立統一且客觀的網站內容資料庫，未來可用於提案、進展報告及機器人月度追蹤。" },
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "認同此做法，將優化 workflow 以自動關聯公司資料，減少手動判斷。目前兩支 workflow 功能不同，將研究合併並加入自動關聯公司功能，解決目前表單產生 deal 無法自動綁定公司的問題。" },
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "建議先不動表單，先從 workflow 端補強，避免影響行銷部門現有資料收集。報告資料存放位置需明確告知 AE 及 CS，避免資料分散或重複產出。" }
+              ]
+            },
+            {
+              topic: "Deal Type 新增 GU 選項",
+              exchanges: [
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "新增 Deal Type 欄位中加入 GU 相關選項，要求 AE 在 Close ON 時務必正確選擇，以利後續資料分析與辨識。下拉選單已調整至較前面位置，方便使用者選取。" }
+              ]
+            },
+            {
+              topic: "Shopline 匯款及 APP 管理",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Shopline 匯款目前無新更新，匯款交易由楊舒涵直接通知客戶轉帳即可，無需開立新單。目前 AMP 與 SEO 服務共用同一 APP，未來會新增 SEO 人工智慧 APP。" },
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "擔心 APP 安裝錯誤或被移除，強調需與行銷及相關部門溝通清楚，避免影響客戶使用。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE ↔ BA Meeting",
