@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-07T20:00:00",
-  dateLabel: "2026/04/07（二）",
+  lastUpdated: "2026-04-14T19:00:00",
+  dateLabel: "2026/04/14（二）",
   stats: {
-    meetings: 27,
-    projects: 24,
+    meetings: 29,
+    projects: 26,
     partners: 10,
     internal: 5,
-    clientCompany: 7,
-    todos: 99
+    clientCompany: 9,
+    todos: 115
   },
 
   projects: [
@@ -1533,6 +1533,71 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "我來示範一下 GEM 工具，輸入你們的網址，它自動去爬你們的網站，然後生成一份關鍵字研究的背景報告，這樣我們提案的時候可以更快速、更有針對性。" },
                 { speaker: "Rebecca", role: "other", label: "AE", text: "客戶之前有提到拓字流程延誤，這個工具可以解決一部分問題，我建議把工具費獨立列出來，不要包在服務費裡面，這樣比較清楚。" },
                 { speaker: "蔡阿達", role: "ada", text: "對，工具費就是 9,000 元，單獨列在報價單，客戶看得清楚，我們也方便解釋工具的價值。英文文章的部分我們也在持續推動，後續再更新。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P26: 愛貝斯 ======
+    {
+      id: "ibase",
+      name: "愛貝斯（iBASE）— 合約變更與應收帳款追蹤",
+      icon: "📋",
+      category: "client",
+      lastUpdated: "2026-04-14",
+      summary: "合約付款方錯誤需透過三方變更協議修正，同時追蹤未付款項並準備存證信函催告",
+      keyPoints: [
+        "合約簽訂對象為<strong>愛斯柏（ISABEL）</strong>，但專案登記錯誤導致發票開給愛貝斯（iBASE），帳務無法對帳",
+        "決議<strong>不重新簽約</strong>，改在變更協議中加入三方條款，明確由愛貝斯代替愛斯柏付款",
+        "上半年服務至 1 月底，<strong>2 月起客戶暫停服務</strong>，發票已開至 3 月，需調整收入認列",
+        "客戶未如期付款，口頭及 Line 提醒無效，決議發出<strong>正式存證信函</strong>催告",
+        "客戶團隊已更換，法務認為新團隊應承擔前團隊合約責任"
+      ],
+      chips: [
+        { icon: "📝", text: "變更協議" },
+        { icon: "💸", text: "未付款追蹤" },
+        { icon: "⚖️", text: "存證信函" },
+        { icon: "⏸️", text: "服務暫停中" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "與愛貝斯確認是否同意代替愛斯柏付款，並釐清下半年付款方", priority: "today" },
+        { owner: "蔡阿達", text: "將確認的付款方及相關文字加入變更協議", priority: "today" },
+        { owner: "蔡阿達", text: "向客戶說明發票開立錯誤並重新開立正確發票", priority: "week" },
+        { owner: "蔡阿達", text: "確認客戶暫停服務起始日及預計重啟時間", priority: "week" },
+        { owner: "蔡阿達", text: "確認下半年發票開立對象及付款方", priority: "week" },
+        { owner: "Eric Hsiao", text: "審閱並寄送包含付款方變更的合約變更協議", priority: "week" },
+        { owner: "Eric Hsiao", text: "整理未付款項清單並寄送建議書，CC 藍文甫與 Anne Chang", priority: "week" },
+        { owner: "Anne Chang", text: "確認發票作廢及重開流程，評估跨年度收入認列問題", priority: "week" },
+        { owner: "藍文甫", text: "確認存證信函發出時間與內容", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-14",
+          title: "愛貝斯專案狀況對焦",
+          time: "16:00-16:42",
+          duration: "42m",
+          participants: "蔡阿達、Anne Chang、Eric Hsiao、Leo、藍文甫",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "合約付款方錯誤與變更協議",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "法務", text: "發票需開給愛貝斯，但合約簽訂對象為愛斯柏，導致帳務無法對帳，造成年度銷帳困難。" },
+                { speaker: "Eric Hsiao", role: "other", label: "PM", text: "第一張發票由 Lily 處理，專案登記錯誤導致資料撈取不到。" },
+                { speaker: "蔡阿達", role: "ada", text: "登記錯誤是我的疏失，我願意向對方道歉，並與愛貝斯確認其付款態度及下半年付款方。" },
+                { speaker: "藍文甫", role: "other", label: "法務", text: "建議在變更協議中加入三方協議條款，明確愛斯柏同意由愛貝斯付款，並確認是否整年度均由愛貝斯付款或下半年恢復愛斯柏付款。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "重新簽約過於複雜，建議直接在變更協議中修正付款方，並申請作廢已開立的錯誤發票。" }
+              ]
+            },
+            {
+              topic: "客戶未付款追蹤與存證信函",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "口頭及 Line 提醒無法有效促使客戶付款，建議發出正式存證信函。" },
+                { speaker: "Eric Hsiao", role: "other", label: "PM", text: "將先寄送建議書及未付款項清單，待內容確認後再發存證信函。客戶團隊更換，法務認為新團隊應承擔前團隊合約責任。" },
+                { speaker: "蔡阿達", role: "ada", text: "我負責與客戶確認暫停及重啟時間，並將相關文字加入變更協議。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "需持續提供服務以避免違約，並確認 SEO 服務是否繼續。" }
               ]
             }
           ]
