@@ -133,13 +133,15 @@ window.WAR_ROOM_DATA = {
       name: "SeaMeet — 全公司 AI 會議助理導入",
       icon: "🎙️",
       category: "partner",
-      lastUpdated: "2026-03-24",
-      summary: "採購 30 帳號七折年約，確認三層階層管理架構",
+      lastUpdated: "2026-04-13",
+      summary: "全公司已啟用 SeaMeet 工作區（5 位業務同時使用），4/13 發現錄音 bug 已回報 Seasalt.AI",
       keyPoints: [
         "團隊 22-23 人，每位 PM 配備 AI 會議助理",
         "支援<strong>三層階層管理</strong>（組長→部門主管→老闆）",
         "逐字稿自動存放 Google Drive，工程師可直接分析商情",
-        "<strong>30 帳號、七折優惠、年約方案</strong>"
+        "<strong>30 帳號、七折優惠、年約方案</strong>",
+        "🆕 全公司工作區已啟用，<strong>5 位業務同時使用中</strong>",
+        "⚠️ 4/13 發現<strong>兩場重要會議錄音時間顯示 0</strong>，疑似多人同時使用同一工作區造成衝突，已回報 Seasalt.AI（Shao Ho 調查中）"
       ],
       chips: [
         { icon: "👥", text: "30 帳號" },
@@ -151,7 +153,8 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "建立 LINE 群組協調採購事宜", priority: "today" },
         { owner: "Shao Ho", text: "提供正式報價單", priority: "waiting" },
         { owner: "藍文甫", text: "與老闆確認年約 vs 月付", priority: "waiting" },
-        { owner: "藍文甫", text: "設定 Google Drive 資料夾整合", priority: "waiting" }
+        { owner: "藍文甫", text: "設定 Google Drive 資料夾整合", priority: "waiting" },
+        { owner: "蔡阿達", text: "提供兩場故障會議 URL 給 Shao Ho，協助調查錄音異常", priority: "today" }
       ],
       meetingHistory: [
         {
@@ -1446,6 +1449,65 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "我們公司近二十年專注 SEO 技術，近年因應 AI 趨勢轉向 AI 能見度分析。GO Suite 兩週前發表，能細分五大 AI 能見度指標，協助客戶了解品牌在 AI 上的曝光狀況。" },
                 { speaker: "張莉欣", role: "other", label: "艾勝渼", text: "我目前主要尋找平台合作機會，對 GO Suite 的運作模式感興趣，想了解它是否包含 SEO 其他資訊？" },
                 { speaker: "蔡阿達", role: "ada", text: "GO Suite 平台主要呈現 AI 能見度結果，SEO 細節屬附加服務，若需深入報告可另行製作。若有客戶需求，請提供網址，我們後續協助跟進。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P25: MANI GEO 廣告投放 ======
+    {
+      id: "mani-geo",
+      name: "MANI — 精油品牌 GEO 廣告投放合作",
+      icon: "🌿",
+      category: "client",
+      lastUpdated: "2026-04-13",
+      summary: "新品牌複方精油廣告投放洽談 — Aiden 主導，月預算 5 萬起，Google + Meta 雙平台，3-6 個月學習期",
+      keyPoints: [
+        "客戶：趙元（MANI），<strong>藏傳佛教基金會背景的複方精油</strong>，結合身心靈與寵物市場",
+        "廣告策略：<strong>Google + Meta 雙平台</strong>投放，初期兼顧品牌認知與轉換",
+        "最低月投放預算 <strong>5 萬元</strong>，代操服務費為投放金額 20%，帳號設定費 1.4 萬元（未稅）",
+        "新品牌需 <strong>3-6 個月廣告學習期</strong>，不宜全部投入轉換廣告",
+        "使用 Swido 第三方平台提供即時數據報告，確保投放透明度",
+        "GA4 及追蹤工具尚未安裝，需客戶盡快與網站團隊協調完成"
+      ],
+      chips: [
+        { icon: "💰", text: "月預算 ≥5萬" },
+        { icon: "📱", text: "Google+Meta" },
+        { icon: "⏱️", text: "3-6月學習期" },
+        { icon: "🌿", text: "精油品牌" }
+      ],
+      todos: [
+        { owner: "蔡毓倫", text: "提供相近產業廣告成效案例與委刊單給趙元", priority: "today" },
+        { owner: "蔡毓倫", text: "協助趙元團隊串接 GA4、GTM 及 Google Merchant Center", priority: "week" },
+        { owner: "蔡毓倫", text: "提供 Swido 第三方平台帳號與操作說明", priority: "week" },
+        { owner: "趙元", text: "確認網站 GA4 及追蹤工具安裝狀況，與網站設計團隊協調完成", priority: "week" },
+        { owner: "趙元", text: "提供主要商品名稱與相關數字資料，協助預估廣告成效", priority: "week" },
+        { owner: "趙元", text: "確認廣告素材準備狀況，簽約後 5-7 工作天完成上線", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-13",
+          title: "MANI GEO 專案合作洽談",
+          time: "14:01-14:31",
+          duration: "30m",
+          participants: "蔡毓倫（Aiden）、趙元（MANI）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "新品牌精油產品廣告投放策略與預算討論",
+              exchanges: [
+                { speaker: "趙元", role: "other", label: "MANI", text: "產品為藏傳佛教基金會背景的複方精油，屬宗教商品類型，結合身心靈與寵物市場。社群廣告為必投，Google 廣告老闆仍在考慮中。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "Google 廣告屬主動搜尋，Meta 為被動社群廣告，建議若預算充足可雙管齊下。新品牌初期不宜全部投入轉換廣告，應配置部分預算於品牌建立。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "月最低投放 5 萬元，代操服務費為投放金額 20%，帳號設定費 1.4 萬元（未稅）。使用 Swido 第三方平台提供即時數據報告，方便客戶隨時查看廣告成效。" }
+              ]
+            },
+            {
+              topic: "廣告投放技術準備與後續流程",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "GA4 及相關追蹤工具尚未安裝，建議盡快與網站設計團隊確認權限與設置。簽約後約需 5-7 工作天完成廣告上線。" },
+                { speaker: "趙元", role: "other", label: "MANI", text: "素材尚未完成，會與團隊配合完成。確認會議資料及委刊單透過 Line 與 Email 提供。" }
               ]
             }
           ]
