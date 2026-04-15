@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-14T19:00:00",
-  dateLabel: "2026/04/14（二）",
+  lastUpdated: "2026-04-15T19:00:00",
+  dateLabel: "2026/04/15（三）",
   stats: {
-    meetings: 29,
+    meetings: 30,
     projects: 26,
     partners: 10,
     internal: 5,
     clientCompany: 9,
-    todos: 115
+    todos: 118
   },
 
   projects: [
@@ -1137,30 +1137,73 @@ window.WAR_ROOM_DATA = {
       ]
     },
 
-    // ====== P13: BNI 行銷小聚 ======
+    // ====== P13: FUZEN 行銷小聚 ======
     {
       id: "bni-marketing-chain",
-      name: "BNI 行銷小聚 — 行銷開店產業鏈",
+      name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
-      category: "bni",
-      lastUpdated: "2026-04-01",
-      summary: "BNI 行銷產業鏈每週三午餐小聚，串連攝影/影片/設計/開店等夥伴，互相引薦合作機會",
+      category: "events",
+      lastUpdated: "2026-04-15",
+      summary: "每週三午餐小聚，串連 SEO/影片/設計/網站/攝影等夥伴，互相引薦合作機會；蔡阿達主導 AI 推薦與網站健檢服務推廣",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
-        "核心成員：蔡阿達、遙空映畫、張張（設計）、楊翔淵、June Enter",
-        "目標：行銷產業鏈互相引薦，累積合作案例",
-        "蔡阿達為<strong>主要召集人</strong>，負責維持節奏與主題引導"
+        "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
+        "蔡阿達推出<strong>免費網站體質健檢</strong>，爬取網站分析關鍵字頻率與排名難易度，結合 AI 推薦工具提升曝光",
+        "遙空映畫引進<strong>穿越機拍攝</strong>設備，推廣南部飯店免費拍攝服務，強調室內飛行獨特視角",
+        "MarsZ Chen 協助<strong>市議員官網建置</strong>與募款系統串接（4 月底政治現金帳戶開放），已完成臺南市議員李宗霖官網",
+        "蔡阿達建置<strong>大語言模型引薦系統</strong>，將每週 30 秒簡報自動轉成引薦對話文本，上傳內部網站"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
-        { icon: "👥", text: "5 位核心成員" },
-        { icon: "🔗", text: "產業鏈串接" }
+        { icon: "👥", text: "10+ 位成員" },
+        { icon: "🔗", text: "產業鏈串接" },
+        { icon: "🤖", text: "LLM 引薦系統" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "持續召集每週行銷小聚，輪流分享近期合作案例", priority: "week" },
-        { owner: "蔡阿達", text: "整理可引薦機會清單，主動媒合成員專長與客戶需求", priority: "week" }
+        { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
+        { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
+        { owner: "蔡阿達", text: "協助成員客戶了解 AI 推薦指標，提供優化方向與行動建議", priority: "week" },
+        { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" },
+        { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-15",
+          title: "FUZEN 行銷小聚 04/15",
+          time: "13:01-14:00",
+          duration: "59m",
+          participants: "蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "學校網站 SEO 與 AI 推薦策略",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "學校官網因 .edu 域名權重高，適合推廣特定議題，但學校經費有限，目標是將服務延伸至醫院、百貨等消費市場。" },
+                { speaker: "蔡阿達", role: "ada", text: "我們可以免費幫客戶做網站體質健檢，爬取網站內容分析關鍵字頻率與排名難易度，提供優化建議。也能協助了解網站是否被 AI 推薦，結合內容優化提升曝光。" }
+              ]
+            },
+            {
+              topic: "穿越機拍攝服務推廣與飯店合作",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "穿越機比空拍機更靈活，能在室內飛行，適合拍攝飯店空間及菜色上空等場景。我們想以免費方式提供南部飯店穿越機拍攝，作為形象影片加值服務。" },
+                { speaker: "蔡阿達", role: "ada", text: "我最近在跟嘉義福容飯店洽談寵物房佈置，可以確認穿越機拍攝的可行性，但需要提前申請。" }
+              ]
+            },
+            {
+              topic: "市議員官網與募款系統推廣",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "4 月底政治現金帳戶開放，我們協助議員建置募款頁面並串接金流。已完成臺南市議員李宗霖官網及陳情系統，幫助篩選無效陳情，提升助理工作效率。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議議員及其他客戶先建立網站，方便整合影片、社群導流等行銷資源。網站跟影片服務是互補的，雙方合作不分上下游。" }
+              ]
+            },
+            {
+              topic: "大語言模型引薦系統建置",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我已經串接大語言模型，把每週 30 秒簡報內容自動轉成引薦對話文本，方便大家快速開啟交流。之後會持續更新並上傳到內部網站。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-01",
           title: "BNI 行銷小聚 04/01",
