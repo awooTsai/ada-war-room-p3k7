@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-15T19:00:00",
-  dateLabel: "2026/04/15（三）",
+  lastUpdated: "2026-04-16T19:00:00",
+  dateLabel: "2026/04/16（四）",
   stats: {
-    meetings: 30,
+    meetings: 32,
     projects: 26,
     partners: 10,
     internal: 5,
     clientCompany: 9,
-    todos: 118
+    todos: 117
   },
 
   projects: [
@@ -518,29 +518,45 @@ window.WAR_ROOM_DATA = {
       name: "MKT 四月聯合 Webinar — GEO × OneAd × 比幣",
       icon: "📣",
       category: "events",
-      lastUpdated: "2026-04-07",
-      summary: "線上彩排完成（4/7）— 確認 4/16 實體錄影、4/28 Shopline 場，講師需 4/17 前交簡報",
+      lastUpdated: "2026-04-16",
+      summary: "4/16 實體錄影完成（個人簡報 + Panel 對談錄製），下一步 4/17 前交簡報、4/28 Shopline 場",
       keyPoints: [
         "與 OneAd（Jed Lin）、比幣 BBTide（Libby Cheng）三方聯合 Webinar",
         "蔡阿達主講 GEO／AI 搜尋策略（30 分鐘）+ 三方 Panel 對談",
         "<strong>4/7 線上彩排完成</strong>：蔡阿達分享品牌 EAT 訊號、GEO Suite、村陸合作新聞稿策略、Prompt 設計與 FAQ",
         "蔡阿達待辦：優化「關於我們」內容建議、推動 GEO Suite、協調村陸新聞稿合作",
-        "<strong>4/16 實體錄影</strong>，講師需 4/17 前提供簡報；<strong>4/28 Shopline 客戶場</strong>"
+        "<strong>4/16 實體錄影</strong>，講師需 4/17 前提供簡報；<strong>4/28 Shopline 客戶場</strong>",
+        "🆕 <strong>4/16 實體錄影完成</strong>：於 JustCo 宏泰金融大樓錄製個人 GEO 演講與三方 Panel 對談，Iris Tsai 協助現場執行"
       ],
       chips: [
         { icon: "✅", text: "4/7 彩排完成" },
-        { icon: "🎬", text: "4/16 實體錄影" },
+        { icon: "✅", text: "4/16 錄影完成" },
         { icon: "📄", text: "4/17 前交簡報" },
         { icon: "🏪", text: "4/28 Shopline" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "4/17 前提供演講簡報給 Iris Tsai（含 EAT 訊號、GEO Suite、村陸合作、Prompt/FAQ 建議）", priority: "week" },
-        { owner: "蔡阿達", text: "4/16 參與實體錄影（個人演講 + Panel 錄製）", priority: "week" },
+        { owner: "蔡阿達", text: "4/17 前提供演講簡報給 Iris Tsai（含 EAT 訊號、GEO Suite、村陸合作、Prompt/FAQ 建議）", priority: "today" },
         { owner: "蔡阿達", text: "協調與村陸公司合作，協助業主在權威媒體發布新聞稿以提升 AI 曝光", priority: "week" },
         { owner: "蔡阿達", text: "確認 4/28 Shopline 演講是否需夥伴支援", priority: "week" },
         { owner: "Shawn Hung", text: "與夥伴確認合作內容細節後回報（AgentBit 合作）", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-16",
+          title: "【實體錄影】awoo 0422 webinar — Ada_10F",
+          time: "14:00-16:30",
+          duration: "2h30m",
+          participants: "蔡阿達、Iris Tsai、Libby Cheng",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Webinar 實體錄影",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "於 JustCo 宏泰金融大樓完成 0422 Webinar 實體錄影，先錄製個人 GEO 演講（30 分鐘），再錄製三方 Panel 對談。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-07",
           title: "awoo 0422 webinar — panel 彩排",
@@ -1143,7 +1159,7 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-04-15",
+      lastUpdated: "2026-04-16",
       summary: "每週三午餐小聚，串連 SEO/影片/設計/網站/攝影等夥伴，互相引薦合作機會；蔡阿達主導 AI 推薦與網站健檢服務推廣",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
@@ -1167,6 +1183,23 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-16",
+          title: "野口主題簡報預演",
+          time: "08:45-09:00",
+          duration: "15m",
+          participants: "蔡阿達、林育紹",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "成員主題簡報指導",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "簡報時間超過五分鐘約 20 秒，建議調整節奏。最後三頁要強化細節與專業層次，增加圖片減少文字量，架構可參考主題簡報常見的三案例、三影片對話框架。" },
+                { speaker: "林育紹", role: "other", label: "成員", text: "前 19 頁可以加快節奏，重點放在最後兩頁的影響與引薦。感謝建議，預祝明天簡報順利。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-15",
           title: "FUZEN 行銷小聚 04/15",
