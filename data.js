@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-16T19:00:00",
-  dateLabel: "2026/04/16（四）",
+  lastUpdated: "2026-04-17T19:00:00",
+  dateLabel: "2026/04/17（五）",
   stats: {
-    meetings: 32,
-    projects: 26,
+    meetings: 33,
+    projects: 27,
     partners: 10,
-    internal: 5,
+    internal: 6,
     clientCompany: 9,
-    todos: 117
+    todos: 128
   },
 
   projects: [
@@ -280,24 +280,39 @@ window.WAR_ROOM_DATA = {
       ]
     },
 
-    // ====== P5: 媒體經銷新模式 ======
+    // ====== P5: 代理商計畫 & 經銷模式 ======
     {
       id: "media-resell",
-      name: "媒體經銷新商業模式（赫斯特 + 天下）",
+      name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-03-24",
-      summary: "以經銷方式銷售工具 + Prompt + 追蹤結果，MRR 兩個月一期",
+      lastUpdated: "2026-04-17",
+      summary: "建構代理商合約架構與分類 — 合約拆分顧問服務 + 工具使用、滿意度低於七成連續兩季終止合作",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
-        "不影響季度業績目標",
-        "業務遇到客戶想簽短約時可積極推廣"
+        "🆕 4/17 代理商分類：廣告公司與媒體代理商<strong>是否歸同類仍需細拆</strong>",
+        "🆕 合約架構：拆分為<strong>代理商合約</strong>與<strong>代理商對客戶合約</strong>兩份，公司制定公版",
+        "🆕 服務協議：<strong>工具使用協議</strong>與<strong>顧問服務協議</strong>分開簽署",
+        "🆕 代理商滿意度：連續<strong>兩季低於七成</strong>即考慮終止合作",
+        "🆕 權限管理：代理商文件不應出現在客戶文件中，避免法律糾紛",
+        "🆕 線上註冊：工具尚未開放客戶自行註冊，法務仍在討論相關協議"
       ],
-      chips: [],
+      chips: [
+        { icon: "📝", text: "合約拆分兩份" },
+        { icon: "⚖️", text: "滿意度 ≥ 70%" },
+        { icon: "🔒", text: "權限需限縮" },
+        { icon: "🔧", text: "工具協議待上線" }
+      ],
       todos: [
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
-        { owner: "蔡阿達", text: "制定經銷模式標準流程 SOP", priority: "week" }
+        { owner: "蔡阿達", text: "制定經銷模式標準流程 SOP", priority: "week" },
+        { owner: "藍文甫", text: "與 PM 及法務確認代理商合約架構與產品服務內容", priority: "week" },
+        { owner: "Max Huang", text: "協助修改代理商合約文件並提供給藍文甫", priority: "week" },
+        { owner: "藍文甫", text: "與法務討論工具使用協議與顧問服務協議是否拆分及法律效力", priority: "week" },
+        { owner: "藍文甫", text: "確認代理商權限範圍，避免授權過大引發法律風險", priority: "week" },
+        { owner: "藍文甫", text: "設定代理商滿意度評估標準，連續兩季低於七成啟動終止程序", priority: "week" },
+        { owner: "Anne Chang", text: "協調法務完成工具使用協議版本並規劃上線時間", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -315,6 +330,32 @@ window.WAR_ROOM_DATA = {
               ]
             }
           ]
+        },
+        {
+          date: "2026-04-17",
+          title: "Weekly Sync Up Meeting",
+          time: "11:23-12:03",
+          duration: "40m",
+          participants: "蔡阿達、Max Huang、藍文甫、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商分類與合約架構",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "廣告公司是否可與媒體代理商同類型分類？合約應拆分為代理商合約與代理商對客戶合約兩份，由公司制定公版合約。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "代理商類型會再細拆，尚未確定不同類型應提供的服務，需與 PM 確認。代理商可能會將產品轉作其他用途，需評估是否放寬權限。" },
+                { speaker: "蔡阿達", role: "ada", text: "需與 PM 及法務召開會議，確認合約數量及內容，釐清代理商與客戶間權利義務。工具使用協議與顧問服務協議應分開簽署。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "目前工具尚未開放客戶自行註冊，法務仍在討論相關協議。" }
+              ]
+            },
+            {
+              topic: "代理商滿意度與服務品質管理",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "代理商文件不應直接出現在客戶文件中，避免法律糾紛。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "設定代理商滿意度調查標準，連續兩季低於七成即考慮終止合作。" }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -325,8 +366,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-04-01",
-      summary: "文案 n8n 流程啟動 — AI 初稿工具半自動化、素材查證責任歸客戶、精緻文章 vs AI 文章雙軌定價",
+      lastUpdated: "2026-04-17",
+      summary: "新增「純內容方案」（月費 ≈ 2 萬）鎖定無法改站客戶 — 持續推動 AI 初稿工具半自動化、雙軌��價",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -337,14 +378,18 @@ window.WAR_ROOM_DATA = {
         "合約新增條款：<strong>素材查證責任歸客戶</strong>，awoo 僅提供參考內容，不負查證義務",
         "雙軌定價策略：<strong>精緻文章</strong>（價格較高）+ <strong>AI 輔助文章</strong>（較低費用）",
         "工具付費模式：公司共用帳號共享 AI API 月費，以節省成本",
-        "資料管理：客戶資料以<strong>客戶名稱分類資料夾</strong>，方便文案搜尋管理"
+        "資料管理：客戶資料以<strong>客戶名稱分類資料夾</strong>，方便文案��尋管理",
+        "🆕 4/17 新增<strong>純內容方案</strong>：針對無法修改網站的客戶，月費約兩萬至兩萬五，含基礎建站建議及文章撰寫",
+        "純內容方案低消<strong>兩萬元</strong>，可視客戶需求適度加價",
+        "銷售策略：先推完整方案，再視客戶需求推薦純內容方案"
       ],
       chips: [
         { icon: "📝", text: "17篇/月" },
         { icon: "👤", text: "25% 人工" },
         { icon: "🗓️", text: "英文 Writer 五月" },
         { icon: "⚠️", text: "素材查證→客戶責任" },
-        { icon: "🤖", text: "一鍵生成初稿工具" }
+        { icon: "🤖", text: "一鍵生成初稿工具" },
+        { icon: "💰", text: "純內容 ≈ 2萬/月" }
       ],
       todos: [
         { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
@@ -354,7 +399,10 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "持續測試英文 AI 工具，改善文法與句型品質", priority: "week" },
         { owner: "廖淑芬", text: "協助統籌現有及新客戶資料整理，以客戶名稱分類資料夾", priority: "week" },
         { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程（4/15 起）", priority: "waiting" },
-        { owner: "藍文甫", text: "合約新增素材查證責任條款，並確認 AI 文章相關說明", priority: "week" }
+        { owner: "藍文甫", text: "合約新增素材查證責任條款，並確認 AI 文章相關說明", priority: "week" },
+        { owner: "蔡阿達", text: "持續與 Mike 確認純內容方案細節與客戶需求", priority: "week" },
+        { owner: "蔡阿達", text: "調整純內容方案定價，最低月費設定約兩萬元並評估加價空間", priority: "week" },
+        { owner: "Max Huang", text: "協助評估純內容方案定價合理性，確保利潤率符合成本結構", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -450,6 +498,25 @@ window.WAR_ROOM_DATA = {
                 { speaker: "廖淑芬", role: "other", label: "小花", text: "現在文案的客戶資料都是散的，很難找。" },
                 { speaker: "蔡阿達", role: "ada", text: "以後用客戶名稱建立資料夾，所有相關素材都放在裡面。我跟小花確認一下現有客戶的整理方式。" },
                 { speaker: "蔡阿達", role: "ada", text: "AI API 費用公司共用一個帳號，月費大家分攤，不用每個人都買，這樣最省。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-04-17",
+          title: "Weekly Sync Up Meeting",
+          time: "11:23-12:03",
+          duration: "40m",
+          participants: "蔡阿達、Max Huang、藍文甫、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "純內容方案服務與定價策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "針對無法修改網站的客戶推出純內容方案，月費約兩萬到兩萬五，內容包含基礎建站建議及文章撰寫。低消兩萬為業務可接受的最低月費。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "定價應依關鍵字數量及服務內容調整，需考量成本與利潤率。需釐清方案間關聯及定價邏輯，避免客戶混淆。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "原三萬三方案未包含救稅服務，純內容方案則包含最低級距救稅，價格上有折扣。" },
+                { speaker: "蔡阿達", role: "ada", text: "銷售策略先從完整方案推案，再視客戶需求推薦純內容方案。需說服業務團隊以純內容方案作為初期提案方案。" }
               ]
             }
           ]
@@ -1736,6 +1803,50 @@ window.WAR_ROOM_DATA = {
                 { speaker: "Eric Hsiao", role: "other", label: "PM", text: "將先寄送建議書及未付款項清單，待內容確認後再發存證信函。客戶團隊更換，法務認為新團隊應承擔前團隊合約責任。" },
                 { speaker: "蔡阿達", role: "ada", text: "我負責與客戶確認暫停及重啟時間，並將相關文字加入變更協議。" },
                 { speaker: "Anne Chang", role: "other", label: "PM", text: "需持續提供服務以避免違約，並確認 SEO 服務是否繼續。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P27: 主管線上培訓課程 ======
+    {
+      id: "mgr-training",
+      name: "主管線上培訓課程規劃",
+      icon: "🎓",
+      category: "internal",
+      lastUpdated: "2026-04-17",
+      summary: "規劃主管線上培訓課程 — 涵蓋銷售技巧、組織管理及時間管理，系統化學習取代被動解決問題",
+      keyPoints: [
+        "Max Huang 建議以<strong>線上課程</strong>進行主管培訓，避免傳統面授方式",
+        "強調<strong>系統化學習</strong>的重要性，避免僅在遇到問題時才學習",
+        "課程主題包含：銷售技巧、組織管理、績效管理及溝通技巧",
+        "計畫與其他部門合作，擴大課程受眾及資源共享"
+      ],
+      chips: [
+        { icon: "📚", text: "線上課程" },
+        { icon: "🎯", text: "系統化學習" },
+        { icon: "🤝", text: "跨部門合作" }
+      ],
+      todos: [
+        { owner: "Max Huang", text: "收集主管培訓需求並統整課程規劃", priority: "week" },
+        { owner: "Max Huang", text: "安排主管參與線上課程並追蹤學習進度與回饋", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-17",
+          title: "Weekly Sync Up Meeting",
+          time: "11:23-12:03",
+          duration: "40m",
+          participants: "蔡阿達、Max Huang、藍文甫、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "主管培訓與線上課程規劃",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "建議安排主管線上課程學習銷售技巧、組織管理及時間安排等主題，系統化學習優於被動解決問題。請主管列出想學習的課程內容。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意規劃線上培訓課程，可與其他部門合作開課，提升主管能力與資源共享。" }
               ]
             }
           ]
