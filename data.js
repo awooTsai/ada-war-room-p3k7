@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-17T19:00:00",
-  dateLabel: "2026/04/17（五）",
+  lastUpdated: "2026-04-20T19:00:00",
+  dateLabel: "2026/04/20（一）",
   stats: {
-    meetings: 33,
-    projects: 27,
-    partners: 10,
+    meetings: 36,
+    projects: 28,
+    partners: 11,
     internal: 6,
-    clientCompany: 9,
-    todos: 128
+    clientCompany: 10,
+    todos: 142
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-03-26",
-      summary: "獎金基準升至 60、季度加權係數確定，下週阿達與業務佈達",
+      lastUpdated: "2026-04-20",
+      summary: "獎金基準升至 60、季度加權係數確定 — 4/20 確認 Q1 獎金表格下週一前發出，待新規則公告後填寫",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -199,7 +199,8 @@ window.WAR_ROOM_DATA = {
         "季度加權係數定案：<strong>第一個月 ×1.1 / 第二個月 ×1.0 / 第三個月 ×0.9</strong>，鼓勵提前衝刺",
         "獎金指標改為<strong>季度 MRR（營業額）</strong>，刪除半年獎金及跨售重疊",
         "獎金預算約 430 萬，最高不超過 200 萬",
-        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告"
+        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告",
+        "🆕 4/20 Q1 獎金表格將於<strong>下週一前發出</strong>，待新規則公告後填寫；去年任務獎金待確認"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -214,9 +215,28 @@ window.WAR_ROOM_DATA = {
         { owner: "Leo", text: "調整獎金方案版本，刪除跨售重疊及半年獎金，淘汰基準改為 60", priority: "week" },
         { owner: "Winny Chiang", text: "修改阿達獎金辦法 wording，確保內容清楚並同步群組", priority: "week" },
         { owner: "蔡阿達", text: "下週與業務佈達新獎金方案", priority: "week" },
-        { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" }
+        { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" },
+        { owner: "蔡阿達", text: "下週一前完成 Q1 獎金規則與表格調整並發送給團隊", priority: "week" },
+        { owner: "蔡阿達", text: "確認去年任務獎金發放狀況", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-20",
+          title: "AE Team 週會",
+          time: "16:46-17:54",
+          duration: "1h08m",
+          participants: "蔡阿達、Angelline、Leo、Irene、Leon、AE 業務開發組",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Q1 獎金表格與新規則公告",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "Q1 獎金表格因新規則需調整，預計下週一前發出，待新規則公告後再請大家填寫。" },
+                { speaker: "蔡阿達", role: "ada", text: "去年的任務獎金我會再確認一下，有結果跟大家說。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-26",
           title: "獎金辦法討論",
@@ -286,7 +306,7 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-04-17",
+      lastUpdated: "2026-04-20",
       summary: "建構代理商合約架構與分類 — 合約拆分顧問服務 + 工具使用、滿意度低於七成連續兩季終止合作",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
@@ -296,12 +316,15 @@ window.WAR_ROOM_DATA = {
         "🆕 服務協議：<strong>工具使用協議</strong>與<strong>顧問服務協議</strong>分開簽署",
         "🆕 代理商滿意度：連續<strong>兩季低於七成</strong>即考慮終止合作",
         "🆕 權限管理：代理商文件不應出現在客戶文件中，避免法律糾紛",
-        "🆕 線上註冊：工具尚未開放客戶自行註冊，法務仍在討論相關協議"
+        "🆕 線上註冊：工具尚未開放客戶自行註冊，法務仍在討論相關協議",
+        "🆕 4/20 代理商銷售策略：工具應有<strong>獨特價值且不宜過度折扣</strong>，AE 傾向將工具當贈品，CS 則強調工具價值明確報價",
+        "🆕 續約折扣策略：<strong>折扣放在顧問費用，工具維持原價</strong>，避免價格混淆",
+        "🆕 工具與顧問服務需<strong>整合銷售</strong>，避免客戶預算矛盾"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
         { icon: "⚖️", text: "滿意度 ≥ 70%" },
-        { icon: "🔒", text: "權限需限縮" },
+        { icon: "💰", text: "工具原價不折扣" },
         { icon: "🔧", text: "工具協議待上線" }
       ],
       todos: [
@@ -366,8 +389,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-04-17",
-      summary: "新增「純內容方案」（月費 ≈ 2 萬）鎖定無法改站客戶 — 持續推動 AI 初稿工具半自動化、雙軌��價",
+      lastUpdated: "2026-04-20",
+      summary: "文案撰寫方案已可開賣（17-20 篇，月費 ≈ 2.2 萬）— 4/20 確認 Claude 雙 Skill 架構：品牌人設學習 + 文章輸出，蔡阿達負責官網資料抓取打包",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -381,15 +404,20 @@ window.WAR_ROOM_DATA = {
         "資料管理：客戶資料以<strong>客戶名稱分類資料夾</strong>，方便文案��尋管理",
         "🆕 4/17 新增<strong>純內容方案</strong>：針對無法修改網站的客戶，月費約兩萬至兩萬五，含基礎建站建議及文章撰寫",
         "純內容方案低消<strong>兩萬元</strong>，可視客戶需求適度加價",
-        "銷售策略：先推完整方案，再視客戶需求推薦純內容方案"
+        "銷售策略：先推完整方案，再視客戶需求推薦純內容方案",
+        "🆕 4/20 文案撰寫方案<strong>已可開賣</strong>：含網站健檢報告及 17-20 篇文章，月費約<strong>兩萬二</strong>，合作期建議一年",
+        "🆕 4/20 Claude 雙 Skill 架構：<strong>品牌人設學習 Skill</strong>（抓取客戶官網資料建立品牌人設）+ <strong>文章輸出 Skill</strong>（依品牌人設生成文案）",
+        "🆕 蔡阿達負責<strong>抓取客戶官網資料打包成 Skill</strong>，小花負責測試與優化，藍文甫協助克勞德帳號申請",
+        "🆕 透過<strong>表單收集客戶專業知識回饋</strong>，整合進 AI 文案生成流程，提升文案品質",
+        "🆕 AI 生成文章重內容符合度更勝人性化口吻，建議嘗試克勞德提升人性化表現"
       ],
       chips: [
-        { icon: "📝", text: "17篇/月" },
+        { icon: "📝", text: "17-20篇/月" },
         { icon: "👤", text: "25% 人工" },
-        { icon: "🗓️", text: "英文 Writer 五月" },
+        { icon: "🤖", text: "Claude 雙 Skill" },
         { icon: "⚠️", text: "素材查證→客戶責任" },
-        { icon: "🤖", text: "一鍵生成初稿工具" },
-        { icon: "💰", text: "純內容 ≈ 2萬/月" }
+        { icon: "🔧", text: "官網抓取→品牌人設" },
+        { icon: "💰", text: "月費 ≈ 2.2萬" }
       ],
       todos: [
         { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
@@ -402,9 +430,57 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "合約新增素材查證責任條款，並確認 AI 文章相關說明", priority: "week" },
         { owner: "蔡阿達", text: "持續與 Mike 確認純內容方案細節與客戶需求", priority: "week" },
         { owner: "蔡阿達", text: "調整純內容方案定價，最低月費設定約兩萬元並評估加價空間", priority: "week" },
-        { owner: "Max Huang", text: "協助評估純內容方案定價合理性，確保利潤率符合成本結構", priority: "week" }
+        { owner: "Max Huang", text: "協助評估純內容方案定價合理性，確保利潤率符合成本結構", priority: "week" },
+        { owner: "蔡阿達", text: "提供兩支 Claude Skill 給小花（品牌人設學習 + 文章輸出）", priority: "week" },
+        { owner: "藍文甫", text: "協助小花申請並管理克勞德帳號，確保表單功能串接", priority: "week" },
+        { owner: "蔡阿達", text: "持續抓取客戶官網資料並生成品牌人設，透過表單收集並傳給小花", priority: "week" },
+        { owner: "蔡阿達", text: "設計並提供專業知識回饋表單給小花，收集客戶問題與答案整合進文案流程", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-20",
+          title: "Leo, Anne / 小花 — AI 文案 Agent 合作確認",
+          time: "15:00-15:25",
+          duration: "25m",
+          participants: "蔡阿達、藍文甫（Leo）、廖淑芬（小花）、Anne",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Claude 雙 Skill 架構與合作分工",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我做了一個爬蟲工具可以抓取客戶官網資料，打包成 Skill，未來客戶只需上傳相關資料即可產生內容，簡化合作流程。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "建議將新聞稿與文案 agent 兩個議題合併討論，複製成熟的文案 agent 給小花測試，收集優化反饋。" },
+                { speaker: "蔡阿達", role: "ada", text: "抓取客戶官網資料建立品牌人設這件事我來做，抓取網站資料不難且合理。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "既有客戶也需寫多篇文件，建議由蔡阿達先抓取官網資料，既有客戶則透過表單提供資料，方便建立客戶資料庫。" }
+              ]
+            },
+            {
+              topic: "克勞德帳號與表單系統",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "資料庫管理由 AI 負責，無需人工管理龐大資料庫。表單功能需串接小花帳號，確保資料流暢，我負責帳號申請與預算處理。" },
+                { speaker: "蔡阿達", role: "ada", text: "我會提供現有 prompt 給小花參考，兩支 Skill 分別負責品牌人設學習與文章輸出。不需自行建資料庫，AI 記憶與既有知識模型搭配客戶資料即可。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-04-20",
+          title: "AE Team 週會 — 文案方案開賣確認",
+          time: "16:46-17:54",
+          duration: "1h08m",
+          participants: "蔡阿達、Angelline、Leo、Irene、Leon、AE 業務開發組",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "文案撰寫方案開賣與合作期限",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "文案撰寫方案已可開賣，包含網站健檢報告及 17 到 20 篇文章，月費約兩萬二。建議書一個月內完成。" },
+                { speaker: "Rebecca", role: "other", label: "AE", text: "客戶偏好較快取得文章，可能希望一次性或短期內完成。" },
+                { speaker: "蔡阿達", role: "ada", text: "一年合作期較合理，能確保文章數量與成效觀察。我會跟小花協調，把克勞德的文案作法移植過來。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE Team 週會",
@@ -585,15 +661,18 @@ window.WAR_ROOM_DATA = {
       name: "MKT 四月聯合 Webinar — GEO × OneAd × 比幣",
       icon: "📣",
       category: "events",
-      lastUpdated: "2026-04-16",
-      summary: "4/16 實體錄影完成（個人簡報 + Panel 對談錄製），下一步 4/17 前交簡報、4/28 Shopline 場",
+      lastUpdated: "2026-04-20",
+      summary: "4/16 實體錄影完成 — 4/20 確認 4/28 Shopline 專場活動主辦建議與需求；LLMS.txt 功能 Shopline 臺灣版 Q2 新增",
       keyPoints: [
         "與 OneAd（Jed Lin）、比幣 BBTide（Libby Cheng）三方聯合 Webinar",
         "蔡阿達主講 GEO／AI 搜尋策略（30 分鐘）+ 三方 Panel 對談",
         "<strong>4/7 線上彩排完成</strong>：蔡阿達分享品牌 EAT 訊號、GEO Suite、村陸合作新聞稿策略、Prompt 設計與 FAQ",
         "蔡阿達待辦：優化「關於我們」內容建議、推動 GEO Suite、協調村陸新聞稿合作",
         "<strong>4/16 實體錄影</strong>，講師需 4/17 前提供簡報；<strong>4/28 Shopline 客戶場</strong>",
-        "🆕 <strong>4/16 實體錄影完成</strong>：於 JustCo 宏泰金融大樓錄製個人 GEO 演講與三方 Panel 對談，Iris Tsai 協助現場執行"
+        "🆕 <strong>4/16 實體錄影完成</strong>：於 JustCo 宏泰金融大樓錄製個人 GEO 演講與三方 Panel 對談，Iris Tsai 協助現場執行",
+        "🆕 4/20 SHOPLINE 專場活動：<strong>Angelline 與蔡阿達確認主辦建議與需求</strong>",
+        "🆕 4/20 AE 週會確認：<strong>LLMS.txt 檔案 Shopline 臺灣版 Q2 預計新增</strong>，目前僅大陸版 2.0 支援",
+        "🆕 向客戶說明時以<strong>合作改善角度</strong>，避免斬釘截鐵批評現況"
       ],
       chips: [
         { icon: "✅", text: "4/7 彩排完成" },
@@ -1664,8 +1743,8 @@ window.WAR_ROOM_DATA = {
       name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
       icon: "🔑",
       category: "tools",
-      lastUpdated: "2026-04-07",
-      summary: "4/7 AE 週會全員 Demo：一鍵爬取客戶網站，生成健檢報告＋關鍵字拓展報告，AE 提案殺手鐧",
+      lastUpdated: "2026-04-20",
+      summary: "提案報告已獲 YC 認可取代自首報告 — 4/20 團隊建議分階段提案（首次淺顯總覽 + 後續深入關鍵字研究），簡化報告內容提升轉換率",
       keyPoints: [
         "<strong>4/7 AE 週會全員 Demo</strong>：蔡阿達向 Bryan、Rebecca、Leon、Aiden 介紹工具，獲團隊認可",
         "工具流程：輸入客戶網址 → 爬取所有頁面 → 生成<strong>健檢報告（提案用）+ 關鍵字拓展報告（拓字用）</strong>",
@@ -1673,7 +1752,11 @@ window.WAR_ROOM_DATA = {
         "客戶確定關鍵字後，可再跑 <strong>3-5 個 Prompt</strong> 對應消費者旅程，設計互動式選擇工具",
         "HubSpot 商機推動視圖整合：客戶報告統一放 Company Property，CS/AE 共用",
         "費用明確化：工具費 <strong>9,000 元</strong>，獨立列於報價單",
-        "下一步：完善爬蟲穩定性、英文網站支援、網站內容佔比分析整合"
+        "下一步：完善爬蟲穩定性、英文網站支援、網站內容佔比分析整合",
+        "🆕 4/20 提案報告已獲 YC 認可，<strong>可取代自首報告</strong>，含網站 DNA 分析與關鍵字健檢",
+        "🆕 4/20 團隊建議<strong>分階段提案</strong>：第一次聚焦網站體質總覽與主要問題，第二次提供關鍵字分析作為續談誘因",
+        "🆕 呂紹平建議避免重複內容，精簡文字；蔡毓倫同意第一次聚焦主要產品線",
+        "🆕 蔡阿達完成 GO 網站檢測報告，含<strong>網站現況總覽、語意地圖分析及需求對應頁面</strong>，連結已更新"
       ],
       chips: [
         { icon: "💰", text: "工具費 9K" },
@@ -1693,6 +1776,32 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "安排 4/8 11 點與雅虎會議，討論與天下合作相關事宜", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-20",
+          title: "AE Team 週會 — 提案報告簡化與分階段策略",
+          time: "16:46-17:54",
+          duration: "1h08m",
+          participants: "蔡阿達、Angelline、Leo、Irene、Leon、AE 業務開發組",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "提案報告簡化與分階段策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "最新提案報告已獲 YC 認可可取代自首報告，報告分析網站內容 DNA 及主題，包含語意地圖分析及需求對應頁面。大家覺得報告內容是否過多？" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "建議避免重複內容，精簡文字，將詳細資料留給第二次提案。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "同意分階段策略，第一次提案聚焦主要產品線，第二次深入內容拓展。" },
+                { speaker: "蔡阿達", role: "ada", text: "我會根據回饋調整報告，提案簡報要幫助加速轉換率。歡迎大家繼續提供具體修改意見。" }
+              ]
+            },
+            {
+              topic: "客戶工具回饋與功能優化需求",
+              exchanges: [
+                { speaker: "Rebecca", role: "other", label: "AE", text: "客戶期望增加時間段交叉比對與資料匯出功能，使用多平台希望工具能整合比較。" },
+                { speaker: "蔡阿達", role: "ada", text: "工具難以面面俱到，應搭配顧問服務，工具為輔助顧問服務而非解決所有問題。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-07",
           title: "AE Team 週會 — GEM 工具全員 Demo",
@@ -1847,6 +1956,147 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Max Huang", role: "other", label: "顧問", text: "建議安排主管線上課程學習銷售技巧、組織管理及時間安排等主題，系統化學習優於被動解決問題。請主管列出想學習的課程內容。" },
                 { speaker: "蔡阿達", role: "ada", text: "同意規劃線上培訓課程，可與其他部門合作開課，提升主管能力與資源共享。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P28: GEO Go-to-Market 策略 ======
+    {
+      id: "geo-gtm",
+      name: "GEO Go-to-Market 策略 — POC 客戶優先測試 & AIO/AIMO 上線",
+      icon: "🚀",
+      category: "company",
+      lastUpdated: "2026-04-20",
+      summary: "4/20 確認 POC 客戶優先測試安排、AIO/AIMO 本週上線（最晚四月底）、AI 畫重點功能中日文翻譯流程、網站分析工具 AE/CS 教學計畫",
+      keyPoints: [
+        "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
+        "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
+        "<strong>AI 畫重點功能</strong>：先產出中文版本，YC 確認數據無誤後交哈希團隊翻譯日文",
+        "畫重點偏向<strong>大方向問題</strong>，顧問提供<strong>具體行動方案</strong>，兩者設計不衝突",
+        "<strong>AIO 與 AIMO 預計本週上線</strong>，最晚四月底前完成，成本較低無額外費用",
+        "蔡阿達完成 GO 網站檢測報告，YC 補充 Ahrefs 數據分析，<strong>雙方暫分開使用兩套工具</strong>",
+        "計畫一至兩週內向 AE/CS 介紹產品、sales deck、QA 及後續 roadmap",
+        "沙發先生與窗簾小姐為<strong>付費多年度合約客戶</strong>，其他 POC 客戶仍在試用中",
+        "資生堂已收到提案簡報，等待確認提案時間",
+        "Pipeline 未成交狀態均為<strong>持續談判中非流失</strong>",
+        "Yoshie Yeoh 負責日本團隊 POC 客戶名單確認與畫重點文章日文翻譯"
+      ],
+      chips: [
+        { icon: "🧪", text: "POC 臺灣 ≤4" },
+        { icon: "🚀", text: "AIO/AIMO 本週上線" },
+        { icon: "🇯🇵", text: "日文翻譯流程" },
+        { icon: "📊", text: "雙工具暫分開" },
+        { icon: "📚", text: "AE/CS 教學 1-2 週內" }
+      ],
+      todos: [
+        { owner: "Yoshie Yeoh", text: "與日本團隊確認重要 POC 客戶名單", priority: "week" },
+        { owner: "何建彤", text: "推動 AIO/AIMO 本週上線，最晚四月底前完成", priority: "today" },
+        { owner: "YC", text: "確認中文版本數據無誤後，交由哈希團隊進行日文翻譯", priority: "week" },
+        { owner: "YC", text: "一至兩週內安排會議，向 AE/CS 介紹產品、sales deck、QA 及 roadmap", priority: "week" },
+        { owner: "YC", text: "提供授權模板與操作說明給 AE/CS，安排教學會議", priority: "week" },
+        { owner: "蔡阿達", text: "與 YC 推動網站分析工具與 Ahrefs 數據技術整合方案", priority: "week" },
+        { owner: "林思吾", text: "與 Amber Liao 協調業務團隊，理清續約客戶中工具與顧問方案銷售比例與價格策略", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-20",
+          title: "GEO Go-to-Market 策略",
+          time: "09:01-10:23",
+          duration: "1h22m",
+          participants: "蔡阿達、何建彤（彤²）、YC、Yoshie Yeoh、Alice Cho、藍文甫（Leo）、林思吾、Amber Liao、呂紹平（Leon）、Keishi Nabeta、Max Huang、Angelline、Flora Liao、Koichi Endo、Yuya Okuyama",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "POC 客戶優先測試與多語言流程",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "日本與臺灣 AE 或 CS 分別確認重要 POC 客戶，臺灣最多選四個優先測試。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶。" },
+                { speaker: "YC", role: "other", label: "YC", text: "國際上流程類似，先產出中文版本確認數據無誤，最終版本會是翻譯後的日文。" }
+              ]
+            },
+            {
+              topic: "AIO/AIMO 產品上線與網站分析工具",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "AIO 與 AIMO 預計本週上線，若延遲最晚四月底前完成。成本較低，先前方案已有計算，無額外費用。" },
+                { speaker: "蔡阿達", role: "ada", text: "GO 網站檢測報告已完成，內容完整，已更新連結供團隊查看。報告包含網站現況總覽、語意地圖分析及需求對應頁面。" },
+                { speaker: "YC", role: "other", label: "YC", text: "Ahrefs 關鍵字數據與 AIO 應用會提供簡單模板與教學給 AE 與 CS。" }
+              ]
+            },
+            {
+              topic: "客戶提案與 POC 進度更新",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "沙發先生與窗簾小姐為付費多年度合約客戶，其他 POC 客戶仍在試用中。資生堂已收到提案簡報，等待確認提案時間。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "續約客戶多為 GPU 方案，單買 SEO 工具較少。續約時需理清工具與顧問費用比例，避免預算矛盾。" }
+              ]
+            },
+            {
+              topic: "後續會議安排與教學計畫",
+              exchanges: [
+                { speaker: "YC", role: "other", label: "YC", text: "計畫一至兩週內召開會議，向所有 AE 與 CS 介紹產品、sales deck、QA 及後續 roadmap，並安排教學說明如何使用授權模板與報告審核。" },
+                { speaker: "蔡阿達", role: "ada", text: "雙方工具技術整合困難，決定先分開使用兩套工具，後續視需求再整合。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P29: 雅虎合作案 ======
+    {
+      id: "yahoo-ai-visibility",
+      name: "雅虎 — 廣編稿 AI Visibility 合作",
+      icon: "📰",
+      category: "partner",
+      lastUpdated: "2026-04-20",
+      summary: "利用 AI 工具延伸雅虎廣編稿產生多篇文章，提升 AI 推薦與引用機會 — 以工具使用費計價，成本低且易推廣",
+      keyPoints: [
+        "雅虎作為媒體角色，<strong>廣編稿是其主要且賺錢的產品線</strong>",
+        "利用 AI 工具從雅虎提供的新聞稿<strong>延伸出多篇文章</strong>，根據客戶回饋持續優化",
+        "Yoshie Yeoh 補充：案件是提供文章生成 know-how，強調 <strong>AI Visibility 與 SEO 並重</strong>",
+        "蔡阿達建議以<strong>工具使用費用計價</strong>，成本低且易推廣",
+        "林思吾分享 World of Wonders 案例，類似模式提供文章及 prompts 建議",
+        "目前合作<strong>尚無費用</strong>，未來定價待討論",
+        "團隊討論如何證明關鍵字與 prompt 的實際搜尋需求及效果"
+      ],
+      chips: [
+        { icon: "📰", text: "雅虎廣編稿" },
+        { icon: "🤖", text: "AI 延伸多篇文章" },
+        { icon: "💡", text: "工具費計價" },
+        { icon: "🆓", text: "目前免費合作" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "持續根據雅虎客戶回饋，利用 AI 生成多版本文章大綱並優化內容", priority: "week" },
+        { owner: "蔡阿達", text: "制定雅虎合作案定價模式（以工具使用費計價）", priority: "week" },
+        { owner: "Yoshie Yeoh", text: "協助日本團隊理解合作模式與 AI 可見性價值", priority: "week" },
+        { owner: "林思吾", text: "跟進雅虎合作案進展與第三方合作模式成熟度", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-20",
+          title: "GEO Go-to-Market 策略 — 雅虎合作案討論",
+          time: "09:01-10:23",
+          duration: "1h22m",
+          participants: "蔡阿達、何建彤（彤²）、YC、Yoshie Yeoh、藍文甫（Leo）、林思吾、Keishi Nabeta",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "雅虎廣編稿 AI Visibility 合作模式",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "雅虎作為媒體角色，廣編稿是其主要且賺錢的產品線。我們利用 AI 工具從雅虎提供的新聞稿延伸出多篇文章，並根據客戶回饋持續優化。" },
+                { speaker: "Yoshie Yeoh", role: "other", label: "日本", text: "雅虎案件是提供文章生成的 know-how，強調 AI Visibility 與 SEO 並重。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議以工具使用費用計價，成本低且易推廣。" },
+                { speaker: "Keishi Nabeta", role: "other", label: "日本", text: "合作目前是否涉及費用？" },
+                { speaker: "蔡阿達", role: "ada", text: "目前尚無，未來定價待討論。" }
+              ]
+            },
+            {
+              topic: "媒體內容被 AI 引用的重要性",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "分享 World of Wonders 案例，類似模式提供文章及 prompts 建議。" },
+                { speaker: "蔡阿達", role: "ada", text: "團隊需思考如何證明關鍵字與 prompt 的實際搜尋需求及效果，以說服媒體客戶。" }
               ]
             }
           ]
