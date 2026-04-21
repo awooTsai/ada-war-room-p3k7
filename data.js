@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-20T19:00:00",
-  dateLabel: "2026/04/20（一）",
+  lastUpdated: "2026-04-21T19:00:00",
+  dateLabel: "2026/04/21（二）",
   stats: {
-    meetings: 36,
+    meetings: 39,
     projects: 28,
     partners: 11,
     internal: 6,
     clientCompany: 10,
-    todos: 142
+    todos: 145
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-04-20",
-      summary: "獎金基準升至 60、季度加權係數確定 — 4/20 確認 Q1 獎金表格下週一前發出，待新規則公告後填寫",
+      lastUpdated: "2026-04-21",
+      summary: "獎金基準升至 60、季度加權係數確定 — 4/21 Daisy 提供 AE 單位目標達成獎金明細，Q1 獎金表格下週一前發出",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -200,7 +200,8 @@ window.WAR_ROOM_DATA = {
         "獎金指標改為<strong>季度 MRR（營業額）</strong>，刪除半年獎金及跨售重疊",
         "獎金預算約 430 萬，最高不超過 200 萬",
         "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告",
-        "🆕 4/20 Q1 獎金表格將於<strong>下週一前發出</strong>，待新規則公告後填寫；去年任務獎金待確認"
+        "🆕 4/20 Q1 獎金表格將於<strong>下週一前發出</strong>，待新規則公告後填寫；去年任務獎金待確認",
+        "🆕 4/21 Daisy 提供<strong>AE 單位目標達成獎金明細</strong>供蔡阿達參考設定"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -306,8 +307,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-04-20",
-      summary: "建構代理商合約架構與分類 — 合約拆分顧問服務 + 工具使用、滿意度低於七成連續兩季終止合作",
+      lastUpdated: "2026-04-21",
+      summary: "4/21 workshop 完成 GEO 工具代理商計劃協議修訂版審閱 — 法務 Henry 加入審查合約終止與違約條款，Leo 分享修訂版協議文件",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -319,13 +320,16 @@ window.WAR_ROOM_DATA = {
         "🆕 線上註冊：工具尚未開放客戶自行註冊，法務仍在討論相關協議",
         "🆕 4/20 代理商銷售策略：工具應有<strong>獨特價值且不宜過度折扣</strong>，AE 傾向將工具當贈品，CS 則強調工具價值明確報價",
         "🆕 續約折扣策略：<strong>折扣放在顧問費用，工具維持原價</strong>，避免價格混淆",
-        "🆕 工具與顧問服務需<strong>整合銷售</strong>，避免客戶預算矛盾"
+        "🆕 工具與顧問服務需<strong>整合銷售</strong>，避免客戶預算矛盾",
+        "🆕 4/21 Leo 完成<strong>GEO 工具代理商計劃協議修訂版</strong>，召集 workshop 審閱細節與漏洞",
+        "🆕 法務 Henry 加入審查，提出<strong>合約終止與違約賠償條款</strong>：未違約方得終止合約並請求直接實際損害賠償",
+        "🆕 Henry 另提供獨立法律審查文件，持續修訂合約細節"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
         { icon: "⚖️", text: "滿意度 ≥ 70%" },
         { icon: "💰", text: "工具原價不折扣" },
-        { icon: "🔧", text: "工具協議待上線" }
+        { icon: "📄", text: "協議修訂版審閱中" }
       ],
       todos: [
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
@@ -335,7 +339,9 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "與法務討論工具使用協議與顧問服務協議是否拆分及法律效力", priority: "week" },
         { owner: "藍文甫", text: "確認代理商權限範圍，避免授權過大引發法律風險", priority: "week" },
         { owner: "藍文甫", text: "設定代理商滿意度評估標準，連續兩季低於七成啟動終止程序", priority: "week" },
-        { owner: "Anne Chang", text: "協調法務完成工具使用協議版本並規劃上線時間", priority: "week" }
+        { owner: "Anne Chang", text: "協調法務完成工具使用協議版本並規劃上線時間", priority: "week" },
+        { owner: "朱泓宇（Henry）", text: "持續修訂代理商協議法律條款，完善終止與違約賠償機制", priority: "week" },
+        { owner: "藍文甫", text: "彙整 workshop 回饋，完成 GEO 工具代理商計劃協議最終版", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -376,6 +382,23 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Max Huang", role: "other", label: "顧問", text: "代理商文件不應直接出現在客戶文件中，避免法律糾紛。" },
                 { speaker: "藍文甫", role: "other", label: "Leo", text: "設定代理商滿意度調查標準，連續兩季低於七成即考慮終止合作。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-04-21",
+          title: "workshop- 代理商協議",
+          time: "16:30-16:40",
+          duration: "10m",
+          participants: "蔡阿達、藍文甫（Leo）、張雅森（Anne）、朱泓宇（Henry）",
+          docUrl: "https://docs.google.com/document/d/1_yA2FXywe5pvP8wOwUhdNk02gTmmRyGHijFx0TMyNkI/edit",
+          dialogues: [
+            {
+              topic: "GEO 工具代理商計劃協議修訂版審閱",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "這份 GEO 工具代理商計劃協議修訂版，請大家從自己的專業角度設想情境，把細節跟漏洞補齊。" },
+                { speaker: "朱泓宇", role: "other", label: "法務", text: "任一方若未依本合約規定履行，經未違約方催告改正而未改正，或該違約情事無從改正者，未違約方得終止本合約，並向違約方請求損害賠償，賠償範圍應以直接實際所受之損害為限。" }
               ]
             }
           ]
@@ -1743,8 +1766,8 @@ window.WAR_ROOM_DATA = {
       name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
       icon: "🔑",
       category: "tools",
-      lastUpdated: "2026-04-20",
-      summary: "提案報告已獲 YC 認可取代自首報告 — 4/20 團隊建議分階段提案（首次淺顯總覽 + 後續深入關鍵字研究），簡化報告內容提升轉換率",
+      lastUpdated: "2026-04-21",
+      summary: "4/21 完成 JTLegend 與 Spigen 兩份 GEO 進檢報告 — Leon 審閱後全面改 SEO 為 GEO、各品牌獨立報告；Leon 完成報價單整合，後續加入 GEO/AMP 模組",
       keyPoints: [
         "<strong>4/7 AE 週會全員 Demo</strong>：蔡阿達向 Bryan、Rebecca、Leon、Aiden 介紹工具，獲團隊認可",
         "工具流程：輸入客戶網址 → 爬取所有頁面 → 生成<strong>健檢報告（提案用）+ 關鍵字拓展報告（拓字用）</strong>",
@@ -1756,7 +1779,11 @@ window.WAR_ROOM_DATA = {
         "🆕 4/20 提案報告已獲 YC 認可，<strong>可取代自首報告</strong>，含網站 DNA 分析與關鍵字健檢",
         "🆕 4/20 團隊建議<strong>分階段提案</strong>：第一次聚焦網站體質總覽與主要問題，第二次提供關鍵字分析作為續談誘因",
         "🆕 呂紹平建議避免重複內容，精簡文字；蔡毓倫同意第一次聚焦主要產品線",
-        "🆕 蔡阿達完成 GO 網站檢測報告，含<strong>網站現況總覽、語意地圖分析及需求對應頁面</strong>，連結已更新"
+        "🆕 蔡阿達完成 GO 網站檢測報告，含<strong>網站現況總覽、語意地圖分析及需求對應頁面</strong>，連結已更新",
+        "🆕 4/21 完成 <strong>JTLegend（愛馬斯）與 Spigen（爵雅）</strong>兩份 GEO 進檢報告，部署於 awoo-vital.vercel.app",
+        "🆕 Leon 審閱後建議：全面將 <strong>SEO 改為 GEO</strong>、各品牌報告獨立不混用其他品牌資料、移除累積案件數文字",
+        "🆕 Ada 已根據回饋修正報告並更新連結，預計可再產出兩份進檢報告",
+        "🆕 Leon 完成 <strong>SEO 報價單整合</strong>，後續將加入 GEO/AMP/電商流量模組，預計明天上午向團隊發表"
       ],
       chips: [
         { icon: "💰", text: "工具費 9K" },
@@ -1772,8 +1799,8 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "將客戶進展報告、關鍵字拓展報告統整至 HubSpot 公司層級，方便 AE 與 CS 共用", priority: "week" },
         { owner: "蔡阿達", text: "根據 AE 反饋調整報告配色，減少顏色數量，提升視覺舒適度", priority: "week" },
         { owner: "蔡阿達", text: "測試英文網站爬取能力，改善英文關鍵字研究報告品質", priority: "week" },
-        { owner: "Bryan Chou", text: "4/8 上午10點與鉅鹿客戶會議，並協助建立客戶內容資料庫", priority: "today" },
-        { owner: "蔡阿達", text: "安排 4/8 11 點與雅虎會議，討論與天下合作相關事宜", priority: "today" }
+        { owner: "蔡阿達", text: "繼續產出進檢報告（預計再做兩份），確保品牌資料獨立不混用", priority: "week" },
+        { owner: "Leon（呂紹平）", text: "完成報價單 GEO/AMP/電商流量模組整合，安排隔天上午向團隊發表", priority: "today" }
       ],
       meetingHistory: [
         {
