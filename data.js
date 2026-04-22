@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-21T19:00:00",
-  dateLabel: "2026/04/21（二）",
+  lastUpdated: "2026-04-22T19:00:00",
+  dateLabel: "2026/04/22（三）",
   stats: {
-    meetings: 39,
+    meetings: 41,
     projects: 28,
     partners: 11,
     internal: 6,
     clientCompany: 10,
-    todos: 145
+    todos: 163
   },
 
   projects: [
@@ -1328,15 +1328,21 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-04-16",
-      summary: "每週三午餐小聚，串連 SEO/影片/設計/網站/攝影等夥伴，互相引薦合作機會；蔡阿達主導 AI 推薦與網站健檢服務推廣",
+      lastUpdated: "2026-04-22",
+      summary: "每週三午餐小聚 — 4/22 討論客戶開發頻率、工廠數據化補助、穿越機飯店推廣、醫師 SaaS 平台、選舉產業鏈合作；蔡阿達推廣免費網站健檢 + MASK 服務",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
         "蔡阿達推出<strong>免費網站體質健檢</strong>，爬取網站分析關鍵字頻率與排名難易度，結合 AI 推薦工具提升曝光",
         "遙空映畫引進<strong>穿越機拍攝</strong>設備，推廣南部飯店免費拍攝服務，強調室內飛行獨特視角",
         "MarsZ Chen 協助<strong>市議員官網建置</strong>與募款系統串接（4 月底政治現金帳戶開放），已完成臺南市議員李宗霖官網",
-        "蔡阿達建置<strong>大語言模型引薦系統</strong>，將每週 30 秒簡報自動轉成引薦對話文本，上傳內部網站"
+        "蔡阿達建置<strong>大語言模型引薦系統</strong>，將每週 30 秒簡報自動轉成引薦對話文本，上傳內部網站",
+        "🆕 4/22 蔡阿達分享昨日實體小劇場效果良好，將持續舉辦",
+        "🆕 討論客戶開發頻率，蔡阿達提出<strong>免費網站健檢 + MASK 推廣</strong>開發中小企業",
+        "🆕 數位巴克斯介紹<strong>工廠設備數據化</strong>方案與政府補助（50%，100 萬起）",
+        "🆕 MarsZ Chen 計畫年底前推出<strong>醫師個人品牌 SaaS 平台</strong>",
+        "🆕 遙空映畫引進<strong>空拍穿越機</strong>，計畫無償提供高雄飯店試拍",
+        "🆕 選舉產業鏈合作：成員互相引薦高雄與臺南政治人物資源"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -1349,9 +1355,42 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
         { owner: "蔡阿達", text: "協助成員客戶了解 AI 推薦指標，提供優化方向與行動建議", priority: "week" },
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" },
-        { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" }
+        { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" },
+        { owner: "蔡阿達", text: "協助數位巴克斯評估工廠設備數據化方案中 AI/SEO 協作機會", priority: "week" },
+        { owner: "蔡阿達", text: "跟進遙空映畫高雄飯店穿越機拍攝合作進度", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-22",
+          title: "FUZEN 行銷小聚 04/22",
+          time: "13:00-13:52",
+          duration: "52m",
+          participants: "蔡阿達、遙空映畫（韋翰）、數位巴克斯（恒丰）、MarsZ Chen 等",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "客戶開發策略與免費網站健檢",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "每週至少接觸一位新客戶。可免費為客戶做網站健檢，透過關鍵字分析協助客戶優化官網，並藉此推廣 MASK 服務。" },
+                { speaker: "數位巴克斯", role: "other", label: "巴克斯", text: "新客戶較少，約一個月一位。雙方考慮開發中小企業訂閱服務以擴大市場。" }
+              ]
+            },
+            {
+              topic: "工廠設備數據化與政府補助",
+              exchanges: [
+                { speaker: "數位巴克斯", role: "other", label: "巴克斯", text: "工廠設備多為無法連網的舊機型，需硬體改造實現連網。政府補助比例約 50%，金額從 100 萬起，最高可達千萬。" },
+                { speaker: "蔡阿達", role: "ada", text: "昨日實體小劇場方式效果良好，希望未來能持續此類活動。" }
+              ]
+            },
+            {
+              topic: "穿越機推廣與選舉產業鏈合作",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "穿越機可搭配 VR 眼鏡操作，外包成本高達 6 至 8 萬。計畫無償提供高雄飯店穿越機拍攝服務，製作一鏡到底影片提升社群曝光。" },
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "持續推動選舉產業鏈，協助議員客戶製作形象影片及廣告投放。雙方分服高雄與臺南政治人物，互相引薦資源。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-16",
           title: "野口主題簡報預演",
@@ -1993,11 +2032,11 @@ window.WAR_ROOM_DATA = {
     // ====== P28: GEO Go-to-Market 策略 ======
     {
       id: "geo-gtm",
-      name: "GEO Go-to-Market 策略 — POC 客戶優先測試 & AIO/AIMO 上線",
+      name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-04-20",
-      summary: "4/20 確認 POC 客戶優先測試安排、AIO/AIMO 本週上線（最晚四月底）、AI 畫重點功能中日文翻譯流程、網站分析工具 AE/CS 教學計畫",
+      lastUpdated: "2026-04-22",
+      summary: "4/22 GO方案交接會議 — 彭時晧說明定價（3.3萬-7.3萬）與外聯 PR+SEO 整合策略；小安確認定價、YC 梳理執行流程；蔡阿達強調 SEO 為 GEO 基礎",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2009,13 +2048,22 @@ window.WAR_ROOM_DATA = {
         "沙發先生與窗簾小姐為<strong>付費多年度合約客戶</strong>，其他 POC 客戶仍在試用中",
         "資生堂已收到提案簡報，等待確認提案時間",
         "Pipeline 未成交狀態均為<strong>持續談判中非流失</strong>",
-        "Yoshie Yeoh 負責日本團隊 POC 客戶名單確認與畫重點文章日文翻譯"
+        "Yoshie Yeoh 負責日本團隊 POC 客戶名單確認與畫重點文章日文翻譯",
+        "🆕 4/22 彭時晧將於<strong>5/8 從 RO 畢業</strong>，GO方案交接進行中",
+        "🆕 GO方案聚焦<strong>品牌提及率與網站引用率</strong>兩大指標，規格 20 次 60 個 quota，定價約 4 萬",
+        "🆕 外聯結合新聞網站、媒體、部落客及社群，<strong>SEO + PR 整合</strong>策略",
+        "🆕 合約區分<strong>純 SEO、純 AIO、GO方案</strong>，費用約 3.3 萬至 7.3 萬",
+        "🆕 新聞稿成本約<strong>3.5 萬起</strong>，外部連結每個約 4,000 元",
+        "🆕 蔡阿達強調<strong>SEO 為 GEO 基礎</strong>，外聯需建立在 SEO 完成後",
+        "🆕 林思吾提出將費用包裝為<strong>全域能見度預算</strong>，降低客戶摩擦",
+        "🆕 小安負責方案確認、YC 協助執行端梳理"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
         { icon: "🚀", text: "AIO/AIMO 本週上線" },
-        { icon: "🇯🇵", text: "日文翻譯流程" },
-        { icon: "📊", text: "雙工具暫分開" },
+        { icon: "💰", text: "GO 3.3-7.3萬" },
+        { icon: "📰", text: "新聞稿 3.5萬起" },
+        { icon: "🔗", text: "外聯 4K/連結" },
         { icon: "📚", text: "AE/CS 教學 1-2 週內" }
       ],
       todos: [
@@ -2025,9 +2073,48 @@ window.WAR_ROOM_DATA = {
         { owner: "YC", text: "一至兩週內安排會議，向 AE/CS 介紹產品、sales deck、QA 及 roadmap", priority: "week" },
         { owner: "YC", text: "提供授權模板與操作說明給 AE/CS，安排教學會議", priority: "week" },
         { owner: "蔡阿達", text: "與 YC 推動網站分析工具與 Ahrefs 數據技術整合方案", priority: "week" },
-        { owner: "林思吾", text: "與 Amber Liao 協調業務團隊，理清續約客戶中工具與顧問方案銷售比例與價格策略", priority: "week" }
+        { owner: "林思吾", text: "與 Amber Liao 協調業務團隊，理清續約客戶中工具與顧問方案銷售比例與價格策略", priority: "week" },
+        { owner: "小安", text: "確認 GO 方案定價與合約架構", priority: "today" },
+        { owner: "YC", text: "協助 GO 方案執行端流程梳理", priority: "today" },
+        { owner: "Liu", text: "安排春露與商傳媒分享外聯操作流程", priority: "week" },
+        { owner: "Leo", text: "負責 GO 方案外聯建置流程執行", priority: "week" },
+        { owner: "蔡阿達", text: "安排業務團隊會議，統一 GO 方案銷售話術與新聞稿加購邏輯", priority: "week" },
+        { owner: "阿福", text: "完成 Prompt 分類機制設計與驗證", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-22",
+          title: "GEO方案討論 — GO方案交接與定價",
+          time: "10:20-11:10",
+          duration: "50m",
+          participants: "蔡阿達、彭時晧（Alan Peng）、藍文甫（Leo）、呂紹平（Leon）、林思吾、Daisy Tsai、Alice Cho、Anne Chang、Dom Chan",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GO方案架構與核心指標",
+              exchanges: [
+                { speaker: "彭時晧", role: "other", label: "Alan", text: "GO方案以品牌提及率與網站引用率為核心指標，規格含 20 次 60 個 quota，初步定價參考競品約 4 萬元。5 月 8 日我從 RO 畢業，此會議同時作為工作交接。" },
+                { speaker: "蔡阿達", role: "ada", text: "SEO 是基礎，GEO 優化需建立在 SEO 完成後，否則外部連結與新聞稿效果有限。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "業務銷售時需清楚說明新聞稿加購邏輯，避免客戶因價格增加產生摩擦。建議將外部文章操作預算包裝成全域能見度預算。" }
+              ]
+            },
+            {
+              topic: "外聯策略與新聞稿成本",
+              exchanges: [
+                { speaker: "彭時晧", role: "other", label: "Alan", text: "外聯結合新聞網站、媒體、部落客及社群平台，SEO 加 PR 整合。合作廠商每個連結約 4,000 元，新聞稿成本約 3.5 萬元起。" },
+                { speaker: "蔡阿達", role: "ada", text: "合約規格區分純 SEO、純 AIO 與 GO 方案，GO 方案整合 SEO 與 AI 可見度優化，費用約 3.3 萬至 7.3 萬。新聞稿可拆分月費收取。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "針對 AIO 及 Jetstream 客戶，外聯為付費 Last Mile 服務，業界行情約 6 至 8 萬元。" }
+              ]
+            },
+            {
+              topic: "執行分工與後續安排",
+              exchanges: [
+                { speaker: "彭時晧", role: "other", label: "Alan", text: "Liu 負責協作外聯流程，安排春露與商傳媒分享外聯操作細節。Leo 負責建置流程執行。遇到多產品曝光需求時，直接引導客戶加購升級方案。" },
+                { speaker: "蔡阿達", role: "ada", text: "小安負責方案確認，YC 協助執行端梳理，安排後續跟進會議釐清執行流程細節。內部需將能見度優化納入日常作業，避免銷售時資訊不一致。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-20",
           title: "GEO Go-to-Market 策略",
