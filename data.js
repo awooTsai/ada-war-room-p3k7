@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-22T19:00:00",
-  dateLabel: "2026/04/22（三）",
+  lastUpdated: "2026-04-24T19:00:00",
+  dateLabel: "2026/04/24（五）",
   stats: {
-    meetings: 41,
-    projects: 28,
-    partners: 11,
+    meetings: 45,
+    projects: 30,
+    partners: 12,
     internal: 6,
-    clientCompany: 10,
-    todos: 163
+    clientCompany: 11,
+    todos: 175
   },
 
   projects: [
@@ -307,8 +307,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-04-21",
-      summary: "4/21 workshop 完成 GEO 工具代理商計劃協議修訂版審閱 — 法務 Henry 加入審查合約終止與違約條款，Leo 分享修訂版協議文件",
+      lastUpdated: "2026-04-24",
+      summary: "4/24 Leo 要求 Ada 從 AE 角度標註代理商協議條文 — 代理商/經銷商客戶以統編為認定單位，AE 主導洽談、同集團不同品牌仍認統編",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -323,7 +323,11 @@ window.WAR_ROOM_DATA = {
         "🆕 工具與顧問服務需<strong>整合銷售</strong>，避免客戶預算矛盾",
         "🆕 4/21 Leo 完成<strong>GEO 工具代理商計劃協議修訂版</strong>，召集 workshop 審閱細節與漏洞",
         "🆕 法務 Henry 加入審查，提出<strong>合約終止與違約賠償條款</strong>：未違約方得終止合約並請求直接實際損害賠償",
-        "🆕 Henry 另提供獨立法律審查文件，持續修訂合約細節"
+        "🆕 Henry 另提供獨立法律審查文件，持續修訂合約細節",
+        "🆕 4/24 Leo 請 Ada <strong>從 AE 角度標註不適合出現在條文中的內容</strong>",
+        "🆕 代理商/經銷商客戶以<strong>統編為認定單位</strong>，同集團旗下不同品牌亦認統編",
+        "🆕 若僅與經銷商或代理商簽約，<strong>由 AE 主導洽談</strong>較為理想",
+        "🆕 Rebecca 提問：同集團不同品牌是否需轉 CS？結論為<strong>認統編處理</strong>"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
@@ -341,9 +345,34 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "設定代理商滿意度評估標準，連續兩季低於七成啟動終止程序", priority: "week" },
         { owner: "Anne Chang", text: "協調法務完成工具使用協議版本並規劃上線時間", priority: "week" },
         { owner: "朱泓宇（Henry）", text: "持續修訂代理商協議法律條款，完善終止與違約賠償機制", priority: "week" },
-        { owner: "藍文甫", text: "彙整 workshop 回饋，完成 GEO 工具代理商計劃協議最終版", priority: "week" }
+        { owner: "藍文甫", text: "彙整 workshop 回饋，完成 GEO 工具代理商計劃協議最終版", priority: "week" },
+        { owner: "蔡阿達", text: "完成代理商協議 AE 角度條文標註，回覆 Leo", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "Weekly Sync Up — 代理商協議 AE 審查",
+          time: "11:00-12:00",
+          duration: "1h",
+          participants: "蔡阿達、藍文甫（Leo）、福田琢滋（Takuji）、Anne Chang、Max Huang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商協議 AE 角度審查",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "阿達，代理商協議哪些依 AE 角度不希望在條文呈現的，你得做一下標註。" },
+                { speaker: "蔡阿達", role: "ada", text: "多謝提醒，我來看一下喔！" }
+              ]
+            },
+            {
+              topic: "代理商/經銷商客戶歸屬規則",
+              exchanges: [
+                { speaker: "陳琬君", role: "other", label: "Rebecca", text: "同一個集團旗下不同品牌，也要給 CS 嗎？那這樣如果我們談的很多代理商、經銷商那些，不也都只能談一筆，其他都要給他們？" },
+                { speaker: "蔡阿達", role: "ada", text: "目前結論是認統編。代理商、經銷商介紹來的，有些都是用不同的統編在跟我們簽訂。但若遇到只是要跟經銷商跟代理商簽約的話，我會跟 Leo 說，還是由 AE 來洽談會比較理想。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "AE Team 週會",
@@ -1641,28 +1670,29 @@ window.WAR_ROOM_DATA = {
     // ====== P23: Leon BD 同步 — 娛樂城代理商 ======
     {
       id: "leon-bd-sync",
-      name: "Leon BD 同步 — 娛樂城代理商 + 四月業務更新",
+      name: "Leon BD 同步 — 博報堂 INAX + Yahoo 回簽 + 業務推動",
       icon: "📋",
       category: "internal",
-      lastUpdated: "2026-04-02",
-      summary: "Ada 與 Leon 內部同步：娛樂城代理商見面約定 4/8、文章篇數調整、AEMU 四月新單、網站架設",
+      lastUpdated: "2026-04-24",
+      summary: "4/24 Leon 推動博報堂/INAX GEO 優化方案保密合約、Yahoo 合約回簽確認、GEO 工具多語言追蹤功能確認",
       keyPoints: [
         "娛樂城代理商客戶：代理商信任 Leon，蔡阿達說服後<strong>約 4/8（三）下午5點</strong>復興北路167號見面",
         "提案策略：<strong>先做好 SEO，再做關鍵字廣告</strong>，Leon 主導跟進",
-        "文章篇數問題：客戶麥可發現簡報20篇 vs 實際17篇差異，需提至下週 Go-to-Market/AECS 週會",
-        "AEMU 四月新單：有新單尚未填報，代理商直接委託<strong>拓字研究</strong>，麥可已簽約",
-        "網站架設外包：委由季輝負責，費用控制在<strong>10 萬以下</strong>，細節待確認"
+        "🆕 4/24 Leon 提交<strong>博報堂思索-INAX GEO 優化方案保密合約書</strong>修訂版",
+        "🆕 <strong>Yahoo 合約已回簽</strong>，需上 Ragic 完成新增專案登記",
+        "🆕 GEO 工具確認可<strong>切地區與切語言</strong>，追蹤美國英文市場可行",
+        "🆕 Ada 確認已有 Yahoo 及台灣 ELLE 的 LOGO"
       ],
       chips: [
-        { icon: "📅", text: "4/8 見面" },
-        { icon: "📍", text: "復興北路167號" },
-        { icon: "💰", text: "網站 ≤10萬" },
-        { icon: "📝", text: "拓字研究委託" }
+        { icon: "📝", text: "INAX NDA 審查中" },
+        { icon: "✅", text: "Yahoo 回簽" },
+        { icon: "🏷️", text: "Yahoo+ELLE LOGO" },
+        { icon: "🌐", text: "多語言追蹤可行" }
       ],
       todos: [
-        { owner: "Leon（呂紹平）", text: "4/8 下午5點至復興北路167號，與代理商及其客戶會面，準備 SEO 提案", priority: "week" },
-        { owner: "Leon（呂紹平）", text: "下週一/二 Go-to-Market 或 AECS 週會提出文章篇數調整至20篇議題", priority: "week" },
-        { owner: "Leon（呂紹平）", text: "確認代理商是否需要正式簽約，並通知蔡阿達網站架設預算細節", priority: "week" }
+        { owner: "Leon（呂紹平）", text: "跟進博報堂/INAX GEO 保密合約簽署流程", priority: "today" },
+        { owner: "Leon（呂紹平）", text: "上 Ragic 完成 Yahoo GEO Suite 新增專案登記", priority: "today" },
+        { owner: "蔡阿達", text: "確認 GEO 工具報表功能是否有解決方案", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -2035,8 +2065,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-04-22",
-      summary: "4/22 GO方案交接會議 — 彭時晧說明定價（3.3萬-7.3萬）與外聯 PR+SEO 整合策略；小安確認定價、YC 梳理執行流程；蔡阿達強調 SEO 為 GEO 基礎",
+      lastUpdated: "2026-04-24",
+      summary: "4/24 AE 推動會議 — 約訪時段固定週二 11-12 點、麥可加入提案、GEO 合約狀態表新增洽談中/因故結束欄位、WACA 自檢報表上線、MarTech Asia 5/27 邀約啟動",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2056,15 +2086,23 @@ window.WAR_ROOM_DATA = {
         "🆕 新聞稿成本約<strong>3.5 萬起</strong>，外部連結每個約 4,000 元",
         "🆕 蔡阿達強調<strong>SEO 為 GEO 基礎</strong>，外聯需建立在 SEO 完成後",
         "🆕 林思吾提出將費用包裝為<strong>全域能見度預算</strong>，降低客戶摩擦",
-        "🆕 小安負責方案確認、YC 協助執行端梳理"
+        "🆕 小安負責方案確認、YC 協助執行端梳理",
+        "🆕 4/24 約訪時段固定<strong>每週二 11:00-12:00</strong>，邀請麥可一同參與提案",
+        "🆕 麥可希望更頻繁參與 AE 提案，<strong>每週至少安排一場</strong>",
+        "🆕 GEO 合約狀態表新增<strong>「洽談中」及「因故結束洽談」</strong>狀態欄位",
+        "🆕 WACA 平台後台<strong>GEO 執行檢核自檢報表</strong>上線",
+        "🆕 <strong>MarTech Asia 5/27</strong> 邀約活動啟動，提供邀約表單加速來賓資料收集",
+        "🆕 GEO 工具可追蹤<strong>英文/美國市場</strong>，切地區與切語言功能已內建",
+        "🆕 GEO 純內容版初步定價：<strong>10 關鍵字 / 30 Prompt / 約 22K/月 / 配 17 篇文章</strong>",
+        "🆕 Ada 詢問 GEO 工具是否有出<strong>報表功能</strong>，待確認解決方案"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
-        { icon: "🚀", text: "AIO/AIMO 本週上線" },
         { icon: "💰", text: "GO 3.3-7.3萬" },
-        { icon: "📰", text: "新聞稿 3.5萬起" },
-        { icon: "🔗", text: "外聯 4K/連結" },
-        { icon: "📚", text: "AE/CS 教學 1-2 週內" }
+        { icon: "📅", text: "約訪 週二 11-12" },
+        { icon: "🌐", text: "MarTech Asia 5/27" },
+        { icon: "📊", text: "WACA 自檢報表" },
+        { icon: "📝", text: "純內容版 22K/月" }
       ],
       todos: [
         { owner: "Yoshie Yeoh", text: "與日本團隊確認重要 POC 客戶名單", priority: "week" },
@@ -2079,9 +2117,57 @@ window.WAR_ROOM_DATA = {
         { owner: "Liu", text: "安排春露與商傳媒分享外聯操作流程", priority: "week" },
         { owner: "Leo", text: "負責 GO 方案外聯建置流程執行", priority: "week" },
         { owner: "蔡阿達", text: "安排業務團隊會議，統一 GO 方案銷售話術與新聞稿加購邏輯", priority: "week" },
-        { owner: "阿福", text: "完成 Prompt 分類機制設計與驗證", priority: "week" }
+        { owner: "阿福", text: "完成 Prompt 分類機制設計與驗證", priority: "week" },
+        { owner: "蔡阿達", text: "推動各 AE 將約訪時段安排至每週二 11-12 點 booking", priority: "today" },
+        { owner: "蔡阿達", text: "確認 GEO 工具報表功能可行方案", priority: "week" },
+        { owner: "蔡阿達", text: "持續推動 MarTech Asia 5/27 邀約，透過表單收集來賓資料", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "AE 運轉加速/推動會議",
+          time: "14:30-17:00",
+          duration: "2h30m",
+          participants: "蔡阿達、呂紹平（Leon）、蔡毓倫（Aiden）、陳琬君（Rebecca）、周至剛（Bryan）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "約訪時段與提案節奏調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "麥可大大還是希望可以更頻繁參與我們提案，故現在直接放大絕，希望我們每個禮拜都至少有一人可以安排在週二上午 11 點到 12 點，邀請麥可一同與我們面對客戶提案。" },
+                { speaker: "蔡阿達", role: "ada", text: "booking 的方式，只要直接編輯 Google 日曆就可以，編輯的日曆名稱是：AE-稱呼-客戶名稱。" }
+              ]
+            },
+            {
+              topic: "GEO 合約狀態與 AE NEW 報表更新",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "要再麻煩各位今天下班前至 AE 的 GEO 合約狀態進度表更新以下最新狀態：新增正在洽談的客戶，以及因「未成交」看不出進度，故新增了「洽談中」、「因故結束洽談」欄位。" },
+                { speaker: "蔡阿達", role: "ada", text: "待會 2:30 開始我也會同時操作 AE NEW 報表，所以如果要更新，還請各位抓好時間喔！" }
+              ]
+            },
+            {
+              topic: "GEO 工具多語言/多地區追蹤",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "我這邊客戶的需求是美國市場追英文。客戶是看到官網這段，以為好像我們只能追台灣日本來問我的。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "切地區跟切語言實際是做得到，但不確定 PM 會不會協助改設定。我之前有問能不能追台灣用英文的或美國用中文的。" },
+                { speaker: "蔡阿達", role: "ada", text: "沒關係，客戶最大，且理應阿虎都開金口，裡應都可以設定喔！" }
+              ]
+            },
+            {
+              topic: "真言報價確認",
+              exchanges: [
+                { speaker: "陳琬君", role: "other", label: "Rebecca", text: "達哥，如同剛才會議上討論，真言的報價單我加上了工具，追蹤 20×2=40 組 prompt，再請你幫我確認喔！" },
+                { speaker: "蔡阿達", role: "ada", text: "好的，我來看一下。" }
+              ]
+            },
+            {
+              topic: "WACA 自檢報表與 MarTech Asia 邀約",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我把上述內容都放進周蒨畫版中，同時新增了一個 WACA 平台後台欄位自檢報表。為了可以加速大家邀約媽鐵愛蝦的來賓以及資料的收集，還有一張表單可以提供。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-22",
           title: "GEO方案討論 — GO方案交接與定價",
@@ -2164,8 +2250,8 @@ window.WAR_ROOM_DATA = {
       name: "雅虎 — 廣編稿 AI Visibility 合作",
       icon: "📰",
       category: "partner",
-      lastUpdated: "2026-04-20",
-      summary: "利用 AI 工具延伸雅虎廣編稿產生多篇文章，提升 AI 推薦與引用機會 — 以工具使用費計價，成本低且易推廣",
+      lastUpdated: "2026-04-24",
+      summary: "4/24 Yahoo 合約已回簽 — GEO Suite 開通需上 Ragic 新增專案登記，已取得 Yahoo 及台灣 ELLE LOGO",
       keyPoints: [
         "雅虎作為媒體角色，<strong>廣編稿是其主要且賺錢的產品線</strong>",
         "利用 AI 工具從雅虎提供的新聞稿<strong>延伸出多篇文章</strong>，根據客戶回饋持續優化",
@@ -2173,21 +2259,44 @@ window.WAR_ROOM_DATA = {
         "蔡阿達建議以<strong>工具使用費用計價</strong>，成本低且易推廣",
         "林思吾分享 World of Wonders 案例，類似模式提供文章及 prompts 建議",
         "目前合作<strong>尚無費用</strong>，未來定價待討論",
-        "團隊討論如何證明關鍵字與 prompt 的實際搜尋需求及效果"
+        "團隊討論如何證明關鍵字與 prompt 的實際搜尋需求及效果",
+        "🆕 4/24 <strong>Yahoo 合約已回簽</strong>",
+        "🆕 已取得 <strong>Yahoo 及台灣 ELLE 的 LOGO</strong>",
+        "🆕 GEO Suite 開通需透過 <strong>Ragic 新增專案登記</strong>，經 Henry 電子簽後才正式生效",
+        "🆕 Leon 尚未上 Ragic，需確認報價單、合約、新增專案登記流程"
       ],
       chips: [
         { icon: "📰", text: "雅虎廣編稿" },
         { icon: "🤖", text: "AI 延伸多篇文章" },
-        { icon: "💡", text: "工具費計價" },
-        { icon: "🆓", text: "目前免費合作" }
+        { icon: "✅", text: "合約已回簽" },
+        { icon: "🏷️", text: "Yahoo+ELLE LOGO" }
       ],
       todos: [
+        { owner: "呂紹平（Leon）", text: "上 Ragic 完成 Yahoo GEO Suite 新增專案登記", priority: "today" },
         { owner: "蔡阿達", text: "持續根據雅虎客戶回饋，利用 AI 生成多版本文章大綱並優化內容", priority: "week" },
         { owner: "蔡阿達", text: "制定雅虎合作案定價模式（以工具使用費計價）", priority: "week" },
         { owner: "Yoshie Yeoh", text: "協助日本團隊理解合作模式與 AI 可見性價值", priority: "week" },
         { owner: "林思吾", text: "跟進雅虎合作案進展與第三方合作模式成熟度", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "AE 推動會議 — Yahoo 合約回簽確認",
+          time: "14:30-17:00",
+          duration: "2h30m",
+          participants: "蔡阿達、呂紹平（Leon）、蔡毓倫（Aiden）、陳琬君（Rebecca）、周至剛（Bryan）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Yahoo 合約回簽與 GEO Suite 開通流程",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Yahoo 已經回簽了。但我還沒上 Ragic，不確定需要上到哪個階段。報價單、合約、新增專案登記，一樣嗎？" },
+                { speaker: "蔡阿達", role: "ada", text: "對，但是理論上應該是要透過 Ragic，然後一樣是要讓 Henry 去做電子簽，從那個時候簽回來，才會認在這個系統當中。這樣也表示我們已經有 Yahoo、台灣 ELLE 的 LOGO 了？" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "對。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-20",
           title: "GEO Go-to-Market 策略 — 雅虎合作案討論",
@@ -2211,6 +2320,112 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "林思吾", role: "other", label: "麥可", text: "分享 World of Wonders 案例，類似模式提供文章及 prompts 建議。" },
                 { speaker: "蔡阿達", role: "ada", text: "團隊需思考如何證明關鍵字與 prompt 的實際搜尋需求及效果，以說服媒體客戶。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P30: 博報堂思索 × INAX ======
+    {
+      id: "hakuhodo-inax",
+      name: "博報堂思索 × INAX — GEO 優化方案合作",
+      icon: "🏢",
+      category: "partner",
+      lastUpdated: "2026-04-24",
+      summary: "透過博報堂思索代理，為 INAX 提供 GEO 優化方案 — 保密合約書修訂版已提交，進入 NDA 簽署階段",
+      keyPoints: [
+        "博報堂思索為<strong>代理商角色</strong>，代理 INAX（衛浴品牌）的 GEO 優化需求",
+        "Leon 提交<strong>外部廠商保密合約書 1150421 修訂版</strong>",
+        "合約為 GEO 優化方案，需先完成 NDA 簽署才能進入提案階段",
+        "目前處於<strong>保密合約審查階段</strong>"
+      ],
+      chips: [
+        { icon: "📝", text: "NDA 審查中" },
+        { icon: "🏢", text: "博報堂代理" },
+        { icon: "🚿", text: "INAX 衛浴" },
+        { icon: "📋", text: "GEO 優化" }
+      ],
+      todos: [
+        { owner: "呂紹平（Leon）", text: "跟進博報堂 INAX 保密合約簽署進度", priority: "today" },
+        { owner: "蔡阿達", text: "審閱保密合約書內容，確認條款無疑慮", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "NDA 完成後準備 INAX GEO 優化提案", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "AE 推動會議 — 博報堂/INAX NDA 進度同步",
+          time: "14:30-17:00",
+          duration: "2h30m",
+          participants: "蔡阿達、呂紹平（Leon）、蔡毓倫（Aiden）、陳琬君（Rebecca）、周至剛（Bryan）",
+          docUrl: "https://docs.google.com/document/d/1J4THsE0AxzBUSxrm_dtCtjTddDsRcOn6/edit",
+          dialogues: [
+            {
+              topic: "博報堂/INAX GEO 保密合約提交",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "（會後分享博報堂思索-INAX GEO 優化方案外部廠商保密合約書 1150421 修訂版）" },
+                { speaker: "蔡阿達", role: "ada", text: "收到，我先看一下合約內容。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P31: 喬山跨國建站 ======
+    {
+      id: "johnson-global-seo",
+      name: "喬山 — 跨國建站 SEO 顧問專案",
+      icon: "🏋️",
+      category: "client",
+      lastUpdated: "2026-04-24",
+      summary: "喬山（Johnson Health Tech）跨國建站 SEO 顧問專案 — Aiden 整理需求文件，聚焦美國市場英文追蹤，GEO 純內容版方案規劃中",
+      keyPoints: [
+        "Aiden 整理<strong>《喬山 全球 SEO 建議書》</strong>需求文件",
+        "客戶需求聚焦<strong>美國市場追英文</strong>",
+        "GEO 工具確認可切地區與語言，<strong>追蹤美國英文市場可行</strong>",
+        "建站建議書包含兩份：Aiden 整理版 + 原有簡報",
+        "方案以 GEO 純內容版為主：<strong>10 關鍵字 / 30 Prompt / 約 22K/月</strong>",
+        "配 <strong>17 篇文章</strong>，幾乎都靠文章來操作",
+        "五樓網站範例也需 Ada 提供"
+      ],
+      chips: [
+        { icon: "🌍", text: "美國市場" },
+        { icon: "🔤", text: "英文追蹤" },
+        { icon: "💰", text: "22K/月" },
+        { icon: "📄", text: "17 篇文章" }
+      ],
+      todos: [
+        { owner: "蔡毓倫（Aiden）", text: "確定 GEO 純內容版最終字數、Prompt 數、價格", priority: "today" },
+        { owner: "蔡阿達", text: "提供五樓網站範例給 Aiden", priority: "today" },
+        { owner: "蔡阿達", text: "審閱喬山全球 SEO 建議書並提供回饋", priority: "week" },
+        { owner: "蔡毓倫（Aiden）", text: "完成喬山報價與提案簡報", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "Ada × Aiden 1:1 — 喬山跨國建站與 GEO 定價",
+          time: "14:00-14:30",
+          duration: "30m",
+          participants: "蔡阿達、蔡毓倫（Aiden）",
+          docUrl: "https://docs.google.com/document/d/1X16Go0eZTLzKrK1EilTwXXaIB7xVaCqUk5E3snV3WvY/edit",
+          dialogues: [
+            {
+              topic: "喬山跨國建站需求確認",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "之前有提到喬山的跨國建站顧問專案，我有再跟窗口對焦需求，先整理成這份文件。下午 1:1 再跟達哥細聊這個案子。" },
+                { speaker: "蔡阿達", role: "ada", text: "好，我看一下文件。喬山的需求是美國市場追英文，GEO 工具切地區跟切語言都做得到。" }
+              ]
+            },
+            {
+              topic: "GEO 純內容版定價討論",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "稍早我和旅行社的老闆談完，他還是想做 GEO 純內容版。因此我還是會需要達哥協助確定 GEO 純內容版的最終字數、Prompt 數、價格。10 字 / 30 Prompt。" },
+                { speaker: "蔡阿達", role: "ada", text: "哈，那就先喊兩萬二/月。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "建站建議書包兩份？" },
+                { speaker: "蔡阿達", role: "ada", text: "應該是一份建站建議書，就是艾登當時給我看的簡報。配十七篇文章。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "那真的就是幾乎都靠文章來操作了。" }
               ]
             }
           ]
