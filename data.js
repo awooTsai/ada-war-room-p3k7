@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-24T19:00:00",
-  dateLabel: "2026/04/24（五）",
+  lastUpdated: "2026-04-26T19:00:00",
+  dateLabel: "2026/04/26（日）",
   stats: {
     meetings: 45,
-    projects: 30,
+    projects: 32,
     partners: 12,
     internal: 6,
-    clientCompany: 11,
-    todos: 175
+    clientCompany: 13,
+    todos: 186
   },
 
   projects: [
@@ -308,7 +308,7 @@ window.WAR_ROOM_DATA = {
       icon: "📺",
       category: "internal",
       lastUpdated: "2026-04-24",
-      summary: "4/24 Leo 要求 Ada 從 AE 角度標註代理商協議條文 — 代理商/經銷商客戶以統編為認定單位，AE 主導洽談、同集團不同品牌仍認統編",
+      summary: "4/24 代理商合約條款深度檢視 — 刪除 AI 操縱條款、自動續約通知縮短至 30 天、代理商依三類分流（工具/工具+策略/媒體），客戶身份以服務標的統編為主",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -327,13 +327,21 @@ window.WAR_ROOM_DATA = {
         "🆕 4/24 Leo 請 Ada <strong>從 AE 角度標註不適合出現在條文中的內容</strong>",
         "🆕 代理商/經銷商客戶以<strong>統編為認定單位</strong>，同集團旗下不同品牌亦認統編",
         "🆕 若僅與經銷商或代理商簽約，<strong>由 AE 主導洽談</strong>較為理想",
-        "🆕 Rebecca 提問：同集團不同品牌是否需轉 CS？結論為<strong>認統編處理</strong>"
+        "🆕 Rebecca 提問：同集團不同品牌是否需轉 CS？結論為<strong>認統編處理</strong>",
+        "🆕 4/24 蔡阿達質疑合約中<strong>操縱 AI 平台結果條款不適宜</strong>，服務由公司負責，建議刪除",
+        "🆕 覆盤資料頻率設定為<strong>每年最多兩次</strong>，蔡阿達認為可能限制彈性，建議重新評估",
+        "🆕 自動續約通知期限 90 天被認為過長，團隊建議<strong>縮短至 30 天</strong>降低代理商擺爛風險",
+        "🆕 Max Huang 提出代理商分三類：<strong>工具代理、工具加策略、媒體</strong>，合約需依此調整",
+        "🆕 保密條款被認為多餘，但法務建議<strong>從法律角度保留以防風險</strong>",
+        "🆕 第三方代理引入之新客戶由 <strong>AE 負責服務</strong>（因 AE 投入較多努力取得信任），現有客戶則交 CS"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
         { icon: "⚖️", text: "滿意度 ≥ 70%" },
         { icon: "💰", text: "工具原價不折扣" },
-        { icon: "📄", text: "協議修訂版審閱中" }
+        { icon: "📄", text: "協議修訂版審閱中" },
+        { icon: "⏰", text: "續約通知 30 天" },
+        { icon: "🔀", text: "三類代理商分流" }
       ],
       todos: [
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
@@ -346,29 +354,39 @@ window.WAR_ROOM_DATA = {
         { owner: "Anne Chang", text: "協調法務完成工具使用協議版本並規劃上線時間", priority: "week" },
         { owner: "朱泓宇（Henry）", text: "持續修訂代理商協議法律條款，完善終止與違約賠償機制", priority: "week" },
         { owner: "藍文甫", text: "彙整 workshop 回饋，完成 GEO 工具代理商計劃協議最終版", priority: "week" },
-        { owner: "蔡阿達", text: "完成代理商協議 AE 角度條文標註，回覆 Leo", priority: "today" }
+        { owner: "蔡阿達", text: "完成代理商協議 AE 角度條文標註，回覆 Leo", priority: "today" },
+        { owner: "蔡阿達", text: "制定明確規範：以服務標的統編為主判斷客戶身份，決定由 AE 或 CS 負責", priority: "week" },
+        { owner: "Max Huang", text: "依代理商三類型（工具代理/工具加策略/媒體）重新架構合約內容", priority: "week" },
+        { owner: "團隊", text: "評估自動續約通知期限，考慮縮短至 30 天", priority: "week" }
       ],
       meetingHistory: [
         {
           date: "2026-04-24",
-          title: "Weekly Sync Up — 代理商協議 AE 審查",
-          time: "11:00-12:00",
-          duration: "1h",
-          participants: "蔡阿達、藍文甫（Leo）、福田琢滋（Takuji）、Anne Chang、Max Huang",
+          title: "Weekly Sync Up — 代理商合約條款深度檢視",
+          time: "11:01-11:58",
+          duration: "57m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
           docUrl: "",
           dialogues: [
             {
-              topic: "代理商協議 AE 角度審查",
+              topic: "代理商合約條款修正建議",
               exchanges: [
-                { speaker: "藍文甫", role: "other", label: "Leo", text: "阿達，代理商協議哪些依 AE 角度不希望在條文呈現的，你得做一下標註。" },
-                { speaker: "蔡阿達", role: "ada", text: "多謝提醒，我來看一下喔！" }
+                { speaker: "蔡阿達", role: "ada", text: "合約中操縱 AI 平台結果這個條款不適宜，服務是由我們公司負責的，建議刪除。" },
+                { speaker: "蔡阿達", role: "ada", text: "覆盤資料頻率設定每年最多兩次，這條款可能限制公司彈性，建議重新評估必要性。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "保密條款看似多餘，但從法務角度建議保留以防風險。自動續約通知期限 90 天確實過長。" },
+                { speaker: "蔡阿達", role: "ada", text: "90 天太長了，建議縮短至 30 天，降低代理商擺爛風險。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "代理商應分為工具代理、工具加策略及媒體三類，合約需依此調整支援範圍與結構。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "售後支援由阿物科技負責，建議刪除重疊條款。阿達，代理商協議哪些依 AE 角度不希望在條文呈現的，你得做一下標註。" }
               ]
             },
             {
-              topic: "代理商/經銷商客戶歸屬規則",
+              topic: "代理商與客戶身份定義",
               exchanges: [
-                { speaker: "陳琬君", role: "other", label: "Rebecca", text: "同一個集團旗下不同品牌，也要給 CS 嗎？那這樣如果我們談的很多代理商、經銷商那些，不也都只能談一筆，其他都要給他們？" },
-                { speaker: "蔡阿達", role: "ada", text: "目前結論是認統編。代理商、經銷商介紹來的，有些都是用不同的統編在跟我們簽訂。但若遇到只是要跟經銷商跟代理商簽約的話，我會跟 Leo 說，還是由 AE 來洽談會比較理想。" }
+                { speaker: "蔡阿達", role: "ada", text: "若客戶是透過第三方代理簽約且為新客戶，應由 AE 負責服務，因 AE 投入較多努力取得信任。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "系統中客戶檔案若已有，則交由 CS 服務，否則由 AE 負責新客戶。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "需多確認第三方帶來的客戶是否為現有客戶，避免重複服務。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "以服務標的統編作為判斷依據較為準確，並建議代理商提前通知續約事宜以便防範。" },
+                { speaker: "蔡阿達", role: "ada", text: "目前結論是認統編。代理商、經銷商介紹來的，有些都是用不同的統編在跟我們簽訂。但若遇到只是要跟經銷商跟代理商簽約的話，由 AE 來洽談會比較理想。" }
               ]
             }
           ]
@@ -2094,7 +2112,11 @@ window.WAR_ROOM_DATA = {
         "🆕 <strong>MarTech Asia 5/27</strong> 邀約活動啟動，提供邀約表單加速來賓資料收集",
         "🆕 GEO 工具可追蹤<strong>英文/美國市場</strong>，切地區與切語言功能已內建",
         "🆕 GEO 純內容版初步定價：<strong>10 關鍵字 / 30 Prompt / 約 22K/月 / 配 17 篇文章</strong>",
-        "🆕 Ada 詢問 GEO 工具是否有出<strong>報表功能</strong>，待確認解決方案"
+        "🆕 Ada 詢問 GEO 工具是否有出<strong>報表功能</strong>，待確認解決方案",
+        "🆕 4/24 AE <strong>24 小時聯絡提醒機制</strong>：未聯絡客戶自動發送確認信，Slack 兩週通知促使更新",
+        "🆕 中小企業溝通策略：Bryan 微調話術，<strong>聚焦落地細節</strong>而非策略化說明",
+        "🆕 AI 報告自動化：<strong>Claude 品質優於 ChatGPT</strong>，三段式報告流程（健檢→關鍵字拓展→prompt），計畫整合單一頁面",
+        "🆕 提案報告優化：將論壇問題轉化為 AI 問題，<strong>追蹤 AI 答覆引用品牌內容</strong>"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -2120,7 +2142,10 @@ window.WAR_ROOM_DATA = {
         { owner: "阿福", text: "完成 Prompt 分類機制設計與驗證", priority: "week" },
         { owner: "蔡阿達", text: "推動各 AE 將約訪時段安排至每週二 11-12 點 booking", priority: "today" },
         { owner: "蔡阿達", text: "確認 GEO 工具報表功能可行方案", priority: "week" },
-        { owner: "蔡阿達", text: "持續推動 MarTech Asia 5/27 邀約，透過表單收集來賓資料", priority: "week" }
+        { owner: "蔡阿達", text: "持續推動 MarTech Asia 5/27 邀約，透過表單收集來賓資料", priority: "week" },
+        { owner: "蔡阿達", text: "設計 24 小時內 AE 聯絡提醒機制，確保及時跟進客戶", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "建立 AI 報告三段式流程（健檢/關鍵字拓展/prompt）整合頁面", priority: "week" },
+        { owner: "蔡阿達", text: "建立 AI 應用頻道，協助命名頻道與設置作者介紹", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -2164,6 +2189,35 @@ window.WAR_ROOM_DATA = {
               topic: "WACA 自檢報表與 MarTech Asia 邀約",
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "我把上述內容都放進周蒨畫版中，同時新增了一個 WACA 平台後台欄位自檢報表。為了可以加速大家邀約媽鐵愛蝦的來賓以及資料的收集，還有一張表單可以提供。" }
+              ]
+            },
+            {
+              topic: "AE 客戶聯絡追蹤機制優化",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "設置 24 小時後自動發送聯絡確認信給 AE，提醒未聯絡客戶者盡快跟進。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "現有 Slack 通知系統會提醒 AE 兩週未聯絡客戶，促使 AE 更新狀態。未來 AE 直接向哈珀請求協助，避免哈珀被多方打擾。" }
+              ]
+            },
+            {
+              topic: "中小企業客戶溝通策略調整",
+              exchanges: [
+                { speaker: "周至剛", role: "other", label: "Bryan", text: "金融業客戶決策較快，中小企業則需較長時間培養。中小企業偏好聽取實際操作細節，較不喜歡過於策略化的說明，我已開始微調話術。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "簡報內容應避免跳躍，專注於客戶關心的重點。" }
+              ]
+            },
+            {
+              topic: "AI 工具與報告自動化應用",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "分享使用 Claude 替代 ChatGPT 的體驗，認為生成內容品質更佳。AI 報告應結合客戶需求，分層呈現技術分析與關鍵字研究。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "報告分為三段：健檢報告、關鍵字拓展、prompt 產生，計畫整合至單一頁面。考慮開設專屬頻道放置作者介紹與圖片。" },
+                { speaker: "蔡阿達", role: "ada", text: "N8N 穩定性不足，建議尋求 Alex 協助串接自動化流程。" }
+              ]
+            },
+            {
+              topic: "提案報告內容優化",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "報告首頁列出主要版型，針對缺少文章頁的客戶給予增加建議。客戶多為非專業 SEO 團隊，偏好統籌建議而非細節分析。" },
+                { speaker: "蔡阿達", role: "ada", text: "將論壇問題轉化為 AI 問題，追蹤 AI 答覆中是否引用客戶內容。報告需兼顧技術分析與客戶需求，分階段提供不同深度資料。" }
               ]
             }
           ]
@@ -2426,6 +2480,107 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "建站建議書包兩份？" },
                 { speaker: "蔡阿達", role: "ada", text: "應該是一份建站建議書，就是艾登當時給我看的簡報。配十七篇文章。" },
                 { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "那真的就是幾乎都靠文章來操作了。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P32: 九成九客戶拜訪 ======
+    {
+      id: "jiuchengjiu-visit",
+      name: "九成九 — 客戶關係維護拜訪",
+      icon: "🤝",
+      category: "client",
+      lastUpdated: "2026-04-24",
+      summary: "五月拜訪九成九董事長，目的為關係維護與寒暄，並探討 GO 工具如何協助廠商 — 由藍文甫親自約會董事長確保層級與方向",
+      keyPoints: [
+        "會議原預計<strong>五月舉行</strong>，Eric 已被指派負責邀約但因忙碌尚未完成",
+        "目的為<strong>維護關係及寒暄</strong>，並非立即呈報成效",
+        "主要探討<strong>GO 工具如何協助廠商</strong>及需求發想",
+        "藍文甫釐清會議意義，認為需有<strong>準備工作與明確方向</strong>，避免無目的拜訪",
+        "決定由<strong>藍文甫親自約董事長</strong>，確保會議層級與內容符合預期"
+      ],
+      chips: [
+        { icon: "📅", text: "五月拜訪" },
+        { icon: "👤", text: "約董事長" },
+        { icon: "🤝", text: "關係維護" },
+        { icon: "🛠️", text: "GO 工具探討" }
+      ],
+      todos: [
+        { owner: "藍文甫", text: "負責約九成九董事長會議，確保有明確準備與方向", priority: "week" },
+        { owner: "Eric", text: "協助聯繫九成九窗口，確認會議時間與參與人員", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "Weekly Sync Up — 九成九拜訪安排",
+          time: "11:01-11:58",
+          duration: "57m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "九成九會議安排與目的釐清",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "九成九會議原本預計五月舉行，Eric 已被指派負責邀約，但因忙碌尚未完成。這次主要是維護關係及寒暄，並非立即呈報成效，主要探討 GO 工具如何協助廠商及需求發想。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "會議需有明確準備與方向，避免無目的拜訪。我親自來約董事長，確保會議層級與內容符合預期。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P33: 萬那整案子 ======
+    {
+      id: "wannazheng",
+      name: "萬那整 — AMP KPI 未達標無償使用案",
+      icon: "📦",
+      category: "client",
+      lastUpdated: "2026-04-24",
+      summary: "萬那整因未達 AMP 綁定三個 KPI，案子處於無償使用狀態 — 業務端與產品端窗口分屬不同單位，需建立資訊共享機制避免遺漏",
+      keyPoints: [
+        "案子起因於<strong>電商流量</strong>，因未達 AMP 三個 KPI，現階段<strong>無償讓客戶使用</strong>",
+        "呂紹平指出<strong>業務總監與 Rebecca 為同學關係</strong>，業務端與產品端窗口分屬不同單位",
+        "蔡阿達擔心直接對接業務總監可能有衝突，呂紹平認為<strong>目前狀況尚可接受</strong>",
+        "⚠️ <strong>總經理特助會直接丟需求給團隊</strong>，若未同步給業務端可能導致資訊缺漏",
+        "雙方同意需<strong>建立資訊共享機制</strong>，確保業務端與產品端均掌握客戶需求"
+      ],
+      chips: [
+        { icon: "⚠️", text: "KPI 未達標" },
+        { icon: "🆓", text: "無償使用中" },
+        { icon: "🔄", text: "窗口協調" },
+        { icon: "📋", text: "需資訊共享" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "與 Leon 建立萬那整案資訊共享機制，確保業務端與產品端同步", priority: "week" },
+        { owner: "周至剛（Bryan）", text: "持續追蹤萬那整 AMP KPI 達成狀況", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "同步總經理特助需求給業務端，避免資訊遺漏", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-24",
+          title: "AE 推動會議 — 萬那整案子現況",
+          time: "16:02-17:57",
+          duration: "1h55m",
+          participants: "蔡阿達、呂紹平（Leon）、蔡毓倫（Aiden）、陳琬君（Rebecca）、周至剛（Bryan）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "萬那整案子現況與窗口協調",
+              exchanges: [
+                { speaker: "周至剛", role: "other", label: "Bryan", text: "萬那整案子起因於電商流量，因未達 AMP 三個 KPI，現階段無償讓客戶使用。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "業務總監與 Rebecca 為同學關係，業務端與產品端窗口分屬不同單位。總經理特助會直接丟需求給團隊，若未同步給業務端，可能導致資訊缺漏。" },
+                { speaker: "蔡阿達", role: "ada", text: "直接對接業務總監可能有衝突，需建立資訊共享機制，確保業務端與產品端均掌握客戶需求。" }
+              ]
+            },
+            {
+              topic: "五月至六月案子啟動與合約進度",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "五月有多個案子啟動，兩間因網站重建進度較慢，正與代理商協調。合約寄送中，部分等待用印，英文合約在審核階段。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認五月六月案子大致方向，下週一與 Jolin 討論網站包修改簡報內容。" }
               ]
             }
           ]
