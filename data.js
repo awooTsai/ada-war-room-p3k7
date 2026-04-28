@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-26T19:00:00",
-  dateLabel: "2026/04/26（日）",
+  lastUpdated: "2026-04-28T19:00:00",
+  dateLabel: "2026/04/28（二）",
   stats: {
-    meetings: 45,
-    projects: 32,
+    meetings: 48,
+    projects: 33,
     partners: 12,
     internal: 6,
-    clientCompany: 13,
-    todos: 186
+    clientCompany: 14,
+    todos: 189
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-04-21",
-      summary: "獎金基準升至 60、季度加權係數確定 — 4/21 Daisy 提供 AE 單位目標達成獎金明細，Q1 獎金表格下週一前發出",
+      lastUpdated: "2026-04-28",
+      summary: "Q1 獎金新舊制試算完成 — 新制約為舊制兩倍，Q1 以舊制計算、Q2 起全面採新制；GU 案型獎金以 AMP 比例為基準",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -199,28 +199,48 @@ window.WAR_ROOM_DATA = {
         "季度加權係數定案：<strong>第一個月 ×1.1 / 第二個月 ×1.0 / 第三個月 ×0.9</strong>，鼓勵提前衝刺",
         "獎金指標改為<strong>季度 MRR（營業額）</strong>，刪除半年獎金及跨售重疊",
         "獎金預算約 430 萬，最高不超過 200 萬",
-        "預計<strong>下週阿達與業務佈達</strong>新方案，週一預算會議報告",
-        "🆕 4/20 Q1 獎金表格將於<strong>下週一前發出</strong>，待新規則公告後填寫；去年任務獎金待確認",
-        "🆕 4/21 Daisy 提供<strong>AE 單位目標達成獎金明細</strong>供蔡阿達參考設定"
+        "🆕 4/28 新制獎金比例約 <strong>5%</strong>，舊制約 <strong>2.5%</strong>，新制約為舊制的<strong>兩倍</strong>",
+        "🆕 4/28 Q1 達成率普遍偏低，總獎金約二十幾萬，金額不大",
+        "🆕 4/28 新制未包含 <strong>GU 案型</strong>為主要問題 — 目前多數業務案型為 GU",
+        "🆕 4/28 決議：<strong>Q1 以舊制計算，Q2 起改用新制</strong>，GU 案型歸入 SIO 類別、獎金以 AMP 比例計算",
+        "🆕 4/28 林思吾補充：舊制中 AMP 為 2.5%、SEO 為 1.5%，新制 GU 為 5%"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
         { icon: "💰", text: "4,800萬/年" },
         { icon: "⚠️", text: "PIP < 60%" },
         { icon: "🎯", text: "基準 60" },
-        { icon: "⚖️", text: "加權 1.1/1.0/0.9" },
-        { icon: "💵", text: "預算 ≤200萬" }
+        { icon: "🆕", text: "新制 5% / 舊制 2.5%" },
+        { icon: "📋", text: "Q2 起全面新制" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "與 Mike、小偉確認獎金邏輯統一細節", priority: "week" },
-        { owner: "Leo", text: "調整獎金方案版本，刪除跨售重疊及半年獎金，淘汰基準改為 60", priority: "week" },
-        { owner: "Winny Chiang", text: "修改阿達獎金辦法 wording，確保內容清楚並同步群組", priority: "week" },
-        { owner: "蔡阿達", text: "下週與業務佈達新獎金方案", priority: "week" },
-        { owner: "蔡阿達", text: "準備週一（3/30）預算會議報告", priority: "today" },
-        { owner: "蔡阿達", text: "下週一前完成 Q1 獎金規則與表格調整並發送給團隊", priority: "week" },
+        { owner: "蔡阿達", text: "請 AT 盡快填寫第一季業務目標與實際金額資料，以便試算獎金", priority: "today" },
+        { owner: "Winny Chiang", text: "依新制及舊制（含 AMP 與 SEO 比例）試算第一季獎金差異", priority: "today" },
+        { owner: "蔡阿達", text: "盡快整理數據並發布 Q1 獎金計算結果", priority: "today" },
+        { owner: "團隊", text: "明確公告 GU 案型獎金計算採用 AMP 比例，說明原 SEO 比例調整原因", priority: "week" },
+        { owner: "Winny Chiang", text: "將達成率低於 60% 的業務列入 PIP 管理", priority: "week" },
         { owner: "蔡阿達", text: "確認去年任務獎金發放狀況", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-28",
+          title: "awoo AE 新舊制獎金發放辦法討論",
+          time: "09:40-09:52",
+          duration: "12m",
+          participants: "蔡阿達、Winny Chiang、林思吾（Mike）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "新舊獎金制度差異與第一季達成率分析",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "第一季業務達成率普遍不高，總獎金金額約二十幾萬，建議以 60% 達成率作為估算基準。" },
+                { speaker: "Winny Chiang", role: "other", label: "管理層", text: "以 60% 達成率計算，新制獎金約為 5%，舊制約 2.5%，新制獎金約為舊制的兩倍。若將 GU 案型歸入 SIO 類別，以 AMP 比例作為基準，考慮將舊制 2.5% 調整為 3% 以鼓勵業務。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "舊制中只有 AMP 與 SEO 案型，比例分別為 2.5% 與 1.5%，新制中 GU 案型比例為 5%。第一季表現不佳不宜重賞，但第二季起採用新制計算獎金能激勵業務。" },
+                { speaker: "蔡阿達", role: "ada", text: "新制未包含 GU 案型是問題，目前多數業務案型為 GU，故新制更具激勵效果。結論為第一季以舊制計算，第二季起改用新制，GU 案型獎金以 AMP 比例計算。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-20",
           title: "AE Team 週會",
@@ -731,29 +751,25 @@ window.WAR_ROOM_DATA = {
       name: "MKT 四月聯合 Webinar — GEO × OneAd × 比幣",
       icon: "📣",
       category: "events",
-      lastUpdated: "2026-04-20",
-      summary: "4/16 實體錄影完成 — 4/20 確認 4/28 Shopline 專場活動主辦建議與需求；LLMS.txt 功能 Shopline 臺灣版 Q2 新增",
+      lastUpdated: "2026-04-28",
+      summary: "4/28 SHOPLINE 電商教室實體講座完成 — 四月 Webinar 系列全部結束；LLMS.txt 功能 Shopline 臺灣版 Q2 新增",
       keyPoints: [
         "與 OneAd（Jed Lin）、比幣 BBTide（Libby Cheng）三方聯合 Webinar",
         "蔡阿達主講 GEO／AI 搜尋策略（30 分鐘）+ 三方 Panel 對談",
         "<strong>4/7 線上彩排完成</strong>：蔡阿達分享品牌 EAT 訊號、GEO Suite、村陸合作新聞稿策略、Prompt 設計與 FAQ",
-        "蔡阿達待辦：優化「關於我們」內容建議、推動 GEO Suite、協調村陸新聞稿合作",
-        "<strong>4/16 實體錄影</strong>，講師需 4/17 前提供簡報；<strong>4/28 Shopline 客戶場</strong>",
-        "🆕 <strong>4/16 實體錄影完成</strong>：於 JustCo 宏泰金融大樓錄製個人 GEO 演講與三方 Panel 對談，Iris Tsai 協助現場執行",
-        "🆕 4/20 SHOPLINE 專場活動：<strong>Angelline 與蔡阿達確認主辦建議與需求</strong>",
-        "🆕 4/20 AE 週會確認：<strong>LLMS.txt 檔案 Shopline 臺灣版 Q2 預計新增</strong>，目前僅大陸版 2.0 支援",
-        "🆕 向客戶說明時以<strong>合作改善角度</strong>，避免斬釘截鐵批評現況"
+        "<strong>4/16 實體錄影完成</strong>：於 JustCo 宏泰金融大樓錄製個人 GEO 演講與三方 Panel 對談",
+        "LLMS.txt 檔案 <strong>Shopline 臺灣版 Q2 預計新增</strong>，目前僅大陸版 2.0 支援",
+        "向客戶說明時以<strong>合作改善角度</strong>，避免斬釘截鐵批評現況",
+        "🆕 4/28 <strong>SHOPLINE 電商教室實體講座完成</strong>：於敦化北路 SHOPLINE 辦公室面向既有客戶分享，13:30 開始"
       ],
       chips: [
         { icon: "✅", text: "4/7 彩排完成" },
         { icon: "✅", text: "4/16 錄影完成" },
-        { icon: "📄", text: "4/17 前交簡報" },
-        { icon: "🏪", text: "4/28 Shopline" }
+        { icon: "✅", text: "4/28 SHOPLINE 完成" },
+        { icon: "📦", text: "四月系列結束" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "4/17 前提供演講簡報給 Iris Tsai（含 EAT 訊號、GEO Suite、村陸合作、Prompt/FAQ 建議）", priority: "today" },
         { owner: "蔡阿達", text: "協調與村陸公司合作，協助業主在權威媒體發布新聞稿以提升 AI 曝光", priority: "week" },
-        { owner: "蔡阿達", text: "確認 4/28 Shopline 演講是否需夥伴支援", priority: "week" },
         { owner: "Shawn Hung", text: "與夥伴確認合作內容細節後回報（AgentBit 合作）", priority: "waiting" }
       ],
       meetingHistory: [
@@ -2581,6 +2597,78 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "呂紹平", role: "other", label: "Leon", text: "五月有多個案子啟動，兩間因網站重建進度較慢，正與代理商協調。合約寄送中，部分等待用印，英文合約在審核階段。" },
                 { speaker: "蔡阿達", role: "ada", text: "確認五月六月案子大致方向，下週一與 Jolin 討論網站包修改簡報內容。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P34: PLUS 天然有機保養 ======
+    {
+      id: "plus-organic-beauty",
+      name: "PLUS 天然有機保養 — 短影音 SEO 策略諮詢與網站優化",
+      icon: "💆",
+      category: "client",
+      lastUpdated: "2026-04-28",
+      summary: "凱丞初次線上交流 — 蔡阿達建議放棄關鍵字導向，改以高雄在地真實體驗與 Google 評論為主軸優化網站；雙方約定後續合作引薦",
+      keyPoints: [
+        "PLUS 天然有機保養為<strong>高雄在地美容保養品牌</strong>，代理多個知名電商品牌",
+        "三大客群：<strong>久站久坐族群</strong>（老師、護理師）、<strong>婚禮產業新娘</strong>妝前保養、<strong>月子中心</strong>產前產後媽媽",
+        "補充客群：40 歲以上女性企業主與百貨 VIP 貴婦",
+        "蔡阿達建議：消費者已從關鍵字搜尋轉向 <strong>AI 問答</strong>，短影音平台演算法關鍵字權重低，應聚焦用戶常見問題製作內容",
+        "網站優化方向：<strong>放棄商品介紹</strong>，改以高雄在地實體店面服務與真實顧客體驗為主軸",
+        "建議收集 <strong>Google Map 評論</strong>並展示於網站，增加信任感與 AI 推薦機率",
+        "蔡阿達願意協助<strong>抓取網站內容並提供推廣資源</strong>，尋找具規模品牌合作引薦機會"
+      ],
+      chips: [
+        { icon: "📍", text: "高雄在地" },
+        { icon: "💆", text: "美容保養" },
+        { icon: "🎯", text: "3 大客群" },
+        { icon: "🤝", text: "引薦合作" }
+      ],
+      todos: [
+        { owner: "PLUS 天然有機保養", text: "在網站新增真實顧客體驗圖文（避免露臉），強化內容真實性", priority: "week" },
+        { owner: "PLUS 天然有機保養", text: "持續蒐集並展示 Google Map 評論，提升信任感與搜尋優化", priority: "week" },
+        { owner: "PLUS 天然有機保養", text: "網站『聯絡我們』補充完整地址、電話並嵌入 Google 地圖", priority: "week" },
+        { owner: "蔡阿達", text: "協助抓取 PLUS 網站內容並提供推廣方向建議", priority: "week" },
+        { owner: "蔡阿達", text: "尋找有企圖心且具規模的品牌合作引薦給 PLUS", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-28",
+          title: "凱丞🔛蔡阿達初次認真線上交流",
+          time: "08:45-09:29",
+          duration: "44m",
+          participants: "蔡阿達、凱丞（PLUS 天然有機保養）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "短影音關鍵字與 SEO 策略討論",
+              exchanges: [
+                { speaker: "凱丞", role: "other", label: "PLUS", text: "想了解短影音平台適合的關鍵字及 SEO 優化策略，如何讓品牌在各平台被看見。" },
+                { speaker: "蔡阿達", role: "ada", text: "現今消費者多透過 AI 問答而非傳統關鍵字搜尋，建議聚焦目標族群常見問題製作內容。Instagram 等社群平台演算法關鍵字權重低，主要依人際關係與內容相關性推薦。" }
+              ]
+            },
+            {
+              topic: "網站經營現況與優化建議",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "網站已有一定水準，建議放棄商品介紹重點，改以高雄在地實體店面服務與商品應用為主軸。拍攝顧客體驗照片（避免露臉），搭配文字說明提升真實性。" },
+                { speaker: "蔡阿達", role: "ada", text: "鼓勵收集 Google Map 評論並展示於網站，增加信任感。網站聯絡資訊要完整呈現，包括地址、電話及 Google 地圖嵌入。" }
+              ]
+            },
+            {
+              topic: "銷售策略與市場定位",
+              exchanges: [
+                { speaker: "凱丞", role: "other", label: "PLUS", text: "代理多個知名電商品牌，面臨品牌搜尋排名優勢，網站銷售多靠社群導流。一對一引薦較少，考慮針對特定職業族群推廣。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議放棄與大品牌直接競爭，強調高雄在地服務與真實體驗的差異化優勢。理想合作對象為有企圖心、具全國市場規模且有行銷團隊的品牌。" }
+              ]
+            },
+            {
+              topic: "後續行動與合作機會",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "願意協助抓取網站內容並提供推廣資源，建議先從高雄地區真實顧客體驗與 Google 評論著手優化網站。" },
+                { speaker: "凱丞", role: "other", label: "PLUS", text: "願意協助推廣蔡阿達的品牌與服務，雙方約定後續再找時間討論進一步合作與引薦事宜。" }
               ]
             }
           ]
