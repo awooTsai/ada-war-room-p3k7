@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-28T19:00:00",
-  dateLabel: "2026/04/28（二）",
+  lastUpdated: "2026-04-29T19:00:00",
+  dateLabel: "2026/04/29（三）",
   stats: {
-    meetings: 48,
-    projects: 33,
+    meetings: 51,
+    projects: 34,
     partners: 12,
     internal: 6,
     clientCompany: 14,
-    todos: 189
+    todos: 201
   },
 
   projects: [
@@ -1391,8 +1391,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-04-22",
-      summary: "每週三午餐小聚 — 4/22 討論客戶開發頻率、工廠數據化補助、穿越機飯店推廣、醫師 SaaS 平台、選舉產業鏈合作；蔡阿達推廣免費網站健檢 + MASK 服務",
+      lastUpdated: "2026-04-29",
+      summary: "每週三午餐小聚 — 4/29 協助王俊智（The Lavoria 微針貼片品牌）規劃品牌策略；社群經營建議（IG 為主）、官網內容優化、Charles 攝影資源對接、AI 口碑合作引薦",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -1405,7 +1405,12 @@ window.WAR_ROOM_DATA = {
         "🆕 數位巴克斯介紹<strong>工廠設備數據化</strong>方案與政府補助（50%，100 萬起）",
         "🆕 MarsZ Chen 計畫年底前推出<strong>醫師個人品牌 SaaS 平台</strong>",
         "🆕 遙空映畫引進<strong>空拍穿越機</strong>，計畫無償提供高雄飯店試拍",
-        "🆕 選舉產業鏈合作：成員互相引薦高雄與臺南政治人物資源"
+        "🆕 選舉產業鏈合作：成員互相引薦高雄與臺南政治人物資源",
+        "🆕 4/29 協助<strong>王俊智（The Lavoria）微針貼片品牌</strong>規劃臺灣市場策略，背後有上櫃公司朗奇支持",
+        "🆕 品牌策略建議：聚焦<strong>微針貼片</strong>為首推產品，考慮自有品牌與代理產品<strong>分開官網經營</strong>",
+        "🆕 社群建議以 <strong>IG 為主</strong>，官網為核心容器，強化品牌故事、產品安全認證與內容豐富度",
+        "🆕 蔡阿達提出協助尋找市場知名品牌進行<strong>免費 AI 口碑合作</strong>，Charles 可對接南煙堂行銷窗口",
+        "🆕 徐嘉祥會計師提供<strong>額外稅務諮詢</strong>資源，可協助解決國稅局查核案件"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -1420,9 +1425,45 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" },
         { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" },
         { owner: "蔡阿達", text: "協助數位巴克斯評估工廠設備數據化方案中 AI/SEO 協作機會", priority: "week" },
-        { owner: "蔡阿達", text: "跟進遙空映畫高雄飯店穿越機拍攝合作進度", priority: "week" }
+        { owner: "蔡阿達", text: "跟進遙空映畫高雄飯店穿越機拍攝合作進度", priority: "week" },
+        { owner: "蔡阿達", text: "協助王俊智（The Lavoria）對接專業攝影師 Charles Jhang", priority: "week" },
+        { owner: "蔡阿達", text: "請團隊推薦有知名度品牌進行 AI 口碑合作，提供免費網站健檢", priority: "week" },
+        { owner: "蔡阿達", text: "跟進 Charles 與南煙堂行銷窗口對接進度", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-29",
+          title: "FUZEN 行銷小聚 04/29",
+          time: "13:00-13:46",
+          duration: "46m",
+          participants: "蔡阿達、王俊智（The Lavoria）、遙空映畫（韋翰）、華翼、Charles Jhang、徐嘉祥（會計師）、Karen Hsu（凱倫）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "微針貼片品牌策略與官網經營",
+              exchanges: [
+                { speaker: "王俊智", role: "other", label: "品牌", text: "品牌主力在臺灣、日本及馬來西亞，微針貼片產品在臺灣市場稀少，期望聚焦臺灣市場推廣。背後有上櫃公司朗奇支持，擁有專業研發團隊。" },
+                { speaker: "華翼", role: "other", label: "設計", text: "若主打品牌應專注於 The Lavoria，避免產品線過多造成品牌模糊。社群行銷重點放在 Instagram，官網內容豐富度與 SEO 優化很重要。" },
+                { speaker: "蔡阿達", role: "ada", text: "將利用成功案例影片與專訪放在社群平台，由 Karen 規劃社群經營方向與發文頻率，預計半年後開始看到轉換率。" }
+              ]
+            },
+            {
+              topic: "官網與社群行銷預算規劃",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "女性市場永遠不飽和，建議以影片行銷為主。保養品已有實體通路合作，建議微針貼片作為品牌首推產品，透過社群與廣告導流至官網。" },
+                { speaker: "蔡阿達", role: "ada", text: "官網是品牌行銷的核心容器，需加強品牌故事、產品安全認證等內容建置與 SEO 優化，社群作為導流工具。" }
+              ]
+            },
+            {
+              topic: "攝影資源與品牌合作引薦",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "請團隊成員協助推薦市場上有知名度且關係良好的品牌，方便進行 AI 口碑提升合作。可免費為合作品牌做網路健檢，利用 AI 分析目標族群常見問題。" },
+                { speaker: "Charles Jhang", role: "other", label: "攝影", text: "曾為南煙堂代言人拍攝照片，認識其行銷窗口，願意協助對接。機械類產品攝影需求穩定且難被 AI 取代。" },
+                { speaker: "蔡阿達", role: "ada", text: "若君智缺乏專業商品攝影資源，可由 Charles 提供協助。提醒報價時需注意客戶預算限制，鼓勵結合 AI 技術提升攝影後製效率。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-22",
           title: "FUZEN 行銷小聚 04/22",
@@ -2099,8 +2140,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-04-24",
-      summary: "4/24 AE 推動會議 — 約訪時段固定週二 11-12 點、麥可加入提案、GEO 合約狀態表新增洽談中/因故結束欄位、WACA 自檢報表上線、MarTech Asia 5/27 邀約啟動",
+      lastUpdated: "2026-04-29",
+      summary: "4/29 GEO 顧問方案討論 — Prompt 審核流程確立（阿福開發審核工具）、新聞稿客製化稿外包紅雲、成效報告模板目標 5 月中推出、顧問服務會議調整為雙週一次（週二 14-15 點）",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2132,7 +2173,13 @@ window.WAR_ROOM_DATA = {
         "🆕 4/24 AE <strong>24 小時聯絡提醒機制</strong>：未聯絡客戶自動發送確認信，Slack 兩週通知促使更新",
         "🆕 中小企業溝通策略：Bryan 微調話術，<strong>聚焦落地細節</strong>而非策略化說明",
         "🆕 AI 報告自動化：<strong>Claude 品質優於 ChatGPT</strong>，三段式報告流程（健檢→關鍵字拓展→prompt），計畫整合單一頁面",
-        "🆕 提案報告優化：將論壇問題轉化為 AI 問題，<strong>追蹤 AI 答覆引用品牌內容</strong>"
+        "🆕 提案報告優化：將論壇問題轉化為 AI 問題，<strong>追蹤 AI 答覆引用品牌內容</strong>",
+        "🆕 4/29 Prompt 審核流程確立：<strong>客戶確認前需經審核</strong>，阿福負責開發審核工具判斷 Prompt 有效性及媒體文章分佈",
+        "🆕 Prompt 來源三大管道：<strong>阿達、CS（10號產生器）、日本</strong>，未來安排分享各自優缺點",
+        "🆕 新聞稿分兩類：一般稿內部處理，<strong>客製化稿外包紅雲</strong>；藍文甫帶小話拜訪宏文了解概念",
+        "🆕 成效報告模板目標 <strong>5 月中推出</strong>，Anne 與 YC/阿福確認需求，阿福週五提供工具設計評估",
+        "🆕 顧問服務流程會議調整為<strong>雙週一次，固定週二 14:00-15:00</strong>，聚焦流程清理及合約方案調整",
+        "🆕 加購稅工具獎金調整中，<strong>Winnie 與麥可確認方案後公告</strong>，ACS 及 AE 已開始使用"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -2161,9 +2208,46 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "持續推動 MarTech Asia 5/27 邀約，透過表單收集來賓資料", priority: "week" },
         { owner: "蔡阿達", text: "設計 24 小時內 AE 聯絡提醒機制，確保及時跟進客戶", priority: "week" },
         { owner: "呂紹平（Leon）", text: "建立 AI 報告三段式流程（健檢/關鍵字拓展/prompt）整合頁面", priority: "week" },
-        { owner: "蔡阿達", text: "建立 AI 應用頻道，協助命名頻道與設置作者介紹", priority: "week" }
+        { owner: "蔡阿達", text: "建立 AI 應用頻道，協助命名頻道與設置作者介紹", priority: "week" },
+        { owner: "蔡阿達", text: "與藍文甫討論如何縮短客戶端 Prompt lead time", priority: "week" },
+        { owner: "阿福", text: "開發 Prompt 審核工具，判斷 Prompt 有效性及媒體文章分佈", priority: "week" },
+        { owner: "Anne Chang", text: "5 月中前完成成效報告模板推出，先與 YC 及阿福確認需求", priority: "week" },
+        { owner: "藍文甫", text: "下週帶小話拜訪宏文了解新聞稿概念，並與紅雲討論客製化稿外包流程", priority: "week" },
+        { owner: "Fenix Li", text: "與 Leo 及小花確認跨部門合作流程細節", priority: "week" },
+        { owner: "Anne Chang", text: "與 Winnie 確認加購稅工具獎金調整方案並公告", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-29",
+          title: "GEO 顧問方案-討論延續",
+          time: "11:30-11:53",
+          duration: "23m",
+          participants: "林思吾、YC、藍文甫（Leo）、Anne Chang、Fenix Li",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Prompt 審核流程與系統上線規劃",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "AE 與 CS 在跟客戶討論 Prompt 時，需先經過審核階段，審核完成後才能 onboard 到系統。需針對 Prompt 做分類，明確設定成效期待，避免客戶因引用率不足而產生爭議。" },
+                { speaker: "YC", role: "other", label: "YC", text: "目前 Prompt 產生分為阿達、CS（使用10號產生器）及日本三個來源，未來會安排會議分享各自優缺點。阿福會於週五提供審核工具設計及時間評估。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "認同審核流程重要性，需與阿達討論如何縮短客戶端 lead time，優化 Prompt 溝通流程。" }
+              ]
+            },
+            {
+              topic: "新聞稿製作與外包流程",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "新聞稿分兩類：一般新聞稿由內部處理，客製化新聞稿外包給紅雲。下週帶小話拜訪宏文了解概念並擔任 mentor。文案組需完成發包及成效報告回收的功課，交由 CS 面對客戶。" }
+              ]
+            },
+            {
+              topic: "成效報告模板與會議頻率調整",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "希望制定主要成效報告模板，避免線上不足導致業務花時間整理。目標 5 月中前完成模板推出。顧問服務流程會議調整為雙週一次，固定週二下午 2 點到 3 點。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "會先與 YC 及阿福確認報告需求與時間，並於下週安排會議討論。加購稅工具獎金部分將有調整，Winnie 明日與麥可確認後公告。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-24",
           title: "AE 運轉加速/推動會議",
@@ -2669,6 +2753,70 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "願意協助抓取網站內容並提供推廣資源，建議先從高雄地區真實顧客體驗與 Google 評論著手優化網站。" },
                 { speaker: "凱丞", role: "other", label: "PLUS", text: "願意協助推廣蔡阿達的品牌與服務，雙方約定後續再找時間討論進一步合作與引薦事宜。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P35: awoo AI SEO 流量成長相談室 ======
+    {
+      id: "ai-seo-salon",
+      name: "awoo AI SEO 流量成長相談室 — 外部顧問諮詢活動",
+      icon: "📊",
+      category: "events",
+      lastUpdated: "2026-04-29",
+      summary: "4/29 首次收錄 — 陳羲彤介紹 AI 搜尋時代 SEO/GEO 策略，蔡阿達補充 EAT 與 FAQ 優化建議；來賓 Kyo Lin 諮詢組合屋表單轉換率問題",
+      keyPoints: [
+        "awoo 定期舉辦<strong>外部顧問諮詢活動</strong>，邀請潛在客戶了解 SEO/GEO 服務",
+        "陳羲彤（Dominic）說明 AI 搜尋（GPT、Gemini）對傳統 SEO 的影響，強調<strong>零點擊搜尋</strong>現象",
+        "SEO 與 GEO 策略高度重疊，<strong>網站內容仍是 AI 搜尋資料來源的核心</strong>",
+        "awoo 專案團隊架構：顧問團隊、搜尋團隊、成效團隊、數據分析及廣告團隊",
+        "蔡阿達強調消費者已從關鍵字搜尋轉向<strong>直接向 AI 提問</strong>，品牌是否被 AI 推薦成為關鍵",
+        "網站應優化 <strong>FAQ 內容</strong>與 <strong>EAT 指標</strong>（經驗、專業、權威、公信力），提升被 AI 推薦機率",
+        "來賓 Kyo Lin 諮詢組合屋示範園區<strong>表單頁面流量轉換率低</strong>問題，蔡阿達分析可能為廣告流量轉換率偏低及頁面匹配度不足"
+      ],
+      chips: [
+        { icon: "🎓", text: "外部諮詢活動" },
+        { icon: "🔍", text: "SEO/GEO 策略" },
+        { icon: "🤖", text: "AI 搜尋趨勢" },
+        { icon: "📈", text: "EAT 指標" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "與 Kyo Lin 安排會議，深入分析組合屋示範園區表單轉換率問題", priority: "week" },
+        { owner: "蔡阿達", text: "協助來賓客戶檢視並優化網站 FAQ 與 EAT 內容", priority: "week" },
+        { owner: "陳羲彤", text: "提供潛在關鍵字清單與 top cluster 內容策略建議給諮詢客戶", priority: "week" },
+        { owner: "蔡阿達", text: "持續提供免費網站 SEO 體質分析與目標族群關鍵字研究", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-29",
+          title: "awoo AI SEO 流量成長相談室 04/29",
+          time: "14:00-14:48",
+          duration: "48m",
+          participants: "蔡阿達、陳羲彤（Dominic）、Kyo Lin 等來賓",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 搜尋時代的 SEO 與 GEO 策略",
+              exchanges: [
+                { speaker: "陳羲彤", role: "other", label: "awoo", text: "AI 搜尋工具（Google AI 摘要、AI 模式、GPT、Gemini）會直接給出答案，導致零點擊搜尋現象。SEO 與 GEO 策略不應被過度區分，兩者在內容經營上高度���疊，網站內容仍是 AI 搜尋資料來源的核心。" },
+                { speaker: "蔡阿達", role: "ada", text: "過去消費者透過關鍵字搜尋資訊，現在直接向 AI 提問，AI 能快速提供精準答案。品牌是否被 AI 推薦成為關鍵。網站應優化 FAQ 內容，針對消費者常見問題提供清楚回答，內容需符合 EAT 標準。" }
+              ]
+            },
+            {
+              topic: "網站內容與 EAT 信號強化",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "網站頻道（About Us 等）應持續更新，展示獲獎事蹟、專利及技術數據。建議收集 Google Map 顧客評論整合至網站，增強公信力與信任度。" },
+                { speaker: "陳羲彤", role: "other", label: "awoo", text: "SEO 除了內容產出，還需結合內容策略、行銷策略及技術面調整。演算法頻繁更新，Google 一年 4-5 次大型更新，GPT 模型也持續迭代。" }
+              ]
+            },
+            {
+              topic: "來賓諮詢：表單轉換率問題",
+              exchanges: [
+                { speaker: "Kyo Lin", role: "other", label: "來賓", text: "組合屋示範園區諮詢表單流量轉換率偏低，想了解可能原因與改善方向。" },
+                { speaker: "蔡阿達", role: "ada", text: "可能原因包括廣告流量轉換率本身偏低，以及表單頁面內容與用戶需求匹配度不足。��議後續安排專業顧問深入分析並優化頁面內容與結構，我們願意提供免費網站 SEO 體質分析。" }
               ]
             }
           ]
