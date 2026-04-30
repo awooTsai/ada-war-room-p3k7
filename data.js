@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-29T19:00:00",
-  dateLabel: "2026/04/29（三）",
+  lastUpdated: "2026-04-30T19:00:00",
+  dateLabel: "2026/04/30（四）",
   stats: {
-    meetings: 51,
-    projects: 34,
-    partners: 12,
+    meetings: 53,
+    projects: 35,
+    partners: 13,
     internal: 6,
     clientCompany: 14,
-    todos: 201
+    todos: 211
   },
 
   projects: [
@@ -479,8 +479,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-04-20",
-      summary: "文案撰寫方案已可開賣（17-20 篇，月費 ≈ 2.2 萬）— 4/20 確認 Claude 雙 Skill 架構：品牌人設學習 + 文章輸出，蔡阿達負責官網資料抓取打包",
+      lastUpdated: "2026-04-30",
+      summary: "4/30 統一 20 篇規劃+論述銷售，中文修改限一次、英文不提供修改，交期延至 15 工作天；蔡阿達下週完成 Cloud 爬蟲/素材技能並安排文案組教學",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -499,34 +499,76 @@ window.WAR_ROOM_DATA = {
         "🆕 4/20 Claude 雙 Skill 架構：<strong>品牌人設學習 Skill</strong>（抓取客戶官網資料建立品牌人設）+ <strong>文章輸出 Skill</strong>（依品牌人設生成文案）",
         "🆕 蔡阿達負責<strong>抓取客戶官網資料打包成 Skill</strong>，小花負責測試與優化，藍文甫協助克勞德帳號申請",
         "🆕 透過<strong>表單收集客戶專業知識回饋</strong>，整合進 AI 文案生成流程，提升文案品質",
-        "🆕 AI 生成文章重內容符合度更勝人性化口吻，建議嘗試克勞德提升人性化表現"
+        "🆕 AI 生成文章重內容符合度更勝人性化口吻，建議嘗試克勞德提升人性化表現",
+        "🆕 4/30 統一 20 篇<strong>規劃+論述</strong>銷售模式，對外稱「撰寫」，內部走論述流程",
+        "🆕 4/30 中文文章<strong>修改限一次</strong>，英文文章不提供修改服務，合約明確規範",
+        "🆕 4/30 交期由 7 天延長至<strong>15 工作天</strong>，配合 AI 初稿產出流程",
+        "🆕 4/30 AI 素材由<strong>客戶確認</strong>，納入建議書流程提升素材符合度",
+        "🆕 4/30 蔡阿達開發 Cloud 爬蟲/素材處理技能，<strong>下週完成</strong>並安排與文案視訊教學",
+        "🆕 4/30 MIS 開設專用 Cloud 帳號供文案團隊使用，解決帳號共享限制",
+        "🆕 4/30 英文文章規劃可用 AI 跨語言處理，但需與 ST 團隊討論調整篇幅"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
         { icon: "👤", text: "25% 人工" },
         { icon: "🤖", text: "Claude 雙 Skill" },
-        { icon: "⚠️", text: "素材查證→客戶責任" },
-        { icon: "🔧", text: "官網抓取→品牌人設" },
-        { icon: "💰", text: "月費 ≈ 2.2萬" }
+        { icon: "✏️", text: "修改限1次" },
+        { icon: "📅", text: "交期15工作天" },
+        { icon: "☁️", text: "Cloud 技能開發中" }
       ],
       todos: [
+        { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "today" },
+        { owner: "藍文甫", text: "論述流程改為撰寫用詞，交期統一調整為 15 工作天", priority: "today" },
+        { owner: "藍文甫", text: "制定對外說明話術：中文有潤飾，英文由客戶自行修改", priority: "week" },
+        { owner: "蔡阿達", text: "開發 Cloud 爬蟲與素材處理技能，下週完成", priority: "today" },
+        { owner: "蔡阿達", text: "安排與廖淑芬視訊會議，示範 Cloud 技能操作流程", priority: "week" },
+        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" },
+        { owner: "蔡阿達", text: "設計 AI 輔助生成文章的問卷流程，整合至專員規劃程序", priority: "week" },
+        { owner: "藍文甫", text: "協調 MIS 開設專用 Cloud 帳號供文案組使用", priority: "week" },
+        { owner: "廖淑芬", text: "確認 AI 生成素材並安排客戶確認流程", priority: "week" },
+        { owner: "藍文甫", text: "邀請 ST 團隊討論英文規劃篇幅調整與可行性", priority: "week" },
+        { owner: "蔡阿達", text: "評估英文文章交付後客戶自主管理修改的可行性", priority: "week" },
         { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
-        { owner: "蔡阿達", text: "開發一鍵 AI 初稿工具，教導文案組使用", priority: "week" },
-        { owner: "蔡阿達", text: "持續優化爬蟲流程，支援同時多客戶處理", priority: "week" },
-        { owner: "蔡阿達", text: "共同撰寫 AI 文章相關合約條款（含素材查證責任條款）", priority: "week" },
-        { owner: "蔡阿達", text: "持續測試英文 AI 工具，改善文法與句型品質", priority: "week" },
-        { owner: "廖淑芬", text: "協助統籌現有及新客戶資料整理，以客戶名稱分類資料夾", priority: "week" },
-        { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程（4/15 起）", priority: "waiting" },
-        { owner: "藍文甫", text: "合約新增素材查證責任條款，並確認 AI 文章相關說明", priority: "week" },
-        { owner: "蔡阿達", text: "持續與 Mike 確認純內容方案細節與客戶需求", priority: "week" },
-        { owner: "蔡阿達", text: "調整純內容方案定價，最低月費設定約兩萬元並評估加價空間", priority: "week" },
-        { owner: "Max Huang", text: "協助評估純內容方案定價合理性，確保利潤率符合成本結構", priority: "week" },
+        { owner: "廖淑芬", text: "協助統籌現有及新客戶資料整理，以客戶名稱分類資料夾", priority: "waiting" },
+        { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程", priority: "waiting" },
         { owner: "蔡阿達", text: "提供兩支 Claude Skill 給小花（品牌人設學習 + 文章輸出）", priority: "week" },
-        { owner: "藍文甫", text: "協助小花申請並管理克勞德帳號，確保表單功能串接", priority: "week" },
-        { owner: "蔡阿達", text: "持續抓取客戶官網資料並生成品牌人設，透過表單收集並傳給小花", priority: "week" },
-        { owner: "蔡阿達", text: "設計並提供專業知識回饋表單給小花，收集客戶問題與答案整合進文案流程", priority: "week" }
+        { owner: "蔡阿達", text: "設計並提供專業知識回饋表單給小花", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-04-30",
+          title: "文案 n8n — AI 文章產出規範與 Cloud 技能開發",
+          time: "16:01-17:07",
+          duration: "1h06m",
+          participants: "蔡阿達、藍文甫（Leo）、廖淑芬（小花）、AE 業務開發組",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "統一 20 篇銷售模式與修改次數限制",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "避免 AE 反應 AI 段落難講，決定統一 20 篇規劃加論述，不再分撰寫與論述。對外稱撰寫，內部走論述流程。" },
+                { speaker: "蔡阿達", role: "ada", text: "AI 輔助生成文章時會收集客戶資訊，由人工逐字審核確保品質。先賣規劃加潤飾，再視客戶需求提供 AI 輔助生成。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "修改扣打不會計較小幅度改動，只有大幅度修改才計入，實務上很少遇到客戶爭議。" }
+              ]
+            },
+            {
+              topic: "中英文文章交期與合約調整",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "建議將論述交期由 7 個工作天延長至 15 個工作天，因 AI 輔助產出初稿需更多時間。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "延長交期合理，因客戶工作量轉移至公司，需調整合約交期。需明確告知客戶 AI 撰寫的意涵，避免期待完美稿件。" },
+                { speaker: "蔡阿達", role: "ada", text: "中文文章可改一次，英文文章不提供修改。AI 可理解不同語言內容，中文規劃流程可用於英文文章產出。" }
+              ]
+            },
+            {
+              topic: "Cloud 平台技能開發與協作",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "爬蟲功能可做成 Cloud 技能，我下週完成開發。已抓取近百家客戶網站內容，會整理分享給小花使用。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "Cloud 平台比 ChatGPT 更適合任務處理，建議團隊成員皆開設帳號。爬取資料工作由業務負責，文案只需使用。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "目前使用公司帳號無法分享，建議由 MIS 開設專用帳號。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-20",
           title: "Leo, Anne / 小花 — AI 文案 Agent 合作確認",
@@ -2817,6 +2859,87 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Kyo Lin", role: "other", label: "來賓", text: "組合屋示範園區諮詢表單流量轉換率偏低，想了解可能原因與改善方向。" },
                 { speaker: "蔡阿達", role: "ada", text: "可能原因包括廣告流量轉換率本身偏低，以及表單頁面內容與用戶需求匹配度不足。��議後續安排專業顧問深入分析並優化頁面內容與結構，我們願意提供免費網站 SEO 體質分析。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P36: OneAD 聯合方案 ======
+    {
+      id: "onead",
+      name: "awoo × OneAD — GEO + 廣告導流聯合方案",
+      icon: "📊",
+      category: "partner",
+      lastUpdated: "2026-04-30",
+      summary: "4/30 首次會議 — 結合 awoo GEO 與 OneAD 固定 CPC 廣告導流，打造品牌 AI 能見度+流量整合方案；先從商務銷售案切入，後續推進數據互通、內容策展與 AI Agent 合作",
+      keyPoints: [
+        "雙方合作架構：awoo 負責<strong>AI 搜尋優化（GEO）</strong>，OneAD 負責<strong>固定 CPC 廣告導流</strong>，互補 SEO 見效慢的痛點",
+        "初步方案分基礎套裝（<strong>GEO 顧問年約 + 固定 CPC 導流</strong>）與進階套裝（內容策展 + 媒體曝光），導流廣告年約基礎約<strong>十萬元</strong>",
+        "OneAD 三大 DMP 數據平台：Audience DMP（興趣標籤）、緯博數據（購買行為）、品牌關鍵字",
+        "數據報告整合：OneAD 提供 <strong>ADR（受眾分析）</strong>及 <strong>SDR（購物分析）</strong>報告，鑲嵌至 awoo Dashboard 作為加值服務",
+        "內容策展：OneAD 以<strong>自供稿低成本方式</strong>置入新聞媒體（ETtoday、三立、自由時報等），搭配廣告保證流量",
+        "Pixel 埋點合作：客戶網站部署雙方 pixel，累積用戶標籤提升廣告精準度與再行銷效果",
+        "蔡阿達指出 awoo 客戶多為中小型，需調整服務與<strong>價格策略</strong>符合市場需求",
+        "雙方探討 <strong>AI Agent</strong> 產品合作可能性，蔡阿達有聊天機器人開發經驗",
+        "合作目標：先推 GEO + 導流商務方案，內容策展與報告整合陸續推出"
+      ],
+      chips: [
+        { icon: "🤝", text: "GEO + 導流" },
+        { icon: "📈", text: "ADR/SDR 報告" },
+        { icon: "📰", text: "內容策展" },
+        { icon: "🎯", text: "Pixel 再行銷" },
+        { icon: "💰", text: "年約 10 萬起" }
+      ],
+      todos: [
+        { owner: "Jed Lin", text: "提供 SDR 與 ADR 報告給蔡阿達團隊，供系統整合評估", priority: "week" },
+        { owner: "蔡阿達", text: "評估報告內容與數據結合的可行性與應用場景", priority: "week" },
+        { owner: "蔡阿達", text: "推動雙方共同銷售方案，協助客戶導入固定成本導流廣告", priority: "week" },
+        { owner: "Yeh Andy", text: "包裝內容策展方案並提供給蔡阿達團隊推動", priority: "week" },
+        { owner: "Yeh Andy", text: "安排系統團隊配合數據串接與 Dashboard 功能開發", priority: "waiting" },
+        { owner: "呂紹平", text: "整理關鍵字與 Landing Page 對應建議提供給 OneAD", priority: "week" },
+        { owner: "蔡阿達", text: "設計合理誘因與流程促使客戶安裝 pixel 服務", priority: "week" },
+        { owner: "蔡阿達", text: "整理 AI Agent 開發狀況，與 Yeh Andy 討論合作方向", priority: "week" },
+        { owner: "Yeh Andy", text: "安排後續會議討論 AI Agent 產品深度合作", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-04-30",
+          title: "awoo × OneAD 合作案首次會議",
+          time: "10:30-11:53",
+          duration: "1h23m",
+          participants: "蔡阿達、呂紹平（Leon）、Jed Lin、Yeh Andy",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "合作方案架構與互補優勢",
+              exchanges: [
+                { speaker: "Jed Lin", role: "other", label: "OneAD", text: "不僅是商務合作，更希望雙方數據互串，提供客戶更完整的分析服務。客戶資源可互補，OneAD 提供廣告導流，awoo 專注 AI 搜尋優化。" },
+                { speaker: "蔡阿達", role: "ada", text: "awoo 面臨 SEO 與 GEO 服務見效慢的痛點，OneAD 的快速見效廣告策略可以補足這個缺口，雙方互補優勢很明顯。" },
+                { speaker: "Yeh Andy", role: "other", label: "OneAD", text: "合作方案包含品牌官網內容優化、AI Overview 曝光提升，以及透過數據分析做規模化廣告導流，並部署 pixel 進行再行銷。" }
+              ]
+            },
+            {
+              topic: "數據報告整合與智能決策",
+              exchanges: [
+                { speaker: "Yeh Andy", role: "other", label: "OneAD", text: "我們有三大 DMP 數據平台：Audience DMP、緯博數據、品牌關鍵字。現代廣告提案以數據為核心，智能決策報告是合作基礎。" },
+                { speaker: "蔡阿達", role: "ada", text: "數據結合是後段加值，初期以共同帶給客戶加值服務為切入點。報告整合至 Dashboard 是很好的方向。" }
+              ]
+            },
+            {
+              topic: "內容策展與媒體曝光",
+              exchanges: [
+                { speaker: "Yeh Andy", role: "other", label: "OneAD", text: "內容策展主要透過自供稿方式合作，避免高昂媒體製作費用，搭配廣告操作保證流量。目前合作媒體以 ETtoday、三立新聞等新聞媒體為主。" },
+                { speaker: "蔡阿達", role: "ada", text: "內容策展與數據結合可提升客戶價值，期待報告內容能與 GEO 方案結合，創造更多合作空間。" },
+                { speaker: "呂紹平", role: "other", label: "awoo", text: "可從關鍵字與 Landing Page 優化角度協助，提升 GEO 被引用機率，並提供內容連結策略強化品牌專案成效。" }
+              ]
+            },
+            {
+              topic: "AI Agent 合作探討",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我個人有打造聊天機器人的經驗，對 AI Agent 很感興趣。" },
+                { speaker: "Yeh Andy", role: "other", label: "OneAD", text: "OneAD 也在銷售 AI Agent 產品，願意進行更深度合作，約定後續安排專門會議討論。" }
               ]
             }
           ]
