@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-04-30T19:00:00",
-  dateLabel: "2026/04/30（四）",
+  lastUpdated: "2026-05-01T19:00:00",
+  dateLabel: "2026/05/01（五）",
   stats: {
-    meetings: 53,
+    meetings: 54,
     projects: 35,
     partners: 13,
     internal: 6,
     clientCompany: 14,
-    todos: 211
+    todos: 213
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-04-28",
-      summary: "Q1 獎金新舊制試算完成 — 新制約為舊制兩倍，Q1 以舊制計算、Q2 起全面採新制；GU 案型獎金以 AMP 比例為基準",
+      lastUpdated: "2026-05-01",
+      summary: "Q1 獎金計算確認 — AMP 達成率 100%、SEO 僅 28.98% 未達標；ACV 公式計算錯誤已釐清，部分獎金因專案登記未完成延至五月中發放",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -203,25 +203,65 @@ window.WAR_ROOM_DATA = {
         "🆕 4/28 Q1 達成率普遍偏低，總獎金約二十幾萬，金額不大",
         "🆕 4/28 新制未包含 <strong>GU 案型</strong>為主要問題 — 目前多數業務案型為 GU",
         "🆕 4/28 決議：<strong>Q1 以舊制計算，Q2 起改用新制</strong>，GU 案型歸入 SIO 類別、獎金以 AMP 比例計算",
-        "🆕 4/28 林思吾補充：舊制中 AMP 為 2.5%、SEO 為 1.5%，新制 GU 為 5%"
+        "🆕 4/28 林思吾補充：舊制中 AMP 為 2.5%、SEO 為 1.5%，新制 GU 為 5%",
+        "🆕 5/1 Q1 AMP 與 GEO 合計業績約 <strong>14 萬 5 千</strong>，AMP 達成率 <strong>100%</strong>",
+        "🆕 5/1 SEO 達成率僅 <strong>28.98%</strong>，未達 30% 標準，不發放 SEO 獎金",
+        "🆕 5/1 超額 ACV 獎金僅在達成率超過 100% 時發放，AMP 未超額無超額獎金",
+        "🆕 5/1 ACV 公式減項不一致（應減 C4+C5，實際只減 C4），導致計算誤差，已修正",
+        "🆕 5/1 獎金 <strong>24,480</strong> 與 <strong>21,053</strong> 兩筆因專案登記未完成，先扣留至五月中發放",
+        "🆕 5/1 Beta 有超額獎金，Brian 因未達標無獎金；老闆同意先發獎金"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
         { icon: "💰", text: "4,800萬/年" },
         { icon: "⚠️", text: "PIP < 60%" },
         { icon: "🎯", text: "基準 60" },
-        { icon: "🆕", text: "新制 5% / 舊制 2.5%" },
-        { icon: "📋", text: "Q2 起全面新制" }
+        { icon: "🆕", text: "AMP 達成 100%" },
+        { icon: "📋", text: "5月中發放" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "請 AT 盡快填寫第一季業務目標與實際金額資料，以便試算獎金", priority: "today" },
-        { owner: "Winny Chiang", text: "依新制及舊制（含 AMP 與 SEO 比例）試算第一季獎金差異", priority: "today" },
-        { owner: "蔡阿達", text: "盡快整理數據並發布 Q1 獎金計算結果", priority: "today" },
+        { owner: "蔡阿達", text: "整理會議記錄，釐清獎金計算邏輯與公司規則", priority: "today" },
+        { owner: "蔡阿達", text: "提供四位員工目標數據，協助獎金計算合理化", priority: "today" },
+        { owner: "Daisy Liu", text: "週一向團隊解釋獎金計算公式與超額 ACV 獎金發放原則", priority: "today" },
+        { owner: "Daisy Liu", text: "與麥可溝通合約簽署狀況，確保獎金發放時程", priority: "today" },
+        { owner: "蔡阿達", text: "確認專案登記完成後，五月中發放相關獎金（24,480 + 21,053）", priority: "week" },
+        { owner: "Daisy Liu", text: "確認 AMP 與 SEO 獎金分開設定與計算", priority: "week" },
         { owner: "團隊", text: "明確公告 GU 案型獎金計算採用 AMP 比例，說明原 SEO 比例調整原因", priority: "week" },
-        { owner: "Winny Chiang", text: "將達成率低於 60% 的業務列入 PIP 管理", priority: "week" },
-        { owner: "蔡阿達", text: "確認去年任務獎金發放狀況", priority: "week" }
+        { owner: "Winny Chiang", text: "將達成率低於 60% 的業務列入 PIP 管理", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-01",
+          title: "AE 獎金確認",
+          time: "14:00-14:48",
+          duration: "48m",
+          participants: "蔡阿達、Daisy Liu",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Q1 獎金計算與達成率確認",
+              exchanges: [
+                { speaker: "Daisy Liu", role: "other", label: "管理部", text: "舊辦法中 SEO 達成率為 28.98%，未達 30% 標準，因此不發放 SEO 獎金，但仍有 3% 獎金計算，造成混淆。" },
+                { speaker: "蔡阿達", role: "ada", text: "第一季未分 SEO 與 AMP 目標，現以總目標合併計算，AMP 與 GEO 達成率為 100%，無超額 ACV 獎金。" },
+                { speaker: "Daisy Liu", role: "other", label: "管理部", text: "Beta 有超額獎金，SEO 獎金以 3% 計算，Brian 因未達標無獎金。雙方確認超額 ACV 獎金只在達成率超過 100% 時發放。" }
+              ]
+            },
+            {
+              topic: "獎金計算公式與溝通問題釐清",
+              exchanges: [
+                { speaker: "Daisy Liu", role: "other", label: "管理部", text: "ACV 計算中 G4 與 G5 相加後應減去 C4 與 C5 兩項，但現行公式只減去 C4，導致計算錯誤。" },
+                { speaker: "蔡阿達", role: "ada", text: "之前計算由不同人負責，溝通誤解造成錯誤，將整理會議記錄協助澄清，確保溝通一致。" }
+              ]
+            },
+            {
+              topic: "獎金發放時程與銀行需求協調",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "獎金 24,480 與 21,053 兩筆因專案登記未完成，須先扣留，待五月中完成後發放。" },
+                { speaker: "Daisy Liu", role: "other", label: "管理部", text: "老闆同意先發獎金，但因銀行需求時間緊迫，將盡力協調並提前告知麥可。若銀行無法配合，將無法責怪公司。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-28",
           title: "awoo AE 新舊制獎金發放辦法討論",
