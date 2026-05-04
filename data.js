@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-01T19:00:00",
-  dateLabel: "2026/05/01（五）",
+  lastUpdated: "2026-05-04T19:00:00",
+  dateLabel: "2026/05/04（一）",
   stats: {
-    meetings: 54,
-    projects: 35,
+    meetings: 56,
+    projects: 36,
     partners: 13,
     internal: 6,
-    clientCompany: 14,
-    todos: 213
+    clientCompany: 15,
+    todos: 224
   },
 
   projects: [
@@ -2222,8 +2222,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-04-29",
-      summary: "4/29 GEO 顧問方案討論 — Prompt 審核流程確立（阿福開發審核工具）、新聞稿客製化稿外包紅雲、成效報告模板目標 5 月中推出、顧問服務會議調整為雙週一次（週二 14-15 點）",
+      lastUpdated: "2026-05-04",
+      summary: "5/4 AI Mode 趨勢觀察 — 顧問書流程三位組長完成梳理、GEO 方案已推動 8% 客戶（22 家）、Chrome AI Mode 頁面上下文抓取、中型文章搭配問句式小標題利於 AI 引用、業務教育訓練文件濃縮為一頁",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2261,7 +2261,15 @@ window.WAR_ROOM_DATA = {
         "🆕 新聞稿分兩類：一般稿內部處理，<strong>客製化稿外包紅雲</strong>；藍文甫帶小話拜訪宏文了解概念",
         "🆕 成效報告模板目標 <strong>5 月中推出</strong>，Anne 與 YC/阿福確認需求，阿福週五提供工具設計評估",
         "🆕 顧問服務流程會議調整為<strong>雙週一次，固定週二 14:00-15:00</strong>，聚焦流程清理及合約方案調整",
-        "🆕 加購稅工具獎金調整中，<strong>Winnie 與麥可確認方案後公告</strong>，ACS 及 AE 已開始使用"
+        "🆕 加購稅工具獎金調整中，<strong>Winnie 與麥可確認方案後公告</strong>，ACS 及 AE 已開始使用",
+        "🆕 5/4 顧問書流程已由<strong>三位組長梳理完成</strong>，同步給專員執行，部分客戶已開始使用",
+        "🆕 5/4 GEO 方案已推動約 <strong>8% 客戶（22 家/200+ 家）</strong>，需加速推廣",
+        "🆕 5/4 Google 生態系引用率提升，<strong>YouTube 及 Reddit 授權內容</strong>為主要來源",
+        "🆕 5/4 Chrome AI Mode 可抓取<strong>頁面上下文</strong>，提升內容關聯性",
+        "🆕 5/4 中型文章搭配<strong>問句式小標題（≤60 字）</strong>有助 AI 爬蟲引用",
+        "🆕 5/4 建議書以<strong>主題完整度優先</strong>，先完成一個主題再推下一個",
+        "🆕 5/4 業務教育訓練文件從三頁<strong>濃縮至一頁</strong>，突出重點與方向",
+        "🆕 5/4 Fenix Li 安排<strong>兩週一次會議</strong>，梳理工具與 GEO 方案整合"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -2296,9 +2304,46 @@ window.WAR_ROOM_DATA = {
         { owner: "Anne Chang", text: "5 月中前完成成效報告模板推出，先與 YC 及阿福確認需求", priority: "week" },
         { owner: "藍文甫", text: "下週帶小話拜訪宏文了解新聞稿概念，並與紅雲討論客製化稿外包流程", priority: "week" },
         { owner: "Fenix Li", text: "與 Leo 及小花確認跨部門合作流程細節", priority: "week" },
-        { owner: "Anne Chang", text: "與 Winnie 確認加購稅工具獎金調整方案並公告", priority: "today" }
+        { owner: "Anne Chang", text: "與 Winnie 確認加購稅工具獎金調整方案並公告", priority: "today" },
+        { owner: "Fenix Li", text: "與帕爸及系統團隊排定梳理工具與 GEO 方案整合時程", priority: "week" },
+        { owner: "陳羲彤", text: "制定文章標題與小標調整指引，推動問句穿插、字數控制 60 字以內", priority: "week" },
+        { owner: "林思吾", text: "加速推出 GEO 完整版方案，配合 CS 團隊續約推廣", priority: "week" },
+        { owner: "Fenix Li", text: "整理業務版教育訓練資料濃縮為一頁並準備 demo", priority: "week" },
+        { owner: "林思吾", text: "指派團隊完成 Google 生態系內容佈局，串聯 YouTube 及 Reddit 資源", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-04",
+          title: "AI Mode的影響與觀察",
+          time: "10:10-10:40",
+          duration: "30m",
+          participants: "林思吾、Fenix Li、陳羲彤（Dominic）、蔡佳勳、蔡阿達",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "顧問書流程與專員執行對齊",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "本週三位組長已完成顧問書流程梳理並同步給專員執行。5 月已有客戶陸續進入，6 月將面臨建書需求，需儘早準備。" },
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "4/29 AE、CS 及組長的 GO3 說明會已同步相關方向，資訊落差已有縮小。將與組長安排兩週一次會議，下週開始梳理工具與方案整合。" }
+              ]
+            },
+            {
+              topic: "Google 生態系趨勢與內容策略",
+              exchanges: [
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "Google 生態系引用率提升，YouTube 及 Reddit 授權內容為主要來源。Chrome AI Mode 可抓取頁面上下文，提升內容關聯性。" },
+                { speaker: "陳羲彤", role: "other", label: "Dominic", text: "長文不如多篇中型文章效果佳，標題使用直接明確文字。文章中穿插問句式小標題，字數控制在 60 字以內，有助 AI 爬蟲引用。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "認同策略，建議以一篇深度文章搭配多篇短文，將內容串成 Google 生態系網絡，提升實體 entity 概念完整度。" }
+              ]
+            },
+            {
+              topic: "GEO 方案推廣進度與業務教育訓練",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "目前約 200 多家客戶中已有 22 家（約 8%）推動 GEO 方案，需加速推廣並在續約階段積極推銷工具。" },
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "為國泰做的業務教育訓練將三頁說明濃縮為一頁，重點放方向與 to do，方便業務快速掌握。以 demo 形式輔助說明，避免過度揭露專員建議書細節。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-29",
           title: "GEO 顧問方案-討論延續",
@@ -2980,6 +3025,92 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "我個人有打造聊天機器人的經驗，對 AI Agent 很感興趣。" },
                 { speaker: "Yeh Andy", role: "other", label: "OneAD", text: "OneAD 也在銷售 AI Agent 產品，願意進行更深度合作，約定後續安排專門會議討論。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P36: 男研堂 ======
+    {
+      id: "nanyan-tang",
+      name: "男研堂 — 官網 GEO 技術合作洽談",
+      icon: "🧴",
+      category: "client",
+      lastUpdated: "2026-05-04",
+      summary: "首次洽談 — GO Suite 監控 AI 能見度、分站與合站 SEO 權重評估、schema 結構化資料標記，客戶先自行撰寫文章、awoo 提供潤飾與規劃",
+      keyPoints: [
+        "客戶因<strong>醫療法規限制</strong>將電商主站與部落格分開架設，避免罰款風險",
+        "蔡阿達指出分站導致<strong>SEO 權重分散</strong>，建議未來視法規調整考慮合併",
+        "GO Suite 可監控<strong>四大 AI 模型</strong>（ChatGPT、Gemini 等），六月底擴充第二期",
+        "五大指標追蹤：<strong>品牌提及率、網站引用率</strong>、AI 搜尋排名等",
+        "技術面：加入<strong>schema 結構化資料標記</strong>，提升 AI 爬蟲辨識產品頁與文章頁",
+        "內容策略：建置 QA 佈局與 FAQ，增加<strong>AI 問答版位收錄機率</strong>",
+        "完整方案含<strong>60 個 Prompt 追蹤、6 份年度建議書</strong>及文章產出",
+        "客戶表示<strong>文章自行撰寫</strong>，awoo 提供規劃與潤飾，報價依篇數調整",
+        "成效保證為假議題，建議以<strong>Google 排名與 AI Overview 版位收錄</strong>作為 KPI",
+        "蘋果 AI 封閉性尚未影響整體優化策略，<strong>AI 爬蟲仍以 Google 資料庫為主</strong>"
+      ],
+      chips: [
+        { icon: "🕐", text: "36 min" },
+        { icon: "💬", text: "60 Prompt" },
+        { icon: "📊", text: "6 份年報" },
+        { icon: "🤖", text: "4 大 AI 模型" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "建立男研堂通訊群組，分享 GO Suite 資料", priority: "today" },
+        { owner: "蔡毓倫", text: "完成男研堂 GO Suite 關鍵字與 Prompt 設定", priority: "week" },
+        { owner: "蔡毓倫", text: "提供報價方案，依撰寫或潤飾篇數調整", priority: "week" },
+        { owner: "男研堂", text: "提供重點產品線與主題供 GO Suite 監控追蹤", priority: "waiting" },
+        { owner: "蔡毓倫", text: "六月底前完成 GO Suite 第二期更新，擴充 AI 模型追蹤範圍", priority: "week" },
+        { owner: "蔡毓倫", text: "協調技術團隊加入 schema 結構化資料標記", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-04",
+          title: "男研堂官網 GEO 技術合作洽談",
+          time: "15:44-16:20",
+          duration: "36m",
+          participants: "蔡阿達、蔡毓倫（Aiden）、Joe（男研堂）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站分離架構與法規風險",
+              exchanges: [
+                { speaker: "Joe", role: "other", label: "男研堂", text: "部落格站因涉及可能違規詞彙，為避免罰款故與主站分開架設，由 QDM 負責內容撰寫。" },
+                { speaker: "蔡阿達", role: "ada", text: "SEO 與 AI 優化理論上主站與文章站合併有利權重累積，分站會造成權重分散，建議未來可視法規調整合併策略。" },
+                { speaker: "Joe", role: "other", label: "男研堂", text: "目前維持分站策略避免法規風險，近期未聽聞罰款事件，過去罰款多集中於產品銷售廣告。" }
+              ]
+            },
+            {
+              topic: "GO Suite AI 能見度監控工具介紹",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "監控是優化前提，GO Suite 可快速監控網站在 AI 能見度的多項指標，包含品牌提及率、網站引用率等五大指標。" },
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "透過串接 ChatGPT、Gemini 等 API 模擬無痕搜尋，避免搜尋紀錄影響結果。目前以四大主流模型為主，預計六月底推出第二期擴充更多模型。" },
+                { speaker: "Joe", role: "other", label: "男研堂", text: "對工具興趣很高，詢問未來擴充 AI 模型的計畫。" }
+              ]
+            },
+            {
+              topic: "技術優化與內容策略",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "技術面包括提升 AI 爬蟲爬取能力與加入 schema 結構化資料標記，方便 AI 辨識頁面性質。內容面從關鍵字延伸問句建置文章及 FAQ。" },
+                { speaker: "Joe", role: "other", label: "男研堂", text: "目前網站技術面無明顯問題。" }
+              ]
+            },
+            {
+              topic: "服務方案與合作模式",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "完整方案含關鍵字與 Prompt 設定、Google 排名與 AI 摘要版位優化、生成式 AI 多平台追蹤及年度建議書。" },
+                { speaker: "蔡阿達", role: "ada", text: "保持聯絡，資料會透過群組分享，隨時安排會議討論後續合作。" },
+                { speaker: "Joe", role: "other", label: "男研堂", text: "願意先自行撰寫文章，潤飾篇數會較多，雙方同意後續再討論合作細節與報價。" }
+              ]
+            },
+            {
+              topic: "AI 搜尋成效保證與趨勢",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "成效保證為假議題，無法保證 Google 或生成式 AI 搜尋結果排名，建議以 Google 排名與 AI Overview 版位收錄作為 KPI。" },
+                { speaker: "蔡阿達", role: "ada", text: "AI 搜尋優化仍延續 SEO 邏輯，爬蟲升級與大型語言模型輔助是主要差異。蘋果 AI 封閉性尚未影響整體優化策略。" }
               ]
             }
           ]
