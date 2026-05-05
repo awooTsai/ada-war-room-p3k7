@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-04T19:00:00",
-  dateLabel: "2026/05/04（一）",
+  lastUpdated: "2026-05-05T19:00:00",
+  dateLabel: "2026/05/05（一）",
   stats: {
-    meetings: 56,
-    projects: 36,
+    meetings: 58,
+    projects: 37,
     partners: 13,
     internal: 6,
-    clientCompany: 15,
-    todos: 224
+    clientCompany: 16,
+    todos: 233
   },
 
   projects: [
@@ -519,8 +519,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-04-30",
-      summary: "4/30 統一 20 篇規劃+論述銷售，中文修改限一次、英文不提供修改，交期延至 15 工作天；蔡阿達下週完成 Cloud 爬蟲/素材技能並安排文案組教學",
+      lastUpdated: "2026-05-05",
+      summary: "5/5 品牌聲音系統正式對小花完成教學 — 三大功能（品牌學習/SEO文章撰寫/知識精煉）已上線；AI 文章合約策略調整為報價單溝通、不寫入合約；Cloud 平台使用限制管理策略確立，以玉萍診所為首位實操客戶",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -546,35 +546,86 @@ window.WAR_ROOM_DATA = {
         "🆕 4/30 AI 素材由<strong>客戶確認</strong>，納入建議書流程提升素材符合度",
         "🆕 4/30 蔡阿達開發 Cloud 爬蟲/素材處理技能，<strong>下週完成</strong>並安排與文案視訊教學",
         "🆕 4/30 MIS 開設專用 Cloud 帳號供文案團隊使用，解決帳號共享限制",
-        "🆕 4/30 英文文章規劃可用 AI 跨語言處理，但需與 ST 團隊討論調整篇幅"
+        "🆕 4/30 英文文章規劃可用 AI 跨語言處理，但需與 ST 團隊討論調整篇幅",
+        "🆕 5/5 品牌聲音系統<strong>三大功能</strong>正式向小花說明：品牌網站內容學習、符合 SEO/EAT 規範文章撰寫、知識精煉",
+        "🆕 5/5 AI 文章合約策略調整：<strong>暫不在合約明確標示 AI 文章</strong>，改以報價單或溝通文件說明，避免客戶反彈",
+        "🆕 5/5 查證責任歸客戶，業務需<strong>統一口徑</strong>向客戶說明 AI 輔助產文優勢",
+        "🆕 5/5 Cloud 平台使用限制：<strong>每五小時重置、每週有上限</strong>，4.6 模型為主力，4.7 耗資源僅必要時使用",
+        "🆕 5/5 文案產出策略：先用 <strong>Gemini/ChatGPT 跑初稿</strong>，再用 Cloud 撰寫重要文章，節省資源",
+        "🆕 5/5 以<strong>玉萍診所</strong>為首位實操客戶，爬取網站資料後上傳系統生成文章",
+        "🆕 5/5 系統可建立<strong>多對話框對應不同客戶</strong>，方便文案撰寫時參考各品牌資料",
+        "🆕 5/5 蔡阿達將新增功能：根據專員規劃<strong>自動產生問卷</strong>收集客戶素材"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
         { icon: "👤", text: "25% 人工" },
-        { icon: "🤖", text: "Claude 雙 Skill" },
+        { icon: "🤖", text: "品牌聲音系統上線" },
         { icon: "✏️", text: "修改限1次" },
         { icon: "📅", text: "交期15工作天" },
-        { icon: "☁️", text: "Cloud 技能開發中" }
+        { icon: "☁️", text: "Cloud 4.6 為主力" }
       ],
       todos: [
         { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "today" },
         { owner: "藍文甫", text: "論述流程改為撰寫用詞，交期統一調整為 15 工作天", priority: "today" },
         { owner: "藍文甫", text: "制定對外說明話術：中文有潤飾，英文由客戶自行修改", priority: "week" },
-        { owner: "蔡阿達", text: "開發 Cloud 爬蟲與素材處理技能，下週完成", priority: "today" },
-        { owner: "蔡阿達", text: "安排與廖淑芬視訊會議，示範 Cloud 技能操作流程", priority: "week" },
-        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" },
-        { owner: "蔡阿達", text: "設計 AI 輔助生成文章的問卷流程，整合至專員規劃程序", priority: "week" },
+        { owner: "蔡阿達", text: "新增功能：根據專員規劃自動生成問卷，收集客戶素材", priority: "today" },
+        { owner: "蔡阿達", text: "爬取玉萍診所網站內容，整理後交給廖淑芬上傳使用", priority: "today" },
+        { owner: "蔡阿達", text: "與亨利確認合約條文，調整 AI 文章相關用詞使其簡明不引起反彈", priority: "week" },
+        { owner: "蔡阿達", text: "評估不同 AI 模型（4.6、4.7、Gemini）文章生成效能，提供使用建議", priority: "week" },
+        { owner: "廖淑芬", text: "將專員規劃好的文章與客戶素材上傳系統，嘗試生成文章並回報結果", priority: "today" },
+        { owner: "廖淑芬", text: "在建議書中明確標示哪些段落需客戶提供素材", priority: "week" },
+        { owner: "廖淑芬", text: "注意 Cloud 平台五小時及每週使用限制，合理安排使用時段", priority: "week" },
+        { owner: "廖淑芬", text: "監督業務團隊對外溝通口徑一致，確保 AI 輔助產文說法統一", priority: "week" },
+        { owner: "團隊", text: "報價單或其他文件中明確告知客戶 AI 文章查證責任由客戶負責", priority: "week" },
+        { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "week" },
         { owner: "藍文甫", text: "協調 MIS 開設專用 Cloud 帳號供文案組使用", priority: "week" },
-        { owner: "廖淑芬", text: "確認 AI 生成素材並安排客戶確認流程", priority: "week" },
-        { owner: "藍文甫", text: "邀請 ST 團隊討論英文規劃篇幅調整與可行性", priority: "week" },
-        { owner: "蔡阿達", text: "評估英文文章交付後客戶自主管理修改的可行性", priority: "week" },
-        { owner: "藍文甫", text: "內部先測試 AI 文章品質", priority: "waiting" },
-        { owner: "廖淑芬", text: "協助統籌現有及新客戶資料整理，以客戶名稱分類資料夾", priority: "waiting" },
         { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程", priority: "waiting" },
-        { owner: "蔡阿達", text: "提供兩支 Claude Skill 給小花（品牌人設學習 + 文章輸出）", priority: "week" },
-        { owner: "蔡阿達", text: "設計並提供專業知識回饋表單給小花", priority: "week" }
+        { owner: "蔡阿達", text: "評估英文文章交付後客戶自主管理修改的可行性", priority: "week" },
+        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-05",
+          title: "awoo 文案 Skill 與方案討論 — 品牌聲音系統教學",
+          time: "09:32-10:19",
+          duration: "47m",
+          participants: "蔡阿達、廖淑芬（小花）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌聲音系統三大功能說明與實操",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "品牌聲音系統有三大功能：一是上傳客戶網站內容讓系統學習品牌口吻；二是根據品牌聲音撰寫符合 SEO 與 EAT 規範的文章；三是持續精煉知識，讓系統越來越聰明。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "我已建立八個圖檔並完成資料上傳。" },
+                { speaker: "蔡阿達", role: "ada", text: "系統內容非一次性，需持續滾動調整。我會新增功能，根據專員規劃自動產生問卷以收集客戶素材，減少客戶不提供素材的困擾。" }
+              ]
+            },
+            {
+              topic: "AI 文章合約條款溝通策略",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "若合約明確寫 AI 文章，客戶可能不願接受，且查證數據需花費大量時間，建議由客戶自行負責查證。" },
+                { speaker: "蔡阿達", role: "ada", text: "合約中若強調 AI 文章會導致提案冗長且客戶反彈，建議改以報價單或其他文件溝通 AI 輔助產文的事實。合約條文需與法務確認，避免用詞過於複雜。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "業務需密切監督對外說法，確保溝通一致，避免後續收攤時出現問題。" }
+              ]
+            },
+            {
+              topic: "Cloud 平台使用限制與模型選擇",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "Cloud 平台每五小時會重新計算使用量，若使用過度需等待冷卻，且每週也有使用上限。建議先以 4.6 模型為主，4.7 耗用資源較多僅必要時使用。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "擔心付費版使用量不足以支援大量文章產出。" },
+                { speaker: "蔡阿達", role: "ada", text: "可先用 Gemini 或 ChatGPT 跑初稿，再用 Cloud 撰寫重要文章，達到節省資源的目的。文章產出後仍需人工校正。" }
+              ]
+            },
+            {
+              topic: "客戶網站資料爬取與文案生成流程",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "每接一個新客戶會先爬取其網站資料，提供給文案團隊使用。系統可建立多個對話框，分別對應不同客戶資料。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "已有建議書規劃，客戶已提供回饋，準備進入文案撰寫階段。" },
+                { speaker: "蔡阿達", role: "ada", text: "以玉萍診所為例，爬取網站內容後上傳系統，開始生成符合品牌口吻的文章。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-30",
           title: "文案 n8n — AI 文章產出規範與 Cloud 技能開發",
@@ -3111,6 +3162,81 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡毓倫", role: "other", label: "Aiden", text: "成效保證為假議題，無法保證 Google 或生成式 AI 搜尋結果排名，建議以 Google 排名與 AI Overview 版位收錄作為 KPI。" },
                 { speaker: "蔡阿達", role: "ada", text: "AI 搜尋優化仍延續 SEO 邏輯，爬蟲升級與大型語言模型輔助是主要差異。蘋果 AI 封閉性尚未影響整體優化策略。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P37: 甲山林建設 ======
+    {
+      id: "jsl-geo",
+      name: "甲山林建設 — 官網 SEO × GEO 整合優化",
+      icon: "🏠",
+      category: "client",
+      lastUpdated: "2026-05-05",
+      summary: "甲山林房展中心兩網站三個月內合併，awoo 以顧問模式提供 SEO+GEO 整合優化 — 合約期 13 個月、每兩個月交付建議書、AI 曝光追蹤工具免費一年（換 Logo）；5/31 前簽約目標",
+      keyPoints: [
+        "甲山���房展中心有兩個網站，<strong>Real Estate Hub 三個月內併入主站 www.jsl.com.tw</strong>",
+        "以 SEO 為基礎結合 GEO 優化，目標提升 <strong>Google AI 摘要區塊曝光率</strong>及關鍵字排名",
+        "顧問式合作模式：技術檢測、內容優化、結構化資料建置、<strong>多模態內容優化</strong>",
+        "合約期 <strong>13 個月</strong>（含 1 個月關鍵字討論期），年繳為主、月繳可行",
+        "每兩個月交付一份建議書，含技術架構、關鍵字排名、AI 引用曝光分析",
+        "時程規劃：<strong>5/31 前簽約 → 6/1 關鍵字選定 → 8 月正式優化</strong>，半年後初步成效",
+        "建案壽命約一年，建議以<strong>常駐服務類關鍵字</strong>（預售屋推薦、買房理財）為優化主軸",
+        "短期建案搭配<strong>廣告投放</strong>達成快速曝光",
+        "AI 曝光追蹤工具<strong>免費使用一年</strong>，條件為同意以甲山林 Logo 作為案例展示",
+        "後續以<strong>實體會議</strong>為主，初步擬定下週二/三/四下午會議"
+      ],
+      chips: [
+        { icon: "📅", text: "5/31 前簽約" },
+        { icon: "📋", text: "13 個月合約" },
+        { icon: "📊", text: "每2月建議書" },
+        { icon: "🆓", text: "AI 工具免費1年" },
+        { icon: "🏠", text: "兩站合併中" }
+      ],
+      todos: [
+        { owner: "Rebecca Chen", text: "提供網站健檢報告，說明現有問題與優化空間", priority: "today" },
+        { owner: "Rebecca Chen", text: "準備主題關鍵字初步規劃供甲山林評估", priority: "today" },
+        { owner: "蔡阿達", text: "協調下週實體會議時間（週二/三/四下午），與 Rebecca 配合出席", priority: "today" },
+        { owner: "台北房展中心", text: "5/31 前完成合約簽訂", priority: "week" },
+        { owner: "Rebecca Chen", text: "合作啟動後提供六份優化建議書，每兩個月更新一次", priority: "waiting" },
+        { owner: "台北房展中心", text: "提供主要推廣主題與關鍵字方向（買房理財、置產實業等）", priority: "week" },
+        { owner: "Rebecca Chen", text: "協助設定 AI 曝光追蹤工具，導入品牌提及率與競品比較分析", priority: "waiting" },
+        { owner: "台北房展中心", text: "提供競爭對手名單，供工具導入比較分析", priority: "week" },
+        { owner: "Rebecca Chen", text: "7/1 召開啟動��議，開通 GA4、GSC 帳號權限", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-05",
+          title: "甲山林建設官網 GEO 技術合作洽談",
+          time: "15:15-16:35",
+          duration: "1h20m",
+          participants: "蔡阿達、Rebecca Chen、台北房展中心（甲山林建設）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站現況與合作目的",
+              exchanges: [
+                { speaker: "台北房展中心", role: "other", label: "甲山林", text: "目前有兩個網站，Real Estate Hub 為獨立子網域，計畫三個月內併入主站 www.jsl.com.tw。老闆在 GPT 等 AI 工具中無法獲得正確房產資訊，希望透過優化解決。" },
+                { speaker: "蔡阿達", role: "ada", text: "GEO 方案是 SEO 的延伸，會同時優化關鍵字排名與 Google AI Overviews 的引用率。AI 搜尋導致網站流量下降但流量更精準，重點在提升曝光而非單純流量。" }
+              ]
+            },
+            {
+              topic: "顧問式合作模式與服務內容",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "合作模式採顧問制，每兩個月提供一份建議書，涵蓋技術架構檢測、主題關鍵字策略、多模態內容優化、品牌履歷頁面優化及結構化資料建置。" },
+                { speaker: "Rebecca Chen", role: "other", label: "AE", text: "會協助擬定主題關鍵字，根據網站現有頁面配置關鍵字，若無適合頁面則新增文章或內容，並提供文章撰寫規劃及潤飾服務。" },
+                { speaker: "蔡阿達", role: "ada", text: "建案壽命約一年，建議以常駐服務類關鍵字如預售屋推薦、買房理財為優化主軸，短期建案搭配廣告投放達成快速曝光。" }
+              ]
+            },
+            {
+              topic: "AI 曝光追蹤工具與合約時程",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們自家開發的 AI 曝光追蹤平台可監控品牌被 AI 提及次數、聲量佔比、平均排名、情緒分析及網站引用率，並可與競爭對手比較。免費提供使用一年，條件是同意以甲山林 Logo 作為案例展示。" },
+                { speaker: "台北房展中心", role: "other", label: "甲山林", text: "主管需明確時間預期以向老闆報告。" },
+                { speaker: "蔡阿達", role: "ada", text: "5/31 前完成簽約，6/1 開始關鍵字選定，8 月正式優化，半年後可見初步成效。合約期 13 個月，後續以實體會議為主，初步擬定下週二三四下午見面。" }
               ]
             }
           ]
