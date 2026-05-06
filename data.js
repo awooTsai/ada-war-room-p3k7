@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-05T19:00:00",
-  dateLabel: "2026/05/05（一）",
+  lastUpdated: "2026-05-06T19:00:00",
+  dateLabel: "2026/05/06（三）",
   stats: {
-    meetings: 58,
+    meetings: 60,
     projects: 37,
     partners: 13,
     internal: 6,
     clientCompany: 16,
-    todos: 233
+    todos: 238
   },
 
   projects: [
@@ -519,8 +519,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-05",
-      summary: "5/5 品牌聲音系統正式對小花完成教學 — 三大功能（品牌學習/SEO文章撰寫/知識精煉）已上線；AI 文章合約策略調整為報價單溝通、不寫入合約；Cloud 平台使用限制管理策略確立，以玉萍診所為首位實操客戶",
+      lastUpdated: "2026-05-06",
+      summary: "5/6 蔡毓倫與蔡阿達確認合約 AI 條款過渡期處理 — 現有條款已涵蓋查證責任無需另加 AI 條款；旅行社客戶 SEO 方案含 20 組 Prompt GLS 包裝以 2,000 元計價；文案專員仍維持完整流程，AI 僅輔助生成初稿",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -554,7 +554,12 @@ window.WAR_ROOM_DATA = {
         "🆕 5/5 文案產出策略：先用 <strong>Gemini/ChatGPT 跑初稿</strong>，再用 Cloud 撰寫重要文章，節省資源",
         "🆕 5/5 以<strong>玉萍診所</strong>為首位實操客戶，爬取網站資料後上傳系統生成文章",
         "🆕 5/5 系統可建立<strong>多對話框對應不同客戶</strong>，方便文案撰寫時參考各品牌資料",
-        "🆕 5/5 蔡阿達將新增功能：根據專員規劃<strong>自動產生問卷</strong>收集客戶素材"
+        "🆕 5/5 蔡阿達將新增功能：根據專員規劃<strong>自動產生問卷</strong>收集客戶素材",
+        "🆕 5/6 合約 AI 條款過渡期處理：現有條款已涵蓋<strong>客戶需自行校正內容</strong>，司法性條款完整，<strong>無需另加 AI 條款</strong>",
+        "🆕 5/6 蔡毓倫確認舊案過渡期合約，蔡阿達將持續與客戶溝通確保條款符合談判條件",
+        "🆕 5/6 旅行社客戶 SEO 方案：<strong>20 組 Prime GLS 包入 20 次 SEO</strong>，以 2,000 元計價報價",
+        "🆕 5/6 蔡毓倫建議簡化方案規格，<strong>不再使用 17 篇等不整數</strong>，蔡阿達同意推動",
+        "🆕 5/6 文案專員工作流程確認：AI 僅輔助<strong>生成初稿</strong>，前置資料收集與知識庫建置仍由專員完成"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
@@ -581,9 +586,48 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "協調 MIS 開設專用 Cloud 帳號供文案組使用", priority: "week" },
         { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程", priority: "waiting" },
         { owner: "蔡阿達", text: "評估英文文章交付後客戶自主管理修改的可行性", priority: "week" },
-        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" }
+        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" },
+        { owner: "蔡阿達", text: "確認制式合約 AI 條款，與法務確認過渡期舊案條款是否需調整", priority: "week" },
+        { owner: "蔡毓倫", text: "更新旅行社客戶報價單，20 組 Prompt GLS 包裝方案以 2,000 元計價", priority: "today" },
+        { owner: "蔡阿達", text: "推動簡化方案規格數字，統一篇數避免 17 篇等不整數", priority: "week" },
+        { owner: "蔡阿達", text: "確認 20 組 Prompt 規格與報價，協助蔡毓倫完成旅行社客戶報價", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-06",
+          title: "AI 合約條款過渡期 × SEO 方案報價討論",
+          time: "16:49-17:00",
+          duration: "11m",
+          participants: "蔡毓倫、蔡阿達",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 條款在合約過渡期的處理",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "報價單已送出，想確認舊案過渡期合約中 AI 條款的適用問題。" },
+                { speaker: "蔡阿達", role: "ada", text: "公版合約已有 AI 撰寫文章相關條款，甲方需調教並驗證文章內容，司法性條款也涵蓋文案責任。" },
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "既然現有條款已足夠保障雙方權益，為何需特別強調 AI 條款？" },
+                { speaker: "蔡阿達", role: "ada", text: "同意，會持續與客戶溝通確保條款符合談判條件。" }
+              ]
+            },
+            {
+              topic: "旅行社客戶 SEO 方案報價與 GLS 包裝",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "旅行社客戶希望將 20 組 Prime 的 GLS 包入 20 次 SEO 服務中，作為 POC 方案。" },
+                { speaker: "蔡阿達", role: "ada", text: "折扣範圍內可行，同意以 2,000 元計價報價給客戶。" },
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "建議未來不再使用 17 篇這種奇怪數字，簡化方案規格。" },
+                { speaker: "蔡阿達", role: "ada", text: "會努力打破內部對數字規格的限制。" }
+              ]
+            },
+            {
+              topic: "文案專員工作流程與 AI 輔助現況",
+              exchanges: [
+                { speaker: "蔡毓倫", role: "other", label: "AE", text: "若 AE 主力銷售 20 篇 AI 文章，文案專員是否已大幅減少親自撰寫的比例？" },
+                { speaker: "蔡阿達", role: "ada", text: "目前專員仍維持完整流程，AI 僅輔助生成初稿。專員需先收集客戶資料、拆解口氣、整理經驗與數據，建立知識庫後再用於文章生成。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-05",
           title: "awoo 文案 Skill 與方案討論 — 品牌聲音系統教學",
@@ -1524,8 +1568,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-04-29",
-      summary: "每週三午餐小聚 — 4/29 協助王俊智（The Lavoria 微針貼片品牌）規劃品牌策略；社群經營建議（IG 為主）、官網內容優化、Charles 攝影資源對接、AI 口碑合作引薦",
+      lastUpdated: "2026-05-06",
+      summary: "每週三午餐小聚 — 5/6 BNI 成員合作現況深度討論；每週帶一間客戶案例上線分享機制啟動；華翼轉型品牌顧問不再接單件設計；鼎新 ERP × AI 引擎百萬案；甲山林 SEO 案積極爭取；選舉印刷與行銷服務合作整合",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -1543,7 +1587,15 @@ window.WAR_ROOM_DATA = {
         "🆕 品牌策略建議：聚焦<strong>微針貼片</strong>為首推產品，考慮自有品牌與代理產品<strong>分開官網經營</strong>",
         "🆕 社群建議以 <strong>IG 為主</strong>，官網為核心容器，強化品牌故事、產品安全認證與內容豐富度",
         "🆕 蔡阿達提出協助尋找市場知名品牌進行<strong>免費 AI 口碑合作</strong>，Charles 可對接南煙堂行銷窗口",
-        "🆕 徐嘉祥會計師提供<strong>額外稅務諮詢</strong>資源，可協助解決國稅局查核案件"
+        "🆕 徐嘉祥會計師提供<strong>額外稅務諮詢</strong>資源，可協助解決國稅局查核案件",
+        "🆕 5/6 建立<strong>每週客戶案例分享機制</strong>：每人每週帶一間客戶上線討論，促進資源交換與合作",
+        "🆕 5/6 華翼品牌形象設計<strong>2026 年不再接單件設計</strong>，專注整體品牌顧問案，印刷服務持續（AI 難以取代）",
+        "🆕 5/6 華翼分享<strong>鼎新 ERP × AI 引擎串接</strong>百萬等級案例，凸顯 AI 在企業數位轉型的高商業價值",
+        "🆕 5/6 目標客戶群：<strong>傳統產業工廠、美容代工廠、食品代工廠</strong>，有數位轉型需求且需整套品牌服務",
+        "🆕 5/6 蔡阿達分享義守大學洽談經驗：大型體制公司<strong>資料整理與傳播</strong>為 AI 切入點",
+        "🆕 5/6 蔡阿達將為<strong>甲山林建設爭取 SEO 案</strong>，華翼承諾負擔高鐵交通費",
+        "🆕 5/6 選舉產業整合：MarsZ Chen 議員官網及<strong>募資頁設計</strong>、華翼負責選舉印刷（扇子/筆/便條紙等）、遙空映畫行銷公司合作",
+        "🆕 5/6 蔡阿達與 MarsZ Chen 明天確認<strong>博弈網站</strong>潛在客戶需求，評估網站建置合作"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -1552,18 +1604,51 @@ window.WAR_ROOM_DATA = {
         { icon: "🤖", text: "LLM 引薦系統" }
       ],
       todos: [
+        { owner: "蔡阿達", text: "每週三線上小聚帶一間客戶案例上線分享，推動成員合作與資源整合", priority: "week" },
+        { owner: "蔡阿達", text: "安排與甲山林建設接洽 SEO 案子，華翼負擔高鐵交通費", priority: "today" },
+        { owner: "蔡阿達", text: "明天與 MarsZ Chen 確認博弈網站潛在客戶需求，評估合作可能", priority: "today" },
+        { owner: "蔡阿達", text: "推廣 AI 加速工作效率方案，協助內部員工提升 AI 應用能力", priority: "week" },
+        { owner: "華翼品牌形象設計", text: "協助引薦傳統產業工廠、美容用品及食品代工廠客戶", priority: "week" },
+        { owner: "遙空映畫", text: "邀請行銷公司一對一溝通，推動食品代工廠相關合作", priority: "week" },
+        { owner: "MarsZ Chen", text: "分享議員募資網站設計成果與連結給團隊參考", priority: "week" },
         { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
         { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
-        { owner: "蔡阿達", text: "協助成員客戶了解 AI 推薦指標，提供優化方向與行動建議", priority: "week" },
-        { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" },
-        { owner: "蔡阿達", text: "跟進嘉義福容飯店穿越機拍攝申請，協助遙空映畫推進合作", priority: "week" },
-        { owner: "蔡阿達", text: "協助數位巴克斯評估工廠設備數據化方案中 AI/SEO 協作機會", priority: "week" },
-        { owner: "蔡阿達", text: "跟進遙空映畫高雄飯店穿越機拍攝合作進度", priority: "week" },
-        { owner: "蔡阿達", text: "協助王俊智（The Lavoria）對接專業攝影師 Charles Jhang", priority: "week" },
-        { owner: "蔡阿達", text: "請團隊推薦有知名度品牌進行 AI 口碑合作，提供免費網站健檢", priority: "week" },
-        { owner: "蔡阿達", text: "跟進 Charles 與南煙堂行銷窗口對接進度", priority: "week" }
+        { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-06",
+          title: "FUZEN 行銷小聚 05/06",
+          time: "12:58-13:47",
+          duration: "49m",
+          participants: "蔡阿達、華翼品牌形象設計、遙空映畫（韋翰）、MarsZ Chen",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "BNI 成員合作現況與客戶資源共享策略",
+              exchanges: [
+                { speaker: "華翼品牌形象設計", role: "other", label: "華翼", text: "主要角色是接案並挖掘客戶需求，BNI 價值在於會員表現與案子介紹。客戶多為傳統產業工廠、美容代工廠及食品代工廠，有數位轉型需求。" },
+                { speaker: "蔡阿達", role: "ada", text: "大型體制公司資料整理與傳播是 AI 可協助的切入點，建議尋找成本低且能解決客戶問題的方案。每週線上小聚每人帶一間客戶案例上線分享，促進合作與資源交換。" },
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "支持每週客戶案例分享方案，建議分享過去或正在服務的客戶案例，上線成員會積極分享資源。" }
+              ]
+            },
+            {
+              topic: "AI 技術應用與品牌顧問服務轉型",
+              exchanges: [
+                { speaker: "華翼品牌形象設計", role: "other", label: "華翼", text: "2026 年公司不再接單件設計，僅承接整體品牌顧問案。印刷服務持續，因不易被 AI 取代。與鼎新 ERP 串接 AI 引擎的案子金額達數百萬。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同 AI 加速工作效率，願意將相關 AI 工作流技術轉介給華翼，促進成員間技術交流與合作。" }
+              ]
+            },
+            {
+              topic: "選舉行銷與重要客戶接洽",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "已為多位議員設計官網及募資頁，募資頁分純募款與小物銷售，並與文創小物業者合作。" },
+                { speaker: "華翼品牌形象設計", role: "other", label: "華翼", text: "選舉年印刷需求大，已接多案，將帆布印刷轉給羽傑，自己專注其他印刷品。" },
+                { speaker: "蔡阿達", role: "ada", text: "將為甲山林建設爭取 SEO 案子，願意為成員跑臺北洽談。明天與 MarsZ Chen 確認博弈網站潛在客戶需求。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-29",
           title: "FUZEN 行銷小聚 04/29",
