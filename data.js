@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-06T19:00:00",
-  dateLabel: "2026/05/06（三）",
+  lastUpdated: "2026-05-07T19:00:00",
+  dateLabel: "2026/05/07（四）",
   stats: {
-    meetings: 60,
-    projects: 37,
+    meetings: 63,
+    projects: 38,
     partners: 13,
     internal: 6,
-    clientCompany: 16,
-    todos: 238
+    clientCompany: 17,
+    todos: 241
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-01",
-      summary: "Q1 獎金計算確認 — AMP 達成率 100%、SEO 僅 28.98% 未達標；ACV 公式計算錯誤已釐清，部分獎金因專案登記未完成延至五月中發放",
+      lastUpdated: "2026-05-07",
+      summary: "目標設定錯誤確認 — 應以T型圖為基準非ACV，總收單 4,852 萬、認列率 70% 實際目標約 3,456 萬；獎金階梯設計以正面激勵取代直接告知落差，60% 為基礎 5%、超額最高 130%；目標分攤至五位業務，下週一收尾會議",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -206,30 +206,70 @@ window.WAR_ROOM_DATA = {
         "🆕 4/28 林思吾補充：舊制中 AMP 為 2.5%、SEO 為 1.5%，新制 GU 為 5%",
         "🆕 5/1 Q1 AMP 與 GEO 合計業績約 <strong>14 萬 5 千</strong>，AMP 達成率 <strong>100%</strong>",
         "🆕 5/1 SEO 達成率僅 <strong>28.98%</strong>，未達 30% 標準，不發放 SEO 獎金",
-        "🆕 5/1 超額 ACV 獎金僅在達成率超過 100% 時發放，AMP 未超額無超額獎金",
         "🆕 5/1 ACV 公式減項不一致（應減 C4+C5，實際只減 C4），導致計算誤差，已修正",
         "🆕 5/1 獎金 <strong>24,480</strong> 與 <strong>21,053</strong> 兩筆因專案登記未完成，先扣留至五月中發放",
-        "🆕 5/1 Beta 有超額獎金，Brian 因未達標無獎金；老闆同意先發獎金"
+        "🆕 5/7 目標設定錯誤確認 — 蔡阿達誤用 ACV 加總，<strong>應以T型圖最後三個月加總</strong>為基準",
+        "🆕 5/7 2026 年總收單金額 <strong>48,525,000</strong>，乘以 70% 認列率，實際目標約 <strong>34,559,167</strong>",
+        "🆕 5/7 目前目標達成率約為實際需求的 <strong>60%</strong>，存在明顯落差",
+        "🆕 5/7 獎金激勵方案 — 維持 <strong>5.1% 基礎獎金</strong>，設超額階梯 110%/120%/<strong>130%</strong>",
+        "🆕 5/7 以 Rebecca 為例：Q2 達成 30 萬業績，獎金比例可由 5.1% 提升至約 <strong>10%</strong>",
+        "🆕 5/7 Q1 實際完成約 <strong>722,434</strong>，剩餘約 6,277,566 需由其他業務分攤",
+        "🆕 5/7 目標分攤至<strong>阿達、Aden、貝卡、布萊恩及喬安娜</strong>，依實際工作月份調整",
+        "🆕 5/7 去年目標達成率約 <strong>82%</strong>，建議今年目標乘以此基數調整避免過高",
+        "🆕 5/7 下週一召開<strong>收尾會議</strong>，確認最終目標與分攤方案"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
-        { icon: "💰", text: "4,800萬/年" },
+        { icon: "💰", text: "4,852萬/年" },
         { icon: "⚠️", text: "PIP < 60%" },
-        { icon: "🎯", text: "基準 60" },
-        { icon: "🆕", text: "AMP 達成 100%" },
-        { icon: "📋", text: "5月中發放" }
+        { icon: "🎯", text: "T型圖基準" },
+        { icon: "📊", text: "認列率 70%" },
+        { icon: "🆕", text: "下週一收尾" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "整理會議記錄，釐清獎金計算邏輯與公司規則", priority: "today" },
-        { owner: "蔡阿達", text: "提供四位員工目標數據，協助獎金計算合理化", priority: "today" },
-        { owner: "Daisy Liu", text: "週一向團隊解釋獎金計算公式與超額 ACV 獎金發放原則", priority: "today" },
-        { owner: "Daisy Liu", text: "與麥可溝通合約簽署狀況，確保獎金發放時程", priority: "today" },
-        { owner: "蔡阿達", text: "確認專案登記完成後，五月中發放相關獎金（24,480 + 21,053）", priority: "week" },
-        { owner: "Daisy Liu", text: "確認 AMP 與 SEO 獎金分開設定與計算", priority: "week" },
-        { owner: "團隊", text: "明確公告 GU 案型獎金計算採用 AMP 比例，說明原 SEO 比例調整原因", priority: "week" },
-        { owner: "Winny Chiang", text: "將達成率低於 60% 的業務列入 PIP 管理", priority: "week" }
+        { owner: "蔡阿達", text: "重新設定業務目標，改用T型圖及每季每月MRR計算", priority: "today" },
+        { owner: "蔡阿達", text: "與Joanna討論第二季目標分配，確保目標合理可達成", priority: "today" },
+        { owner: "Winny Chiang", text: "調整目標分配公式，確保各業務目標比例合理並自動更新", priority: "today" },
+        { owner: "Winny Chiang", text: "在家族群分享調整後的獎金計算方式", priority: "week" },
+        { owner: "蔡阿達", text: "向業務說明新獎金方案，以正面激勵方式溝通避免負面情緒", priority: "week" },
+        { owner: "林思吾", text: "整理目標與實際達成落差數據，安排下週一收尾會議", priority: "week" },
+        { owner: "蔡阿達", text: "配合林思吾安排下週一下午討論目標調整與執行方案", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-07",
+          title: "業務目標設定錯誤與調整方案討論",
+          time: "09:31-10:17",
+          duration: "46m",
+          participants: "蔡阿達、Winny Chiang、林思吾（Mike）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "目標設定錯誤確認 — ACV vs T型圖",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "承認未掌握以T型圖計算目標的方式，誤用ACV加總作為目標基準，導致目標偏低。將依季度及每月MRR重新計算，避免用整年度數字造成誤差。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "業務目標應以T型圖最後三個月數字加總為基準，目前目標設定與實際應達成目標存在明顯落差。" },
+                { speaker: "Winny Chiang", role: "other", label: "管理層", text: "2026年總收單金額為48,525,000，考慮收單與認列落差，實際目標訂為約34,559,167。" }
+              ]
+            },
+            {
+              topic: "獎金階梯激勵方案設計",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "Mike", text: "建議以不動已落下數字為前提，調整獎金比例，60%達成率為基礎5%，80%-100%逐步提升至最高130%，鼓勵業務持續向上挑戰。" },
+                { speaker: "蔡阿達", role: "ada", text: "擔心直接告知業務實際目標落差可能引起不滿。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "建議以正面激勵方式溝通，避免負面情緒。以Rebecca為例，Q2達成30萬業績，獎金比例可由5.1%提升至約10%。" }
+              ]
+            },
+            {
+              topic: "目標分攤與後續會議安排",
+              exchanges: [
+                { speaker: "Winny Chiang", role: "other", label: "管理層", text: "Q1目標已無法更改，實際完成約722,434，剩餘約6,277,566需由其他業務分攤。去年目標達成率約82%，建議今年目標乘以此基數調整。" },
+                { speaker: "蔡阿達", role: "ada", text: "將與Winny再對目標分攤進行細節調整，確保阿達、Aden、貝卡、布萊恩及喬安娜每人目標合理。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "目標設定應以季度總和為基準，要求蔡阿達與Joanna協調確保數字一致。決議下週一召開收尾會議。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-01",
           title: "AE 獎金確認",
@@ -1568,8 +1608,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-05-06",
-      summary: "每週三午餐小聚 — 5/6 BNI 成員合作現況深度討論；每週帶一間客戶案例上線分享機制啟動；華翼轉型品牌顧問不再接單件設計；鼎新 ERP × AI 引擎百萬案；甲山林 SEO 案積極爭取；選舉印刷與行銷服務合作整合",
+      lastUpdated: "2026-05-07",
+      summary: "每週三午餐小聚 — 5/7 任昌明包裝貼紙供應鏈主題簡報演練，30 年標籤印刷經驗、免費數位打樣服務推廣，目標螺絲工廠客群；蔡阿達協助引薦螺絲工廠資源；下下週完成最終演練",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -1595,7 +1635,12 @@ window.WAR_ROOM_DATA = {
         "🆕 5/6 蔡阿達分享義守大學洽談經驗：大型體制公司<strong>資料整理與傳播</strong>為 AI 切入點",
         "🆕 5/6 蔡阿達將為<strong>甲山林建設爭取 SEO 案</strong>，華翼承諾負擔高鐵交通費",
         "🆕 5/6 選舉產業整合：MarsZ Chen 議員官網及<strong>募資頁設計</strong>、華翼負責選舉印刷（扇子/筆/便條紙等）、遙空映畫行銷公司合作",
-        "🆕 5/6 蔡阿達與 MarsZ Chen 明天確認<strong>博弈網站</strong>潛在客戶需求，評估網站建置合作"
+        "🆕 5/6 蔡阿達與 MarsZ Chen 確認博弈網站需求 → 已移至獨立專案「德州撲克教學網站」",
+        "🆕 5/7 任昌明主題簡報演練 — <strong>30 年標籤印刷經驗</strong>，投入 30 萬元測色儀器，95% 色彩相似度",
+        "🆕 5/7 任昌明目標客群：<strong>螺絲工廠、玻璃瓶/塑膠瓶/化工類產品</strong>，提供免費數位打樣降低客戶設計成本",
+        "🆕 5/7 蔡阿達肯定簡報流暢度（約 5 分 40 秒），建議強化<strong>夢幻引薦</strong>部分，具體列出理想客戶",
+        "🆕 5/7 蔡阿達將協助詢問<strong>螺絲工廠朋友</strong>引薦給任昌明",
+        "🆕 5/7 預計<strong>下下週完成最終演練</strong>，下週四晚上再次練習"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -1605,8 +1650,8 @@ window.WAR_ROOM_DATA = {
       ],
       todos: [
         { owner: "蔡阿達", text: "每週三線上小聚帶一間客戶案例上線分享，推動成員合作與資源整合", priority: "week" },
-        { owner: "蔡阿達", text: "安排與甲山林建設接洽 SEO 案子，華翼負擔高鐵交通費", priority: "today" },
-        { owner: "蔡阿達", text: "明天與 MarsZ Chen 確認博弈網站潛在客戶需求，評估合作可能", priority: "today" },
+        { owner: "蔡阿達", text: "協助詢問螺絲工廠朋友，引薦潛在客戶給任昌明", priority: "week" },
+        { owner: "任昌明", text: "下週四晚上再次練習簡報，調整卡頓與流程，強化夢幻引薦部分", priority: "week" },
         { owner: "蔡阿達", text: "推廣 AI 加速工作效率方案，協助內部員工提升 AI 應用能力", priority: "week" },
         { owner: "華翼品牌形象設計", text: "協助引薦傳統產業工廠、美容用品及食品代工廠客戶", priority: "week" },
         { owner: "遙空映畫", text: "邀請行銷公司一對一溝通，推動食品代工廠相關合作", priority: "week" },
@@ -1616,6 +1661,24 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-07",
+          title: "任昌明主題簡報演練",
+          time: "13:00-13:16",
+          duration: "16m",
+          participants: "蔡阿達、任昌明",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "包裝貼紙供應鏈簡報演練與回饋",
+              exchanges: [
+                { speaker: "任昌明", role: "other", label: "成員", text: "公司擁有約30年標籤印刷經驗，投入約30萬元的測色儀器，能有效降低色差，確保印刷品質穩定。主要服務客群為玻璃瓶、塑膠瓶及化工類產品，以螺絲工廠為目標市場，能依客戶烤漆顏色調整印刷油墨比例，達到約95%色彩相似度。" },
+                { speaker: "蔡阿達", role: "ada", text: "肯定簡報流暢度，演練時間約5分40秒，主要因操作簡報切換及現場環境干擾。建議夢幻引薦部分更具體列出理想企業及客戶，並分享可協助引薦螺絲工廠朋友資源。" },
+                { speaker: "任昌明", role: "other", label: "成員", text: "提供免費數位打樣服務，能降低客戶設計成本並測試黏著度，避免因色差導致違約金及退貨風險。將依建議調整簡報內容，下週四晚上再次練習，預計下下週完成最終演練。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-06",
           title: "FUZEN 行銷小聚 05/06",
@@ -3322,6 +3385,64 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "我們自家開發的 AI 曝光追蹤平台可監控品牌被 AI 提及次數、聲量佔比、平均排名、情緒分析及網站引用率，並可與競爭對手比較。免費提供使用一年，條件是同意以甲山林 Logo 作為案例展示。" },
                 { speaker: "台北房展中心", role: "other", label: "甲山林", text: "主管需明確時間預期以向老闆報告。" },
                 { speaker: "蔡阿達", role: "ada", text: "5/31 前完成簽約，6/1 開始關鍵字選定，8 月正式優化，半年後可見初步成效。合約期 13 個月，後續以實體會議為主，初步擬定下週二三四下午見面。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P38: 德州撲克教學網站 — 越南泰國市場 ======
+    {
+      id: "poker-geo-site",
+      name: "德州撲克教學網站 — 越南泰國市場 GEO 建站",
+      icon: "🃏",
+      category: "client",
+      lastUpdated: "2026-05-07",
+      summary: "林林五洽談越南文與泰文德州撲克教學網站建置，80% 內容為教學推廣，結合 AI 翻譯與人工潤稿；排名前三名為必要條件但 awoo 無法保證，雙方立場存在分歧",
+      keyPoints: [
+        "網站語系為<strong>越南文與泰文</strong>，目標市場為成長中的越南與泰國德州撲克玩家",
+        "約 <strong>80% 內容</strong>為德州撲克教學與推廣，持續更新",
+        "內容產出流程：AI 產出越南文 YouTube 頻道內容 → 合作翻譯潤稿 → SEO 優化",
+        "行銷公司<strong>不負責越南文與泰文市場</strong>，由林林五團隊自行建置與推廣",
+        "林林五要求<strong>關鍵字前三名</strong>為必要條件，尤其「線上撲克」「線上德州撲克」等高轉換率關鍵字",
+        "蔡阿達說明傳統 SEO <strong>無法保證前三名</strong>，AI 時代可透過精準提示詞提高排名機會但仍有不確定性",
+        "林林五表示不希望承諾保證排名，因技術快速變化且風險高",
+        "來源為 BNI 博弈網站需求（5/6 小聚提及）"
+      ],
+      chips: [
+        { icon: "🇻🇳", text: "越南文" },
+        { icon: "🇹🇭", text: "泰文" },
+        { icon: "🎯", text: "前三名需求" },
+        { icon: "🤖", text: "AI 翻譯+潤稿" }
+      ],
+      todos: [
+        { owner: "林林五", text: "提供網站架構範例給蔡阿達，確認建置方向", priority: "today" },
+        { owner: "蔡阿達", text: "評估越南文與泰文關鍵字前三名排名的技術可行性與策略方案", priority: "week" },
+        { owner: "林林五", text: "安排翻譯團隊潤稿越南文YouTube頻道內容，優化SEO文章", priority: "week" },
+        { owner: "林林五", text: "與合作方討論是否將前三名排名績效保證條款納入合約", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-07",
+          title: "awoo GEO 建站技術顧問合作洽談",
+          time: "14:10-14:19",
+          duration: "9m",
+          participants: "蔡阿達、林林五",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "越南與泰國德州撲克教學網站規劃",
+              exchanges: [
+                { speaker: "林林五", role: "other", label: "客戶", text: "網站約80%內容為德州撲克相關，語系為越南文與泰文，目標是教學與推廣線上德州撲克平台。會先用AI產出越南文YouTube頻道內容，再由合作翻譯進行潤稿與SEO優化。行銷公司不負責越南文與泰文市場，由團隊自行負責。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認內容持續更新與審稿機制，了解語系與市場分工。" }
+              ]
+            },
+            {
+              topic: "SEO排名保證爭議",
+              exchanges: [
+                { speaker: "林林五", role: "other", label: "客戶", text: "前三名排名是必要條件，尤其針對轉換率高且搜尋量大的關鍵字如「線上撲克」「線上德州撲克」。不希望承諾保證排名，因技術快速變化且風險高，若需績效保證可能需尋找其他公司。" },
+                { speaker: "蔡阿達", role: "ada", text: "傳統SEO無法保證前三名，AI時代可利用消費者精確提問與對應回答提升排名，但仍有不確定性。認同各公司態度不同，理解對方立場。" }
               ]
             }
           ]
