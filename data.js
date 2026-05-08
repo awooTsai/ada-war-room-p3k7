@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-07T19:00:00",
-  dateLabel: "2026/05/07（四）",
+  lastUpdated: "2026-05-08T19:00:00",
+  dateLabel: "2026/05/08（五）",
   stats: {
-    meetings: 63,
-    projects: 38,
+    meetings: 65,
+    projects: 39,
     partners: 13,
     internal: 6,
-    clientCompany: 17,
-    todos: 241
+    clientCompany: 18,
+    todos: 256
   },
 
   projects: [
@@ -407,8 +407,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-04-24",
-      summary: "4/24 代理商合約條款深度檢視 — 刪除 AI 操縱條款、自動續約通知縮短至 30 天、代理商依三類分流（工具/工具+策略/媒體），客戶身份以服務標的統編為主",
+      lastUpdated: "2026-05-08",
+      summary: "5/8 代理商類型與佣金結構定案 — 純工具代理/工具+顧問轉售/貼牌三類明確劃分；佣金延續至續約鼓勵持續帶案；合約需明確規範類型與佣金計算；AE 使用公版文件嚴格把關退件機制；字庫選擇逾期暫停專案",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -433,7 +433,16 @@ window.WAR_ROOM_DATA = {
         "🆕 自動續約通知期限 90 天被認為過長，團隊建議<strong>縮短至 30 天</strong>降低代理商擺爛風險",
         "🆕 Max Huang 提出代理商分三類：<strong>工具代理、工具加策略、媒體</strong>，合約需依此調整",
         "🆕 保密條款被認為多餘，但法務建議<strong>從法律角度保留以防風險</strong>",
-        "🆕 第三方代理引入之新客戶由 <strong>AE 負責服務</strong>（因 AE 投入較多努力取得信任），現有客戶則交 CS"
+        "🆕 第三方代理引入之新客戶由 <strong>AE 負責服務</strong>（因 AE 投入較多努力取得信任），現有客戶則交 CS",
+        "🆕 5/8 代理商類型最終定義：<strong>純工具代理、工具+顧問服務轉售、貼牌</strong>三種模式，表格依此調整",
+        "🆕 5/8 佣金政策調整：<strong>佣金延續至續約</strong>，激勵代理商持續帶案，現行僅計算第一年",
+        "🆕 5/8 Host 代理商不代理工具，僅追蹤廣編稿及 AI 引用，<strong>不需簽代理合約</strong>",
+        "🆕 5/8 純工具銷售多以報價單處理未納入代理合約，未來可能需<strong>另行簽約</strong>",
+        "🆕 5/8 首次合作免收費用條款未完整落實，需<strong>參照 Amber Fans 案例補充</strong>並宣導 AE",
+        "🆕 5/8 AE 公版合約使用習慣不佳，決議<strong>審核退件機制</strong>嚴格把關",
+        "🆕 5/8 建立<strong>黑令制度</strong>，對違規 AE 限制候選字使用權限",
+        "🆕 5/8 專案字庫選擇延遲，<strong>逾期未完成即暫停專案</strong>避免下游 CS 無法跟進",
+        "🆕 5/8 蔡阿達提議<strong>公用雲端硬碟集中管理公版文件</strong>，減少重複溝通"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
@@ -441,7 +450,9 @@ window.WAR_ROOM_DATA = {
         { icon: "💰", text: "工具原價不折扣" },
         { icon: "📄", text: "協議修訂版審閱中" },
         { icon: "⏰", text: "續約通知 30 天" },
-        { icon: "🔀", text: "三類代理商分流" }
+        { icon: "🔀", text: "三類代理商分流" },
+        { icon: "🔄", text: "佣金延續至續約" },
+        { icon: "🚫", text: "退件機制上線" }
       ],
       todos: [
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
@@ -457,9 +468,51 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "完成代理商協議 AE 角度條文標註，回覆 Leo", priority: "today" },
         { owner: "蔡阿達", text: "制定明確規範：以服務標的統編為主判斷客戶身份，決定由 AE 或 CS 負責", priority: "week" },
         { owner: "Max Huang", text: "依代理商三類型（工具代理/工具加策略/媒體）重新架構合約內容", priority: "week" },
-        { owner: "團隊", text: "評估自動續約通知期限，考慮縮短至 30 天", priority: "week" }
+        { owner: "團隊", text: "評估自動續約通知期限，考慮縮短至 30 天", priority: "week" },
+        { owner: "藍文甫", text: "調整代理商類型表格，明確區分純工具代理、工具+顧問轉售、貼牌三類", priority: "today" },
+        { owner: "Max Huang", text: "確認佣金延續至續約政策，制定不同代理類型佣金計算方式", priority: "week" },
+        { owner: "Anne Chang", text: "確認首次合作免收取條款已納入合約，宣導 AE 確保報價單備註完整", priority: "week" },
+        { owner: "藍文甫", text: "監督 AE 使用公版合約文件，不符規範文件退件處理", priority: "week" },
+        { owner: "藍文甫", text: "設計 AE 行為管理制度，違規使用候選字之 AE 限制或禁用權限", priority: "week" },
+        { owner: "藍文甫", text: "追蹤客戶字庫選擇進度，逾期未完成通知 AE 並暫停後續作業", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-08",
+          title: "Weekly Sync Up — 代理商類型與佣金結構定案",
+          time: "11:03-12:45",
+          duration: "1h42m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商類型重新定義與佣金政策調整",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "代理商類型由產品或服務類型劃分，以疊加方式呈現工具、顧問、策略三層級。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "代理商類型應明確分為純工具代理、工具與顧問服務轉售、以及貼牌三種，表格需調整以反映此分類。" },
+                { speaker: "蔡阿達", role: "ada", text: "Host 代理商不會代理工具，主要用於追蹤廣編稿及 AI 引用，不需簽代理合約。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "佣金政策建議延續至續約，鼓勵代理商持續帶案。代理商合作應建立長期關係，提供報價優惠以防代理商流失。" }
+              ]
+            },
+            {
+              topic: "合約報價單管理與 AE 行為管控",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "部分代理商合約未明確寫首次合作免收費用，建議參照 Amber Fans 案例補充條款。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "法務已更新公版報價備註，但 AE 使用習慣不佳導致條款未落實。未符合規範文件一律退件。管理制度嚴格執行，違規者影響考績。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議利用公用雲端硬碟集中管理公版文件，要求團隊成員自行查閱以減少重複溝通。" }
+              ]
+            },
+            {
+              topic: "專案字庫選擇延遲與候選字制度調整",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "專案字庫選擇原定三月底完成，因建置期延至四月底。若本週仍未完成將通知 AE 處理，暫停專案避免專員無法出建議書。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "曾遇類似案件字庫未選完導致專案停滯，建議由里昂追蹤進度。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意建立黑令制度，對違規 AE 限制使用權限，強化管理權力。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "由我填寫案件狀況與對應方式，蔡阿達簽名確認，雙向通知 AE 與 CS 配合。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-24",
           title: "Weekly Sync Up — 代理商合約條款深度檢視",
@@ -559,8 +612,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-06",
-      summary: "5/6 蔡毓倫與蔡阿達確認合約 AI 條款過渡期處理 — 現有條款已涵蓋查證責任無需另加 AI 條款；旅行社客戶 SEO 方案含 20 組 Prompt GLS 包裝以 2,000 元計價；文案專員仍維持完整流程，AI 僅輔助生成初稿",
+      lastUpdated: "2026-05-08",
+      summary: "5/8 人力不足決定全面採用 AI 輔助生成文章 — 成立策略工作小組加速交付積壓約 3,000 篇；以 30 篇不同產業文章作為品質驗證標準；合約不標示 AI 生成避免品質爭議；醫療與金融類需加強 AI 訓練與人工輔助",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -599,7 +652,14 @@ window.WAR_ROOM_DATA = {
         "🆕 5/6 蔡毓倫確認舊案過渡期合約，蔡阿達將持續與客戶溝通確保條款符合談判條件",
         "🆕 5/6 旅行社客戶 SEO 方案：<strong>20 組 Prime GLS 包入 20 次 SEO</strong>，以 2,000 元計價報價",
         "🆕 5/6 蔡毓倫建議簡化方案規格，<strong>不再使用 17 篇等不整數</strong>，蔡阿達同意推動",
-        "🆕 5/6 文案專員工作流程確認：AI 僅輔助<strong>生成初稿</strong>，前置資料收集與知識庫建置仍由專員完成"
+        "🆕 5/6 文案專員工作流程確認：AI 僅輔助<strong>生成初稿</strong>，前置資料收集與知識庫建置仍由專員完成",
+        "🆕 5/8 人力不足確認全面採用 <strong>AI 輔助生成文章</strong>，先建立客戶資料與品牌聲音再產文",
+        "🆕 5/8 AI 與人工撰寫品質有差異，<strong>合約不特別標示 AI 生成</strong>以免成為品質爭議藉口",
+        "🆕 5/8 積壓約 <strong>3,000 篇</strong>文章，成立策略工作小組結合 AI 與人工加速交付",
+        "🆕 5/8 以 <strong>30 篇不同產業文章</strong>作為品質驗證標準，通過後方可交付客戶",
+        "🆕 5/8 醫療與金融類文章品質差異較大，需<strong>加強 AI 訓練與人工輔助</strong>",
+        "🆕 5/8 Max Huang 提議針對<strong>金融等專業領域設立專門 AI 模型</strong>，提高專業性",
+        "🆕 5/8 蔡阿達以客戶官網內容訓練 AI，<strong>提升文章專業度與品牌風格符合度</strong>"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
@@ -630,9 +690,41 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "確認制式合約 AI 條款，與法務確認過渡期舊案條款是否需調整", priority: "week" },
         { owner: "蔡毓倫", text: "更新旅行社客戶報價單，20 組 Prompt GLS 包裝方案以 2,000 元計價", priority: "today" },
         { owner: "蔡阿達", text: "推動簡化方案規格數字，統一篇數避免 17 篇等不整數", priority: "week" },
-        { owner: "蔡阿達", text: "確認 20 組 Prompt 規格與報價，協助蔡毓倫完成旅行社客戶報價", priority: "today" }
+        { owner: "蔡阿達", text: "確認 20 組 Prompt 規格與報價，協助蔡毓倫完成旅行社客戶報價", priority: "today" },
+        { owner: "藍文甫", text: "與蔡阿達組成策略工作小組，設計 AI 輔助文章緊急交付方案", priority: "today" },
+        { owner: "團隊", text: "完成 30 篇不同產業 AI 生成文章品質測試，確保品質達標後交付", priority: "week" },
+        { owner: "蔡阿達", text: "持續與小花合作推進 AI 文章品質提升及不同產業測試", priority: "week" },
+        { owner: "Anne Chang", text: "協助針對醫療與金融等產業特性，進行 AI 文章專業度測試與調整", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-08",
+          title: "Weekly Sync Up — AI 文章產製緊急加速方案",
+          time: "11:03-12:45",
+          duration: "1h42m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 輔助文章撰寫流程與品質管理",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前人力無法持續純人工撰寫，決定用 AI 輔助生成文章，先建立客戶資料與品牌聲音。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "AI 輔助生成文章品質與人工撰寫有差異，需在合約中明確說明，避免客戶對品質有疑慮。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "現階段應採用 AI 輔助人工生成流程，人工修飾以提升品質並節省時間。合約不特別標示 AI 生成，以免成為品質爭議藉口。" },
+                { speaker: "蔡阿達", role: "ada", text: "以客戶官網內容訓練 AI，提升文章專業度與符合品牌風格。" }
+              ]
+            },
+            {
+              topic: "積壓文章緊急處理與品質驗證",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "目前積壓約 3,000 篇文章，需成立策略工作小組結合 AI 與人工加速交付。" },
+                { speaker: "蔡阿達", role: "ada", text: "與小花負責測試 AI 生成文章品質，目標以 30 篇不同產業文章作為驗證標準。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "不同產業文章品質差異大，尤其醫療與金融類需加強 AI 訓練與人工輔助。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "建議針對金融等專業領域設立專門 AI 模型，提高專業性。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-06",
           title: "AI 合約條款過渡期 × SEO 方案報價討論",
@@ -3443,6 +3535,82 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "林林五", role: "other", label: "客戶", text: "前三名排名是必要條件，尤其針對轉換率高且搜尋量大的關鍵字如「線上撲克」「線上德州撲克」。不希望承諾保證排名，因技術快速變化且風險高，若需績效保證可能需尋找其他公司。" },
                 { speaker: "蔡阿達", role: "ada", text: "傳統SEO無法保證前三名，AI時代可利用消費者精確提問與對應回答提升排名，但仍有不確定性。認同各公司態度不同，理解對方立場。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P39: VIVANT ======
+    {
+      id: "vivant-wine",
+      name: "VIVANT × awoo — 跨國紅酒品牌 SEO/GEO 整合優化",
+      icon: "🍷",
+      category: "client",
+      lastUpdated: "2026-05-08",
+      summary: "首次洽談 — 半導體母公司旗下紅酒品牌，七國網站整合為 .com 與 .tw 雙主站；多網域 SEO 無法互相加乘，建議聚焦主要市場優化；7 月新品上市記者會（台日星港）；免費提供 AI 曝光追蹤工具一年",
+      keyPoints: [
+        "半導體母公司旗下紅酒溫控品牌，主要市場<strong>台灣、新加坡、日本、香港</strong>",
+        "七國網站已整合為 <strong>.com（美金）與 .tw（臺幣綠界）</strong>兩大主站",
+        "使用 <strong>Shopify + Stripe</strong>，Stripe 不支援多貨幣轉換，計劃申請日本 Shopify Payment",
+        "多網域獨立運作<strong>SEO 無法互相加乘</strong>，建議先聚焦主要市場優化",
+        "歐洲網站<strong>重定向混亂</strong>指向法國目錄，需優先解決",
+        "網站基礎 SEO 架構良好（H 標籤、Canonical），但 <strong>Meta Title/Description 不足</strong>，缺 FAQ schema",
+        "產品高單價（1.5-2.4 萬台幣），消費者對溫控認知不足需<strong>大量品牌教育</strong>",
+        "<strong>7 月新品上市</strong>記者會（台灣、日本、新加坡、香港）+ KOL 合作",
+        "團隊無專職工程師，靠 AI 工具維護網站，計劃<strong>招募台灣文案專員</strong>",
+        "awoo 提出 AI 結合既有內容打造<strong>品牌風格文案產出系統</strong>"
+      ],
+      chips: [
+        { icon: "🌏", text: "台日星港四市場" },
+        { icon: "🛒", text: "Shopify 雙主站" },
+        { icon: "📅", text: "7月新品上市" },
+        { icon: "💰", text: "高單價1.5-2.4萬" }
+      ],
+      todos: [
+        { owner: "Bryan Chou", text: "針對 .com 及 .tw 網站進行 SEO 與 GEO 狀態分析，提出優化建議", priority: "week" },
+        { owner: "Conny Wu", text: "提供 Shopify 帳號供 awoo 團隊評估網站架構與可行性", priority: "today" },
+        { owner: "蔡阿達", text: "安排實體或線上會議，邀請 Conny 老闆參與促進共識", priority: "week" },
+        { owner: "蔡阿達", text: "提供 AI 影片製作廠商報價與 Demo 供 VIVANT 參考", priority: "week" },
+        { owner: "Bryan Chou", text: "協助解決歐洲網站域名與金流重定向混亂問題", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-08",
+          title: "VIVANT × awoo 首次合作洽談",
+          time: "10:00-11:00",
+          duration: "1h00m",
+          participants: "蔡阿達、Bryan Chou、Conny Wu（VIVANT）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "公司背景與網站現況",
+              exchanges: [
+                { speaker: "Conny Wu", role: "other", label: "VIVANT", text: "公司背景為半導體母公司，團隊包含 Google India 的數位行銷人員，主要市場為台灣、新加坡、日本、香港，歐洲市場狀況不佳。原有七個國家獨立網站，整合為 .com 和 .tw 兩大主站。" },
+                { speaker: "Conny Wu", role: "other", label: "VIVANT", text: "使用 Stripe 作為國際支付工具，但不支援多貨幣轉換。計劃利用日本分公司申請 Shopify Payment，未來將所有網站整合至一個 .com 平台。" }
+              ]
+            },
+            {
+              topic: "網站 SEO 與多語系管理",
+              exchanges: [
+                { speaker: "Bryan Chou", role: "other", label: "awoo", text: "多網域獨立運作導致 SEO 資源無法互相加乘，建議先聚焦主要市場優化。網站基礎架構良好但 Meta 資訊不足，FAQ 等結構化資料缺乏。" },
+                { speaker: "蔡阿達", role: "ada", text: "歐洲地區重定向混亂與金流問題需優先解決。網站內容可信度與權威度高，符合 AI 應用偏好，後續重點在於提升爬蟲理解度。" }
+              ]
+            },
+            {
+              topic: "廣告策略與品牌教育挑戰",
+              exchanges: [
+                { speaker: "Conny Wu", role: "other", label: "VIVANT", text: "產品價格高，消費者對溫度控制認知不足需大量教育。過去 KOL 廣告曾有 19 次加入購物車但無轉換，Landing Page 需優化。7 月將在台日星港舉辦新品記者會。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議利用 AI 技術結合既有內容打造符合老闆需求的文案產出流程。影片製作方面可提供專業 AI 影片製作廠商資源。" }
+              ]
+            },
+            {
+              topic: "合作流程與後續執行",
+              exchanges: [
+                { speaker: "Bryan Chou", role: "other", label: "awoo", text: "合作前期進行網站全面評估，確認優化內容與目標關鍵字。合作期間每兩個月提供一次優化報告。" },
+                { speaker: "Conny Wu", role: "other", label: "VIVANT", text: "願意提供 Shopify 帳號供團隊評估，希望安排會議邀請老闆參與確保溝通順暢。" },
+                { speaker: "蔡阿達", role: "ada", text: "雙方先從網站 SEO 與內容優化著手，後續再進行廣告投放與數據分析合作。我提供 LINE 聯絡方式方便即時溝通。" }
               ]
             }
           ]
