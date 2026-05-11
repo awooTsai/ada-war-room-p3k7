@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-08T19:00:00",
-  dateLabel: "2026/05/08（五）",
+  lastUpdated: "2026-05-11T19:00:00",
+  dateLabel: "2026/05/11（一）",
   stats: {
-    meetings: 65,
+    meetings: 66,
     projects: 39,
     partners: 13,
     internal: 6,
     clientCompany: 18,
-    todos: 256
+    todos: 270
   },
 
   projects: [
@@ -2007,8 +2007,8 @@ window.WAR_ROOM_DATA = {
       name: "赫斯特 — AIO 健檢技術/廣告交換合作",
       icon: "📰",
       category: "partner",
-      lastUpdated: "2026-04-02",
-      summary: "合作報價單確認，分階段交付 AIO 健檢，L Taiwan 品牌授權條款定稿，Harry Wen 4/2 下午回簽",
+      lastUpdated: "2026-05-11",
+      summary: "5/11 確認先走建站顧問方式推進合作 — 報價單分階段交付 AIO 健檢，L Taiwan 品牌授權條款定稿",
       keyPoints: [
         "Harry Wen 老闆擔心三個月後才有報告，影響總部決策 → <strong>分階段交付</strong>，每週/兩週回報",
         "蔡阿達承諾合作開始後 <strong>30 天內完成完整建議書</strong>，持續陪伴調整 AIO 引用問題",
@@ -2016,7 +2016,8 @@ window.WAR_ROOM_DATA = {
         "品牌授權限定 <strong>L Taiwan 商標</strong>，每次使用前甲方事前確認",
         "社群媒體宣傳採<strong>事前審核機制</strong>，避免法務擔憂頻率無法掌控",
         "電子簽核系統，Harry Wen 預計 4/2 下午完成回簽",
-        "待確認 GEO Suite 中 GPT Gemini 是否包含 Google AIO 模組"
+        "待確認 GEO Suite 中 GPT Gemini 是否包含 Google AIO 模組",
+        "🆕 5/11 GEO GTM 會議確認赫斯特<strong>先走建站顧問</strong>方式推進合作"
       ],
       chips: [
         { icon: "📅", text: "30 天內建議書" },
@@ -2513,8 +2514,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-04",
-      summary: "5/4 AI Mode 趨勢觀察 — 顧問書流程三位組長完成梳理、GEO 方案已推動 8% 客戶（22 家）、Chrome AI Mode 頁面上下文抓取、中型文章搭配問句式小標題利於 AI 引用、業務教育訓練文件濃縮為一頁",
+      lastUpdated: "2026-05-11",
+      summary: "5/11 Prompt 分級工具本週推出雛形、雅虎本週上線延伸文章、競爭分析功能週四上線、AI 化重點聚焦數據事實分析、客戶偏好顧問方案單買工具意願低、KPMG 與安可日子合作暫停追蹤中",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2560,7 +2561,22 @@ window.WAR_ROOM_DATA = {
         "🆕 5/4 中型文章搭配<strong>問句式小標題（≤60 字）</strong>有助 AI 爬蟲引用",
         "🆕 5/4 建議書以<strong>主題完整度優先</strong>，先完成一個主題再推下一個",
         "🆕 5/4 業務教育訓練文件從三頁<strong>濃縮至一頁</strong>，突出重點與方向",
-        "🆕 5/4 Fenix Li 安排<strong>兩週一次會議</strong>，梳理工具與 GEO 方案整合"
+        "🆕 5/4 Fenix Li 安排<strong>兩週一次會議</strong>，梳理工具與 GEO 方案整合",
+        "🆕 5/11 阿福已開始開發 <strong>Prompt 分級機制工具</strong>，預計本週完成雛形，用於分析文章中可放置的 Prompt",
+        "🆕 5/11 雅虎本週上線多篇延伸文章，合作分兩方向：<strong>廣編稿延伸多篇文章產生 Prompt</strong>，及從既有文章產生 Prompt 追蹤",
+        "🆕 5/11 第三方合作四家（赫斯特、微紅、威宏、經緯），<strong>威宏與經緯已完成 Prompt 選擇並建置系統</strong>",
+        "🆕 5/11 合作夥伴 Panel Logo 展示約<strong>五家</strong>，威宏與雅虎為代表性夥伴；凱絡及破博爆堂因高層因素無法提供",
+        "🆕 5/11 <strong>KPMG 合作暫停</strong>，因內部換站及主管對 Logo 交換疑慮，款項未收回",
+        "🆕 5/11 <strong>安可日子合作中斷</strong>，因人力交接及款項問題，需尋找更高層窗口協調",
+        "🆕 5/11 大部分客戶偏好顧問方案，<strong>單獨購買 GEO Suite 工具意願低</strong>，價格約九千元仍超出預算",
+        "🆕 5/11 <strong>金融業客戶較積極</strong>使用工具；AMP 客戶因線下營業額大缺乏急迫性；電商客戶價格敏感多觀望",
+        "🆕 5/11 工具主要<strong>賦能 CS 與業務</strong>，提升服務信賴度及續約率，多與顧問案綁定銷售",
+        "🆕 5/11 <strong>競爭分析功能</strong>預計本週四上線，涵蓋五大指標比較",
+        "🆕 5/11 權限管理改版，使用者將以<strong>個人帳號登入</strong>，分類顧問與職課類型",
+        "🆕 5/11 AI 化重點功能調整為<strong>聚焦數據事實分析</strong>，預警提示分三部分：雙下滑、提及率下滑、引用率下滑",
+        "🆕 5/11 資料匯出功能設計中，支持 <strong>CSV 與 PDF 格式</strong>，可選擇匯出區塊",
+        "🆕 5/11 Meta 廣告投放 GO Suite 及 GO 顧問方案，<strong>短影音素材四支完成</strong>，五月已開始投放",
+        "🆕 5/11 將製作 <strong>Agency 專屬 Landing Page</strong>，蔡阿達負責雅虎及二十特推薦案例"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -2600,9 +2616,68 @@ window.WAR_ROOM_DATA = {
         { owner: "陳羲彤", text: "制定文章標題與小標調整指引，推動問句穿插、字數控制 60 字以內", priority: "week" },
         { owner: "林思吾", text: "加速推出 GEO 完整版方案，配合 CS 團隊續約推廣", priority: "week" },
         { owner: "Fenix Li", text: "整理業務版教育訓練資料濃縮為一頁並準備 demo", priority: "week" },
-        { owner: "林思吾", text: "指派團隊完成 Google 生態系內容佈局，串聯 YouTube 及 Reddit 資源", priority: "week" }
+        { owner: "林思吾", text: "指派團隊完成 Google 生態系內容佈局，串聯 YouTube 及 Reddit 資源", priority: "week" },
+        { owner: "蔡阿達", text: "本週二至四完成雅虎三篇延伸文章的 Prompt 產出與追蹤設定", priority: "today" },
+        { owner: "何建彤", text: "本週四完成競爭分析功能上線", priority: "today" },
+        { owner: "何建彤", text: "協助推動 Agency Landing Page 與雅虎、二十特推薦案例製作", priority: "week" },
+        { owner: "何建彤", text: "提供資料匯出功能 prototype 並邀請團隊確認", priority: "week" },
+        { owner: "何建彤", text: "跟進權限管理改版，使用者以個人帳號登入分類顧問與職課類型", priority: "week" },
+        { owner: "YC", text: "完成 AI 化重點數據分析與預警提示系統調整，本週內上線", priority: "today" },
+        { owner: "藍文甫", text: "確認安可日子帳款狀況並追蹤合作進度", priority: "week" },
+        { owner: "藍文甫", text: "向任務網索取 Logo 完成合作展示", priority: "week" },
+        { owner: "Amber Liao", text: "推動現有客戶續約時將工具納入顧問案，強化工具價值認知", priority: "week" },
+        { owner: "林思吾", text: "整理成功案例形成完整故事線，支持業務推廣與續約", priority: "week" },
+        { owner: "呂紹平", text: "協助業務解決顧問案與工具包裝的價格與預算問題", priority: "week" },
+        { owner: "Angelline", text: "五月底前提出新素材需求，確保行銷素材庫存充足", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-11",
+          title: "GEO Go-to-Market 策略",
+          time: "09:00-10:09",
+          duration: "1h09m",
+          participants: "蔡阿達、YC、何建彤（彤²）、呂紹平（Leon）、林思吾、Alice Cho、Amber Liao、Angelline、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Prompt 分級機制與工具開發進度",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前錯誤 Prompt 與選擇 Prompt 的分級機制進度如何？工具主要用途是分析文章中可放置的 Prompt，還是自動產生 Prompt？" },
+                { speaker: "YC", role: "other", label: "YC", text: "阿福已於上週開始開發相關工具，預計本週會有雛形。工具主要用於分析別人文章中可放置的 Prompt，而非自動產生 Prompt。" }
+              ]
+            },
+            {
+              topic: "雅虎及第三方合作內容與推進",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "雅虎本週將上線多篇文章，合作方向分為兩種：一是從已寫好的廣編稿延伸更多文章並產生 Prompt 追蹤，二是直接從既有文章產生 Prompt 以提升廣編稿價值。預計本週二至四分別上線三篇延伸文章。" },
+                { speaker: "蔡阿達", role: "ada", text: "第三方合作包含赫斯特、微紅等四間公司，赫斯特先走建站顧問，微紅利用結果提升價值。威宏與經緯已完成 Prompt 選擇並建置系統開始追蹤。" }
+              ]
+            },
+            {
+              topic: "合作夥伴 Logo 與客戶帳款問題",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "部分合作夥伴如凱絡、破博爆堂因高層介入困難，無法提供 Logo。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "目前可展示的 Panel Logo 約五間，威宏與雅虎為代表性合作夥伴。KPMG 因內部換站及主管疑慮合作暫停，款項未收回。安可日子去年合作後因人力交接及款項問題暫停，需尋找更高層窗口協調。" }
+              ]
+            },
+            {
+              topic: "客戶類型與工具銷售策略分析",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "大部分客戶偏好顧問方案，單獨購買 GEO Suite 工具的客戶極少，主要因價格較高且年度預算已排滿。" },
+                { speaker: "Alice Cho", role: "other", label: "Alice", text: "AMP 客戶因線下營業額大，缺乏急迫性推動工具。電商客戶因價格敏感多觀望，金融業較易接受。" },
+                { speaker: "蔡阿達", role: "ada", text: "工具目前用於追蹤 Prompt，結合 SEO 與文章撰寫提升客戶價值。未來方向為用內容搶關鍵字，並用工具驗證成效。客戶多依賴顧問服務，工具若能自動生成文章將大幅提升價值。" }
+              ]
+            },
+            {
+              topic: "產品功能更新與 AI 化功能調整",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "本週將上線競爭分析功能，涵蓋五大指標比較。權限管理改版中，未來使用者將以個人帳號登入。資料匯出功能設計中，預計提供 CSV 與 PDF 格式。將製作 Agency 專屬 Landing Page。" },
+                { speaker: "YC", role: "other", label: "YC", text: "AI 化重點功能多次測試後，判斷文字艱深難用，調整為聚焦數據事實分析。預警提示分三部分：提及率與引用率雙下滑、提及率下滑前三至五個 Prompt、引用率下滑前三至五個 Prompt。系統預計本週完成上線。" },
+                { speaker: "Angelline", role: "other", label: "MKT", text: "Meta 廣告投放針對 GO Suite 及 GO 顧問方案。短影音素材已有四支完成，第五支主題未確認暫停。五月份已開始投放短影音廣告，素材庫存充足。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-04",
           title: "AI Mode的影響與觀察",
@@ -2822,8 +2897,8 @@ window.WAR_ROOM_DATA = {
       name: "雅虎 — 廣編稿 AI Visibility 合作",
       icon: "📰",
       category: "partner",
-      lastUpdated: "2026-04-24",
-      summary: "4/24 Yahoo 合約已回簽 — GEO Suite 開通需上 Ragic 新增專案登記，已取得 Yahoo 及台灣 ELLE LOGO",
+      lastUpdated: "2026-05-11",
+      summary: "5/11 雅虎本週上線延伸文章 — 廣編稿延伸多篇產生 Prompt 追蹤，威宏與雅虎為代表性 Panel Logo 合作夥伴",
       keyPoints: [
         "雅虎作為媒體角色，<strong>廣編稿是其主要且賺錢的產品線</strong>",
         "利用 AI 工具從雅虎提供的新聞稿<strong>延伸出多篇文章</strong>，根據客戶回饋持續優化",
@@ -2835,7 +2910,10 @@ window.WAR_ROOM_DATA = {
         "🆕 4/24 <strong>Yahoo 合約已回簽</strong>",
         "🆕 已取得 <strong>Yahoo 及台灣 ELLE 的 LOGO</strong>",
         "🆕 GEO Suite 開通需透過 <strong>Ragic 新增專案登記</strong>，經 Henry 電子簽後才正式生效",
-        "🆕 Leon 尚未上 Ragic，需確認報價單、合約、新增專案登記流程"
+        "🆕 Leon 尚未上 Ragic，需確認報價單、合約、新增專案登記流程",
+        "🆕 5/11 雅虎本週上線多篇延伸文章，<strong>週二至四分別上線三篇</strong>",
+        "🆕 5/11 合作方向二分：<strong>廣編稿延伸多篇文章產生 Prompt</strong>，及從既有文章產生 Prompt 追蹤",
+        "🆕 5/11 雅虎為代表性 <strong>Panel Logo 合作夥伴</strong>之一"
       ],
       chips: [
         { icon: "📰", text: "雅虎廣編稿" },
@@ -2848,9 +2926,27 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "持續根據雅虎客戶回饋，利用 AI 生成多版本文章大綱並優化內容", priority: "week" },
         { owner: "蔡阿達", text: "制定雅虎合作案定價模式（以工具使用費計價）", priority: "week" },
         { owner: "Yoshie Yeoh", text: "協助日本團隊理解合作模式與 AI 可見性價值", priority: "week" },
-        { owner: "林思吾", text: "跟進雅虎合作案進展與第三方合作模式成熟度", priority: "waiting" }
+        { owner: "林思吾", text: "跟進雅虎合作案進展與第三方合作模式成熟度", priority: "waiting" },
+        { owner: "蔡阿達", text: "本週二至四完成雅虎三篇延伸文章的 Prompt 產出與追蹤設定", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-11",
+          title: "GEO Go-to-Market — 雅虎合作進度更新",
+          time: "09:00-10:09",
+          duration: "1h09m",
+          participants: "蔡阿達、YC、呂紹平（Leon）、林思吾",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "雅虎合作內容上線與推進方向",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "雅虎本週將上線多篇文章，合作方向分兩種：一是從已寫好的廣編稿延伸更多文章並產生 Prompt 追蹤，二是直接從既有文章產生 Prompt 提升廣編稿價值。預計週二至四分別上線三篇延伸文章。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "目前可展示的 Panel Logo 約五間，威宏與雅虎為代表性合作夥伴。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-24",
           title: "AE 推動會議 — Yahoo 合約回簽確認",
