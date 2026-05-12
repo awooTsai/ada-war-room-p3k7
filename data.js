@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-11T19:00:00",
-  dateLabel: "2026/05/11（一）",
+  lastUpdated: "2026-05-12T19:00:00",
+  dateLabel: "2026/05/12（二）",
   stats: {
-    meetings: 66,
-    projects: 39,
-    partners: 13,
+    meetings: 69,
+    projects: 41,
+    partners: 14,
     internal: 6,
-    clientCompany: 18,
-    todos: 270
+    clientCompany: 19,
+    todos: 289
   },
 
   projects: [
@@ -612,8 +612,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-08",
-      summary: "5/8 人力不足決定全面採用 AI 輔助生成文章 — 成立策略工作小組加速交付積壓約 3,000 篇；以 30 篇不同產業文章作為品質驗證標準；合約不標示 AI 生成避免品質爭議；醫療與金融類需加強 AI 訓練與人工輔助",
+      lastUpdated: "2026-05-12",
+      summary: "5/12 新聞稿發佈流程確認 — 成效追蹤擬用 GA、報價單避免 AI 字眼改稱「文章規劃」、合約需與法務確認 AI 交付義務；九月客戶合約到期安排續約會議；維持 10 篇撰寫 + 7 篇規劃標準方案",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -659,7 +659,14 @@ window.WAR_ROOM_DATA = {
         "🆕 5/8 以 <strong>30 篇不同產業文章</strong>作為品質驗證標準，通過後方可交付客戶",
         "🆕 5/8 醫療與金融類文章品質差異較大，需<strong>加強 AI 訓練與人工輔助</strong>",
         "🆕 5/8 Max Huang 提議針對<strong>金融等專業領域設立專門 AI 模型</strong>，提高專業性",
-        "🆕 5/8 蔡阿達以客戶官網內容訓練 AI，<strong>提升文章專業度與品牌風格符合度</strong>"
+        "🆕 5/8 蔡阿達以客戶官網內容訓練 AI，<strong>提升文章專業度與品牌風格符合度</strong>",
+        "🆕 5/12 新聞稿需挑選<strong>未被引用的 Prompt</strong> 以利效益追蹤，阿福負責訂定規範",
+        "🆕 5/12 新聞稿成效追蹤可考慮直接使用 <strong>Google Analytics</strong>，媒體稿件量大追蹤難度高",
+        "🆕 5/12 報價單<strong>避免出現 AI 字眼</strong>，改以「文章規劃」等說法降低客戶疑慮",
+        "🆕 5/12 合約需與 <strong>Henry 及法務</strong>討論 AI 輔助生成文章的交付權利義務",
+        "🆕 5/12 文章品質策略：<strong>不走量產路線</strong>，重視品質與深度，單篇可涵蓋多個關鍵字",
+        "🆕 5/12 小花持續關注<strong>行銷圈動態與文案趨勢</strong>，確保內容符合時事與受眾需求",
+        "🆕 5/12 九月客戶合約到期，<strong>呂紹平將與 Roger 聯繫</strong>安排續約會議，抽成已達 5.5%-15%"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
@@ -694,9 +701,53 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "與蔡阿達組成策略工作小組，設計 AI 輔助文章緊急交付方案", priority: "today" },
         { owner: "團隊", text: "完成 30 篇不同產業 AI 生成文章品質測試，確保品質達標後交付", priority: "week" },
         { owner: "蔡阿達", text: "持續與小花合作推進 AI 文章品質提升及不同產業測試", priority: "week" },
-        { owner: "Anne Chang", text: "協助針對醫療與金融等產業特性，進行 AI 文章專業度測試與調整", priority: "week" }
+        { owner: "Anne Chang", text: "協助針對醫療與金融等產業特性，進行 AI 文章專業度測試與調整", priority: "week" },
+        { owner: "藍文甫", text: "確認並釋出新聞稿媒體名單給專員，訂定 Prompt 挑選規則", priority: "today" },
+        { owner: "藍文甫", text: "召集 Henry 開會釐清合約條款與 AI 文章交付權利義務", priority: "week" },
+        { owner: "呂紹平", text: "調整報價單用詞避免 AI 字眼，改以文章規劃等說法", priority: "today" },
+        { owner: "呂紹平", text: "聯繫 Roger 安排九月合約到期續約會議", priority: "week" },
+        { owner: "呂紹平", text: "安排小花在專案啟動階段進行客戶訪談，減少反覆溝通", priority: "week" },
+        { owner: "蔡阿達", text: "協助制定新聞稿成效追蹤報告方案，評估 GA 或其他工具", priority: "week" },
+        { owner: "蔡阿達", text: "設計文章規劃問卷，將問卷技術應用於新聞稿與文章產出", priority: "week" },
+        { owner: "蔡阿達", text: "萃取成功案例關鍵字與文章規劃邏輯，作為 AI 產出參考", priority: "week" },
+        { owner: "蔡阿達", text: "確定 AE 對外銷售方案為 10 篇撰寫 + 7 篇規劃，明確告知 AI 輔助", priority: "week" },
+        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-12",
+          title: "新聞稿撰寫與媒體發佈流程確認",
+          time: "12:01-13:11",
+          duration: "1h10m",
+          participants: "蔡阿達、藍文甫（Leo）、呂紹平（Leon）、廖淑芬（小花）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "新聞稿發佈流程與成效追蹤",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "新聞稿的 Prompt 設計主要用於追蹤效益，需挑選未被引用的 Punk。成效報告可考慮直接使用 Google Analytics，因為媒體每日稿件眾多追蹤難度高。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "不同新聞平台對成效影響不同，需先評估名單是否合適，並告知客戶無法保證所有稿件一定刊登。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議保守承諾保證刊登數量，需確認宏文是否已溝通此數字。" }
+              ]
+            },
+            {
+              topic: "AI 輔助文章產出與合約條款調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "可透過問卷機制引導客戶提供素材，由 AI 生成初稿，文案再加入真實經驗與數據。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "文案需符合多方要求，AI 文章只能輔助，需文案技能修飾以符合 Google 排名規則。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "報價單避免出現 AI 字眼以減少客戶疑慮，建議改以文章規劃等說法。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "同意並將與法務協調合約條款，確保交付物均需客戶確認，避免獨立列出 AI 條款造成誤解。團隊不走量產路線，重視文章品質與深度。" }
+              ]
+            },
+            {
+              topic: "合約續約與客戶溝通安排",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "客戶行政部門發現合約九月到期需重新簽訂。計劃與 Roger 協調時間召開會議。目前抽成已達 5.5% 至 15%，需評估續約條款對雙方影響。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意安排續約會議，感謝團隊協助整理相關資料，確保續約過程資訊透明與溝通順暢。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-08",
           title: "Weekly Sync Up — AI 文章產製緊急加速方案",
@@ -3707,6 +3758,134 @@ window.WAR_ROOM_DATA = {
                 { speaker: "Bryan Chou", role: "other", label: "awoo", text: "合作前期進行網站全面評估，確認優化內容與目標關鍵字。合作期間每兩個月提供一次優化報告。" },
                 { speaker: "Conny Wu", role: "other", label: "VIVANT", text: "願意提供 Shopify 帳號供團隊評估，希望安排會議邀請老闆參與確保溝通順暢。" },
                 { speaker: "蔡阿達", role: "ada", text: "雙方先從網站 SEO 與內容優化著手，後續再進行廣告投放與數據分析合作。我提供 LINE 聯絡方式方便即時溝通。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P40: 維課教育 ======
+    {
+      id: "weclass-edu",
+      name: "維課教育 — 兒童教育品牌 GEO 技術合作",
+      icon: "🧒",
+      category: "client",
+      lastUpdated: "2026-05-12",
+      summary: "新竹兒童創意教育品牌首次洽談 — 網站以圖片動畫為主缺乏文字內容、技術架構偏舊；評估網站重建或套版搭配 SEO/GEO 優化；20 字與 30 字兩種方案、兩年合約附免費建站；預計 2-3 個月見排名提升",
+      keyPoints: [
+        "新竹起家 PBL 教學品牌，鎖定 <strong>6-12 歲</strong>，合作版圖涵蓋台北至台東",
+        "現有網站<strong>幾乎無文字內容</strong>，AI 爬蟲可抓取的有效資訊極有限",
+        "技術架構偏舊（SPA 類型），對搜尋引擎與 AI 爬蟲<strong>極不友善</strong>",
+        "缺乏品牌故事、創辦人介紹、教學理念深度頁，<strong>E-E-A-T 訊號極薄弱</strong>",
+        "兩種方案：<strong>客戶自行架設</strong>或 <strong>awoo 合作廠商套版搭建</strong>，Peter Su 兩案皆可接受",
+        "GeoSuite 工具可監控網站 <strong>AI 引用狀況</strong>及競品比較",
+        "合作內容一年 <strong>17 篇文章</strong>（10 篇 awoo + 7 篇客戶/AI 輔助）",
+        "20 字方案涵蓋 3-4 個主題，30 字方案涵蓋 4-6 個主題",
+        "長期合作<strong>簽約兩年可免網站建置費</strong>，含 SEO 排名與 AI 監控工具",
+        "成效預估：持續上架內容後 <strong>2-3 個月</strong>可見排名提升"
+      ],
+      chips: [
+        { icon: "🏫", text: "兒童教育品牌" },
+        { icon: "🔑", text: "20/30字方案" },
+        { icon: "📝", text: "17篇/年" },
+        { icon: "📅", text: "兩年合約" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供 20 字與 30 字兩種 SEO 方案報價單給 Peter Su", priority: "today" },
+        { owner: "蔡阿達", text: "寄送簡報、報價單及會議記錄給 Peter Su 供內部評估", priority: "today" },
+        { owner: "蔡阿達", text: "與合作廠商確認系統套版與後臺架設細節", priority: "week" },
+        { owner: "蔡阿達", text: "規劃一年 17 篇文章內容產出計畫，搭配 GeoSuite 監控", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-12",
+          title: "維課教育官網 GEO 技術合作洽談",
+          time: "11:00-11:25",
+          duration: "25m",
+          participants: "蔡阿達、Peter Su（維課教育）、Joanna Wang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站架設與合作模式",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "客戶若自行架設網站能完全掌控進度與細節，但需有完整工程團隊。我們合作廠商擅長快速套版系統，能配合已有的前端設計圖。" },
+                { speaker: "Peter Su", role: "other", label: "維課", text: "兩種方案都可以接受，由 awoo 協助架設有利於後續調整與配合。" },
+                { speaker: "蔡阿達", role: "ada", text: "網站彈性與好用性比外觀重要，建議由客戶提供視覺設計稿以減少溝通誤差。" }
+              ]
+            },
+            {
+              topic: "SEO/GEO 優化方案與成效預估",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們 2017 年起投入軟體開發，2024 年推出 GeoSuite 工具可監控網站是否被 AI 引用及競品比較。合作一年 17 篇文章，10 篇由 awoo 撰寫，7 篇客戶撰寫可選 AI 輔助。" },
+                { speaker: "Peter Su", role: "other", label: "維課", text: "確認 SEO 涵蓋 AEO 與 GEO。關鍵字排名成效及時間預估如何？" },
+                { speaker: "蔡阿達", role: "ada", text: "從最小可行方案開始，20 字與 30 字兩種方案。因網站內容尚少，持續上架內容預計 2-3 個月可見排名提升。簽約兩年可免網站建置費。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P41: 高谷科技 × 高藝資訊 ======
+    {
+      id: "kville-partner",
+      name: "高谷科技 × 高藝資訊 — 高雄事業發展合作",
+      icon: "🏭",
+      category: "partner",
+      lastUpdated: "2026-05-12",
+      summary: "首次洽談 — 高雄系統開發公司（Sean Liu），高谷科技負責網站系統接案、高藝資訊專注診所通 APP；蔡阿達期待雙方合作推動中南部傳統產業數位化；診所通 APP 超過 19 萬用戶，具備拓展潛力；邀請 Sean Liu 參加週五 BNI 活動",
+      keyPoints: [
+        "兩間公司股東相同但業務區分：<strong>高谷科技</strong>（網站系統接案）vs <strong>高藝資訊</strong>（診所通 APP）",
+        "診所通 APP 超過 <strong>19 萬人註冊</strong>，涵蓋線上預約、看診進度、健康日記共享圈",
+        "數位看板同步線上看診進度，<strong>已取得專利</strong>",
+        "過往案例：外語教學網站、律師案件管理、勞務顧問管理、碳足跡管理系統",
+        "蔡阿達致力推動<strong>中南部中小企業數位化</strong>，目前缺乏固定網站設計合作廠商",
+        "高雄已組建行銷開店產業鏈：企業形象影片、資訊系統、社群行銷、戶外廣告",
+        "蔡阿達將提供約 <strong>50 間產業代表性客戶</strong>資料供 Sean Liu 參考",
+        "未來計畫將營養師服務、預約系統等功能<strong>獨立成 APP</strong>",
+        "已與<strong>藍新洽談第三方支付</strong>整合"
+      ],
+      chips: [
+        { icon: "🏥", text: "診所通19萬用戶" },
+        { icon: "🔧", text: "系統開發" },
+        { icon: "🌏", text: "高雄事業" },
+        { icon: "🤝", text: "產業鏈合作" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供約 50 間產業代表性客戶名單給 Sean Liu 參考", priority: "week" },
+        { owner: "蔡阿達", text: "安排 Sean Liu 參加週五 BNI 簡報活動，提供廠商名冊", priority: "today" },
+        { owner: "Sean Liu", text: "確認週五行程並回覆是否能參加 BNI 活動", priority: "today" },
+        { owner: "蔡阿達", text: "篩選適合技術支援合作的產業與客戶，尋找雙方合作機會", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-12",
+          title: "高易資訊 x awoo 高雄事業發展合作洽談",
+          time: "13:58-14:42",
+          duration: "44m",
+          participants: "蔡阿達、Sean Liu（高谷科技/高藝資訊）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "高谷科技與高藝資訊業務定位",
+              exchanges: [
+                { speaker: "Sean Liu", role: "other", label: "高谷", text: "高谷科技主要負責網站與系統接案及小型產品開發，高藝資訊則專注於診所通 APP 及大螢幕應用。兩間公司股東相同，今年 3、4 月正式區分定位。" },
+                { speaker: "蔡阿達", role: "ada", text: "與醫院副院長合作病例系統可由高藝資訊處理，兩間公司合作空間大。" }
+              ]
+            },
+            {
+              topic: "中南部傳統產業數位化合作",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我是高雄人，致力推動中南部中小企業數位化與資訊化。目前在高雄組建行銷開店產業鏈，涵蓋企業形象影片、資訊系統開發、社群行銷及戶外廣告。目前缺乏網站設計廠商，之前固定合作廠商兩年前離開。" },
+                { speaker: "Sean Liu", role: "other", label: "高谷", text: "公司主要強項為系統開發，網站設計為配套服務。近期拜訪環保材質公司協助開發碳足跡管理系統，與金屬中心有合作經驗。" }
+              ]
+            },
+            {
+              topic: "診所通 APP 功能與市場應用",
+              exchanges: [
+                { speaker: "Sean Liu", role: "other", label: "高谷", text: "診所通 APP 目前超過 19 萬人註冊，涵蓋線上預約、看診進度同步、健康日記共享圈及數位看板專利。未來將拓展至長照及其他行業。" },
+                { speaker: "蔡阿達", role: "ada", text: "此產品具市場潛力，適合推廣給中南部傳統產業客戶。建議結合第三方支付功能提升實用性。" }
               ]
             }
           ]
