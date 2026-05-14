@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-13T19:00:00",
-  dateLabel: "2026/05/13（三）",
+  lastUpdated: "2026-05-14T19:00:00",
+  dateLabel: "2026/05/14（四）",
   stats: {
-    meetings: 72,
-    projects: 41,
-    partners: 14,
+    meetings: 73,
+    projects: 42,
+    partners: 15,
     internal: 6,
     clientCompany: 19,
-    todos: 291
+    todos: 293
   },
 
   projects: [
@@ -4002,6 +4002,62 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Sean Liu", role: "other", label: "高谷", text: "診所通 APP 目前超過 19 萬人註冊，涵蓋線上預約、看診進度同步、健康日記共享圈及數位看板專利。未來將拓展至長照及其他行業。" },
                 { speaker: "蔡阿達", role: "ada", text: "此產品具市場潛力，適合推廣給中南部傳統產業客戶。建議結合第三方支付功能提升實用性。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P42: 佳憲引薦合作 ======
+    {
+      id: "jiaxian-referral",
+      name: "佳憲引薦合作 — 高雄在地品牌客戶開發",
+      icon: "🏪",
+      category: "partner",
+      lastUpdated: "2026-05-14",
+      summary: "蔡阿達向佳憲演練 awoo 三大銷售主張（AI 搜尋曝光、地方品牌擴展全國、免技術門檻網站服務），請佳憲協助引薦高雄在地有規模的老店接班人作為理想客戶；佳憲建議放慢簡報語速以利聽眾理解",
+      keyPoints: [
+        "awoo <strong>三大銷售主張</strong>：① AI 搜尋摘要曝光 ② 地方品牌擴展全國市場 ③ 免技術門檻網站自動化服務",
+        "成功案例：<strong>高雄原生家電</strong>透過技術成功提升飲水機相關關鍵字 AI 曝光",
+        "客戶以超過 <strong>300 組關鍵字</strong>被 AI 推薦，成功從地方品牌擴展至全國市場",
+        "合作廠商可<strong>免費加站</strong>並自動撰寫文章、分類及同步社群，解決缺乏人力與技術的痛點",
+        "目標引薦對象：<strong>高雄在地有規模的老店接班人</strong>，如前進肉燥飯等品牌",
+        "佳憲建議蔡阿達<strong>放慢簡報語速</strong>，簡報以三張投影片為主，避免過於複雜"
+      ],
+      chips: [
+        { icon: "🎯", text: "3大USP" },
+        { icon: "🏪", text: "高雄老店" },
+        { icon: "🔑", text: "300+關鍵字" },
+        { icon: "📊", text: "3張簡報" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "調整簡報語速，確保三張投影片內容清楚傳達", priority: "week" },
+        { owner: "佳憲", text: "協助引薦高雄在地有規模的老店接班人客戶", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-14",
+          title: "awoo 銷售主張與高雄客戶引薦策略說明",
+          time: "13:01-13:22",
+          duration: "21m",
+          participants: "蔡阿達、佳憲",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "awoo 三大銷售主張介紹",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹 awoo 三大獨特銷售主張：第一，協助品牌出現在 Google 搜尋的 AI 摘要框中，像高雄原生家電就透過這項技術成功提升飲水機相關關鍵字曝光。" },
+                { speaker: "蔡阿達", role: "ada", text: "第二，針對地方品牌面臨龐大廣告預算問題，幫助客戶以超過 300 組關鍵字被 AI 推薦，成功從地方擴展到全國市場。" },
+                { speaker: "蔡阿達", role: "ada", text: "第三，提供免技術門檻的網站服務，合作廠商可免費加站並自動撰寫文章、分類及同步社群，解決客戶缺乏人力與技術的痛點。" }
+              ]
+            },
+            {
+              topic: "高雄客戶引薦策略與簡報調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "請佳憲協助引薦高雄在地有規模的老店接班人，特別是已有一定規模的品牌，像附近的前進肉燥飯就是理想的客戶類型。" },
+                { speaker: "佳憲", role: "other", label: "引薦夥伴", text: "講話速度有點快，可能會影響聽眾理解，建議放慢一些以利內容傳達。" },
+                { speaker: "蔡阿達", role: "ada", text: "會控制語速，簡報內容以三張投影片為主，避免過於浮誇或複雜，確保聽眾能夠理解。" }
               ]
             }
           ]
