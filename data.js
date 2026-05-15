@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-14T19:00:00",
-  dateLabel: "2026/05/14（四）",
+  lastUpdated: "2026-05-15T19:00:00",
+  dateLabel: "2026/05/15（五）",
   stats: {
-    meetings: 73,
-    projects: 42,
-    partners: 15,
+    meetings: 74,
+    projects: 43,
+    partners: 16,
     internal: 6,
     clientCompany: 19,
-    todos: 293
+    todos: 302
   },
 
   projects: [
@@ -440,8 +440,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-05-08",
-      summary: "5/8 代理商類型與佣金結構定案 — 純工具代理/工具+顧問轉售/貼牌三類明確劃分；佣金延續至續約鼓勵持續帶案；合約需明確規範類型與佣金計算；AE 使用公版文件嚴格把關退件機制；字庫選擇逾期暫停專案",
+      lastUpdated: "2026-05-15",
+      summary: "5/15 代理商協議獨家條款重新定義 — 獨家代理設為可選項並明確區分權利義務；法務審核進行中；合約中多處獨家代理詞彙需刪除或明確定義；不限定區域但禁止使用競品工具",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -475,7 +475,14 @@ window.WAR_ROOM_DATA = {
         "🆕 5/8 AE 公版合約使用習慣不佳，決議<strong>審核退件機制</strong>嚴格把關",
         "🆕 5/8 建立<strong>黑令制度</strong>，對違規 AE 限制候選字使用權限",
         "🆕 5/8 專案字庫選擇延遲，<strong>逾期未完成即暫停專案</strong>避免下游 CS 無法跟進",
-        "🆕 5/8 蔡阿達提議<strong>公用雲端硬碟集中管理公版文件</strong>，減少重複溝通"
+        "🆕 5/8 蔡阿達提議<strong>公用雲端硬碟集中管理公版文件</strong>，減少重複溝通",
+        "🆕 5/15 代理商協議中多處出現<strong>獨家代理詞彙</strong>，藍文甫建議刪除或明確定義",
+        "🆕 5/15 獨家代理兩種含義：① 代理商只能賣本公司產品 ② 公司只給該代理商銷售權；團隊<strong>不採用第二種</strong>，避免排除其他代理商",
+        "🆕 5/15 合約中設置<strong>獨家代理勾選選項</strong>，依選擇給予相應權利與義務",
+        "🆕 5/15 獨家代理<strong>不限定區域</strong>，但需明確規範使用本公司工具、<strong>禁止使用競品產品</strong>",
+        "🆕 5/15 法務提醒獨家代理詞彙之<strong>法律意涵</strong>需在合約中清楚說明",
+        "🆕 5/15 藍文甫尚未完成<strong>法務審核</strong>，已初步檢視合約內容，準備與團隊進一步討論",
+        "🆕 5/15 決定先自行過一遍合約，<strong>下週市場會議中與麥克討論</strong>"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
@@ -485,7 +492,8 @@ window.WAR_ROOM_DATA = {
         { icon: "⏰", text: "續約通知 30 天" },
         { icon: "🔀", text: "三類代理商分流" },
         { icon: "🔄", text: "佣金延續至續約" },
-        { icon: "🚫", text: "退件機制上線" }
+        { icon: "🚫", text: "退件機制上線" },
+        { icon: "⚙️", text: "獨家代理可選" }
       ],
       todos: [
         { owner: "蔡阿達", text: "持續推動赫斯特、天下合作案", priority: "week" },
@@ -507,9 +515,36 @@ window.WAR_ROOM_DATA = {
         { owner: "Anne Chang", text: "確認首次合作免收取條款已納入合約，宣導 AE 確保報價單備註完整", priority: "week" },
         { owner: "藍文甫", text: "監督 AE 使用公版合約文件，不符規範文件退件處理", priority: "week" },
         { owner: "藍文甫", text: "設計 AE 行為管理制度，違規使用候選字之 AE 限制或禁用權限", priority: "week" },
-        { owner: "藍文甫", text: "追蹤客戶字庫選擇進度，逾期未完成通知 AE 並暫停後續作業", priority: "today" }
+        { owner: "藍文甫", text: "追蹤客戶字庫選擇進度，逾期未完成通知 AE 並暫停後續作業", priority: "today" },
+        { owner: "藍文甫", text: "與 Max Huang 共同檢視代理商協議，刪除或調整不適用的獨家條款並明確定義適用範圍", priority: "week" },
+        { owner: "Max Huang", text: "指派法務確認代理商協議條款，下次會議前完成修訂版本", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-15",
+          title: "Weekly Sync Up — 代理商協議獨家條款與法務審核",
+          time: "10:31-11:03",
+          duration: "32m",
+          participants: "蔡阿達、Max Huang、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商收益與合約審核進度",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "代理商收益部分及法務審核狀況如何？目前進度到哪裡了？" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "尚未完成法務審核，但已初步檢視合約內容。決定先自行過一遍合約，下週市場會議中與麥克討論。" }
+              ]
+            },
+            {
+              topic: "獨家代理條款定義與修正",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "合約中多處出現獨家代理詞彙，建議刪除或明確定義，避免誤用造成法律風險。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "獨家代理有兩種含義：一是代理商只能賣本公司產品，二是公司只給該代理商銷售權。我們不採用第二種，避免排除其他代理商。建議在合約中設置獨家代理的勾選選項，依選擇給予相應權利與義務。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意不限定區域，但獨家代理需明確規範使用本公司工具，禁止使用競爭對手產品。法務也提醒獨家代理詞彙的法律意涵需在合約中清楚說明。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-08",
           title: "Weekly Sync Up — 代理商類型與佣金結構定案",
@@ -645,8 +680,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-12",
-      summary: "5/12 新聞稿發佈流程確認 — 成效追蹤擬用 GA、報價單避免 AI 字眼改稱「文章規劃」、合約需與法務確認 AI 交付義務；九月客戶合約到期安排續約會議；維持 10 篇撰寫 + 7 篇規劃標準方案",
+      lastUpdated: "2026-05-15",
+      summary: "5/15 AI 生成文案協議正式寫入報價單 — 蔡阿達與 Max Huang 達成共識，AI 文案條款納入報價單而非合約，明確界定客戶如需協助可由乙方生成文案，減少客戶疑慮並簡化合約管理",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -699,7 +734,10 @@ window.WAR_ROOM_DATA = {
         "🆕 5/12 合約需與 <strong>Henry 及法務</strong>討論 AI 輔助生成文章的交付權利義務",
         "🆕 5/12 文章品質策略：<strong>不走量產路線</strong>，重視品質與深度，單篇可涵蓋多個關鍵字",
         "🆕 5/12 小花持續關注<strong>行銷圈動態與文案趨勢</strong>，確保內容符合時事與受眾需求",
-        "🆕 5/12 九月客戶合約到期，<strong>呂紹平將與 Roger 聯繫</strong>安排續約會議，抽成已達 5.5%-15%"
+        "🆕 5/12 九月客戶合約到期，<strong>呂紹平將與 Roger 聯繫</strong>安排續約會議，抽成已達 5.5%-15%",
+        "🆕 5/15 AI 生成文案協議正式<strong>寫入報價單</strong>，避免修改合約，減少客戶疑慮",
+        "🆕 5/15 明確界定：客戶如需協助，<strong>可由乙方生成文案</strong>，服務範圍清楚劃定",
+        "🆕 5/15 Max Huang 同意此做法，<strong>合約無需修改</strong>，只需在報價單中說明即可"
       ],
       chips: [
         { icon: "📝", text: "17-20篇/月" },
@@ -707,7 +745,8 @@ window.WAR_ROOM_DATA = {
         { icon: "🤖", text: "品牌聲音系統上線" },
         { icon: "✏️", text: "修改限1次" },
         { icon: "📅", text: "交期15工作天" },
-        { icon: "☁️", text: "Cloud 4.6 為主力" }
+        { icon: "☁️", text: "Cloud 4.6 為主力" },
+        { icon: "📋", text: "AI條款入報價單" }
       ],
       todos: [
         { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "today" },
@@ -744,9 +783,27 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "設計文章規劃問卷，將問卷技術應用於新聞稿與文章產出", priority: "week" },
         { owner: "蔡阿達", text: "萃取成功案例關鍵字與文章規劃邏輯，作為 AI 產出參考", priority: "week" },
         { owner: "蔡阿達", text: "確定 AE 對外銷售方案為 10 篇撰寫 + 7 篇規劃，明確告知 AI 輔助", priority: "week" },
-        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" }
+        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" },
+        { owner: "蔡阿達", text: "將 AI 生成文案協議條款寫入報價單範本，明確界定乙方文案生成服務範圍", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-15",
+          title: "Weekly Sync Up — AI 生成文案協議與報價單更新",
+          time: "10:31-11:03",
+          duration: "32m",
+          participants: "蔡阿達、Max Huang、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 生成文案協議寫入報價單",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "第四點規劃內容確認將 AI 生成文案的協議寫入報價單，避免修改合約本身。明確界定客戶如需協助，可由乙方生成文案，減少客戶對 AI 生成文章的疑慮。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "同意此做法，合約無需修改，只需在報價單中明確說明即可。這樣可以避免客戶反彈，同時明確雙方責任與服務範圍。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-12",
           title: "新聞稿撰寫與媒體發佈流程確認",
@@ -2596,24 +2653,54 @@ window.WAR_ROOM_DATA = {
       name: "主管線上培訓課程規劃",
       icon: "🎓",
       category: "internal",
-      lastUpdated: "2026-04-17",
-      summary: "規劃主管線上培訓課程 — 涵蓋銷售技巧、組織管理及時間管理，系統化學習取代被動解決問題",
+      lastUpdated: "2026-05-15",
+      summary: "5/15 培訓計畫升級為雙週制 — 每週五交錯進行業務討論與讀書會；參與人數約 20 多位，需分 A/B 班；課程涵蓋績效考核、溝通、招募等主題；線上錄製免費提供",
       keyPoints: [
         "Max Huang 建議以<strong>線上課程</strong>進行主管培訓，避免傳統面授方式",
         "強調<strong>系統化學習</strong>的重要性，避免僅在遇到問題時才學習",
         "課程主題包含：銷售技巧、組織管理、績效管理及溝通技巧",
-        "計畫與其他部門合作，擴大課程受眾及資源共享"
+        "計畫與其他部門合作，擴大課程受眾及資源共享",
+        "🆕 5/15 每週五主管培訓採<strong>雙週制交錯</strong>進行：一週業務討論、一週讀書會",
+        "🆕 5/15 讀書會課程涵蓋<strong>績效考核、溝通、招募</strong>等主題，先行發送課程、下週交流",
+        "🆕 5/15 參與人數預估約 <strong>20 多位</strong>，可能需分 A/B 班分批上課確保品質",
+        "🆕 5/15 公司<strong>四層架構約 110 人</strong>，主管層級多達二十多位",
+        "🆕 5/15 Max Huang 建議只邀請<strong>帶人數較多的主管</strong>參加，帶人少的可排除",
+        "🆕 5/15 由<strong>福田協助篩選</strong>帶人數兩人以上的主管名單",
+        "🆕 5/15 課程為<strong>線上錄製免費提供</strong>，避免高昂成本"
       ],
       chips: [
         { icon: "📚", text: "線上課程" },
         { icon: "🎯", text: "系統化學習" },
-        { icon: "🤝", text: "跨部門合作" }
+        { icon: "🤝", text: "跨部門合作" },
+        { icon: "🔄", text: "雙週制交錯" },
+        { icon: "👥", text: "分A/B班" }
       ],
       todos: [
         { owner: "Max Huang", text: "收集主管培訓需求並統整課程規劃", priority: "week" },
-        { owner: "Max Huang", text: "安排主管參與線上課程並追蹤學習進度與回饋", priority: "week" }
+        { owner: "Max Huang", text: "安排主管參與線上課程並追蹤學習進度與回饋", priority: "week" },
+        { owner: "Max Huang", text: "收集並確認參與主管名單，指派福田篩選帶人數兩人以上的主管", priority: "today" },
+        { owner: "Max Huang", text: "安排線上錄製課程發放與讀書會時間表，根據人數決定是否分班", priority: "week" },
+        { owner: "Max Huang", text: "下週開始執行雙週交錯業務會議與讀書會，持續更新課程內容", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-15",
+          title: "Weekly Sync Up — 主管培訓雙週制與分班規劃",
+          time: "10:31-11:03",
+          duration: "32m",
+          participants: "蔡阿達、Max Huang、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "主管培訓計畫與讀書會安排",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "每週五會議一小時，雙週交替進行業務討論與讀書會。讀書會課程先行發送，下一週進行內容交流。課程涵蓋績效考核、溝通、招募等主題。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "公司四層架構，約 110 人，主管層級多達二十多位。參與人數可能需分 A、B 班分批上課。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "只邀請帶人數較多的主管參加，帶人少的可排除。由福田協助篩選帶人數兩人以上的主管名單。課程為線上錄製，免費提供，避免高昂成本。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-17",
           title: "Weekly Sync Up Meeting",
@@ -4002,6 +4089,57 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Sean Liu", role: "other", label: "高谷", text: "診所通 APP 目前超過 19 萬人註冊，涵蓋線上預約、看診進度同步、健康日記共享圈及數位看板專利。未來將拓展至長照及其他行業。" },
                 { speaker: "蔡阿達", role: "ada", text: "此產品具市場潛力，適合推廣給中南部傳統產業客戶。建議結合第三方支付功能提升實用性。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P43: 九一平台合作風險 ======
+    {
+      id: "91app-risk",
+      name: "九一平台 — 合作合約風險與客戶鞏固策略",
+      icon: "⚠️",
+      category: "partner",
+      lastUpdated: "2026-05-15",
+      summary: "藍文甫反映與九一平台合作合約缺乏三方合約精神，恐導致客戶違約風險；合約 7/30 到期，需盡快確認九一意向；計畫一個月內拜訪 17 家客戶推動轉簽新合約，並以免費工具試用一年提高客戶黏著度",
+      keyPoints: [
+        "與九一合作合約已簽<strong>三四年</strong>，但僅為雙方合約，<strong>缺乏三方合約保障</strong>",
+        "合約將於 <strong>7 月 30 日到期</strong>，若九一無反應將自動續約，但需盡快確認九一意向",
+        "擔心九一可能<strong>突然終止合作並帶走客戶</strong>，造成對客戶違約風險",
+        "策略：先<strong>拜訪客戶深化關係</strong>，推動客戶轉簽新合約以減少衝擊",
+        "Max Huang 建議利用<strong>功能差異與價格優惠</strong>吸引客戶轉簽，快速行動避免客戶流失",
+        "藍文甫提議<strong>免費提供工具試用一年</strong>，增加客戶黏著度",
+        "現有 <strong>17 家客戶</strong>合約需掃描，優先推動轉簽新合約並給予折扣優惠"
+      ],
+      chips: [
+        { icon: "⏰", text: "7/30到期" },
+        { icon: "👥", text: "17家客戶" },
+        { icon: "🆓", text: "免費試用1年" },
+        { icon: "🚨", text: "違約風險" }
+      ],
+      todos: [
+        { owner: "藍文甫", text: "一個月內完成 17 家客戶拜訪與關係深化，推動客戶轉簽新合約", priority: "today" },
+        { owner: "藍文甫", text: "使用工具掃描客戶狀況，促成客戶簽訂一年以上新合約並提供價格優惠", priority: "week" },
+        { owner: "Max Huang", text: "準備免費提供工具試用一年方案，作為客戶留存策略", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-15",
+          title: "Weekly Sync Up — 九一平台合約風險與客戶鞏固",
+          time: "10:31-11:03",
+          duration: "32m",
+          participants: "蔡阿達、Max Huang、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "九一平台合約缺陷與違約風險",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "與九一合作合約已簽三四年，但為雙方合約缺乏三方合約精神，可能導致對客戶違約風險。合約 7 月 30 日到期，若九一無反應將自動續約，但需盡快確認九一意向。擔心九一突然終止合作並帶走客戶。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "建議利用功能差異與價格優惠吸引客戶轉簽，快速行動避免被九一搶走客戶。需掃描現有 17 家客戶合約，優先轉簽新合約並給予折扣優惠。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "建議先拜訪客戶深化關係，推動客戶轉簽新合約減少衝擊。可免費提供工具試用一年增加客戶黏著度。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意加速客戶鞏固行動，優先確保 17 家客戶的合約轉簽，避免被九一帶走。" }
               ]
             }
           ]
