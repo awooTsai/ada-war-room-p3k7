@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-15T19:00:00",
-  dateLabel: "2026/05/15（五）",
+  lastUpdated: "2026-05-18T19:00:00",
+  dateLabel: "2026/05/18（一）",
   stats: {
-    meetings: 74,
-    projects: 43,
+    meetings: 78,
+    projects: 44,
     partners: 16,
-    internal: 6,
+    internal: 7,
     clientCompany: 19,
-    todos: 302
+    todos: 311
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-13",
-      summary: "5/13 確認 2025 下半年部門獎金已發放（Daisy Liu 查證），蔡阿達將向 Harper 索取發放名單核對；2026 年度目標以六人團隊 845 萬為基準，扣除 Q1 及阿達、阿美目標後，剩餘約 587 萬由四人分攤；GEO Suite 銷售獎金改 by 季發放，Winny 明日向老闆確認",
+      lastUpdated: "2026-05-18",
+      summary: "5/18 獎金辦法已由麥克確認並正式發佈，本週安排 AD（5/19）與 CS（5/22）兩場說明會，蔡阿達主講制度、Winny 以財務角度說明計算方式；藍文甫另提出愛貝斯合約帳務問題需獨立處理",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -223,7 +223,12 @@ window.WAR_ROOM_DATA = {
         "🆕 5/13 2026 年度目標以<strong>六人團隊 845 萬</strong>為基準，扣除 Q1 達成 722,434 及阿達 90 萬、阿美 95 萬",
         "🆕 5/13 剩餘約 <strong>5,877,567</strong> 由四位業務按比例分攤，蔡阿達將私下通知團隊目標",
         "🆕 5/13 GEO Suite 銷售獎金確認採 <strong>by 季統計 by 季發放</strong>，金額為 0 或低於牌價則不發放工具獎金",
-        "🆕 5/13 Winny 明日向老闆確認 GEO Suite 獎金調整方案"
+        "🆕 5/13 Winny 明日向老闆確認 GEO Suite 獎金調整方案",
+        "🆕 5/18 獎金辦法已由麥克確認無誤，<strong>今日正式發佈</strong>",
+        "🆕 5/18 本週安排<strong>兩場說明會</strong>：AD 團隊 5/19（二）16:45-17:45、CS 團隊 5/22（四）10:00",
+        "🆕 5/18 蔡阿達先向團隊說明獎金制度，<strong>Winny 以財務角度解釋計算方式與收款流程</strong>",
+        "🆕 5/18 黛西新上任對獎金辦法不熟悉，由蔡阿達主講較合適",
+        "🆕 5/18 藍文甫提出<strong>合約名目與發票不符</strong>帳務問題，決定先獨立處理不與延期綁定"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -234,15 +239,40 @@ window.WAR_ROOM_DATA = {
         { icon: "🆕", text: "5/13 獎金核對" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "向 Harper 團隊索取 2025 下半年獎金發放名單與金額明細，核對是否完整", priority: "today" },
-        { owner: "蔡阿達", text: "釐清 A1 部門獎金是否因主管指示不計算，確認獎金計算責任歸屬", priority: "today" },
-        { owner: "蔡阿達", text: "完成 2026 年度部門獎金目標分攤比例設定，分配給六位成員", priority: "today" },
-        { owner: "蔡阿達", text: "私下通知團隊成員最終目標數字與分攤比例", priority: "week" },
-        { owner: "Winny Chiang", text: "明日向老闆確認 GEO Suite 銷售獎金 by 季發放調整方案", priority: "today" },
-        { owner: "Winny Chiang", text: "保留試算表檔案並協助確認分攤計算公式合理性", priority: "week" },
-        { owner: "蔡阿達", text: "向業務說明新獎金方案，以正面激勵方式溝通避免負面情緒", priority: "week" }
+        { owner: "Winny Chiang", text: "今日發佈獎金辦法", priority: "today" },
+        { owner: "蔡阿達", text: "明日 AD 週會（16:45-17:45）說明獎金辦法，確保團隊理解制度與計算方式", priority: "today" },
+        { owner: "Winny Chiang", text: "以財務角度準備獎金計算與收款流程說明材料", priority: "today" },
+        { owner: "蔡阿達", text: "週四 10:00 CS 會議中說明獎金辦法", priority: "week" },
+        { owner: "Winny Chiang", text: "私下與麥克確認獎金工具版本調整細節", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-18",
+          title: "finalize 獎金辦法",
+          time: "12:02-12:11",
+          duration: "9m",
+          participants: "蔡阿達、Winny Chiang、藍文甫、Anne",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "獎金辦法發佈與說明會安排",
+              exchanges: [
+                { speaker: "Winny Chiang", role: "other", label: "財務", text: "獎金辦法 A1 與 CS 部分已由麥克確認無誤，今日正式發佈。發佈後本週安排 AD 與 CS 兩場說明會。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議利用週會時間說明，明天下午 4:45 到 5:45。我先向團隊說明獎金制度，Winny 再以財務角度解釋計算方式與收款流程。" },
+                { speaker: "Winny Chiang", role: "other", label: "財務", text: "黛西新上任，對獎金辦法不熟悉，由蔡阿達主講較合適。我會私下與麥克確認工具細節。" },
+                { speaker: "Anne", role: "other", label: "CS", text: "CS 會議時間調整至本週四上午 10 點，工具部分可能會有同仁再次詢問。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "會協助會議進行，重申獎金辦法的重要性，符合老闆期望。" }
+              ]
+            },
+            {
+              topic: "合約名目變更與帳務問題",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "與愛貝斯溝通中，延期時間尚未確定。合約名目與發票不符的帳務問題需先獨立處理，不與名目變更綁定，避免影響合約簽署進度。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "將開設專門聊天室邀請相關人員討論，並設置明確 deadline 加速問題解決。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-13",
           title: "2025 下半年部門獎金發放確認與 2026 目標分攤",
@@ -2588,14 +2618,17 @@ window.WAR_ROOM_DATA = {
       name: "愛貝斯（iBASE）— 合約變更與應收帳款追蹤",
       icon: "📋",
       category: "client",
-      lastUpdated: "2026-04-14",
-      summary: "合約付款方錯誤需透過三方變更協議修正，同時追蹤未付款項並準備存證信函催告",
+      lastUpdated: "2026-05-18",
+      summary: "5/18 藍文甫確認延期時間未定，決定先獨立處理帳務問題不與名目變更綁定；將成立專門聊天室設定 deadline 加速處理",
       keyPoints: [
         "合約簽訂對象為<strong>愛斯柏（ISABEL）</strong>，但專案登記錯誤導致發票開給愛貝斯（iBASE），帳務無法對帳",
         "決議<strong>不重新簽約</strong>，改在變更協議中加入三方條款，明確由愛貝斯代替愛斯柏付款",
         "上半年服務至 1 月底，<strong>2 月起客戶暫停服務</strong>，發票已開至 3 月，需調整收入認列",
         "客戶未如期付款，口頭及 Line 提醒無效，決議發出<strong>正式存證信函</strong>催告",
-        "客戶團隊已更換，法務認為新團隊應承擔前團隊合約責任"
+        "客戶團隊已更換，法務認為新團隊應承擔前團隊合約責任",
+        "🆕 5/18 藍文甫持續與愛貝斯溝通，<strong>延期時間尚未確認</strong>",
+        "🆕 5/18 決定<strong>先獨立處理帳務問題</strong>，不與名目變更綁定，避免影響合約簽署",
+        "🆕 5/18 將成立<strong>專門聊天室與會議室</strong>，邀相關人員並設定明確 deadline 加速處理"
       ],
       chips: [
         { icon: "📝", text: "變更協議" },
@@ -2612,7 +2645,8 @@ window.WAR_ROOM_DATA = {
         { owner: "Eric Hsiao", text: "審閱並寄送包含付款方變更的合約變更協議", priority: "week" },
         { owner: "Eric Hsiao", text: "整理未付款項清單並寄送建議書，CC 藍文甫與 Anne Chang", priority: "week" },
         { owner: "Anne Chang", text: "確認發票作廢及重開流程，評估跨年度收入認列問題", priority: "week" },
-        { owner: "藍文甫", text: "確認存證信函發出時間與內容", priority: "waiting" }
+        { owner: "藍文甫", text: "確認存證信函發出時間與內容", priority: "waiting" },
+        { owner: "藍文甫", text: "開設專門聊天室與會議室處理合約名目與帳務問題，設定明確 deadline", priority: "today" }
       ],
       meetingHistory: [
         {
@@ -2727,8 +2761,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-11",
-      summary: "5/11 Prompt 分級工具本週推出雛形、雅虎本週上線延伸文章、競爭分析功能週四上線、AI 化重點聚焦數據事實分析、客戶偏好顧問方案單買工具意願低、KPMG 與安可日子合作暫停追蹤中",
+      lastUpdated: "2026-05-18",
+      summary: "5/18 Google 系 AI 社群貼文操作模式（切段多篇/濃縮短文）、品牌履歷迭代完成新格式（含佔位符）、春露合作 workshop 培訓計畫啟動（2-3 個月 8 場）、迭代內容週五交付 A 與 CS 團隊",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2789,7 +2823,13 @@ window.WAR_ROOM_DATA = {
         "🆕 5/11 AI 化重點功能調整為<strong>聚焦數據事實分析</strong>，預警提示分三部分：雙下滑、提及率下滑、引用率下滑",
         "🆕 5/11 資料匯出功能設計中，支持 <strong>CSV 與 PDF 格式</strong>，可選擇匯出區塊",
         "🆕 5/11 Meta 廣告投放 GO Suite 及 GO 顧問方案，<strong>短影音素材四支完成</strong>，五月已開始投放",
-        "🆕 5/11 將製作 <strong>Agency 專屬 Landing Page</strong>，蔡阿達負責雅虎及二十特推薦案例"
+        "🆕 5/11 將製作 <strong>Agency 專屬 Landing Page</strong>，蔡阿達負責雅虎及二十特推薦案例",
+        "🆕 5/18 Google 系 AI 社群貼文應用較 GPT 更受青睞，操作模式包括<strong>切段多篇發佈與濃縮短文</strong>兩種方式",
+        "🆕 5/18 品牌履歷迭代完成新格式，包含站內外引用、品牌緣起、團隊介紹及認證，設置<strong>佔位符方便專員替換</strong>",
+        "🆕 5/18 春露合作 workshop 培訓計畫：<strong>連續 2-3 個月、約 8 場線上教育訓練</strong>，每場約一小時，目標完成品牌利益明確化",
+        "🆕 5/18 藍文甫因時間考量尋求負責人接手品牌推動，主要受眾為 SGS 公案組及 AP 團隊",
+        "🆕 5/18 迭代內容整合為<strong>一頁說明 + 一頁主題動作</strong>，預計週五完成更新交付 A 與 CS 團隊",
+        "🆕 5/18 林思吾強調 Google AIO/AMO 搜索密度高，<strong>社群發文策略不可忽視</strong>"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -2800,6 +2840,10 @@ window.WAR_ROOM_DATA = {
         { icon: "📝", text: "純內容版 22K/月" }
       ],
       todos: [
+        { owner: "Fenix Li", text: "週五完成迭代內容更新（一頁說明 + 一頁主題動作）並交付 A 與 CS 團隊", priority: "today" },
+        { owner: "藍文甫", text: "提供春露品牌訓練工作坊細節資料給林思吾", priority: "week" },
+        { owner: "林思吾", text: "審閱品牌工作坊資料後指派合適夥伴接手推動", priority: "week" },
+        { owner: "林思吾", text: "落實社群發文規劃，明確指定發文平台與關鍵字策略", priority: "week" },
         { owner: "Yoshie Yeoh", text: "與日本團隊確認重要 POC 客戶名單", priority: "week" },
         { owner: "何建彤", text: "推動 AIO/AIMO 本週上線，最晚四月底前完成", priority: "today" },
         { owner: "YC", text: "確認中文版本數據無誤後，交由哈希團隊進行日文翻譯", priority: "week" },
@@ -2844,6 +2888,39 @@ window.WAR_ROOM_DATA = {
         { owner: "Angelline", text: "五月底前提出新素材需求，確保行銷素材庫存充足", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-18",
+          title: "AI Mode的影響與觀察",
+          time: "10:10-10:24",
+          duration: "14m",
+          participants: "蔡阿達、林思吾、Fenix Li、陳羲彤（Dominic）、藍文甫",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Google 系 AI 社群貼文應用與操作模式",
+              exchanges: [
+                { speaker: "陳羲彤", role: "other", label: "Dominic", text: "針對 Google 系 AI 在社群媒體貼文的應用做延伸說明，介紹原算法偏好及操作模式，包括將文章切段多篇發佈與濃縮成短文兩種方式。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "關注文章發佈平台規劃，強調需明確規劃發文平台，Google AIO/AMO 搜索密度高，發文策略不可忽視。" },
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "目前系統先聚焦主題方向驗證，後續會針對不同平台做標籤與年檢等細化規劃，六頁內容主要為說明用途。" }
+              ]
+            },
+            {
+              topic: "品牌履歷整理與春露培訓規劃",
+              exchanges: [
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "品牌履歷主要整理「關於我們」內容，包含站內外引用比例，設置佔位符方便專員替換客戶資料。內容涵蓋品牌緣起、成立時間、負責人、團隊介紹、核心產品及認證。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "春露提供連續兩三個月的 workshop 培訓，線上教育訓練每次約一小時、預計八場，目標完成品牌利益明確化。因時間考量尋求合適負責人接手，主要受眾為 SGS 公案組及 AP 團隊。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "會先審閱相關細節資料，並安排適合夥伴負責後續工作交接。" }
+              ]
+            },
+            {
+              topic: "迭代內容整合與版本更新",
+              exchanges: [
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "已將可用迭代內容整理拉出，社群發文內容已加入。預計週五完成更新，格式為一頁說明、一頁主題動作，簡化內容直接交付給 A 與 CS 團隊。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "同意目前進度，建議未來持續關注並同步新趨勢與研究方向。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-11",
           title: "GEO Go-to-Market 策略",
@@ -3110,8 +3187,8 @@ window.WAR_ROOM_DATA = {
       name: "雅虎 — 廣編稿 AI Visibility 合作",
       icon: "📰",
       category: "partner",
-      lastUpdated: "2026-05-11",
-      summary: "5/11 雅虎本週上線延伸文章 — 廣編稿延伸多篇產生 Prompt 追蹤，威宏與雅虎為代表性 Panel Logo 合作夥伴",
+      lastUpdated: "2026-05-18",
+      summary: "5/18 向 Yahoo 團隊完成 GEO Suite 後台 Demo — 以 NG 品牌為案例展示五大指標（品牌提及率 37.5%）、AI 文章延伸策略（一篇延三篇）、競爭分析與報表功能規劃",
       keyPoints: [
         "雅虎作為媒體角色，<strong>廣編稿是其主要且賺錢的產品線</strong>",
         "利用 AI 工具從雅虎提供的新聞稿<strong>延伸出多篇文章</strong>，根據客戶回饋持續優化",
@@ -3126,7 +3203,14 @@ window.WAR_ROOM_DATA = {
         "🆕 Leon 尚未上 Ragic，需確認報價單、合約、新增專案登記流程",
         "🆕 5/11 雅虎本週上線多篇延伸文章，<strong>週二至四分別上線三篇</strong>",
         "🆕 5/11 合作方向二分：<strong>廣編稿延伸多篇文章產生 Prompt</strong>，及從既有文章產生 Prompt 追蹤",
-        "🆕 5/11 雅虎為代表性 <strong>Panel Logo 合作夥伴</strong>之一"
+        "🆕 5/11 雅虎為代表性 <strong>Panel Logo 合作夥伴</strong>之一",
+        "🆕 5/18 向 Yahoo 團隊完成 <strong>GEO Suite 後台完整 Demo</strong>，展示品牌提及率、聲量佔比、排名、情緒、引用率五大指標",
+        "🆕 5/18 以 NG 品牌為案例，<strong>品牌提及率達 37.5%</strong>，追蹤 ChatGPT 與 Gemini 回應",
+        "🆕 5/18 合作模式：客戶購買一篇新聞稿，awoo 延伸出 <strong>B 篇與 C 篇 AI 生成文章</strong>，共三篇追蹤成效",
+        "🆕 5/18 文章生成考量 <strong>E-A-T 信號</strong>與避免虛構，利用 Prompt 產生大綱再生成內容",
+        "🆕 5/18 <strong>競爭對手多品牌篩選功能</strong>預計月底上線，排名依 AI 回應中品牌提及先後順序",
+        "🆕 5/18 <strong>報表匯出功能</strong>開發中，後台帳號系統將從 token 改為帳密登入",
+        "🆕 5/18 Sean Chiang 對合作模式反應正面，約定後續持續討論合作細節與銷售策略"
       ],
       chips: [
         { icon: "📰", text: "雅虎廣編稿" },
@@ -3135,14 +3219,55 @@ window.WAR_ROOM_DATA = {
         { icon: "🏷️", text: "Yahoo+ELLE LOGO" }
       ],
       todos: [
-        { owner: "呂紹平（Leon）", text: "上 Ragic 完成 Yahoo GEO Suite 新增專案登記", priority: "today" },
-        { owner: "蔡阿達", text: "持續根據雅虎客戶回饋，利用 AI 生成多版本文章大綱並優化內容", priority: "week" },
+        { owner: "蔡阿達", text: "與 Sean Chiang 安排後續會議，推動合作流程與銷售策略", priority: "week" },
+        { owner: "蔡阿達", text: "完成 B 篇與 C 篇 AI 文章內容優化並追蹤品牌提及成效", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "月底前完成競爭對手多品牌篩選功能上線", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "更新後台帳號系統為帳密登入，支援多品牌切換", priority: "week" },
         { owner: "蔡阿達", text: "制定雅虎合作案定價模式（以工具使用費計價）", priority: "week" },
-        { owner: "Yoshie Yeoh", text: "協助日本團隊理解合作模式與 AI 可見性價值", priority: "week" },
-        { owner: "林思吾", text: "跟進雅虎合作案進展與第三方合作模式成熟度", priority: "waiting" },
-        { owner: "蔡阿達", text: "本週二至四完成雅虎三篇延伸文章的 Prompt 產出與追蹤設定", priority: "today" }
+        { owner: "呂紹平（Leon）", text: "開發報表匯出功能，方便客戶驗收合作成效", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-18",
+          title: "Awoo GEO Suite 後台介紹 & 成效解析",
+          time: "17:02-17:58",
+          duration: "56m",
+          participants: "蔡阿達、Sean Chiang（Yahoo）、呂紹平 Leon（awoo）、Yahoo Winnie Pan",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "NG 案子合作流程與成效展示",
+              exchanges: [
+                { speaker: "Sean Chiang", role: "other", label: "Yahoo", text: "希望先做案子回顧，說明設定搜尋意圖與目標效果，並用系統檢視是否達成。" },
+                { speaker: "蔡阿達", role: "ada", text: "合作流程從新聞稿大綱出發，結合 NG 網站內容延伸出 B 篇與 C 篇 AI 生成文章，三篇文章用工具追蹤被 AI 提及與引用情況。客戶只購買一篇文章，卻獲得三篇相關文章，提升品牌曝光與價值。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "展示後台介面，追蹤多個 Prompt 分析 ChatGPT、Gemini 等 AI 回應中品牌提及與網站引用，整理五大指標：品牌提及率、聲量佔比、排名、情緒、引用率。NG 品牌提及率 37.5%。" }
+              ]
+            },
+            {
+              topic: "文章生成與 SEO 策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "文章生成先設定關鍵字與 Prompt，利用 Prompt 產生大綱再生成內容，過程中考量 E-A-T 信號與避免虛構。B 篇與 C 篇完全由 AI 產生，無人工撰寫。" },
+                { speaker: "Sean Chiang", role: "other", label: "Yahoo", text: "詢問文章被提及的時間曲線。" },
+                { speaker: "蔡阿達", role: "ada", text: "時效性內容可能曇花一現，長期內容可持續被引用。短期活動型建議廣告投放，長期 SEO 優化適合此合作模式。" }
+              ]
+            },
+            {
+              topic: "工具功能與後續規劃",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "競爭對手由 AI 自動判別，預計月底前上線多品牌篩選功能。排名依 AI 回應中提及品牌的先後順序決定。後台完整記錄每次回應細節。" },
+                { speaker: "蔡阿達", role: "ada", text: "將推出報表匯出功能，方便客戶驗收合作成效。" },
+                { speaker: "Sean Chiang", role: "other", label: "Yahoo", text: "會持續討論合作流程與銷售策略，感謝團隊提供詳細回饋。" }
+              ]
+            },
+            {
+              topic: "會議記錄工具推薦",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹目前使用的會議記錄工具，推薦臺灣廠商 SeaMeet，對繁體中文辨識較佳。目前摘要層級較粗，計劃用大語言模型重新整理。" },
+                { speaker: "Sean Chiang", role: "other", label: "Yahoo", text: "目前使用 Google Meet 的會議記錄功能，但摘要精準度不足，願意參考蔡阿達推薦的工具。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-11",
           title: "GEO Go-to-Market — 雅虎合作進度更新",
@@ -4196,6 +4321,87 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "請佳憲協助引薦高雄在地有規模的老店接班人，特別是已有一定規模的品牌，像附近的前進肉燥飯就是理想的客戶類型。" },
                 { speaker: "佳憲", role: "other", label: "引薦夥伴", text: "講話速度有點快，可能會影響聽眾理解，建議放慢一些以利內容傳達。" },
                 { speaker: "蔡阿達", role: "ada", text: "會控制語速，簡報內容以三張投影片為主，避免過於浮誇或複雜，確保聽眾能夠理解。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    // ====== P44: Shopline 業務開發 ======
+    {
+      id: "shopline-bd",
+      name: "Shopline 業務開發 — 客戶篩選與質檢報告升級",
+      icon: "🛒",
+      category: "internal",
+      lastUpdated: "2026-05-18",
+      summary: "調整 inquiry 客戶篩選分工 — 蔡阿達接手初步篩選提升轉化率，艾琳專注活動名單陌生開發；質檢報告整合阿普爬蟲 AI 分析；工具改版支援一帳號多品牌切換",
+      keyPoints: [
+        "Shopline 網站建檢已有<strong>六七個品牌</strong>開會介紹，但客戶需求不明確、轉化率偏低",
+        "建議蔡阿達接手<strong>艾瑞 inquiry 客戶初步篩選</strong>，減少 AE 重複溝通負擔",
+        "活動名單交由艾琳以陌生開發方式接觸，<strong>inquiry 由蔡阿達先行篩選</strong>確認需求後再交 AE",
+        "先從 <strong>GO 官網填單</strong>開始試行篩選流程，收集數據作為與管理層溝通依據",
+        "試行方案<strong>一個月</strong>驗證成效，下週一與劉麗會議中提案",
+        "最新質檢報告整合<strong>阿普爬蟲技術</strong>，能抓取站內外資訊並以 AI 視角分析網站狀況",
+        "呂紹平建議將 <strong>Google 最新 SEO 與生成式 AI 使用指南</strong>匯入工具，提升報告 E-E-A-T 信任度",
+        "工具改版：從兩個賬號分別登入改為<strong>一個賬號切換多個 token</strong>，提升使用便利性"
+      ],
+      chips: [
+        { icon: "🔍", text: "inquiry 篩選" },
+        { icon: "📊", text: "質檢報告升級" },
+        { icon: "🧪", text: "試行一個月" },
+        { icon: "🔧", text: "工具改版" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "下週一會議中與劉麗討論 inquiry 篩選分工調整方案", priority: "today" },
+        { owner: "蔡阿達", text: "接手艾瑞 inquiry 客戶初步篩選，試行一個月驗證成效", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "初步篩選 GO 官網填單並收集轉化數據", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "將 Google SEO 與生成式 AI 使用指南整合至質檢工具", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "向雅戶及楊浩說明工具賬號使用方式及改版內容", priority: "week" },
+        { owner: "蔡阿達", text: "持續觀察客戶對最新質檢報告的反應並調整內容", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-18",
+          title: "Shopline 業務開發，協作討論",
+          time: "16:01-16:35",
+          duration: "34m",
+          participants: "蔡阿達、呂紹平（Leon）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站建檢客戶接洽與轉化率問題",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "網站建檢資料申請時無客戶聯絡窗口，需由 AM 先溝通後才介入。目前六七個品牌開會介紹建檢內容，但客戶需求不明確，轉化率不高。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同此分工可幫助 AE 節省時間，建議下週一會議中討論此方案。" }
+              ]
+            },
+            {
+              topic: "inquiry 與活動名單分工優化",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "目前艾琳無法完整傳達客戶需求，AE 接手後仍需重新溝通約 10 分鐘。部分客戶預算有限，艾琳難以篩選。" },
+                { speaker: "蔡阿達", role: "ada", text: "此分工可提升轉化率，建議先從 GO 官網填單開始試驗，取得數據後再與管理層討論是否全面調整。" }
+              ]
+            },
+            {
+              topic: "管理層溝通策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "擔心直接溝通可能引發管理層激動，建議先由呂紹平溝通，必要時再介入。試行方案可快速取得結果。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "先從 GO 官網填單開始試驗，層層篩選提高轉化率，取得數據後再與管理層討論。" }
+              ]
+            },
+            {
+              topic: "質檢報告升級與 AI 技術整合",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "最新版質檢報告整合阿普爬蟲，能同時抓取站內外資訊並以 AI 視角呈現網站特性，更簡化且針對 AI 狀況回饋。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Google 公告不一定需要 LMS.TXT 即可抓取網站內容，建議將 Google 準則匯入工具，報告依此標準產出，提升 E-E-A-T 信任度。" },
+                { speaker: "蔡阿達", role: "ada", text: "擔心報告技術細節過多讓客戶困惑，建議適度篩選資訊並觀察客戶反應。" }
+              ]
+            },
+            {
+              topic: "工具賬號改版說明",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "目前客戶有兩個賬號分別追蹤不同品牌，改版後將可用一個賬號切換多個 token，減少登入次數。" },
+                { speaker: "蔡阿達", role: "ada", text: "要求隨機應變處理客戶問題，確保改版順利推行。" }
               ]
             }
           ]
