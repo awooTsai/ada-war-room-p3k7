@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-18T19:00:00",
-  dateLabel: "2026/05/18（一）",
+  lastUpdated: "2026-05-19T19:00:00",
+  dateLabel: "2026/05/19（二）",
   stats: {
-    meetings: 78,
+    meetings: 81,
     projects: 44,
     partners: 16,
     internal: 7,
     clientCompany: 19,
-    todos: 311
+    todos: 321
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-18",
-      summary: "5/18 獎金辦法已由麥克確認並正式發佈，本週安排 AD（5/19）與 CS（5/22）兩場說明會，蔡阿達主講制度、Winny 以財務角度說明計算方式；藍文甫另提出愛貝斯合約帳務問題需獨立處理",
+      lastUpdated: "2026-05-19",
+      summary: "5/19 AE 週會獎金說明會完成 — 獎金簡化為 MRR 業績獎金與銷售獎金，新增收款後領獎及獎金回扣機制（三區間回收）；業務團隊反映回收條款實務困難，Winny 承諾明日向麥克反映並另案處理；本週四 CS 說明會待進行",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -228,7 +228,13 @@ window.WAR_ROOM_DATA = {
         "🆕 5/18 本週安排<strong>兩場說明會</strong>：AD 團隊 5/19（二）16:45-17:45、CS 團隊 5/22（四）10:00",
         "🆕 5/18 蔡阿達先向團隊說明獎金制度，<strong>Winny 以財務角度解釋計算方式與收款流程</strong>",
         "🆕 5/18 黛西新上任對獎金辦法不熟悉，由蔡阿達主講較合適",
-        "🆕 5/18 藍文甫提出<strong>合約名目與發票不符</strong>帳務問題，決定先獨立處理不與延期綁定"
+        "🆕 5/18 藍文甫提出<strong>合約名目與發票不符</strong>帳務問題，決定先獨立處理不與延期綁定",
+        "🆕 5/19 獎金內容簡化為<strong>MRR 業績獎金</strong>與<strong>銷售獎金</strong>兩項，其他獎項比例集中於 MRR 獎金",
+        "🆕 5/19 獎金認列標準調整：從開立發票即可領改為<strong>收到款項後才能領</strong>",
+        "🆕 5/19 新增<strong>獎金回扣條款</strong>：客戶未付清款項依實收比例回收已發放獎金（三區間：&lt;50%、50-75%、&gt;75%）",
+        "🆕 5/19 蔡阿達指出回收條款實務困難，建議設置<strong>明確責任分界與保險措施</strong>避免 AE 承擔過多風險",
+        "🆕 5/19 業務反映若因 CS 服務導致客戶不付款不應由 AE 承擔，Winny 承諾<strong>特殊案例另案處理</strong>",
+        "🆕 5/19 Winny 明日（5/20）向麥克反映業務意見，尋求回收條款調整可能"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -236,16 +242,42 @@ window.WAR_ROOM_DATA = {
         { icon: "⚠️", text: "PIP < 60%" },
         { icon: "🎯", text: "T型圖基準" },
         { icon: "📊", text: "認列率 70%" },
-        { icon: "🆕", text: "5/13 獎金核對" }
+        { icon: "🆕", text: "5/19 回扣條款" }
       ],
       todos: [
-        { owner: "Winny Chiang", text: "今日發佈獎金辦法", priority: "today" },
-        { owner: "蔡阿達", text: "明日 AD 週會（16:45-17:45）說明獎金辦法，確保團隊理解制度與計算方式", priority: "today" },
-        { owner: "Winny Chiang", text: "以財務角度準備獎金計算與收款流程說明材料", priority: "today" },
+        { owner: "Winny Chiang", text: "明日（5/20）向麥克反映業務對獎金回收條款意見，請示調整可能", priority: "today" },
         { owner: "蔡阿達", text: "週四 10:00 CS 會議中說明獎金辦法", priority: "week" },
-        { owner: "Winny Chiang", text: "私下與麥克確認獎金工具版本調整細節", priority: "week" }
+        { owner: "Winny Chiang", text: "釐清並公告獎金回收規定，建立特殊案例另案討論機制", priority: "week" },
+        { owner: "Winny Chiang", text: "與 Daisy 及蔡阿達持續收集獎金辦法調整建議", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-19",
+          title: "AE Team 週會 — 獎金辦法說明會",
+          time: "16:45-18:07",
+          duration: "1h22m",
+          participants: "蔡阿達、溫妮（Winny）、李陽、Joanna、Irene、艾雲、Daisy、呂紹平、麥克、安祖林",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "業務獎金辦法變動說明與回扣機制",
+              exchanges: [
+                { speaker: "溫妮", role: "other", label: "財務", text: "獎金內容簡化為 MRR 業績獎金與銷售獎金兩項，獎金認列從開立發票改為收到款項後才能領。新增獎金回扣條款：客戶未付清款項依實收比例回收，分三區間（低於 50%、50-75%、高於 75%）。" },
+                { speaker: "蔡阿達", role: "ada", text: "獎金回收條款在實務上會造成 AE 與客戶間的矛盾與壓力，建議設置明確的責任分界與保險措施，避免 AE 承擔過多風險。" },
+                { speaker: "李陽", role: "other", label: "AE", text: "若客戶因 CS 服務不佳而不付款，卻由 AE 承擔獎金回收責任不合理。AE 無法有效追蹤客戶付款狀況。" },
+                { speaker: "溫妮", role: "other", label: "財務", text: "承諾對因 CS 服務問題導致客戶不付款的特殊案例不扣 AE 獎金，將於明日向麥克反映業務意見。" }
+              ]
+            },
+            {
+              topic: "AE 與 CS 獎金責任分界討論",
+              exchanges: [
+                { speaker: "Joanna", role: "other", label: "AE", text: "AE 工作權限限於收單，後續客戶管理由 CS 負責。獎金因客戶不付款被扣對 AE 不公平。" },
+                { speaker: "蔡阿達", role: "ada", text: "要求 AE 承擔至第 9 個月不合理，需建立明確保險措施與責任分界。" },
+                { speaker: "溫妮", role: "other", label: "財務", text: "CS 獎金辦法中只要有一期款項未收即無法領獎金。強調 AE 接單時應避免 over promise 並篩選優質客戶。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-18",
           title: "finalize 獎金辦法",
@@ -1354,20 +1386,26 @@ window.WAR_ROOM_DATA = {
       name: "HubSpot Deal 流程 & 客戶資料統一管理",
       icon: "⚙️",
       category: "company",
-      lastUpdated: "2026-04-07",
-      summary: "Deal Type 新增 GU 選項；建立以公司為主體的客戶資料庫，統一存放健檢報告與關鍵字表格",
+      lastUpdated: "2026-05-19",
+      summary: "5/19 蔡阿達推動 Pipeline 策略調整 — 聚焦增加商機數量，要求業務每日更新 HubSpot 0-10% 階段數據，啟動 Slack 每日早晨提醒機制；商機篩選與許願池機制優化中",
       keyPoints: [
         "新增 Deal Type：<strong>GO 顧問方案 / GO 工具方案 / GU 相關選項</strong>；AE 在 Close ON 階段必填",
         "<strong>以公司為主體建立資料庫</strong>：客戶健檢報告、關鍵字拓展表格等四份報告放置 Company Property，供 AE、CS、關鍵字拓展團隊共用",
         "蔡阿達主導報告產出流程，全站內容 markdown 放置 hotspot 平台",
         "楊舒涵整合兩支 workflow，商機建立時<strong>自動關聯公司資料</strong>，解決空公司問題",
-        "Shopline 匯款無新更新；SEO APP 與 AMP 共用，未來新增 SEO 人工智慧 APP"
+        "Shopline 匯款無新更新；SEO APP 與 AMP 共用，未來新增 SEO 人工智慧 APP",
+        "🆕 5/19 Pipeline 策略聚焦<strong>增加商機數量</strong>，避免花過多時間在少數大案",
+        "🆕 5/19 要求業務<strong>每日更新 HubSpot</strong> 中 0-10% 階段 pipeline 數據",
+        "🆕 5/19 啟動 <strong>Slack 每日早晨提醒</strong>機制，促使業務查看與更新 pipeline",
+        "🆕 5/19 推動使用 Cmeet 會議記錄工具，利用<strong> AI 整理共通問題</strong>與資源共享",
+        "🆕 5/19 商機篩選品質參差，蔡阿達<strong>先行分析商機真實需求</strong>後再交 AE 跟進",
+        "🆕 5/19 <strong>許願池機制</strong>：短期無法跟進但有潛力的商機由 Irene 持續聯絡與挖掘"
       ],
       chips: [
         { icon: "📊", text: "GEO Deal 15筆" },
         { icon: "💬", text: "90 Prompt" },
         { icon: "🏷️", text: "Deal Type GU 新增" },
-        { icon: "🗂️", text: "公司主體資料庫" }
+        { icon: "🆕", text: "Pipeline 每日更新" }
       ],
       todos: [
         { owner: "蔡阿達", text: "持續產出並更新每個客戶健檢報告、關鍵字拓展表格等，以連結形式放置 Company Property", priority: "week" },
@@ -1377,9 +1415,37 @@ window.WAR_ROOM_DATA = {
         { owner: "楊舒涵", text: "將 GU 相關 Deal Type 選項調整至下拉選單前端，並提醒 AE 在 Close ON 必填", priority: "week" },
         { owner: "呂紹平", text: "協調新增 SEO APP 上架，與 Dandy 確認 SEO 服務客戶帳單及 APP 使用狀況", priority: "waiting" },
         { owner: "蔡阿達", text: "整理客戶常見問題 FAQ 表格", priority: "week" },
-        { owner: "Anne", text: "約時間討論 CS 相關流程與條款細節", priority: "waiting" }
+        { owner: "Anne", text: "約時間討論 CS 相關流程與條款細節", priority: "waiting" },
+        { owner: "蔡阿達", text: "統計並追蹤 0-30% 階段 pipeline 狀況，確保數據完整", priority: "week" },
+        { owner: "各業務", text: "每日更新 HubSpot 系統中的 pipeline 資料並回應 Slack 提醒", priority: "week" },
+        { owner: "蔡阿達", text: "與行銷團隊協調爭取更多商機資源支持業務目標", priority: "week" },
+        { owner: "蔡阿達", text: "下週與安祖林討論商機分配流程與許願池管理優化", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-19",
+          title: "AE Team 週會 — Pipeline 策略調整",
+          time: "16:45-18:07",
+          duration: "1h22m",
+          participants: "蔡阿達、溫妮、李陽、Joanna、Irene、艾雲、Daisy、呂紹平、麥克、安祖林",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Pipeline 管理與業務策略調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前公司目標高且獎金池充足，現階段策略應聚焦增加商機數量，避免花過多時間在少數大案上。業務應積極反映商機不足以便行銷與管理層協助。" },
+                { speaker: "蔡阿達", role: "ada", text: "要求業務每日更新 HubSpot 中 0-10% 階段的 pipeline 數據，將透過 Slack 每日早晨提醒查看與更新。推動使用 Cmeet 會議記錄工具，方便管理層掌握案子狀況。" }
+              ]
+            },
+            {
+              topic: "商機篩選與許願池機制優化",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "Irene 負責的商機篩選品質參差，建議由蔡阿達先行分析商機真實需求，讓 AE 專注跟進與成交。短期無法跟進但有潛力的商機放入許願池，由 Irene 持續聯絡與挖掘。" },
+                { speaker: "蔡阿達", role: "ada", text: "計劃下週與安祖林開會討論商機分配流程與許願池管理優化。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-07",
           title: "AE<>BA meeting",
@@ -2761,8 +2827,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-18",
-      summary: "5/18 Google 系 AI 社群貼文操作模式（切段多篇/濃縮短文）、品牌履歷迭代完成新格式（含佔位符）、春露合作 workshop 培訓計畫啟動（2-3 個月 8 場）、迭代內容週五交付 A 與 CS 團隊",
+      lastUpdated: "2026-05-19",
+      summary: "5/19 GEO 顧問方案三大決議 — Prompt 引用比例 10:1（10 Prompt 配 1 篇新聞稿）納入合約、Prompt 審核由業務主管負責（不走省制）、60% 大競爭字限制討論中；三套 Prompt 工具預計六至七月整合；建站顧問合約策略調整為搭配純文案服務降低摩擦",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2829,15 +2895,25 @@ window.WAR_ROOM_DATA = {
         "🆕 5/18 春露合作 workshop 培訓計畫：<strong>連續 2-3 個月、約 8 場線上教育訓練</strong>，每場約一小時，目標完成品牌利益明確化",
         "🆕 5/18 藍文甫因時間考量尋求負責人接手品牌推動，主要受眾為 SGS 公案組及 AP 團隊",
         "🆕 5/18 迭代內容整合為<strong>一頁說明 + 一頁主題動作</strong>，預計週五完成更新交付 A 與 CS 團隊",
-        "🆕 5/18 林思吾強調 Google AIO/AMO 搜索密度高，<strong>社群發文策略不可忽視</strong>"
+        "🆕 5/18 林思吾強調 Google AIO/AMO 搜索密度高，<strong>社群發文策略不可忽視</strong>",
+        "🆕 5/19 Prompt 引用比例嚴格標準：<strong>10 個 Prompt 配 1 篇新聞稿（約 10%）</strong>，納入合約條款",
+        "🆕 5/19 媒體與品牌來源比例約 60% 品牌 / 30% 媒體，遇比例相同時<strong>優先判斷為媒體來源</strong>",
+        "🆕 5/19 Prompt 審核由<strong>業務主管（組長層級）</strong>負責，不走省制流程以縮短簽約時間",
+        "🆕 5/19 Prompt 選擇需<strong>合約開始前完成</strong>，設定一個月內完成期限",
+        "🆕 5/19 蔡阿達提議放寬 <strong>60% 大競爭字限制</strong>，林思吾認為限制有助設定合理期待",
+        "🆕 5/19 蔡阿達強調業務會<strong>提前告知客戶關鍵字難度</strong>，根據網站內容分析推薦適合關鍵字",
+        "🆕 5/19 三套 Prompt 工具整合版<strong>預計六至七月完成</strong>",
+        "🆕 5/19 行銷資源盤點與檢核表需<strong>提前至合約洽談階段完成</strong>",
+        "🆕 5/19 建站顧問合約策略調整：搭配<strong>純文案服務</strong>取代年約，可簽 6+12 或 6+18 個月方案",
+        "🆕 5/19 蔡阿達推動<strong>審核流程調整專案</strong>，本週推動、下週二決案"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
         { icon: "💰", text: "GO 3.3-7.3萬" },
         { icon: "📅", text: "約訪 週二 11-12" },
         { icon: "🌐", text: "MarTech Asia 5/27" },
-        { icon: "📊", text: "WACA 自檢報表" },
-        { icon: "📝", text: "純內容版 22K/月" }
+        { icon: "📝", text: "10 Prompt:1 新聞稿" },
+        { icon: "🆕", text: "工具整合 6-7月" }
       ],
       todos: [
         { owner: "Fenix Li", text: "週五完成迭代內容更新（一頁說明 + 一頁主題動作）並交付 A 與 CS 團隊", priority: "today" },
@@ -2885,9 +2961,77 @@ window.WAR_ROOM_DATA = {
         { owner: "Amber Liao", text: "推動現有客戶續約時將工具納入顧問案，強化工具價值認知", priority: "week" },
         { owner: "林思吾", text: "整理成功案例形成完整故事線，支持業務推廣與續約", priority: "week" },
         { owner: "呂紹平", text: "協助業務解決顧問案與工具包裝的價格與預算問題", priority: "week" },
-        { owner: "Angelline", text: "五月底前提出新素材需求，確保行銷素材庫存充足", priority: "week" }
+        { owner: "Angelline", text: "五月底前提出新素材需求，確保行銷素材庫存充足", priority: "week" },
+        { owner: "Anne Chang", text: "下下週會議前與小雞確認檢核清單細節並回報進度", priority: "week" },
+        { owner: "業務主管", text: "負責 Prompt 審核與比例確認，確保符合合約規定", priority: "week" },
+        { owner: "Anne Chang", text: "將 Prompt 引用比例限制納入合約條款並明確審核流程", priority: "week" },
+        { owner: "林思吾", text: "推動三套 Prompt 工具版本整合（預計六至七月完成）", priority: "week" },
+        { owner: "蔡阿達", text: "本週推動審核流程調整專案，下週二（5/26）決案", priority: "today" },
+        { owner: "蔡阿達", text: "與呂紹平及利友哥討論建站顧問與顧問案合約分工", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-19",
+          title: "GEO 顧問方案討論 — Prompt 比例與審核流程",
+          time: "14:04-14:54",
+          duration: "50m",
+          participants: "蔡阿達、YC、林思吾、Anne Chang、呂紹平（Leon）、Fenix Li、藍文甫、Amber Liao、Alice Cho",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Prompt 引用比例與來源判斷標準",
+              exchanges: [
+                { speaker: "YC", role: "other", label: "YC", text: "嚴格標準為 10 個 Prompt 配 1 篇新聞稿（約 10% 媒體引用比例），具體數字將列入系統。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "媒體與品牌來源比例約 60% 品牌、30% 媒體，遇比例相同時優先判斷為媒體以提高嚴格度。此條件納入合約，業務與 CS 需在合約階段嚴格控管。" }
+              ]
+            },
+            {
+              topic: "Prompt 審核流程與責任歸屬",
+              exchanges: [
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Prompt 審核不宜拉入審字團隊，應在報價階段讓客戶明確知悉比例與條件。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "支持由業務組長負責審核，避免流程冗長。" },
+                { speaker: "Amber Liao", role: "other", label: "BA", text: "省制工作天數過長會延長簽約時間，審核由業務主管負責即可。" }
+              ]
+            },
+            {
+              topic: "關鍵字選擇限制放寬討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "若關鍵字均屬同一主題且有搜尋量，建議放寬 60% 大競爭字限制，減少審核阻礙。業務會提前告知客戶關鍵字難度與達成率，根據網站內容分析推薦適合關鍵字。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "客戶成效評估不僅看 Prompt，還看排名與流量，限制有助於設定合理期待。肯定蔡阿達針對網站內容分析的做法。" }
+              ]
+            },
+            {
+              topic: "內部工具整合與版本統一",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "三套 Prompt 工具整合版預計六至七月完成，將收攏三套版本優點。" },
+                { speaker: "Amber Liao", role: "other", label: "BA", text: "公司內部需統一使用同一版本，避免不同單位使用不同版本造成混亂。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-05-19",
+          title: "AE Team 週會 — 建站顧問合約策略與審核流程",
+          time: "16:45-18:07",
+          duration: "1h22m",
+          participants: "蔡阿達、溫妮、李陽、Joanna、呂紹平、麥克、利友哥",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "建站顧問與文案服務合約策略調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "CS 希望避免簽訂建站顧問加年約合約，改為建站顧問搭配純文案服務，減少延期與合約變更風險。可簽訂 6+12 或 6+18 個月方案。" },
+                { speaker: "蔡阿達", role: "ada", text: "純文案方案摩擦力較小，能持續提供服務與收取 MRR。需與利友哥討論建站顧問與顧問案合約分工及年約計算方式。" }
+              ]
+            },
+            {
+              topic: "審核流程優化推動",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "針對審核流程過長問題，本週推動審核流程調整專案，下週二決案，降低談單摩擦提升簽單率。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-18",
           title: "AI Mode的影響與觀察",
@@ -4333,8 +4477,8 @@ window.WAR_ROOM_DATA = {
       name: "Shopline 業務開發 — 客戶篩選與質檢報告升級",
       icon: "🛒",
       category: "internal",
-      lastUpdated: "2026-05-18",
-      summary: "調整 inquiry 客戶篩選分工 — 蔡阿達接手初步篩選提升轉化率，艾琳專注活動名單陌生開發；質檢報告整合阿普爬蟲 AI 分析；工具改版支援一帳號多品牌切換",
+      lastUpdated: "2026-05-19",
+      summary: "5/19 確認 Shopline 代收付現況 — 信用卡自動扣款不可行、訂單 7 天有效期、6% 佣金為合約要求；虛擬 ATM 付款測試以魚翅巧克力為對象；商機篩選許願池機制優化討論",
       keyPoints: [
         "Shopline 網站建檢已有<strong>六七個品牌</strong>開會介紹，但客戶需求不明確、轉化率偏低",
         "建議蔡阿達接手<strong>艾瑞 inquiry 客戶初步篩選</strong>，減少 AE 重複溝通負擔",
@@ -4343,23 +4487,54 @@ window.WAR_ROOM_DATA = {
         "試行方案<strong>一個月</strong>驗證成效，下週一與劉麗會議中提案",
         "最新質檢報告整合<strong>阿普爬蟲技術</strong>，能抓取站內外資訊並以 AI 視角分析網站狀況",
         "呂紹平建議將 <strong>Google 最新 SEO 與生成式 AI 使用指南</strong>匯入工具，提升報告 E-E-A-T 信任度",
-        "工具改版：從兩個賬號分別登入改為<strong>一個賬號切換多個 token</strong>，提升使用便利性"
+        "工具改版：從兩個賬號分別登入改為<strong>一個賬號切換多個 token</strong>，提升使用便利性",
+        "🆕 5/19 Shopline 代收付確認：<strong>信用卡自動扣款不可行</strong>，客戶需自行輸入卡號付款",
+        "🆕 5/19 訂單有效期 <strong>7 天</strong>（刷卡或虛擬 ATM 皆適用），逾期作廢需重開",
+        "🆕 5/19 Shopline 合作期間所有客戶需支付 <strong>6% 佣金</strong>，代收付為合約要求",
+        "🆕 5/19 GEO 與 SEO 方案<strong>不需安裝 Shopline APP</strong>，直接開其他賬單即可",
+        "🆕 5/19 以<strong>魚翅巧克力</strong>客戶作為虛擬 ATM 付款測試對象",
+        "🆕 5/19 Demo Shop 需先由 Shopline 開通虛擬 ATM 功能才能進行測試"
       ],
       chips: [
         { icon: "🔍", text: "inquiry 篩選" },
         { icon: "📊", text: "質檢報告升級" },
-        { icon: "🧪", text: "試行一個月" },
-        { icon: "🔧", text: "工具改版" }
+        { icon: "💳", text: "代收付 7天期限" },
+        { icon: "🧪", text: "虛擬ATM測試中" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "下週一會議中與劉麗討論 inquiry 篩選分工調整方案", priority: "today" },
         { owner: "蔡阿達", text: "接手艾瑞 inquiry 客戶初步篩選，試行一個月驗證成效", priority: "week" },
-        { owner: "呂紹平（Leon）", text: "初步篩選 GO 官網填單並收集轉化數據", priority: "week" },
+        { owner: "呂紹平（Leon）", text: "取得 Demo Shop 登入資訊，與楊舒涵共同測試虛擬 ATM 付款流程", priority: "today" },
+        { owner: "楊舒涵", text: "安排魚翅巧克力客戶進行虛擬 ATM 年繳付款實測", priority: "week" },
+        { owner: "李陽", text: "測試 Demo Shop 中虛擬 ATM 及 GEO/SEO APP 賬單開立功能", priority: "week" },
+        { owner: "Anne Chang", text: "確認 Shopline 代收付合約條款及佣金 6% 支付細節", priority: "week" },
         { owner: "呂紹平（Leon）", text: "將 Google SEO 與生成式 AI 使用指南整合至質檢工具", priority: "week" },
-        { owner: "呂紹平（Leon）", text: "向雅戶及楊浩說明工具賬號使用方式及改版內容", priority: "week" },
         { owner: "蔡阿達", text: "持續觀察客戶對最新質檢報告的反應並調整內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-19",
+          title: "AE<>BA meeting — Shopline 代收付流程確認",
+          time: "16:01-16:46",
+          duration: "45m",
+          participants: "楊舒涵、呂紹平、Anne Chang、李陽",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Shopline 代收付機制與信用卡自動扣款",
+              exchanges: [
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "Shopline 代收付機制上線以來狀況多變，系統不穩定且回覆不一致。信用卡自動扣款功能目前無法實現，客戶需自行輸入卡號付款。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Shopline 合作期間所有客戶均需支付 6% 佣金，代收付為合約要求。GEO 與 SEO 方案不需安裝 Shopline APP，直接開其他賬單即可。" }
+              ]
+            },
+            {
+              topic: "訂單有效期與虛擬 ATM 測試計畫",
+              exchanges: [
+                { speaker: "楊舒涵", role: "other", label: "BA", text: "訂單有效期為 7 天，無論刷卡或虛擬 ATM 皆適用，逾期作廢需重開。將以魚翅巧克力客戶作為虛擬 ATM 付款測試對象。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "Demo Shop 需先由 Shopline 開通虛擬 ATM 功能才能測試。取得登入資訊後與楊舒涵共同測試，確認無誤再向團隊布達。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-18",
           title: "Shopline 業務開發，協作討論",
