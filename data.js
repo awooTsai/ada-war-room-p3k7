@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-19T19:00:00",
-  dateLabel: "2026/05/19（二）",
+  lastUpdated: "2026-05-20T19:00:00",
+  dateLabel: "2026/05/20（三）",
   stats: {
-    meetings: 81,
-    projects: 44,
+    meetings: 85,
+    projects: 45,
     partners: 16,
     internal: 7,
-    clientCompany: 19,
-    todos: 321
+    clientCompany: 20,
+    todos: 306
   },
 
   projects: [
@@ -742,8 +742,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-15",
-      summary: "5/15 AI 生成文案協議正式寫入報價單 — 蔡阿達與 Max Huang 達成共識，AI 文案條款納入報價單而非合約，明確界定客戶如需協助可由乙方生成文案，減少客戶疑慮並簡化合約管理",
+      lastUpdated: "2026-05-20",
+      summary: "5/20 品牌聲音卡片化測試啟動 — 廖淑芬預計 5/25、6/5、6/22 完成三階段測試報告；純文案方案調整為純撰寫計價（取消 10+7 混合方案），月產量上限 24 篇；建站合約服務期限改為網站上線日起算 12 個月；所有 spec 變更由 Mike 統一審核",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -799,56 +799,84 @@ window.WAR_ROOM_DATA = {
         "🆕 5/12 九月客戶合約到期，<strong>呂紹平將與 Roger 聯繫</strong>安排續約會議，抽成已達 5.5%-15%",
         "🆕 5/15 AI 生成文案協議正式<strong>寫入報價單</strong>，避免修改合約，減少客戶疑慮",
         "🆕 5/15 明確界定：客戶如需協助，<strong>可由乙方生成文案</strong>，服務範圍清楚劃定",
-        "🆕 5/15 Max Huang 同意此做法，<strong>合約無需修改</strong>，只需在報價單中說明即可"
+        "🆕 5/15 Max Huang 同意此做法，<strong>合約無需修改</strong>，只需在報價單中說明即可",
+        "🆕 5/20 品牌聲音卡片化測試啟動 — 廖淑芬預計 <strong>5/25、6/5、6/22</strong> 完成三階段測試報告",
+        "🆕 5/20 卡片設計含<strong>專業卡、知識經歷卡、案例卡</strong>，依產業分類抽用，方便文案撰寫時調用",
+        "🆕 5/20 品牌聲音整體概念優於卡片化方案，效果<strong>優於 ChatGPT 與 Gemini</strong> 生成文案",
+        "🆕 5/20 蔡阿達負責品牌聲音萃取與版本統一管理，廖淑芬負責測試並提供回饋",
+        "🆕 5/20 純文案方案調整 — <strong>取消「10 篇撰寫 + 7 篇規劃」混合方案</strong>，改為純文案撰寫計價",
+        "🆕 5/20 純文案方案月產量上限 <strong>24 篇</strong>，以生活化產品客戶為主，B2B 產品不適用",
+        "🆕 5/20 代理商合約維持<strong>顧問案轉介紹抽佣機制</strong>，合約版本待藍文甫整理後由 Mike 決定",
+        "🆕 5/20 建站合約服務期限調整 — <strong>網站正式上線日起算 12 個月</strong>，收款依時間點固定收取",
+        "🆕 5/20 所有方案 spec 變更統一由 <strong>Mike 審核</strong>，小安代理管理文件與定價，避免跨部門內耗"
       ],
       chips: [
-        { icon: "📝", text: "17-20篇/月" },
+        { icon: "📝", text: "純撰寫≤24篇/月" },
         { icon: "👤", text: "25% 人工" },
-        { icon: "🤖", text: "品牌聲音系統上線" },
+        { icon: "🤖", text: "品牌聲音卡片測試中" },
         { icon: "✏️", text: "修改限1次" },
         { icon: "📅", text: "交期15工作天" },
         { icon: "☁️", text: "Cloud 4.6 為主力" },
-        { icon: "📋", text: "AI條款入報價單" }
+        { icon: "📋", text: "AI條款入報價單" },
+        { icon: "🆕", text: "5/20 純文案方案" }
       ],
       todos: [
-        { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "today" },
-        { owner: "藍文甫", text: "論述流程改為撰寫用詞，交期統一調整為 15 工作天", priority: "today" },
-        { owner: "藍文甫", text: "制定對外說明話術：中文有潤飾，英文由客戶自行修改", priority: "week" },
-        { owner: "蔡阿達", text: "新增功能：根據專員規劃自動生成問卷，收集客戶素材", priority: "today" },
-        { owner: "蔡阿達", text: "爬取玉萍診所網站內容，整理後交給廖淑芬上傳使用", priority: "today" },
-        { owner: "蔡阿達", text: "與亨利確認合約條文，調整 AI 文章相關用詞使其簡明不引起反彈", priority: "week" },
-        { owner: "蔡阿達", text: "評估不同 AI 模型（4.6、4.7、Gemini）文章生成效能，提供使用建議", priority: "week" },
-        { owner: "廖淑芬", text: "將專員規劃好的文章與客戶素材上傳系統，嘗試生成文章並回報結果", priority: "today" },
-        { owner: "廖淑芬", text: "在建議書中明確標示哪些段落需客戶提供素材", priority: "week" },
-        { owner: "廖淑芬", text: "注意 Cloud 平台五小時及每週使用限制，合理安排使用時段", priority: "week" },
-        { owner: "廖淑芬", text: "監督業務團隊對外溝通口徑一致，確保 AI 輔助產文說法統一", priority: "week" },
-        { owner: "團隊", text: "報價單或其他文件中明確告知客戶 AI 文章查證責任由客戶負責", priority: "week" },
-        { owner: "藍文甫", text: "合約與報單中明確規範 AI 輔助撰寫交付標準與修改次數限制", priority: "week" },
-        { owner: "藍文甫", text: "協調 MIS 開設專用 Cloud 帳號供文案組使用", priority: "week" },
+        { owner: "廖淑芬", text: "5/25 完成第一階段品牌聲音與知識卡片測試報告", priority: "today" },
+        { owner: "廖淑芬", text: "6/5 完成第一階段測試並啟動第二階段測試", priority: "week" },
+        { owner: "廖淑芬", text: "6/22 完成第二階段測試報告，評估文案生成成效與運作模式", priority: "waiting" },
+        { owner: "蔡阿達", text: "持續維護品牌聲音萃取機制，根據廖淑芬反饋調整 prompt", priority: "week" },
+        { owner: "蔡阿達", text: "協助廖淑芬上傳管理品牌聲音及知識卡片資料夾，指導使用卡片系統", priority: "week" },
+        { owner: "蔡阿達與藍文甫", text: "確認純文案方案是否全改為撰寫篇數計價，取消 10+7 混合方案", priority: "today" },
+        { owner: "藍文甫", text: "整理代理商佣金陳述版本並提交 Mike 審核決定", priority: "week" },
+        { owner: "藍文甫", text: "與法務確認建站合約以網站上線起算 12 個月的服務期限條款", priority: "week" },
+        { owner: "藍文甫", text: "與財務協調收款時間固定（15 個月內收完），服務期限可因上線時間延長", priority: "week" },
+        { owner: "蔡阿達", text: "將建站合約條款寫法貼至報價單對話框，方便業務使用與客戶確認", priority: "week" },
+        { owner: "藍文甫", text: "持續由 Mike 統籌 spec 變更與定價，小安協助掌握文件與溝通", priority: "week" },
         { owner: "藍文甫", text: "每週與廖淑芬開會，持續優化文案產出流程", priority: "waiting" },
-        { owner: "蔡阿達", text: "評估英文文章交付後客戶自主管理修改的可行性", priority: "week" },
-        { owner: "蔡阿達", text: "整理近百家客戶網站內容分享給廖淑芬", priority: "week" },
-        { owner: "蔡阿達", text: "確認制式合約 AI 條款，與法務確認過渡期舊案條款是否需調整", priority: "week" },
-        { owner: "蔡毓倫", text: "更新旅行社客戶報價單，20 組 Prompt GLS 包裝方案以 2,000 元計價", priority: "today" },
-        { owner: "蔡阿達", text: "推動簡化方案規格數字，統一篇數避免 17 篇等不整數", priority: "week" },
-        { owner: "蔡阿達", text: "確認 20 組 Prompt 規格與報價，協助蔡毓倫完成旅行社客戶報價", priority: "today" },
-        { owner: "藍文甫", text: "與蔡阿達組成策略工作小組，設計 AI 輔助文章緊急交付方案", priority: "today" },
+        { owner: "蔡阿達", text: "評估不同 AI 模型（4.6、4.7、Gemini）文章生成效能，提供使用建議", priority: "week" },
+        { owner: "廖淑芬", text: "監督業務團隊對外溝通口徑一致，確保 AI 輔助產文說法統一", priority: "week" },
         { owner: "團隊", text: "完成 30 篇不同產業 AI 生成文章品質測試，確保品質達標後交付", priority: "week" },
-        { owner: "蔡阿達", text: "持續與小花合作推進 AI 文章品質提升及不同產業測試", priority: "week" },
-        { owner: "Anne Chang", text: "協助針對醫療與金融等產業特性，進行 AI 文章專業度測試與調整", priority: "week" },
-        { owner: "藍文甫", text: "確認並釋出新聞稿媒體名單給專員，訂定 Prompt 挑選規則", priority: "today" },
         { owner: "藍文甫", text: "召集 Henry 開會釐清合約條款與 AI 文章交付權利義務", priority: "week" },
-        { owner: "呂紹平", text: "調整報價單用詞避免 AI 字眼，改以文章規劃等說法", priority: "today" },
         { owner: "呂紹平", text: "聯繫 Roger 安排九月合約到期續約會議", priority: "week" },
-        { owner: "呂紹平", text: "安排小花在專案啟動階段進行客戶訪談，減少反覆溝通", priority: "week" },
         { owner: "蔡阿達", text: "協助制定新聞稿成效追蹤報告方案，評估 GA 或其他工具", priority: "week" },
-        { owner: "蔡阿達", text: "設計文章規劃問卷，將問卷技術應用於新聞稿與文章產出", priority: "week" },
         { owner: "蔡阿達", text: "萃取成功案例關鍵字與文章規劃邏輯，作為 AI 產出參考", priority: "week" },
-        { owner: "蔡阿達", text: "確定 AE 對外銷售方案為 10 篇撰寫 + 7 篇規劃，明確告知 AI 輔助", priority: "week" },
-        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" },
-        { owner: "蔡阿達", text: "將 AI 生成文案協議條款寫入報價單範本，明確界定乙方文案生成服務範圍", priority: "today" }
+        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-20",
+          title: "與阿達討論 AI 文案操作方向 — 品牌聲音卡片化 × 純文案方案 × 建站合約",
+          time: "14:31-15:44",
+          duration: "1h13m",
+          participants: "蔡阿達、廖淑芬（小花）、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌聲音卡片化方案測試與進度安排",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "文案", text: "已開始測試品牌聲音卡片，預計 5/25 做簡短報告、6/5 完成第一階段測試、6/22 做第二次報告，最後做總結報告評估文案團隊運作效益。" },
+                { speaker: "蔡阿達", role: "ada", text: "卡片設計包含專業卡、知識經歷卡、案例卡等，依產業分類抽用，方便文案撰寫時調用。品牌聲音由我統一管理萃取與版本。" },
+                { speaker: "廖淑芬", role: "other", label: "文案", text: "品牌聲音整體方案比卡片化方案易於理解與使用，效果也優於 ChatGPT 與 Gemini 生成的文案。" },
+                { speaker: "蔡阿達", role: "ada", text: "卡片會依產業維度分類，未來可自行上傳與抽用卡片，減少對我的依賴。有改善建議隨時反饋。" }
+              ]
+            },
+            {
+              topic: "純文案方案規劃與調整",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "文案", text: "純文案方案主要針對無人手客戶，規劃書不適用，文案以生活化產品為主，B2B 產品不適合。" },
+                { speaker: "蔡阿達", role: "ada", text: "純文案方案市場需求大，有助於網站被 AI 推薦，CS 維護負擔較輕。取消原本 10 篇撰寫加 7 篇規劃的方案，改為純文案撰寫。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "支持純文案方案，所有 spec 變更需經 Mike 審核，由小安代理管理文件與定價，避免跨部門認知不一。" }
+              ]
+            },
+            {
+              topic: "建站合約服務期限與收款方式調整",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "以固定時間收款，服務期限依網站上線時間起算 12 個月，避免因建站延遲影響收款。此方案已送法務審核過一次。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同此方案可解決合約與收款時間不同步的問題，將與法務及財務溝通確保報價單中明確寫明規則。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-15",
           title: "Weekly Sync Up — AI 生成文案協議與報價單更新",
@@ -1937,8 +1965,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-05-13",
-      summary: "5/13 啟動每週客戶分享機制 — 成員輪流分享手上客戶，蔡阿達分享教育機構網站重建案（與 Mars 合作）；Adam 分享膠原蛋白傳產二代客戶；數位巴克斯推動機車銷售報價系統與馬來西亞擴展；Karen Hsu 推廣醫師自媒體 IP；遙空映畫持續屏東王船館文化影片及中華電信軟體參展案",
+      lastUpdated: "2026-05-20",
+      summary: "5/20 蔡阿達向 Mars 介紹 awoo 內容服務新方案（25K/月），MarsZ Chen 展示 GA/GSC 自動化流量分析系統（月費 500-1500 元），貳捌介紹社群顧問與內訓課程（5K-8K/hr），Adam Chen 分享企業顧問服務；蔡阿達預期內容服務可服務一兩百間客戶",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -1978,27 +2006,72 @@ window.WAR_ROOM_DATA = {
         "🆕 5/13 遙空映畫持續<strong>屏東縣王船館文化影片</strong>長期合作（每四個月更換主題），客戶滿意已敲下一案",
         "🆕 5/13 Karen Hsu 推廣<strong>醫師自媒體短影音及個人 IP 服務</strong>，連鎖集團客戶有需求",
         "🆕 5/13 遙空映畫介紹<strong>中華電信總公司新軟體參展案</strong>（多系統監控，已銷售臺鐵），雙方可互相介紹客戶",
-        "🆕 5/13 教育機構<strong>公共事務處長離職</strong>轉任另一國立學校，已做好交接仍有合作機會"
+        "🆕 5/13 教育機構<strong>公共事務處長離職</strong>轉任另一國立學校，已做好交接仍有合作機會",
+        "🆕 5/20 蔡阿達向 Mars 介紹 awoo 新內容服務方案 — 原價 <strong>35,000 元/月</strong>，合作價 <strong>25,000 元/月</strong>",
+        "🆕 5/20 服務含文章撰寫（年約 20 篇：10 篇團隊 + 7 篇 AI 輔助 + 3 篇規劃）+ <strong>AI 推薦五大指標追蹤</strong>",
+        "🆕 5/20 追蹤指標含<strong>品牌被提及次數、引用率、競品比較</strong>，可查看 AI 回答中引用的具體網頁內容",
+        "🆕 5/20 MarsZ Chen 展示 <strong>GA/GSC 自動化流量分析系統</strong>，依週期自動產出報告含 AI 摘要",
+        "🆕 5/20 流量分析服務收費：舊客戶不加價，新客戶基本月費約 <strong>500 元</strong>，含社群分析最高 <strong>1,500 元</strong>",
+        "🆕 5/20 MarsZ Chen 計劃串接 <strong>Meta 後臺數據</strong>與廣告數據，Adam 建議參考國外已有串接方案",
+        "🆕 5/20 貳捌介紹<strong>社群顧問服務</strong> — 企業內訓課程每小時 5,000-8,000 元，含策略制定與內容創作",
+        "🆕 5/20 貳捌計劃將預錄課程<strong>商品化</strong>，在官網提供線上刷卡觀看功能，預計下半年推廣",
+        "🆕 5/20 Adam Chen 分享<strong>企業顧問服務</strong>（產銷人發財五面向），結合 BNI 夥伴資源提供全方位支持",
+        "🆕 5/20 蔡阿達預期 awoo 內容服務可服務<strong>一兩百間客戶</strong>，報告當天下午兩點前可產出"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
         { icon: "👥", text: "10+ 位成員" },
         { icon: "🔗", text: "客戶分享機制" },
-        { icon: "🤖", text: "LLM 引薦系統" }
+        { icon: "🤖", text: "LLM 引薦系統" },
+        { icon: "💰", text: "內容方案 25K/月" }
       ],
       todos: [
+        { owner: "蔡阿達", text: "提供 Mars 文章撰寫服務報價與方案細節（20 篇文章 + AI 推薦追蹤），推動打包銷售", priority: "today" },
+        { owner: "MarsZ Chen", text: "完成 GA/GSC API 串接，開發自動化流量分析報告功能", priority: "week" },
+        { owner: "MarsZ Chen", text: "研究社群（Facebook、Instagram）數據串接與分析功能，規劃額外收費", priority: "week" },
+        { owner: "貳捌", text: "與 MarsZ Chen 討論社群數據需求，提供報告範本協助 AI 分析優化", priority: "week" },
+        { owner: "Adam Chen", text: "協助 MarsZ Chen 加入 GA/GSC 權限，促進數據整合與服務推廣", priority: "week" },
+        { owner: "蔡阿達", text: "持續引薦有架站及 SEO 需求的客戶給 MarsZ Chen", priority: "week" },
         { owner: "蔡阿達", text: "與 Mars 合作提案教育機構網站重建案，整合前端設計與 AI 問答系統串接", priority: "week" },
-        { owner: "蔡阿達", text: "向教育機構客戶推薦遙空映畫線上課程拍攝資源", priority: "week" },
-        { owner: "蔡阿達", text: "提供行銷小聚相關網頁給團隊，邀請客戶參與並針對品牌做分析", priority: "week" },
-        { owner: "Adam", text: "持續開發傳產二代接班人客戶，將可接手案子轉介團隊成員", priority: "week" },
-        { owner: "數位巴克斯", text: "推動機車銷售客戶報價系統專案，邀請團隊協助研究及引薦", priority: "week" },
-        { owner: "Karen Hsu", text: "與運籌金幫隊聯繫，探討餐飲業及連鎖加盟店 IP 設計合作", priority: "week" },
-        { owner: "遙空映畫", text: "向中華電信介紹團隊服務內容，尋求軟體參展合作機會", priority: "week" },
         { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
         { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-20",
+          title: "FUZEN 行銷小聚 05/20 — 內容服務方案 × 流量分析 × 社群顧問",
+          time: "12:33-13:51",
+          duration: "1h18m",
+          participants: "蔡阿達、MarsZ Chen、Adam Chen、貳捌",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "awoo 內容服務方案介紹與合作模式",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹新服務方案 — 幫客戶撰寫文案並追蹤 AI 推薦與引用機會。原底價 35,000 元/月，合作價可降至 25,000 元/月，最短合作期限視搭配建站而定。" },
+                { speaker: "蔡阿達", role: "ada", text: "服務包含五大指標追蹤：品牌被提及次數、引用率及競品比較，可查看 AI 回答中引用的具體網頁內容。一年產出約 20 篇文章。" },
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "服務可搭配網站流量分析，並提供客戶後臺教學，協助設定 GA 與 GSC，定期自動產出流量與 SEO 報告。" }
+              ]
+            },
+            {
+              topic: "GA/GSC 自動化流量分析系統展示",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "網站後臺可設定 GA 與 GSC ID，自動抓取流量與 SEO 數據，依設定週期產出報告含 AI 摘要。服務收費：舊客戶不加價，新客戶基本月費約 500 元，含社群分析最高 1,500 元。" },
+                { speaker: "蔡阿達", role: "ada", text: "此分析工具可與客戶現有服務結合，提升毛利與服務價值，鼓勵團隊將客戶需求與 Mars 的技術端結合。" },
+                { speaker: "Adam Chen", role: "other", label: "成員", text: "建議參考國外已有的 Meta API 串接方案以提升效率。" }
+              ]
+            },
+            {
+              topic: "社群顧問服務與企業顧問介紹",
+              exchanges: [
+                { speaker: "貳捌", role: "other", label: "社群", text: "社群顧問服務包含策略制定、內容創作與投放管理。內訓課程每小時 5,000-8,000 元，含課程資料與宣傳素材。計劃將預錄課程商品化，在官網提供線上刷卡觀看。" },
+                { speaker: "Adam Chen", role: "other", label: "成員", text: "企業顧問服務涵蓋產銷人發財五面向，結合 BNI 夥伴資源提供全方位支持。呼籲團隊協助引薦食品、美容代工廠及傳產二代客戶。" },
+                { speaker: "蔡阿達", role: "ada", text: "鼓勵成員將有架站需求的客戶引薦給 Mars，並利用新內容生成與 AI 追蹤服務提升客戶價值。預期可服務一兩百間客戶。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-13",
           title: "FUZEN 行銷小聚 05/13 — 每週客戶分享啟動",
@@ -3867,8 +3940,8 @@ window.WAR_ROOM_DATA = {
       name: "awoo × OneAD — GEO + 廣告導流聯合方案",
       icon: "📊",
       category: "partner",
-      lastUpdated: "2026-04-30",
-      summary: "4/30 首次會議 — 結合 awoo GEO 與 OneAD 固定 CPC 廣告導流，打造品牌 AI 能見度+流量整合方案；先從商務銷售案切入，後續推進數據互通、內容策展與 AI Agent 合作",
+      lastUpdated: "2026-05-20",
+      summary: "5/20 第二次會議 — 蔡阿達介紹 AI 內容生成 + SEO 優化新模式（免費建檢報告為敲門磚），Jed Lin 展示 Audience AI 受眾分析工具；雙方確認合作互補架構（awoo 主動搜尋端 / OneAD 被動觸及端），金流由 OneAD 收取後付款 awoo；Jed Lin 下週向業務布達合作方案",
       keyPoints: [
         "雙方合作架構：awoo 負責<strong>AI 搜尋優化（GEO）</strong>，OneAD 負責<strong>固定 CPC 廣告導流</strong>，互補 SEO 見效慢的痛點",
         "初步方案分基礎套裝（<strong>GEO 顧問年約 + 固定 CPC 導流</strong>）與進階套裝（內容策展 + 媒體曝光），導流廣告年約基礎約<strong>十萬元</strong>",
@@ -3878,27 +3951,67 @@ window.WAR_ROOM_DATA = {
         "Pixel 埋點合作：客戶網站部署雙方 pixel，累積用戶標籤提升廣告精準度與再行銷效果",
         "蔡阿達指出 awoo 客戶多為中小型，需調整服務與<strong>價格策略</strong>符合市場需求",
         "雙方探討 <strong>AI Agent</strong> 產品合作可能性，蔡阿達有聊天機器人開發經驗",
-        "合作目標：先推 GEO + 導流商務方案，內容策展與報告整合陸續推出"
+        "合作目標：先推 GEO + 導流商務方案，內容策展與報告整合陸續推出",
+        "🆕 5/20 第二次會議 — 蔡阿達介紹 <strong>AI 內容生成 + SEO 優化新模式</strong>，以免費 AI 建檢報告為敲門磚",
+        "🆕 5/20 Jed Lin 展示 <strong>Audience AI 受眾分析工具</strong> — 整合聯播網、零售數據、發票載具，串接 Google/Meta/TikTok API",
+        "🆕 5/20 合作互補架構：awoo 負責<strong>主動搜尋端</strong>（關鍵字優化、AI 內容生成），OneAD 負責<strong>被動觸及端</strong>（受眾行為與消費數據）",
+        "🆕 5/20 品牌履歷與新聞稿服務 — 與 <strong>1450 始祖網軍</strong>合作，提供媒體曝光與品牌背書",
+        "🆕 5/20 CMR Interactive 調查：<strong>AIO 出現時自然搜尋點擊下降</strong>，品牌被 AI 引用可獲較高點擊與信任",
+        "🆕 5/20 金流確認：客戶款項由 <strong>OneAD 收取後再付款 awoo</strong>，蔡阿達為主要聯絡窗口",
+        "🆕 5/20 數據追蹤規劃 — 結合 GA4/Pixel 數據，建立 <strong>AIO 引用次數、EBU 品牌情感分數、五分制品質分數</strong>",
+        "🆕 5/20 Jed Lin 預計<strong>下週向 OneAD 業務團隊布達合作方案</strong>，啟動聯合推廣"
       ],
       chips: [
         { icon: "🤝", text: "GEO + 導流" },
-        { icon: "📈", text: "ADR/SDR 報告" },
-        { icon: "📰", text: "內容策展" },
-        { icon: "🎯", text: "Pixel 再行銷" },
-        { icon: "💰", text: "年約 10 萬起" }
+        { icon: "📈", text: "Audience AI" },
+        { icon: "📰", text: "品牌履歷服務" },
+        { icon: "🎯", text: "AIO 追蹤" },
+        { icon: "💰", text: "年約 10 萬起" },
+        { icon: "🆕", text: "下週業務布達" }
       ],
       todos: [
-        { owner: "Jed Lin", text: "提供 SDR 與 ADR 報告給蔡阿達團隊，供系統整合評估", priority: "week" },
-        { owner: "蔡阿達", text: "評估報告內容與數據結合的可行性與應用場景", priority: "week" },
-        { owner: "蔡阿達", text: "推動雙方共同銷售方案，協助客戶導入固定成本導流廣告", priority: "week" },
-        { owner: "Yeh Andy", text: "包裝內容策展方案並提供給蔡阿達團隊推動", priority: "week" },
-        { owner: "Yeh Andy", text: "安排系統團隊配合數據串接與 Dashboard 功能開發", priority: "waiting" },
-        { owner: "呂紹平", text: "整理關鍵字與 Landing Page 對應建議提供給 OneAD", priority: "week" },
+        { owner: "Jed Lin", text: "下週向 OneAD 業務團隊布達合作方案，並安排三方策略會議", priority: "today" },
+        { owner: "蔡阿達", text: "持續提供免費 AI 建檢報告，分析客戶網站現況與目標受眾", priority: "week" },
+        { owner: "蔡阿達", text: "推動品牌履歷與新聞稿顧問服務，與 1450 合作納入顧問合約", priority: "week" },
+        { owner: "Jed Lin", text: "研究 Google AIO referral 參數，確認可否辨識 AI 推薦流量", priority: "week" },
+        { owner: "蔡阿達", text: "提供 AIO 引用次數時間粒度數據（日報/週報/月報），支持成效分析", priority: "week" },
+        { owner: "Jed Lin", text: "推動 Audience AI 資料與 awoo AI 工具串接，提升內容生成精準度", priority: "waiting" },
         { owner: "蔡阿達", text: "設計合理誘因與流程促使客戶安裝 pixel 服務", priority: "week" },
-        { owner: "蔡阿達", text: "整理 AI Agent 開發狀況，與 Yeh Andy 討論合作方向", priority: "week" },
         { owner: "Yeh Andy", text: "安排後續會議討論 AI Agent 產品深度合作", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-20",
+          title: "awoo × OneAD 雙方會議 #2 — AI 內容生成 × Audience AI × 聯合推廣",
+          time: "16:30-17:37",
+          duration: "1h07m",
+          participants: "蔡阿達、Jed Lin",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 內容生成與 SEO 優化服務模式介紹",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "以純文案方案為主，先提供客戶免費的網站技術建檢報告，指出必須修改的關鍵技術點，確保配合後再透過文章內容及工具追蹤提升 AI 推薦機率。" },
+                { speaker: "蔡阿達", role: "ada", text: "品牌履歷與新聞稿服務，與 1450 始祖網軍合作，幫助客戶建立品牌能見度與媒體背書。方案細節由我主導接洽，業務不需過多介入。" },
+                { speaker: "Jed Lin", role: "other", label: "OneAD", text: "Audience AI 透過多數據庫（聯播網、零售數據、發票載具）分析受眾行為，串接 Google、Meta、TikTok API 提供跨平台受眾定向建議。" }
+              ]
+            },
+            {
+              topic: "合作互補架構與業務推廣規劃",
+              exchanges: [
+                { speaker: "Jed Lin", role: "other", label: "OneAD", text: "雙方服務互補：awoo 專注主動搜尋的關鍵字優化，OneAD 從行為興趣與消費數據觸及潛在受眾，形成全域受眾圖譜。下週向業務團隊布達合作方案。" },
+                { speaker: "蔡阿達", role: "ada", text: "初期以免費建檢報告為提案敲門磚，客戶有興趣後安排三方策略會議，進一步討論 GU 見解與廣告規劃建議書。" }
+              ]
+            },
+            {
+              topic: "AI 推薦流量與廣告投放策略整合",
+              exchanges: [
+                { speaker: "Jed Lin", role: "other", label: "OneAD", text: "引用 CMR Interactive 調查，AIO 出現時自然搜尋點擊量明顯下降，品牌被 AI 引用可獲較高點擊與信任。需同時進行搶佔 AI 能見度與補回流量。" },
+                { speaker: "蔡阿達", role: "ada", text: "規劃結合 GA4、Pixel 數據建立量化分析體系：AIO 引用次數、品牌情感分數 EBU、五分制品質分數，協助客戶評估不同流量來源的訪客價值。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-30",
           title: "awoo × OneAD 合作案首次會議",
@@ -4577,6 +4690,73 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "呂紹平", role: "other", label: "Leon", text: "目前客戶有兩個賬號分別追蹤不同品牌，改版後將可用一個賬號切換多個 token，減少登入次數。" },
                 { speaker: "蔡阿達", role: "ada", text: "要求隨機應變處理客戶問題，確保改版順利推行。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P45: 妙平團體服 ======
+    {
+      id: "miaoping",
+      name: "妙平團體服 — 黃永宏初次交流",
+      icon: "👔",
+      category: "client",
+      lastUpdated: "2026-05-20",
+      summary: "5/20 初次線上交流 — 妙平從學生服起家（30 年），近年轉型團體服市場，三年累計銷售逾十萬件；蔡阿達建議以 BI 平台接觸多元產業，並評估網站建置與數位行銷可行性",
+      keyPoints: [
+        "妙平從<strong>學生服起家已 30 年</strong>，近年因學生數減少積極轉型團體服市場",
+        "三年內累計銷售超過<strong>十萬件團體服</strong>，設定 2036 年營業額目標 <strong>900 萬元</strong>",
+        "自有工廠優勢 — <strong>純手工裁布車縫</strong>，快速出貨且價格合理，款式多元客製化",
+        "日商未知數合作案例 — 一個月完成約 <strong>900-1000 件</strong>繡製 logo 訂單，提供一條龍服務（繡製 + 物流配送）",
+        "目標拓展：南北各一間<strong>連鎖企業顧問</strong>、20 間<strong>會計師事務所</strong>、3 間<strong>活動公關公司</strong>",
+        "目前客戶來源為<strong>朋友及設計師介紹</strong>，尚未積極經營數位行銷",
+        "蔡阿達建議以 <strong>BI 平台</strong>接觸多元產業廠商，網站建置需長期投入資源",
+        "Google 評論有負評問題（含<strong>同行惡意評論</strong>），部分已申訴刪除，需專業社群經營者協助",
+        "蔡阿達提醒網站需重視<strong>視覺設計、排版與產品整理</strong>，非僅文字列表",
+        "若客戶願意長期合作，可考慮<strong>免費架設網站、費用由月費覆蓋</strong>"
+      ],
+      chips: [
+        { icon: "👕", text: "團體服 10萬+" },
+        { icon: "🏭", text: "自有工廠" },
+        { icon: "🎯", text: "目標 900萬" },
+        { icon: "🌐", text: "評估建站中" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "協助黃永宏評估建置網站的必要性與可行性，提供建站與維護建議", priority: "week" },
+        { owner: "蔡阿達", text: "協助黃永宏了解網站流量與轉換價值，提供後續優化建議", priority: "week" },
+        { owner: "黃永宏", text: "評估並決定是否啟動網站建置計畫，整理產品資訊與視覺設計需求", priority: "waiting" },
+        { owner: "黃永宏", text: "評估是否架設粉絲專頁以增加行銷管道", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-20",
+          title: "永宏🔛蔡阿達初次線上交流",
+          time: "11:33-12:05",
+          duration: "32m",
+          participants: "蔡阿達、黃永宏（妙平團體服）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "妙平團體服業務現況與轉型目標",
+              exchanges: [
+                { speaker: "黃永宏", role: "other", label: "妙平", text: "妙平從學生服起家已 30 年，近年因學生數減少，積極轉型團體服市場。三年內累計銷售超過十萬件，設定 2036 年營業額目標 900 萬元，計畫拓展南北連鎖企業顧問、會計師事務所及活動公關公司客戶。" },
+                { speaker: "黃永宏", role: "other", label: "妙平", text: "自有工廠優勢，純手工裁布車縫，能快速且價格合理地完成訂單。與日商未知數合作，一個月內完成約 900 到 1000 件繡製 logo 訂單，提供含繡製及物流的一條龍服務。" }
+              ]
+            },
+            {
+              topic: "客戶來源與行銷策略現況",
+              exchanges: [
+                { speaker: "黃永宏", role: "other", label: "妙平", text: "目前主要客戶來源為朋友及設計師介紹，尚未積極經營粉絲專頁等數位行銷管道，考慮是否架設網站及線上訂單功能。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議以 BI 平台作為接觸多元產業廠商的管道，網站經營需投入時間與資源。若客戶願意長期合作，可考慮免費架設網站，費用由月費覆蓋。" }
+              ]
+            },
+            {
+              topic: "Google 評論管理與網站建置評估",
+              exchanges: [
+                { speaker: "黃永宏", role: "other", label: "妙平", text: "Google 評論有部分負評，包含七年前的一顆星留言，部分來自同行惡意攻擊，已向 Google 申訴成功刪除。" },
+                { speaker: "蔡阿達", role: "ada", text: "Google 評論管理需專業社群經營，避免突發問題難以處理。網站主要價值在於帶來訪客與轉換，需重視視覺設計與內容經營。若無足夠人力與目標，建議暫緩架設。" }
               ]
             }
           ]
