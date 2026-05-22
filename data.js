@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-20T19:00:00",
-  dateLabel: "2026/05/20（三）",
+  lastUpdated: "2026-05-22T19:00:00",
+  dateLabel: "2026/05/22（五）",
   stats: {
-    meetings: 85,
-    projects: 45,
+    meetings: 88,
+    projects: 47,
     partners: 16,
-    internal: 7,
-    clientCompany: 20,
-    todos: 306
+    internal: 8,
+    clientCompany: 21,
+    todos: 323
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-19",
-      summary: "5/19 AE 週會獎金說明會完成 — 獎金簡化為 MRR 業績獎金與銷售獎金，新增收款後領獎及獎金回扣機制（三區間回收）；業務團隊反映回收條款實務困難，Winny 承諾明日向麥克反映並另案處理；本週四 CS 說明會待進行",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 Weekly Sync Up 藍文甫要求重整 AE 團隊行為規範 — 特規頻繁與業績不佳需嚴格執行簽約流程；獎金辦法已正式發佈（MRR 業績獎金 + 銷售獎金），收款後領獎及獎金回扣機制生效中",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -234,7 +234,10 @@ window.WAR_ROOM_DATA = {
         "🆕 5/19 新增<strong>獎金回扣條款</strong>：客戶未付清款項依實收比例回收已發放獎金（三區間：&lt;50%、50-75%、&gt;75%）",
         "🆕 5/19 蔡阿達指出回收條款實務困難，建議設置<strong>明確責任分界與保險措施</strong>避免 AE 承擔過多風險",
         "🆕 5/19 業務反映若因 CS 服務導致客戶不付款不應由 AE 承擔，Winny 承諾<strong>特殊案例另案處理</strong>",
-        "🆕 5/19 Winny 明日（5/20）向麥克反映業務意見，尋求回收條款調整可能"
+        "🆕 5/19 Winny 明日（5/20）向麥克反映業務意見，尋求回收條款調整可能",
+        "🆕 5/22 藍文甫直言 AE 團隊需重整 — <strong>特規頻繁且業績不佳</strong>，建議主管從一開始約束成員行為",
+        "🆕 5/22 蔡阿達承諾配合改善，<strong>嚴格執行簽約流程</strong>避免未經批准的案子進入",
+        "🆕 5/22 目標減少後勤負擔與呆帳風險，提升團隊執行力與業績表現"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -248,9 +251,28 @@ window.WAR_ROOM_DATA = {
         { owner: "Winny Chiang", text: "明日（5/20）向麥克反映業務對獎金回收條款意見，請示調整可能", priority: "today" },
         { owner: "蔡阿達", text: "週四 10:00 CS 會議中說明獎金辦法", priority: "week" },
         { owner: "Winny Chiang", text: "釐清並公告獎金回收規定，建立特殊案例另案討論機制", priority: "week" },
-        { owner: "Winny Chiang", text: "與 Daisy 及蔡阿達持續收集獎金辦法調整建議", priority: "week" }
+        { owner: "Winny Chiang", text: "與 Daisy 及蔡阿達持續收集獎金辦法調整建議", priority: "week" },
+        { owner: "藍文甫", text: "協助重整 AE 團隊行為與認知，強化流程遵守與品質把關", priority: "week" },
+        { owner: "蔡阿達", text: "督促 AE 團隊嚴格執行簽約流程，減少後勤負擔與呆帳風險", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "Weekly Sync Up — AE 團隊行為規範與流程管理",
+          time: "11:01-12:50",
+          duration: "1h49m",
+          participants: "蔡阿達、Anne Chang、藍文甫、Max Huang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AE 團隊行為規範與流程嚴格執行",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "AE 團隊需重整，目前存在特規頻繁及業績不佳問題。主管應從一開始就約束成員行為，避免後續頻繁擦屁股，提升團隊執行力與業績表現。" },
+                { speaker: "蔡阿達", role: "ada", text: "理解並願意配合改善，將督促 AE 團隊嚴格執行簽約流程，避免未經流程批准的案子進入，減少後勤負擔與呆帳風險。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-19",
           title: "AE Team 週會 — 獎金辦法說明會",
@@ -502,8 +524,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-05-15",
-      summary: "5/15 代理商協議獨家條款重新定義 — 獨家代理設為可選項並明確區分權利義務；法務審核進行中；合約中多處獨家代理詞彙需刪除或明確定義；不限定區域但禁止使用競品工具",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 代理商退佣方案定案 — 非獨家佣金 6%、獨家佣金 10%（差距 4%），法務最終審核中；蔡阿達認同佣金比例與過去 MP 方案相近；Anne Chang 已標記細節並交法務確認",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -544,7 +566,10 @@ window.WAR_ROOM_DATA = {
         "🆕 5/15 獨家代理<strong>不限定區域</strong>，但需明確規範使用本公司工具、<strong>禁止使用競品產品</strong>",
         "🆕 5/15 法務提醒獨家代理詞彙之<strong>法律意涵</strong>需在合約中清楚說明",
         "🆕 5/15 藍文甫尚未完成<strong>法務審核</strong>，已初步檢視合約內容，準備與團隊進一步討論",
-        "🆕 5/15 決定先自行過一遍合約，<strong>下週市場會議中與麥克討論</strong>"
+        "🆕 5/15 決定先自行過一遍合約，<strong>下週市場會議中與麥克討論</strong>",
+        "🆕 5/22 代理商退佣方案定案 — 非獨家佣金 <strong>6%</strong>，獨家佣金 <strong>10%</strong>，差距 4% 以鼓勵獨家合約",
+        "🆕 5/22 蔡阿達認同佣金比例合理，與過去 MP 方案相近",
+        "🆕 5/22 Anne Chang 已標記細節交法務最終確認，通過後正式實施"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
@@ -579,9 +604,30 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "設計 AE 行為管理制度，違規使用候選字之 AE 限制或禁用權限", priority: "week" },
         { owner: "藍文甫", text: "追蹤客戶字庫選擇進度，逾期未完成通知 AE 並暫停後續作業", priority: "today" },
         { owner: "藍文甫", text: "與 Max Huang 共同檢視代理商協議，刪除或調整不適用的獨家條款並明確定義適用範圍", priority: "week" },
-        { owner: "Max Huang", text: "指派法務確認代理商協議條款，下次會議前完成修訂版本", priority: "week" }
+        { owner: "Max Huang", text: "指派法務確認代理商協議條款，下次會議前完成修訂版本", priority: "week" },
+        { owner: "藍文甫", text: "與 Anne Chang 完成代理商退佣方案法務最終審核", priority: "week" },
+        { owner: "蔡阿達", text: "與 Max Huang 評估佣金比例體感與誘因，確認獨家合作佣金優勢", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "Weekly Sync Up — 代理商退佣方案與獨家合作誘因",
+          time: "11:01-12:50",
+          duration: "1h49m",
+          participants: "蔡阿達、Anne Chang、藍文甫、Max Huang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商退佣方案與獨家合作誘因設計",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "退佣方案細節：非獨家代理佣金 6%，獨家代理佣金 10%，差距 4% 以鼓勵代理商簽訂獨家合約。方案已進入法務審核階段。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "實際佣金是吸引代理商獨家合作的關鍵，並提及還有其他資源支持可作為額外誘因。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "方案已標記細節並交由法務做最後確認，若有問題會再回報。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同佣金比例合理，與過去 MP 方案相近。待法務確認後正式實施。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-15",
           title: "Weekly Sync Up — 代理商協議獨家條款與法務審核",
@@ -1233,29 +1279,62 @@ window.WAR_ROOM_DATA = {
     // ====== P7: NOUVA ======
     {
       id: "nouva",
-      name: "NOUVA — 語系轉向 & SEO 策略調整",
+      name: "NOUVA — 語言學習平台 GEO 方案合作",
       icon: "🌍",
       category: "client",
-      lastUpdated: "2026-03-24",
-      summary: "從法文課轉攻英語課市場，網站語系大調整 + 合約變更",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 關鍵字策略重新定位 — 聚焦臺灣市場 3~4 主題、延伸 20~40 關鍵字，法語與英語並重（比例 3:1 或 3:2），成人與兒童產品線皆涵蓋；蔡阿達將製作關鍵字拓展報表",
       keyPoints: [
         "英語市場規模比法文大<strong>10-20 倍</strong>，決定優先推動英語課程",
         "定位「主題式英語口說」（Workshop / EMI），非傳統補習班",
         "中文內容需搬移至新站（MARS），做 <strong>301 轉址</strong>移轉權重",
-        "原兩年法文 SEO 合約需暫停調整方向"
+        "原兩年法文 SEO 合約需暫停調整方向",
+        "🆕 5/22 臺灣市場為主，聚焦 <strong>3~4 個主題</strong>，延伸出約 <strong>20~40 個關鍵字</strong>",
+        "🆕 5/22 法語與英語並重，英語與法語比例約 <strong>3:1 或 3:2</strong>",
+        "🆕 5/22 成人與兒童兩大類別，兒童英語與法語可合併分類",
+        "🆕 5/22 英語口語表達為精準關鍵字方向，符合 NOUVA 情境式英語主題課定位",
+        "🆕 5/22 品牌轉型提醒 — AI 與搜尋引擎目前認定 NOUVA 為<strong>法語教學機構</strong>，轉型需時間投入",
+        "🆕 5/22 以中文內容推廣教育理念，強調 <strong>EMI 教學法</strong>與英語口語表達"
       ],
       chips: [
         { icon: "📊", text: "市場差距 10-20x" },
-        { icon: "📄", text: "合約 2 年" },
-        { icon: "🌐", text: "新站本週上線" }
+        { icon: "🔑", text: "20-40 關鍵字" },
+        { icon: "🗂️", text: "3-4 主題" },
+        { icon: "🌐", text: "英法比 3:1" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "與瑞恩、MAX 溝通合約暫停及調整方案", priority: "week" },
-        { owner: "蔡阿達", text: "與五樓討論中文語系網站技術細節", priority: "week" },
-        { owner: "蔡阿達", text: "重新挑選中文關鍵字（英語口說 / EMI）", priority: "week" },
-        { owner: "蔡阿達", text: "協助 301 轉址（舊站→新站）", priority: "week" }
+        { owner: "蔡阿達", text: "製作包含法語與英語主題的關鍵字拓展報表，提供 3~4 個主題方向及 20~40 個延伸關鍵字", priority: "today" },
+        { owner: "蔡阿達", text: "協助挑選關鍵字主題，確保集中於少數主題以提升搜尋排名機會", priority: "week" },
+        { owner: "蔡阿達", text: "以中文內容設計推廣策略，強調 EMI 教學法與英語口語表達", priority: "week" },
+        { owner: "Janet Lin", text: "確認產品線定位，明確區分成人與兒童課程，決定法語與英語佔比", priority: "week" },
+        { owner: "Janet Lin", text: "評估英語口語主題市場需求，配合蔡阿達調整關鍵字策略", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "NOUVA 官網 GEO 方案合作狀況與資訊同步",
+          time: "13:00-13:41",
+          duration: "41m",
+          participants: "蔡阿達、Janet Lin",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "關鍵字選擇策略與主題框架",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前關鍵字排名方式可能讓客戶誤解，建議從客戶目標族群出發，先選擇廣義且難度較高的關鍵字，再延伸出 5 至 10 組相關關鍵字形成主題群。關鍵字需集中 3~4 個主題，避免過於分散。" },
+                { speaker: "Janet Lin", role: "other", label: "NOUVA", text: "公司目前主打法語教學，未來計畫擴展至多語言學習平台，短期先以臺灣市場為主。英語口語表達是精準且有搜尋量的關鍵字方向，符合公司強調的情境式英語主題課。" },
+                { speaker: "蔡阿達", role: "ada", text: "將請 AI 協助拓展關鍵字報表，涵蓋英語口語、EMI 等方向，並提供多個主題供 Janet 評估挑選。" }
+              ]
+            },
+            {
+              topic: "品牌定位轉型與長期策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "若要擴展英語課程，需重新定位品牌形象，目前 AI 與搜尋引擎認定公司為法語教學機構，轉型需投入時間與資源。" },
+                { speaker: "Janet Lin", role: "other", label: "NOUVA", text: "EMI 搜尋量不高，願意以英語口語作為主要關鍵字方向。長遠目標是多語言學習平台，短期法語與英語並重，以中文內容推廣教育理念。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-24",
           title: "NOUVA 官網 GEO 方案合作狀況同步",
@@ -2900,8 +2979,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-19",
-      summary: "5/19 GEO 顧問方案三大決議 — Prompt 引用比例 10:1（10 Prompt 配 1 篇新聞稿）納入合約、Prompt 審核由業務主管負責（不走省制）、60% 大競爭字限制討論中；三套 Prompt 工具預計六至七月整合；建站顧問合約策略調整為搭配純文案服務降低摩擦",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 新增成效保證方案（半年檢視 + 3 個月挽救期）與品牌銷售工具包；第三方客戶品牌追蹤試用方案啟動（10 prompt / 3 個月）；Prompt 引用比例 10:1 納入合約、三套工具預計六至七月整合",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -2978,7 +3057,11 @@ window.WAR_ROOM_DATA = {
         "🆕 5/19 三套 Prompt 工具整合版<strong>預計六至七月完成</strong>",
         "🆕 5/19 行銷資源盤點與檢核表需<strong>提前至合約洽談階段完成</strong>",
         "🆕 5/19 建站顧問合約策略調整：搭配<strong>純文案服務</strong>取代年約，可簽 6+12 或 6+18 個月方案",
-        "🆕 5/19 蔡阿達推動<strong>審核流程調整專案</strong>，本週推動、下週二決案"
+        "🆕 5/19 蔡阿達推動<strong>審核流程調整專案</strong>，本週推動、下週二決案",
+        "🆕 5/22 成效保證方案 — 設定<strong>半年檢視基準點</strong>，若未達標啟動 3 個月挽救期，最長 9 個月可解約",
+        "🆕 5/22 品牌客戶銷售工具包 — Max Huang 分析競品五步驟品牌導入方法論，awoo 在 <strong>persona 與 user journey</strong> 設計上具優勢",
+        "🆕 5/22 第三方客戶試用品牌追蹤方案 — 協調彤彤開設 Negation 賬號，提供 <strong>10 個 prompt 試用</strong>並追蹤三個月成效",
+        "🆕 5/22 報價流程先行，特案合約條款後補；需法務及高層確認"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -3040,9 +3123,45 @@ window.WAR_ROOM_DATA = {
         { owner: "Anne Chang", text: "將 Prompt 引用比例限制納入合約條款並明確審核流程", priority: "week" },
         { owner: "林思吾", text: "推動三套 Prompt 工具版本整合（預計六至七月完成）", priority: "week" },
         { owner: "蔡阿達", text: "本週推動審核流程調整專案，下週二（5/26）決案", priority: "today" },
-        { owner: "蔡阿達", text: "與呂紹平及利友哥討論建站顧問與顧問案合約分工", priority: "week" }
+        { owner: "蔡阿達", text: "與呂紹平及利友哥討論建站顧問與顧問案合約分工", priority: "week" },
+        { owner: "蔡阿達", text: "與 CS 部門確認成效基準點可行性，將半年檢視及三個月挽救期條款納入合約", priority: "week" },
+        { owner: "蔡阿達", text: "與 Mike 確認特案合約條款是否符合公司政策及法務要求", priority: "week" },
+        { owner: "Max Huang", text: "收集整理銷售工具包（sales kit），強化品牌客戶 pitch 說服力", priority: "week" },
+        { owner: "蔡阿達", text: "協調彤彤開設 Negation 品牌追蹤試用賬號，規劃 10 個 prompt 三個月試用", priority: "week" },
+        { owner: "蔡阿達", text: "與各 AE 確認現有案子狀況，配合 Max Huang 完成銷售工具優化", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "Weekly Sync Up — 成效保證方案與品牌銷售工具",
+          time: "11:01-12:50",
+          duration: "1h49m",
+          participants: "蔡阿達、Anne Chang、藍文甫、Max Huang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "客戶成效保證方案與合約彈性設計",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "提出成效保證方案：設定半年檢視基準點，若未達標可啟動三個月挽救期，最長九個月可解約，降低客戶對長期合約的疑慮。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "此類特案需在合約中特別標註，並需法務審核。報價流程先行，合約中再補充特案條款。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "會通知法務及相關人員確認方案可行性。" }
+              ]
+            },
+            {
+              topic: "產品銷售包裝與品牌客戶需求分析",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "分享競爭對手五步驟品牌導入方法論（公關出發），指出 awoo 產品在 persona 與用戶旅程設計上具優勢，需提供團隊銷售工具包以利推廣。" },
+                { speaker: "蔡阿達", role: "ada", text: "將與 AE 確認現況並配合提供所需資料。" }
+              ]
+            },
+            {
+              topic: "第三方客戶品牌追蹤試用方案",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "提議協調彤彤開設 Negation 賬號，為第三方客戶提供品牌專屬試用賬號，約 10 個 prompt 試用並追蹤三個月成效，引導客戶轉為付費顧問服務。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-19",
           title: "GEO 顧問方案討論 — Prompt 比例與審核流程",
@@ -4757,6 +4876,126 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "黃永宏", role: "other", label: "妙平", text: "Google 評論有部分負評，包含七年前的一顆星留言，部分來自同行惡意攻擊，已向 Google 申訴成功刪除。" },
                 { speaker: "蔡阿達", role: "ada", text: "Google 評論管理需專業社群經營，避免突發問題難以處理。網站主要價值在於帶來訪客與轉換，需重視視覺設計與內容經營。若無足夠人力與目標，建議暫緩架設。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P46: 阿波面試 ======
+    {
+      id: "apo-interview",
+      name: "阿波（Jacky Huang）— AI 工具開發人才面試",
+      icon: "🧑‍💻",
+      category: "internal",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 初次面談 — 統計背景、五年數據分析經驗，近兩年結合生成式 AI 開發產品（音樂社群網站、樂團 POS 系統）；蔡阿達表示本次為認識階段，無需當下決定",
+      keyPoints: [
+        "阿波（Jacky Huang）統計背景，<strong>五年數據分析經驗</strong>，擅長將模糊需求轉化為系統架構",
+        "近兩年結合生成式 AI 開發產品：<strong>音樂社群網站（龐克擂臺）</strong>與<strong>高雄百樂門酒館 POS 系統</strong>",
+        "主要使用 AI 工具：<strong>Claude、GPT、Gemini、Perplexity</strong>，部署於 Vercel",
+        "競爭對手分析方法論 — 先用 Perplexity 廣泛收集資料，再進行模組化產品分析",
+        "文章生成工具規劃 — 需明確定義文章類型、長度、結構，並控制 token 成本",
+        "尚未嘗試金流整合，AI 視覺設計仍需人工設計師介入",
+        "蔡阿達表示<strong>本次為認識階段</strong>，後續由內部相關人員安排跟進"
+      ],
+      chips: [
+        { icon: "📊", text: "數據分析 5年" },
+        { icon: "🤖", text: "AI 產品開發" },
+        { icon: "🎸", text: "音樂產業經驗" },
+        { icon: "🔍", text: "認識階段" }
+      ],
+      todos: [
+        { owner: "awoo 內部", text: "評估阿波之 AI 產品開發能力與公司需求匹配度，安排後續面談", priority: "week" },
+        { owner: "awoo 內部", text: "與阿波保持聯繫，安排後續合作或產品開發事宜", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "阿波 <> awoo 團隊",
+          time: "17:00-17:56",
+          duration: "56m",
+          participants: "蔡阿達、阿波（Jacky Huang）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "阿波自我介紹與 AI 工具開發經驗",
+              exchanges: [
+                { speaker: "阿波", role: "other", label: "候選人", text: "統計背景，五年數據分析經驗，近兩年結合生成式 AI 開發產品，包含音樂社群網站「龐克擂臺」與高雄百樂門酒館 POS 系統。擅長將模糊需求轉化為系統架構，主要使用 Claude、GPT、Gemini、Perplexity。" },
+                { speaker: "阿波", role: "other", label: "候選人", text: "使用 Vercel 部署前後端，但 bug log 訊息過於模糊增加除錯難度。尚未嘗試金流整合，AI 視覺設計仍需人工設計師介入。" }
+              ]
+            },
+            {
+              topic: "競爭對手分析與文章生成工具規劃",
+              exchanges: [
+                { speaker: "阿波", role: "other", label: "候選人", text: "競爭對手分析先用 Perplexity 廣泛收集，再模組化分析產品特性與客戶需求。文章生成工具需明確分類文章類型、長度與結構，長文需標題、摘要、免責聲明，並控制 token 成本與每日產生量。" }
+              ]
+            },
+            {
+              topic: "會議結論與後續安排",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "本次會議主要為了解與認識，無需當下做出決定。後續由公司相關人員保持聯繫並安排跟進事宜。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P47: 建站顧問合約模式 ======
+    {
+      id: "website-consulting-contract",
+      name: "建站顧問服務合約模式 — 收費與第三方合作架構",
+      icon: "🏗️",
+      category: "company",
+      lastUpdated: "2026-05-22",
+      summary: "5/22 決議建站加顧問服務採一次性簽訂 18 個月合約、固定每月收費 3 萬元，不因網站上線延遲調整；第三方建站廠商由客戶直接簽約、awoo 負責監管協調",
+      keyPoints: [
+        "建站加顧問服務合約統一為 <strong>18 個月固定收費</strong>，每月 <strong>3 萬元</strong>",
+        "不因網站上線時間延遲而調整收費 — 避免服務啟動延後的收費問題",
+        "AE 協助督促客戶網站上線，<strong>CS 負責後續維護</strong>",
+        "第三方建站合作：客戶<strong>直接與建站廠商簽約</strong>，awoo 負責監管與協調",
+        "藍文甫建議不應由 awoo 包山包海，若責任與收益不成正比則<strong>不承接</strong>",
+        "考慮簽訂合作協議明確規範第三方責任與服務標準",
+        "需與<strong>財務確認收入認列</strong>，避免服務未實質提供影響財務報表"
+      ],
+      chips: [
+        { icon: "📄", text: "18個月合約" },
+        { icon: "💰", text: "3萬/月" },
+        { icon: "🤝", text: "第三方簽約" },
+        { icon: "⚖️", text: "財務確認中" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "推動建站加顧問服務合約統一為 18 個月固定收費，與團隊確認執行細節", priority: "week" },
+        { owner: "蔡阿達", text: "與維尼及財務部門協調，確認合約模式在財務認列及法務合規上的可行性", priority: "week" },
+        { owner: "藍文甫", text: "制定合作廠商的合作協議，明確權利義務及責任範圍", priority: "week" },
+        { owner: "蔡阿達", text: "持續監督第三方建站廠商服務品質，必要時簽訂補充合約條款", priority: "week" },
+        { owner: "Anne Chang", text: "安排與維尼召開會議，討論合約及財務認列相關細節", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-22",
+          title: "Weekly Sync Up — 建站顧問合約與第三方合作模式",
+          time: "11:01-12:50",
+          duration: "1h49m",
+          participants: "蔡阿達、Anne Chang、藍文甫、Max Huang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "建站顧問服務合約收費模式調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "提出以第三方客戶試用品牌賬號追蹤成效，促進後續顧問服務需求。建站加顧問合約統一為 18 個月固定每月收費 3 萬元，不因上線延遲調整。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "現行系統無法模糊建站與顧問服務時間，需明確訂定服務期間以利專案登記與財務預估。建議與維尼召開會議確認認列細節。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "此模式可能引發客戶質疑未提供實質服務仍收費，建議合約明確規範客戶承擔風險。" }
+              ]
+            },
+            {
+              topic: "第三方建站合作模式與責任分配",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前與固定第三方合作建站，廠商配合度高且技術能力良好，將持續監督並願意與廠商補簽約束性合約。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "建站廠商應直接與客戶簽約，避免 awoo 承擔過多責任。若責任與收益不成正比且風險過大，建議不承接。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "可考慮由 awoo 向建站廠商收取退佣，但蔡阿達認為財務上較複雜且收益有限。" }
               ]
             }
           ]
