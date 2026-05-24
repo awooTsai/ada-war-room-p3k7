@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-22T19:00:00",
-  dateLabel: "2026/05/22（五）",
+  lastUpdated: "2026-05-24T19:00:00",
+  dateLabel: "2026/05/24（日）",
   stats: {
-    meetings: 88,
+    meetings: 89,
     projects: 47,
     partners: 16,
     internal: 8,
     clientCompany: 21,
-    todos: 323
+    todos: 329
   },
 
   projects: [
@@ -2979,8 +2979,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-22",
-      summary: "5/22 新增成效保證方案（半年檢視 + 3 個月挽救期）與品牌銷售工具包；第三方客戶品牌追蹤試用方案啟動（10 prompt / 3 個月）；Prompt 引用比例 10:1 納入合約、三套工具預計六至七月整合",
+      lastUpdated: "2026-05-24",
+      summary: "5/21 產品月會更新 — 權限管理系統正式上線（Org→Brand 兩層、四角色）；Description Writer Q3 起投入 30-40% 資源做 end-to-end 串接；環球客戶 Search 功能異常建議續約時移除（MR -2~3 萬）；More Sweet 工具（蔡阿達主導 MVP）預計 Q2-Q3 完成",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3061,7 +3061,16 @@ window.WAR_ROOM_DATA = {
         "🆕 5/22 成效保證方案 — 設定<strong>半年檢視基準點</strong>，若未達標啟動 3 個月挽救期，最長 9 個月可解約",
         "🆕 5/22 品牌客戶銷售工具包 — Max Huang 分析競品五步驟品牌導入方法論，awoo 在 <strong>persona 與 user journey</strong> 設計上具優勢",
         "🆕 5/22 第三方客戶試用品牌追蹤方案 — 協調彤彤開設 Negation 賬號，提供 <strong>10 個 prompt 試用</strong>並追蹤三個月成效",
-        "🆕 5/22 報價流程先行，特案合約條款後補；需法務及高層確認"
+        "🆕 5/22 報價流程先行，特案合約條款後補；需法務及高層確認",
+        "🆕 5/21 產品月會：<strong>權限管理系統正式上線</strong> — Org→Brand 兩層架構、四角色（System Admin/Org Admin/Editor/Viewer）、批次邀請最多 10 人",
+        "🆕 5/21 MP 與 GEO 帳號<strong>不互通</strong>；業務主管 Org Admin 嚴禁邀請外部人員；Editor 無法自行調整 prompt 配額",
+        "🆕 5/21 環球客戶 Search 功能異常（MR 約 10 萬），<strong>建議下次續約移除</strong>（MR 減少約 2-3 萬），Vivian 已開始暗示客戶",
+        "🆕 5/21 Description Writer 日本 POC 客戶需依產業<strong>客製化 prompt</strong>，否則產出偏 B2C 風格；Q3 起投入 <strong>30-40% 資源</strong>優化 end-to-end 流程",
+        "🆕 5/21 競品分析功能優化 — <strong>預設帶入高點擊競品</strong>降低手動搜尋負擔、新增<strong>別名搜尋</strong>功能",
+        "🆕 5/21 <strong>More Sweet 工具</strong>（蔡阿達主導 MVP）：爬取客戶網站內容 → LoM 建立品牌 AI 知識庫 → 結合 prompt 生成文章，Q2-Q3 完成",
+        "🆕 5/21 新 prompt 生成工具：整合 <strong>People Also Ask + User Profile + User Journey</strong> 四階段（Awareness→Consideration→Decision→Usage）",
+        "🆕 5/21 回應明細將新增 AIO 的 <strong>People Also Ask 與引用來源段落</strong>關聯（預計數週內上線）",
+        "🆕 5/21 <strong>Google I/O 2026</strong> 宣布七月起搜尋入口整合購物，awoo 技術時機符合市場節奏"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -3069,7 +3078,9 @@ window.WAR_ROOM_DATA = {
         { icon: "📅", text: "約訪 週二 11-12" },
         { icon: "🌐", text: "MarTech Asia 5/27" },
         { icon: "📝", text: "10 Prompt:1 新聞稿" },
-        { icon: "🆕", text: "工具整合 6-7月" }
+        { icon: "🆕", text: "工具整合 6-7月" },
+        { icon: "🔐", text: "權限管理上線" },
+        { icon: "🛠️", text: "More Sweet MVP" }
       ],
       todos: [
         { owner: "Fenix Li", text: "週五完成迭代內容更新（一頁說明 + 一頁主題動作）並交付 A 與 CS 團隊", priority: "today" },
@@ -3128,9 +3139,52 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "與 Mike 確認特案合約條款是否符合公司政策及法務要求", priority: "week" },
         { owner: "Max Huang", text: "收集整理銷售工具包（sales kit），強化品牌客戶 pitch 說服力", priority: "week" },
         { owner: "蔡阿達", text: "協調彤彤開設 Negation 品牌追蹤試用賬號，規劃 10 個 prompt 三個月試用", priority: "week" },
-        { owner: "蔡阿達", text: "與各 AE 確認現有案子狀況，配合 Max Huang 完成銷售工具優化", priority: "week" }
+        { owner: "蔡阿達", text: "與各 AE 確認現有案子狀況，配合 Max Huang 完成銷售工具優化", priority: "week" },
+        { owner: "Nancy Cheng", text: "與阿迪討論預防 Search 異常機制", priority: "week" },
+        { owner: "Vivian Chang", text: "與業務端及 Mike 確認是否建議環球移除 Search 功能", priority: "week" },
+        { owner: "Yoshie Yeoh", text: "提供兩家客戶 PID 給 Justin + 阿迪做 Description Writer 測試", priority: "week" },
+        { owner: "Justin Tsai", text: "評估 Description Writer 客製化可行性", priority: "week" },
+        { owner: "Nancy + Knack", text: "優化競品分析下拉選單（預設帶入高點擊競品）", priority: "week" },
+        { owner: "Nancy + Knack", text: "新增競品別名搜尋功能", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-21",
+          title: "awoo 產品月會 — GEO Suite 系統更新（2026/5）",
+          time: "14:00-15:12",
+          duration: "1h12m",
+          participants: "蔡阿達、何建彤、YC、Leon、Anne Chang、藍文甫、Justin Tsai、林思吾、Nancy Cheng、Vivian Chang、Yoshie Yeoh、Knack Hung 等約 25 人",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "環球客戶 Search 功能異常與產品策略",
+              exchanges: [
+                { speaker: "Vivian Chang", role: "other", label: "CS", text: "環球客戶（MP，MR 約 10 萬）近期多次反映 Search 功能異常，商品無法被搜尋到，排查後問題自行恢復，難以追蹤根因。" },
+                { speaker: "Nancy Cheng", role: "other", label: "產品", text: "內部無足夠人力持續優化 Search 功能，短期由阿迪協助，長期建議下次續約時移除 Search 功能，MR 減少約 2-3 萬。" }
+              ]
+            },
+            {
+              topic: "Description Writer 日本需求與 Q3 資源規劃",
+              exchanges: [
+                { speaker: "Yoshie Yeoh", role: "other", label: "日本", text: "日本 GEO Suite POC 客戶（B2B 電商）需要依產業客製化 prompt，否則產出偏 B2C 風格無法使用。" },
+                { speaker: "Justin Tsai", role: "other", label: "產品", text: "將評估個別客戶客製化可行性，先從兩家客戶 PID 樣本做測試。Q3 起整體 AMP 優化含 Description Writer 投入 30-40% 資源。" }
+              ]
+            },
+            {
+              topic: "權限管理系統上線與 More Sweet 工具規劃",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "產品副總", text: "權限管理系統正式上線：Org→Brand 兩層架構、四角色、批次邀請最多 10 人、Google 登入優先。MP 與 GEO 帳號不互通。" },
+                { speaker: "蔡阿達", role: "ada", text: "More Sweet 工具我主導 MVP 開發：爬取客戶網站內容，透過 LoM 建立品牌 AI 知識庫，再結合 prompt 生成文章，預計 Q2 到 Q3 完成。" }
+              ]
+            },
+            {
+              topic: "Google I/O 2026 與市場趨勢",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "Google I/O 2026 宣布七月起搜尋入口將整合購物功能，awoo 技術發展時機符合市場節奏。回應明細將新增 AIO 的 People Also Ask 與引用來源段落關聯，預計數週內上線。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-22",
           title: "Weekly Sync Up — 成效保證方案與品牌銷售工具",
