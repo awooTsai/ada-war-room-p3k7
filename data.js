@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-24T19:00:00",
-  dateLabel: "2026/05/24（日）",
+  lastUpdated: "2026-05-25T19:00:00",
+  dateLabel: "2026/05/25（一）",
   stats: {
-    meetings: 89,
-    projects: 47,
+    meetings: 93,
+    projects: 49,
     partners: 16,
     internal: 8,
-    clientCompany: 21,
-    todos: 329
+    clientCompany: 23,
+    todos: 348
   },
 
   projects: [
@@ -2979,8 +2979,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-24",
-      summary: "5/21 產品月會更新 — 權限管理系統正式上線（Org→Brand 兩層、四角色）；Description Writer Q3 起投入 30-40% 資源做 end-to-end 串接；環球客戶 Search 功能異常建議續約時移除（MR -2~3 萬）；More Sweet 工具（蔡阿達主導 MVP）預計 Q2-Q3 完成",
+      lastUpdated: "2026-05-25",
+      summary: "5/25 Staff Meeting — 林思吾分析 Google I/O 2026 影響，電商須整合 UCP 協議支援 AI agent 購物；awoo 應成為技術中介者；蔡阿達報告半年業績，平均客單價約 4 萬元作為商機換算基準",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3070,7 +3070,13 @@ window.WAR_ROOM_DATA = {
         "🆕 5/21 <strong>More Sweet 工具</strong>（蔡阿達主導 MVP）：爬取客戶網站內容 → LoM 建立品牌 AI 知識庫 → 結合 prompt 生成文章，Q2-Q3 完成",
         "🆕 5/21 新 prompt 生成工具：整合 <strong>People Also Ask + User Profile + User Journey</strong> 四階段（Awareness→Consideration→Decision→Usage）",
         "🆕 5/21 回應明細將新增 AIO 的 <strong>People Also Ask 與引用來源段落</strong>關聯（預計數週內上線）",
-        "🆕 5/21 <strong>Google I/O 2026</strong> 宣布七月起搜尋入口整合購物，awoo 技術時機符合市場節奏"
+        "🆕 5/21 <strong>Google I/O 2026</strong> 宣布七月起搜尋入口整合購物，awoo 技術時機符合市場節奏",
+        "🆕 5/25 林思吾分析 Google I/O 2026 影響 — <strong>品牌如何被 AI 描述</strong>將成為關鍵，數位公關活動直接影響 AI 引用與推薦",
+        "🆕 5/25 <strong>UCP 協議</strong>（Google/Amazon/Meta/Salesforce/微軟共同完成）— 電商必須整合 UCP 與 AP2 以支援 AI agent 購物",
+        "🆕 5/25 awoo 應成為 UCP 協議<strong>關鍵中介者</strong>，協助電商客戶完成技術升級；系統商多老舊抗拒新技術",
+        "🆕 5/25 <strong>MOPA 概念</strong>（AI 詢問後實體購買）— 用流量指標衡量 AI 成效是錯誤的，需重新思考品牌衡量標準",
+        "🆕 5/25 Max 回饋競爭對手<strong>喬布鳥</strong>產品說明會 — 對方認為已落後 awoo 半年，需維持速度優勢",
+        "🆕 5/25 蔡阿達報告半年業績 — <strong>平均客單價約 4 萬元</strong>作為商機換算基準，業務開發需與客服部門密切協作"
       ],
       chips: [
         { icon: "🧪", text: "POC 臺灣 ≤4" },
@@ -3145,9 +3151,39 @@ window.WAR_ROOM_DATA = {
         { owner: "Yoshie Yeoh", text: "提供兩家客戶 PID 給 Justin + 阿迪做 Description Writer 測試", priority: "week" },
         { owner: "Justin Tsai", text: "評估 Description Writer 客製化可行性", priority: "week" },
         { owner: "Nancy + Knack", text: "優化競品分析下拉選單（預設帶入高點擊競品）", priority: "week" },
-        { owner: "Nancy + Knack", text: "新增競品別名搜尋功能", priority: "week" }
+        { owner: "Nancy + Knack", text: "新增競品別名搜尋功能", priority: "week" },
+        { owner: "Steven", text: "準備電商 UCP 協議簡報，分析可協助的電商客群與技術方案", priority: "week" },
+        { owner: "小西", text: "準備系統面對 Google I/O 2026 後的應對措施", priority: "week" },
+        { owner: "SGS 團隊", text: "準備 Google 社區變化及對應策略簡報（10-15 分鐘）", priority: "week" },
+        { owner: "Sales 團隊", text: "準備 AI 廣告相關簡報，拼湊 AI 界面廣告策略", priority: "week" },
+        { owner: "李斌", text: "準備使用者行為改變簡報，納入 MOPA 概念整理", priority: "week" },
+        { owner: "Amber", text: "準備總結簡報 — 搜尋、廣告及使用者行為變化的機會與挑戰", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-25",
+          title: "預算會議 & Staff Meeting TW",
+          time: "10:13-10:47",
+          duration: "34m",
+          participants: "林思吾、蔡阿達、小西、Steven、李斌、Amber、Max",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Google I/O 2026 影響與品牌數位公關策略",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "麥可", text: "品牌如何被 AI 描述將成為關鍵訊息，數位公關工作直接影響 AI 對品牌的引用與推薦。Google 與 Amazon、Meta、Salesforce、微軟共同完成 UCP 協議，電商必須整合 UCP 與 AP2 以支援 AI agent 購物。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "過去用戶行為以點擊為主，未來點擊將轉化為 AI 能見度，網站必須對 AI agent 友好。Max 參加喬布鳥產品說明會，對方認為已落後我們半年，團隊需維持速度優勢。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "介紹 MOPA 概念（AI 詢問後實體購買），用流量指標衡量 AI 成效是錯誤的。品牌指標不應綁定排名或流量，需重新思考與客戶溝通的衡量標準。" }
+              ]
+            },
+            {
+              topic: "業務部門半年業績與開發策略報告",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "整理前五個月業績數據，目前平均客單價約 4 萬元，將以此作為商機換算基準，評估需要多少商機才能達成目標。業務開發需與客服部門密切合作以提升整體業績。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-21",
           title: "awoo 產品月會 — GEO Suite 系統更新（2026/5）",
@@ -3577,8 +3613,8 @@ window.WAR_ROOM_DATA = {
       name: "雅虎 — 廣編稿 AI Visibility 合作",
       icon: "📰",
       category: "partner",
-      lastUpdated: "2026-05-18",
-      summary: "5/18 向 Yahoo 團隊完成 GEO Suite 後台 Demo — 以 NG 品牌為案例展示五大指標（品牌提及率 37.5%）、AI 文章延伸策略（一篇延三篇）、競爭分析與報表功能規劃",
+      lastUpdated: "2026-05-25",
+      summary: "5/25 Seasalt.ai 平台帳號架構規劃 — 蔡阿達與何建彤、Knack Hung 討論 Org 與品牌管理流程；雅虎 MG 品牌配額 150 提示詞；計畫為三間代理機構開設獨立 Org，試用帳號統一管理",
       keyPoints: [
         "雅虎作為媒體角色，<strong>廣編稿是其主要且賺錢的產品線</strong>",
         "利用 AI 工具從雅虎提供的新聞稿<strong>延伸出多篇文章</strong>，根據客戶回饋持續優化",
@@ -3600,7 +3636,12 @@ window.WAR_ROOM_DATA = {
         "🆕 5/18 文章生成考量 <strong>E-A-T 信號</strong>與避免虛構，利用 Prompt 產生大綱再生成內容",
         "🆕 5/18 <strong>競爭對手多品牌篩選功能</strong>預計月底上線，排名依 AI 回應中品牌提及先後順序",
         "🆕 5/18 <strong>報表匯出功能</strong>開發中，後台帳號系統將從 token 改為帳密登入",
-        "🆕 5/18 Sean Chiang 對合作模式反應正面，約定後續持續討論合作細節與銷售策略"
+        "🆕 5/18 Sean Chiang 對合作模式反應正面，約定後續持續討論合作細節與銷售策略",
+        "🆕 5/25 Seasalt.ai 平台帳號架構規劃 — 蔡阿達與何建彤、Knack Hung 討論 <strong>Org 與品牌管理流程</strong>",
+        "🆕 5/25 雅虎 MG 品牌<strong>配額約 150 個提示詞</strong>，排程每三天執行一次",
+        "🆕 5/25 計畫為<strong>三間代理機構分別開設獨立 Org</strong>，試用帳號統一管理、品牌預設 3 個月使用期限",
+        "🆕 5/25 代理機構多為外包，客戶不直接登入系統，<strong>提示詞僅為結果</strong>，客戶需完整解決方案搭配顧問服務",
+        "🆕 5/25 Org 間品牌搬移<strong>技術可行但無介面</strong>，需 Knack Hung 人工處理"
       ],
       chips: [
         { icon: "📰", text: "雅虎廣編稿" },
@@ -3614,9 +3655,39 @@ window.WAR_ROOM_DATA = {
         { owner: "呂紹平（Leon）", text: "月底前完成競爭對手多品牌篩選功能上線", priority: "week" },
         { owner: "呂紹平（Leon）", text: "更新後台帳號系統為帳密登入，支援多品牌切換", priority: "week" },
         { owner: "蔡阿達", text: "制定雅虎合作案定價模式（以工具使用費計價）", priority: "week" },
-        { owner: "呂紹平（Leon）", text: "開發報表匯出功能，方便客戶驗收合作成效", priority: "week" }
+        { owner: "呂紹平（Leon）", text: "開發報表匯出功能，方便客戶驗收合作成效", priority: "week" },
+        { owner: "蔡阿達", text: "決定並告知 Knack Hung 需開立的 Org 數量及名稱", priority: "today" },
+        { owner: "Knack Hung", text: "協助開立指定 Org 帳號，示範品牌建立與提示詞管理流程", priority: "waiting" },
+        { owner: "蔡阿達", text: "完成品牌提示詞設定後通知 Knack Hung 開啟排程", priority: "week" },
+        { owner: "蔡阿達", text: "確認各代理機構帳號權限分配方案（統一管理或分別開立 Org）", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-25",
+          title: "達哥帳號樂園創建 — Seasalt.ai 平台帳號架構規劃",
+          time: "16:30-17:13",
+          duration: "43m",
+          participants: "蔡阿達、何建彤（彤²）、Knack Hung（納克）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "雅虎帳號權限與 MG 品牌帳戶開通",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "因權限未開通無法看到 MG 品牌，確認需接受邀請信後才能啟用。" },
+                { speaker: "Knack Hung", role: "other", label: "Seasalt.ai", text: "說明品牌管理流程，包括新增品牌、設定提示詞及成員管理。每個品牌有提示詞配額限制，雅虎 MG 品牌配額約 150 個。排程每三天執行一次，需完成提示詞設定後由我協助開啟。" },
+                { speaker: "何建彤", role: "other", label: "Seasalt.ai", text: "建議依代理機構數量開設多個 Org 以利管理，避免品牌搬移困難。多個 Org 管理較複雜，需定期關閉不使用帳號。" }
+              ]
+            },
+            {
+              topic: "代理機構 Org 架構與試用帳號管理策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "計畫為三間代理機構分別開設獨立 Org，試用帳號統一管理，品牌帳號預設 3 個月期限，正式合作後再搬移至正式 Org。代理機構多為外包，客戶不直接登入系統，提示詞僅為結果，客戶需完整解決方案搭配顧問服務。" },
+                { speaker: "何建彤", role: "other", label: "Seasalt.ai", text: "認同此做法。依客戶類型（代理機構、直客、顧問）預先建立對應 Org。Org 間品牌搬移技術可行但目前無介面，需人工處理。" },
+                { speaker: "Knack Hung", role: "other", label: "Seasalt.ai", text: "若代理機構需主控權則必須分組織管理，避免權限混亂。試用客戶預設排程期限為 3 個月。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-18",
           title: "Awoo GEO Suite 後台介紹 & 成效解析",
@@ -5050,6 +5121,132 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "目前與固定第三方合作建站，廠商配合度高且技術能力良好，將持續監督並願意與廠商補簽約束性合約。" },
                 { speaker: "藍文甫", role: "other", label: "Leo", text: "建站廠商應直接與客戶簽約，避免 awoo 承擔過多責任。若責任與收益不成正比且風險過大，建議不承接。" },
                 { speaker: "Max Huang", role: "other", label: "顧問", text: "可考慮由 awoo 向建站廠商收取退佣，但蔡阿達認為財務上較複雜且收益有限。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P48: 偉強官網 GEO 合作 ======
+    {
+      id: "weiqiang-geo",
+      name: "偉強股份有限公司 — 官網 GEO 技術合作",
+      icon: "🔌",
+      category: "client",
+      lastUpdated: "2026-05-25",
+      summary: "電子零組件代理商首次洽談 — 網站 AI 能見度偏低，聚焦 Schema 結構化資料導入與 B2B 搜尋優化",
+      keyPoints: [
+        "偉強為<strong>電子零組件代理商</strong>，主要客群為國內 B2B 大中型工廠",
+        "網站剛上線且缺乏專人經營，<strong>搜尋排名與 AI 能見度極低</strong>",
+        "AI 誤將偉強與華晨電機視為同一廠商 — 華晨為製造商，偉強為代理商，<strong>需透過結構化資料糾正</strong>",
+        "客戶強項為提供<strong>停產產品替代方案</strong>，客戶已開始用 ChatGPT 搜尋替代品但搜不到偉強",
+        "網站<strong>未使用 Schema 結構化資料</strong>，蔡阿達說明 Schema 對爬蟲理解網站內容的重要性",
+        "目前僅服務國內市場，<strong>無英文版網站</strong>，國外市場尚未開發"
+      ],
+      chips: [
+        { icon: "🔌", text: "電子零組件" },
+        { icon: "🏭", text: "B2B 代理商" },
+        { icon: "📊", text: "Schema 導入" },
+        { icon: "🤖", text: "AI 能見度偏低" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供偉強 Schema 結構化資料導入方案與報價", priority: "week" },
+        { owner: "蔡阿達", text: "協助偉強釐清 AI 將偉強與華晨電機混淆的問題", priority: "week" },
+        { owner: "方品莊", text: "整理產品替代方案資料，供網站內容優化使用", priority: "waiting" },
+        { owner: "方品莊", text: "確認 B2B 客群定位，評估英文版網站需求", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-25",
+          title: "偉強官網 GEO 技術合作",
+          time: "15:00-15:45",
+          duration: "45m",
+          participants: "蔡阿達、方品莊（偉強）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "偉強網站 AI 能見度現況與問題分析",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "報告是基於爬蟲與 AI 運算，反映偉強網站在 AI 眼中的現況。網站剛上線且尚未優化，AI 認為偉強是電子零組件代理商，但將偉強與華晨電機混淆。網站不僅要好看，更要能被搜尋到並服務訪客。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "華晨為製造商，偉強為代理商，兩者無關聯。公司網站雖有但未積極經營，在 Google 搜尋中難以找到。客戶多透過 ChatGPT 等 AI 工具搜尋替代品，搜尋能見度不足是目前的痛點。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "競爭對手眾多，偉強強項在於提供停產產品替代品，希望透過網站讓客戶搜尋替代品時能找到偉強代理的品牌。" }
+              ]
+            },
+            {
+              topic: "網站優化技術與合作方向",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹 Schema 結構化資料對爬蟲的重要性。Schema 是寫給爬蟲看的結構化資料，能幫助搜尋引擎理解網站內容，提升搜尋能見度。目前偉強網站尚未使用此技術。" },
+                { speaker: "蔡阿達", role: "ada", text: "網站設計公司通常只確保網站好用與穩定，未必做技術與內容優化。若要被 AI 推薦，必須額外投入優化工作。可協助偉強檢視並優化不易被察覺的技術細節。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "希望透過網站讓客戶搜尋替代品時找到偉強代理的產品，期待蔡阿達團隊提供技術與內容優化服務。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P49: 小宇宙牙醫診所 ======
+    {
+      id: "xiaoyuzhou-dental",
+      name: "小宇宙牙醫診所 — 官網 AI 能見度健檢與合作",
+      icon: "🦷",
+      category: "client",
+      lastUpdated: "2026-05-25",
+      summary: "首次洽談 — 工時包方案合作模式，聚焦植牙與矯正品牌定位，三方合作架構（awoo + 診所 + 陽金快客）",
+      keyPoints: [
+        "診所業務涵蓋矯正、兒童牙科、植牙、<strong>全口重建（Ongoing 術式）</strong>為未來發展重點",
+        "網站由<strong>陽金快客</strong>使用模板建置，meta description 重複率高、結構化資料未完善",
+        "全口重建患者數量少但<strong>成交率高</strong>，目前主要靠患者推薦，網路曝光不足",
+        "蔡阿達提出<strong>三方合作模式</strong>：awoo（顧問與技術）+ 診所（內容素材）+ 陽金快客（網站維護）",
+        "合作方案：選定 <strong>4 主題 / 20 關鍵字 / 60 Prompt</strong>，提供 6 份建議書",
+        "內容產出可由客戶提供素材，<strong>團隊用 AI 生成並潤色</strong>，客戶確認正確性即可",
+        "蔡阿達強調<strong>不保證排名</strong>，成效受多方因素影響，但提供持續支援與優化"
+      ],
+      chips: [
+        { icon: "🦷", text: "牙醫診所" },
+        { icon: "🎯", text: "植牙+矯正" },
+        { icon: "📋", text: "工時包方案" },
+        { icon: "🤝", text: "三方合作" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供過往醫美及牙科成功案例給 Sarah Yeh 參考", priority: "today" },
+        { owner: "蔡阿達", text: "規劃 4 主題 / 20 關鍵字 / 60 Prompt 方案", priority: "week" },
+        { owner: "蔡阿達", text: "與陽金快客協調技術修改範圍與報價", priority: "week" },
+        { owner: "Sarah Yeh", text: "與團隊定義品牌聚焦主題（植牙 + 矯正優先）", priority: "waiting" },
+        { owner: "雨桐", text: "協助產出全口重建與高端植牙專業文章素材", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-25",
+          title: "小宇宙牙醫診所官網 AI 能見度健檢與合作洽談",
+          time: "13:46-14:41",
+          duration: "55m",
+          participants: "蔡阿達、Sarah Yeh（小宇宙牙醫）、雨桐（小宇宙牙醫）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站現況分析與 SEO 優化需求",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "網站目前涵蓋多項牙科服務但缺乏明確主打項目，建議聚焦強項以利 SEO 與 AI 推薦。meta description 重複率高，內容不足且結構化語言未完善，影響 AI 爬蟲理解。" },
+                { speaker: "Sarah Yeh", role: "other", label: "小宇宙", text: "網站由陽金快客使用模板建置，對架構及技術細節不熟悉，擔心優化受限。" },
+                { speaker: "蔡阿達", role: "ada", text: "陽金快客可配合修改但可能有額外收費，awoo 可協助修改且收費合理。三方合作模式可行，由 awoo 提供技術建議並協助與陽金快客溝通。" }
+              ]
+            },
+            {
+              topic: "品牌定位與業務聚焦策略",
+              exchanges: [
+                { speaker: "Sarah Yeh", role: "other", label: "小宇宙", text: "目前以矯正及兒童牙科為主，兒童牙科已有良好口碑。矯正及全口重建為主要發展方向，全口重建患者數量少但成交率高。" },
+                { speaker: "雨桐", role: "other", label: "小宇宙", text: "全口重建目前知名度低，主要靠患者推薦，網路曝光不足。" },
+                { speaker: "蔡阿達", role: "ada", text: "AI 推薦信任度高，建議合作產出專業文章及內容提升轉化率。內容產出可由客戶提供素材，團隊用 AI 生成並潤色，客戶確認正確性即可。" }
+              ]
+            },
+            {
+              topic: "合作模式與服務方案說明",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹公司近 20 年 SEO 及 AI 技術經驗，服務包含品牌 AI 能見度分析、關鍵字研究、內容結構搭建及 FAQ 補充。建議先從基本方案開始：4 主題、20 關鍵字、60 Prompt，提供 6 份建議書。" },
+                { speaker: "Sarah Yeh", role: "other", label: "小宇宙", text: "詢問三方合作中技術溝通及費用。" },
+                { speaker: "蔡阿達", role: "ada", text: "技術溝通包含在服務費用內。不保證排名，成效受多方因素影響，但提供持續支援與優化。可提供過往醫美及牙科合作案例供參考。" }
               ]
             }
           ]
