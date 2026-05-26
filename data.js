@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-25T19:00:00",
-  dateLabel: "2026/05/25（一）",
+  lastUpdated: "2026-05-26T19:00:00",
+  dateLabel: "2026/05/26（二）",
   stats: {
-    meetings: 93,
-    projects: 49,
+    meetings: 96,
+    projects: 50,
     partners: 16,
     internal: 8,
-    clientCompany: 23,
-    todos: 348
+    clientCompany: 24,
+    todos: 367
   },
 
   projects: [
@@ -2979,8 +2979,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-25",
-      summary: "5/25 Staff Meeting — 林思吾分析 Google I/O 2026 影響，電商須整合 UCP 協議支援 AI agent 購物；awoo 應成為技術中介者；蔡阿達報告半年業績，平均客單價約 4 萬元作為商機換算基準",
+      lastUpdated: "2026-05-26",
+      summary: "5/26 文案輕量方案定價確認 — 電商與非電商兩種方案每月 2.2-2.5 萬元，含 4 份建議書與 12 篇文章（4 篇 AI + 8 篇人工）；AMP 客戶以 ROP 配置引導至 GU 方案，結合 AI 產文與 QA 模組降低負擔",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3076,17 +3076,27 @@ window.WAR_ROOM_DATA = {
         "🆕 5/25 awoo 應成為 UCP 協議<strong>關鍵中介者</strong>，協助電商客戶完成技術升級；系統商多老舊抗拒新技術",
         "🆕 5/25 <strong>MOPA 概念</strong>（AI 詢問後實體購買）— 用流量指標衡量 AI 成效是錯誤的，需重新思考品牌衡量標準",
         "🆕 5/25 Max 回饋競爭對手<strong>喬布鳥</strong>產品說明會 — 對方認為已落後 awoo 半年，需維持速度優勢",
-        "🆕 5/25 蔡阿達報告半年業績 — <strong>平均客單價約 4 萬元</strong>作為商機換算基準，業務開發需與客服部門密切協作"
+        "🆕 5/25 蔡阿達報告半年業績 — <strong>平均客單價約 4 萬元</strong>作為商機換算基準，業務開發需與客服部門密切協作",
+        "🆕 5/26 文案輕量方案定價確認：<strong>電商平臺方案與非電商平臺方案</strong>兩種，每月 <strong>2.2-2.5 萬元</strong>",
+        "🆕 5/26 文案方案規格：<strong>12 篇文章（4 篇 AI + 8 篇人工）、4 份建議書</strong>，工具費約 6 千元綁定方案",
+        "🆕 5/26 蔡阿達提出最小可行規格：10 關鍵字 / 20 Prompt；林思吾建議 <strong>15 關鍵字 / 45 Prompt</strong>",
+        "🆕 5/26 呂紹平 Shopline 獨家方案參考：4 份建議書、10 篇文章、10 關鍵字，<strong>月費約 2.2 萬</strong>",
+        "🆕 5/26 文案方案須包含<strong>技術建議</strong>（TD 修改、內部連結、schema 標記），避免僅成為寫文章服務",
+        "🆕 5/26 低預算客戶月報改為<strong>季報</strong>以降低 CS 負擔，合約明確不提供客製化月報",
+        "🆕 5/26 AMP 客戶引導至 GU 方案 — 以 <strong>ROP 配置</strong>挑選著陸頁，結合 AI 產文與 QA 模組降低負擔",
+        "🆕 5/26 AMP 方案限定<strong>商品數至少 500 件</strong>且必須為 API 串接，執行週期 6 個月",
+        "🆕 5/26 GU 方案<strong>三階段數據報告</strong>（期初/中期/期末），結案時提供續約方向建議",
+        "🆕 5/26 5/27 安排 <strong>GU for MP 方案</strong>討論會議（11:30-12:00）"
       ],
       chips: [
-        { icon: "🧪", text: "POC 臺灣 ≤4" },
         { icon: "💰", text: "GO 3.3-7.3萬" },
+        { icon: "📝", text: "文案方案 2.2-2.5萬" },
         { icon: "📅", text: "約訪 週二 11-12" },
-        { icon: "🌐", text: "MarTech Asia 5/27" },
         { icon: "📝", text: "10 Prompt:1 新聞稿" },
         { icon: "🆕", text: "工具整合 6-7月" },
         { icon: "🔐", text: "權限管理上線" },
-        { icon: "🛠️", text: "More Sweet MVP" }
+        { icon: "🛠️", text: "More Sweet MVP" },
+        { icon: "📊", text: "AMP→GU 引導" }
       ],
       todos: [
         { owner: "Fenix Li", text: "週五完成迭代內容更新（一頁說明 + 一頁主題動作）並交付 A 與 CS 團隊", priority: "today" },
@@ -3157,9 +3167,45 @@ window.WAR_ROOM_DATA = {
         { owner: "SGS 團隊", text: "準備 Google 社區變化及對應策略簡報（10-15 分鐘）", priority: "week" },
         { owner: "Sales 團隊", text: "準備 AI 廣告相關簡報，拼湊 AI 界面廣告策略", priority: "week" },
         { owner: "李斌", text: "準備使用者行為改變簡報，納入 MOPA 概念整理", priority: "week" },
-        { owner: "Amber", text: "準備總結簡報 — 搜尋、廣告及使用者行為變化的機會與挑戰", priority: "week" }
+        { owner: "Amber", text: "準備總結簡報 — 搜尋、廣告及使用者行為變化的機會與挑戰", priority: "week" },
+        { owner: "蔡阿達", text: "與謝珊交流擬定文案輕量方案規格（2.2-2.5 萬/月，12 篇文章）", priority: "today" },
+        { owner: "林思吾", text: "制定文案方案關鍵字與 Prompt 比例及建議書產出頻率", priority: "today" },
+        { owner: "呂紹平", text: "整理 Shopline 獨家方案規格與價格供團隊參考", priority: "week" },
+        { owner: "Amber Liao", text: "評估文案輕量方案建議書份數與文章篇數對 CS 執行影響", priority: "week" },
+        { owner: "Anne Chang", text: "確認 light 方案報價含稅與工具費用計價方式，確保不低於底價", priority: "week" },
+        { owner: "Alice Cho", text: "與小雞及 YC 協調 GU 方案 ROP 配置關鍵字選擇標準", priority: "week" },
+        { owner: "YC", text: "完成 ROP 配置自動化 QA 產出與 prompt 設計測試", priority: "week" },
+        { owner: "Alice Cho", text: "準備 GU for MP 方案簡報資料，5/27 11:30 會議使用", priority: "today" },
+        { owner: "Fenix Li", text: "整合 GU 方案專員介入時點與工作內容安排", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-26",
+          title: "GEO 顧問方案討論 — 文案輕量方案定價與 AMP→GU 引導",
+          time: "14:01-15:26",
+          duration: "1h25m",
+          participants: "蔡阿達、林思吾、Fenix Li、Amber Liao、Alice Cho、YC、呂紹平、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "文案輕量方案定價與規格討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "將文案方案價格設定為每月 2.5 萬元，目標降低門檻吸引更多微型客戶。先以最小可行方案（10 關鍵字、20 Prompt）作為起點，待內部同意後再調整。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "建議關鍵字與 Prompt 數量維持在 15 關鍵字、45 個 Prompt，並制定建議書產出頻率為一季 4 份。" },
+                { speaker: "呂紹平", role: "other", label: "Leon", text: "分享 Shopline 獨家方案：4 份建議書、10 篇文章、10 個關鍵字，月費約 2.2 萬元，作為電商平臺方案參考。" },
+                { speaker: "Amber Liao", role: "other", label: "BA", text: "純內容方案仍需包含基礎建設檢核，確保技術層面可修改的部分被處理，避免僅成為文章撰寫公司。低價方案客戶建議月報改季報降低 CS 負擔。" }
+              ]
+            },
+            {
+              topic: "AMP 客戶引導至 GU 方案及自動化執行流程",
+              exchanges: [
+                { speaker: "Alice Cho", role: "other", label: "CS", text: "AMP 客戶缺乏人力修改 GU 方案，以 ROP 配置挑選有潛力的 Outpage 作為著陸頁，結合 AI 產文與 QA 模組降低負擔。方案限定商品數至少 500 件且必須為 API 串接。" },
+                { speaker: "YC", role: "other", label: "YC", text: "分享自動化選擇關鍵字與頁面邏輯，設計 Prompt 產出 FAQ，強調內容關聯性與品牌合理性以提升 SEO 成效。" },
+                { speaker: "Fenix Li", role: "other", label: "Fenix", text: "全自動化產文仍需客戶 review 與上架，若要完全自動化需 RD 介入執行，避免 CS 人力過度負擔。續約建議需聚焦於 GU 方案推廣。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-25",
           title: "預算會議 & Staff Meeting TW",
@@ -4079,8 +4125,8 @@ window.WAR_ROOM_DATA = {
       name: "awoo AI SEO 流量成長相談室 — 外部顧問諮詢活動",
       icon: "📊",
       category: "events",
-      lastUpdated: "2026-05-13",
-      summary: "5/13 陳羲彤深度解析生成式 AI 對 SEO/GEO 影響 — AI 搜尋更注重段落完整回答，GEO 是 SEO 的 2.0；2028 年 AI 搜尋占比約 13%，Google 仍主導；AI 流量轉換率高於傳統搜尋；蔡阿達補充 robots.txt/SSL 檢查、EAT 作者資訊、FAQ 優化與提問式搜尋三個月見效策略",
+      lastUpdated: "2026-05-26",
+      summary: "5/26 陳羲彤說明 AI 搜尋與 SEO 互補共生趨勢 — Google 使用者未減反增、AI 搜尋非取代而是層級關係；Rebecca Chen 分享鄧白氏等客戶案例，前十名關鍵字成長 2.5 倍；約 1/3 網站因技術問題導致 AI 爬蟲無法讀取",
       keyPoints: [
         "awoo 定期舉辦<strong>外部顧問諮詢活動</strong>，邀請潛在客戶了解 SEO/GEO 服務",
         "陳羲彤（Dominic）說明 AI 搜尋（GPT、Gemini）對傳統 SEO 的影響，強調<strong>零點擊搜尋</strong>現象",
@@ -4097,13 +4143,22 @@ window.WAR_ROOM_DATA = {
         "🆕 5/13 部落格文章應掛<strong>真實作者資訊</strong>以提升 EAT 信任度",
         "🆕 5/13 提問式搜尋時代，針對特定問句優化<strong>最快三個月內可見成效</strong>",
         "🆕 5/13 優先從 GA 中<strong>流量最高頁面</strong>著手，增加 FAQ 內容方便 AI 快速抓取引用",
-        "🆕 5/13 GA4 可追蹤來自 <strong>ChatGPT 等 AI 流量管道</strong>，方便分析與優化"
+        "🆕 5/13 GA4 可追蹤來自 <strong>ChatGPT 等 AI 流量管道</strong>，方便分析與優化",
+        "🆕 5/26 Google 搜尋使用人數<strong>未下降</strong>，廣告收益持續成長，搜尋行為仍活躍",
+        "🆕 5/26 AI 搜尋與 SEO 為<strong>互補共生</strong>非取代關係 — 做好 SEO 是做好 GEO 的基礎",
+        "🆕 5/26 搜尋行為轉型期 — 使用者同時使用 AI 模型與搜尋引擎，如先用 GPT 取得清單再用 Google 購買",
+        "🆕 5/26 鄧白氏案例：優化麵包屑、title、description 後<strong>前十名關鍵字數量成長 2.5 倍</strong>",
+        "🆕 5/26 約<strong>每 12 個網站中有 4 個</strong>因技術問題導致 AI 或 Google 爬蟲無法讀取內容",
+        "🆕 5/26 常見技術問題：安全憑證過期、未提交 SEM 資料、缺乏 schema 結構化資料、robots.txt 設定不當",
+        "🆕 5/26 Google 已推出<strong>實用內容系統</strong>反制大量 AI 生成但無策略的內容",
+        "🆕 5/26 建議強化 <strong>EAT</strong>（專業性、權威性、可信度），邀請專業人士背書、與 KOL/KOC 合作"
       ],
       chips: [
         { icon: "🎓", text: "外部諮詢活動" },
         { icon: "🔍", text: "GEO = SEO 2.0" },
         { icon: "🤖", text: "AI 搜尋 13%" },
-        { icon: "📈", text: "3 個月見效" }
+        { icon: "📈", text: "3 個月見效" },
+        { icon: "📊", text: "鄧白氏 2.5× 成長" }
       ],
       todos: [
         { owner: "蔡阿達", text: "安排與有興趣客戶的專業顧問接洽，指派合適團隊進行後續服務", priority: "week" },
@@ -4111,9 +4166,36 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "指導客戶在部落格文章中加入真實作者資訊，強化 EAT 訊號", priority: "week" },
         { owner: "蔡阿達", text: "協助客戶針對 GA 流量最高頁面增加 FAQ 內容，提升 AI 抓取效率", priority: "week" },
         { owner: "陳羲彤", text: "與顧問團隊合作，根據客戶網站制定 SEO/GEO 關鍵字策略與主題群集", priority: "week" },
-        { owner: "蔡阿達", text: "持續提供免費網站 SEO 體質分析與目標族群關鍵字研究", priority: "week" }
+        { owner: "蔡阿達", text: "持續提供免費網站 SEO 體質分析與目標族群關鍵字研究", priority: "week" },
+        { owner: "Rebecca Chen", text: "協助有興趣客戶進行網站技術盤點（Robots.txt、HTTPS、schema 等），補足缺漏", priority: "week" },
+        { owner: "Rebecca Chen", text: "為客戶導入結構化資料（schema、JSON-LD），提升 AI 爬蟲引用機率", priority: "week" },
+        { owner: "陳羲彤", text: "推動 SEO 與 GEO 雙軌策略，建立 topic cluster 強化網站主題權威性", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-26",
+          title: "awoo GEO/SEO 企業成長相談室 05/26",
+          time: "14:04-15:03",
+          duration: "59m",
+          participants: "陳羲彤（Dominic）、Rebecca Chen、外部來賓",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 搜尋與傳統 SEO 的共生趨勢",
+              exchanges: [
+                { speaker: "陳羲彤", role: "other", label: "awoo", text: "Google 搜尋引擎使用人數未下降，廣告收益持續成長。AI 搜尋與 SEO 為互補共生非取代關係，做好 SEO 是做好 GEO 的基礎。使用者同時使用多種 AI 模型與搜尋引擎形成共生關係。" },
+                { speaker: "陳羲彤", role: "other", label: "awoo", text: "AI 搜尋會引用網站內容作為回答依據，品牌能被 AI 推薦或引用將提升信任度與曝光度，成為新的品牌行銷戰略重點。Google 已推出實用內容系統反制無策略的 AI 生成內容。" }
+              ]
+            },
+            {
+              topic: "GEO 服務案例分享與技術優化建議",
+              exchanges: [
+                { speaker: "Rebecca Chen", role: "other", label: "awoo", text: "美商鄧白氏案例：優化麵包屑、title、description 並建立關鍵字著陸頁，前十名關鍵字數量成長 2.5 倍，網站詢問填單率提升。約每 12 個網站中有 4 個因技術問題導致爬蟲無法讀取。" },
+                { speaker: "Rebecca Chen", role: "other", label: "awoo", text: "建議企業建立符合 AI 爬蟲喜好的網站結構，將技術文件與案例轉化為結構化內容。客戶可自行透過 GPT、Gemini 查詢品牌相關問題，檢視 AI 是否推薦自家品牌。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-13",
           title: "awoo GEO/SEO 企業成長相談室 05/13",
@@ -5247,6 +5329,81 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "介紹公司近 20 年 SEO 及 AI 技術經驗，服務包含品牌 AI 能見度分析、關鍵字研究、內容結構搭建及 FAQ 補充。建議先從基本方案開始：4 主題、20 關鍵字、60 Prompt，提供 6 份建議書。" },
                 { speaker: "Sarah Yeh", role: "other", label: "小宇宙", text: "詢問三方合作中技術溝通及費用。" },
                 { speaker: "蔡阿達", role: "ada", text: "技術溝通包含在服務費用內。不保證排名，成效受多方因素影響，但提供持續支援與優化。可提供過往醫美及牙科合作案例供參考。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P50: 福盈化學 ======
+    {
+      id: "fuying-chemical",
+      name: "福盈化學 — 官網建置 × GEO 技術合作",
+      icon: "🧪",
+      category: "client",
+      lastUpdated: "2026-05-26",
+      summary: "福盈化學因前廠商威宏服務不佳決定重建官網，需求涵蓋多語系架構優化、AI 客服串接及多事業產品展示；蔡阿達推薦小型 AI 智能化後臺廠商，三方會議預計 5/28 上午召開",
+      keyPoints: [
+        "福盈化學過去與威宏合作<strong>簽約後業務窗口消失</strong>，半年多 bug 未修復，決定更換廠商",
+        "現有官網偏重紡織化學，<strong>無法展示電子化學等新事業產品</strong>",
+        "現有官網無法支援 AI 客服，導致 <strong>AI 優先推薦競爭對手</strong>而非自家產品",
+        "蔡阿達建議多語系從<strong>次網域改為子目錄架構</strong>，整合權重並降低維護成本",
+        "福盈化學計畫打造「<strong>智能產品經理人</strong>」等級 AI 客服，能回答製程、劑量、溫度等專業問題",
+        "公司正自行建置 <strong>AI 大語言模型</strong>，資料量龐大，預估至少一年半訓練時間",
+        "AI 客服串接<strong>不需 API</strong>，使用 GTM 即可嵌入前端界面",
+        "推薦廠商約 <strong>5 人團隊</strong>，專注 AI 智能化後臺，費用較低可客製化",
+        "福盈化學<strong>不考慮電商模式</strong>，產品需專業測試且配方機密，以資訊傳播與技術服務為主",
+        "awoo 可提供 SEO/GEO 顧問、AI 能見度追蹤工具及品牌顧問公司新聞稿撰寫協助"
+      ],
+      chips: [
+        { icon: "🏭", text: "化學產業" },
+        { icon: "🌐", text: "多語系子目錄" },
+        { icon: "🤖", text: "智能產品經理人" },
+        { icon: "📅", text: "5/28 三方會議" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "安排 5/28（四）上午與新廠商及福盈化學三方會議，討論官網架設與報價", priority: "today" },
+        { owner: "蔡阿達", text: "介紹 AI 智能化後臺廠商並提供 to B 案例展示", priority: "today" },
+        { owner: "Safina Liang", text: "確認新廠商報價條件，安排 IT 技術長參與後續會議評估 AI 模型整合", priority: "week" },
+        { owner: "蔡阿達", text: "提供福盈化學網站 AI 爬蟲分析報告，指出內容缺口與優化方向", priority: "week" },
+        { owner: "Safina Liang", text: "推動 AI 客服系統建置，整理專業技術問題回應與產品建議資料", priority: "waiting" },
+        { owner: "蔡阿達", text: "協助規劃主題核心與延伸關鍵字，追蹤競品表現與 AI 推薦狀況", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-26",
+          title: "福盈官網建置 GEO 技術合作洽談",
+          time: "09:31-10:08",
+          duration: "37m",
+          participants: "蔡阿達、Safina Liang（福盈化學）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "官網升級需求與過往合作經驗",
+              exchanges: [
+                { speaker: "Safina Liang", role: "other", label: "福盈化學", text: "過去與威宏合作，簽約後業務窗口消失導致 bug 無法即時修復。現有官網偏重紡織化學，無法展示電子化學等新事業產品，也無法支援 AI 客服。" },
+                { speaker: "蔡阿達", role: "ada", text: "針對多語系架構建議從次網域改為單一主域名下的子目錄方式，整合權重並降低維護成本。AI 能快速理解語系關聯，集中於單一主域名有助 AI 能見度提升。" }
+              ]
+            },
+            {
+              topic: "AI 客服與智能產品經理人規劃",
+              exchanges: [
+                { speaker: "Safina Liang", role: "other", label: "福盈化學", text: "計畫打造進階 AI 客服成為智能產品經理人，能提供製程、劑量、溫度等專業技術建議。公司正建置自有 AI 大語言模型，資料量龐大預估至少一年半。" },
+                { speaker: "蔡阿達", role: "ada", text: "串接 AI 客服不需 API，使用 GTM 即可嵌入前端界面。建議後續邀請 IT 技術長參與會議，確保 AI 模型與官網系統整合順利。" }
+              ]
+            },
+            {
+              topic: "新廠商推薦與合作推進",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "推薦一間約 5 人團隊的小型廠商，專注 AI 智能化後臺，費用較低且可客製化。建議先安排三方會議討論官網架設及報價。" },
+                { speaker: "Safina Liang", role: "other", label: "福盈化學", text: "福盈不考慮電商模式，產品需專業測試且配方機密，以資訊傳播與技術服務為主。同意先安排三方會議，本週四上午較為方便。" }
+              ]
+            },
+            {
+              topic: "awoo 服務介紹與合作方向",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "公司成立近 20 年，主打 SEO 技術及廣告投放、GEO 與 ASO 顧問服務。已開發自有工具追蹤網站在 AI 回應中的品牌提及率、情緒分析及引用率，可協助提升品牌 AI 能見度。" }
               ]
             }
           ]
