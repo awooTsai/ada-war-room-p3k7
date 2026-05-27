@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-26T19:00:00",
-  dateLabel: "2026/05/26（二）",
+  lastUpdated: "2026-05-27T19:00:00",
+  dateLabel: "2026/05/27（三）",
   stats: {
-    meetings: 96,
-    projects: 50,
-    partners: 16,
+    meetings: 99,
+    projects: 52,
+    partners: 17,
     internal: 8,
-    clientCompany: 24,
-    todos: 367
+    clientCompany: 25,
+    todos: 376
   },
 
   projects: [
@@ -2044,8 +2044,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-05-20",
-      summary: "5/20 蔡阿達向 Mars 介紹 awoo 內容服務新方案（25K/月），MarsZ Chen 展示 GA/GSC 自動化流量分析系統（月費 500-1500 元），貳捌介紹社群顧問與內訓課程（5K-8K/hr），Adam Chen 分享企業顧問服務；蔡阿達預期內容服務可服務一兩百間客戶",
+      lastUpdated: "2026-05-27",
+      summary: "5/27 遙空映畫與蔡阿達討論醫療及企業品牌 SEO 合作，確認醫療類客戶適合導入 AI 推薦；MarsZ Chen 展示 AI 網站設計（恆興診所已上線）與自動化上稿流程；雙方同意 AI 能見度分析報告作為業務前哨站提升提案成功率",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -2095,7 +2095,15 @@ window.WAR_ROOM_DATA = {
         "🆕 5/20 貳捌介紹<strong>社群顧問服務</strong> — 企業內訓課程每小時 5,000-8,000 元，含策略制定與內容創作",
         "🆕 5/20 貳捌計劃將預錄課程<strong>商品化</strong>，在官網提供線上刷卡觀看功能，預計下半年推廣",
         "🆕 5/20 Adam Chen 分享<strong>企業顧問服務</strong>（產銷人發財五面向），結合 BNI 夥伴資源提供全方位支持",
-        "🆕 5/20 蔡阿達預期 awoo 內容服務可服務<strong>一兩百間客戶</strong>，報告當天下午兩點前可產出"
+        "🆕 5/20 蔡阿達預期 awoo 內容服務可服務<strong>一兩百間客戶</strong>，報告當天下午兩點前可產出",
+        "🆕 5/27 遙空映畫分享<strong>南亞科技（ESG 影片）</strong>及<strong>中華電信子公司（AI 監控系統影片）</strong>兩個大客戶案，可延伸 SEO 合作",
+        "🆕 5/27 醫療產業（院長/牙醫）多自行撰寫內容且少用 AI 推廣，為導入 awoo SEO 及 AI 推薦的<strong>藍海市場</strong>",
+        "🆕 5/27 蔡阿達強調<strong>品牌履歷</strong>概念 — AI 根據品牌成就及案例推薦，品牌履歷完整度影響 AI 推薦結果",
+        "🆕 5/27 AI 能見度分析報告作為 SEO 服務<strong>前哨站</strong>：先用報告展示競爭對手分析，再順勢推動 SEO 優化或網站改版",
+        "🆕 5/27 MarsZ Chen 已完成<strong>恆興診所 AI 設計網站</strong>上線，並建立 VI 設計系統與多語系自動化流程",
+        "🆕 5/27 MarsZ Chen 正開發<strong>上稿自動化流程</strong>，目標從設計稿到網站上線全自動化",
+        "🆕 5/27 蔡阿達表示未來<strong>不再做包套網站方案</strong>，改由客戶直接與 MarsZ Chen 洽談設計，蔡阿達負責 SEO 與品牌策略",
+        "🆕 5/27 建議客戶將影片上傳至 <strong>YouTube 而非 Vimeo</strong>，有助 SEO 及 AI 推薦；影片內容可轉換成文字增強 SEO"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -2105,18 +2113,51 @@ window.WAR_ROOM_DATA = {
         { icon: "💰", text: "內容方案 25K/月" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "提供 Mars 文章撰寫服務報價與方案細節（20 篇文章 + AI 推薦追蹤），推動打包銷售", priority: "today" },
-        { owner: "MarsZ Chen", text: "完成 GA/GSC API 串接，開發自動化流量分析報告功能", priority: "week" },
-        { owner: "MarsZ Chen", text: "研究社群（Facebook、Instagram）數據串接與分析功能，規劃額外收費", priority: "week" },
-        { owner: "貳捌", text: "與 MarsZ Chen 討論社群數據需求，提供報告範本協助 AI 分析優化", priority: "week" },
-        { owner: "Adam Chen", text: "協助 MarsZ Chen 加入 GA/GSC 權限，促進數據整合與服務推廣", priority: "week" },
-        { owner: "蔡阿達", text: "持續引薦有架站及 SEO 需求的客戶給 MarsZ Chen", priority: "week" },
-        { owner: "蔡阿達", text: "與 Mars 合作提案教育機構網站重建案，整合前端設計與 AI 問答系統串接", priority: "week" },
+        { owner: "蔡阿達", text: "提供 AI 能見度分析報告給遙空映畫，協助提案時展示競爭對手與品牌現況", priority: "today" },
+        { owner: "蔡阿達", text: "提供填寫網址與 email 的表單給團隊，方便收集客戶資料並生成報告", priority: "today" },
+        { owner: "遙空映畫", text: "將醫療 / 企業品牌客戶網址提交給蔡阿達，利用 AI 報告提升提案說服力", priority: "week" },
+        { owner: "MarsZ Chen", text: "持續訓練 AI 設計系統，完成網站設計稿並推動多語系自動化轉換", priority: "week" },
+        { owner: "MarsZ Chen", text: "開發並優化自動化上稿流程，實現網站內容快速上線", priority: "week" },
+        { owner: "MarsZ Chen", text: "設計 GA/GSC 報告定價方案（月費 500 元 / 單次 2,000 元），推動服務推廣", priority: "week" },
+        { owner: "蔡阿達", text: "協助遙空映畫將影片內容轉換成文字，建議客戶上傳至 YouTube 利於 AI 推薦", priority: "week" },
         { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
         { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-27",
+          title: "FUZEN 行銷小聚 05/27 — 醫療 SEO × AI 能見度報告 × AI 網站設計",
+          time: "13:02-13:40",
+          duration: "38m",
+          participants: "蔡阿達、遙空映畫（韋翰）、MarsZ Chen",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "醫療及企業品牌 SEO 合作機會",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "醫療院長多自行撰寫內容，牙醫客戶情況類似，且醫療類少用 AI 做推廣，適合導入 AI 推薦。另分享兩個剛成交的大客戶案：南亞科技 ESG 影片及中華電信子公司 AI 監控系統影片行銷。" },
+                { speaker: "蔡阿達", role: "ada", text: "會協助寫文章及網站改版，若客戶無人力可開後台操作。品牌履歷很重要，AI 會根據品牌成就及案例推薦。建議影片上傳至 YouTube 而非 Vimeo，有助 SEO 及 AI 推薦。" },
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "認同影片及 SEO 結合可增加客戶信任與提案成功率，但部分客戶因商業考量不願上傳 YouTube，多用 Vimeo。" }
+              ]
+            },
+            {
+              topic: "AI 能見度分析報告作為業務前哨站",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "客戶授權後系統自動抓取 GA/GSC 數據並生成量化與文字化分析報告，包含流量、關鍵字排名變化及競爭對手分析。定價月費約 500 元，單次報告 2,000 元。" },
+                { speaker: "蔡阿達", role: "ada", text: "此報告可作為 SEO 服務的前哨站與引薦工具，先用報告展示客戶現況與競爭對手分析，再順勢推動 SEO 優化或網站改版服務。" },
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "計畫在提案前先取得報告，向客戶展示競爭對手分析與 AI 能見度，增加提案說服力。" }
+              ]
+            },
+            {
+              topic: "AI 網站設計與自動化流程開發",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "AI 設計工具可根據客戶 VI 自動生成設計系統（色彩、字體、排版）。恆興診所 AI 設計網站已上線，正開發上稿自動化流程，目標從設計稿到上線全自動化。" },
+                { speaker: "蔡阿達", role: "ada", text: "未來不再做包套網站方案，改由客戶直接與 MarsZ Chen 洽談設計，蔡阿達負責 SEO 與品牌策略，形成分工合作模式。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-20",
           title: "FUZEN 行銷小聚 05/20 — 內容服務方案 × 流量分析 × 社群顧問",
@@ -2833,11 +2874,11 @@ window.WAR_ROOM_DATA = {
     // ====== P26: 愛貝斯 ======
     {
       id: "ibase",
-      name: "愛貝斯（iBASE）— 合約變更與應收帳款追蹤",
+      name: "愛貝斯（iBASE）— 合約終止協商與違約金評估",
       icon: "📋",
       category: "client",
-      lastUpdated: "2026-05-18",
-      summary: "5/18 藍文甫確認延期時間未定，決定先獨立處理帳務問題不與名目變更綁定；將成立專門聊天室設定 deadline 加速處理",
+      lastUpdated: "2026-05-27",
+      summary: "5/27 客戶表達終止合約意願但尚未給出確定時間；Anne Chang 建議參考疫情期間特案免收違約金並要求重簽合約以維持商譽；藍文甫將親自前往客戶端了解真實意願與後續合作可能性",
       keyPoints: [
         "合約簽訂對象為<strong>愛斯柏（ISABEL）</strong>，但專案登記錯誤導致發票開給愛貝斯（iBASE），帳務無法對帳",
         "決議<strong>不重新簽約</strong>，改在變更協議中加入三方條款，明確由愛貝斯代替愛斯柏付款",
@@ -2846,27 +2887,48 @@ window.WAR_ROOM_DATA = {
         "客戶團隊已更換，法務認為新團隊應承擔前團隊合約責任",
         "🆕 5/18 藍文甫持續與愛貝斯溝通，<strong>延期時間尚未確認</strong>",
         "🆕 5/18 決定<strong>先獨立處理帳務問題</strong>，不與名目變更綁定，避免影響合約簽署",
-        "🆕 5/18 將成立<strong>專門聊天室與會議室</strong>，邀相關人員並設定明確 deadline 加速處理"
+        "🆕 5/18 將成立<strong>專門聊天室與會議室</strong>，邀相關人員並設定明確 deadline 加速處理",
+        "🆕 5/27 客戶表達<strong>終止合約意願</strong>，但尚未給出確定終止時間",
+        "🆕 5/27 Anne Chang 建議參考<strong>疫情期間特殊終止條款</strong> — 免收違約金但要求重簽合約，維持商譽",
+        "🆕 5/27 藍文甫決定<strong>親自前往客戶端</strong>了解真實意願，評估後續合作可能性",
+        "🆕 5/27 客戶對 <strong>SEO 關鍵字排名成效不滿</strong>，認為 GU 方案與預期不符，內容產出與期待落差",
+        "🆕 5/27 若客戶堅持終止，需評估<strong>是否收取違約金或以特案維持商譽</strong>"
       ],
       chips: [
         { icon: "📝", text: "變更協議" },
         { icon: "💸", text: "未付款追蹤" },
-        { icon: "⚖️", text: "存證信函" },
-        { icon: "⏸️", text: "服務暫停中" }
+        { icon: "⚖️", text: "違約金協商" },
+        { icon: "🚨", text: "客戶擬終止" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "與愛貝斯確認是否同意代替愛斯柏付款，並釐清下半年付款方", priority: "today" },
-        { owner: "蔡阿達", text: "將確認的付款方及相關文字加入變更協議", priority: "today" },
+        { owner: "Eric Hsiao", text: "確認愛貝斯合約中解約條款並回覆客戶", priority: "today" },
+        { owner: "藍文甫", text: "親自前往愛貝斯了解客戶真實意願及狀況", priority: "today" },
+        { owner: "Anne Chang", text: "評估是否以特案免收違約金維持商譽，準備協商策略", priority: "today" },
+        { owner: "Eric Hsiao", text: "整理並轉寄 2 月 20 日及 26 日 Henry 信件給蔡阿達及相關人員", priority: "today" },
+        { owner: "Eric Hsiao", text: "確認客戶實際付款期數並回報團隊", priority: "week" },
+        { owner: "Anne Chang", text: "確認系統報表 3 至 5 月均正常運作，確保服務未中斷", priority: "week" },
         { owner: "蔡阿達", text: "向客戶說明發票開立錯誤並重新開立正確發票", priority: "week" },
-        { owner: "蔡阿達", text: "確認客戶暫停服務起始日及預計重啟時間", priority: "week" },
-        { owner: "蔡阿達", text: "確認下半年發票開立對象及付款方", priority: "week" },
-        { owner: "Eric Hsiao", text: "審閱並寄送包含付款方變更的合約變更協議", priority: "week" },
-        { owner: "Eric Hsiao", text: "整理未付款項清單並寄送建議書，CC 藍文甫與 Anne Chang", priority: "week" },
-        { owner: "Anne Chang", text: "確認發票作廢及重開流程，評估跨年度收入認列問題", priority: "week" },
-        { owner: "藍文甫", text: "確認存證信函發出時間與內容", priority: "waiting" },
-        { owner: "藍文甫", text: "開設專門聊天室與會議室處理合約名目與帳務問題，設定明確 deadline", priority: "today" }
+        { owner: "蔡阿達", text: "確認下半年發票開立對象及付款方", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-27",
+          title: "力奇與愛貝斯 — 合約終止與違約金協商",
+          time: "17:01-17:46",
+          duration: "45m",
+          participants: "蔡阿達、Anne Chang、Eric Hsiao、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "愛貝斯合約終止與違約金討論",
+              exchanges: [
+                { speaker: "Eric Hsiao", role: "other", label: "PM", text: "客戶因無法給出確定終止時間，傾向先終止合約。客戶重視特定關鍵字排名，對 GU 方案不滿，且內容產出與預期不符。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "疫情期間曾有免收違約金但需重簽合約的特殊條款，建議以此作為談判依據。若客戶堅持終止，需評估是否收取違約金或以特案維持商譽。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "認為客戶對服務不滿，SEO 方案未達預期。將親自前往客戶端處理，嘗試重建關係並評估後續合作可能性。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-14",
           title: "愛貝斯專案狀況對焦",
@@ -5404,6 +5466,144 @@ window.WAR_ROOM_DATA = {
               topic: "awoo 服務介紹與合作方向",
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "公司成立近 20 年，主打 SEO 技術及廣告投放、GEO 與 ASO 顧問服務。已開發自有工具追蹤網站在 AI 回應中的品牌提及率、情緒分析及引用率，可協助提升品牌 AI 能見度。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P51: cobalancelab ======
+    {
+      id: "cobalance-partner",
+      name: "cobalancelab × awoo — 品牌代理商 SEO/GEO 技術合作",
+      icon: "🤝",
+      category: "partner",
+      lastUpdated: "2026-05-27",
+      summary: "5/27 蔡阿達與 Carol Lin（林俐儀）首次洽談：cobalancelab 成立近 20 年專注中小企業品牌代理，awoo 展示 AI 能見度追蹤工具與三種 SEO 優化方案；雙方確認以嵌入式合作模式推動客戶 SEO/GEO 服務",
+      keyPoints: [
+        "cobalancelab 成立近 20 年，主要服務<strong>中小企業及品牌</strong>，提供 AI 顧問服務及電商行銷軟體",
+        "awoo 展示<strong>亞洲獨家 AI 能見度追蹤工具</strong>（2026 年 3 月發表），分析品牌被 AI 提及率、聲量、排名及引用情況",
+        "三種 SEO 優化方案中最小可行方案：<strong>4 核心主題 × 20 關鍵字 × 6 份建議書</strong>（含內容撰寫與技術修改）",
+        "報告可<strong>客製化、去識別化、置入品牌標誌</strong>，方便合作夥伴轉售",
+        "awoo 堅持<strong>不保證排名</strong>，以數據分析與持續優化為溝通重點，Carol 認同此立場",
+        "合作定位：awoo 負責<strong>技術與 SEO 專業支援</strong>，cobalancelab 負責<strong>整合行銷</strong>（社群維運、媒體曝光、活動）",
+        "Carol 建議 awoo 人員<strong>嵌入式參與客戶會議</strong>，減少資訊斷點，降低溝通成本",
+        "後臺數據<strong>不直接開放給客戶</strong>，以定期報告截圖及說明方式呈現關鍵指標",
+        "潛在客戶產業：<strong>醫美、海外資產、殯葬</strong>等資訊不透明且競爭激烈的產業"
+      ],
+      chips: [
+        { icon: "🏢", text: "品牌代理商" },
+        { icon: "📊", text: "AI 能見度工具" },
+        { icon: "🔑", text: "4 主題 / 20 關鍵字" },
+        { icon: "🤝", text: "嵌入式合作" }
+      ],
+      todos: [
+        { owner: "Carol Lin", text: "提供 AI 能見度追蹤報告範本與客戶網址給 awoo", priority: "week" },
+        { owner: "蔡阿達", text: "根據 cobalancelab 客戶網站製作關鍵字主題與延伸關鍵字清單及建議書", priority: "week" },
+        { owner: "蔡阿達", text: "準備客製化報告（去識別化 + 品牌標誌置入）供 cobalancelab 使用", priority: "week" },
+        { owner: "蔡阿達 / Carol Lin", text: "確定後臺數據開放程度，建立客戶問題回應機制", priority: "week" },
+        { owner: "蔡阿達", text: "向客戶說明不保證排名的專業立場，提供分析與改善建議", priority: "waiting" },
+        { owner: "Carol Lin", text: "制定滾動式關鍵字調整計畫，針對具體客戶案例啟動合作", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-27",
+          title: "awoo × cobalancelab 首次合作洽談",
+          time: "14:14-16:32",
+          duration: "2h18m",
+          participants: "蔡阿達、Carol Lin（林俐儀）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "雙方服務介紹與合作需求確認",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "公司成立近 20 年，主要服務中小企業及品牌，提供 AI 顧問服務及電商行銷軟體。合作中應避免高溝通成本，建議邀請合作夥伴成為團隊一員，方便專業說明與即時回應。" },
+                { speaker: "蔡阿達", role: "ada", text: "公司於今年 3 月發表亞洲獨家 AI 能見度追蹤工具，能協助客戶了解品牌被 AI 提及及引用的狀況。SEO 與 AI 爬蟲技術相輔相成，基礎 SEO 做好才能進一步優化 AI 能見度。" }
+              ]
+            },
+            {
+              topic: "AI 能見度報告與 SEO 優化方案",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "展示 AI 能見度報告工具，透過 API 及爬蟲技術分析客戶在 AI 搜尋中的表現。最小可行方案包含 4 核心主題、20 組關鍵字及 6 份建議書。報告可客製化，包含去識別化及品牌標誌置入。" },
+                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "詢問業界保證排名的做法，並認為保證排名需有風險控管，保證內容往往是方案中較容易達成的部分。" },
+                { speaker: "蔡阿達", role: "ada", text: "公司不保證排名，但會持續分析缺口並提出改善建議。業界保證排名多為針對長尾關鍵字，且保證內容可能因 KPI 壓力而偏頗。" }
+              ]
+            },
+            {
+              topic: "合作模式與客戶後臺使用",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "多數品牌客戶缺乏操作後臺能力，若直接開放後臺客戶會頻繁提問增加服務負擔。品牌代理商提供整合行銷方案包含社群維運、媒體曝光及線上線下活動。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意以定期報告截圖方式呈現數據。公司可提供從顧問到執行的全方位服務，包含內容撰寫、技術修改及 SEO 優化，依客戶網站狀況調整合作深度。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P52: 洪佳 ======
+    {
+      id: "hongjia-debt",
+      name: "洪佳 — 欠款催收與服務暫停處理",
+      icon: "⚠️",
+      category: "client",
+      lastUpdated: "2026-05-27",
+      summary: "5/27 洪佳因未如期付款，團隊決定暫停服務並準備寄發存證信函；蔡阿達願履行個人承諾的額外服務但強調款項與合約分兩軌處理；客戶財務困難擬分兩年攤還並取消信用卡付款",
+      keyPoints: [
+        "洪佳<strong>未如期付款</strong>，團隊決定暫停服務並已寄出資料與催告通知",
+        "蔡阿達 4 月 10 日已在 Slack 留下<strong>文字記錄催告</strong>，接下來將寄<strong>存證信函</strong>正式通知",
+        "蔡阿達願意履行<strong>個人承諾</strong>的額外服務，但款項問題與合約服務<strong>兩軌並行</strong>分開處理",
+        "客戶<strong>質疑合約有效性</strong>，團隊確認合約有效且服務已執行；Henry 亦確認合約有效",
+        "客戶將蔡阿達的<strong>個人承諾與合約混淆</strong>，需明確區分避免認知落差",
+        "客戶以上班族薪水支付無法一次付清，擬<strong>分兩年攤還</strong>並取消信用卡改用匯款",
+        "Eric Hsiao 接手後<strong>溝通順暢</strong>，補足 Pixel 串接並開兩次成效會議",
+        "客戶老闆不關注案子，底下人員無人主動聯繫，<strong>後期對關鍵字排名不滿</strong>"
+      ],
+      chips: [
+        { icon: "💸", text: "欠款催收" },
+        { icon: "⚖️", text: "存證信函" },
+        { icon: "⏸️", text: "服務暫停" },
+        { icon: "📅", text: "分兩年攤還" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "整理 4 月 10 日催告留言截圖，私訊轉寄給 Eric、Anne、Henry 及 Vini", priority: "today" },
+        { owner: "Anne Chang", text: "指派團隊準備並寄出存證信函，正式通知洪佳停止服務", priority: "today" },
+        { owner: "蔡阿達", text: "與洪佳窗口聯絡，履行個人承諾事項並安排後續通話", priority: "week" },
+        { owner: "Eric Hsiao", text: "與洪佳確認分期付款方案細節及匯款方式，停止使用信用卡付款", priority: "week" },
+        { owner: "Eric Hsiao", text: "整理並轉寄 2 月 20 日及 26 日 Henry 信件給蔡阿達及相關人員", priority: "week" },
+        { owner: "Anne Chang", text: "下週催促摩曼頓款項", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-27",
+          title: "力奇與愛貝斯 — 洪佳欠款與存證信函處理",
+          time: "17:01-17:46",
+          duration: "45m",
+          participants: "蔡阿達、Anne Chang、Eric Hsiao、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "洪佳案款項未付與服務暫停",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "洪佳未付錢，先停止服務並已將資料寄給對方，已盡義務。4 月 10 日已有 Slack 留言催告。願意履行個人承諾，但剩餘款項與合約服務兩軌處理。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "確認催告流程，建議寄存證信函前需有正式文字通知。信用卡付款逾期帶來催款與手續費問題，支持改用其他付款方式。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "存證信函為紙本，需整理催款紀錄與未付款期數作為寄送依據。合約與個人承諾應分開回應。" }
+              ]
+            },
+            {
+              topic: "合約爭議與客戶溝通",
+              exchanges: [
+                { speaker: "Eric Hsiao", role: "other", label: "PM", text: "接手後與客戶溝通順暢，補足 Pixel 串接並開兩次成效會議。客戶對關鍵字排名不滿，認為 SEO 方案與預期不符。" },
+                { speaker: "蔡阿達", role: "ada", text: "客戶老闆不關注案子，底下人員無人主動聯繫，後期無理取鬧要求說明年度工作內容。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "建議明確告知客戶合約內服務已執行，個人承諾由蔡阿達協助履行，兩者分開處理。" }
+              ]
+            },
+            {
+              topic: "付款方案協商",
+              exchanges: [
+                { speaker: "Eric Hsiao", role: "other", label: "PM", text: "客戶目前以上班族薪水支付，無法一次付清，希望拉長付款時間。已與客戶溝通付款方案。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "同意將款項分兩年攤還，調整付款方式不再使用信用卡。提醒下週需催促摩曼頓款項。" }
               ]
             }
           ]
