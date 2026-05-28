@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-27T19:00:00",
-  dateLabel: "2026/05/27（三）",
+  lastUpdated: "2026-05-28T19:00:00",
+  dateLabel: "2026/05/28（四）",
   stats: {
-    meetings: 99,
-    projects: 52,
-    partners: 17,
-    internal: 8,
+    meetings: 103,
+    projects: 55,
+    partners: 18,
+    internal: 9,
     clientCompany: 25,
-    todos: 376
+    todos: 383
   },
 
   projects: [
@@ -5404,35 +5404,76 @@ window.WAR_ROOM_DATA = {
       name: "福盈化學 — 官網建置 × GEO 技術合作",
       icon: "🧪",
       category: "client",
-      lastUpdated: "2026-05-26",
-      summary: "福盈化學因前廠商威宏服務不佳決定重建官網，需求涵蓋多語系架構優化、AI 客服串接及多事業產品展示；蔡阿達推薦小型 AI 智能化後臺廠商，三方會議預計 5/28 上午召開",
+      lastUpdated: "2026-05-28",
+      summary: "5/28 三方會議（awoo × 五樓專業資訊 × 福盈化學）初步取得合作共識：五語系官網全外包（繁中/英/越/印/日），不做中國市場，客戶期望至少兩年合約；下一步 Eileen 整理網站地圖、MarsZ 提供正式報價，MarsZ 已加入福盈 LINE 群組",
       keyPoints: [
         "福盈化學過去與威宏合作<strong>簽約後業務窗口消失</strong>，半年多 bug 未修復，決定更換廠商",
         "現有官網偏重紡織化學，<strong>無法展示電子化學等新事業產品</strong>",
-        "現有官網無法支援 AI 客服，導致 <strong>AI 優先推薦競爭對手</strong>而非自家產品",
+        "🆕 三方（awoo × 五樓 × 福盈化學）<strong>初步取得合作共識</strong>，進入報價與合約洽談階段",
+        "🆕 語系確認：<strong>繁體中文、英文、越南文、印尼文、日文</strong>（共五語系）",
+        "🆕 中國市場因防火牆問題<strong>直接放棄，不做簡體中文</strong>版本",
+        "🆕 客戶期望<strong>至少兩年合約</strong>，避免每年重新改版的溝通成本",
+        "🆕 五樓 MarsZ 展示 <strong>AI 網站設計能力</strong>與多語系 CMS 後台，支援 AI 批次翻譯與校稿流程",
+        "🆕 WordPress 因安全性與外掛相容性問題被排除，採用<strong>五樓自建系統</strong>",
+        "🆕 五樓推出 <strong>AI SEO 流量分析報告</strong>新產品（串接 GSC/GA API），可與 awoo GEO 追蹤互補",
+        "🆕 福盈 IT 僅剩主管 +1 人全投入 AI 大腦計畫，行銷僅 Safina + Eileen，期望<strong>全方位外包</strong>",
         "蔡阿達建議多語系從<strong>次網域改為子目錄架構</strong>，整合權重並降低維護成本",
-        "福盈化學計畫打造「<strong>智能產品經理人</strong>」等級 AI 客服，能回答製程、劑量、溫度等專業問題",
-        "公司正自行建置 <strong>AI 大語言模型</strong>，資料量龐大，預估至少一年半訓練時間",
-        "AI 客服串接<strong>不需 API</strong>，使用 GTM 即可嵌入前端界面",
-        "推薦廠商約 <strong>5 人團隊</strong>，專注 AI 智能化後臺，費用較低可客製化",
-        "福盈化學<strong>不考慮電商模式</strong>，產品需專業測試且配方機密，以資訊傳播與技術服務為主",
-        "awoo 可提供 SEO/GEO 顧問、AI 能見度追蹤工具及品牌顧問公司新聞稿撰寫協助"
+        "福盈化學計畫打造「<strong>智能產品經理人</strong>」AI 客服，公司正自行建置大語言模型"
       ],
       chips: [
         { icon: "🏭", text: "化學產業" },
-        { icon: "🌐", text: "多語系子目錄" },
-        { icon: "🤖", text: "智能產品經理人" },
-        { icon: "📅", text: "5/28 三方會議" }
+        { icon: "🌐", text: "五語系官網" },
+        { icon: "📝", text: "兩年合約" },
+        { icon: "✅", text: "三方共識達成" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "安排 5/28（四）上午與新廠商及福盈化學三方會議，討論官網架設與報價", priority: "today" },
-        { owner: "蔡阿達", text: "介紹 AI 智能化後臺廠商並提供 to B 案例展示", priority: "today" },
-        { owner: "Safina Liang", text: "確認新廠商報價條件，安排 IT 技術長參與後續會議評估 AI 模型整合", priority: "week" },
+        { owner: "Eileen", text: "整理網站地圖文件（完整選單結構＋所有擴充產品內容），提供給 MarsZ", priority: "week" },
+        { owner: "MarsZ Chen", text: "根據客戶需求提供正式報價單與預估時程", priority: "week" },
+        { owner: "Safina Liang", text: "確認五語系校稿人員安排（英/越/印/日各需 local 人員協助校稿）", priority: "week" },
+        { owner: "蔡阿達", text: "跟進福盈化學與五樓報價，確認建站合約與時程", priority: "week" },
         { owner: "蔡阿達", text: "提供福盈化學網站 AI 爬蟲分析報告，指出內容缺口與優化方向", priority: "week" },
-        { owner: "Safina Liang", text: "推動 AI 客服系統建置，整理專業技術問題回應與產品建議資料", priority: "waiting" },
         { owner: "蔡阿達", text: "協助規劃主題核心與延伸關鍵字，追蹤競品表現與 AI 推薦狀況", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-28",
+          title: "福盈官網建置 GEO 技術合作續談 ft. 五樓 MarsZ",
+          time: "09:29-10:19",
+          duration: "49m",
+          participants: "蔡阿達、MarsZ Chen（五樓專業資訊）、Eileen（福盈化學）、Safina Liang（福盈化學）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "五樓 AI 網站設計能力與多語系後台",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "五樓", text: "五樓成立逾十年，近年導入 AI 技術進行版面設計。多語系後台可分別管理不同語系的文章、產品資料及固定區塊語系檔（YAML 格式），語系檔可整包丟給 AI 翻譯，約五分鐘即可完成。" },
+                { speaker: "蔡阿達", role: "ada", text: "五樓的優勢在於技術彈性高、創意強。未來網站需同時兼顧人類使用者與 AI 爬蟲，確保資訊完整且易於 AI 理解。" }
+              ]
+            },
+            {
+              topic: "WordPress 架構利弊與自建系統優勢",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "五樓", text: "WordPress 開源特性帶來安全性隱患，駭客可即時追蹤漏洞，外掛版本與核心版本常有相容性問題，維護成本偏高。五樓已與 awoo 系統開發固定整合模組，實現近乎無痛接軌。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議福盈化學以好用、好找、易維護、彈性佳為優先考量，不建議採用 WordPress。" }
+              ]
+            },
+            {
+              topic: "客戶需求確認：全外包與兩年合約",
+              exchanges: [
+                { speaker: "Safina Liang", role: "other", label: "福盈化學", text: "IT 僅剩主管加一名下屬，全力投入 AI 大腦計畫。行銷部僅兩人，期望找到能全方位外包的團隊。改版動機在於拓展新事業體（乳膠化學品、植物纖維餐盤、半導體），希望合約至少兩年。" },
+                { speaker: "Eileen", role: "other", label: "福盈化學", text: "確認需上線語系為繁體中文、英文、越南文、印尼文及日文，需為獨立網址形式以利 GEO 各語系分別優化。" }
+              ]
+            },
+            {
+              topic: "多語系 AI 翻譯功能與後續推進",
+              exchanges: [
+                { speaker: "Eileen", role: "other", label: "福盈化學", text: "詢問能否填完中文後一鍵擴充所有語系。" },
+                { speaker: "MarsZ Chen", role: "other", label: "五樓", text: "此功能可客製化開發，儲存時勾選目標語系，後台即以 AI 批次翻譯並填入對應欄位。翻譯完成後建議由各語系人員校稿。" },
+                { speaker: "蔡阿達", role: "ada", text: "awoo 會同步提供 GEO 追蹤與關鍵字分析報告，與五樓月報相互配合形成完整的網站健康監控機制。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-26",
           title: "福盈官網建置 GEO 技術合作洽談",
@@ -5604,6 +5645,195 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "Eric Hsiao", role: "other", label: "PM", text: "客戶目前以上班族薪水支付，無法一次付清，希望拉長付款時間。已與客戶溝通付款方案。" },
                 { speaker: "Anne Chang", role: "other", label: "PM", text: "同意將款項分兩年攤還，調整付款方式不再使用信用卡。提醒下週需催促摩曼頓款項。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P53: Biggo Kevin ======
+    {
+      id: "biggo-kevin",
+      name: "Biggo（Kevin Yen）— AI 內容生成與多語言技術交流",
+      icon: "🔍",
+      category: "partner",
+      lastUpdated: "2026-05-28",
+      summary: "Kevin Yen 介紹 Biggo 三大業務（Shopify 圖搜、AI 中轉、財經事件推演），財經平台日本月流量成長半年維持 100-200%。雙方在多語言角色化翻譯技術、代理商動態資料 AI 化上找到潛在合作交集，具體合作形式待後續評估",
+      keyPoints: [
+        "Biggo 三大業務：<strong>Shopify 圖搜</strong>（近千間用戶）、<strong>AI 中轉平台</strong>、<strong>財經事件推演系統</strong>",
+        "財經事件推演系統整合法說會逐字稿、社群情緒、新聞等多維資料，日本市場月流量連續半年成長 <strong>100%~200%</strong>",
+        "系統核心為 Agent 訂閱制：用戶透過 Telegram/LINE/WhatsApp 與財經 Agent 對話，主動推播持股分析",
+        "Kevin 提出代理商核心競爭力為<strong>動態第一手資料</strong>（IC 報價走勢、交期、庫存），建議公開歷史走勢圖吸引 AI 引用",
+        "多語言角色化翻譯：<strong>非單純翻譯而是針對不同市場讀者重寫內容</strong>，如匯率轉換、部會名稱在地化",
+        "大型語言模型在<strong>數值單位轉換</strong>上仍有明顯缺陷（如 10B 的幣值歧義），Biggo 投入大量工程修正",
+        "雙方技術本質相似（信號收集 + 模型推演），awoo 為客戶需求驅動，Biggo 為事件驅動",
+        "短期最可能合作交集：多語言角色化翻譯、代理商動態資料 AI 化、企業 AI 轉型技術支援"
+      ],
+      chips: [
+        { icon: "📊", text: "財經推演系統" },
+        { icon: "🇯🇵", text: "日本月成長 100%+" },
+        { icon: "🌐", text: "多語言角色化" },
+        { icon: "🤝", text: "合作待評估" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "評估與 Biggo 在多語言角色化翻譯技術上的合作可能性（如福盈化學多語言站）", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-28",
+          title: "awoo × Biggo Kevin — AI 內容生成與多語言技術交流",
+          time: "10:39-12:01",
+          duration: "1h21m",
+          participants: "蔡阿達、Kevin Yen（Biggo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Biggo 三大業務介紹",
+              exchanges: [
+                { speaker: "Kevin Yen", role: "other", label: "Biggo", text: "第一是 Shopify 電商圖搜服務，近千間用戶穩定繳費。第二是 AI 中轉平台，單一介面調用各家大型語言模型。第三是財經事件推演系統，整合股市、法說會、社群情緒等，日本市場月流量連續半年成長 100%~200%。" },
+                { speaker: "蔡阿達", role: "ada", text: "介紹 awoo 在 2026 年 3 月推出的 GEO 追蹤工具，幫品牌找出消費者對 AI 提出的關鍵字與提問句，追蹤品牌在各 AI 平台的引用狀況。服務需求來自品牌主管發現 AI 不推薦自家產品的痛點。" }
+              ]
+            },
+            {
+              topic: "代理商動態資料內容策略",
+              exchanges: [
+                { speaker: "Kevin Yen", role: "other", label: "Biggo", text: "代理商真正的核心競爭力是動態第一手資料 — IC 報價走勢、交期、庫存等只有代理商才有且每日更新的資訊。建議偉強可公開歷史報價走勢圖（遮蔽敏感名稱），讓動態資料成為吸引 AI 引用的核心資產。" },
+                { speaker: "蔡阿達", role: "ada", text: "此觀點對輔導代理商客戶策略有重要啟發，未來要引導業主思考「只有你才有的即時更新資訊是什麼」，並建立系統化自動更新機制。" }
+              ]
+            },
+            {
+              topic: "多語言角色化翻譯技術與合作可能性",
+              exchanges: [
+                { speaker: "Kevin Yen", role: "other", label: "Biggo", text: "Biggo 內容生成核心強項在於針對不同市場讀者重寫內容，非單純翻譯。同一則新聞針對台灣讀者需補充日圓兌新台幣匯率，針對日本讀者要把美元轉日圓。GPT 5.5 在數值單位轉換上仍有缺陷，Biggo 花大量工程投入修正。" },
+                { speaker: "蔡阿達", role: "ada", text: "兩者技術本質相似，短期最可能的合作交集在多語言角色化翻譯技術、代理商動態資料 AI 化及企業 AI 轉型輔導的技術支援。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P54: AE × 行銷業績歸屬規則 ======
+    {
+      id: "ae-mkt-attribution",
+      name: "AE × 行銷業績歸屬規則",
+      icon: "📊",
+      category: "company",
+      lastUpdated: "2026-05-28",
+      summary: "Angelline 與蔡阿達討論行銷部門業績歸屬計算邏輯，同意以排除法判斷：由 AE 列出確定與行銷無關的案件，行銷比對後剩下的視為行銷貢獻。代理商帶來的客戶原則上歸計行銷。HubSpot 資料漏失問題待手動表格同步機制推進",
+      keyPoints: [
+        "採<strong>排除法</strong>判斷業績歸屬：AE 列出確定與行銷無關的成交案件 → 行銷比對後剩下的即為行銷貢獻",
+        "代理商（<strong>雅戶、凱洛、易安網</strong>）帶來的客戶案件，原則上歸計行銷業績",
+        "易安網為凱洛帶入的第一個客戶，金額約 <strong>80~100 萬</strong>，CS 已在服務中",
+        "<strong>展匠案</strong>（李勇負責）最初名單來源待確認，展匠母公司為洪將旗下，規模更大",
+        "HubSpot 資料<strong>每月均有漏失</strong>，行銷無權限查閱完整業績表（Ragic 為最準確來源但涉及機敏資訊）",
+        "蔡阿達已請 AE 把手動業績表格與 HubSpot 同步，但<strong>執行尚未完整</strong>",
+        "Angelline 強調代理商開發的策略價值在於<strong>滾動式業績</strong>，應有對應計算方式"
+      ],
+      chips: [
+        { icon: "🔄", text: "排除法" },
+        { icon: "📈", text: "行銷貢獻" },
+        { icon: "🏢", text: "代理商歸行銷" },
+        { icon: "⚠️", text: "HubSpot 缺漏" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "請各 AE 列出本月成交中確定與行銷無關的案件清單，提供 Angelline 比對", priority: "today" },
+        { owner: "蔡阿達", text: "確認展匠案最初名單來源（向李勇查詢），協助判定是否歸行銷業績", priority: "week" },
+        { owner: "蔡阿達", text: "推動手動業績表格與 HubSpot 同步機制，並提供去除機敏資訊版本給行銷", priority: "week" },
+        { owner: "Angelline", text: "與 Max 合作制定行銷與業務業績歸屬判斷規則並條例化", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-28",
+          title: "AE × 行銷業績歸屬規則討論",
+          time: "14:03-14:16",
+          duration: "13m",
+          participants: "蔡阿達、Angelline（行銷部）、Winny Chiang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "行銷業績歸屬範疇與排除法",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "行銷", text: "行銷貢獻包含：主動喚醒中斷客戶後成交、透過活動或 BDR 喚醒後成交、代理商（雅戶、凱洛）帶入的後續客戶。代理商開發的策略價值在於滾動式業績，應有對應計算方式。" },
+                { speaker: "蔡阿達", role: "ada", text: "業務在 HubSpot 的來源欄位填寫向來不夠嚴謹，比起找出哪些是行銷來的，改用找出哪些確定與行銷無關的排除法更實際。本質上業績歸屬對整體推進影響不大，但為確保獎賞到對的人仍需建立規則。" }
+              ]
+            },
+            {
+              topic: "HubSpot 資料缺漏與業績查核",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "行銷", text: "行銷只能透過 HubSpot 查看業績，但每月均有漏失，且無權限查閱 Ragic 完整業績表。若蔡阿達可提供去除機敏欄位的業績表，行銷即可交叉比對防呆。" },
+                { speaker: "蔡阿達", role: "ada", text: "目前業績主要由各 AE 手動填入共用表格供財務預測，已請 AE 與 HubSpot 同步但執行尚未完整。" }
+              ]
+            },
+            {
+              topic: "展匠案與代理商案件來源確認",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "行銷", text: "展匠由李勇負責，案件量穩定，母公司為洪將旗下規模更大。但最初是否由行銷提供名單目前不確定，需向李勇確認。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認後再判斷展匠案的業績歸屬。已知由行銷開發的代理商包含雅戶與凱洛，易安網是凱洛帶入的第一個客戶。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P55: BNI 潘恩 ======
+    {
+      id: "bni-pan-waiting",
+      name: "BNI × 潘恩（威廷勞資顧問）— 主題簡報指導",
+      icon: "🎤",
+      category: "events",
+      lastUpdated: "2026-05-28",
+      summary: "蔡阿達指導潘恩以 LGTV 框架精簡 BNI 主題簡報至 12 頁 5 分鐘，確認 USP「獎金規劃不是找會計師，而是找勞資顧問」。小琉球寶哥麻花捲為潛在 awoo 引薦客戶",
+      keyPoints: [
+        "主題簡報調整為 <strong>LGTV 框架</strong>：開場 + 2~3 個 USP（各含簡短案例）+ 結語，約 12 頁、5 分鐘",
+        "主打 USP：「<strong>大家以為獎金規劃要找會計師，其實應該找勞資顧問</strong>」",
+        "案例不需鉅細靡遺，30~60 秒帶過「發生什麼事 → 怎麼處理 → 解決什麼問題」即可",
+        "勞資蟑螂案例可融入某個 USP 段落，不需單獨長篇解說",
+        "潘恩近期最常見需求：企業設計<strong>獎金或薪酬制度</strong>時不知找誰諮詢",
+        "薪酬制度規劃（加班費、獎金結構、投保薪資）屬於<strong>勞資顧問專業</strong>，非會計師範疇",
+        "小琉球<strong>寶哥麻花捲</strong>為潛在客戶，產品多元、接班人積極推動數位經營"
+      ],
+      chips: [
+        { icon: "🎯", text: "LGTV 框架" },
+        { icon: "⏱️", text: "12 頁 5 分鐘" },
+        { icon: "💼", text: "勞資顧問 USP" },
+        { icon: "🍩", text: "寶哥麻花捲引薦" }
+      ],
+      todos: [
+        { owner: "潘恩", text: "按 LGTV 框架完成主題簡報初稿（12 頁以內，含 1~2 個案例及 USP）", priority: "week" },
+        { owner: "潘恩", text: "完成初稿後邀請蔡阿達進行 5 分鐘演練並取得回饋", priority: "waiting" },
+        { owner: "潘恩", text: "整理薪酬制度與會計師職責差異的一句話 USP 作為開啟對話標準說詞", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-05-28",
+          title: "BNI × 潘恩 — 主題簡報架構指導與勞資顧問服務討論",
+          time: "16:33-16:54",
+          duration: "20m",
+          participants: "蔡阿達、潘恩（威廷勞資顧問）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "主題簡報架構調整為 LGTV",
+              exchanges: [
+                { speaker: "潘恩", role: "other", label: "勞資顧問", text: "初步規劃包含公司服務介紹、勞資蟑螂案例、勞動條件重點及目標對象，但內容偏重知識傳達、篇幅偏長，較少案例。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議採 LGTV 架構：一頁開場、2~3 個主打服務重點各搭配一個簡短案例、最後一頁結語。12 頁以內、5 分鐘完成。聽眾注意力有限，案例只要交代發生什麼事、怎麼處理、解決什麼問題，30~60 秒帶過即可。" }
+              ]
+            },
+            {
+              topic: "勞資顧問 USP 開發：獎金規劃找勞資顧問",
+              exchanges: [
+                { speaker: "潘恩", role: "other", label: "勞資顧問", text: "近期最常見的問題是企業設計獎金或薪酬制度時不知找誰諮詢，很多業主習慣找會計師，但薪酬制度規劃其實屬勞資顧問專業，不同會計制度（查賬制、書審制）對薪資申報與稅務影響也不同。" },
+                { speaker: "蔡阿達", role: "ada", text: "這個認知落差可以直接作為 USP：大家以為獎金規劃要找會計師嗎？其實要找勞資顧問。用一句話開啟對話，再以案例說明解決方案。" }
+              ]
+            },
+            {
+              topic: "小琉球寶哥麻花捲潛在引薦",
+              exchanges: [
+                { speaker: "潘恩", role: "other", label: "勞資顧問", text: "小琉球寶哥麻花捲產品多元、接班人積極推動數位經營，有心投入。另有預備大客戶因問題較棘手尚未找到切入點，持續評估引薦時機。" },
+                { speaker: "蔡阿達", role: "ada", text: "目前主打 AI 優化搜尋服務，不以商品數量多少為篩選條件，適時可評估合作。" }
               ]
             }
           ]
