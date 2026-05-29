@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-28T19:00:00",
-  dateLabel: "2026/05/28（四）",
+  lastUpdated: "2026-05-29T19:00:00",
+  dateLabel: "2026/05/29（五）",
   stats: {
-    meetings: 103,
+    meetings: 105,
     projects: 55,
     partners: 18,
     internal: 9,
     clientCompany: 25,
-    todos: 383
+    todos: 403
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-22",
-      summary: "5/22 Weekly Sync Up 藍文甫要求重整 AE 團隊行為規範 — 特規頻繁與業績不佳需嚴格執行簽約流程；獎金辦法已正式發佈（MRR 業績獎金 + 銷售獎金），收款後領獎及獎金回扣機制生效中",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 三大議題 — ① OKR 因 AI 因素延至 6 月落地，全公司已公布；② 候選制第三季結束前全面取消，減少服務啟動延遲；③ 脆舊美學客戶解約案管理層介入中，需嚴格控管業務折扣與權限",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -237,15 +237,23 @@ window.WAR_ROOM_DATA = {
         "🆕 5/19 Winny 明日（5/20）向麥克反映業務意見，尋求回收條款調整可能",
         "🆕 5/22 藍文甫直言 AE 團隊需重整 — <strong>特規頻繁且業績不佳</strong>，建議主管從一開始約束成員行為",
         "🆕 5/22 蔡阿達承諾配合改善，<strong>嚴格執行簽約流程</strong>避免未經批准的案子進入",
-        "🆕 5/22 目標減少後勤負擔與呆帳風險，提升團隊執行力與業績表現"
+        "🆕 5/22 目標減少後勤負擔與呆帳風險，提升團隊執行力與業績表現",
+        "🆕 5/29 OKR 因 AI 及多重因素<strong>延至 6 月落地</strong>，全公司及主管均已公布 OKR",
+        "🆕 5/29 蔡阿達確認收到 Daisy 提供的部門 OKR 一覽表，業務開發部營收目標與認知一致",
+        "🆕 5/29 <strong>候選制第三季結束前全面取消</strong>，保留短期彈性應對特殊狀況",
+        "🆕 5/29 候選制原為 AE 簽單彈性，但造成<strong>服務啟動延遲及收費爭議</strong>，最後一個月不收費致前後不一致",
+        "🆕 5/29 取消候選制有助於提升服務效率與收費透明度，CS 可督促客戶按時完成選字",
+        "🆕 5/29 <strong>脆舊美學客戶有解約意向</strong>且要求免違約金，需走公司內部流程由管理層決策",
+        "🆕 5/29 蔡阿達建議若客戶關係不愉快應停止服務避免 CS 為難，合約事務交由艾瑞克處理",
+        "🆕 5/29 業務折扣與權限需嚴格控管，<strong>部長與副部長應擔任守門員角色</strong>，確保業務紀律與流程"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
         { icon: "💰", text: "845萬/6人" },
         { icon: "⚠️", text: "PIP < 60%" },
         { icon: "🎯", text: "T型圖基準" },
-        { icon: "📊", text: "認列率 70%" },
-        { icon: "🆕", text: "5/19 回扣條款" }
+        { icon: "📋", text: "OKR 6月落地" },
+        { icon: "🚫", text: "候選制 Q3 取消" }
       ],
       todos: [
         { owner: "Winny Chiang", text: "明日（5/20）向麥克反映業務對獎金回收條款意見，請示調整可能", priority: "today" },
@@ -253,9 +261,47 @@ window.WAR_ROOM_DATA = {
         { owner: "Winny Chiang", text: "釐清並公告獎金回收規定，建立特殊案例另案討論機制", priority: "week" },
         { owner: "Winny Chiang", text: "與 Daisy 及蔡阿達持續收集獎金辦法調整建議", priority: "week" },
         { owner: "藍文甫", text: "協助重整 AE 團隊行為與認知，強化流程遵守與品質把關", priority: "week" },
-        { owner: "蔡阿達", text: "督促 AE 團隊嚴格執行簽約流程，減少後勤負擔與呆帳風險", priority: "week" }
+        { owner: "蔡阿達", text: "督促 AE 團隊嚴格執行簽約流程，減少後勤負擔與呆帳風險", priority: "week" },
+        { owner: "蔡阿達", text: "推動第三季結束前取消候選制，宣佈新政策確保客戶與內部認知一致", priority: "week" },
+        { owner: "藍文甫與 Anne Chang", text: "制定明確選字期限與服務啟動時間，減少候選制不確定性", priority: "week" },
+        { owner: "蔡阿達", text: "完成脆舊美學解約相關信件調整並寄出，拆分服務窗口與合約管理", priority: "today" },
+        { owner: "藍文甫", text: "監督脆舊美學解約流程，與管理層溝通案件狀況與後續處理方案", priority: "week" },
+        { owner: "蔡阿達與藍文甫", text: "共同制定業務團隊放行與折扣管理規範，強化內部管控", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-29",
+          title: "Weekly Sync Up — OKR 落地、候選制取消、客戶解約管理",
+          time: "11:19-12:15",
+          duration: "56m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "OKR 制定與公司目標溝通",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "今年因 AI 及其他狀況影響，OKR 制定延後至 6 月完成，為公司重要工作。全公司及主管均已公布 OKR，各部門需依公司目標制定部門目標。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認收到 Daisy 提供的部門 OKR 一覽表，核對業務開發部營收目標與自身認知一致。" }
+              ]
+            },
+            {
+              topic: "候選制合約政策檢討與調整",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "不喜歡候選制，最後一個月不收費造成前期服務與收費不一致。候選制原為 AE 簽單彈性，需與客戶清楚溝通規則。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "候選制帶來不確定性，客戶常以各種理由拖延選字，影響服務啟動與收費。可透過明確規範讓 CS 督促客戶按時選字。" },
+                { speaker: "蔡阿達", role: "ada", text: "第三季為最後一季實施候選制，第三季結束前全面取消。取消有助於提升服務效率與收費透明度。" }
+              ]
+            },
+            {
+              topic: "脆舊美學客戶解約處理與內部流程規範",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "與李勇討論脆舊美學案，客戶有解約意向且要求免違約金，需走公司內部流程由管理層決策。業務團隊需建立明確規矩，部長與副部長應擔任守門員角色。" },
+                { speaker: "蔡阿達", role: "ada", text: "若客戶關係不愉快應停止服務避免 CS 為難。將持續支援客戶，合約事務交由艾瑞克處理，拆分服務窗口與合約管理。" },
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "信件寄送需包含相關人員，督促艾瑞克後續跟進避免拖延。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-22",
           title: "Weekly Sync Up — AE 團隊行為規範與流程管理",
@@ -524,8 +570,8 @@ window.WAR_ROOM_DATA = {
       name: "代理商計畫 & 媒體經銷模式",
       icon: "📺",
       category: "internal",
-      lastUpdated: "2026-05-22",
-      summary: "5/22 代理商退佣方案定案 — 非獨家佣金 6%、獨家佣金 10%（差距 4%），法務最終審核中；蔡阿達認同佣金比例與過去 MP 方案相近；Anne Chang 已標記細節並交法務確認",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 代理商佣金比例調整 — 獨家代理 15%、非獨家 8%（由 Max 與 Mike 協商決定）；獨家定義明確為代理商成為公司唯一合作夥伴，短期不強制獨家但合約保留選項；業務需嚴格控管折扣政策",
       keyPoints: [
         "與赫斯特（時尚）及天下（財經）兩大媒體合作",
         "不採年約，<strong>兩個月為一期計算 MRR</strong>",
@@ -569,13 +615,18 @@ window.WAR_ROOM_DATA = {
         "🆕 5/15 決定先自行過一遍合約，<strong>下週市場會議中與麥克討論</strong>",
         "🆕 5/22 代理商退佣方案定案 — 非獨家佣金 <strong>6%</strong>，獨家佣金 <strong>10%</strong>，差距 4% 以鼓勵獨家合約",
         "🆕 5/22 蔡阿達認同佣金比例合理，與過去 MP 方案相近",
-        "🆕 5/22 Anne Chang 已標記細節交法務最終確認，通過後正式實施"
+        "🆕 5/22 Anne Chang 已標記細節交法務最終確認，通過後正式實施",
+        "🆕 5/29 代理商佣金比例調整 — <strong>獨家代理 15%，非獨家 8%</strong>（由 Max 與 Mike 協商決定）",
+        "🆕 5/29 獨家代理定義明確：<strong>代理商成為公司唯一合作夥伴</strong>，非限制公司只能與該代理商合作",
+        "🆕 5/29 短期內不強制獨家，合約中<strong>保留選項以利未來管理</strong>",
+        "🆕 5/29 業務報價需考慮佣金及折扣（九五折、八五折）<strong>對售價影響</strong>，管理層需把關折扣政策",
+        "🆕 5/29 合約條款需由法律專業人員（亨利）調整，確保條文<strong>符合公司意圖</strong>"
       ],
       chips: [
         { icon: "📝", text: "合約拆分兩份" },
         { icon: "⚖️", text: "滿意度 ≥ 70%" },
-        { icon: "💰", text: "工具原價不折扣" },
-        { icon: "📄", text: "協議修訂版審閱中" },
+        { icon: "💰", text: "獨家 15% / 非獨家 8%" },
+        { icon: "📄", text: "法務審核中" },
         { icon: "⏰", text: "續約通知 30 天" },
         { icon: "🔀", text: "三類代理商分流" },
         { icon: "🔄", text: "佣金延續至續約" },
@@ -606,9 +657,30 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "與 Max Huang 共同檢視代理商協議，刪除或調整不適用的獨家條款並明確定義適用範圍", priority: "week" },
         { owner: "Max Huang", text: "指派法務確認代理商協議條款，下次會議前完成修訂版本", priority: "week" },
         { owner: "藍文甫", text: "與 Anne Chang 完成代理商退佣方案法務最終審核", priority: "week" },
-        { owner: "蔡阿達", text: "與 Max Huang 評估佣金比例體感與誘因，確認獨家合作佣金優勢", priority: "week" }
+        { owner: "蔡阿達", text: "與 Max Huang 評估佣金比例體感與誘因，確認獨家合作佣金優勢", priority: "week" },
+        { owner: "藍文甫", text: "與法務亨利溝通調整代理商合約條款，明確獨家代理定義與佣金比例", priority: "week" },
+        { owner: "蔡阿達", text: "整理代理商合作狀況，配合調整合約條款，確保業務團隊理解獨家與非獨家差異", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-29",
+          title: "Weekly Sync Up — 代理商獨家條款與佣金政策調整",
+          time: "11:19-12:15",
+          duration: "56m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "代理商獨家條款與佣金政策釐清",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "代理商條款中有獨家與非獨家選項，獨家代理意味代理商成為公司唯一合作夥伴，非限制公司只能與該代理商合作。業務報價需考慮佣金及折扣對售價影響，管理層需把關折扣政策。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "獨家代理佣金為 15%，非獨家為 8%，由 Max 與 Mike 協商決定。獨家代理是代理商成為公司唯一合作夥伴，並非限制公司只能與該代理商合作。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "業務放行折扣需有整體概念，由管理層把關，避免過度折扣造成損失。合約條款需由法律專業人員（亨利）調整。" },
+                { speaker: "蔡阿達", role: "ada", text: "代理商多為誠意合作，短期內不需強制獨家，但合約中仍保留選項以利未來管理。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-22",
           title: "Weekly Sync Up — 代理商退佣方案與獨家合作誘因",
@@ -788,8 +860,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-20",
-      summary: "5/20 品牌聲音卡片化測試啟動 — 廖淑芬預計 5/25、6/5、6/22 完成三階段測試報告；純文案方案調整為純撰寫計價（取消 10+7 混合方案），月產量上限 24 篇；建站合約服務期限改為網站上線日起算 12 個月；所有 spec 變更由 Mike 統一審核",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 提出與 Biggo 合作解決英文文案瓶頸 — Biggo 可將中文內容轉換成多國語言並生成新內容，收取 API 費用 10%，技術串接透過 MOS 服務實現；品牌聲音卡片化測試進行中（廖淑芬 5/25、6/5、6/22 三階段報告）",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -850,6 +922,11 @@ window.WAR_ROOM_DATA = {
         "🆕 5/20 卡片設計含<strong>專業卡、知識經歷卡、案例卡</strong>，依產業分類抽用，方便文案撰寫時調用",
         "🆕 5/20 品牌聲音整體概念優於卡片化方案，效果<strong>優於 ChatGPT 與 Gemini</strong> 生成文案",
         "🆕 5/20 蔡阿達負責品牌聲音萃取與版本統一管理，廖淑芬負責測試並提供回饋",
+        "🆕 5/29 蔡阿達介紹 <strong>Biggo 數據分析與內容生成技術</strong>，提出合作以解決公司英文文案數量不足問題",
+        "🆕 5/29 Biggo 可協助將中文內容轉換成多國語言並生成新內容，<strong>收取 API 費用 10%</strong>，費用低且對方態度友善",
+        "🆕 5/29 目前中文文案 17 篇，<strong>英文僅 7 篇</strong>且多為規劃階段，無法滿足海外市場需求",
+        "🆕 5/29 藍文甫認為 Biggo 技術可<strong>強化公司產品模式</strong>，下一步需確認對接價格與技術串接流程",
+        "🆕 5/29 技術串接可透過 <strong>MOS 服務</strong>實現，重點在於如何順暢接收甲方資訊並自動產生內容",
         "🆕 5/20 純文案方案調整 — <strong>取消「10 篇撰寫 + 7 篇規劃」混合方案</strong>，改為純文案撰寫計價",
         "🆕 5/20 純文案方案月產量上限 <strong>24 篇</strong>，以生活化產品客戶為主，B2B 產品不適用",
         "🆕 5/20 代理商合約維持<strong>顧問案轉介紹抽佣機制</strong>，合約版本待藍文甫整理後由 Mike 決定",
@@ -886,9 +963,29 @@ window.WAR_ROOM_DATA = {
         { owner: "呂紹平", text: "聯繫 Roger 安排九月合約到期續約會議", priority: "week" },
         { owner: "蔡阿達", text: "協助制定新聞稿成效追蹤報告方案，評估 GA 或其他工具", priority: "week" },
         { owner: "蔡阿達", text: "萃取成功案例關鍵字與文章規劃邏輯，作為 AI 產出參考", priority: "week" },
-        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" }
+        { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" },
+        { owner: "蔡阿達", text: "持續跟進 Biggo 合作細節與 API 串接流程，安排後續測試與評估", priority: "week" },
+        { owner: "藍文甫", text: "評估 Biggo 合作價格與代價，推動技術測試與整合", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-29",
+          title: "Weekly Sync Up — Biggo 多語言內容合作提案",
+          time: "11:19-12:15",
+          duration: "56m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "與 Biggo 合作解決英文文案產出瓶頸",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "介紹 Biggo 的數據分析與內容生成技術，核心包括以圖搜圖（已在 Shopify 平台應用）及財經資訊收集。Biggo 能協助將中文內容轉換成符合不同國家語言與文化的內容並生成新內容，解決公司英文文案數量不足的痛點。" },
+                { speaker: "蔡阿達", role: "ada", text: "目前中文文案 17 篇，英文僅 7 篇且多為規劃階段，無法滿足海外市場需求。Biggo 合作費用低，主要收取 API 費用 10%，對方態度友善。技術串接可透過 MOS 服務實現。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "認為 Biggo 技術可強化公司產品模式，下一步需確認對接價格與技術串接流程。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-20",
           title: "與阿達討論 AI 文案操作方向 — 品牌聲音卡片化 × 純文案方案 × 建站合約",
@@ -3041,8 +3138,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-26",
-      summary: "5/26 文案輕量方案定價確認 — 電商與非電商兩種方案每月 2.2-2.5 萬元，含 4 份建議書與 12 篇文章（4 篇 AI + 8 篇人工）；AMP 客戶以 ROP 配置引導至 GU 方案，結合 AI 產文與 QA 模組降低負擔",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 Max Huang 提出品牌治理五步法新論述（品牌定位→內容渲染→資訊架構→信任網絡→監測），搭配七大服務模組與三種方案，團隊認同論述符合行銷語言；5/26 文案輕量方案定價確認每月 2.2-2.5 萬元",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3148,7 +3245,13 @@ window.WAR_ROOM_DATA = {
         "🆕 5/26 AMP 客戶引導至 GU 方案 — 以 <strong>ROP 配置</strong>挑選著陸頁，結合 AI 產文與 QA 模組降低負擔",
         "🆕 5/26 AMP 方案限定<strong>商品數至少 500 件</strong>且必須為 API 串接，執行週期 6 個月",
         "🆕 5/26 GU 方案<strong>三階段數據報告</strong>（期初/中期/期末），結案時提供續約方向建議",
-        "🆕 5/26 5/27 安排 <strong>GU for MP 方案</strong>討論會議（11:30-12:00）"
+        "🆕 5/26 5/27 安排 <strong>GU for MP 方案</strong>討論會議（11:30-12:00）",
+        "🆕 5/29 Max Huang 提出<strong>品牌治理五步法</strong>：品牌定位→內容渲染→資訊架構→信任網絡→數據監測，目標讓 AI 看見、信任、推薦及選擇品牌",
+        "🆕 5/29 五步法對應 <strong>15 項具體工作</strong>，由<strong>七大服務模組</strong>支援，形成完整品牌治理方案",
+        "🆕 5/29 三種方案：<strong>免費品牌見診、品牌治理升級、代理商合作方案</strong>",
+        "🆕 5/29 藍文甫表示此論述<strong>符合客戶語言</strong>，能提升 pitch 轉化率，結構清晰易懂",
+        "🆕 5/29 蔡阿達認同論述合理，強調先從品牌定位談起的重要性，awoo 專注<strong>將品牌故事轉化為 AI 可理解架構</strong>",
+        "🆕 5/29 Max 將加入 <strong>Google I/O 最新技術資訊</strong>，階段由三個調整為四個（增加選擇度）"
       ],
       chips: [
         { icon: "💰", text: "GO 3.3-7.3萬" },
@@ -3238,9 +3341,30 @@ window.WAR_ROOM_DATA = {
         { owner: "Alice Cho", text: "與小雞及 YC 協調 GU 方案 ROP 配置關鍵字選擇標準", priority: "week" },
         { owner: "YC", text: "完成 ROP 配置自動化 QA 產出與 prompt 設計測試", priority: "week" },
         { owner: "Alice Cho", text: "準備 GU for MP 方案簡報資料，5/27 11:30 會議使用", priority: "today" },
-        { owner: "Fenix Li", text: "整合 GU 方案專員介入時點與工作內容安排", priority: "week" }
+        { owner: "Fenix Li", text: "整合 GU 方案專員介入時點與工作內容安排", priority: "week" },
+        { owner: "Max Huang", text: "根據團隊回饋修訂品牌治理五步法 PPT，加入 Google I/O 最新 AI 技術內容並調整階段架構", priority: "week" },
+        { owner: "團隊", text: "檢視 Max 修訂後品牌治理 PPT，提供意見確保論述順暢且符合客戶需求", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-29",
+          title: "Weekly Sync Up — 品牌治理五步法新論述提案",
+          time: "11:19-12:15",
+          duration: "56m",
+          participants: "蔡阿達、藍文甫（Leo）、Max Huang、Anne Chang",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌治理五步法與新論述提案",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "提出品牌治理五步法：品牌定位、內容生成與推廣（內容渲染）、官網資訊架構、信任網絡及數據監測。目標是讓 AI 看見、信任、推薦及選擇品牌。五步法對應 15 項具體工作，由七大服務模組支援。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "此論述符合客戶語言，能提升 pitch 轉化率，結構清晰易懂。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同論述合理且符合行銷公關背景，強調先從品牌定位談起的重要性。awoo 專注將品牌故事轉化為 AI 可理解架構，可與公關公司合作而非競爭。" },
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "將加入 Google I/O 最新技術資訊，考慮將階段由三個調整為四個（增加選擇度），修訂版控制在 20 多頁方便客戶理解。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-26",
           title: "GEO 顧問方案討論 — 文案輕量方案定價與 AMP→GU 引導",
@@ -5278,29 +5402,77 @@ window.WAR_ROOM_DATA = {
       name: "偉強股份有限公司 — 官網 GEO 技術合作",
       icon: "🔌",
       category: "client",
-      lastUpdated: "2026-05-25",
-      summary: "電子零組件代理商首次洽談 — 網站 AI 能見度偏低，聚焦 Schema 結構化資料導入與 B2B 搜尋優化",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 續談確認合作方向 — 以「替代物料專家」為品牌定位主軸，聚焦 30 個主要品牌替代料，透過部落格與知識文章建構 AI 可爬取內容，提升搜尋能見度與客戶詢問率",
       keyPoints: [
         "偉強為<strong>電子零組件代理商</strong>，主要客群為國內 B2B 大中型工廠",
         "網站剛上線且缺乏專人經營，<strong>搜尋排名與 AI 能見度極低</strong>",
         "AI 誤將偉強與華晨電機視為同一廠商 — 華晨為製造商，偉強為代理商，<strong>需透過結構化資料糾正</strong>",
-        "客戶強項為提供<strong>停產產品替代方案</strong>，客戶已開始用 ChatGPT 搜尋替代品但搜不到偉強",
         "網站<strong>未使用 Schema 結構化資料</strong>，蔡阿達說明 Schema 對爬蟲理解網站內容的重要性",
-        "目前僅服務國內市場，<strong>無英文版網站</strong>，國外市場尚未開發"
+        "🆕 5/29 雙方確認以<strong>「替代物料專家」</strong>作為品牌定位主軸，聚焦 30 個主要代理品牌及其替代料",
+        "🆕 5/29 強勢產品線確認：<strong>半導體、保險絲、MOSFET、繼電器、光耦合器</strong>",
+        "🆕 5/29 以<strong>部落格（知識文章）</strong>作為內容載體，讓 AI 能收錄並在搜尋時推薦偉強",
+        "🆕 5/29 方品莊分享替代物成功案例，公司每天持續與客戶溝通替代方案，<strong>累積的經驗與資料為核心資產</strong>",
+        "🆕 5/29 停產料號替代方案與現貨資訊為<strong>核心吸引力</strong>，客戶用 ChatGPT 搜尋替代品但搜不到偉強",
+        "🆕 5/29 競爭對手分析：尚瑞科技、DigiKey、Mouser — 偉強網站品質基礎良好但<strong>內容需持續擴充</strong>",
+        "🆕 5/29 碳化硅（SIC）屬專業搜尋詞，工程師多以電壓等參數搜尋，<strong>不宜作為廣泛關鍵字</strong>，應聚焦替代物與具體料號",
+        "🆕 5/29 內容經營需兼顧 AI 搜尋機制，確保網站內容能被 AI 爬取並在消費者搜尋時提供推薦"
       ],
       chips: [
         { icon: "🔌", text: "電子零組件" },
         { icon: "🏭", text: "B2B 代理商" },
-        { icon: "📊", text: "Schema 導入" },
-        { icon: "🤖", text: "AI 能見度偏低" }
+        { icon: "🔄", text: "替代物料專家" },
+        { icon: "📝", text: "部落格內容策略" },
+        { icon: "🏷️", text: "30 品牌聚焦" },
+        { icon: "🤖", text: "AI 搜尋優化" }
       ],
       todos: [
         { owner: "蔡阿達", text: "提供偉強 Schema 結構化資料導入方案與報價", priority: "week" },
         { owner: "蔡阿達", text: "協助偉強釐清 AI 將偉強與華晨電機混淆的問題", priority: "week" },
-        { owner: "方品莊", text: "整理產品替代方案資料，供網站內容優化使用", priority: "waiting" },
-        { owner: "方品莊", text: "確認 B2B 客群定位，評估英文版網站需求", priority: "waiting" }
+        { owner: "蔡阿達", text: "挖掘替代物料相關關鍵字與主題，規劃以替代物料專家為品牌定位的內容策略", priority: "week" },
+        { owner: "蔡阿達", text: "協助優化網站內容結構，確保替代物料資訊能被 AI 及搜尋引擎有效收錄與推薦", priority: "week" },
+        { owner: "蔡阿達", text: "指導方品莊如何撰寫符合 AI 搜尋邏輯的部落格內容，建立內容更新流程", priority: "week" },
+        { owner: "方品莊", text: "整理目前正在進行的替代物料案例與成功經驗，作為內容素材", priority: "week" },
+        { owner: "方品莊", text: "針對重點產品類別（保險絲、MOSFET、碳化硅等）撰寫替代物料介紹與替代方案文章", priority: "week" },
+        { owner: "方品莊", text: "提供現有產品資料與品牌清單，協助內容聚焦於 30 個以內的重點品牌", priority: "week" },
+        { owner: "方品莊", text: "將市場訊息及客戶需求更新至網站，強化內容即時性與專業度", priority: "waiting" },
+        { owner: "方品莊", text: "評估競爭對手網站的內容架構與線上客服功能，提出可行改進方案", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-05-29",
+          title: "偉強官網 GEO 技術合作續談 — 替代物料專家定位",
+          time: "13:31-14:29",
+          duration: "58m",
+          participants: "蔡阿達、方品莊（偉強）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站內容策略與品牌替代物主題聚焦",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "不僅從關鍵字出發，更希望建構能被 AI 爬取的網站內容，協助偉強重整現有資料，讓資料被搜尋並吸引客戶接洽及簽約。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "電子零件代理商搜尋行為多以品牌及料號為主，客戶會尋找特定料號或品牌替代物，搜尋範圍不會過於廣泛，需聚焦具體零件與品牌。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議以替代物專家定位為主軸，針對 30 個主要品牌挑選 20 個重點品牌，配合替代品內容進行網站優化與行銷。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "公司每天持續與客戶溝通替代方案，累積豐富經驗與資料，這些都是偉強的核心價值與資產。替代物確實是最具競爭力的切入點。" }
+              ]
+            },
+            {
+              topic: "內容經營與 AI 搜尋策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "內容經營需兼顧 AI 搜尋機制，建議利用部落格（知識文章）作為內容載體，讓 AI 能收錄並在消費者搜尋時提供相關資訊。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "目前網站已有部落格功能，未來可持續補充替代物相關文章，以具體料號與停產訊息為主題，提升搜尋精準度與客戶導流。" },
+                { speaker: "蔡阿達", role: "ada", text: "碳化硅屬於較廣義且專業的詞彙，工程師多以電壓等參數搜尋，建議以替代物及具體料號為主，避免過於廣泛的關鍵字。" }
+              ]
+            },
+            {
+              topic: "競爭分析與產品線聚焦",
+              exchanges: [
+                { speaker: "方品莊", role: "other", label: "偉強", text: "大型競爭對手如尚瑞科技、DigiKey、Mouser 產品線龐大且管理成本高，偉強應聚焦自身強項與有限資源，選擇重點品牌與產品深耕內容。強勢產品線包括半導體、保險絲、MOSFET、繼電器、光耦合器。" },
+                { speaker: "蔡阿達", role: "ada", text: "將協助挖掘替代物相關字詞與主題，以替代物專家形象推廣偉強，提升網站搜尋排名與客戶詢問率。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-25",
           title: "偉強官網 GEO 技術合作",
@@ -5658,8 +5830,8 @@ window.WAR_ROOM_DATA = {
       name: "Biggo（Kevin Yen）— AI 內容生成與多語言技術交流",
       icon: "🔍",
       category: "partner",
-      lastUpdated: "2026-05-28",
-      summary: "Kevin Yen 介紹 Biggo 三大業務（Shopify 圖搜、AI 中轉、財經事件推演），財經平台日本月流量成長半年維持 100-200%。雙方在多語言角色化翻譯技術、代理商動態資料 AI 化上找到潛在合作交集，具體合作形式待後續評估",
+      lastUpdated: "2026-05-29",
+      summary: "5/29 Weekly Sync 跟進 — 蔡阿達向內部團隊介紹 Biggo 技術並提出合作解決英文文案瓶頸，藍文甫認同技術可強化產品模式，合作費用低（API 10%），下一步確認對接價格與技術串接；5/28 初次交流確認多語言角色化翻譯為潛在合作交集",
       keyPoints: [
         "Biggo 三大業務：<strong>Shopify 圖搜</strong>（近千間用戶）、<strong>AI 中轉平台</strong>、<strong>財經事件推演系統</strong>",
         "財經事件推演系統整合法說會逐字稿、社群情緒、新聞等多維資料，日本市場月流量連續半年成長 <strong>100%~200%</strong>",
@@ -5668,16 +5840,23 @@ window.WAR_ROOM_DATA = {
         "多語言角色化翻譯：<strong>非單純翻譯而是針對不同市場讀者重寫內容</strong>，如匯率轉換、部會名稱在地化",
         "大型語言模型在<strong>數值單位轉換</strong>上仍有明顯缺陷（如 10B 的幣值歧義），Biggo 投入大量工程修正",
         "雙方技術本質相似（信號收集 + 模型推演），awoo 為客戶需求驅動，Biggo 為事件驅動",
-        "短期最可能合作交集：多語言角色化翻譯、代理商動態資料 AI 化、企業 AI 轉型技術支援"
+        "短期最可能合作交集：多語言角色化翻譯、代理商動態資料 AI 化、企業 AI 轉型技術支援",
+        "🆕 5/29 蔡阿達於 Weekly Sync 向團隊介紹 Biggo 技術，<strong>提出合作解決英文文案產出瓶頸</strong>",
+        "🆕 5/29 Biggo 可將中文內容轉換成多國語言並生成新內容，<strong>收取 API 費用 10%</strong>，費用低",
+        "🆕 5/29 藍文甫認為 Biggo 技術可<strong>強化公司產品模式</strong>，下一步需確認對接價格與技術串接",
+        "🆕 5/29 技術串接可透過 MOS 服務實現，重點在於如何順暢接收甲方資訊並自動產生內容"
       ],
       chips: [
         { icon: "📊", text: "財經推演系統" },
         { icon: "🇯🇵", text: "日本月成長 100%+" },
         { icon: "🌐", text: "多語言角色化" },
-        { icon: "🤝", text: "合作待評估" }
+        { icon: "💰", text: "API 費 10%" },
+        { icon: "🤝", text: "內部已提案" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "評估與 Biggo 在多語言角色化翻譯技術上的合作可能性（如福盈化學多語言站）", priority: "week" }
+        { owner: "蔡阿達", text: "評估與 Biggo 在多語言角色化翻譯技術上的合作可能性（如福盈化學多語言站）", priority: "week" },
+        { owner: "蔡阿達", text: "持續跟進 Biggo 回覆，安排後續測試與評估", priority: "week" },
+        { owner: "藍文甫", text: "評估 Biggo 合作對接價格與代價，推動技術測試與整合", priority: "week" }
       ],
       meetingHistory: [
         {
