@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-05-29T19:00:00",
-  dateLabel: "2026/05/29（五）",
+  lastUpdated: "2026-06-01T19:00:00",
+  dateLabel: "2026/06/01（一）",
   stats: {
-    meetings: 105,
-    projects: 55,
-    partners: 18,
+    meetings: 109,
+    projects: 56,
+    partners: 19,
     internal: 9,
     clientCompany: 25,
-    todos: 403
+    todos: 424
   },
 
   projects: [
@@ -860,8 +860,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-05-29",
-      summary: "5/29 提出與 Biggo 合作解決英文文案瓶頸 — Biggo 可將中文內容轉換成多國語言並生成新內容，收取 API 費用 10%，技術串接透過 MOS 服務實現；品牌聲音卡片化測試進行中（廖淑芬 5/25、6/5、6/22 三階段報告）",
+      lastUpdated: "2026-06-01",
+      summary: "6/1 品牌聲音與知識卡片整合完成 — 蔡阿達克服爬取限制，品牌聲音（固定特質）+ 知識卡片（持續更新技術與風格）雙軌路線成形；快速生成機制已可使用，暫不需彤彤團隊開發；藍文甫建議蔡阿達專注原型，產品化交彤彤與賈斯汀",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -931,7 +931,15 @@ window.WAR_ROOM_DATA = {
         "🆕 5/20 純文案方案月產量上限 <strong>24 篇</strong>，以生活化產品客戶為主，B2B 產品不適用",
         "🆕 5/20 代理商合約維持<strong>顧問案轉介紹抽佣機制</strong>，合約版本待藍文甫整理後由 Mike 決定",
         "🆕 5/20 建站合約服務期限調整 — <strong>網站正式上線日起算 12 個月</strong>，收款依時間點固定收取",
-        "🆕 5/20 所有方案 spec 變更統一由 <strong>Mike 審核</strong>，小安代理管理文件與定價，避免跨部門內耗"
+        "🆕 5/20 所有方案 spec 變更統一由 <strong>Mike 審核</strong>，小安代理管理文件與定價，避免跨部門內耗",
+        "🆕 6/1 品牌聲音與知識卡片正式整合 — <strong>品牌聲音</strong>涵蓋品牌知識、口氣、個性等固定元素；<strong>知識卡片</strong>涵蓋持續更新的技術與文章風格",
+        "🆕 6/1 蔡阿達已克服爬取網站頁面限制（原單一視窗效率低），<strong>快速生成品牌聲音機制已可立即使用</strong>",
+        "🆕 6/1 彤彤團隊原計畫開發自動化工具暫緩，蔡阿達已告知彤彤現狀；<strong>產品化由彤彤與賈斯汀團隊負責</strong>",
+        "🆕 6/1 藍文甫表示麥克希望品牌聲音工具成為<strong>產品數據的一部分</strong>，蔡阿達目前機制為 prototype",
+        "🆕 6/1 爬取客戶網站資料工作將由<strong>阿福或蔡阿達負責</strong>解決技術問題",
+        "🆕 6/1 藍文甫建議蔡阿達<strong>專注概念原型開發</strong>，產品化工作交產品團隊推進",
+        "🆕 6/1 喬峰因急件多與 CS 溝通摩擦情緒影響文章品質，<strong>已安排外包與恩安協助</strong>，鼓勵休假調整",
+        "🆕 6/1 上次 MP 週會溝通效果不佳，藍文甫建議廖淑芬利用 <strong>Notebook LM 簡化資料</strong>，週三會議 15 分鐘說明流程與 SOP"
       ],
       chips: [
         { icon: "📝", text: "純撰寫≤24篇/月" },
@@ -941,9 +949,15 @@ window.WAR_ROOM_DATA = {
         { icon: "📅", text: "交期15工作天" },
         { icon: "☁️", text: "Cloud 4.6 為主力" },
         { icon: "📋", text: "AI條款入報價單" },
-        { icon: "🆕", text: "5/20 純文案方案" }
+        { icon: "🆕", text: "品牌聲音+知識卡片整合" },
+        { icon: "⚡", text: "快速生成機制上線" }
       ],
       todos: [
+        { owner: "廖淑芬", text: "產出品牌聲音與知識卡片內容並提供給蔡阿達，完成後重新上傳", priority: "today" },
+        { owner: "蔡阿達", text: "持續優化品牌聲音快速生成機制，協助廖淑芬熟悉操作流程", priority: "week" },
+        { owner: "蔡阿達", text: "安排阿福或自行負責客戶網站資料爬取技術問題", priority: "week" },
+        { owner: "廖淑芬", text: "將複雜資料簡化並上傳 Notebook LM，週三 MP 週會 15 分鐘說明 SOP", priority: "today" },
+        { owner: "廖淑芬", text: "持續關注喬峰與 CS 溝通狀況，安排外包或恩安協助代寫文章", priority: "week" },
         { owner: "廖淑芬", text: "5/25 完成第一階段品牌聲音與知識卡片測試報告", priority: "today" },
         { owner: "廖淑芬", text: "6/5 完成第一階段測試並啟動第二階段測試", priority: "week" },
         { owner: "廖淑芬", text: "6/22 完成第二階段測試報告，評估文案生成成效與運作模式", priority: "waiting" },
@@ -968,6 +982,38 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫", text: "評估 Biggo 合作價格與代價，推動技術測試與整合", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-01",
+          title: "more suite 方案推動 — 品牌聲音與知識卡片整合及內容生成系統建置",
+          time: "16:31-17:04",
+          duration: "33m",
+          participants: "蔡阿達、廖淑芬（小花）、藍文甫（Leo）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌聲音與知識卡片整合",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "已克服爬取網站頁面限制，原本只能用單一視窗效率很低。品牌聲音涵蓋品牌知識、口氣、個性等固定元素，知識卡片是持續更新的技術與文章風格，兩者結合用於內容生成。目前已找到快速產生品牌聲音的機制，暫時不需彤彤團隊介入開發。" },
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "確認已能看到自己填寫的奇妙冒險單據，並學習下載與編輯相關檔案。" },
+                { speaker: "蔡阿達", role: "ada", text: "品牌聲音與知識卡片的檔案由小花直接產出並上傳至克勞德，方便後續內容生成。下載壓縮檔後用 Mac 記事本開啟 MD 檔案就能檢視修改。" }
+              ]
+            },
+            {
+              topic: "品牌聲音產品化與爬蟲工作分配",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "麥克希望品牌聲音工具成為產品數據的一部分，蔡阿達目前機制是 prototype，後續由彤彤與賈斯汀負責產品化。建議蔡阿達專注概念原型開發，產品化交給產品團隊推進。" },
+                { speaker: "蔡阿達", role: "ada", text: "已將新版機制分享給彤彤，彤彤會研究，但目前機制已可立即使用。爬取客戶網站資料的問題由阿福或我來處理。" }
+              ]
+            },
+            {
+              topic: "團隊管理與週三 MP 會議準備",
+              exchanges: [
+                { speaker: "廖淑芬", role: "other", label: "小花", text: "喬峰因急件多與 CS 溝通摩擦，情緒影響文章品質，已安排外包與恩安協助，鼓勵休假調整。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "上次 MP 週會溝通內容過於複雜，團隊無法內化。建議利用 Notebook LM 簡化資料，週三會議以 15 分鐘說明流程與 SOP。新成員加入將改善人力壓力，需給團隊明確願景與前進動能。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-29",
           title: "Weekly Sync Up — Biggo 多語言內容合作提案",
@@ -3138,8 +3184,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-05-29",
-      summary: "5/29 Max Huang 提出品牌治理五步法新論述（品牌定位→內容渲染→資訊架構→信任網絡→監測），搭配七大服務模組與三種方案，團隊認同論述符合行銷語言；5/26 文案輕量方案定價確認每月 2.2-2.5 萬元",
+      lastUpdated: "2026-06-01",
+      summary: "6/1 雙會議：（1）GTM 週會確認 PDF V1 上線、CSV V2 6/4 上線、8 新國家本週四加入、BRAND 五步法已獲麥克確認、爬蟲工具包裝為本機執行檔；（2）AMP to GEO POC 定價確認成本 2 萬/月、牌價 3 萬打折至 1.5 萬、規格 25 關鍵字 75 Prompt、半年合約、5 萬以上客戶優先加購",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3251,7 +3297,21 @@ window.WAR_ROOM_DATA = {
         "🆕 5/29 三種方案：<strong>免費品牌見診、品牌治理升級、代理商合作方案</strong>",
         "🆕 5/29 藍文甫表示此論述<strong>符合客戶語言</strong>，能提升 pitch 轉化率，結構清晰易懂",
         "🆕 5/29 蔡阿達認同論述合理，強調先從品牌定位談起的重要性，awoo 專注<strong>將品牌故事轉化為 AI 可理解架構</strong>",
-        "🆕 5/29 Max 將加入 <strong>Google I/O 最新技術資訊</strong>，階段由三個調整為四個（增加選擇度）"
+        "🆕 5/29 Max 將加入 <strong>Google I/O 最新技術資訊</strong>，階段由三個調整為四個（增加選擇度）",
+        "🆕 6/1 <strong>GEO Suite PDF V1 已上線</strong>；V2（CSV 匯出）預計 <strong>6/4 上線</strong>；V3（AI 摘要+區塊勾選）規劃中",
+        "🆕 6/1 新增 <strong>8 個國家</strong>（新加坡、馬來西亞、加拿大、英國、德國、法國、香港、越南）本週四正式加入",
+        "🆕 6/1 五大指標排序調整：<strong>品牌提及率與網站引用率優先顯示</strong>；「競品概覽」改名「產業概覽」",
+        "🆕 6/1 新增 <strong>People also ask / People also search</strong> 功能，可擴展追蹤 prompt 範圍",
+        "🆕 6/1 Max Huang 正式介紹 <strong>BRAND 五步法</strong>（B 品牌定位 / R 內容渲染 / A 考詢架構 / N 信任網絡 / D 監測校準），已獲麥克確認架構",
+        "🆕 6/1 销售方案以 PROM 數量分級，命名為 <strong>BRAND 60、BRAND 150</strong> 等方案名稱",
+        "🆕 6/1 蔡阿達分享 <strong>AI 視角建檢報告</strong>：已完成約 10 份，直接串 GEO Suite API 取得真實 AI 能見度數據，無幻覺問題",
+        "🆕 6/1 品牌網站<strong>爬蟲工具已包裝為本機執行檔</strong>（awoo.command），下載解壓後點擊即可使用，API Key 由蔡阿達管理",
+        "🆕 6/1 爬取策略：優先使用 <strong>Ahrefs Top Pages</strong>，先爬重要頁面約 500 筆降低被封鎖風險",
+        "🆕 6/1 品牌內容生成系統（內部代稱「貓水」）年底前難以整合入 GEO Suite，<strong>建議先獨立運作</strong>",
+        "🆕 6/1 AMP to GEO POC 定價確認：人力+工具成本約 <strong>NT$20,000/月</strong>，牌價 NT$30,000 打六折至 <strong>NT$15,000</strong>",
+        "🆕 6/1 AMP to GEO 規格標準化：<strong>25 關鍵字、75 Prompts</strong>，半年合約，月費 5 萬以上客戶優先加購",
+        "🆕 6/1 日本市場定價約 <strong>100,000 JPY</strong>，約 NT$20,000-30,000，與臺灣策略一致",
+        "🆕 6/1 林思吾分享長期規劃：從 MP 方案過渡至<strong>完整 GU 電商解決方案</strong>，結合 AI agent 與 authentic commerce"
       ],
       chips: [
         { icon: "💰", text: "GO 3.3-7.3萬" },
@@ -3261,9 +3321,26 @@ window.WAR_ROOM_DATA = {
         { icon: "🆕", text: "工具整合 6-7月" },
         { icon: "🔐", text: "權限管理上線" },
         { icon: "🛠️", text: "More Sweet MVP" },
-        { icon: "📊", text: "AMP→GU 引導" }
+        { icon: "📊", text: "AMP→GU 引導" },
+        { icon: "📄", text: "PDF V1 上線" },
+        { icon: "🌏", text: "+8 國家 6/4" },
+        { icon: "💲", text: "POC 1.5萬/月" },
+        { icon: "🔤", text: "BRAND 五步法" }
       ],
       todos: [
+        { owner: "何建彤", text: "6/4（週四）上線 GEO Suite 總覽 CSV 匯出功能（V2）並加入 8 個新國家", priority: "today" },
+        { owner: "何建彤", text: "撰寫本次產品更新公告，寄信通知 Angelline 分配宣傳任務", priority: "week" },
+        { owner: "Max Huang", text: "修正完善 BRAND 五步法销售論述文件，發給全團隊並調整 Salesforce 论述", priority: "week" },
+        { owner: "Angelline", text: "配合調整行銷說法與文件，確保與 BRAND 五步法论述一致", priority: "week" },
+        { owner: "蔡阿達", text: "將品牌網站爬蟲工具壓縮包傳給何建彤測試", priority: "today" },
+        { owner: "何建彤", text: "測試蔡阿達的爬蟲工具本機執行包，討論優化細節（延遲策略、動態 User Agent、Top Pages 切入）", priority: "week" },
+        { owner: "蔡阿達", text: "與 Nakama 確認代理商組織帳號開設，正式啟動第一個代理商帳號", priority: "week" },
+        { owner: "Anne Chang", text: "發布 AMP to GEO 25-75 prompt 方案公告，確認報價細節與續約選項", priority: "today" },
+        { owner: "Anne Chang", text: "與 Leo 討論 CS 獎金基準並提交林思吾確認", priority: "week" },
+        { owner: "Alice/Leo", text: "討論 5 萬以下客戶加購與測試條件，制定相關決策", priority: "week" },
+        { owner: "林思吾", text: "確認半年合約期折扣策略，明確告知客戶半年後價格回調至 3 萬", priority: "week" },
+        { owner: "Hagi Kuo", text: "整理日本市場 AMP to GEO 定價方案並與林思吾同步確認", priority: "week" },
+        { owner: "林思吾", text: "持續規劃下半年電商 GU 方案，推動 AI agent 與 authentic commerce 新產品線", priority: "waiting" },
         { owner: "Fenix Li", text: "週五完成迭代內容更新（一頁說明 + 一頁主題動作）並交付 A 與 CS 團隊", priority: "today" },
         { owner: "藍文甫", text: "提供春露品牌訓練工作坊細節資料給林思吾", priority: "week" },
         { owner: "林思吾", text: "審閱品牌工作坊資料後指派合適夥伴接手推動", priority: "week" },
@@ -3346,6 +3423,65 @@ window.WAR_ROOM_DATA = {
         { owner: "團隊", text: "檢視 Max 修訂後品牌治理 PPT，提供意見確保論述順暢且符合客戶需求", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-01",
+          title: "GEO Go-to-Market 策略週會 — PDF 匯出、BRAND 五步法、爬蟲工具本機化",
+          time: "09:01-10:05",
+          duration: "1h04m",
+          participants: "蔡阿達、何建彤（彤²）、呂紹平（Leon）、藍文甫（Leo）、YC、Max Huang、Angelline、Amber Liao、Alice Cho、Hagi Kuo",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GEO Suite 產品更新：PDF 匯出與新國家上線",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "PDF 匯出 V1 已上線，可匯出總覽頁面完整 PDF，目前僅列前十筆引用連結。V2 CSV 匯出預計 6/4 上線，V3 新增區塊勾選與 AI 自動摘要。新加坡、馬來西亞等 8 個國家本週四正式加入。" },
+                { speaker: "蔡阿達", role: "ada", text: "品牌提及率與網站引用率是顧問方案重點優化指標，建議調整五大指標介面顯示順序，這兩項優先。競品概覽改名產業概覽比較不會造成混淆。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "People also ask 與 People also search 已加入回應明細頁面，可協助業務與 CS 發掘相關問題、擴展客戶追蹤 prompt 範圍。" }
+              ]
+            },
+            {
+              topic: "BRAND 五步法品牌管理销售論述",
+              exchanges: [
+                { speaker: "Max Huang", role: "other", label: "顧問", text: "將 awoo 定位從 GEO 軟體公司升級為 AI 時代平台資產價値。核心方法論 BRAND 五步法：品牌定位、內容渲染、考詢架構、信任網絡、監測校準。五步法對應 15 項具體工作，销售方案以 PROM 數量分級命名為 BRAND 60、BRAND 150。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同五步法論述，方案命名方式比原本純數字清楚。客戶案例依品牌三階段（可見性→可信度→偏好度）說明最直覺。" }
+              ]
+            },
+            {
+              topic: "AI 視角建檢報告應用與爬蟲工具本機化",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "過去建檢報告採技術錯誤清單角度容易幻覺且客戶難抓重點。新版 10 份報告全面改成 AI 視角建檢，直接串 GEO Suite API 取得真實數據搭配 Ahrefs 排名資料，無幻覺問題。爬蟲工具已包裝成 .command 執行檔，下載後點擊即自動啟動。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "建議優先使用 Ahrefs Top Pages 資料先爬重要頁面約 500 筆，既可涵蓋主要內容又能降低被封鎖風險。" },
+                { speaker: "蔡阿達", role: "ada", text: "1000 頁以下的網站通常 30 分鐘內完成。使用 JavaScript 渲染的網站需模擬瀏覽器，像周生生約需 3 小時。API Key 用 Gemini 2.5 Flash，低量使用無額外費用。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-06-01",
+          title: "AMP to GEO POC 定價方案討論與成本分析",
+          time: "15:02-15:33",
+          duration: "31m",
+          participants: "林思吾、Alice Cho、Amber Liao、Anne Chang、藍文甫（Leo）、Hagi Kuo",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "MP to GO 定價策略與成本結構",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "CS 人力成本估算：工時加溝通成本約 2 萬，專員工時再加 8 千，總成本約 2.8 萬。" },
+                { speaker: "Alice Cho", role: "other", label: "Alice", text: "工具成本約 3 千，整體月成本約 1.5 萬。定價超過 1.5 萬客戶接受度會降低，建議牌價 2.2-2.5 萬，折扣底價 1.5 萬。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "提議牌價 3 萬、打四折至 1.5 萬作為短期促銷價。半年合約到期後依成效調整價格，降低客戶續約壓力。" }
+              ]
+            },
+            {
+              topic: "Prompt 規格與加購條件",
+              exchanges: [
+                { speaker: "Amber Liao", role: "other", label: "Amber", text: "支持半年合約加折扣策略，可快速吸引客戶並增加黏著度。建議彈性調整 prompt 數量從 20 到 90 依客戶需求。" },
+                { speaker: "Anne Chang", role: "other", label: "Anne", text: "加購條件設定月費 5 萬以上客戶為優先對象，5 萬以下需個案討論避免成本過高。報價系統已設定完成。" },
+                { speaker: "林思吾", role: "other", label: "麥可", text: "統一規格 25 關鍵字、75 Prompts，兼顧命中率與 CS 工作量。初期選定的 prompt 被引用機率較高。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-29",
           title: "Weekly Sync Up — 品牌治理五步法新論述提案",
@@ -6013,6 +6149,67 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "潘恩", role: "other", label: "勞資顧問", text: "小琉球寶哥麻花捲產品多元、接班人積極推動數位經營，有心投入。另有預備大客戶因問題較棘手尚未找到切入點，持續評估引薦時機。" },
                 { speaker: "蔡阿達", role: "ada", text: "目前主打 AI 優化搜尋服務，不以商品數量多少為篩選條件，適時可評估合作。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P56: Eugene 陳侑均 ======
+    {
+      id: "eugene-campaign",
+      name: "陳侑均（Eugene）— AI 提及追蹤工具與 Campaign 整合合作",
+      icon: "📢",
+      category: "partner",
+      lastUpdated: "2026-06-01",
+      summary: "蔡阿達向 Eugene 介紹 awoo AI 提及追蹤工具，雙方討論如何應用於客戶 campaign，強調以官網優化為核心搭配權威媒體曝光提升品牌 AI 引用率。Eugene 與 Shopline 合作密切，客戶涵蓋寵物食品與酒類品牌",
+      keyPoints: [
+        "蔡阿達介紹 awoo <strong>AI 提及追蹤工具</strong>，可追蹤設定的 prompt 與關鍵字被提及狀況，查看正負面回應及來源網址",
+        "工具主要追蹤客戶<strong>官網的提及與引用</strong>，官網是 SEO 優化核心",
+        "寵物食品客戶多發生在搜尋環境，<strong>獸醫合作等權威內容較易被 AI 引用</strong>",
+        "酒類客戶官網活性低，重要資訊多在 Facebook，但 <strong>Facebook 頁面較難被 AI 引用</strong>",
+        "權威媒體（東森、自由、蘋果新聞）較易被 AI 引用，品牌本身網站<strong>權威度高也有助提升引用率</strong>",
+        "蔡阿達分享<strong>雅虎案例</strong> — 知名網站新產品上線也能快速被 AI 引用",
+        "Campaign 策略以<strong>官網優化為主軸</strong>，權威媒體與自媒體同步曝光相同關鍵字形成加成效果",
+        "蔡阿達可協助<strong>未合作客戶先行爬取網站資料</strong>，分析 AI 視角下關鍵字被引用情況及競品比較",
+        "Eugene 與 <strong>Shopline 合作密切</strong>，許多客戶透過 Shopline 轉介",
+        "選舉客戶追求短期大量曝光，<strong>較少做永續經營</strong>，前期追蹤有限"
+      ],
+      chips: [
+        { icon: "🔍", text: "AI 提及追蹤" },
+        { icon: "🌐", text: "官網為核心" },
+        { icon: "📰", text: "權威媒體加成" },
+        { icon: "🛒", text: "Shopline 轉介" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供完整 GEO Suite 平台介紹及顧問服務簡報連結給 Eugene", priority: "today" },
+        { owner: "陳侑均", text: "盤點客戶品牌曝光與 AI 提及追蹤策略，針對寵物食品與酒類制定差異化方案", priority: "week" },
+        { owner: "陳侑均", text: "協助客戶優化官網內容，設定正確 prompt 與關鍵字提升 AI 引用機會", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-01",
+          title: "awoo × 陳侑均（Eugene）— AI 提及追蹤工具與 Campaign 內容整合",
+          time: "16:52-17:18",
+          duration: "26m",
+          participants: "蔡阿達、陳侑均（Eugene）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "AI 提及追蹤工具功能介紹與產業應用",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們開發的 AI 提及追蹤工具可以追蹤設定的 prompt 及關鍵字是否被提及，查看正負面回應及來源網址。主要追蹤客戶官網的提及與引用，因為官網是 SEO 優化核心。" },
+                { speaker: "陳侑均", role: "other", label: "Eugene", text: "目前尚未協助客戶整合 social、video、KOL 等內容進 campaign，希望討論如何利用這些內容支持 AIO 相關操作。" },
+                { speaker: "蔡阿達", role: "ada", text: "寵物食品多發生在搜尋環境，權威內容如獸醫合作較易被 AI 引用。酒類客戶官網活性低，重要資訊多在 Facebook，但 Facebook 頁面較難被 AI 引用。" }
+              ]
+            },
+            {
+              topic: "官網優化策略與權威媒體加成",
+              exchanges: [
+                { speaker: "陳侑均", role: "other", label: "Eugene", text: "權威媒體如東森、自由、蘋果新聞較易被 AI 引用，品牌本身網站權威度高也有助提升被引用機率。目前以官網為優化主軸，結合顧問服務協助客戶操作。" },
+                { speaker: "蔡阿達", role: "ada", text: "工具呈現被提及的比例及具體被引用的文章。雅虎等知名網站即使新產品上線也能快速被引用。策略應以官網為核心，權威媒體與自媒體同步曝光相同關鍵字形成加成效果。若客戶有電商平台整體效果更好。" },
+                { speaker: "蔡阿達", role: "ada", text: "可以協助未合作客戶先行爬取網站資料，分析 AI 視角下關鍵字被引用情況及與競品比較。會後我提供相關簡報與資源連結給你。" }
               ]
             }
           ]
