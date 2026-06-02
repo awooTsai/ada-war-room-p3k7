@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-01T19:00:00",
-  dateLabel: "2026/06/01（一）",
+  lastUpdated: "2026-06-02T19:00:00",
+  dateLabel: "2026/06/02（二）",
   stats: {
-    meetings: 109,
-    projects: 56,
+    meetings: 110,
+    projects: 57,
     partners: 19,
     internal: 9,
-    clientCompany: 25,
-    todos: 424
+    clientCompany: 26,
+    todos: 428
   },
 
   projects: [
@@ -6210,6 +6210,70 @@ window.WAR_ROOM_DATA = {
                 { speaker: "陳侑均", role: "other", label: "Eugene", text: "權威媒體如東森、自由、蘋果新聞較易被 AI 引用，品牌本身網站權威度高也有助提升被引用機率。目前以官網為優化主軸，結合顧問服務協助客戶操作。" },
                 { speaker: "蔡阿達", role: "ada", text: "工具呈現被提及的比例及具體被引用的文章。雅虎等知名網站即使新產品上線也能快速被引用。策略應以官網為核心，權威媒體與自媒體同步曝光相同關鍵字形成加成效果。若客戶有電商平台整體效果更好。" },
                 { speaker: "蔡阿達", role: "ada", text: "可以協助未合作客戶先行爬取網站資料，分析 AI 視角下關鍵字被引用情況及與競品比較。會後我提供相關簡報與資源連結給你。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P57: 粹究美學 ======
+    {
+      id: "cuijiu-aesthetics",
+      name: "粹究美學 — SEO/GEO 服務解約善後",
+      icon: "💎",
+      category: "client",
+      lastUpdated: "2026-06-02",
+      summary: "客戶反映回覆速度慢與 GEO 策略分歧，蔡阿達親自出面致歉。awoo 提出免違約金並延長一個月服務，待客戶內部討論後回覆是否續約。",
+      keyPoints: [
+        "客戶兩大不滿：<strong>回覆速度慢、流程不清晰</strong>；Pro 方案預期與 awoo 內部規範有落差",
+        "GEO 技術策略分歧：客戶期望品牌被 AI 直接點名，<strong>awoo 內部規定不做特定 prompt 優化</strong>",
+        "解約條件：<strong>不收違約金</strong>，免費延長一個月服務",
+        "Leon 承諾將蔡阿達加入粹究美學群組，確保即時回覆",
+        "蔡阿達建議未來推出<strong>顧問式方案</strong>，因應高 SEO 知識客戶需求",
+        "背景：5/27 客戶曾強烈要求工程師加入群組、主管出面，合約違約金條款為稅前 60 萬元"
+      ],
+      chips: [
+        { icon: "💔", text: "解約善後" },
+        { icon: "🆓", text: "免違約金" },
+        { icon: "⏱️", text: "延長 1 個月" },
+        { icon: "🤝", text: "待客戶回覆" }
+      ],
+      todos: [
+        { owner: "Leon", text: "將蔡阿達加入粹究美學群組，確保即時回覆", priority: "today" },
+        { owner: "Leon", text: "協助建立明確合作時間軸，加強與客戶溝通說明", priority: "week" },
+        { owner: "蔡阿達", text: "若客戶確認續約，推動更多資源與技術支持到位", priority: "waiting" },
+        { owner: "蔡阿達", text: "評估未來推出顧問式方案，以符合高 SEO 知識客戶需求", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-02",
+          title: "粹究美學解約善後面談 — 蔡阿達 × Leon × 客戶方",
+          time: "12:58-13:36",
+          duration: "38m",
+          participants: "蔡阿達、呂紹平 Leon、江哥、羊和 Mei Yang",
+          docUrl: "https://docs.google.com/document/d/1rKku1xsQRbe2FaNbytUsZkYcpPIFzeGALZUivwgi5oE/edit",
+          dialogues: [
+            {
+              topic: "服務問題反饋與致歉",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "這次是我親自過來，先代表公司跟你們致歉。溝通上的不足是我們的責任，我們願意投入更多資源來改善。" },
+                { speaker: "羊和 Mei Yang", role: "other", label: "粹究", text: "主要問題有兩個：第一是回覆速度太慢，整個流程對我們來說不清晰；第二是 Pro 方案的期待跟你們實際做的有落差。" },
+                { speaker: "呂紹平 Leon", role: "other", label: "Leon", text: "關於回覆速度的部分，我會把蔡阿達加入群組，後續確保即時回覆。" }
+              ]
+            },
+            {
+              topic: "GEO 技術策略分歧",
+              exchanges: [
+                { speaker: "江哥", role: "other", label: "粹究", text: "我們期望的是品牌在 AI 回應中被直接點名提及，但目前看起來效果沒有達到預期。" },
+                { speaker: "蔡阿達", role: "ada", text: "坦白說，我們內部規定是不做特定 prompt 的優化，因為這涉及操控性的問題。但我理解你們的需求，未來我們會評估推出顧問式方案，針對 SEO 知識比較高的客戶提供更客製化的服務。" }
+              ]
+            },
+            {
+              topic: "解約條件與後續安排",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "關於解約的部分，我們不會收取違約金，另外再免費延長一個月的服務，讓你們有緩衝時間評估。" },
+                { speaker: "羊和 Mei Yang", role: "other", label: "粹究", text: "好，我們會在內部討論之後儘快回覆你們是否續約。" }
               ]
             }
           ]
