@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-02T19:00:00",
-  dateLabel: "2026/06/02（二）",
+  lastUpdated: "2026-06-03T19:00:00",
+  dateLabel: "2026/06/03（三）",
   stats: {
-    meetings: 110,
+    meetings: 112,
     projects: 57,
     partners: 19,
     internal: 9,
     clientCompany: 26,
-    todos: 428
+    todos: 426
   },
 
   projects: [
@@ -2187,8 +2187,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-05-27",
-      summary: "5/27 遙空映畫與蔡阿達討論醫療及企業品牌 SEO 合作，確認醫療類客戶適合導入 AI 推薦；MarsZ Chen 展示 AI 網站設計（恆興診所已上線）與自動化上稿流程；雙方同意 AI 能見度分析報告作為業務前哨站提升提案成功率",
+      lastUpdated: "2026-06-03",
+      summary: "6/3 蔡阿達主持異業夥伴分享會：遙空映畫（學校影片報價策略）、MarsZ Chen（AI 多語系建站案例）、你寵（品牌短影音）、ADAM（工廠數位轉型）輪流分享；蔡阿達宣布 awoo 轉型品牌架構規劃師定位，並提供質檢報告範本供夥伴推廣",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -2246,7 +2246,14 @@ window.WAR_ROOM_DATA = {
         "🆕 5/27 MarsZ Chen 已完成<strong>恆興診所 AI 設計網站</strong>上線，並建立 VI 設計系統與多語系自動化流程",
         "🆕 5/27 MarsZ Chen 正開發<strong>上稿自動化流程</strong>，目標從設計稿到網站上線全自動化",
         "🆕 5/27 蔡阿達表示未來<strong>不再做包套網站方案</strong>，改由客戶直接與 MarsZ Chen 洽談設計，蔡阿達負責 SEO 與品牌策略",
-        "🆕 5/27 建議客戶將影片上傳至 <strong>YouTube 而非 Vimeo</strong>，有助 SEO 及 AI 推薦；影片內容可轉換成文字增強 SEO"
+        "🆕 5/27 建議客戶將影片上傳至 <strong>YouTube 而非 Vimeo</strong>，有助 SEO 及 AI 推薦；影片內容可轉換成文字增強 SEO",
+        "🆕 6/3 遙空映畫分享<strong>學校系所形象影片</strong>報價策略：私校 5 萬以內、公校 7–10 萬，避免觸及採購法；英文 AI 旁白成本低且可調語速",
+        "🆕 6/3 MarsZ Chen 展示 <strong>AI 多語系 B2B 工廠網站</strong>案例（金協新科技），僅需 logo 即可由 AI 生成完整內容，報價約 6 萬含多語系",
+        "🆕 6/3 MarsZ Chen 計劃開發 <strong>MCP（每店一個 MCP 接上 AI）</strong>，讓改網站內容可直接指揮 AI 完成",
+        "🆕 6/3 蔡阿達宣布 awoo <strong>從 GEO 軟體主打轉型為品牌架構規劃師</strong>角度切入，技術導向太生硬改用品牌定位溝通更有效",
+        "🆕 6/3 質檢報告作為<strong>售前免費工具</strong>（以「愛與情和義」支付），後續 SEO 與關鍵字投放需簽約付費",
+        "🆕 6/3 你寵推出<strong>品牌形象短影音入門服務</strong>，報價約一萬元內，適合 FB/IG 置頂",
+        "🆕 6/3 確立 B2B 工廠客戶<strong>轉介鏈</strong>：ADAM（工廠）→ 遙空（影片）→ MarsZ（網站）→ awoo（GEO/質檢）→ 你寵（短影音）"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -2256,18 +2263,55 @@ window.WAR_ROOM_DATA = {
         { icon: "💰", text: "內容方案 25K/月" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "提供 AI 能見度分析報告給遙空映畫，協助提案時展示競爭對手與品牌現況", priority: "today" },
-        { owner: "蔡阿達", text: "提供填寫網址與 email 的表單給團隊，方便收集客戶資料並生成報告", priority: "today" },
-        { owner: "遙空映畫", text: "將醫療 / 企業品牌客戶網址提交給蔡阿達，利用 AI 報告提升提案說服力", priority: "week" },
-        { owner: "MarsZ Chen", text: "持續訓練 AI 設計系統，完成網站設計稿並推動多語系自動化轉換", priority: "week" },
+        { owner: "蔡阿達", text: "重新製作並提供 SEO 質檢報告範本給 MarsZ Chen，供其推廣給客戶", priority: "today" },
+        { owner: "蔡阿達", text: "將會議拍攝照片上傳夥伴群組供自由取用", priority: "today" },
+        { owner: "ADAM CHEN", text: "與遙空合作完成文案拍攝後，將工廠網站建置導往 MarsZ，後續行銷推往其他夥伴", priority: "waiting" },
+        { owner: "MarsZ Chen", text: "持續訓練 AI 設計系統，推動多語系自動化轉換與 MCP 開發", priority: "week" },
         { owner: "MarsZ Chen", text: "開發並優化自動化上稿流程，實現網站內容快速上線", priority: "week" },
-        { owner: "MarsZ Chen", text: "設計 GA/GSC 報告定價方案（月費 500 元 / 單次 2,000 元），推動服務推廣", priority: "week" },
-        { owner: "蔡阿達", text: "協助遙空映畫將影片內容轉換成文字，建議客戶上傳至 YouTube 利於 AI 推薦", priority: "week" },
         { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
         { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
         { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-03",
+          title: "FUZEN 行銷小聚 06/03 — AI 建站 × 影片 × 短影音 × 品牌定位轉型",
+          time: "13:02-13:40",
+          duration: "38m",
+          participants: "蔡阿達、遙空映畫（偉漢）、MarsZ Chen、你寵、ADAM CHEN（東明）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "學校系所影片報價策略與英文 AI 旁白",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "近期為義守大學電機系製作系所簡介影片。私校報價控制在 5 萬元以內（避免觸採購法），公校建議 7–10 萬元。影片配音使用英文 AI 旁白，成本低且有上千種聲音可選。" },
+                { speaker: "蔡阿達", role: "ada", text: "英文旁白反而是推廣賣點，建議報價彈性拉到 6 萬讓客戶以月付方式分攤。" }
+              ]
+            },
+            {
+              topic: "AI 多語系建站案例與 MCP 開發計畫",
+              exchanges: [
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "用 AI（Claude 等）設計 B2B 工廠多語系網站（金協新科技），僅提供 logo 即由 AI 生成完整內容。報價約 6 萬元含多語系，年費約 1.3 萬元。計劃開發 MCP（每店一個 MCP 接上 AI），讓改網站內容也能直接指揮 AI。" },
+                { speaker: "蔡阿達", role: "ada", text: "此方案能大幅降低企業數位化門檻，結合業主持有的持續更新數據可實現內容自動化。" }
+              ]
+            },
+            {
+              topic: "awoo 品牌定位轉型與質檢報告推廣",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "awoo 將轉型，從主打 GEO 軟體改以品牌架構規劃師角度切入，技術導向太生硬，改用品牌定位角度與客戶溝通更有效。質檢報告越來越完整，初步免費以「愛與情和義」支付，後續 SEO 與關鍵字需簽約付費。" },
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "希望蔡阿達提供 SEO 質檢報告範本，方便推廣給自己的客戶。" },
+                { speaker: "ADAM CHEN", role: "other", label: "工廠", text: "認同品牌定位重要性，持續推動工廠數位轉型服務。" }
+              ]
+            },
+            {
+              topic: "短影音服務與 B2B 轉介鏈建立",
+              exchanges: [
+                { speaker: "你寵", role: "other", label: "影音", text: "主打品牌形象類短影音，報價約一萬元內，適合 FB/IG 置頂，屬入門級服務，有助拉近客戶關係並促成長期合作。" },
+                { speaker: "蔡阿達", role: "ada", text: "將與 MarsZ 一起打造無技術門檻的網站服務，客戶只要有資料即可完成網站建置。B2B 工廠客戶轉介鏈：ADAM → 遙空 → MarsZ → awoo → 你寵。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-27",
           title: "FUZEN 行銷小聚 05/27 — 醫療 SEO × AI 能見度報告 × AI 網站設計",
@@ -5132,8 +5176,8 @@ window.WAR_ROOM_DATA = {
       name: "九一平台 — 合作合約風險與客戶鞏固策略",
       icon: "⚠️",
       category: "partner",
-      lastUpdated: "2026-05-15",
-      summary: "藍文甫反映與九一平台合作合約缺乏三方合約精神，恐導致客戶違約風險；合約 7/30 到期，需盡快確認九一意向；計畫一個月內拜訪 17 家客戶推動轉簽新合約，並以免費工具試用一年提高客戶黏著度",
+      lastUpdated: "2026-06-03",
+      summary: "6/3 蔡阿達與 Leon 親赴 91APP 會談，氣氛比預期溫和；91APP 未明確切割，確認不影響現有客戶。共識：合約展延一季、探討技術串接模式改為 awoo 主動調用 91APP API、產品高度重疊但暫無新合作切入點，建立溝通管道等待需求產生",
       keyPoints: [
         "與九一合作合約已簽<strong>三四年</strong>，但僅為雙方合約，<strong>缺乏三方合約保障</strong>",
         "合約將於 <strong>7 月 30 日到期</strong>，若九一無反應將自動續約，但需盡快確認九一意向",
@@ -5141,20 +5185,58 @@ window.WAR_ROOM_DATA = {
         "策略：先<strong>拜訪客戶深化關係</strong>，推動客戶轉簽新合約以減少衝擊",
         "Max Huang 建議利用<strong>功能差異與價格優惠</strong>吸引客戶轉簽，快速行動避免客戶流失",
         "藍文甫提議<strong>免費提供工具試用一年</strong>，增加客戶黏著度",
-        "現有 <strong>17 家客戶</strong>合約需掃描，優先推動轉簽新合約並給予折扣優惠"
+        "現有 <strong>17 家客戶</strong>合約需掃描，優先推動轉簽新合約並給予折扣優惠",
+        "🆕 6/3 實際會談氣氛<strong>比預期溫和</strong>，91APP 未明確提出切割，確認不影響現有共同客戶服務",
+        "🆕 6/3 合約最後一份增補協議 1 月 1 日起算，<strong>實際到期比原預估的 6/7 月晚</strong>，建議展延一季",
+        "🆕 6/3 技術串接模式調整：探討改為 <strong>awoo 主動調用 91APP API</strong>，取代現行 91APP 打 awoo API，減少雙方產線協商成本",
+        "🆕 6/3 雙方產品線（顧問服務、AI 模型、貼標）<strong>高度重疊</strong>，但也有互補空間；awoo 專注 GEO 工具開發，91APP 以零售算法為主",
+        "🆕 6/3 售前見解報告（AI 健檢）<strong>推行阻力大</strong> — 91APP AM 擔心數字不一致引發客戶質疑",
+        "🆕 6/3 共識：以<strong>最小人力支援維持合作</strong>，建立定期溝通管道，不強行整合，等待具體需求產生"
       ],
       chips: [
-        { icon: "⏰", text: "7/30到期" },
+        { icon: "⏰", text: "展延一季" },
         { icon: "👥", text: "17家客戶" },
-        { icon: "🆓", text: "免費試用1年" },
-        { icon: "🚨", text: "違約風險" }
+        { icon: "🔄", text: "API模式調整" },
+        { icon: "✅", text: "氣氛溫和" }
       ],
       todos: [
-        { owner: "藍文甫", text: "一個月內完成 17 家客戶拜訪與關係深化，推動客戶轉簽新合約", priority: "today" },
-        { owner: "藍文甫", text: "使用工具掃描客戶狀況，促成客戶簽訂一年以上新合約並提供價格優惠", priority: "week" },
-        { owner: "Max Huang", text: "準備免費提供工具試用一年方案，作為客戶留存策略", priority: "week" }
+        { owner: "Leon", text: "整理 AMP 更新串接需求細項，評估「awoo 主動調用 91APP API」可行性", priority: "week" },
+        { owner: "Leon", text: "核對雙方最新合約版本，確認到期時間，對齊後確認展延方式", priority: "week" },
+        { owner: "蔡阿達", text: "與 Leon 協調合約展延一季方案，確保既有客戶不受影響", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-03",
+          title: "awoo × 91APP — AI 標籤技術合作現況與未來方向",
+          time: "15:00-15:39",
+          duration: "39m",
+          participants: "蔡阿達、Leon、藍文甫、91APP PM 總監、Roger",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "GEO Suite 介紹與產品重疊確認",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "說明 awoo 主推 GEO Suite，追蹤品牌提及率、網站引用率、情緒分析、聲量佔比等指標。" },
+                { speaker: "91APP PM 總監", role: "other", label: "91APP", text: "91APP 從 2017 年起做 AI 模型研發，去年也開始做 GEO/SEO 能見度產品，產品線高度重疊。AM 已為客戶出各類洞察報告，加入 awoo 版本會造成數字衝突，推行阻力大。" }
+              ]
+            },
+            {
+              topic: "API 串接模式調整與合約展延",
+              exchanges: [
+                { speaker: "Leon", role: "other", label: "awoo", text: "目前共同客戶仍使用舊版 API 接口，awoo 新版 API 已有新功能但 91APP 端未同步。" },
+                { speaker: "91APP PM 總監", role: "other", label: "91APP", text: "每次 awoo 更新都要排資源配合，協商成本高。提出改變模式：由 awoo 直接打 91APP API 拉取資料，如此 awoo 更新時 91APP 不需每次重新安排工程資源。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認既有客戶不受影響。合約最後一份增補協議 1 月 1 日起算，比原以為的 6/7 月晚，建議展延一季，談妥後新約取代舊約。" }
+              ]
+            },
+            {
+              topic: "後續合作方向與溝通機制",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "新合作方向暫無具體答案，等待需求自然產生再討論，不強行整合。建立定期更新管道，避免資訊落差。若 awoo 能直接打 91APP API 拉取資料，可大幅降低協商成本。" },
+                { speaker: "91APP PM 總監", role: "other", label: "91APP", text: "通常採續約方式直接展延，以增補或新約取代舊約，可展延半年或一年，先以不影響既有客戶為主。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-15",
           title: "Weekly Sync Up — 九一平台合約風險與客戶鞏固",
