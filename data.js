@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-03T19:00:00",
-  dateLabel: "2026/06/03（三）",
+  lastUpdated: "2026-06-04T19:00:00",
+  dateLabel: "2026/06/04（四）",
   stats: {
-    meetings: 112,
-    projects: 57,
+    meetings: 115,
+    projects: 58,
     partners: 19,
     internal: 9,
-    clientCompany: 26,
-    todos: 426
+    clientCompany: 27,
+    todos: 449
   },
 
   projects: [
@@ -860,8 +860,8 @@ window.WAR_ROOM_DATA = {
       name: "AI 文章產製系統 & 品質控管",
       icon: "🤖",
       category: "internal",
-      lastUpdated: "2026-06-01",
-      summary: "6/1 品牌聲音與知識卡片整合完成 — 蔡阿達克服爬取限制，品牌聲音（固定特質）+ 知識卡片（持續更新技術與風格）雙軌路線成形；快速生成機制已可使用，暫不需彤彤團隊開發；藍文甫建議蔡阿達專注原型，產品化交彤彤與賈斯汀",
+      lastUpdated: "2026-06-04",
+      summary: "6/4 蔡阿達向何建彤說明爬蟲與內容生成完整流程 — 品牌聲音/知識卡片持續更新供小花產文；內容生成有機會整合至 MOSS 系統；API 成本高且 Skill 頻繁更新，產品化需麥克評估資源投入",
       keyPoints: [
         "文案團隊撰寫 10 篇（人類），7 篇 AI 輔助生成再經人類審核",
         "藍文甫堅持<strong>先內部測試</strong>，不可拿客戶當白老鼠",
@@ -939,7 +939,12 @@ window.WAR_ROOM_DATA = {
         "🆕 6/1 爬取客戶網站資料工作將由<strong>阿福或蔡阿達負責</strong>解決技術問題",
         "🆕 6/1 藍文甫建議蔡阿達<strong>專注概念原型開發</strong>，產品化工作交產品團隊推進",
         "🆕 6/1 喬峰因急件多與 CS 溝通摩擦情緒影響文章品質，<strong>已安排外包與恩安協助</strong>，鼓勵休假調整",
-        "🆕 6/1 上次 MP 週會溝通效果不佳，藍文甫建議廖淑芬利用 <strong>Notebook LM 簡化資料</strong>，週三會議 15 分鐘說明流程與 SOP"
+        "🆕 6/1 上次 MP 週會溝通效果不佳，藍文甫建議廖淑芬利用 <strong>Notebook LM 簡化資料</strong>，週三會議 15 分鐘說明流程與 SOP",
+        "🆕 6/4 蔡阿達向何建彤說明<strong>品牌聲音與知識卡片產文流程</strong> — 持續萃取更新品牌資訊供小花產文使用",
+        "🆕 6/4 內容生成 Skill 有機會整合至 <strong>MOSS 系統</strong>，作為綁定客戶的關鍵功能，可自動更新品牌內容",
+        "🆕 6/4 API 串接雖可自動化流程，但<strong>成本高且 Skill 頻繁更新</strong>，暫難完全交由客戶端操作",
+        "🆕 6/4 何建彤提出可採用<strong>動態更新 Skill</strong> 方式，類似 MOSS 系統模組化管理",
+        "🆕 6/4 產品化由何建彤與麥克評估後續資源投入，蔡阿達專注原型維護"
       ],
       chips: [
         { icon: "📝", text: "純撰寫≤24篇/月" },
@@ -979,9 +984,39 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "萃取成功案例關鍵字與文章規劃邏輯，作為 AI 產出參考", priority: "week" },
         { owner: "廖淑芬", text: "整理並更新成功案例文章連結資料夾，確保資料完整", priority: "week" },
         { owner: "蔡阿達", text: "持續跟進 Biggo 合作細節與 API 串接流程，安排後續測試與評估", priority: "week" },
-        { owner: "藍文甫", text: "評估 Biggo 合作價格與代價，推動技術測試與整合", priority: "week" }
+        { owner: "藍文甫", text: "評估 Biggo 合作價格與代價，推動技術測試與整合", priority: "week" },
+        { owner: "蔡阿達", text: "整理並提供三個品牌的品牌聲音與知識卡片資料夾給小花，供產文使用", priority: "today" },
+        { owner: "蔡阿達", text: "持續優化文案生成 Skill，根據小花回饋調整內容生成規則", priority: "week" },
+        { owner: "何建彤", text: "探討動態更新 Skill 的技術可行性，推動品牌內容自動更新機制", priority: "week" },
+        { owner: "何建彤", text: "與麥克討論內容生成整合至 MOSS 系統的重要性與資源投入", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-04",
+          title: "阿達給阿彤的秘密討論時段 — 品牌內容生成與自動化",
+          time: "09:00-09:51",
+          duration: "51m",
+          participants: "蔡阿達、何建彤（彤²）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌內容生成流程與技術挑戰",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "質檢報告生成依賴爬蟲資料，由阿德模組處理。但因需求多變且需客製化，很難做成通用產品。內容生成透過阿德的 Skill 萃取品牌聲音與知識卡片，持續更新。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "API 串接成本跟技術門檻怎麼樣？" },
+                { speaker: "蔡阿達", role: "ada", text: "API 串接雖可自動化但成本高昂，Skill 頻繁更新難以完全交由客戶端操作。目前每週處理 2～3 個客戶的質檢報告，整體耗時約 30 分鐘至 1 小時。" }
+              ]
+            },
+            {
+              topic: "系統自動化與產品化可行性",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "內容生成可以採用動態更新 Skill 的方式，類似 MOSS 系統的模組化管理。" },
+                { speaker: "蔡阿達", role: "ada", text: "內容生成確實有機會整合到 MOSS 系統，作為綁定客戶的關鍵功能，可自動更新品牌內容，結合外部資料提升內容豐富度。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "好，我會跟麥克討論這個功能的重要性，再決定後續資源投入。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-06-01",
           title: "more suite 方案推動 — 品牌聲音與知識卡片整合及內容生成系統建置",
@@ -2074,15 +2109,22 @@ window.WAR_ROOM_DATA = {
       name: "Jack En 攝影 × 網站建置 × AI 影像合作",
       icon: "📸",
       category: "partner",
-      lastUpdated: "2026-03-25",
-      summary: "攝影師 Jack En 洽談個人作品集網站建置，同步介紹客戶引線機會，並探索 AI 影像技術合作",
+      lastUpdated: "2026-06-04",
+      summary: "6/4 蔡阿達與 Jack En 深度交流 — 品牌從「別克攝影工作室」更名，鍾敏協助品牌定位與 logo 設計；10 年目標營業額 600 萬；awoo 提供品牌數位資產建構與 AI 能見度追蹤服務",
       keyPoints: [
         "Jack En 主業企業活動即時拍攝，客戶含高雄大型營造廠（合作逾 6 年）",
         "網站需求：作品集集中管理 + 線上預約，以<strong>模板 + AI 排版</strong>為主",
         "MarsZ Chen 提供模板版與客製化版兩種報價方案",
         "<strong>蔡阿達協助引介</strong>有即時拍攝需求的企業活動客戶",
         "同步推進<strong>奇美博物館網站改版</strong>報價（MarsZ Chen 負責）",
-        "計劃邀請 AI 生成內容廠商來分享，探索合作機會"
+        "計劃邀請 AI 生成內容廠商來分享，探索合作機會",
+        "🆕 6/4 Jack En 擬將品牌從「別克攝影工作室」更名為更具<strong>平民攝影</strong>特色的品牌，減少對個人依賴",
+        "🆕 6/4 蔡阿達建議與設計師<strong>鍾敏一對一討論</strong>品牌定位與 logo 設計，預估一個月內完成",
+        "🆕 6/4 公司成立超過 20 年（二代接班），一人經營、發包模式，10 年營業額目標 <strong>600 萬</strong>",
+        "🆕 6/4 客單價：四小時約 <strong>NT$13,000</strong>、八小時約 <strong>NT$23,000</strong>，專注活動攝影",
+        "🆕 6/4 蔡阿達介紹<strong>品牌數位資產建構</strong>服務 — 將經歷、案例、技術寫入網站提升 AI 推薦機會",
+        "🆕 6/4 提供 <strong>AI 能見度追蹤工具</strong>，分析品牌在 AI 回答中的曝光情況與競品比較",
+        "🆕 6/4 建議在<strong>網站建置初期即介入</strong>確保 SEO/GO 規範，MARS 負責售後優化與數據追蹤"
       ],
       chips: [
         { icon: "💰", text: "基本出場 3,000" },
@@ -2096,9 +2138,50 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "協助 MarsZ Chen 與奇美博物館客戶溝通報價方案", priority: "week" },
         { owner: "Jack En", text: "整理網站各頁面 section 及排版需求，提供參考範例給 MarsZ Chen", priority: "week" },
         { owner: "MarsZ Chen", text: "製作 Jack En 網站報價單（模板版 + 客製化版）", priority: "waiting" },
-        { owner: "MarsZ Chen", text: "完成奇美博物館網站改版報價單", priority: "waiting" }
+        { owner: "MarsZ Chen", text: "完成奇美博物館網站改版報價單", priority: "waiting" },
+        { owner: "蔡阿達", text: "安排 Jack En 與鍾敏一對一會議討論品牌名稱與 logo 設計", priority: "today" },
+        { owner: "Jack En", text: "聯繫鍾敏溝通品牌更名與 logo 設計事宜", priority: "today" },
+        { owner: "蔡阿達", text: "製作可編輯版品牌資料文件供 Jack En 調整", priority: "week" },
+        { owner: "Jack En", text: "提供包含新聞連結的完整客戶案例文件", priority: "week" },
+        { owner: "蔡阿達", text: "提供 Jack En 網站現況分析報告（SEO/AI 能見度健檢）", priority: "week" },
+        { owner: "蔡阿達", text: "協助 Jack En 挑選合適關鍵字並規劃網站內容策略", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-04",
+          title: "跟傑克初次(認真地)線上交流",
+          time: "13:03-13:29",
+          duration: "26m",
+          participants: "蔡阿達、Jack En",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "品牌名稱更動與定位討論",
+              exchanges: [
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "我一直沒提供資料，主要是品牌名稱還沒確定。想從「別克攝影工作室」改成更能反映平民攝影的名稱，不希望客戶只認定我一個人。" },
+                { speaker: "蔡阿達", role: "ada", text: "建議你盡快跟鍾敏約一對一會議，聽聽專業意見並重新設計 logo 跟品牌定位。費用不高，找鍾敏幫忙的話一個月內可以搞定。" },
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "好，我明天先跟鍾敏聯繫。" },
+                { speaker: "蔡阿達", role: "ada", text: "先以公司名稱推廣就好，不要讓品牌名稱變動影響推廣進度，後續再做調整。" }
+              ]
+            },
+            {
+              topic: "公司背景與營運目標",
+              exchanges: [
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "公司成立超過 20 年，二代接班。目前一個人經營，用發包方式承接攝影工作。目標 10 年內營業額達 600 萬，透過 BNI 跟合作 20 間活動公關公司承接政府和企業活動。" },
+                { speaker: "蔡阿達", role: "ada", text: "客單價大概是多少？" },
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "以時薪計算，四小時約 1 萬 3，八小時約 2 萬 3。專注活動攝影，涵蓋典禮、發表會、商展、講座、表演藝術等。" }
+              ]
+            },
+            {
+              topic: "品牌數位資產建構與 AI 能見度追蹤",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我們協助客戶把經歷、案例、技術及產品內容寫入網站，提升被 AI 推薦的機會。提供 AI 能見度追蹤工具，分析 AI 回答中提及的品牌網址跟相關句子。" },
+                { speaker: "Jack En", role: "other", label: "攝影師", text: "你們跟 MARS 的服務怎麼串聯？" },
+                { speaker: "蔡阿達", role: "ada", text: "只要客戶希望被 AI 推薦，兩方服務就會串聯。我提供網站優化建議書給 MARS，由 MARS 負責售後優化。建議在網站建置階段就介入，確保符合 SEO 和 GO 規範。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-03-25",
           title: "Jack En × awoo 網站建置洽談",
@@ -2943,8 +3026,8 @@ window.WAR_ROOM_DATA = {
       name: "GEM 關鍵字研究工具 — 自動爬蟲生成背景報告",
       icon: "🔑",
       category: "tools",
-      lastUpdated: "2026-04-21",
-      summary: "4/21 完成 JTLegend 與 Spigen 兩份 GEO 進檢報告 — Leon 審閱後全面改 SEO 為 GEO、各品牌獨立報告；Leon 完成報價單整合，後續加入 GEO/AMP 模組",
+      lastUpdated: "2026-06-04",
+      summary: "6/4 蔡阿達向何建彤說明爬蟲系統架構 — 從 HRF Organic Topic 和 Baka Pages 抓取資料輸出 MD 檔；操作流程已簡化至 30 秒；爬蟲技術門檻高且變動頻繁，暫以手動操作為主",
       keyPoints: [
         "<strong>4/7 AE 週會全員 Demo</strong>：蔡阿達向 Bryan、Rebecca、Leon、Aiden 介紹工具，獲團隊認可",
         "工具流程：輸入客戶網址 → 爬取所有頁面 → 生成<strong>健檢報告（提案用）+ 關鍵字拓展報告（拓字用）</strong>",
@@ -2960,7 +3043,12 @@ window.WAR_ROOM_DATA = {
         "🆕 4/21 完成 <strong>JTLegend（愛馬斯）與 Spigen（爵雅）</strong>兩份 GEO 進檢報告，部署於 awoo-vital.vercel.app",
         "🆕 Leon 審閱後建議：全面將 <strong>SEO 改為 GEO</strong>、各品牌報告獨立不混用其他品牌資料、移除累積案件數文字",
         "🆕 Ada 已根據回饋修正報告並更新連結，預計可再產出兩份進檢報告",
-        "🆕 Leon 完成 <strong>SEO 報價單整合</strong>，後續將加入 GEO/AMP/電商流量模組，預計明天上午向團隊發表"
+        "🆕 Leon 完成 <strong>SEO 報價單整合</strong>，後續將加入 GEO/AMP/電商流量模組，預計明天上午向團隊發表",
+        "🆕 6/4 蔡阿達向何建彤說明爬蟲架構 — 主要從 <strong>HRF Organic Topic</strong> 和 <strong>Baka Pages</strong> 兩個來源抓取資料",
+        "🆕 6/4 爬蟲輸出為 <strong>MD 檔格式</strong>，會抓取網頁標題與內文，供質檢報告與學習分析使用",
+        "🆕 6/4 Python 腳本（hrf url rank）用於前置作業，幫助<strong>分類網址並抓取相關資料</strong>",
+        "🆕 6/4 爬蟲部分技術門檻較高且變動頻繁，<strong>難以完全交付客戶使用</strong>",
+        "🆕 6/4 操作爬蟲及資料下載流程已簡化至約 <strong>30 秒</strong>完成"
       ],
       chips: [
         { icon: "💰", text: "工具費 9K" },
@@ -2977,9 +3065,37 @@ window.WAR_ROOM_DATA = {
         { owner: "蔡阿達", text: "根據 AE 反饋調整報告配色，減少顏色數量，提升視覺舒適度", priority: "week" },
         { owner: "蔡阿達", text: "測試英文網站爬取能力，改善英文關鍵字研究報告品質", priority: "week" },
         { owner: "蔡阿達", text: "繼續產出進檢報告（預計再做兩份），確保品牌資料獨立不混用", priority: "week" },
-        { owner: "Leon（呂紹平）", text: "完成報價單 GEO/AMP/電商流量模組整合，安排隔天上午向團隊發表", priority: "today" }
+        { owner: "Leon（呂紹平）", text: "完成報價單 GEO/AMP/電商流量模組整合，安排隔天上午向團隊發表", priority: "today" },
+        { owner: "蔡阿達", text: "持續簡化爬蟲資料抓取流程，確保輸入網址後快速完成資料爬取", priority: "week" },
+        { owner: "蔡阿達", text: "評估並嘗試自動化下載 CSV 及相關報告檔案的流程", priority: "week" },
+        { owner: "何建彤", text: "向麥克確認爬蟲與質檢報告自動化功能的重要程度與後續發展方向", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-04",
+          title: "阿達給阿彤的秘密討論時段 — 爬蟲系統架構說明",
+          time: "09:00-09:51",
+          duration: "51m",
+          participants: "蔡阿達、何建彤（彤²）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "爬蟲系統架構與資料來源",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前爬蟲系統主要從 HRF 的 Organic Topic 和 Baka Pages 兩個來源抓取資料，會爬取網頁標題與內文，資料以 MD 檔形式存放。另外有一個 Python 腳本 hrf url rank 用於前置作業，幫助分類網址。" },
+                { speaker: "何建彤", role: "other", label: "彤²", text: "確認一下，爬蟲的輸出就是 MD 檔？資料夾結構是怎樣的？" },
+                { speaker: "蔡阿達", role: "ada", text: "對，輸出就是 MD 檔。爬蟲主要負責資料抓取，後續的質檢報告跟內容生成由其他系統模組處理。操作一次爬蟲加上資料下載大概 30 秒就完成了。" }
+              ]
+            },
+            {
+              topic: "自動化可行性與現有流程優化",
+              exchanges: [
+                { speaker: "何建彤", role: "other", label: "彤²", text: "有沒有辦法把爬蟲跟內容生成整合成產品？可以試試用自動化工具幫忙下載跟處理資料。" },
+                { speaker: "蔡阿達", role: "ada", text: "爬蟲部分技術門檻較高而且變動頻繁，難以完全交付客戶使用。我擔心系統變動導致自動化維護困難，現階段以手動操作為主，流程已經很精簡了。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-04-20",
           title: "AE Team 週會 — 提案報告簡化與分階段策略",
@@ -6300,6 +6416,74 @@ window.WAR_ROOM_DATA = {
     },
 
     // ====== P57: 粹究美學 ======
+    {
+      id: "kpi-report-standard",
+      name: "KPI 報表標準化 — 臺灣與日本定義統一",
+      icon: "📊",
+      category: "company",
+      lastUpdated: "2026-06-04",
+      summary: "6/4 Mike 要求填寫制式 KPI 報表 — 臺灣與日本 KPI 定義差異大，決議調整定義以符合臺灣實際狀況；HubSpot 數據更新頻率低且人工操作易遺漏；預計 6/22 正式啟動新報告表格",
+      keyPoints: [
+        "臺灣 HubSpot 數據更新頻率低（<strong>兩個月一次</strong>），Regic 與 HubSpot 無自動聯動，人工更新易遺漏",
+        "報告截止時間定為<strong>報告前一週的週四</strong>，週五完成報告",
+        "MQL 定義需調整以適用臺灣，年度目標以<strong>回推法</strong>計算（依營收目標及 win rate 約 10% 反推）",
+        "蔡阿達說明 AE 約會議數據由 AE 負責記錄，建議<strong>設置系統屬性自動抓取會議日期</strong>",
+        "刪除日本報告中 Presale 欄位（臺灣 Presale 由 YC 負責，AMP 與 GU 差異使欄位意義不大）",
+        "CS 部分由 Winny 從 rolling 表抓取，CS new 與 upsell 定義拆分清楚",
+        "中斷超過九期即歸為 <strong>CS new</strong>（刪除日本報告中舊有 resign 欄位）",
+        "數據填寫分工：蔡阿達負責 7-12 月預測數字、Winny 拆解季目標、Anne 負責 CS new 與券數據",
+        "預計 <strong>6/22 正式啟動</strong>新報告表格"
+      ],
+      chips: [
+        { icon: "📅", text: "6/22 啟動" },
+        { icon: "📈", text: "回推法目標" },
+        { icon: "🔄", text: "臺日定義統一" },
+        { icon: "📋", text: "制式報表" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "完成 7-12 月預測數據填寫", priority: "today" },
+        { owner: "蔡阿達", text: "根據回推法計算所需 MQL 數量並填寫報表", priority: "today" },
+        { owner: "蔡阿達", text: "設置系統屬性，要求 AE 約會議時記錄日期與時間", priority: "week" },
+        { owner: "Winny Chiang", text: "約麥克確認 KPI 及年度目標設定", priority: "today" },
+        { owner: "Winny Chiang", text: "拆解年度目標為季度目標及達成率，維護滾動報表數據", priority: "week" },
+        { owner: "Angelline", text: "與蔡阿達確認並定義臺灣適用的 MQL、SQL、報價等 KPI 標準", priority: "week" },
+        { owner: "Anne Chang", text: "確認 CS new 年度目標金額，調整 CS new 與 upsell 數據範圍", priority: "week" },
+        { owner: "Anne Chang", text: "確認券數據來源版本，與 Winny 核對數字差異", priority: "week" },
+        { owner: "藍文甫", text: "與 Winny 討論報告表及簡報調整，確保呈現方式清晰", priority: "week" },
+        { owner: "Angelline", text: "向麥克反映 HubSpot 數據更新困難與人工遺漏問題", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-04",
+          title: "MIKE 要求 — 填寫制式 KPI 報表",
+          time: "12:02-12:56",
+          duration: "54m",
+          participants: "Angelline、Winny Chiang、蔡阿達、Anne Chang、藍文甫",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "HubSpot 數據更新困難與臺日 KPI 差異",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "行銷", text: "臺灣目前 HubSpot 數據更新困難，更新頻率低到兩個月一次。Regic 跟 HubSpot 沒有自動聯動，人工更新容易遺漏，行銷部門花大量人力核對。" },
+                { speaker: "Winny Chiang", role: "other", label: "Winny", text: "日本報告的截止時間定為報告前一週的週四，週五完成報告。黃色欄位是需要填寫的部分，灰色欄位不可更動。" },
+                { speaker: "Angelline", role: "other", label: "行銷", text: "日本跟臺灣的 KPI 定義差異很大，尤其 MQL 定義和年度目標都還沒明確設定，需要跟麥克確認。" }
+              ]
+            },
+            {
+              topic: "回推法目標設定與數據填寫分工",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "MQL 跟 AE 約會會議的數據由 AE 負責記錄，我建議設置系統屬性自動抓取會議日期，減少人工作業負擔。" },
+                { speaker: "蔡阿達", role: "ada", text: "年度目標用回推法計算，依據營收目標和業務 win rate 大概 10%，反推所需名單數量。我來負責填寫相關數據，Winny 協助拆解季目標跟達成率。" },
+                { speaker: "Anne Chang", role: "other", label: "Anne", text: "CS new 跟 upsell 的定義需要拆分清楚，中斷超過九期歸為 CS new，刪除日本報告裡舊有的 resign 欄位。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "我會跟 Winny 討論報告表跟簡報的調整，確保呈現方式清晰，也會跟小安和 Leo 協調財務與實際數據落差的說明。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P58: 粹究美學 ======
     {
       id: "cuijiu-aesthetics",
       name: "粹究美學 — SEO/GEO 服務解約善後",
