@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-04T19:00:00",
-  dateLabel: "2026/06/04（四）",
+  lastUpdated: "2026-06-05T19:00:00",
+  dateLabel: "2026/06/05（五）",
   stats: {
-    meetings: 115,
-    projects: 58,
+    meetings: 116,
+    projects: 59,
     partners: 19,
     internal: 9,
     clientCompany: 27,
-    todos: 449
+    todos: 452
   },
 
   projects: [
@@ -6540,6 +6540,69 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "關於解約的部分，我們不會收取違約金，另外再免費延長一個月的服務，讓你們有緩衝時間評估。" },
                 { speaker: "羊和 Mei Yang", role: "other", label: "粹究", text: "好，我們會在內部討論之後儘快回覆你們是否續約。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P59: 旅天下 ======
+    {
+      id: "bni-ivy-travel",
+      name: "BNI × Ivy Chien（旅天下旅行社）— 初次線上交流",
+      icon: "✈️",
+      category: "events",
+      lastUpdated: "2026-06-05",
+      summary: "BNI 一對一交流：Ivy Chien（湘怡）介紹旅天下（雄獅旗下加盟）業務模式、產品與客群定位；蔡阿達分享 AI 工具應用示範並討論數位行銷合作可能性",
+      keyPoints: [
+        "旅天下為<strong>雄獅旅遊子公司</strong>加盟店，主要銷售雄獅及旅天下行程，也提供客製化自由行服務",
+        "主要客群：<strong>55–75 歲退休族群</strong>（預算足、頻率高）及<strong>醫療診所企業員旅</strong>（品質導向）",
+        "旅天下與雄獅為少數能自組團體的旅行社，<strong>市場佔有率約七八成</strong>",
+        "蔡阿達現場示範用 AI 整理 Ivy 提供的 PDF 資料並生成結構化簡報",
+        "Ivy 目前僅使用 ChatGPT 基本問答，對 AI 進階應用有興趣但不熟悉",
+        "蔡阿達強調企業<strong>必須有官網才能被 AI 搜尋與推薦</strong>，此為數位轉型關鍵"
+      ],
+      chips: [
+        { icon: "✈️", text: "旅天下×雄獅" },
+        { icon: "👥", text: "退休族群客群" },
+        { icon: "🤖", text: "AI 工具教學" },
+        { icon: "🤝", text: "BNI 1-on-1" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供 AI 工具學習資源（Google Gemini 等）給 Ivy 參考", priority: "week" },
+        { owner: "蔡阿達", text: "評估旅天下是否有官網建置或優化需求，作為 awoo 潛在客戶", priority: "waiting" },
+        { owner: "Ivy Chien", text: "確認旅天下官網現況，評估 AI 行銷導入可行性", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-05",
+          title: "BNI × Ivy Chien — 初次線上交流",
+          time: "13:01–13:54",
+          duration: "53m",
+          participants: "蔡阿達、Ivy Chien（湘怡）",
+          dialogues: [
+            {
+              topic: "旅天下業務模式與市場定位",
+              exchanges: [
+                { speaker: "Ivy Chien", role: "other", label: "旅天下", text: "旅天下是雄獅旅遊的子公司，屬加盟店模式，主要銷售雄獅及旅天下的行程，也提供客製化服務。大部分小旅行社無法直接與航空公司拿機位，旅天下與雄獅是少數能自組團體的旅行社，市場佔有率約七八成。" },
+                { speaker: "蔡阿達", role: "ada", text: "所以你們的服務可以看成是一個行程產生器，資源豐富又能提供客製化行程。怎麼推薦你的服務最有效？" },
+                { speaker: "Ivy Chien", role: "other", label: "旅天下", text: "建議聚焦退休族群和企業員工旅遊市場。主要客群是 55 到 75 歲退休老闆和公務員，他們時間多預算也夠，旅遊頻率很高。另一個客群是醫療診所的企業員旅，品質要求高也願意付費。" }
+              ]
+            },
+            {
+              topic: "AI 工具應用與行銷策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "AI 不是通靈，需要清楚溝通並提供足夠資料才能得到理想結果。我來示範用 AI 整理你提供的 PDF 資料，生成結構清晰的簡報。" },
+                { speaker: "Ivy Chien", role: "other", label: "旅天下", text: "我目前主要是用 ChatGPT 來問問題，對 AI 的進階應用還不太熟。" },
+                { speaker: "蔡阿達", role: "ada", text: "可以用 Google Gemini 等免費 AI 工具開始。我們 awoo 服務的客戶需要有官網，才能有效利用 AI 進行數位行銷跟資料整合。" }
+              ]
+            },
+            {
+              topic: "BNI 經驗與高雄產業推動",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "我 2012 年開始每週往返臺北高雄。加入 BNI 是想推動高雄產業發展。前六年收穫有限，但今年因為 AI 興起，看到更多中小企業有數位行銷的需求。企業必須有官網才能被 AI 搜尋跟推薦，這是數位轉型的關鍵。" },
+                { speaker: "Ivy Chien", role: "other", label: "旅天下", text: "很佩服你默默為行業付出，我會持續觀察學習，期待未來有更多交流合作。" }
               ]
             }
           ]
