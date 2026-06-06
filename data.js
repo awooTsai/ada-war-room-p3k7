@@ -3,10 +3,10 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-05T19:00:00",
-  dateLabel: "2026/06/05（五）",
+  lastUpdated: "2026-06-06T19:00:00",
+  dateLabel: "2026/06/06（六）",
   stats: {
-    meetings: 116,
+    meetings: 117,
     projects: 59,
     partners: 19,
     internal: 9,
@@ -6023,34 +6023,35 @@ window.WAR_ROOM_DATA = {
     // ====== P51: cobalancelab ======
     {
       id: "cobalance-partner",
-      name: "cobalancelab × awoo — 品牌代理商 SEO/GEO 技術合作",
+      name: "CBL 平衡感 × awoo — 代理商 AI 健診報告與 GEO 服務合作",
       icon: "🤝",
       category: "partner",
-      lastUpdated: "2026-05-27",
-      summary: "5/27 蔡阿達與 Carol Lin（林俐儀）首次洽談：cobalancelab 成立近 20 年專注中小企業品牌代理，awoo 展示 AI 能見度追蹤工具與三種 SEO 優化方案；雙方確認以嵌入式合作模式推動客戶 SEO/GEO 服務",
+      lastUpdated: "2026-06-05",
+      summary: "CBL 平衡感整合行銷（Carol Lin）以代理商身份合作推動客戶 GEO 服務。6/5 第二次會議以大都會國際房產、金華山為案例審閱 AI 健診報告，提出四項修改建議（加 SEO 基本盤模組、修正 logo、加 AI 結果變異性說明、補充 Gemini 選用理由），蔡阿達全數接受並承諾更新版本",
       keyPoints: [
-        "cobalancelab 成立近 20 年，主要服務<strong>中小企業及品牌</strong>，提供 AI 顧問服務及電商行銷軟體",
-        "awoo 展示<strong>亞洲獨家 AI 能見度追蹤工具</strong>（2026 年 3 月發表），分析品牌被 AI 提及率、聲量、排名及引用情況",
-        "三種 SEO 優化方案中最小可行方案：<strong>4 核心主題 × 20 關鍵字 × 6 份建議書</strong>（含內容撰寫與技術修改）",
+        "CBL（cobalancelab）成立近 20 年，專注<strong>中小企業品牌代理</strong>，以嵌入式合作模式推動客戶 SEO/GEO 服務",
+        "初期合作案：<strong>大都會國際房產、金華山</strong>，由 awoo 出健診報告 + GEO 服務",
+        "🆕 6/5 報告加入<strong>SEO 基本盤評估模組</strong>，讓客戶理解「先做好傳統 SEO 才能做 AI SEO」的邏輯",
+        "🆕 報告加入<strong>AI 查詢結果變異性保護文字</strong>，避免客戶以個人查詢結果反駁報告",
+        "🆕 建立<strong>Gemini 選用理由標準話術</strong>：Google 爬蟲資料量最大、AIO/AI Mode 無 API、與 Google AI 生態系高度相關",
+        "🆕 CBL logo（L 黑色）在深色版面吃色，需<strong>改白色版或改用公司全名文字</strong>替代",
         "報告可<strong>客製化、去識別化、置入品牌標誌</strong>，方便合作夥伴轉售",
-        "awoo 堅持<strong>不保證排名</strong>，以數據分析與持續優化為溝通重點，Carol 認同此立場",
-        "合作定位：awoo 負責<strong>技術與 SEO 專業支援</strong>，cobalancelab 負責<strong>整合行銷</strong>（社群維運、媒體曝光、活動）",
-        "Carol 建議 awoo 人員<strong>嵌入式參與客戶會議</strong>，減少資訊斷點，降低溝通成本",
-        "後臺數據<strong>不直接開放給客戶</strong>，以定期報告截圖及說明方式呈現關鍵指標",
-        "潛在客戶產業：<strong>醫美、海外資產、殯葬</strong>等資訊不透明且競爭激烈的產業"
+        "awoo 堅持<strong>不保證排名</strong>，以數據分析與持續優化為溝通重點",
+        "正式合作啟動後同步追蹤 <strong>ChatGPT、Gemini、AIO、AI Mode</strong> 四套"
       ],
       chips: [
         { icon: "🏢", text: "品牌代理商" },
-        { icon: "📊", text: "AI 能見度工具" },
-        { icon: "🔑", text: "4 主題 / 20 關鍵字" },
+        { icon: "📊", text: "AI 健診報告" },
+        { icon: "🏠", text: "大都會房產" },
+        { icon: "⛰️", text: "金華山" },
         { icon: "🤝", text: "嵌入式合作" }
       ],
       todos: [
-        { owner: "Carol Lin", text: "提供 AI 能見度追蹤報告範本與客戶網址給 awoo", priority: "week" },
-        { owner: "蔡阿達", text: "根據 cobalancelab 客戶網站製作關鍵字主題與延伸關鍵字清單及建議書", priority: "week" },
-        { owner: "蔡阿達", text: "準備客製化報告（去識別化 + 品牌標誌置入）供 cobalancelab 使用", priority: "week" },
-        { owner: "蔡阿達 / Carol Lin", text: "確定後臺數據開放程度，建立客戶問題回應機制", priority: "week" },
-        { owner: "蔡阿達", text: "向客戶說明不保證排名的專業立場，提供分析與改善建議", priority: "waiting" },
+        { owner: "蔡阿達", text: "修正 CBL logo 吃色問題（L 改白色版或改用公司全名文字），重新上傳報告", priority: "week" },
+        { owner: "蔡阿達", text: "在 AI 健診報告中加入 SEO 基本盤評估模組", priority: "week" },
+        { owner: "蔡阿達", text: "起草 AI 查詢結果變異性說明文字（保護文字），加入報告固定欄位", priority: "week" },
+        { owner: "蔡阿達", text: "整理 Gemini 選用理由的標準客戶說法（話術）", priority: "week" },
+        { owner: "Carol Lin", text: "確認新版報告後回覆，啟動大都會國際房產與金華山正式合作", priority: "waiting" },
         { owner: "Carol Lin", text: "制定滾動式關鍵字調整計畫，針對具體客戶案例啟動合作", priority: "waiting" }
       ],
       meetingHistory: [
@@ -6065,7 +6066,7 @@ window.WAR_ROOM_DATA = {
             {
               topic: "雙方服務介紹與合作需求確認",
               exchanges: [
-                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "公司成立近 20 年，主要服務中小企業及品牌，提供 AI 顧問服務及電商行銷軟體。合作中應避免高溝通成本，建議邀請合作夥伴成為團隊一員，方便專業說明與即時回應。" },
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "公司成立近 20 年，主要服務中小企業及品牌，提供 AI 顧問服務及電商行銷軟體。合作中應避免高溝通成本，建議邀請合作夥伴成為團隊一員，方便專業說明與即時回應。" },
                 { speaker: "蔡阿達", role: "ada", text: "公司於今年 3 月發表亞洲獨家 AI 能見度追蹤工具，能協助客戶了解品牌被 AI 提及及引用的狀況。SEO 與 AI 爬蟲技術相輔相成，基礎 SEO 做好才能進一步優化 AI 能見度。" }
               ]
             },
@@ -6073,15 +6074,53 @@ window.WAR_ROOM_DATA = {
               topic: "AI 能見度報告與 SEO 優化方案",
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "展示 AI 能見度報告工具，透過 API 及爬蟲技術分析客戶在 AI 搜尋中的表現。最小可行方案包含 4 核心主題、20 組關鍵字及 6 份建議書。報告可客製化，包含去識別化及品牌標誌置入。" },
-                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "詢問業界保證排名的做法，並認為保證排名需有風險控管，保證內容往往是方案中較容易達成的部分。" },
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "詢問業界保證排名的做法，並認為保證排名需有風險控管，保證內容往往是方案中較容易達成的部分。" },
                 { speaker: "蔡阿達", role: "ada", text: "公司不保證排名，但會持續分析缺口並提出改善建議。業界保證排名多為針對長尾關鍵字，且保證內容可能因 KPI 壓力而偏頗。" }
               ]
             },
             {
               topic: "合作模式與客戶後臺使用",
               exchanges: [
-                { speaker: "Carol Lin", role: "other", label: "cobalance", text: "多數品牌客戶缺乏操作後臺能力，若直接開放後臺客戶會頻繁提問增加服務負擔。品牌代理商提供整合行銷方案包含社群維運、媒體曝光及線上線下活動。" },
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "多數品牌客戶缺乏操作後臺能力，若直接開放後臺客戶會頻繁提問增加服務負擔。品牌代理商提供整合行銷方案包含社群維運、媒體曝光及線上線下活動。" },
                 { speaker: "蔡阿達", role: "ada", text: "同意以定期報告截圖方式呈現數據。公司可提供從顧問到執行的全方位服務，包含內容撰寫、技術修改及 SEO 優化，依客戶網站狀況調整合作深度。" }
+              ]
+            }
+          ]
+        },
+        {
+          date: "2026-06-05",
+          title: "CBL × awoo — AI 健診報告格式審閱與修改討論",
+          time: "09:46-11:01",
+          duration: "1h15m",
+          participants: "蔡阿達、Carol Lin",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "報告結構：SEO 基本盤與 AI 能見度的銜接邏輯",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "客戶族群以中小品牌為主，普遍對 SEO 認知不足，多數人誤以為有個美觀官網就等於做好 SEO。擔心報告只聚焦 AI 能見度差距，客戶可能放錯重點。我的起手勢是從 AI 的緊迫感吸引客戶，再帶回 SEO 基本盤。" },
+                { speaker: "蔡阿達", role: "ada", text: "GEO 服務本就包含 SEO，不把兩者拆開賣。相關基礎 SEO 資料本來就有，只是沒放進報告，同意額外加入這一塊，讓兩條邏輯線可以在報告末尾收斂到同一個行動建議。" }
+              ]
+            },
+            {
+              topic: "AI 查詢結果變異性與保護文字需求",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "客戶看到報告中的 AI 提問題目後可能自行複製去問 AI，但每個人每個時間點查到的結果不同，客戶可能拿自己的查詢結果反駁報告內容。希望報告加入保護性說明文字。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意加入說明：AI 回應因查詢條件、個人化設定、時間點不同而有差異，報告呈現的是特定條件下的代表性分析，非普遍唯一的結果。" }
+              ]
+            },
+            {
+              topic: "選用 Gemini 做健診的理由與客戶溝通話術",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "為什麼以 Gemini 為主模型？客戶可能會問。" },
+                { speaker: "蔡阿達", role: "ada", text: "大多數人搜尋行為以 Google 為主；Google 爬蟲資料量全球最大；AIO 與 AI Mode 目前無 API 可串接；Gemini 生成結果與 AIO/AI Mode 高度相關，可作為代理觀測指標。正式合作後會同步追蹤 ChatGPT、Gemini、AIO、AI Mode 四套。" }
+              ]
+            },
+            {
+              topic: "客戶優化階段定義與合作推進",
+              exchanges: [
+                { speaker: "Carol Lin", role: "other", label: "CBL", text: "報告中「起步期」的判斷邏輯是什麼？客戶會問多久能看到成效。" },
+                { speaker: "蔡阿達", role: "ada", text: "起步期是基於系統實際爬取的資料分數判斷，對客戶溝通時建議以「合作前的初始狀態」為框架解釋，不強調分數。一般以一年為服務週期，通常需持續 2-3 年才能達到較高階段。" }
               ]
             }
           ]
