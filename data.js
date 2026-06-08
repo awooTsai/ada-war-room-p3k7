@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-06T19:00:00",
-  dateLabel: "2026/06/06（六）",
+  lastUpdated: "2026-06-08T19:00:00",
+  dateLabel: "2026/06/08（一）",
   stats: {
-    meetings: 117,
-    projects: 59,
+    meetings: 122,
+    projects: 61,
     partners: 19,
     internal: 9,
-    clientCompany: 27,
-    todos: 452
+    clientCompany: 29,
+    todos: 473
   },
 
   projects: [
@@ -187,8 +187,8 @@ window.WAR_ROOM_DATA = {
       name: "獎金制度改革 & 業績目標調整",
       icon: "💰",
       category: "company",
-      lastUpdated: "2026-05-29",
-      summary: "5/29 三大議題 — ① OKR 因 AI 因素延至 6 月落地，全公司已公布；② 候選制第三季結束前全面取消，減少服務啟動延遲；③ 脆舊美學客戶解約案管理層介入中，需嚴格控管業務折扣與權限",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 Staff Meeting — Q2 業績達成約 80 萬，距 128 萬目標尚有 40 多萬差距，六月為關鍵收單期；候選制本月完成廢除；CS 續約需強化失聯窗口追蹤；91App 技術會議待安排；AI 報告規格需寫入合約",
       keyPoints: [
         "<strong>個人目標下修約 20%</strong>，團隊目標約 4,800 萬",
         "獎金制度調整 — 發展金門檻降低，業績獎金預期增加",
@@ -245,15 +245,24 @@ window.WAR_ROOM_DATA = {
         "🆕 5/29 取消候選制有助於提升服務效率與收費透明度，CS 可督促客戶按時完成選字",
         "🆕 5/29 <strong>脆舊美學客戶有解約意向</strong>且要求免違約金，需走公司內部流程由管理層決策",
         "🆕 5/29 蔡阿達建議若客戶關係不愉快應停止服務避免 CS 為難，合約事務交由艾瑞克處理",
-        "🆕 5/29 業務折扣與權限需嚴格控管，<strong>部長與副部長應擔任守門員角色</strong>，確保業務紀律與流程"
+        "🆕 5/29 業務折扣與權限需嚴格控管，<strong>部長與副部長應擔任守門員角色</strong>，確保業務紀律與流程",
+        "🆕 6/8 Q2 業績達成約 <strong>80 萬</strong>，距 <strong>128 萬</strong>目標尚有 <strong>40 多萬差距</strong>，六月為關鍵收單期",
+        "🆕 6/8 業績認列調整 — 收款金額按<strong>實際到帳月份認列</strong>，四月因此帳面數字偏高，六月分布較為均勻",
+        "🆕 6/8 目前 <strong>4 位業務</strong>承擔業績目標，預計下次會議加入新成績數據",
+        "🆕 6/8 候選制<strong>本月完成廢除</strong>，避免續約爭議；藍文甫建議將候選字階段視為「第一期合作服務」並收費",
+        "🆕 6/8 CS 每月新增業績目標 <strong>33,000</strong>，透過續約、交叉銷售及追加銷售達成",
+        "🆕 6/8 <strong>失聯客戶窗口</strong>為重大流失風險 — 林思吾指示需找出窗口主管或老闆展現重視態度",
+        "🆕 6/8 AI 報告規格需<strong>明確寫入合約與報價單</strong>，GU 方案必須提供 AI 應用報告",
+        "🆕 6/8 Q3/Q4 資源調配 — 部分資源回流 NMP 與 AMP 客戶需求，日本市場仍有 <strong>100+ AMP 客戶</strong>",
+        "🆕 6/8 國泰證券教育訓練<strong>本週安排</strong>（Fenix Li 負責）"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
         { icon: "💰", text: "845萬/6人" },
-        { icon: "⚠️", text: "PIP < 60%" },
+        { icon: "⚠️", text: "Q2 差40萬" },
         { icon: "🎯", text: "T型圖基準" },
         { icon: "📋", text: "OKR 6月落地" },
-        { icon: "🚫", text: "候選制 Q3 取消" }
+        { icon: "🚫", text: "候選制本月廢除" }
       ],
       todos: [
         { owner: "Winny Chiang", text: "明日（5/20）向麥克反映業務對獎金回收條款意見，請示調整可能", priority: "today" },
@@ -266,9 +275,62 @@ window.WAR_ROOM_DATA = {
         { owner: "藍文甫與 Anne Chang", text: "制定明確選字期限與服務啟動時間，減少候選制不確定性", priority: "week" },
         { owner: "蔡阿達", text: "完成脆舊美學解約相關信件調整並寄出，拆分服務窗口與合約管理", priority: "today" },
         { owner: "藍文甫", text: "監督脆舊美學解約流程，與管理層溝通案件狀況與後續處理方案", priority: "week" },
-        { owner: "蔡阿達與藍文甫", text: "共同制定業務團隊放行與折扣管理規範，強化內部管控", priority: "week" }
+        { owner: "蔡阿達與藍文甫", text: "共同制定業務團隊放行與折扣管理規範，強化內部管控", priority: "week" },
+        { owner: "蔡阿達", text: "加速推動六月收單，追回與 128 萬目標的 40 多萬差距", priority: "today" },
+        { owner: "蔡阿達與 Leo", text: "本月完成候選制廢除，協調將候選字階段定位為正式合作服務", priority: "week" },
+        { owner: "Leo、蔡阿達與 Anne", text: "盤點失聯客戶窗口，主動尋找主管或老闆聯繫展現重視", priority: "week" },
+        { owner: "Amber Liao", text: "將 AI 報告頻率與規格明確寫入合約與報價單", priority: "week" },
+        { owner: "李陽與蔡阿達", text: "盡快安排與 91App 技術團隊會議討論 API 串接與後臺權限", priority: "week" },
+        { owner: "Fenix Li", text: "本週安排國泰證券教育訓練", priority: "today" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-08",
+          title: "Staff Meeting TW — Q2 業績進度、候選制廢除、CS 續約策略、產品更新",
+          time: "10:31-12:07",
+          duration: "1h36m",
+          participants: "蔡阿達、林思吾、藍文甫（Leo）、Anne Chang、Steven Shih、Amber Liao、Nancy Cheng、Knack Hung、Fenix Li、朱泓宇、莊馥慈、韻青",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "Q2 業績進度與收單策略調整",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "報告 Q2 業績達成約 80 萬，距 128 萬目標尚有 40 多萬差距。業績認列調整後收款金額按實際到帳月份認列，四月帳面數字偏高，六月分布較均勻。目前四位業務承擔目標。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "六月是關鍵週，需將 40 多萬的單趕進來。Q1 與 Q2 業績比較確認六月需加速收單。" }
+              ]
+            },
+            {
+              topic: "91App 與 Shopline 技術串接挑戰",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "91App 內部政治因素影響合作，技術串接需避免干擾對方排程。多位前同事確認合作並未終止。" },
+                { speaker: "Steven Shih", role: "other", label: "技術", text: "需取得後臺權限與 91App PM 討論。Shopline 方面較配合，願意讓 awoo 在其 App 中新增功能，但過去串接曾因資源不足延遲超過一年。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "盡快安排技術會議，邀請雙方前後端人員參與。Shopline 已有整合功能需確認是否充分利用。" }
+              ]
+            },
+            {
+              topic: "候選制廢除與服務價值討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "候選制本月完成廢除，避免續約時因加值服務認知差異產生爭議。" },
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "候選字階段對客戶價值很高，建議視為第一期合作服務並收費，可在 CEO 特別迭代會議中討論。" }
+              ]
+            },
+            {
+              topic: "CS 續約與客戶窗口管理",
+              exchanges: [
+                { speaker: "藍文甫", role: "other", label: "Leo", text: "CS 每月新增業績目標 33,000，透過續約、交叉銷售及追加銷售達成。部分六月續約客戶因窗口失聯或預算問題未續約。" },
+                { speaker: "Anne Chang", role: "other", label: "CS", text: "補充五六月續約與未續約客戶細節，失聯窗口問題需主動追蹤。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "窗口失聯問題需找出窗口主管或老闆，展現對案子的重視與誠意，防止成為客戶流失原因。" }
+              ]
+            },
+            {
+              topic: "AI 報告規格與合約明確化",
+              exchanges: [
+                { speaker: "Amber Liao", role: "other", label: "CS", text: "AI 報告需手動產出，條款應明確寫入合約與報價單保障服務標準。GU 方案必須提供 AI 應用報告，GU+JUSI 方案因可產出 Prompt 報告需求不同。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "已有明確分級定義，團隊需內部同步規則避免誤解，業務端需熟悉合約中 AI 報告分級與數量規格。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-29",
           title: "Weekly Sync Up — OKR 落地、候選制取消、客戶解約管理",
@@ -3344,8 +3406,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-06-01",
-      summary: "6/1 雙會議：（1）GTM 週會確認 PDF V1 上線、CSV V2 6/4 上線、8 新國家本週四加入、BRAND 五步法已獲麥克確認、爬蟲工具包裝為本機執行檔；（2）AMP to GEO POC 定價確認成本 2 萬/月、牌價 3 萬打折至 1.5 萬、規格 25 關鍵字 75 Prompt、半年合約、5 萬以上客戶優先加購",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 AI Mode 影響觀察會議：SRT 數據劇烈變化、產品推薦文章需增加挑選原則與結構化內容、Shopline APP 串接功能需求確認中、迪卡七月 Webinar 講師合作啟動、產業趨勢白皮書素材準備中",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3471,7 +3533,17 @@ window.WAR_ROOM_DATA = {
         "🆕 6/1 AMP to GEO POC 定價確認：人力+工具成本約 <strong>NT$20,000/月</strong>，牌價 NT$30,000 打六折至 <strong>NT$15,000</strong>",
         "🆕 6/1 AMP to GEO 規格標準化：<strong>25 關鍵字、75 Prompts</strong>，半年合約，月費 5 萬以上客戶優先加購",
         "🆕 6/1 日本市場定價約 <strong>100,000 JPY</strong>，約 NT$20,000-30,000，與臺灣策略一致",
-        "🆕 6/1 林思吾分享長期規劃：從 MP 方案過渡至<strong>完整 GU 電商解決方案</strong>，結合 AI agent 與 authentic commerce"
+        "🆕 6/1 林思吾分享長期規劃：從 MP 方案過渡至<strong>完整 GU 電商解決方案</strong>，結合 AI agent 與 authentic commerce",
+        "🆕 6/8 陳羲彤（10號）分享近期 <strong>SRT 數據劇烈變化</strong>，建議針對產品推薦文章增加<strong>挑選原則與結構化內容</strong>豐富資訊",
+        "🆕 6/8 以空氣清淨劑推薦文章為例，挑選原則如 PM2.5 濾網等應<strong>明確列出</strong>，避免僅列產品清單",
+        "🆕 6/8 林思吾指示確認與 <strong>Shopline APP 串接</strong>功能需求，YC 需確認李陽提供的四個後臺方案",
+        "🆕 6/8 產業趨勢報告目標啟動 — 自有工具可從大量 Prompt 中<strong>萃取趨勢數據</strong>，ChatGPT 引用型文章偏好呈下降趨勢",
+        "🆕 6/8 白皮書策略：團隊完成統計分析後提供素材給行銷，<strong>結合國外研究本地化</strong>提升媒體引用價值",
+        "🆕 6/8 <strong>迪卡合作啟動</strong> — 七月線上研討會邀請迪卡廣告部門擔任講師，Angelline 負責取得 sales deck",
+        "🆕 6/8 迪卡 AI agent 開發方向為 <strong>ERP 及公司內部系統</strong>，與行銷領域無關，與團隊預期不同",
+        "🆕 6/8 Fenix Li 分析 Google I/O 後搜尋流量入口無大變動，Google 積極將搜尋結果轉向 <strong>AI 模式</strong>，新增滑鼠懸停預覽功能",
+        "🆕 6/8 <strong>社群論壇重要性提升</strong> — 迪卡、PTT 在 CRP 排名中引用資訊量增加，成為重要資訊來源",
+        "🆕 6/8 Angelline 確認產品端數據<strong>完全開放</strong>，SGS 團隊可互相提供分析結果促進數據應用"
       ],
       chips: [
         { icon: "💰", text: "GO 3.3-7.3萬" },
@@ -3580,9 +3652,53 @@ window.WAR_ROOM_DATA = {
         { owner: "Alice Cho", text: "準備 GU for MP 方案簡報資料，5/27 11:30 會議使用", priority: "today" },
         { owner: "Fenix Li", text: "整合 GU 方案專員介入時點與工作內容安排", priority: "week" },
         { owner: "Max Huang", text: "根據團隊回饋修訂品牌治理五步法 PPT，加入 Google I/O 最新 AI 技術內容並調整階段架構", priority: "week" },
-        { owner: "團隊", text: "檢視 Max 修訂後品牌治理 PPT，提供意見確保論述順暢且符合客戶需求", priority: "week" }
+        { owner: "團隊", text: "檢視 Max 修訂後品牌治理 PPT，提供意見確保論述順暢且符合客戶需求", priority: "week" },
+        { owner: "陳羲彤", text: "制定產品推薦文章挑選原則與結構化內容做法，提升文章資訊豐富度", priority: "week" },
+        { owner: "YC", text: "確認李陽提供的四個後臺方案，了解與 Shopline APP 串接具體對應內容", priority: "week" },
+        { owner: "團隊", text: "完成產業趨勢數據統計分析，將素材提供給行銷部門整合白皮書內容", priority: "week" },
+        { owner: "Angelline", text: "取得迪卡廣告部門 sales deck 簡報供林思吾評估合作角度", priority: "week" },
+        { owner: "林思吾", text: "與迪卡進一步溝通推動合作及七月活動安排", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-08",
+          title: "AI Mode 的影響與觀察 — SRT 變化、推薦文章優化、迪卡合作",
+          time: "10:14-10:32",
+          duration: "18m",
+          participants: "蔡阿達、林思吾、陳羲彤（10號）、Fenix Li、YC、Angelline",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "SRT 變化與產品推薦文章優化策略",
+              exchanges: [
+                { speaker: "陳羲彤", role: "other", label: "10號", text: "近期 SRT 數據變化劇烈，建議針對客戶產品推薦文章增加挑選原則說明與結構化內容，以空氣清淨劑推薦為例，PM2.5 濾網等挑選原則應明確列出，避免僅列產品清單。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "Shopline 客戶優化已有產品內容優化項目，此建議可納入經營書範圍，需確認與 Shopline APP 串接的具體功能。" },
+                { speaker: "YC", role: "other", label: "YC", text: "需等待李陽提供四個方案的後臺資料，將詢問阿甫確認與 Shopline 串接的具體內容。" }
+              ]
+            },
+            {
+              topic: "產業趨勢報告與白皮書策略",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "Mike", text: "OKR 中產業趨勢報告目標啟動，自有工具可從大量 Prompt 中萃取趨勢數據，ChatGPT 引用型文章偏好呈下降趨勢。團隊完成統計分析後提供素材給行銷，結合白皮書內容提升媒體引用價值。" },
+                { speaker: "Angelline", role: "other", label: "行銷", text: "產品端數據完全開放，SGS 團隊在執行時會有分析需求，雙方可互相提供分析結果促進數據應用。" }
+              ]
+            },
+            {
+              topic: "Google AI Mode 與社群平台影響力分析",
+              exchanges: [
+                { speaker: "Fenix Li", role: "other", label: "HGS", text: "Google I/O 後搜尋流量入口無大變動，但 Google 積極將搜尋結果轉向 AI 模式，新增滑鼠懸停預覽功能。社群論壇重要性提升，迪卡、PTT 在 CRP 排名中引用資訊量增加。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "與迪卡 CEO 關係良好，探討深度合作可能。迪卡偏向民生經驗分享，雙向討論豐富，適合引用評價類內容。" }
+              ]
+            },
+            {
+              topic: "迪卡合作與廣告行銷",
+              exchanges: [
+                { speaker: "Angelline", role: "other", label: "行銷", text: "七月活動將邀請迪卡廣告部門擔任線上研討會講師。迪卡 AI agent 開發方向為 ERP 及公司內部系統，與行銷領域無關。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "要求取得迪卡產品銷售簡報，了解其產品及廣告策略，準備後續合作切入角度。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-06-01",
           title: "GEO Go-to-Market 策略週會 — PDF 匯出、BRAND 五步法、爬蟲工具本機化",
@@ -5292,8 +5408,8 @@ window.WAR_ROOM_DATA = {
       name: "九一平台 — 合作合約風險與客戶鞏固策略",
       icon: "⚠️",
       category: "partner",
-      lastUpdated: "2026-06-03",
-      summary: "6/3 蔡阿達與 Leon 親赴 91APP 會談，氣氛比預期溫和；91APP 未明確切割，確認不影響現有客戶。共識：合約展延一季、探討技術串接模式改為 awoo 主動調用 91APP API、產品高度重疊但暫無新合作切入點，建立溝通管道等待需求產生",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 Staff Meeting 確認 91App 合作受內部政治因素影響但未終止，需安排技術會議討論 API 串接與後臺權限；91App 希望 awoo 功能嵌入其後臺減少人力負擔；Shopline 較配合願開放 App 新增功能",
       keyPoints: [
         "與九一合作合約已簽<strong>三四年</strong>，但僅為雙方合約，<strong>缺乏三方合約保障</strong>",
         "合約將於 <strong>7 月 30 日到期</strong>，若九一無反應將自動續約，但需盡快確認九一意向",
@@ -5307,7 +5423,12 @@ window.WAR_ROOM_DATA = {
         "🆕 6/3 技術串接模式調整：探討改為 <strong>awoo 主動調用 91APP API</strong>，取代現行 91APP 打 awoo API，減少雙方產線協商成本",
         "🆕 6/3 雙方產品線（顧問服務、AI 模型、貼標）<strong>高度重疊</strong>，但也有互補空間；awoo 專注 GEO 工具開發，91APP 以零售算法為主",
         "🆕 6/3 售前見解報告（AI 健檢）<strong>推行阻力大</strong> — 91APP AM 擔心數字不一致引發客戶質疑",
-        "🆕 6/3 共識：以<strong>最小人力支援維持合作</strong>，建立定期溝通管道，不強行整合，等待具體需求產生"
+        "🆕 6/3 共識：以<strong>最小人力支援維持合作</strong>，建立定期溝通管道，不強行整合，等待具體需求產生",
+        "🆕 6/8 Staff Meeting 確認 91App <strong>內部政治因素</strong>影響合作，技術串接需避免干擾對方排程",
+        "🆕 6/8 多位前同事確認 91App <strong>合作並未終止</strong>，推測先前訊息為推廣策略",
+        "🆕 6/8 91App 希望未來功能更新可<strong>直接在其後臺操作</strong>，減少內部人力負擔",
+        "🆕 6/8 林思吾指示<strong>盡快安排技術會議</strong>，邀請雙方前後端工程師參與",
+        "🆕 6/8 Shopline 合作較順暢，<strong>願意讓 awoo 在 App 中新增功能</strong>，但過去串接曾因資源不足延遲超過一年"
       ],
       chips: [
         { icon: "⏰", text: "展延一季" },
@@ -5318,7 +5439,10 @@ window.WAR_ROOM_DATA = {
       todos: [
         { owner: "Leon", text: "整理 AMP 更新串接需求細項，評估「awoo 主動調用 91APP API」可行性", priority: "week" },
         { owner: "Leon", text: "核對雙方最新合約版本，確認到期時間，對齊後確認展延方式", priority: "week" },
-        { owner: "蔡阿達", text: "與 Leon 協調合約展延一季方案，確保既有客戶不受影響", priority: "week" }
+        { owner: "蔡阿達", text: "與 Leon 協調合約展延一季方案，確保既有客戶不受影響", priority: "week" },
+        { owner: "李陽與蔡阿達", text: "盡快安排與 91App 技術團隊會議討論 API 串接與後臺權限", priority: "today" },
+        { owner: "Steven Shih", text: "準備技術細節參與 91App 及 Shopline 技術對齊會議", priority: "week" },
+        { owner: "林思吾", text: "協調前後端工程師參與技術會議，確保需求明確", priority: "week" }
       ],
       meetingHistory: [
         {
@@ -5736,8 +5860,8 @@ window.WAR_ROOM_DATA = {
       name: "偉強股份有限公司 — 官網 GEO 技術合作",
       icon: "🔌",
       category: "client",
-      lastUpdated: "2026-05-29",
-      summary: "5/29 續談確認合作方向 — 以「替代物料專家」為品牌定位主軸，聚焦 30 個主要品牌替代料，透過部落格與知識文章建構 AI 可爬取內容，提升搜尋能見度與客戶詢問率",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 關鍵字主題方向拍板 — 以電子零件五大類別（保險絲、連接器、電容、二極體、晶體管）為關鍵字主軸，規劃 20 組關鍵字延伸 60 個 Prompt，蔡阿達將於 6/10 前出具最小可行方案報價單",
       keyPoints: [
         "偉強為<strong>電子零組件代理商</strong>，主要客群為國內 B2B 大中型工廠",
         "網站剛上線且缺乏專人經營，<strong>搜尋排名與 AI 能見度極低</strong>",
@@ -5750,7 +5874,13 @@ window.WAR_ROOM_DATA = {
         "🆕 5/29 停產料號替代方案與現貨資訊為<strong>核心吸引力</strong>，客戶用 ChatGPT 搜尋替代品但搜不到偉強",
         "🆕 5/29 競爭對手分析：尚瑞科技、DigiKey、Mouser — 偉強網站品質基礎良好但<strong>內容需持續擴充</strong>",
         "🆕 5/29 碳化硅（SIC）屬專業搜尋詞，工程師多以電壓等參數搜尋，<strong>不宜作為廣泛關鍵字</strong>，應聚焦替代物與具體料號",
-        "🆕 5/29 內容經營需兼顧 AI 搜尋機制，確保網站內容能被 AI 爬取並在消費者搜尋時提供推薦"
+        "🆕 5/29 內容經營需兼顧 AI 搜尋機制，確保網站內容能被 AI 爬取並在消費者搜尋時提供推薦",
+        "🆕 6/8 雙方確認以<strong>五大類別</strong>作為關鍵字主題方向：<strong>保險絲、連接器、電容、二極體、晶體管</strong>",
+        "🆕 6/8 方品莊已初步整理五大類別核心關鍵字資料（電晶體、功率晶體、長效電晶體等品名分類），關鍵字數量龐大，<strong>聚焦五類避免失焦</strong>",
+        "🆕 6/8 蔡阿達將從五大類別中挑選約 <strong>20 組關鍵字</strong>，延伸出約 <strong>60 個 Prompt</strong>，針對不同消費者旅程階段的搜尋需求設計",
+        "🆕 6/8 蔡阿達將出具<strong>最小可行方案報價單</strong>（Excel 格式含服務內容與收費），簽約流程為電子檔回傳簽名即可",
+        "🆕 6/8 方品莊將提供公司簡介及相關資料，蔡阿達利用資料輔助<strong>大語言模型進行關鍵字研究</strong>",
+        "🆕 6/8 雙方約定 <strong>6/10（週四）下午</strong>進行後續討論與報價確認"
       ],
       chips: [
         { icon: "🔌", text: "電子零組件" },
@@ -5758,21 +5888,47 @@ window.WAR_ROOM_DATA = {
         { icon: "🔄", text: "替代物料專家" },
         { icon: "📝", text: "部落格內容策略" },
         { icon: "🏷️", text: "30 品牌聚焦" },
-        { icon: "🤖", text: "AI 搜尋優化" }
+        { icon: "🤖", text: "AI 搜尋優化" },
+        { icon: "🔑", text: "20 關鍵字" },
+        { icon: "💬", text: "60 Prompt" },
+        { icon: "📄", text: "報價 6/10" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "提供偉強 Schema 結構化資料導入方案與報價", priority: "week" },
+        { owner: "蔡阿達", text: "6/10（週四）前完成最小可行方案報價單（Excel 格式含服務內容與收費）", priority: "today" },
+        { owner: "蔡阿達", text: "依五大類別挑選 20 組關鍵字並延伸 60 個 Prompt，針對消費者旅程設計", priority: "today" },
+        { owner: "方品莊", text: "提供公司簡介及相關資料給蔡阿達，供關鍵字研究與內容生成使用", priority: "today" },
+        { owner: "蔡阿達", text: "利用偉強資料輔助大語言模型進行關鍵字深度研究", priority: "week" },
+        { owner: "蔡阿達", text: "持續提供網站改善建議並協助溝通，確保合作方配合內容更新", priority: "week" },
         { owner: "蔡阿達", text: "協助偉強釐清 AI 將偉強與華晨電機混淆的問題", priority: "week" },
-        { owner: "蔡阿達", text: "挖掘替代物料相關關鍵字與主題，規劃以替代物料專家為品牌定位的內容策略", priority: "week" },
-        { owner: "蔡阿達", text: "協助優化網站內容結構，確保替代物料資訊能被 AI 及搜尋引擎有效收錄與推薦", priority: "week" },
-        { owner: "蔡阿達", text: "指導方品莊如何撰寫符合 AI 搜尋邏輯的部落格內容，建立內容更新流程", priority: "week" },
-        { owner: "方品莊", text: "整理目前正在進行的替代物料案例與成功經驗，作為內容素材", priority: "week" },
-        { owner: "方品莊", text: "針對重點產品類別（保險絲、MOSFET、碳化硅等）撰寫替代物料介紹與替代方案文章", priority: "week" },
-        { owner: "方品莊", text: "提供現有產品資料與品牌清單，協助內容聚焦於 30 個以內的重點品牌", priority: "week" },
-        { owner: "方品莊", text: "將市場訊息及客戶需求更新至網站，強化內容即時性與專業度", priority: "waiting" },
-        { owner: "方品莊", text: "評估競爭對手網站的內容架構與線上客服功能，提出可行改進方案", priority: "waiting" }
+        { owner: "方品莊", text: "針對五大類別撰寫替代物料介紹與替代方案文章", priority: "week" },
+        { owner: "方品莊", text: "將市場訊息及客戶需求更新至網站，強化內容即時性與專業度", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-08",
+          title: "偉強官網 GEO 專案發展方向討論 — 五大類別關鍵字拍板",
+          time: "15:01-15:16",
+          duration: "15m",
+          participants: "蔡阿達、方品莊（偉強）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "關鍵字主題方向確認與分類規劃",
+              exchanges: [
+                { speaker: "方品莊", role: "other", label: "偉強", text: "分享初步整理的關鍵字資料，涵蓋電晶體、功率晶體、長效電晶體、二極體等核心品名分類，關鍵字數量龐大，建議聚焦五大類別以避免失焦。" },
+                { speaker: "蔡阿達", role: "ada", text: "認同五大類別方向，將從保險絲、連接器、電容、二極體、晶體管中挑選約 20 組關鍵字，延伸出約 60 個 Prompt，針對不同消費者旅程階段的搜尋需求進行分析。" },
+                { speaker: "蔡阿達", role: "ada", text: "會利用方品莊提供的公司簡介及相關資料，輔助大語言模型進行關鍵字研究，提升策略精準度。" }
+              ]
+            },
+            {
+              topic: "合作報價與合約流程說明",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "建議先從五大主題開始研究，避免一次挑選過多關鍵字。將出具包含服務內容與收費的 Excel 格式報價單，簽約流程為客戶確認後回傳簽名或蓋章的電子檔即可。" },
+                { speaker: "方品莊", role: "other", label: "偉強", text: "詢問網站合作相關配合事項，同意保持密切溝通，安排週四下午進行後續討論。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-05-29",
           title: "偉強官網 GEO 技術合作續談 — 替代物料專家定位",
@@ -6642,6 +6798,134 @@ window.WAR_ROOM_DATA = {
               exchanges: [
                 { speaker: "蔡阿達", role: "ada", text: "我 2012 年開始每週往返臺北高雄。加入 BNI 是想推動高雄產業發展。前六年收穫有限，但今年因為 AI 興起，看到更多中小企業有數位行銷的需求。企業必須有官網才能被 AI 搜尋跟推薦，這是數位轉型的關鍵。" },
                 { speaker: "Ivy Chien", role: "other", label: "旅天下", text: "很佩服你默默為行業付出，我會持續觀察學習，期待未來有更多交流合作。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P60: 厝味民宿 GEO 優化 ======
+    {
+      id: "cuwei-geo",
+      name: "厝味民宿 — GEO 優化與官網重建諮詢",
+      icon: "🏠",
+      category: "client",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 初次 GEO 優化諮詢：厝味經營 33 間直營民宿，現用 LavaBo（Java 渲染）平台建站導致 SEO 極差，蔡阿達建議挑選高毛利物件以可優化技術重建網站，以品牌官網為主軸整合各民宿內容",
+      keyPoints: [
+        "厝味目前經營 <strong>33 間直營民宿</strong>，各自建立網站維運，更新頻率不足",
+        "現有網站使用 <strong>Java 渲染的 LavaBo 平台</strong>，Google 及 AI 爬蟲無法有效抓取內容，SEO 效果極差",
+        "網站多為<strong>一頁式或少量頁面</strong>，內容以圖片為主，缺乏可被爬蟲識別的文字",
+        "蔡阿達建議挑選<strong>毛利高且經營者有熱情</strong>的民宿，使用可優化技術重建網站",
+        "AI SEO 與傳統 SEO 原理相似，均依賴演算法推薦<strong>持續更新且具價值的內容</strong>",
+        "客戶考慮以<strong>厝味品牌官網為主軸</strong>，將各民宿故事整理為 DM 形式透過社群平台導流",
+        "民宿經營者擁有豐富故事與在地文化，但<strong>缺乏時間與專業</strong>將其轉化為網站內容",
+        "現有訂房平台 <strong>CloudBeds</strong> 功能陽春，考慮更新官網提升用戶信任感",
+        "蔡阿達建議客戶<strong>回歸本業</strong>，將 AI 及網站技術部分外包給專業團隊加速進度",
+        "客戶已具備一定技術能力（自行開發聊天機器人等工具），<strong>溝通效率高</strong>"
+      ],
+      chips: [
+        { icon: "🏠", text: "33間直營" },
+        { icon: "⚠️", text: "Java渲染不利SEO" },
+        { icon: "🌐", text: "品牌官網主軸" },
+        { icon: "🤖", text: "AI SEO諮詢" }
+      ],
+      todos: [
+        { owner: "吳奕萱", text: "評估並挑選 1-2 個高毛利民宿物件作為 AI SEO 優化重點", priority: "week" },
+        { owner: "吳奕萱", text: "規劃快速收集並持續更新民宿背景資料與故事內容的方式", priority: "week" },
+        { owner: "吳奕萱", text: "評估停用 LavaBo 平台，改用技術可優化的網站架構", priority: "week" },
+        { owner: "蔡阿達", text: "建議尋找具 AI 技術能力的小型廠商協助重建民宿網站", priority: "week" },
+        { owner: "吳奕萱", text: "規劃以厝味品牌官網為主軸整合各民宿內容，設計社群導流機制", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-08",
+          title: "awoo × 厝味 GEO 優化討論 — 民宿官網 SEO 挑戰與策略",
+          time: "14:01-14:34",
+          duration: "33m",
+          participants: "蔡阿達、吳奕萱（厝味）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "自建民宿網站現況與 SEO 挑戰",
+              exchanges: [
+                { speaker: "吳奕萱", role: "other", label: "厝味", text: "目前有 33 間直營民宿，分別建立多個網站維運，更新頻率不足。網站多為一頁式或少量頁面，內容以圖片為主，使用 Java 渲染的 LavaBo 平台建站。" },
+                { speaker: "蔡阿達", role: "ada", text: "Java 渲染的網站架構使得 Google 及 AI 爬蟲無法有效抓取內容，即使 HTML 寫得完整仍受限於平台生成機制。建議挑選毛利高且經營者有熱情的民宿，使用可優化技術重建網站。" }
+              ]
+            },
+            {
+              topic: "AI SEO 與網站內容經營策略",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "AI 與傳統搜尋引擎均依賴演算法推薦持續更新且具價值的內容。基本 SEO 元素如 title、h1 標籤必須完善，需持續產出新內容。建議利用現有聊天機器人功能強化專業形象。" },
+                { speaker: "吳奕萱", role: "other", label: "厝味", text: "考慮以厝味品牌官網為主軸，將各民宿故事整理成 DM 形式透過社群平台導流。現有訂房平台 CloudBeds 功能陽春，考慮更新官網提升信任感。" }
+              ]
+            },
+            {
+              topic: "技術與資源分配建議",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "客戶應聚焦核心專業，避免全面學習 AI 技術導致資源分散。建議將網站技術部分外包給專業廠商，客戶負責內容提供與更新。外包廠商可利用 AI 技術優化網站降低維運負擔。" },
+                { speaker: "吳奕萱", role: "other", label: "厝味", text: "已具備一定技術能力，開發了多項小工具及聊天機器人。同意保持溝通，持續討論合作可能。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P61: 小香 AI 客服機器人 ======
+    {
+      id: "xiaoxiang-bot",
+      name: "小香 AI 客服機器人 — 知識庫更新與回答正確性提升",
+      icon: "🤖",
+      category: "client",
+      lastUpdated: "2026-06-08",
+      summary: "6/8 討論小香機器人回答錯誤問題（運費、活動、會員等級），蔡阿達將設定爬蟲定時抓取官網及 Excel 文件更新知識庫；另在回覆結尾加入官方 LINE 連結銜接真人客服",
+      keyPoints: [
+        "小香機器人在回答<strong>運費、即時活動、會員等級</strong>等問題時常出錯",
+        "會員等級資訊為<strong>圖片格式</strong>，AI 無法讀取，需轉成文字放入後臺",
+        "蔡阿達透過<strong>爬蟲定時抓取</strong>官網及 Excel 文件中真人回覆欄位的資料，持續更新小香知識庫",
+        "利用 Excel 文件<strong>新增 H 欄</strong>用於真人回覆，客服團隊將不正確或需補充的回答寫入",
+        "小香透過<strong>大模型讀取餵入的資料</strong>，持續提供最新資訊可降低答錯率",
+        "目前對話框為瀏覽器開啟，<strong>離開頁面即無法保存對話</strong>，無法留存客戶聯絡資訊",
+        "強制要求輸入信箱會<strong>提高使用門檻導致客戶流失</strong>，改為回覆結尾加入官方 LINE 連結",
+        "蔡阿達承諾<strong>本週完成爬蟲機制設定</strong>，IVY CHEN 負責本週內補齊 Excel H 欄資料"
+      ],
+      chips: [
+        { icon: "🤖", text: "AI 客服" },
+        { icon: "🔄", text: "爬蟲更新" },
+        { icon: "📱", text: "LINE 銜接" },
+        { icon: "📊", text: "Excel H欄" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "本週設定爬蟲機制，定時爬取 Excel 文件及官網內容更新小香知識庫", priority: "today" },
+        { owner: "IVY CHEN", text: "本週內完成 Excel H 欄真人回覆資料補充，完成後通知蔡阿達啟動同步", priority: "today" },
+        { owner: "IVY CHEN", text: "提供官方 LINE 連結給蔡阿達", priority: "today" },
+        { owner: "蔡阿達", text: "將官方 LINE 連結整合至小香回覆結尾，方便客戶轉接真人客服", priority: "week" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-08",
+          title: "小香最佳化辦法討論 — 知識庫更新與客戶聯絡機制",
+          time: "13:01-13:16",
+          duration: "15m",
+          participants: "蔡阿達、IVY CHEN",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "小香機器人回答錯誤與知識庫更新機制",
+              exchanges: [
+                { speaker: "IVY CHEN", role: "other", label: "客戶", text: "小香在回答運費及即時活動問題時常出錯，會員等級資訊因為是圖片格式無法被小香正確回覆，建議將圖片資訊轉成文字放入後臺供小香爬取。" },
+                { speaker: "蔡阿達", role: "ada", text: "小香透過大模型讀取餵入的資料，若持續提供最新資訊答錯率會降低。可設定爬蟲每天或每週定時爬取官網及 Excel 文件，利用 H 欄真人回覆資料更新知識庫。" },
+                { speaker: "IVY CHEN", role: "other", label: "客戶", text: "計畫先討論後產出執行方案，盡量減輕工作量，沿用現有 Excel 連結作為回覆資料來源。本週內補齊 H 欄資料後通知蔡阿達。" }
+              ]
+            },
+            {
+              topic: "客戶聯絡機制與真人客服銜接",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前機制無法保存客戶聯絡資料，強制要求輸入信箱會提高使用門檻可能導致客戶流失。" },
+                { speaker: "IVY CHEN", role: "other", label: "客戶", text: "建議在小香每次回答結尾加入官方 LINE 連結，讓需要真人客服的客戶能直接點擊轉接。" },
+                { speaker: "蔡阿達", role: "ada", text: "同意此方案，請提供官方 LINE 連結，會協助將連結加入小香回覆結尾。" }
               ]
             }
           ]
