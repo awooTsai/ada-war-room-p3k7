@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-08T19:00:00",
-  dateLabel: "2026/06/08（一）",
+  lastUpdated: "2026-06-09T19:00:00",
+  dateLabel: "2026/06/09（二）",
   stats: {
-    meetings: 122,
+    meetings: 123,
     projects: 61,
     partners: 19,
     internal: 9,
     clientCompany: 29,
-    todos: 473
+    todos: 483
   },
 
   projects: [
@@ -254,7 +254,8 @@ window.WAR_ROOM_DATA = {
         "🆕 6/8 <strong>失聯客戶窗口</strong>為重大流失風險 — 林思吾指示需找出窗口主管或老闆展現重視態度",
         "🆕 6/8 AI 報告規格需<strong>明確寫入合約與報價單</strong>，GU 方案必須提供 AI 應用報告",
         "🆕 6/8 Q3/Q4 資源調配 — 部分資源回流 NMP 與 AMP 客戶需求，日本市場仍有 <strong>100+ AMP 客戶</strong>",
-        "🆕 6/8 國泰證券教育訓練<strong>本週安排</strong>（Fenix Li 負責）"
+        "🆕 6/8 國泰證券教育訓練<strong>本週安排</strong>（Fenix Li 負責）",
+        "🆕 6/9 候選字機制調整細節決議 — <strong>新客戶必須完成候選字後啟動</strong>，續約客戶可彈性處理（詳見 GEO GTM 卡片）"
       ],
       chips: [
         { icon: "📉", text: "目標 -20%" },
@@ -3406,8 +3407,8 @@ window.WAR_ROOM_DATA = {
       name: "GEO Go-to-Market 策略 — GO方案定價與外聯整合",
       icon: "🚀",
       category: "company",
-      lastUpdated: "2026-06-08",
-      summary: "6/8 AI Mode 影響觀察會議：SRT 數據劇烈變化、產品推薦文章需增加挑選原則與結構化內容、Shopline APP 串接功能需求確認中、迪卡七月 Webinar 講師合作啟動、產業趨勢白皮書素材準備中",
+      lastUpdated: "2026-06-09",
+      summary: "6/9 GEO 顧問方案流程標準化：候選字機制調整（新客需完成、續約彈性）、三種 Prompt 版本 6 月底整合、合約一個月未收回則暫停專案、AIO 引用報告納入合約、方案命名釐清 AIO/GEO 混淆、AI 自動化 HRF 報表評估啟動",
       keyPoints: [
         "何建彤提議由日本與臺灣 AE/CS 分別確認<strong>重要 POC 客戶</strong>，臺灣最多選四個優先測試",
         "藍文甫表示手上兩個 logo 客戶不需優先測試，保留 quota 給正式客戶",
@@ -3543,7 +3544,17 @@ window.WAR_ROOM_DATA = {
         "🆕 6/8 迪卡 AI agent 開發方向為 <strong>ERP 及公司內部系統</strong>，與行銷領域無關，與團隊預期不同",
         "🆕 6/8 Fenix Li 分析 Google I/O 後搜尋流量入口無大變動，Google 積極將搜尋結果轉向 <strong>AI 模式</strong>，新增滑鼠懸停預覽功能",
         "🆕 6/8 <strong>社群論壇重要性提升</strong> — 迪卡、PTT 在 CRP 排名中引用資訊量增加，成為重要資訊來源",
-        "🆕 6/8 Angelline 確認產品端數據<strong>完全開放</strong>，SGS 團隊可互相提供分析結果促進數據應用"
+        "🆕 6/8 Angelline 確認產品端數據<strong>完全開放</strong>，SGS 團隊可互相提供分析結果促進數據應用",
+        "🆕 6/9 候選字機制調整 — <strong>新客戶需完成候選字後啟動專案</strong>，續約客戶可彈性處理，避免專案啟動延誤與請款爭議",
+        "🆕 6/9 專案管理表整合檢核表與行銷資源，AE 及 CS 統一使用<strong>同一張管理表</strong>，兩個分頁資訊皆需完整填寫",
+        "🆕 6/9 三種 Prompt 版本預計 <strong>6 月底完成整合版</strong>，客戶自訂 prompt 後設<strong>雙週會議追蹤</strong>機制並標示備註",
+        "🆕 6/9 合約收回流程強化：合約一個月內未收回<strong>專案暫停</strong>，啟動需完成管理表、權限設置及 prompt 選擇（一個月內）",
+        "🆕 6/9 建議書初版提供<strong>整體優化建議</strong>，續約客戶若已選好 prompt 可於第一份建議書包含個別 prompt 優化",
+        "🆕 6/9 關鍵字排名報表於系統上線後、第一份建議書前提供<strong>初始排名</strong>；HRF 報告依 tier 提供，CS 認同報告有參考價值",
+        "🆕 6/9 AIO 引用報告<strong>納入合約條款</strong>，未含舊稅方案必須提供 AIO 報告",
+        "🆕 6/9 方案命名需釐清 — 林思吾負責<strong>重新命名 AIO 與 GEO 方案</strong>，解決內部混淆問題",
+        "🆕 6/9 <strong>AI 自動化報表</strong>嘗試啟動 — Fenix Li 先用現有 HRF 報告測試 AI 完成度，若可行將大幅提升專員效率",
+        "🆕 6/9 BGO 團隊日文轉譯功能未來定位為<strong>產品</strong>，目前主要為內部資料對接使用，尚無外部即時轉譯需求"
       ],
       chips: [
         { icon: "💰", text: "GO 3.3-7.3萬" },
@@ -3657,9 +3668,81 @@ window.WAR_ROOM_DATA = {
         { owner: "YC", text: "確認李陽提供的四個後臺方案，了解與 Shopline APP 串接具體對應內容", priority: "week" },
         { owner: "團隊", text: "完成產業趨勢數據統計分析，將素材提供給行銷部門整合白皮書內容", priority: "week" },
         { owner: "Angelline", text: "取得迪卡廣告部門 sales deck 簡報供林思吾評估合作角度", priority: "week" },
-        { owner: "林思吾", text: "與迪卡進一步溝通推動合作及七月活動安排", priority: "week" }
+        { owner: "林思吾", text: "與迪卡進一步溝通推動合作及七月活動安排", priority: "week" },
+        { owner: "Anne Chang", text: "與麥可討論候選字機制拆分方案，確認新客與續約客戶差異化流程", priority: "week" },
+        { owner: "蔡阿達與 Alice Cho", text: "向團隊布達候選字機制調整，明確新舊客戶流程差異與執行標準", priority: "week" },
+        { owner: "Anne Chang", text: "確保客戶於合約啟動後一個月內完成 prompt 選擇，未完成者後續合約中處理", priority: "week" },
+        { owner: "林思吾", text: "指派 CS 與小安設計機制標示客戶自行調整的 prompt，定期雙週會議檢視", priority: "week" },
+        { owner: "Anne Chang", text: "督促專案啟動一個月內完成正式合約收回，未完成者專案暫停", priority: "week" },
+        { owner: "Anne Chang", text: "將 AIO 引用報告納入合約條款，未含舊稅方案必須提供", priority: "week" },
+        { owner: "林思吾", text: "重新命名方案釐清 AIO 與 GEO 方案混淆，並向團隊說明", priority: "week" },
+        { owner: "林思吾", text: "整理 GU 方案報表提供頻率與責任分工，確保專員製作 HRF 報告", priority: "week" },
+        { owner: "Fenix Li", text: "嘗試使用 AI 工具處理 HRF 報表，評估完成度與實用性", priority: "week" },
+        { owner: "蔡阿達與林思吾", text: "討論報表製作流程自動化可能性，降低專員負擔", priority: "week" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-09",
+          title: "GEO 顧問方案討論 — 候選字機制、Prompt 整合、合約流程標準化、AI 報表自動化",
+          time: "14:01-15:04",
+          duration: "1h03m",
+          participants: "蔡阿達、Anne Chang、Alice Cho、Hagi Kuo、藍文甫（Leo）、林思吾、Fenix Li、Amber Liao",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "候選字機制取消與新舊客戶差異",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "候選字未在規定時間內完成多次影響專案啟動，需討論是否取消候選字機制。" },
+                { speaker: "Alice Cho", role: "other", label: "CS", text: "續約客戶常因談約時間拖延導致候選字延後，但合約時間不會中斷，客戶較能理解延遲情況。" },
+                { speaker: "蔡阿達", role: "ada", text: "取消候選字可減少溝通成本及請款爭議，簡化整體流程。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "新客戶必須完成候選字後啟動，續約客戶可有彈性處理。" }
+              ]
+            },
+            {
+              topic: "Prompt 產出版本整合與審查機制",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "目前有三種 prompt 版本，預計 6 月底完成整合版本，客戶選擇 prompt 後會有審查工具。新聞媒體類別 prompt 與新聞稿搭配比例為 10:1。" },
+                { speaker: "林思吾", role: "other", label: "Mike", text: "建議雙週會議追蹤客戶自訂 prompt 狀況，由 CS 及業務標示備註。保留客戶調整 prompt 的權利，避免限制過嚴。" }
+              ]
+            },
+            {
+              topic: "合約作業流程與專案啟動規範",
+              exchanges: [
+                { speaker: "Anne Chang", role: "other", label: "PM", text: "檢核表及自主評估未完成前合約不可往下進行。合約收回後正式分派 CS 及專員，若一個月內未收回專案將被暫停。" },
+                { speaker: "蔡阿達", role: "ada", text: "啟動時需完成管理表及權限設置，prompt 未選完者須於一個月內完成。" }
+              ]
+            },
+            {
+              topic: "建議書策略與新舊客戶差異",
+              exchanges: [
+                { speaker: "林思吾", role: "other", label: "Mike", text: "第一份建議書針對 GU 整體優化，後續建議書針對細節調整。" },
+                { speaker: "Fenix Li", role: "other", label: "HGS", text: "關鍵字優化為主，prompt 優化多在第二份建議書後進行。若取消候選字機制，新約客戶可在第一份建議書提及部分 prompt 優化。" }
+              ]
+            },
+            {
+              topic: "關鍵字報表與 AIO 引用報告整合",
+              exchanges: [
+                { speaker: "Alice Cho", role: "other", label: "CS", text: "關鍵字排名報表於系統上線後，第一份建議書前提供初始排名。" },
+                { speaker: "Amber Liao", role: "other", label: "CS", text: "HRF 報告有不同面向且有參考價值，建議依 tier 提供。" },
+                { speaker: "蔡阿達", role: "ada", text: "關注報告製作是否可簡化及自動化，減少專員負擔。" }
+              ]
+            },
+            {
+              topic: "報告自動化與 AI 輔助可行性評估",
+              exchanges: [
+                { speaker: "Fenix Li", role: "other", label: "HGS", text: "目前報告製作仍以人工篩選為主。建議嘗試用 AI 自動化處理 HRF 報告，先用現有報告測試 AI 完成度。若效果良好將大幅減少專員工作負擔並加快報告產出。" },
+                { speaker: "蔡阿達", role: "ada", text: "支持 AI 自動化方向，需評估實用性與完成度後推動全面導入。" }
+              ]
+            },
+            {
+              topic: "BGO 日文轉譯需求與產品定位",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "BGO 強項在大量資料運算及豐富語料，探討是否可先應用於日文轉譯。" },
+                { speaker: "Hagi Kuo", role: "other", label: "BGO", text: "未來會將轉譯功能當成產品，但目前主要是內部資料對接使用，尚無外部即時轉譯需求。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-06-08",
           title: "AI Mode 的影響與觀察 — SRT 變化、推薦文章優化、迪卡合作",
