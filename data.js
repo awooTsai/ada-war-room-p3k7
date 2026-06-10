@@ -3,15 +3,15 @@
 // 結構：專案卡片為核心，同一專案被多次討論時更新同一張卡片
 
 window.WAR_ROOM_DATA = {
-  lastUpdated: "2026-06-09T19:00:00",
-  dateLabel: "2026/06/09（二）",
+  lastUpdated: "2026-06-10T19:00:00",
+  dateLabel: "2026/06/10（三）",
   stats: {
-    meetings: 123,
-    projects: 61,
-    partners: 19,
+    meetings: 127,
+    projects: 64,
+    partners: 20,
     internal: 9,
-    clientCompany: 29,
-    todos: 483
+    clientCompany: 31,
+    todos: 511
   },
 
   projects: [
@@ -2333,8 +2333,8 @@ window.WAR_ROOM_DATA = {
       name: "FUZEN 行銷小聚 — 專業推廣 × 引薦 × 資源共享",
       icon: "🤝",
       category: "events",
-      lastUpdated: "2026-06-03",
-      summary: "6/3 蔡阿達主持異業夥伴分享會：遙空映畫（學校影片報價策略）、MarsZ Chen（AI 多語系建站案例）、你寵（品牌短影音）、ADAM（工廠數位轉型）輪流分享；蔡阿達宣布 awoo 轉型品牌架構規劃師定位，並提供質檢報告範本供夥伴推廣",
+      lastUpdated: "2026-06-10",
+      summary: "6/10 蔡阿達與遙空映畫討論牙醫客戶影片合作進展、員工旅遊影片製作推廣、美業課程影片報價；數位巴克斯介紹 LINE 會員分群推播系統；團隊規劃 B2B 官網+影片整合方案 20 萬、AI 能見度診斷報告推廣策略",
       keyPoints: [
         "固定週三 13:00，代號 ogz-rugx-nkt（Google Meet）",
         "核心成員擴增：蔡阿達、遙空映畫（韋翰）、MarsZ Chen、Karen Hsu（凱倫）、楊翔淵 等 10+ 人",
@@ -2399,7 +2399,14 @@ window.WAR_ROOM_DATA = {
         "🆕 6/3 蔡阿達宣布 awoo <strong>從 GEO 軟體主打轉型為品牌架構規劃師</strong>角度切入，技術導向太生硬改用品牌定位溝通更有效",
         "🆕 6/3 質檢報告作為<strong>售前免費工具</strong>（以「愛與情和義」支付），後續 SEO 與關鍵字投放需簽約付費",
         "🆕 6/3 你寵推出<strong>品牌形象短影音入門服務</strong>，報價約一萬元內，適合 FB/IG 置頂",
-        "🆕 6/3 確立 B2B 工廠客戶<strong>轉介鏈</strong>：ADAM（工廠）→ 遙空（影片）→ MarsZ（網站）→ awoo（GEO/質檢）→ 你寵（短影音）"
+        "🆕 6/3 確立 B2B 工廠客戶<strong>轉介鏈</strong>：ADAM（工廠）→ 遙空（影片）→ MarsZ（網站）→ awoo（GEO/質檢）→ 你寵（短影音）",
+        "🆕 6/10 牙醫客戶影片合作確認 — 遙空映畫報價獲客戶接受，<strong>診所線下據點播放療程影片</strong>具推廣效果",
+        "🆕 6/10 遙空映畫分享<strong>上市公司員工旅遊影片</strong>經驗 — 當天 3 小時內剪輯完成，成本約 2-3 萬元，作為企業客戶開門磚",
+        "🆕 6/10 美業課程影片報價討論 — 10 堂課分 3 天拍攝，每天 <strong>6-7 萬元</strong>，MarsZ 建議加做 1-3 分鐘宣傳短片",
+        "🆕 6/10 數位巴克斯介紹<strong>官方 LINE 會員分群推播系統</strong>即將上線，含 AI 商務雷達媒合功能，初期免費試用",
+        "🆕 6/10 遙空映畫 × MarsZ Chen 規劃 <strong>B2B 官網 + 形象影片整合方案約 20 萬元</strong>，利用參展名單批次陌生開發",
+        "🆕 6/10 蔡阿達展示<strong>AI 能見度診斷報告</strong>工具，計畫為鼎泰豐等大品牌製作報告作為合作切入點",
+        "🆕 6/10 團隊確認<strong>互補專長整合推廣</strong>：影片（遙空）＋ 網站（MarsZ）＋ SEO/GEO（awoo）＋ 系統（數位巴克斯）聯合出擊"
       ],
       chips: [
         { icon: "📅", text: "每週三 13:00" },
@@ -2409,16 +2416,56 @@ window.WAR_ROOM_DATA = {
         { icon: "💰", text: "內容方案 25K/月" }
       ],
       todos: [
-        { owner: "蔡阿達", text: "重新製作並提供 SEO 質檢報告範本給 MarsZ Chen，供其推廣給客戶", priority: "today" },
-        { owner: "蔡阿達", text: "將會議拍攝照片上傳夥伴群組供自由取用", priority: "today" },
-        { owner: "ADAM CHEN", text: "與遙空合作完成文案拍攝後，將工廠網站建置導往 MarsZ，後續行銷推往其他夥伴", priority: "waiting" },
-        { owner: "MarsZ Chen", text: "持續訓練 AI 設計系統，推動多語系自動化轉換與 MCP 開發", priority: "week" },
-        { owner: "MarsZ Chen", text: "開發並優化自動化上稿流程，實現網站內容快速上線", priority: "week" },
+        { owner: "蔡阿達", text: "完成鼎泰豐 AI 能見度診斷報告，作為重新開啟合作的話題", priority: "today" },
+        { owner: "蔡阿達", text: "協助牙醫客戶影片截圖與文章轉譯，推動內容在網站及社群平台推廣", priority: "today" },
+        { owner: "遙空映畫", text: "待牙醫客戶需求與預算確認後安排影片製作溝通", priority: "week" },
+        { owner: "遙空映畫", text: "規劃 10 支美業課程影片拍攝報價方案，含宣傳短片", priority: "week" },
+        { owner: "遙空映畫 × MarsZ", text: "設計 B2B 官網 + 形象影片整合方案（約 20 萬），整理參展名單啟動陌生開發", priority: "week" },
+        { owner: "數位巴克斯", text: "完成 LINE 分群推播系統金流申請與上線前調整，提供 FUZEN 夥伴免費測試", priority: "week" },
+        { owner: "MarsZ Chen", text: "六月底前完成新版官網與簡報模板，整合影片與網站內容", priority: "week" },
         { owner: "蔡阿達", text: "持續召集 FUZEN 行銷小聚，主動媒合成員專長與客戶需求", priority: "week" },
-        { owner: "蔡阿達", text: "提供免費網站體質健檢服務給 FUZEN 成員轉介的客戶", priority: "week" },
-        { owner: "蔡阿達", text: "持續更新大語言模型引薦系統，整合每週專題簡報內容", priority: "week" }
+        { owner: "蔡阿達", text: "持續追蹤牙醫客戶網址存取權問題，協助確認網址管理權歸屬", priority: "waiting" }
       ],
       meetingHistory: [
+        {
+          date: "2026-06-10",
+          title: "FUZEN 行銷小聚 06/10 — 牙醫影片 × 員工旅遊 × LINE 推播 × B2B 整合 × AI 診斷",
+          time: "13:01-14:08",
+          duration: "1h07m",
+          participants: "蔡阿達、遙空映畫（偉漢）、MarsZ Chen、數位巴克斯",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "牙醫客戶影片與網站合作進展",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "牙醫客戶有線下據點，適合播放療程推廣影片，客戶對報價接受度高。會在需求確定後安排深入溝通。" },
+                { speaker: "蔡阿達", role: "ada", text: "確認網址與網站後臺分離，網址存取權需由原廠商交接。影片播放於診所等線下據點的推廣效果值得期待。" }
+              ]
+            },
+            {
+              topic: "員工旅遊影片製作與企業切入策略",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "為上市公司製作員工家庭日影片，當天拍攝後 3 小時內完成剪輯供回顧。成本約兩三萬元，適合作為接觸大型企業的開門磚。" },
+                { speaker: "蔡阿達", role: "ada", text: "利用 AI 技術製作特效與轉場可大幅降低成本。影片尚未公開因涉及家屬肖像權，需剪輯處理後方可對外。" }
+              ]
+            },
+            {
+              topic: "B2B 官網與形象影片整合銷售策略",
+              exchanges: [
+                { speaker: "遙空映畫", role: "other", label: "影片", text: "建議將官網與形象影片合併銷售，針對 B2B 工廠客戶報價約 20 萬元，利用參展名單大量陌生開發。" },
+                { speaker: "MarsZ Chen", role: "other", label: "網站", text: "官網多語系功能與設計系統已完備，兩家公司專業互補，聯合出方案對客戶更具吸引力。" },
+                { speaker: "蔡阿達", role: "ada", text: "手上有高價機器設備諮詢案，考慮將網站與影片服務納入包案，提升整體案子價值。" }
+              ]
+            },
+            {
+              topic: "AI 能見度網站診斷與品牌推廣",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "展示 AI 分析工具，能快速診斷網站在 AI 推薦中的能見度及缺口。計畫為鼎泰豐製作 AI 能見度報告，作為重新開啟合作的話題。" },
+                { speaker: "數位巴克斯", role: "other", label: "系統", text: "此報告能引起客戶好奇心，促進後續洽談。建議以友善語氣向客戶提出網站優化建議。" }
+              ]
+            }
+          ]
+        },
         {
           date: "2026-06-03",
           title: "FUZEN 行銷小聚 06/03 — AI 建站 × 影片 × 短影音 × 品牌定位轉型",
@@ -7009,6 +7056,211 @@ window.WAR_ROOM_DATA = {
                 { speaker: "蔡阿達", role: "ada", text: "目前機制無法保存客戶聯絡資料，強制要求輸入信箱會提高使用門檻可能導致客戶流失。" },
                 { speaker: "IVY CHEN", role: "other", label: "客戶", text: "建議在小香每次回答結尾加入官方 LINE 連結，讓需要真人客服的客戶能直接點擊轉接。" },
                 { speaker: "蔡阿達", role: "ada", text: "同意此方案，請提供官方 LINE 連結，會協助將連結加入小香回覆結尾。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P62: 夏慕尼 GEO ======
+    {
+      id: "chamonix-geo",
+      name: "夏慕尼（王品集團）— 品牌官網 GEO 優化合作",
+      icon: "🥩",
+      category: "client",
+      lastUpdated: "2026-06-10",
+      summary: "蔡阿達向王品集團品牌發展四部說明夏慕尼官網在 AI 能見度與 SEO 上的現況挑戰，指出官網以圖片為主缺乏結構化內容，AI 無法有效爬取與推薦，建議評估重建官網並規劃內容優化策略",
+      keyPoints: [
+        "<strong>官網結構化不足是核心問題</strong>：夏慕尼官網以圖片菜單為主，缺乏文字內容與 SEO 基礎標籤（title、description、H1/H2、結構化資料）",
+        "<strong>兩大內容優化方向</strong>：(1) 基於消費者搜尋關鍵字的 SEO 優化 (2) 基於 AI 常見問答的內容補充，重點放在採購型需求",
+        "建議<strong>評估重建官網</strong>：現有架構不利長期經營與 AI 優化，需打造支持自動化內容生成的彈性網站",
+        "外部媒體曝光（新聞稿）可短期提升 AI 能見度，但屬<strong>曇花一現</strong>，長期仍需依賴官網結構化內容",
+        "awoo 團隊使用自有工具追蹤<strong>四大平台 AI</strong> 對品牌的提及頻率與情感分析",
+        "台灣市場此領域投入者不多，夏慕尼有機會透過優化<strong>搶占先機</strong>"
+      ],
+      chips: [
+        { icon: "🏢", text: "王品集團" },
+        { icon: "🤖", text: "AI 能見度" },
+        { icon: "🌐", text: "官網重建評估" },
+        { icon: "📊", text: "四大平台追蹤" }
+      ],
+      todos: [
+        { owner: "黃麒樺 (Heidi)", text: "向團隊反饋品牌官網目標與定位，評估是否調整官網以符合 SEO 與 AI 搜尋需求", priority: "week" },
+        { owner: "黃麒樺 (Heidi)", text: "協調 awoo 從專業角度評估並提出官網改版建議，包含菜單文字化與網站底層結構優化", priority: "week" },
+        { owner: "蔡阿達", text: "協助規劃符合 AI 與 SEO 的內容策略，從消費者搜尋關鍵字與提問角度制定主題", priority: "week" },
+        { owner: "團隊共同", text: "評估是否重新建置彈性且具自動化功能的網站", priority: "week" },
+        { owner: "蔡阿達", text: "持續追蹤四大平台 AI 能見度與品牌提及情況，提出改善建議", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-10",
+          title: "夏慕尼 x awoo GEO 討論",
+          time: "11:00-11:30",
+          duration: "29m",
+          participants: "蔡阿達、黃麒樺（Heidi, 王品品牌發展四部）、許家惠（Amber, 王品品牌發展四部）",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "夏慕尼品牌官網現況與 AI 能見度挑戰",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "目前 AI 視夏慕尼官網如一般資訊網站，缺乏結構化資訊與文字內容。官網以圖片為主，Google 及 AI 無法有效識別菜單與產品資訊。" },
+                { speaker: "蔡阿達", role: "ada", text: "夏慕尼品牌因全國連鎖與良好評價仍有一定能見度，但在特定消費者搜尋情境下表現不佳。" }
+              ]
+            },
+            {
+              topic: "網站內容優化與 SEO 策略建議",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "兩個優化方向：一是基於消費者搜尋關鍵字的 SEO 優化，二是基於 AI 常見問答的內容補充。重點放在採購型資訊如推薦餐廳、菜色介紹。" },
+                { speaker: "蔡阿達", role: "ada", text: "現有網站架構不利於長期經營與 AI 優化，建議重新建置以支持自動化與彈性應用。" }
+              ]
+            },
+            {
+              topic: "外部媒體與 AI 能見度評估工具",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "購買新聞稿等媒體曝光是快速提升 AI 能見度的捷徑，但屬曇花一現。官網內容豐富且結構化才是 AI 信任與推薦的關鍵。" },
+                { speaker: "蔡阿達", role: "ada", text: "團隊使用自有工具追蹤四大平台 AI 對品牌的提及頻率與內容情感，分析 AI 對品牌的認知方向。" }
+              ]
+            },
+            {
+              topic: "競品比較與市場機會",
+              exchanges: [
+                { speaker: "夏慕尼團隊", role: "other", label: "王品", text: "關注競爭品牌官網，發現其內容同樣以圖片為主，但能見度較佳。" },
+                { speaker: "蔡阿達", role: "ada", text: "這些品牌可能有較多貼近消費者需求的內容，且積極經營外部媒體與社群連結。台灣市場在此領域投入者不多，夏慕尼有機會搶占先機。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P63: 黃啟華品牌官網重建 ======
+    {
+      id: "huangqihua-website",
+      name: "黃啟華品牌 — 官網重建與 CMS 整合諮詢",
+      icon: "🌐",
+      category: "client",
+      lastUpdated: "2026-06-10",
+      summary: "黃啟華與蔡阿達討論網站重新架設與 CMS 系統整合，蔡阿達建議先重建網站（費用約 5-8 萬元）並提供合作廠商比價，雙方也討論了 SEO 方案二作為起步方案",
+      keyPoints: [
+        "蔡阿達建議<strong>先重新架設網站</strong>，費用約 5-8 萬元，提供兩間合作廠商供比價",
+        "品牌多使用<strong>共用 CMS 管理</strong>不同品牌帳號，前端可配合新網站，後端 CMS 整合較複雜",
+        "新廠商需將系統放置於客戶<strong>自有環境</strong>，透過 VPN 或白名單控管維護權限",
+        "SEO 方案建議從<strong>方案二</strong>開始：聚焦 4 個主題，20 組關鍵字，每兩個月提供建議書",
+        "方案費用約 <strong>3-5 萬元/月</strong>，不保證績效但提供 KPI 指標監控，唯一保證為文章產出",
+        "品牌不希望操作兩套系統，CMS 用於內容管理，SEO 操作需額外平台配合"
+      ],
+      chips: [
+        { icon: "🌐", text: "官網重建" },
+        { icon: "💻", text: "CMS 整合" },
+        { icon: "💰", text: "5-8 萬建站" },
+        { icon: "📝", text: "方案二 SEO" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "提供兩間推薦網站廠商名稱與聯絡資訊（臺南、臺中地區）", priority: "today" },
+        { owner: "蔡阿達", text: "提供 SEO 方案報價與方案細節，建議先從方案二開始", priority: "today" },
+        { owner: "黃啟華", text: "與內部討論兩間廠商資訊並向主管說明會議狀況", priority: "week" },
+        { owner: "黃啟華", text: "確認新網站架設廠商是否能將系統放置於自有環境並提供維護方案", priority: "week" },
+        { owner: "雙方", text: "討論 CMS 與前端網站對接方式及 SEO 操作系統整合", priority: "week" },
+        { owner: "黃啟華", text: "評估 SEO 成效指標與費用效益，確保投入資源合理", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-10",
+          title: "網站重新架設與 CMS 整合討論",
+          time: "11:31-11:52",
+          duration: "21m",
+          participants: "蔡阿達、黃啟華",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "網站重建與 CMS 整合技術討論",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "若網站無法重新架設，費用與工時會持續增加。建議先架設新網站，費用約 5-8 萬元，可提供兩間合作廠商供比價。" },
+                { speaker: "黃啟華", role: "other", label: "客戶", text: "品牌多使用同一套 CMS 管理不同品牌帳號，前端可配合新網站，但後端 CMS 整合較複雜。會要求新廠商將系統放置於自家環境，透過 VPN 或白名單控管。" },
+                { speaker: "蔡阿達", role: "ada", text: "若使用客戶 CMS，前端改動不再是重點，後端 CMS 調整才是關鍵。CMS 內容可同步至前端頁面，需再與廠商確認技術可行性。" }
+              ]
+            },
+            {
+              topic: "SEO 方案報價與規劃",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "建議從方案二開始，聚焦 4 個主題進行關鍵字與內容規劃，每兩個月提供建議書與文章規劃。不保證績效但提供 KPI 指標監控。" },
+                { speaker: "黃啟華", role: "other", label: "客戶", text: "SEO 成效需有明確數據支持。品牌不希望操作兩套系統，CMS 主要用於內容管理。" },
+                { speaker: "蔡阿達", role: "ada", text: "唯一保證是文章產出，方案價格約 3 至 5 萬多元。以鐵板燒為例，可從地點、菜色、需求情境多角度切入。" }
+              ]
+            },
+            {
+              topic: "後續行動與資訊交換",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "將提供兩間網站建設廠商名稱與聯絡資訊，分別為臺南與臺中地區的合作夥伴。" },
+                { speaker: "黃啟華", role: "other", label: "客戶", text: "會將會議記錄整理後傳送，並與內部主管分享討論結果。若有問題可隨時提出或建立群組溝通。" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    // ====== P64: TruOrigin 合作 ======
+    {
+      id: "truorigin-partner",
+      name: "TruOrigin × awoo — GEO 工具與技術合作洽談",
+      icon: "🔗",
+      category: "partner",
+      lastUpdated: "2026-06-10",
+      summary: "蔡阿達向 TruOrigin 團隊介紹 awoo GEO 服務與質檢報告機制，雙方確認有共同提案機會，同意由 awoo 提供質檢報告表單與簡報資料給 TruOrigin 作為合作切入點",
+      keyPoints: [
+        "<strong>awoo 核心定位</strong>：以 SEO 起家，結合 GEO 技術分析網站在 AI 眼中的能見度與內容分佈",
+        "關鍵字廣告與 SEO 連動：網站 SEO 內容品質分數與廣告成效息息相關，<strong>雙方有共同提案機會</strong>",
+        "<strong>AI 推薦成效時程</strong>：高權重媒體文章當天即被 AI 引用；一般官網 SEO 優化需 3-6 個月，AI 推薦約 1 個月內開始顯現",
+        "服務含<strong>七大核心項目</strong>：內容優化、技術優化、品牌履歷建構、全域能見度（含 KOL/KOC 及社交媒體口碑）",
+        "採<strong>年約制</strong>，分三種方案，建議客戶從方案二（30 組關鍵字 + 90 個 prompt）開始",
+        "<strong>質檢報告機制</strong>：透過 Gemini API 分析 AI 對客戶網站的回覆與內容分佈，作為合作切入點"
+      ],
+      chips: [
+        { icon: "🤝", text: "合作夥伴" },
+        { icon: "📊", text: "質檢報告" },
+        { icon: "🔑", text: "30 關鍵字" },
+        { icon: "📅", text: "年約制" }
+      ],
+      todos: [
+        { owner: "蔡阿達", text: "將質檢報告表單連結寄給 TruOrigin 團隊（Jimmy、Amber、Wayne）", priority: "today" },
+        { owner: "蔡阿達", text: "將今日簡報與相關資料寄送給 TruOrigin 團隊三位成員", priority: "today" },
+        { owner: "Jimmy Kuo (TruOrigin)", text: "收到表單後填寫有意願合作之客戶網址與簡介，回傳給 awoo", priority: "week" },
+        { owner: "蔡阿達", text: "收到客戶資料後安排製作質檢報告（透過 Gemini API 分析）", priority: "waiting" },
+        { owner: "蔡阿達", text: "合作啟動後，合約生效七十日內提供第一份建議書", priority: "waiting" }
+      ],
+      meetingHistory: [
+        {
+          date: "2026-06-10",
+          title: "TruOrigin x awoo GEO 工具/技術合作洽談",
+          time: "17:01-17:28",
+          duration: "27m",
+          participants: "蔡阿達、Jimmy Kuo (TruOrigin)、Mike (awoo)、Amber (TruOrigin)、Wayne (TruOrigin)",
+          docUrl: "",
+          dialogues: [
+            {
+              topic: "awoo SEO 與 GEO 服務介紹",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "awoo 核心服務為協助客戶經營官網提升搜尋能見度，結合 GEO 技術分析網站在 AI 眼中的能見度與內容分佈，提供新增內容建議。關鍵字廣告與網站 SEO 品質分數息息相關，雙方有共同提案機會。" },
+                { speaker: "Jimmy Kuo", role: "other", label: "TruOrigin", text: "詢問若客戶排名不佳，awoo 如何協助改善。" },
+                { speaker: "蔡阿達", role: "ada", text: "會根據關鍵字與 prompt 定義協助改善網站技術與內容。服務包含七大核心項目，除內容與技術優化，還會協助建構品牌履歷及全域能見度。" }
+              ]
+            },
+            {
+              topic: "AI 推薦成效與案例",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "以某知名媒體為例，權重高的文章上線當天即被 AI 引用。一般官網 SEO 優化需 3-6 個月，AI 推薦可在一個月內開始顯現。" },
+                { speaker: "蔡阿達", role: "ada", text: "跨國大品牌母公司限制修改網站時無法介入；套版網站如 Shopline 則較好處理，平台本身基礎分數較佳。" }
+              ]
+            },
+            {
+              topic: "服務流程、費用與質檢報告",
+              exchanges: [
+                { speaker: "蔡阿達", role: "ada", text: "合約生效後七十日內提供第一份建議書，之後每兩個月持續更新。費用分三種方案，建議從方案二開始，採年約制。" },
+                { speaker: "Jimmy Kuo", role: "other", label: "TruOrigin", text: "確認若三個月未見成效，awoo 會持續優化並調整策略。" },
+                { speaker: "蔡阿達", role: "ada", text: "可先為有興趣的客戶製作質檢報告，透過 Gemini API 分析 AI 對客戶網站的回覆與內容分佈。已製作統一表單供業務填寫客戶網址與簡介。" },
+                { speaker: "Jimmy Kuo", role: "other", label: "TruOrigin", text: "要求會後將簡報與表單連結寄給團隊三位成員。" }
               ]
             }
           ]
